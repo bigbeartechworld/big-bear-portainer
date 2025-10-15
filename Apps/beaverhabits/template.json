@@ -1,13 +1,13 @@
 {
-  "version": "2",
+  "version": "3",
   "templates": [
     {
       "id": 11,
       "type": 2,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
-      "description": "A self-hosted habit tracking app without \"Goals\"",
-      "note": "A self-hosted habit tracking app without \"Goals\"",
+      "description": "A self-hosted habit tracking app without \\"Goals\\"",
+      "note": "A self-hosted habit tracking app without \\"Goals\\"",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/beaver-habit-tracker.png",

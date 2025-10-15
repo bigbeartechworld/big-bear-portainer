@@ -1,5 +1,5 @@
 {
-  "version": "2",
+  "version": "3",
   "templates": [
     {
       "id": 1,
@@ -289,8 +289,8 @@
       "type": 2,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
-      "description": "A self-hosted habit tracking app without \"Goals\"",
-      "note": "A self-hosted habit tracking app without \"Goals\"",
+      "description": "A self-hosted habit tracking app without \\"Goals\\"",
+      "note": "A self-hosted habit tracking app without \\"Goals\\"",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/beaver-habit-tracker.png",
@@ -623,7 +623,7 @@
       "type": 2,
       "title": "Chatpad",
       "name": "chatpad",
-      "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \"to-do app\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
+      "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \\"to-do app\\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
       "note": "Not just another ChatGPT user-interface!",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
@@ -981,7 +981,7 @@
       "type": 2,
       "title": "CyberChef",
       "name": "cyberchef",
-      "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
+      "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \\"cyber\\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
       "note": "The Cyber Swiss Army Knife",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
