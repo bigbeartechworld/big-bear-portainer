@@ -1,0 +1,36 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 18,
+      "type": 2,
+      "title": "cAdvisor",
+      "name": "cadvisor",
+      "description": "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This data is exported by container and machine-wide.",
+      "note": "cAdvisor",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/cadvisor.png",
+      "image": "gcr.io/cadvisor/cadvisor:v0.52.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/cadvisor/docker-compose.yml"
+      },
+      "ports": [    "8085:8080"],
+      "volumes": [
+    {"container": "/rootfs"},
+    {"container": "/var/run"},
+    {"container": "/var/run/docker.sock"},
+    {"container": "/sys"},
+    {"container": "/var/lib/docker"},
+    {"container": "/dev/disk"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.52.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

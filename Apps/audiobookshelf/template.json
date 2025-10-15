@@ -1,0 +1,34 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 7,
+      "type": 2,
+      "title": "Audiobookshelf",
+      "name": "audiobookshelf",
+      "description": "Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks. Audiobookshelf has a clean, accessible design that's loaded with features but not overly complicated.",
+      "note": "Audiobookshelf is a self-hosted audiobook and podcast server.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/audiobookshelf.png",
+      "image": "ghcr.io/advplyr/audiobookshelf:2.30.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/audiobookshelf/docker-compose.yml"
+      },
+      "ports": [    "8080:80"],
+      "volumes": [
+    {"container": "/audiobooks"},
+    {"container": "/podcasts"},
+    {"container": "/config"},
+    {"container": "/metadata"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "advplyr"},
+        {"name": "version", "value": "2.30.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 197,
+      "type": 2,
+      "title": "Viseron",
+      "name": "viseron",
+      "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",
+      "note": "Viseron",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/viseron/logo.png",
+      "image": "roflcoopter/viseron:3.3.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/viseron/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"}
+      ],
+      "ports": [    "8888:8888"],
+      "volumes": [
+    {"container": "/segments"},
+    {"container": "/snapshots"},
+    {"container": "/thumbnails"},
+    {"container": "/event_clips"},
+    {"container": "/config"},
+    {"container": "/etc/localtime"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "3.3.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

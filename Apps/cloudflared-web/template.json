@@ -1,0 +1,36 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 24,
+      "type": 2,
+      "title": "Cloudflared Web",
+      "name": "cloudflared-web",
+      "description": "Cloudflared-web is a docker image that packages both cloudflared cli and a simple Web UI to easily start or stop remotely-managed Cloudflare tunnel.",
+      "note": "Cloudflared Web",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png",
+      "image": "wisdomsky/cloudflared-web:2025.9.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/cloudflared-web/docker-compose.yml"
+      },
+      "env": [
+    {"name": "WEBUI_PORT", "label": "WEBUI_PORT", "description": "Environment variable for WEBUI_PORT", "default": "14333"},
+    {"name": "EDGE_IP_VERSION", "label": "EDGE_IP_VERSION", "description": "Environment variable for EDGE_IP_VERSION", "default": "auto"},
+    {"name": "PROTOCOL", "label": "PROTOCOL", "description": "Environment variable for PROTOCOL", "default": "auto"},
+    {"name": "METRICS_ENABLE", "label": "METRICS_ENABLE", "description": "Environment variable for METRICS_ENABLE", "default": "false"},
+    {"name": "METRICS_PORT", "label": "METRICS_PORT", "description": "Environment variable for METRICS_PORT", "default": "60123"},
+    {"name": "BASIC_AUTH_USER", "label": "BASIC_AUTH_USER", "description": "Environment variable for BASIC_AUTH_USER", "default": "admin"},
+    {"name": "BASIC_AUTH_PASS", "label": "BASIC_AUTH_PASS", "description": "Environment variable for BASIC_AUTH_PASS", "default": ""}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2025.9.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

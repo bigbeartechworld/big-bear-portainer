@@ -1,0 +1,40 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 16,
+      "type": 2,
+      "title": "btop",
+      "name": "btop",
+      "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",
+      "note": "A monitor of resources",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/aristocratos/btop/Img/icon.png",
+      "image": "bigbeartechworld/big-bear-btop:0.1.5",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/btop/docker-compose.yml"
+      },
+      "env": [
+    {"name": "GOTTY_AUTH_USER", "label": "GOTTY_AUTH_USER", "description": "Environment variable for GOTTY_AUTH_USER", "default": "bigbear"},
+    {"name": "GOTTY_AUTH_PASS", "label": "GOTTY_AUTH_PASS", "description": "Environment variable for GOTTY_AUTH_PASS", "default": "password"},
+    {"name": "GOTTY_AUTH_ENABLED", "label": "GOTTY_AUTH_ENABLED", "description": "Environment variable for GOTTY_AUTH_ENABLED", "default": "true"}
+      ],
+      "ports": [    "7681:7681"],
+      "volumes": [
+    {"container": "/proc"},
+    {"container": "/sys"},
+    {"container": "/dev"},
+    {"container": "/etc/localtime"},
+    {"container": "/root/.config/btop"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.1.5"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

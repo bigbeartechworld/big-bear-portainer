@@ -1,0 +1,39 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 95,
+      "type": 2,
+      "title": "LinkStack",
+      "name": "linkstack",
+      "description": "LinkStack is a link-in-bio tool that allows you to create a personalized and easily customizable page that houses all the important links you want to share with your audience.",
+      "note": "Your all-in-one link sharing solution",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/linkstack.png",
+      "image": "linkstackorg/linkstack:V4",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/linkstack/docker-compose.yml"
+      },
+      "env": [
+    {"name": "HTTP_SERVER_NAME", "label": "HTTP_SERVER_NAME", "description": "Environment variable for HTTP_SERVER_NAME", "default": "www.example.xyz"},
+    {"name": "HTTPS_SERVER_NAME", "label": "HTTPS_SERVER_NAME", "description": "Environment variable for HTTPS_SERVER_NAME", "default": "www.example.xyz"},
+    {"name": "SERVER_ADMIN", "label": "SERVER_ADMIN", "description": "Environment variable for SERVER_ADMIN", "default": "admin@example.xyz"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Europe/Berlin"},
+    {"name": "PHP_MEMORY_LIMIT", "label": "PHP_MEMORY_LIMIT", "description": "Environment variable for PHP_MEMORY_LIMIT", "default": "512M"},
+    {"name": "UPLOAD_MAX_FILESIZE", "label": "UPLOAD_MAX_FILESIZE", "description": "Environment variable for UPLOAD_MAX_FILESIZE", "default": "8M"}
+      ],
+      "ports": [    "8080:80",    "10443:443"],
+      "volumes": [
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "V4"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

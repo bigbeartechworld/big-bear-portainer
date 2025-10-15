@@ -1,0 +1,78 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 50,
+      "type": 2,
+      "title": "Financial Freedom",
+      "name": "financial-freedom",
+      "description": "Keep investors and their buyers out of your financial data. Own 100% of your data and start building financial wealth.",
+      "note": "Financial Freedom",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/financial-freedom/logo.png",
+      "image": "serversideup/financial-freedom:v0.2.0-alpha1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/financial-freedom/docker-compose.yml"
+      },
+      "env": [
+    {"name": "APP_NAME", "label": "APP_NAME", "description": "Environment variable for APP_NAME", "default": "Financial Freedom"},
+    {"name": "APP_ENV", "label": "APP_ENV", "description": "Environment variable for APP_ENV", "default": "production"},
+    {"name": "APP_DEBUG", "label": "APP_DEBUG", "description": "Environment variable for APP_DEBUG", "default": "false"},
+    {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://[CASAOS_IP]:8080"},
+    {"name": "APP_KEY", "label": "APP_KEY", "description": "Environment variable for APP_KEY", "default": "base64:1234567890abcdefghijklmnopqrstuvwxyz"},
+    {"name": "DB_ROOT_PASSWORD", "label": "DB_ROOT_PASSWORD", "description": "Environment variable for DB_ROOT_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "mariadb"},
+    {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Environment variable for DB_DATABASE", "default": "financialfreedom"},
+    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "bigbear"},
+    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
+    {"name": "MAIL_MAILER", "label": "MAIL_MAILER", "description": "Environment variable for MAIL_MAILER", "default": "smtp"},
+    {"name": "MAIL_HOST", "label": "MAIL_HOST", "description": "Environment variable for MAIL_HOST", "default": "mailpit"},
+    {"name": "MAIL_PORT", "label": "MAIL_PORT", "description": "Environment variable for MAIL_PORT", "default": "1025"},
+    {"name": "MAIL_USERNAME", "label": "MAIL_USERNAME", "description": "Environment variable for MAIL_USERNAME", "default": "null"},
+    {"name": "MAIL_PASSWORD", "label": "MAIL_PASSWORD", "description": "Environment variable for MAIL_PASSWORD", "default": "null"},
+    {"name": "MAIL_ENCRYPTION", "label": "MAIL_ENCRYPTION", "description": "Environment variable for MAIL_ENCRYPTION", "default": "null"},
+    {"name": "MAIL_FROM_ADDRESS", "label": "MAIL_FROM_ADDRESS", "description": "Environment variable for MAIL_FROM_ADDRESS", "default": "noreply@financialfreedom.dev.test"},
+    {"name": "MAIL_FROM_NAME", "label": "MAIL_FROM_NAME", "description": "Environment variable for MAIL_FROM_NAME", "default": "Financial Freedom"},
+    {"name": "SSL_MODE", "label": "SSL_MODE", "description": "Environment variable for SSL_MODE", "default": "mixed"},
+    {"name": "AUTORUN_ENABLED", "label": "AUTORUN_ENABLED", "description": "Environment variable for AUTORUN_ENABLED", "default": "true"},
+    {"name": "AUTORUN_LARAVEL_EVENT_CACHE", "label": "AUTORUN_LARAVEL_EVENT_CACHE", "description": "Environment variable for AUTORUN_LARAVEL_EVENT_CACHE", "default": "false"},
+    {"name": "AUTORUN_LARAVEL_ROUTE_CACHE", "label": "AUTORUN_LARAVEL_ROUTE_CACHE", "description": "Environment variable for AUTORUN_LARAVEL_ROUTE_CACHE", "default": "false"},
+    {"name": "AUTORUN_LARAVEL_STORAGE_LINK", "label": "AUTORUN_LARAVEL_STORAGE_LINK", "description": "Environment variable for AUTORUN_LARAVEL_STORAGE_LINK", "default": "false"},
+    {"name": "AUTORUN_LARAVEL_VIEW_CACHE", "label": "AUTORUN_LARAVEL_VIEW_CACHE", "description": "Environment variable for AUTORUN_LARAVEL_VIEW_CACHE", "default": "false"},
+    {"name": "FINANCIAL_FREEDOM_ALLOW_REGISTRATION", "label": "FINANCIAL_FREEDOM_ALLOW_REGISTRATION", "description": "Environment variable for FINANCIAL_FREEDOM_ALLOW_REGISTRATION", "default": "false"},
+    {"name": "LOG_CHANNEL", "label": "LOG_CHANNEL", "description": "Environment variable for LOG_CHANNEL", "default": "stack"},
+    {"name": "BROADCAST_DRIVER", "label": "BROADCAST_DRIVER", "description": "Environment variable for BROADCAST_DRIVER", "default": "log"},
+    {"name": "CACHE_DRIVER", "label": "CACHE_DRIVER", "description": "Environment variable for CACHE_DRIVER", "default": "file"},
+    {"name": "QUEUE_CONNECTION", "label": "QUEUE_CONNECTION", "description": "Environment variable for QUEUE_CONNECTION", "default": "sync"},
+    {"name": "SESSION_LIFETIME", "label": "SESSION_LIFETIME", "description": "Environment variable for SESSION_LIFETIME", "default": "120"},
+    {"name": "SESSION_DRIVER", "label": "SESSION_DRIVER", "description": "Environment variable for SESSION_DRIVER", "default": "cookie"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "financialfreedom"},
+    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "bigbear"},
+    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "financialfreedom"},
+    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "bigbear"},
+    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
+    {"name": "REMOTE_SQL", "label": "REMOTE_SQL", "description": "Environment variable for REMOTE_SQL", "default": ""}
+      ],
+      "ports": [    "8080:80",    "8443:443"],
+      "volumes": [
+    {"container": "/var/www/html/storage/logs"},
+    {"container": "/var/www/html/storage/framework/sessions"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "v0.2.0-alpha1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

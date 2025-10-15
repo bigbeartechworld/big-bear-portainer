@@ -1,0 +1,37 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 116,
+      "type": 2,
+      "title": "Nextcloud LS",
+      "name": "nextcloud-ls",
+      "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
+      "note": "LinuxServer - The productivity platform that keeps you in control",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/nextcloud.png",
+      "image": "linuxserver/nextcloud:32.0.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/nextcloud-ls/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"}
+      ],
+      "ports": [    "10443:443"],
+      "volumes": [
+    {"container": "/config"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "32.0.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

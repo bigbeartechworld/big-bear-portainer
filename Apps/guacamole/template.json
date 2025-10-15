@@ -1,0 +1,42 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 66,
+      "type": 2,
+      "title": "Guacamole",
+      "name": "guacamole",
+      "description": "Apache Guacamole is a free and open-source, cross-platform, clientless remote desktop gateway maintained by the Apache Software Foundation.",
+      "note": "Guacamole",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/guacamole.png",
+      "image": "guacamole/guacd:1.6.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/guacamole/docker-compose.yml"
+      },
+      "env": [
+    {"name": "GUACD_HOSTNAME", "label": "GUACD_HOSTNAME", "description": "Environment variable for GUACD_HOSTNAME", "default": "guacd"},
+    {"name": "MYSQL_HOSTNAME", "label": "MYSQL_HOSTNAME", "description": "Environment variable for MYSQL_HOSTNAME", "default": "mysql"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "guacamole_db"},
+    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "guacamole_user"},
+    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "some_password"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "my-secret-pw"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "guacamole_db"},
+    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "guacamole_user"},
+    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "some_password"}
+      ],
+      "ports": [    "8090:8080"],
+      "volumes": [
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.6.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 5,
+      "type": 2,
+      "title": "Anse",
+      "name": "anse",
+      "description": "Anse is a fully optimized UI for AI Chats. Supercharged experience for multiple models such as ChatGPT, DALL-E and Stable Diffusion.",
+      "note": "Fully optimized UI for AI Chats.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/anse/logo.jpg",
+      "image": "ddiu8081/anse:v1.1.11",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/anse/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "8014"}
+      ],
+      "ports": [    "8014:8014"],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "v1.1.11"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

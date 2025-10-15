@@ -1,0 +1,34 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 87,
+      "type": 2,
+      "title": "Kavita",
+      "name": "kavita",
+      "description": "Kavita is a fast, feature rich, cross platform reading server",
+      "note": "Kavita",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/kavita.png",
+      "image": "jvmilazz0/kavita:0.8.7",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/kavita/docker-compose.yml"
+      },
+      "ports": [    "5000:5000"],
+      "volumes": [
+    {"container": "/kavita/config"},
+    {"container": "/books"},
+    {"container": "/comics"},
+    {"container": "/manga"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.8.7"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

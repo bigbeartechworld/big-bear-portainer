@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 134,
+      "type": 2,
+      "title": "Open WebUI",
+      "name": "open-webui",
+      "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline.",
+      "note": "User-friendly WebUI for LLMs",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/open-webui.png",
+      "image": "ghcr.io/open-webui/open-webui:git-33e54a9",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/open-webui/docker-compose.yml"
+      },
+      "env": [
+    {"name": "OLLAMA_BASE_URL", "label": "OLLAMA_BASE_URL", "description": "Environment variable for OLLAMA_BASE_URL", "default": ""},
+    {"name": "OPENAI_API_KEY", "label": "OPENAI_API_KEY", "description": "Environment variable for OPENAI_API_KEY", "default": ""}
+      ],
+      "ports": [    "8080:8080"],
+      "volumes": [
+    {"container": "/app/backend/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "git-33e54a9"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

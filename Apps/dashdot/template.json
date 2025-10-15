@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 32,
+      "type": 2,
+      "title": "Dashdot",
+      "name": "dashdot",
+      "description": "About A simple, modern server dashboard, primarily used by smaller private servers.",
+      "note": "dash. - a modern server dashboard",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/dashdot.png",
+      "image": "mauricenino/dashdot:6.2.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/dashdot/docker-compose.yml"
+      },
+      "ports": [    "3001:3001"],
+      "volumes": [
+    {"container": "/mnt/host# Mounting the local dashdot directory to /mnt/host inside the container"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "6.2.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

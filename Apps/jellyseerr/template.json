@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 80,
+      "type": 2,
+      "title": "Jellyseerr",
+      "name": "jellyseerr",
+      "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+      "note": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellyseerr.png",
+      "image": "fallenbagel/jellyseerr:2.7.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/jellyseerr/docker-compose.yml"
+      },
+      "env": [
+    {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Environment variable for LOG_LEVEL", "default": "debug"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "$TZ"}
+      ],
+      "ports": [    "5055:5055"],
+      "volumes": [
+    {"container": "/app/config"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearCommunity"},
+        {"name": "version", "value": "2.7.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

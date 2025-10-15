@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 146,
+      "type": 2,
+      "title": "Pi-hole and Unbound",
+      "name": "pihole-unbound",
+      "description": "This is a custom pihole and unbound setup.",
+      "note": "Pi-hole and Unbound",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pi-hole-unbound.png",
+      "image": "bigbeartechworld/big-bear-pihole-unbound:2025.08.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/pihole-unbound/docker-compose.yml"
+      },
+      "ports": [    "53:53/tcp",    "53:53/udp",    "67:67/udp",    "8080:80/tcp",    "10443:443/tcp"],
+      "volumes": [
+    {"container": "/etc/pihole/"},
+    {"container": "/etc/dnsmasq.d/"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2025.08.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}
