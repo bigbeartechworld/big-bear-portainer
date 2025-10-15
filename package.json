@@ -1,0 +1,16 @@
+{
+  "name": "big-bear-portainer",
+  "version": "1.0.0",
+  "description": "Portainer templates from BigBearCasaOS",
+  "scripts": {
+    "generate-readme": "bun .github/scripts/readme-generator.ts"
+  },
+  "keywords": ["portainer", "docker", "templates", "bigbear"],
+  "author": "BigBearTechWorld",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
