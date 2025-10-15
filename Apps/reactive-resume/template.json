@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 166,
+      "type": 2,
+      "title": "Reactive Resume",
+      "name": "reactive-resume",
+      "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
+      "note": "A free and open-source resume builder",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/reactive-resume/logo.png",
+      "image": "amruthpillai/reactive-resume:v4.5.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/reactive-resume/docker-compose.yml"
+      },
+      "ports": [    "3000:3000",    "9000:9000"],
+      "volumes": [
+    {"container": "/var/lib/postgresql/data"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "4.5.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

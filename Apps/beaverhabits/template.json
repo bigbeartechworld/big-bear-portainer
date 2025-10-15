@@ -1,0 +1,37 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 11,
+      "type": 2,
+      "title": "Beaver Habit Tracker",
+      "name": "beaverhabits",
+      "description": "A self-hosted habit tracking app without \"Goals\"",
+      "note": "A self-hosted habit tracking app without \"Goals\"",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/beaver-habit-tracker.png",
+      "image": "daya0576/beaverhabits:0.7.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/beaverhabits/docker-compose.yml"
+      },
+      "env": [
+    {"name": "HABITS_STORAGE", "label": "HABITS_STORAGE", "description": "Environment variable for HABITS_STORAGE", "default": "USER_DISK"},
+    {"name": "TRUSTED_LOCAL_EMAIL", "label": "TRUSTED_LOCAL_EMAIL", "description": "Environment variable for TRUSTED_LOCAL_EMAIL", "default": "your@email.com"},
+    {"name": "INDEX_HABIT_DATE_COLUMNS", "label": "INDEX_HABIT_DATE_COLUMNS", "description": "Environment variable for INDEX_HABIT_DATE_COLUMNS", "default": "5"},
+    {"name": "ENABLE_IOS_STANDALONE", "label": "ENABLE_IOS_STANDALONE", "description": "Environment variable for ENABLE_IOS_STANDALONE", "default": "true"}
+      ],
+      "ports": [    "8080:8080"],
+      "volumes": [
+    {"container": "/app/.user/"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.7.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

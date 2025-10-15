@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 162,
+      "type": 2,
+      "title": "Pterodactyl Panel",
+      "name": "pterodactyl-panel",
+      "description": "Pterodactyl® is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.",
+      "note": "Pterodactyl Panel",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/pterodactyl.png",
+      "image": "ghcr.io/pterodactyl/panel:v1.11.11",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/pterodactyl-panel/docker-compose.yml"
+      },
+      "ports": [    "1180:80",    "11443:443"],
+      "volumes": [
+    {"container": "/app/var/"},
+    {"container": "/etc/nginx/http.d/"},
+    {"container": "/etc/letsencrypt/"},
+    {"container": "/app/storage/logs"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.11.11"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

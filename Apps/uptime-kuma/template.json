@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 195,
+      "type": 2,
+      "title": "Uptime Kuma",
+      "name": "uptime-kuma",
+      "description": "A fancy self-hosted monitoring tool",
+      "note": "A fancy self-hosted monitoring tool",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/uptime-kuma.png",
+      "image": "louislam/uptime-kuma:1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/uptime-kuma/docker-compose.yml"
+      },
+      "ports": [    "3001:3001"],
+      "volumes": [
+    {"container": "/app/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

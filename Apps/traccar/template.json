@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 185,
+      "type": 2,
+      "title": "Traccar",
+      "name": "traccar",
+      "description": "Traccar GPS Tracking System in Docker image.",
+      "note": "Traccar",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/traccar.png",
+      "image": "traccar/traccar:6.10-ubuntu",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/traccar/docker-compose.yml"
+      },
+      "ports": [    "8080:8082"],
+      "volumes": [
+    {"container": "/opt/traccar/logs"},
+    {"container": "/opt/traccar/conf/traccar.xml"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "6.10-ubuntu"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

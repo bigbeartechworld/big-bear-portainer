@@ -1,0 +1,34 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 186,
+      "type": 2,
+      "title": "Trilium",
+      "name": "trilium",
+      "description": "Build your personal knowledge base with Trilium Notes",
+      "note": "Build your personal knowledge base with Trilium Notes",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/trilium-notes.png",
+      "image": "zadam/trilium:0.63.7",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/trilium/docker-compose.yml"
+      },
+      "env": [
+    {"name": "TRILIUM_DATA_DIR", "label": "TRILIUM_DATA_DIR", "description": "Environment variable for TRILIUM_DATA_DIR", "default": "/home/node/trilium-data"}
+      ],
+      "ports": [    "8080:8080"],
+      "volumes": [
+    {"container": "/home/node/trilium-data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.63.7"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 99,
+      "type": 2,
+      "title": "LyriOn Music Server",
+      "name": "lyrionmusicserver",
+      "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
+      "note": "Streaming audio server",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/lyrionmusicserver/logo.png",
+      "image": "lmscommunity/lyrionmusicserver:9.1.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/lyrionmusicserver/docker-compose.yml"
+      },
+      "env": [
+    {"name": "HTTP_PORT", "label": "HTTP_PORT", "description": "Environment variable for HTTP_PORT", "default": "9000"}
+      ],
+      "ports": [    "9000:9000/tcp",    "9090:9090/tcp",    "3483:3483/tcp",    "3483:3483/udp"],
+      "volumes": [
+    {"container": "/config"},
+    {"container": "/music"},
+    {"container": "/playlist"},
+    {"container": "/etc/localtime"},
+    {"container": "/etc/timezone"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "9.1.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 81,
+      "type": 2,
+      "title": "Jellystat",
+      "name": "jellystat",
+      "description": "Jellystat is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)",
+      "note": "Jellystat",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellystat.png",
+      "image": "cyfershepard/jellystat:1.1.6",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/jellystat/docker-compose.yml"
+      },
+      "env": [
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "postgres"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "8a23ad09-61cf-4178-a783-6d4586496e3a"},
+    {"name": "POSTGRES_IP", "label": "POSTGRES_IP", "description": "Environment variable for POSTGRES_IP", "default": "big-bear-jellystat-db"},
+    {"name": "POSTGRES_PORT", "label": "POSTGRES_PORT", "description": "Environment variable for POSTGRES_PORT", "default": "5432"},
+    {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Environment variable for JWT_SECRET", "default": "my-secret-jwt-key"}
+      ],
+      "ports": [    "3000:3000"],
+      "volumes": [
+    {"container": "/app/backend/backup-data"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.1.6"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

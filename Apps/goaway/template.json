@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 64,
+      "type": 2,
+      "title": "GoAway",
+      "name": "goaway",
+      "description": "GoAway is a lightweight DNS sinkhole that blocks ads, trackers, and malicious domains at the network level. It provides a web-based admin dashboard for management and supports customizable blocking rules with real-time statistics tracking.",
+      "note": "Lightweight DNS sinkhole for blocking ads and trackers",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/goaway.png",
+      "image": "pommee/goaway:0.62.11",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/goaway/docker-compose.yml"
+      },
+      "ports": [    "53:53/udp",    "53:53/tcp",    "8080:8080"],
+      "volumes": [
+    {"container": "/app/config"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.62.11"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

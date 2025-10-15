@@ -1,0 +1,35 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 59,
+      "type": 2,
+      "title": "Ghostfolio",
+      "name": "ghostfolio",
+      "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",
+      "note": "Ghostfolio",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/ghostfolio.png",
+      "image": "ghostfolio/ghostfolio:2.208.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/ghostfolio/docker-compose.yml"
+      },
+      "env": [
+    {"name": "postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode", "label": "postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode", "description": "Environment variable for postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode", "default": "prefer"}
+      ],
+      "ports": [    "3333:3333"],
+      "volumes": [
+    {"container": "/var/lib/postgresql/data"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.208.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

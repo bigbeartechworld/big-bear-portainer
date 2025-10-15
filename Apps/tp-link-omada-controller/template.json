@@ -1,0 +1,50 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 184,
+      "type": 2,
+      "title": "TP-Link Omada Controller",
+      "name": "tp-link-omada-controller",
+      "description": "Docker image for TP-Link Omada Controller to control TP-Link Omada Hardware",
+      "note": "TP-Link Omada Controller",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/omada.png",
+      "image": "mbentley/omada-controller:5.15",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/tp-link-omada-controller/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "508"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "508"},
+    {"name": "MANAGE_HTTP_PORT", "label": "MANAGE_HTTP_PORT", "description": "Environment variable for MANAGE_HTTP_PORT", "default": "8088"},
+    {"name": "MANAGE_HTTPS_PORT", "label": "MANAGE_HTTPS_PORT", "description": "Environment variable for MANAGE_HTTPS_PORT", "default": "8043"},
+    {"name": "PORTAL_HTTP_PORT", "label": "PORTAL_HTTP_PORT", "description": "Environment variable for PORTAL_HTTP_PORT", "default": "8088"},
+    {"name": "PORTAL_HTTPS_PORT", "label": "PORTAL_HTTPS_PORT", "description": "Environment variable for PORTAL_HTTPS_PORT", "default": "8843"},
+    {"name": "PORT_APP_DISCOVERY", "label": "PORT_APP_DISCOVERY", "description": "Environment variable for PORT_APP_DISCOVERY", "default": "27001"},
+    {"name": "PORT_ADOPT_V1", "label": "PORT_ADOPT_V1", "description": "Environment variable for PORT_ADOPT_V1", "default": "29812"},
+    {"name": "PORT_UPGRADE_V1", "label": "PORT_UPGRADE_V1", "description": "Environment variable for PORT_UPGRADE_V1", "default": "29813"},
+    {"name": "PORT_MANAGER_V1", "label": "PORT_MANAGER_V1", "description": "Environment variable for PORT_MANAGER_V1", "default": "29811"},
+    {"name": "PORT_MANAGER_V2", "label": "PORT_MANAGER_V2", "description": "Environment variable for PORT_MANAGER_V2", "default": "29814"},
+    {"name": "PORT_DISCOVERY", "label": "PORT_DISCOVERY", "description": "Environment variable for PORT_DISCOVERY", "default": "29810"},
+    {"name": "SHOW_SERVER_LOGS", "label": "SHOW_SERVER_LOGS", "description": "Environment variable for SHOW_SERVER_LOGS", "default": "true"},
+    {"name": "SHOW_MONGODB_LOGS", "label": "SHOW_MONGODB_LOGS", "description": "Environment variable for SHOW_MONGODB_LOGS", "default": "false"},
+    {"name": "SSL_CERT_NAME", "label": "SSL_CERT_NAME", "description": "Environment variable for SSL_CERT_NAME", "default": "tls.crt"},
+    {"name": "SSL_KEY_NAME", "label": "SSL_KEY_NAME", "description": "Environment variable for SSL_KEY_NAME", "default": "tls.key"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"}
+      ],
+      "volumes": [
+    {"container": "/opt/tplink/EAPController/data"},
+    {"container": "/opt/tplink/EAPController/logs"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "5.15"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

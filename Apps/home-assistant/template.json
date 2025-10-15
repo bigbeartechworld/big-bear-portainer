@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 69,
+      "type": 2,
+      "title": "Home Assistant",
+      "name": "home-assistant",
+      "description": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
+      "note": "Home Automation",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/home-assistant.png",
+      "image": "ghcr.io/home-assistant/home-assistant:2025.10.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/home-assistant/docker-compose.yml"
+      },
+      "volumes": [
+    {"container": "/config"},
+    {"container": "/etc/localtime"},
+    {"container": "/run/dbus"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2025.10.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

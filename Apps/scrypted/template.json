@@ -1,0 +1,39 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 171,
+      "type": 2,
+      "title": "Scrypted",
+      "name": "scrypted",
+      "description": "Scrypted is an open source video integration platform. Using various Plugins, Scrypted can receive streams from a range of cameras and send them to other platforms (HomeKit, Google Home, Alexa, Home Assistant).",
+      "note": "Scrypted",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/scrypted.png",
+      "image": "koush/scrypted:v0.123.58-jammy-full",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/scrypted/docker-compose.yml"
+      },
+      "env": [
+    {"name": "SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "label": "SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "description": "Environment variable for SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "default": "Bearer SET_THIS_TO_SOME_RANDOM_TEXT"},
+    {"name": "SCRYPTED_WEBHOOK_UPDATE", "label": "SCRYPTED_WEBHOOK_UPDATE", "description": "Environment variable for SCRYPTED_WEBHOOK_UPDATE", "default": "http://localhost:10444/v1/update"},
+    {"name": "WATCHTOWER_HTTP_API_TOKEN", "label": "WATCHTOWER_HTTP_API_TOKEN", "description": "Environment variable for WATCHTOWER_HTTP_API_TOKEN", "default": "SET_THIS_TO_SOME_RANDOM_TEXT"},
+    {"name": "WATCHTOWER_HTTP_API_UPDATE", "label": "WATCHTOWER_HTTP_API_UPDATE", "description": "Environment variable for WATCHTOWER_HTTP_API_UPDATE", "default": "true"},
+    {"name": "WATCHTOWER_SCOPE", "label": "WATCHTOWER_SCOPE", "description": "Environment variable for WATCHTOWER_SCOPE", "default": "scrypted"},
+    {"name": "WATCHTOWER_HTTP_API_PERIODIC_POLLS", "label": "WATCHTOWER_HTTP_API_PERIODIC_POLLS", "description": "Environment variable for WATCHTOWER_HTTP_API_PERIODIC_POLLS", "default": "true"}
+      ],
+      "ports": [    "10444:8080"],
+      "volumes": [
+    {"container": "/var/run/docker.sock"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.123.58-jammy-full"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

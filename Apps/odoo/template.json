@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 128,
+      "type": 2,
+      "title": "Odoo",
+      "name": "odoo",
+      "description": "Open-source business management software suite designed to streamline various aspects of business operations. With its modular structure, users can choose and integrate specific applications such as accounting, inventory, and sales. Odoo provides a user-friendly interface, scalability for businesses of all sizes, and is available in both community (free) and enterprise editions. Its integrated approach and customization options make it a popular choice for comprehensive ERP (Enterprise Resource Planning) solutions.",
+      "note": "Open-source business management software with modular applications for streamlined operations.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/odoo/logo.jpg",
+      "image": "odoo:19",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/odoo/docker-compose.yml"
+      },
+      "env": [
+    {"name": "HOST", "label": "HOST", "description": "Environment variable for HOST", "default": "big-bear-odoo-db"},
+    {"name": "USER", "label": "USER", "description": "Environment variable for USER", "default": "odoo"},
+    {"name": "PASSWORD", "label": "PASSWORD", "description": "Environment variable for PASSWORD", "default": "a8d785b6-bc00-49cc-8675-d404093d1507"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "odoo"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "a8d785b6-bc00-49cc-8675-d404093d1507"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "postgres"}
+      ],
+      "ports": [    "8069:8069"],
+      "volumes": [
+    {"container": "/etc/odoo"},
+    {"container": "/mnt/extra-addons"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "19"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 31,
+      "type": 2,
+      "title": "CyberChef",
+      "name": "cyberchef",
+      "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
+      "note": "The Cyber Swiss Army Knife",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/cyberchef.png",
+      "image": "ghcr.io/gchq/cyberchef:10.19.4",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/cyberchef/docker-compose.yml"
+      },
+      "ports": [    "8080:80"],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "10.19.4"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

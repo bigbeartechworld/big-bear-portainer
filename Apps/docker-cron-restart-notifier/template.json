@@ -1,0 +1,30 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 37,
+      "type": 2,
+      "title": "Docker Cron Restart Notifier",
+      "name": "docker-cron-restart-notifier",
+      "description": "This Docker image is designed to automatically restart specified Docker containers and send notifications to a Discord channel upon each restart. It's particularly useful for maintaining long-running services, ensuring they're periodically refreshed and stakeholders are informed of these actions.",
+      "note": "Automatically restart specified Docker containers and send notifications to a Discord channel",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/docker-cron-restart-notifier/logo.png",
+      "image": "deduard/tools:restart-notifier-latest",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/docker-cron-restart-notifier/docker-compose.yml"
+      },
+      "volumes": [
+    {"container": "/var/run/docker.sock"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "restart-notifier-latest"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

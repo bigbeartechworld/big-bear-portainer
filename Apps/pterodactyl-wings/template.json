@@ -1,0 +1,37 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 163,
+      "type": 2,
+      "title": "Pterodactyl Wings",
+      "name": "pterodactyl-wings",
+      "description": "Wings is Pterodactyl's server control plane, built for the rapidly changing gaming industry and designed to be highly performant and secure. Wings provides an HTTP API allowing you to interface directly with running server instances, fetch server logs, generate backups, and control all aspects of the server lifecycle.",
+      "note": "Pterodactyl Wings",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/pterodactyl.png",
+      "image": "ghcr.io/pterodactyl/wings:v1.11.13",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/pterodactyl-wings/docker-compose.yml"
+      },
+      "ports": [    "8080:8080",    "2022:2022"],
+      "volumes": [
+    {"container": "/var/run/docker.sock"},
+    {"container": "/var/lib/docker/containers/"},
+    {"container": "/etc/ssl/certs"},
+    {"container": "/tmp/pterodactyl/"},
+    {"container": "/etc/pterodactyl/"},
+    {"container": "/var/log/pterodactyl/"},
+    {"container": "/var/lib/pterodactyl/"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.11.13"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

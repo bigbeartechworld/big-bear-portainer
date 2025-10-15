@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 199,
+      "type": 2,
+      "title": "Wallos",
+      "name": "wallos",
+      "description": "Wallos: Open-Source Personal Subscription Tracker",
+      "note": "Wallos",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/wallos.png",
+      "image": "bellamy/wallos:4.3.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/wallos/docker-compose.yml"
+      },
+      "ports": [    "8282:80"],
+      "volumes": [
+    {"container": "/var/www/html/db"},
+    {"container": "/var/www/html/images/uploads/logos"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "4.3.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

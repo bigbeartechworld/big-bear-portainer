@@ -1,0 +1,57 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 78,
+      "type": 2,
+      "title": "Invoice Ninja",
+      "name": "invoice-ninja",
+      "description": "Invoice Ninja is a free and open-source invoice and expense management system. It is a web-based application that allows you to create, manage, and track invoices and expenses.",
+      "note": "Invoice Ninja",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/invoice-ninja.png",
+      "image": "invoiceninja/invoiceninja:5.12.28",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/invoice-ninja/docker-compose.yml"
+      },
+      "env": [
+    {"name": "IN_USER_EMAIL", "label": "IN_USER_EMAIL", "description": "Environment variable for IN_USER_EMAIL", "default": "admin@bigbeartechworld.com"},
+    {"name": "IN_PASSWORD", "label": "IN_PASSWORD", "description": "Environment variable for IN_PASSWORD", "default": "ad178c4b-302f-44e6-937f-8c7808f23795"},
+    {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://big-bear-invoice-ninja-web"},
+    {"name": "APP_KEY", "label": "APP_KEY", "description": "Environment variable for APP_KEY", "default": "base64:4doW1cidLuSqm7Z/BhPu/bn5HGnCKyEcSSlbVPTYYRU="},
+    {"name": "APP_CIPHER", "label": "APP_CIPHER", "description": "Environment variable for APP_CIPHER", "default": "AES-256-CBC"},
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-invoice-ninja-db"},
+    {"name": "DB_PORT", "label": "DB_PORT", "description": "Environment variable for DB_PORT", "default": "3306"},
+    {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Environment variable for DB_DATABASE", "default": "ninja"},
+    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "ninja"},
+    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "ninja"},
+    {"name": "REQUIRE_HTTPS", "label": "REQUIRE_HTTPS", "description": "Environment variable for REQUIRE_HTTPS", "default": "false"},
+    {"name": "QUEUE_CONNECTION", "label": "QUEUE_CONNECTION", "description": "Environment variable for QUEUE_CONNECTION", "default": "database"},
+    {"name": "IS_DOCKER", "label": "IS_DOCKER", "description": "Environment variable for IS_DOCKER", "default": "TRUE"},
+    {"name": "MARIADB_ROOT_PASSWORD", "label": "MARIADB_ROOT_PASSWORD", "description": "Environment variable for MARIADB_ROOT_PASSWORD", "default": "ad178c4b-302f-44e6-937f-8c7808f23795"},
+    {"name": "MARIADB_USER", "label": "MARIADB_USER", "description": "Environment variable for MARIADB_USER", "default": "ninja"},
+    {"name": "MARIADB_PASSWORD", "label": "MARIADB_PASSWORD", "description": "Environment variable for MARIADB_PASSWORD", "default": "ninja"},
+    {"name": "MARIADB_DATABASE", "label": "MARIADB_DATABASE", "description": "Environment variable for MARIADB_DATABASE", "default": "ninja"}
+      ],
+      "ports": [    "8080:80"],
+      "volumes": [
+    {"container": "/var/www/app/public"},
+    {"container": "/var/www/app/storage"},
+    {"container": "/usr/local/etc/php/php.ini"},
+    {"container": "/usr/local/etc/php/php-cli.ini"},
+    {"container": "/etc/nginx/conf.d/default.conf"},
+    {"container": "/var/www/app/public"},
+    {"container": "/var/lib/mysql"},
+    {"container": "/tmp/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "5.12.28"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}
