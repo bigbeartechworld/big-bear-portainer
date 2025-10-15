@@ -6,12 +6,12 @@
       "type": 2,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
-      "description": "A self-hosted habit tracking app without \\"Goals\\"",
-      "note": "A self-hosted habit tracking app without \\"Goals\\"",
+      "description": "A self-hosted habit tracking app without \"Goals\"",
+      "note": "A self-hosted habit tracking app without \"Goals\"",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/beaver-habit-tracker.png",
-      "image": "daya0576/beaverhabits:0.7.2",
+      "image": "daya0576/beaverhabits:0.7.3",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/beaverhabits/docker-compose.yml"
@@ -28,7 +28,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.7.2"},
+        {"name": "version", "value": "0.7.3"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false

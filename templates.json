@@ -289,12 +289,12 @@
       "type": 2,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
-      "description": "A self-hosted habit tracking app without \\"Goals\\"",
-      "note": "A self-hosted habit tracking app without \\"Goals\\"",
+      "description": "A self-hosted habit tracking app without \"Goals\"",
+      "note": "A self-hosted habit tracking app without \"Goals\"",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/beaver-habit-tracker.png",
-      "image": "daya0576/beaverhabits:0.7.2",
+      "image": "daya0576/beaverhabits:0.7.3",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/beaverhabits/docker-compose.yml"
@@ -311,7 +311,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.7.2"},
+        {"name": "version", "value": "0.7.3"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -623,7 +623,7 @@
       "type": 2,
       "title": "Chatpad",
       "name": "chatpad",
-      "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \\"to-do app\\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
+      "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \"to-do app\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
       "note": "Not just another ChatGPT user-interface!",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
@@ -981,7 +981,7 @@
       "type": 2,
       "title": "CyberChef",
       "name": "cyberchef",
-      "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \\"cyber\\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
+      "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
       "note": "The Cyber Swiss Army Knife",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
@@ -3029,7 +3029,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/linkwarden.png",
-      "image": "ghcr.io/linkwarden/linkwarden:v2.13.0",
+      "image": "ghcr.io/linkwarden/linkwarden:v2.13.1",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/linkwarden/docker-compose.yml"
@@ -3050,7 +3050,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.13.0"},
+        {"name": "version", "value": "2.13.1"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -3065,7 +3065,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/lobe-chat.png",
-      "image": "lobehub/lobe-chat:1.136.12",
+      "image": "lobehub/lobe-chat:1.137.0",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/lobe-chat/docker-compose.yml"
@@ -3079,7 +3079,7 @@
       "ports": [    "3210:3210"],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.136.12"},
+        {"name": "version", "value": "1.137.0"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -5765,7 +5765,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/tandoor-recipes.png",
-      "image": "ghcr.io/tandoorrecipes/recipes:2.3.2",
+      "image": "ghcr.io/tandoorrecipes/recipes:2.3.3",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/tandoor/docker-compose.yml"
@@ -5791,7 +5791,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.3.2"},
+        {"name": "version", "value": "2.3.3"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -6314,7 +6314,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/wallos.png",
-      "image": "bellamy/wallos:4.3.0",
+      "image": "bellamy/wallos:4.4.1",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/wallos/docker-compose.yml"
@@ -6326,7 +6326,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.3.0"},
+        {"name": "version", "value": "4.4.1"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -6403,7 +6403,7 @@
     {
       "id": 202,
       "type": 2,
-      "title": "Wireguard Easy",
+      "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
       "description": "Access your homeserver from anywhere even on your mobile device. Wireguard-easy is a simple tool to configure and manage Wireguard VPN servers. It is written in Go and uses the official Wireguard client. You have to open and redirect port 51820 to your homeserver in order to connect.",
       "note": "VPN server for your homeserver",
