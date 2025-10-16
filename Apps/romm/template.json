@@ -11,9 +11,12 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/romm.png",
+<<<<<<< Updated upstream
       "image": "rommapp/romm:4.3.2",
+=======
+>>>>>>> Stashed changes
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/romm/docker-compose.yml"
       },
       "env": [
@@ -38,6 +41,7 @@
     {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "romm"},
     {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "romm-user"},
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "casaos"}
+<<<<<<< Updated upstream
       ],
       "ports": [    "1080:8080",    "3306:3306"],
       "volumes": [
@@ -55,6 +59,9 @@
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
+=======
+      ]
+>>>>>>> Stashed changes
     }
   ]
 }

@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/warracker.png",
-      "image": "ghcr.io/sassanix/warracker/main:9.9.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/warracker/docker-compose.yml"
       },
       "env": [
@@ -28,18 +27,7 @@
     {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "big_bear_warracker"},
     {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "big_bear_warracker_user"},
     {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "4892f1bc-f1ea-464f-b528-1d52b2c9bb05"}
-      ],
-      "ports": [    "8005:80"],
-      "volumes": [
-    {"container": "/data/uploads"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "9.9.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/piwigo.png",
-      "image": "linuxserver/piwigo:15.6.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/piwigo/docker-compose.yml"
       },
       "env": [
@@ -24,19 +23,7 @@
     {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "piwigo"},
     {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "big_bear_piwigo"},
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "358fac48-4beb-4027-9c11-840464aca400"}
-      ],
-      "ports": [    "8080:80"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/gallery"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "15.6.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

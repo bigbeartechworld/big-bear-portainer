@@ -11,22 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/home-assistant.png",
-      "image": "ghcr.io/home-assistant/home-assistant:2025.10.2",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/home-assistant/docker-compose.yml"
-      },
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/etc/localtime"},
-    {"container": "/run/dbus"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2025.10.2"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

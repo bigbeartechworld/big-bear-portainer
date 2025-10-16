@@ -11,24 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://user-images.githubusercontent.com/1289128/276442834-bdb528d0-78fa-4155-ba15-7165d88b9836.png",
-      "image": "2fauth/2fauth:5.6.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/2fauth/docker-compose.yml"
       },
       "env": [
     {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://[CHANGE_TO_LAN_IP]:8000"}
-      ],
-      "ports": [    "8000:8000"],
-      "volumes": [
-    {"container": "/2fauth"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "5.6.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

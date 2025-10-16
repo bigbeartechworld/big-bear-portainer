@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/scrypted.png",
-      "image": "koush/scrypted:v0.123.58-jammy-full",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/scrypted/docker-compose.yml"
       },
       "env": [
@@ -23,17 +22,7 @@
     {"name": "WATCHTOWER_HTTP_API_UPDATE", "label": "WATCHTOWER_HTTP_API_UPDATE", "description": "Environment variable for WATCHTOWER_HTTP_API_UPDATE", "default": "true"},
     {"name": "WATCHTOWER_SCOPE", "label": "WATCHTOWER_SCOPE", "description": "Environment variable for WATCHTOWER_SCOPE", "default": "scrypted"},
     {"name": "WATCHTOWER_HTTP_API_PERIODIC_POLLS", "label": "WATCHTOWER_HTTP_API_PERIODIC_POLLS", "description": "Environment variable for WATCHTOWER_HTTP_API_PERIODIC_POLLS", "default": "true"}
-      ],
-      "ports": [    "10444:8080"],
-      "volumes": [
-    {"container": "/var/run/docker.sock"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.123.58-jammy-full"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

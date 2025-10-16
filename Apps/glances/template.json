@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/glances.png",
-      "image": "nicolargo/glances:4.3.0.8-full",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/glances/docker-compose.yml"
       },
       "env": [
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"},
     {"name": "GLANCES_OPT", "label": "GLANCES_OPT", "description": "Environment variable for GLANCES_OPT", "default": "-w"}
-      ],
-      "ports": [    "61208:61208"],
-      "volumes": [
-    {"container": "/var/run/docker.sock"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.3.0.8-full"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

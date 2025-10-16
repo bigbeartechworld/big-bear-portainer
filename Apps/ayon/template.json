@@ -11,30 +11,15 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/ayon/logo.png",
-      "image": "ynput/ayon:1.3.6-20240823",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ayon/docker-compose.yml"
       },
       "env": [
     {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "ayon"},
     {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "ayon"},
     {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "ayon"}
-      ],
-      "ports": [    "5000:5000"],
-      "volumes": [
-    {"container": "/addons"},
-    {"container": "/storage"},
-    {"container": "/etc/localtime"},
-    {"container": "/var/lib/postgresql/data"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.3.6-20240823"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

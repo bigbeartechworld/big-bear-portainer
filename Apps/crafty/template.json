@@ -11,28 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/crafty-controller.png",
-      "image": "registry.gitlab.com/crafty-controller/crafty-4:4.5.5",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/crafty/docker-compose.yml"
       },
       "env": [
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
-      ],
-      "ports": [    "8443:8443",    "8123:8123",    "19132:19132/udp"],
-      "volumes": [
-    {"container": "/crafty/backups"},
-    {"container": "/crafty/logs"},
-    {"container": "/crafty/servers"},
-    {"container": "/crafty/app/config"},
-    {"container": "/crafty/import"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.5.5"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

@@ -11,22 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png",
-      "image": "portainer/portainer-ce:2.34.0-alpine",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/portainer/docker-compose.yml"
-      },
-      "ports": [    "8000:8000",    "9000:9000",    "9443:9443"],
-      "volumes": [
-    {"container": "/data"},
-    {"container": "/var/run/docker.sock"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.34.0-alpine"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

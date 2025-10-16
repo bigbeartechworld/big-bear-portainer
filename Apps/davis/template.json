@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/davis/logo.png",
-      "image": "ghcr.io/tchapi/davis-standalone:5.2.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/davis/docker-compose.yml"
       },
       "env": [
@@ -38,18 +37,7 @@
     {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "davis"},
     {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "bigbear"},
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "0c9d2acc-d4f3-423c-8361-86f35cdd3eb2"}
-      ],
-      "ports": [    "9000:9000",    "8025:8025",    "1025:1025"],
-      "volumes": [
-    {"container": "/data"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "5.2.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

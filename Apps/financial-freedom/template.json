@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/financial-freedom/logo.png",
-      "image": "serversideup/financial-freedom:v0.2.0-alpha1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/financial-freedom/docker-compose.yml"
       },
       "env": [
@@ -60,19 +59,7 @@
     {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "bigbear"},
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "cd876479-f30b-43f2-8714-e52e040c657a"},
     {"name": "REMOTE_SQL", "label": "REMOTE_SQL", "description": "Environment variable for REMOTE_SQL", "default": ""}
-      ],
-      "ports": [    "8080:80",    "8443:443"],
-      "volumes": [
-    {"container": "/var/www/html/storage/logs"},
-    {"container": "/var/www/html/storage/framework/sessions"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "v0.2.0-alpha1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

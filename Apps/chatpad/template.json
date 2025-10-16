@@ -11,18 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/chatpad/logo.jpeg",
-      "image": "ghcr.io/deiucanta/chatpad:f45cd53bc410412610c1ba1cbd84cd137d8e167d",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/chatpad/docker-compose.yml"
-      },
-      "ports": [    "8080:80"],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "f45cd53bc410412610c1ba1cbd84cd137d8e167d"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

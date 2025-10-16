@@ -11,25 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/komga.png",
-      "image": "ghcr.io/gotson/komga:1.23.5",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/komga/docker-compose.yml"
       },
       "env": [
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
-      ],
-      "ports": [    "25600:25600"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.23.5"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

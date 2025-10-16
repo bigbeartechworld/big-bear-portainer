@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/firefox.png",
-      "image": "jlesage/firefox:v25.09.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/jlesage-firefox/docker-compose.yml"
       },
       "env": [
     {"name": "VNC_PASSWORD", "label": "VNC_PASSWORD", "description": "Environment variable for VNC_PASSWORD", "default": "casaos"},
     {"name": "FF_OPEN_URL", "label": "FF_OPEN_URL", "description": "Environment variable for FF_OPEN_URL", "default": "https://community.bigbeartechworld.com/"}
-      ],
-      "ports": [    "5800:5800"],
-      "volumes": [
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "25.09.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

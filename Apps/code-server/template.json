@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/coder.png",
-      "image": "linuxserver/code-server:4.104.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/code-server/docker-compose.yml"
       },
       "env": [
@@ -23,18 +22,7 @@
     {"name": "PASSWORD", "label": "PASSWORD", "description": "Environment variable for PASSWORD", "default": "my_password"},
     {"name": "SUDO_PASSWORD", "label": "SUDO_PASSWORD", "description": "Environment variable for SUDO_PASSWORD", "default": "sudo_my_password"},
     {"name": "DEFAULT_WORKSPACE", "label": "DEFAULT_WORKSPACE", "description": "Environment variable for DEFAULT_WORKSPACE", "default": "/config/workspace"}
-      ],
-      "ports": [    "8080:8443"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/projects"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.104.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

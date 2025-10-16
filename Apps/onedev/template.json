@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/onedev.png",
-      "image": "1dev/server:13.0.8",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/onedev/docker-compose.yml"
       },
       "env": [
@@ -29,19 +28,7 @@
     {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbear"},
     {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "eea2dad6-2203-45eb-8908-e8ba4d1e7f92"},
     {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "onedev"}
-      ],
-      "ports": [    "6610:6610",    "6611:6611"],
-      "volumes": [
-    {"container": "/opt/onedev"},
-    {"container": "/var/run/docker.sock"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "13.0.8"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

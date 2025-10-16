@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/healthchecks.png",
-      "image": "linuxserver/healthchecks:3.11.20250828",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/healthchecks/docker-compose.yml"
       },
       "env": [
@@ -39,17 +38,7 @@
     {"name": "RP_ID", "label": "RP_ID", "description": "Environment variable for RP_ID", "default": ""},
     {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Environment variable for SECRET_KEY", "default": "b2ea4094-c950-4890-b85f-301d8a777af2"},
     {"name": "SITE_LOGO_URL", "label": "SITE_LOGO_URL", "description": "Environment variable for SITE_LOGO_URL", "default": ""}
-      ],
-      "ports": [    "8000:8000",    "2525:2525"],
-      "volumes": [
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "3.11.20250828"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

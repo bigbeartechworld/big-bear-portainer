@@ -11,28 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/lyrionmusicserver/logo.png",
-      "image": "lmscommunity/lyrionmusicserver:9.1.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/lyrionmusicserver/docker-compose.yml"
       },
       "env": [
     {"name": "HTTP_PORT", "label": "HTTP_PORT", "description": "Environment variable for HTTP_PORT", "default": "9000"}
-      ],
-      "ports": [    "9000:9000/tcp",    "9090:9090/tcp",    "3483:3483/tcp",    "3483:3483/udp"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/music"},
-    {"container": "/playlist"},
-    {"container": "/etc/localtime"},
-    {"container": "/etc/timezone"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "9.1.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

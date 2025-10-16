@@ -11,21 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/Piero24/GemDigest/.github/images/casOS_logo.png",
-      "image": "piero24/gemdigest:1.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/GemDigest/docker-compose.yml"
-      },
-      "ports": [    "3333:8080"],
-      "volumes": [
-    {"container": "/gem_digest_bot/extra_configs"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearCommunity"},
-        {"name": "version", "value": "1.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

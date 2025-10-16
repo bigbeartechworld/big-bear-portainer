@@ -11,21 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bluegoosemedia/composetoolbox@498d1527dcf9cc6422300216df6244ea79ae3630/public/favicon.png",
-      "image": "ghcr.io/bluegoosemedia/composetoolbox:latest",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/composetoolbox/docker-compose.yml"
-      },
-      "ports": [    "3002:3000"],
-      "volumes": [
-    {"container": "/app/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "latest"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

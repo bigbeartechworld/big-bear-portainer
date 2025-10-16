@@ -11,26 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/syncthing.png",
-      "image": "syncthing/syncthing:2.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/syncthing/docker-compose.yml"
       },
       "env": [
     {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
     {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"}
-      ],
-      "ports": [    "8384:8384",    "22000:22000/tcp",    "22000:22000/udp",    "21027:21027/udp"],
-      "volumes": [
-    {"container": "/var/syncthing"},
-    {"container": "/media/data/syncthing"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

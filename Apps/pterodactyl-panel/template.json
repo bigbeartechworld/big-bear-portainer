@@ -11,25 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/pterodactyl.png",
-      "image": "ghcr.io/pterodactyl/panel:v1.11.11",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/pterodactyl-panel/docker-compose.yml"
-      },
-      "ports": [    "1180:80",    "11443:443"],
-      "volumes": [
-    {"container": "/app/var/"},
-    {"container": "/etc/nginx/http.d/"},
-    {"container": "/etc/letsencrypt/"},
-    {"container": "/app/storage/logs"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.11.11"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

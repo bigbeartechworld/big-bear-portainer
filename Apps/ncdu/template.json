@@ -11,28 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/ncdu/logo.png",
-      "image": "bigbeartechworld/big-bear-ncdu:0.0.4",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ncdu/docker-compose.yml"
       },
       "env": [
     {"name": "NCDU_PATH", "label": "NCDU_PATH", "description": "Environment variable for NCDU_PATH", "default": "/"}
-      ],
-      "ports": [    "7681:7681"],
-      "volumes": [
-    {"container": "/proc"},
-    {"container": "/sys"},
-    {"container": "/dev"},
-    {"container": "/etc/localtime"},
-    {"container": "/casaos"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.0.4"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

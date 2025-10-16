@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
-      "image": "ghcr.io/imagegenius/immich:2.0.0-alpine",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/immich-aio-alpine/docker-compose.yml"
       },
       "env": [
@@ -31,19 +30,7 @@
     {"name": "MACHINE_LEARNING_GPU_ACCELERATION", "label": "MACHINE_LEARNING_GPU_ACCELERATION", "description": "Environment variable for MACHINE_LEARNING_GPU_ACCELERATION", "default": ""},
     {"name": "MACHINE_LEARNING_WORKERS", "label": "MACHINE_LEARNING_WORKERS", "description": "Environment variable for MACHINE_LEARNING_WORKERS", "default": "1"},
     {"name": "MACHINE_LEARNING_WORKER_TIMEOUT", "label": "MACHINE_LEARNING_WORKER_TIMEOUT", "description": "Environment variable for MACHINE_LEARNING_WORKER_TIMEOUT", "default": "120"}
-      ],
-      "ports": [    "2283:8080"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/usr/src/app/photos"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.0.0-alpine"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

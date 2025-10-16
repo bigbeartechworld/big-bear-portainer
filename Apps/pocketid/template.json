@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://pocket-id.org/img/logo.png",
-      "image": "ghcr.io/pocket-id/pocket-id:v1.13",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/pocketid/docker-compose.yml"
       },
       "env": [
@@ -22,13 +21,7 @@
     {"name": "MAXMIND_LICENSE_KEY", "label": "MAXMIND_LICENSE_KEY", "description": "Environment variable for MAXMIND_LICENSE_KEY", "default": ""},
     {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
     {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "techieanant"},
-        {"name": "version", "value": "1.13"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

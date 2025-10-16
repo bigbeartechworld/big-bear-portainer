@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/stirling-pdf/logo.png",
-      "image": "stirlingtools/stirling-pdf:1.4.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/stirling-pdf/docker-compose.yml"
       },
       "env": [
@@ -25,18 +24,7 @@
     {"name": "DEFAULT_LOCALE", "label": "DEFAULT_LOCALE", "description": "Environment variable for DEFAULT_LOCALE", "default": "en-US"},
     {"name": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "label": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "description": "Environment variable for INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "default": "false"},
     {"name": "LANGS", "label": "LANGS", "description": "Environment variable for LANGS", "default": "en_US"}
-      ],
-      "ports": [    "8080:8080"],
-      "volumes": [
-    {"container": "/usr/share/tessdata"},
-    {"container": "/configs"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.4.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

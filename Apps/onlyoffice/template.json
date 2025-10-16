@@ -11,26 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/onlyoffice.png",
-      "image": "onlyoffice/documentserver:9.0.4",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/onlyoffice/docker-compose.yml"
-      },
-      "ports": [    "7400:80"],
-      "volumes": [
-    {"container": "/var/log/onlyoffice"},
-    {"container": "/var/www/onlyoffice/Data"},
-    {"container": "/var/lib/onlyoffice"},
-    {"container": "/var/lib/rabbitmq"},
-    {"container": "/var/lib/redis"},
-    {"container": "/var/lib/postgresql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "9.0.4"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/owncloud.png",
-      "image": "owncloud/server:10.15.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/owncloud/docker-compose.yml"
       },
       "env": [
@@ -34,19 +33,7 @@
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "f01914eb-2be3-4164-a57c-08e6518f313a"},
     {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "big_bear_owncloud"},
     {"name": "MARIADB_AUTO_UPGRADE", "label": "MARIADB_AUTO_UPGRADE", "description": "Environment variable for MARIADB_AUTO_UPGRADE", "default": "1"}
-      ],
-      "ports": [    "8080:8080"],
-      "volumes": [
-    {"container": "/mnt/data"},
-    {"container": "/var/lib/mysql"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "10.15.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

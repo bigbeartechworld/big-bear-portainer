@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/tailscale.png",
-      "image": "tailscale/tailscale:v1.88.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/tailscale/docker-compose.yml"
       },
       "env": [
@@ -26,18 +25,7 @@
     {"name": "TS_EXTRA_ARGS", "label": "TS_EXTRA_ARGS", "description": "Environment variable for TS_EXTRA_ARGS", "default": ""},
     {"name": "TS_USERSPACE", "label": "TS_USERSPACE", "description": "Environment variable for TS_USERSPACE", "default": "true"},
     {"name": "TS_STATE_DIR", "label": "TS_STATE_DIR", "description": "Environment variable for TS_STATE_DIR", "default": "/var/lib/tailscale"}
-      ],
-      "volumes": [
-    {"container": "/var/lib/tailscale"},
-    {"container": "/config"},
-    {"container": "/dev/net/tun"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.88.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

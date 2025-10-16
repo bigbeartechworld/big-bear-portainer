@@ -11,22 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/ghost.png",
-      "image": "ghost:6.3.1-alpine",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ghost/docker-compose.yml"
-      },
-      "ports": [    "2368:2368"],
-      "volumes": [
-    {"container": "/var/lib/ghost/content"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "6.3.1-alpine"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

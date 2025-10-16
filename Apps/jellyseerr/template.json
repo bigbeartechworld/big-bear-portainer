@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellyseerr.png",
-      "image": "fallenbagel/jellyseerr:2.7.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/jellyseerr/docker-compose.yml"
       },
       "env": [
     {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Environment variable for LOG_LEVEL", "default": "debug"},
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "$TZ"}
-      ],
-      "ports": [    "5055:5055"],
-      "volumes": [
-    {"container": "/app/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearCommunity"},
-        {"name": "version", "value": "2.7.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

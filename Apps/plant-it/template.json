@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/plant-it/logo.png",
-      "image": "msdeluise/plant-it-server:0.10.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/plant-it/docker-compose.yml"
       },
       "env": [
@@ -38,19 +37,7 @@
     {"name": "CERTIFICATE_PATH", "label": "CERTIFICATE_PATH", "description": "Environment variable for CERTIFICATE_PATH", "default": "/certificates/"},
     {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "plantit"},
     {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "9c75c563-b549-40e6-a0d2-360cf9a962ea"}
-      ],
-      "ports": [    "8080:8080",    "3000:3000",    "3306:3306"],
-      "volumes": [
-    {"container": "/upload-dir"},
-    {"container": "/certificates"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.10.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

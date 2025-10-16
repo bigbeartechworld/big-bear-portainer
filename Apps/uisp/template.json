@@ -11,24 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-icons/Apps/uisp/logo.png",
-      "image": "nico640/docker-unms:2.4.155.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/uisp/docker-compose.yml"
       },
       "env": [
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
-      ],
-      "ports": [    "8080:80",    "10443:443"],
-      "volumes": [
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.4.155.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

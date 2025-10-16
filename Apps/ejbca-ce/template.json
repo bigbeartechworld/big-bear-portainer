@@ -11,24 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/Keyfactor/ejbca-ce/.github/images/community-ejbca-icon.png",
-      "image": "keyfactor/ejbca-ce:9.1.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ejbca-ce/docker-compose.yml"
       },
       "env": [
     {"name": "TLS_SETUP_ENABLED", "label": "TLS_SETUP_ENABLED", "description": "Environment variable for TLS_SETUP_ENABLED", "default": "simple"}
-      ],
-      "ports": [    "8080:8080",    "8443:8443"],
-      "volumes": [
-    {"container": "/mnt/persistent"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearCommunity"},
-        {"name": "version", "value": "9.1.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

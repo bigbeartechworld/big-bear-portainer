@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/komga.png",
-      "image": "sndxr/komf:1.6.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/komf/docker-compose.yml"
       },
       "env": [
@@ -23,17 +22,7 @@
     {"name": "KOMF_KAVITA_BASE_URI", "label": "KOMF_KAVITA_BASE_URI", "description": "Environment variable for KOMF_KAVITA_BASE_URI", "default": "http://kavita:5000"},
     {"name": "KOMF_KAVITA_API_KEY", "label": "KOMF_KAVITA_API_KEY", "description": "Environment variable for KOMF_KAVITA_API_KEY", "default": "cd1edcc1-6010-41a8-a82b-73f501dc2760"},
     {"name": "KOMF_LOG_LEVEL", "label": "KOMF_LOG_LEVEL", "description": "Environment variable for KOMF_LOG_LEVEL", "default": "INFO"}
-      ],
-      "ports": [    "8085:8085"],
-      "volumes": [
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.6.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

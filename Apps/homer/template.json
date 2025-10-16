@@ -11,24 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homer.png",
-      "image": "b4bz/homer:v25.10.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/homer/docker-compose.yml"
       },
       "env": [
     {"name": "INIT_ASSETS", "label": "INIT_ASSETS", "description": "Environment variable for INIT_ASSETS", "default": "1"}
-      ],
-      "ports": [    "8080:8080"],
-      "volumes": [
-    {"container": "/www/assets"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "25.10.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

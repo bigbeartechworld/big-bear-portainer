@@ -11,21 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/appsmithorg/appsmith/static/logo.png",
-      "image": "appsmith/appsmith-ce:v1.73.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/appsmith/docker-compose.yml"
-      },
-      "ports": [    "1080:80",    "10443:443"],
-      "volumes": [
-    {"container": "/appsmith-stacks"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.73.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

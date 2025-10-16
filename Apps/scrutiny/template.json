@@ -11,23 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/scrutiny.png",
-      "image": "ghcr.io/analogj/scrutiny:master-omnibus",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/scrutiny/docker-compose.yml"
-      },
-      "ports": [    "38080:8080",    "38086:8086"],
-      "volumes": [
-    {"container": "/opt/scrutiny/config"},
-    {"container": "/opt/scrutiny/influxdb"},
-    {"container": "/run/udev"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "master-omnibus"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

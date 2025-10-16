@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/planka.png",
-      "image": "ghcr.io/plankanban/planka:1.26.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/planka/docker-compose.yml"
       },
       "env": [
@@ -26,20 +25,7 @@
     {"name": "DEFAULT_ADMIN_USERNAME", "label": "DEFAULT_ADMIN_USERNAME", "description": "Environment variable for DEFAULT_ADMIN_USERNAME", "default": "demo"},
     {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "planka"},
     {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Environment variable for POSTGRES_HOST_AUTH_METHOD", "default": "trust"}
-      ],
-      "ports": [    "3000:1337"],
-      "volumes": [
-    {"container": "/app/public/user-avatars"},
-    {"container": "/app/public/project-background-images"},
-    {"container": "/app/private/attachments"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.26.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }
