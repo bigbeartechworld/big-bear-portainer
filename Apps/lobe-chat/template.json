@@ -11,10 +11,6 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/lobe-chat.png",
-<<<<<<< Updated upstream
-      "image": "lobehub/lobe-chat:1.137.0",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/lobe-chat/docker-compose.yml"
@@ -24,18 +20,7 @@
     {"name": "OPENAI_PROXY_URL", "label": "OPENAI_PROXY_URL", "description": "Environment variable for OPENAI_PROXY_URL", "default": ""},
     {"name": "CUSTOM_MODELS", "label": "CUSTOM_MODELS", "description": "Environment variable for CUSTOM_MODELS", "default": ""},
     {"name": "ACCESS_CODE", "label": "ACCESS_CODE", "description": "Environment variable for ACCESS_CODE", "default": ""}
-<<<<<<< Updated upstream
-      ],
-      "ports": [    "3210:3210"],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.137.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       ]
->>>>>>> Stashed changes
     }
   ]
 }

@@ -367,28 +367,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/changedetection.png",
-<<<<<<< Updated upstream
-      "image": "ghcr.io/dgtlmoon/changedetection.io:0.50.25",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/changedetection/docker-compose.yml"
-<<<<<<< Updated upstream
-      },
-      "ports": [    "5000:5000"],
-      "volumes": [
-    {"container": "/datastore"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.50.25"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       }
->>>>>>> Stashed changes
     },
     {
       "id": 21,
@@ -786,28 +768,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/dockpeek.png",
-<<<<<<< Updated upstream
-      "image": "ghcr.io/dockpeek/dockpeek:v1.6.7",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/dockpeek/docker-compose.yml"
-<<<<<<< Updated upstream
-      },
-      "ports": [    "3420:8000"],
-      "volumes": [
-    {"container": "/var/run/docker.sock"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.6.7"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       }
->>>>>>> Stashed changes
     },
     {
       "id": 40,
@@ -1407,34 +1371,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homarr.png",
-<<<<<<< Updated upstream
-      "image": "ghcr.io/homarr-labs/homarr:v1.40.0",
-      "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
-=======
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
->>>>>>> Stashed changes
         "stackfile": "Apps/homarr-v1/docker-compose.yml"
       },
       "env": [
     {"name": "SECRET_ENCRYPTION_KEY", "label": "SECRET_ENCRYPTION_KEY", "description": "Environment variable for SECRET_ENCRYPTION_KEY", "default": ""}
-<<<<<<< Updated upstream
-      ],
-      "ports": [    "7575:7575"],
-      "volumes": [
-    {"container": "/var/run/docker.sock"},
-    {"container": "/appdata"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "v1.40.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       ]
->>>>>>> Stashed changes
     },
     {
       "id": 70,
@@ -1527,30 +1470,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
-<<<<<<< Updated upstream
-      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/immich/docker-compose.yml"
-<<<<<<< Updated upstream
-      },
-      "ports": [    "2283:2283"],
-      "volumes": [
-    {"container": "/usr/src/app/upload"},
-    {"container": "/cache"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.1.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       }
->>>>>>> Stashed changes
     },
     {
       "id": 76,
@@ -1608,29 +1531,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
-<<<<<<< Updated upstream
-      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/immich-without-machine-learning/docker-compose.yml"
-<<<<<<< Updated upstream
-      },
-      "ports": [    "2283:2283"],
-      "volumes": [
-    {"container": "/usr/src/app/upload"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.1.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       }
->>>>>>> Stashed changes
     },
     {
       "id": 79,
@@ -2135,28 +2039,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/matterbridge.png",
-<<<<<<< Updated upstream
-      "image": "luligu/matterbridge:3.3.2",
-      "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
-        "stackfile": "Apps/matterbridge/docker-compose.yml"
-      },
-      "volumes": [
-    {"container": "/root/Matterbridge"},
-    {"container": "/root/.matterbridge"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "3.3.2"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/matterbridge/docker-compose.yml"
       }
->>>>>>> Stashed changes
     },
     {
       "id": 103,
@@ -3494,10 +3380,6 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/romm.png",
-<<<<<<< Updated upstream
-      "image": "rommapp/romm:4.3.2",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/romm/docker-compose.yml"
@@ -3524,27 +3406,7 @@
     {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "romm"},
     {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "romm-user"},
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "casaos"}
-<<<<<<< Updated upstream
-      ],
-      "ports": [    "1080:8080",    "3306:3306"],
-      "volumes": [
-    {"container": "/romm/resources"},
-    {"container": "/redis-data"},
-    {"container": "/romm/library"},
-    {"container": "/romm/assets"},
-    {"container": "/romm/config"},
-    {"container": "/romm/logs"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.3.2"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       ]
->>>>>>> Stashed changes
     },
     {
       "id": 172,
