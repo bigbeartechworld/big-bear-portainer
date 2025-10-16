@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 39,
+      "type": 2,
+      "title": "Dockpeek",
+      "name": "dockpeek",
+      "description": "A lightweight, self-hosted Docker dashboard that provides quick access to all running containers and their exposed ports with one-click access to web apps.",
+      "note": "Docker Dashboard",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/dockpeek.png",
+      "image": "ghcr.io/dockpeek/dockpeek:v1.6.7",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/dockpeek/docker-compose.yml"
+      },
+      "ports": [    "3420:8000"],
+      "volumes": [
+    {"container": "/var/run/docker.sock"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.6.7"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

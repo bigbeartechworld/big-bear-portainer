@@ -1,0 +1,48 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 200,
+      "type": 2,
+      "title": "Wallabag",
+      "name": "wallabag",
+      "description": "Wallabag is a self-hosted application for saving web pages. Unlike other services, Wallabag is free and open source.",
+      "note": "Save and classify articles. Read them later. Freely.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/wallabag.png",
+      "image": "wallabag/wallabag:2.6.14",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/wallabag/docker-compose.yml"
+      },
+      "env": [
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "777134a0-4480-49f3-b00c-29db42c6d136"},
+    {"name": "SYMFONY__ENV__DATABASE_DRIVER", "label": "SYMFONY__ENV__DATABASE_DRIVER", "description": "Environment variable for SYMFONY__ENV__DATABASE_DRIVER", "default": "pdo_mysql"},
+    {"name": "SYMFONY__ENV__DATABASE_HOST", "label": "SYMFONY__ENV__DATABASE_HOST", "description": "Environment variable for SYMFONY__ENV__DATABASE_HOST", "default": "big-bear-wallabag-db"},
+    {"name": "SYMFONY__ENV__DATABASE_PORT", "label": "SYMFONY__ENV__DATABASE_PORT", "description": "Environment variable for SYMFONY__ENV__DATABASE_PORT", "default": "3306"},
+    {"name": "SYMFONY__ENV__DATABASE_NAME", "label": "SYMFONY__ENV__DATABASE_NAME", "description": "Environment variable for SYMFONY__ENV__DATABASE_NAME", "default": "wallabag"},
+    {"name": "SYMFONY__ENV__DATABASE_USER", "label": "SYMFONY__ENV__DATABASE_USER", "description": "Environment variable for SYMFONY__ENV__DATABASE_USER", "default": "big_bear_wallabag"},
+    {"name": "SYMFONY__ENV__DATABASE_PASSWORD", "label": "SYMFONY__ENV__DATABASE_PASSWORD", "description": "Environment variable for SYMFONY__ENV__DATABASE_PASSWORD", "default": "fbe433e9-e3a8-432a-a382-d132596a76fc"},
+    {"name": "SYMFONY__ENV__DATABASE_CHARSET", "label": "SYMFONY__ENV__DATABASE_CHARSET", "description": "Environment variable for SYMFONY__ENV__DATABASE_CHARSET", "default": "utf8mb4"},
+    {"name": "SYMFONY__ENV__DATABASE_TABLE_PREFIX", "label": "SYMFONY__ENV__DATABASE_TABLE_PREFIX", "description": "Environment variable for SYMFONY__ENV__DATABASE_TABLE_PREFIX", "default": "big_bear_wallabag_"},
+    {"name": "SYMFONY__ENV__MAILER_DSN", "label": "SYMFONY__ENV__MAILER_DSN", "description": "Environment variable for SYMFONY__ENV__MAILER_DSN", "default": "smtp://127.0.0.1"},
+    {"name": "SYMFONY__ENV__FROM_EMAIL", "label": "SYMFONY__ENV__FROM_EMAIL", "description": "Environment variable for SYMFONY__ENV__FROM_EMAIL", "default": "wallabag@example.com"},
+    {"name": "SYMFONY__ENV__DOMAIN_NAME", "label": "SYMFONY__ENV__DOMAIN_NAME", "description": "Environment variable for SYMFONY__ENV__DOMAIN_NAME", "default": "http://[IP]:8080"},
+    {"name": "SYMFONY__ENV__SERVER_NAME", "label": "SYMFONY__ENV__SERVER_NAME", "description": "Environment variable for SYMFONY__ENV__SERVER_NAME", "default": "Big Bear Wallabag"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "777134a0-4480-49f3-b00c-29db42c6d136"}
+      ],
+      "ports": [    "8080:80"],
+      "volumes": [
+    {"container": "/var/www/wallabag/web/assets/images"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "Wallabag Team"},
+        {"name": "version", "value": "2.6.14"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

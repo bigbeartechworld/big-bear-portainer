@@ -1,0 +1,56 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 153,
+      "type": 2,
+      "title": "Plant-it",
+      "name": "plant-it",
+      "description": "Plant-it is a self-hosted gardening companion app. Useful for keeping track of plant care, receiving notifications about when to water plants, uploading plant images, and more.",
+      "note": "Self-hosted, open source gardening companion app",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/plant-it/logo.png",
+      "image": "msdeluise/plant-it-server:0.10.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/plant-it/docker-compose.yml"
+      },
+      "env": [
+    {"name": "MYSQL_HOST", "label": "MYSQL_HOST", "description": "Environment variable for MYSQL_HOST", "default": "big-bear-plant-it-db"},
+    {"name": "MYSQL_PORT", "label": "MYSQL_PORT", "description": "Environment variable for MYSQL_PORT", "default": "3306"},
+    {"name": "MYSQL_USERNAME", "label": "MYSQL_USERNAME", "description": "Environment variable for MYSQL_USERNAME", "default": "root"},
+    {"name": "MYSQL_PSW", "label": "MYSQL_PSW", "description": "Environment variable for MYSQL_PSW", "default": "9c75c563-b549-40e6-a0d2-360cf9a962ea"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "plantit"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "9c75c563-b549-40e6-a0d2-360cf9a962ea"},
+    {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Environment variable for JWT_SECRET", "default": "putTheSecretHere"},
+    {"name": "JWT_EXP", "label": "JWT_EXP", "description": "Environment variable for JWT_EXP", "default": "1"},
+    {"name": "USERS_LIMIT", "label": "USERS_LIMIT", "description": "Environment variable for USERS_LIMIT", "default": "-1"},
+    {"name": "UPLOAD_DIR", "label": "UPLOAD_DIR", "description": "Environment variable for UPLOAD_DIR", "default": "/upload-dir"},
+    {"name": "API_PORT", "label": "API_PORT", "description": "Environment variable for API_PORT", "default": "8080"},
+    {"name": "TREFLE_KEY", "label": "TREFLE_KEY", "description": "Environment variable for TREFLE_KEY", "default": ""},
+    {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Environment variable for LOG_LEVEL", "default": "DEBUG"},
+    {"name": "ALLOWED_ORIGINS", "label": "ALLOWED_ORIGINS", "description": "Environment variable for ALLOWED_ORIGINS", "default": "*"},
+    {"name": "CACHE_TTL", "label": "CACHE_TTL", "description": "Environment variable for CACHE_TTL", "default": "86400"},
+    {"name": "CACHE_HOST", "label": "CACHE_HOST", "description": "Environment variable for CACHE_HOST", "default": "big-bear-plant-it-cache"},
+    {"name": "CACHE_PORT", "label": "CACHE_PORT", "description": "Environment variable for CACHE_PORT", "default": "6379"},
+    {"name": "SSL_ENABLED", "label": "SSL_ENABLED", "description": "Environment variable for SSL_ENABLED", "default": "false"},
+    {"name": "CERTIFICATE_PATH", "label": "CERTIFICATE_PATH", "description": "Environment variable for CERTIFICATE_PATH", "default": "/certificates/"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "plantit"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "9c75c563-b549-40e6-a0d2-360cf9a962ea"}
+      ],
+      "ports": [    "8080:8080",    "3000:3000",    "3306:3306"],
+      "volumes": [
+    {"container": "/upload-dir"},
+    {"container": "/certificates"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.10.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

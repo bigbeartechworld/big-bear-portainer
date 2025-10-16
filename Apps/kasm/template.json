@@ -1,0 +1,37 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 87,
+      "type": 2,
+      "title": "Kasm",
+      "name": "kasm",
+      "description": "The Container Streaming Platform - Streaming containerized apps and desktops to end-users. The Workspaces platform provides enterprise-class orchestration, data loss prevention, and web streaming technology to enable the delivery of containerized workloads to your browser.",
+      "note": "Kasm",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/44181855?s=280&v=4",
+      "image": "linuxserver/kasm:1.120.20221218",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/kasm/docker-compose.yml"
+      },
+      "env": [
+    {"name": "KASM_PORT", "label": "KASM_PORT", "description": "Environment variable for KASM_PORT", "default": "443"}
+      ],
+      "ports": [    "3000:3000",    "443:443"],
+      "volumes": [
+    {"container": "/opt"},
+    {"container": "/profiles"},
+    {"container": "/dev/input"},
+    {"container": "/run/udev/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearCommunity"},
+        {"name": "version", "value": "1.120.20221218"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

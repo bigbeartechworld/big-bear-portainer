@@ -1,0 +1,27 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 52,
+      "type": 2,
+      "title": "Flame",
+      "name": "flame",
+      "description": "Flame is a self-hosted startpage for your server. Its design is heavily inspired by SUI. Flame is user-friendly and easy to set up. With its built-in editors, users can quickly establish their own application hub without any file editing.",
+      "note": "Flame is a self-hosted startpage for your server. Manage your apps and bookmarks effortlessly with built-in editors.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/flame.png",
+      "image": "pawelmalak/flame:multiarch2.3.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/flame/docker-compose.yml"
+      },
+      "labels": [
+        {"name": "maintainer", "value": "BigBearCommunity"},
+        {"name": "version", "value": "multiarch2.3.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 94,
+      "type": 2,
+      "title": "Libredesk",
+      "name": "libredesk",
+      "description": "Open source, self-hosted customer support desk. Single binary app.",
+      "note": "Open source, self-hosted customer support desk. Single binary app.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "",
+      "image": "libredesk/libredesk:v0.7.4-alpha",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/libredesk/docker-compose.yml"
+      },
+      "env": [
+    {"name": "LIBREDESK_SYSTEM_USER_PASSWORD", "label": "LIBREDESK_SYSTEM_USER_PASSWORD", "description": "Environment variable for LIBREDESK_SYSTEM_USER_PASSWORD", "default": "c6b51a4e-ab9d-4f4f-933e-e96ed3570c1A"}
+      ],
+      "ports": [    "9000:9000",    "5432:5432",    "6379:6379"],
+      "volumes": [
+    {"container": "/libredesk/uploads"},
+    {"container": "/libredesk/config"},
+    {"container": "/var/lib/postgresql/data"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.7.4-alpha"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

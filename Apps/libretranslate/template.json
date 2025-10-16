@@ -1,0 +1,38 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 95,
+      "type": 2,
+      "title": "LibreTranslate",
+      "name": "libretranslate",
+      "description": "Free and Open Source Machine Translation API, entirely self-hosted. Unlike other APIs, it doesn't rely on proprietary providers such as Google or Azure to perform translations. Instead, its translation engine is powered by the open source Argos Translate library.",
+      "note": "Free and Open Source Machine Translation API. 100% self-hosted, offline capable and easy to setup.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/libretranslate/logo.png",
+      "image": "libretranslate/libretranslate:v1.7.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/libretranslate/docker-compose.yml"
+      },
+      "env": [
+    {"name": "LT_API_KEYS", "label": "LT_API_KEYS", "description": "Environment variable for LT_API_KEYS", "default": "true"},
+    {"name": "LT_API_KEYS_DB_PATH", "label": "LT_API_KEYS_DB_PATH", "description": "Environment variable for LT_API_KEYS_DB_PATH", "default": "/app/db/api_keys.db"},
+    {"name": "LT_UPDATE_MODELS", "label": "LT_UPDATE_MODELS", "description": "Environment variable for LT_UPDATE_MODELS", "default": "true"},
+    {"name": "LT_LOAD_ONLY", "label": "LT_LOAD_ONLY", "description": "Environment variable for LT_LOAD_ONLY", "default": "en,fr,es,de,it,pt,ru,ja,zh"}
+      ],
+      "ports": [    "5000:5000"],
+      "volumes": [
+    {"container": "/app/db"},
+    {"container": "/home/libretranslate/.local"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.7.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

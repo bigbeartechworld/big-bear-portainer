@@ -1,0 +1,28 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 45,
+      "type": 2,
+      "title": "Excalidraw",
+      "name": "excalidraw",
+      "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "note": "Virtual whiteboard for sketching hand-drawn like diagrams",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/excalidraw/logo.png",
+      "image": "excalidraw/excalidraw:latest",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/excalidraw/docker-compose.yml"
+      },
+      "ports": [    "8000:80"],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "latest"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

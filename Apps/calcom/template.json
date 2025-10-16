@@ -1,0 +1,59 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 19,
+      "type": 2,
+      "title": "Cal.com",
+      "name": "calcom",
+      "description": "The open source Calendly successor. You are in charge of your own data, workflow, and appearance.\nCalendly and other scheduling tools are awesome. It made our lives massively easier. We're using it for business meetings, seminars, yoga classes, and even calls with our families. However, most tools are very limited in terms of control and customization.\n    That's where Cal.com comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data.",
+      "note": "Cal.com",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/calcom/logo.jpg",
+      "image": "calcom/cal.com:v5.7.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/calcom/docker-compose.yml"
+      },
+      "env": [
+    {"name": "DATABASE_HOST", "label": "DATABASE_HOST", "description": "Environment variable for DATABASE_HOST", "default": "big-bear-calcom-db"},
+    {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Environment variable for DATABASE_URL", "default": "postgresql://bigbear:9e45944b-37bb-41f7-aa6f-b74195fb58ec@big-bear-calcom-db/bigbear_calcom"},
+    {"name": "DATABASE_DIRECT_URL", "label": "DATABASE_DIRECT_URL", "description": "Environment variable for DATABASE_DIRECT_URL", "default": "postgresql://bigbear:9e45944b-37bb-41f7-aa6f-b74195fb58ec@big-bear-calcom-db/bigbear_calcom"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbear"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "9e45944b-37bb-41f7-aa6f-b74195fb58ec"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "bigbear_calcom"},
+    {"name": "LICENSE", "label": "LICENSE", "description": "Environment variable for LICENSE", "default": "agree"},
+    {"name": "NEXT_PUBLIC_LICENSE_CONSENT", "label": "NEXT_PUBLIC_LICENSE_CONSENT", "description": "Environment variable for NEXT_PUBLIC_LICENSE_CONSENT", "default": "agree"},
+    {"name": "NEXT_PUBLIC_WEBAPP_URL", "label": "NEXT_PUBLIC_WEBAPP_URL", "description": "Environment variable for NEXT_PUBLIC_WEBAPP_URL", "default": "http://localhost:3000"},
+    {"name": "NEXTAUTH_SECRET", "label": "NEXTAUTH_SECRET", "description": "Environment variable for NEXTAUTH_SECRET", "default": "a5446147-f55c-4e29-98e7-e7638f223b9c"},
+    {"name": "CALENDSO_ENCRYPTION_KEY", "label": "CALENDSO_ENCRYPTION_KEY", "description": "Environment variable for CALENDSO_ENCRYPTION_KEY", "default": "82f83d51-5ef7-456c-8ebf-817495cd39d9"},
+    {"name": "MS_GRAPH_CLIENT_ID", "label": "MS_GRAPH_CLIENT_ID", "description": "Environment variable for MS_GRAPH_CLIENT_ID", "default": ""},
+    {"name": "MS_GRAPH_CLIENT_SECRET", "label": "MS_GRAPH_CLIENT_SECRET", "description": "Environment variable for MS_GRAPH_CLIENT_SECRET", "default": ""},
+    {"name": "ZOOM_CLIENT_ID", "label": "ZOOM_CLIENT_ID", "description": "Environment variable for ZOOM_CLIENT_ID", "default": ""},
+    {"name": "ZOOM_CLIENT_SECRET", "label": "ZOOM_CLIENT_SECRET", "description": "Environment variable for ZOOM_CLIENT_SECRET", "default": ""},
+    {"name": "GOOGLE_API_CREDENTIALS", "label": "GOOGLE_API_CREDENTIALS", "description": "Environment variable for GOOGLE_API_CREDENTIALS", "default": ""},
+    {"name": "EMAIL_FROM", "label": "EMAIL_FROM", "description": "Environment variable for EMAIL_FROM", "default": "user@example.com"},
+    {"name": "EMAIL_SERVER_HOST", "label": "EMAIL_SERVER_HOST", "description": "Environment variable for EMAIL_SERVER_HOST", "default": "mailpit"},
+    {"name": "EMAIL_SERVER_PORT", "label": "EMAIL_SERVER_PORT", "description": "Environment variable for EMAIL_SERVER_PORT", "default": "1025"},
+    {"name": "EMAIL_SERVER_PASSWORD", "label": "EMAIL_SERVER_PASSWORD", "description": "Environment variable for EMAIL_SERVER_PASSWORD", "default": ""},
+    {"name": "EMAIL_SERVER_USER", "label": "EMAIL_SERVER_USER", "description": "Environment variable for EMAIL_SERVER_USER", "default": ""},
+    {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Environment variable for NODE_ENV", "default": "production"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "9e45944b-37bb-41f7-aa6f-b74195fb58ec"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbear"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "bigbear_calcom"}
+      ],
+      "ports": [    "3000:3000",    "3001:3001"],
+      "volumes": [
+    {"container": "/config"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "5.7.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

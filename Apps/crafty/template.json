@@ -1,0 +1,38 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 30,
+      "type": 2,
+      "title": "Crafty Controller",
+      "name": "crafty",
+      "description": "Crafty 4 is the next iteration of our Minecraft Server Wrapper / Controller / Launcher.",
+      "note": "Crafty Controller",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/crafty-controller.png",
+      "image": "registry.gitlab.com/crafty-controller/crafty-4:4.5.5",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/crafty/docker-compose.yml"
+      },
+      "env": [
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+      ],
+      "ports": [    "8443:8443",    "8123:8123",    "19132:19132/udp"],
+      "volumes": [
+    {"container": "/crafty/backups"},
+    {"container": "/crafty/logs"},
+    {"container": "/crafty/servers"},
+    {"container": "/crafty/app/config"},
+    {"container": "/crafty/import"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "4.5.5"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

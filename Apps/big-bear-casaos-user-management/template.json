@@ -1,0 +1,40 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 13,
+      "type": 2,
+      "title": "Big Bear CasaOS User Management",
+      "name": "big-bear-casaos-user-management",
+      "description": "Manage users in CasaOS",
+      "note": "Manage users in CasaOS",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-docker-images/big-bear-casaos-user-management/logo.jpg",
+      "image": "bigbeartechworld/big-bear-casaos-user-management:0.1.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/big-bear-casaos-user-management/docker-compose.yml"
+      },
+      "env": [
+    {"name": "FLASK_APP", "label": "FLASK_APP", "description": "Environment variable for FLASK_APP", "default": "app.py"},
+    {"name": "FLASK_ENV", "label": "FLASK_ENV", "description": "Environment variable for FLASK_ENV", "default": "production"},
+    {"name": "ADMIN_USERNAME", "label": "ADMIN_USERNAME", "description": "Environment variable for ADMIN_USERNAME", "default": "casaos"},
+    {"name": "ADMIN_PASSWORD", "label": "ADMIN_PASSWORD", "description": "Environment variable for ADMIN_PASSWORD", "default": "casaos"}
+      ],
+      "ports": [    "5000:5000"],
+      "volumes": [
+    {"container": "/sys/fs/cgroup"},
+    {"container": "/var/lib/casaos/db"},
+    {"container": "/run/systemd/system"},
+    {"container": "/var/run/dbus/system_bus_socket"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.1.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

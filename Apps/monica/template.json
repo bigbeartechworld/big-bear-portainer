@@ -1,0 +1,43 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 108,
+      "type": 2,
+      "title": "Monica",
+      "name": "monica",
+      "description": "Monica is an open-source web application to organize and record your interactions with your loved ones. We call it a PRM, or Personal Relationship Management. Think of it as a CRM (a popular tool used by sales teams in the corporate world) for your friends or family.",
+      "note": "A Personal Relationship Management tool to help you document your social life.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/monica.png",
+      "image": "monica:4.1.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/monica/docker-compose.yml"
+      },
+      "env": [
+    {"name": "APP_KEY", "label": "APP_KEY", "description": "Environment variable for APP_KEY", "default": "80356f7073c4f7834187b25a9d32cd2a"},
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-monica-db"},
+    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "usermonica"},
+    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "passwordmonica"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"},
+    {"name": "MARIADB_RANDOM_ROOT_PASSWORD", "label": "MARIADB_RANDOM_ROOT_PASSWORD", "description": "Environment variable for MARIADB_RANDOM_ROOT_PASSWORD", "default": "true"},
+    {"name": "MARIADB_DATABASE", "label": "MARIADB_DATABASE", "description": "Environment variable for MARIADB_DATABASE", "default": "monica"},
+    {"name": "MARIADB_USER", "label": "MARIADB_USER", "description": "Environment variable for MARIADB_USER", "default": "usermonica"},
+    {"name": "MARIADB_PASSWORD", "label": "MARIADB_PASSWORD", "description": "Environment variable for MARIADB_PASSWORD", "default": "passwordmonica"}
+      ],
+      "ports": [    "8080:80"],
+      "volumes": [
+    {"container": "/var/www/html/storage"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "4.1.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

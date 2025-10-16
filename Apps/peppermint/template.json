@@ -1,0 +1,44 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 144,
+      "type": 2,
+      "title": "Peppermint",
+      "name": "peppermint",
+      "description": "Peppermint is a central hub for your help desk. A powerfully easy system for tracking, prioritising, and solving customer support tickets.",
+      "note": "peppermint",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/peppermint/logo.png",
+      "image": "pepperlabs/peppermint:latest",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/peppermint/docker-compose.yml"
+      },
+      "env": [
+    {"name": "API_URL", "label": "API_URL", "description": "Environment variable for API_URL", "default": "http://local.host:5003"},
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "db"},
+    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "casaos"},
+    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "casaos"},
+    {"name": "SECRET", "label": "SECRET", "description": "Environment variable for SECRET", "default": "peppermint4life"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "casaos"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "casaos"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "casaos"},
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"}
+      ],
+      "ports": [    "3000:3000/tcp",    "5003:5003/tcp",    "5432:5432/tcp"],
+      "volumes": [
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearCommunity"},
+        {"name": "version", "value": "latest"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

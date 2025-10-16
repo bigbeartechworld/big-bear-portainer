@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 198,
+      "type": 2,
+      "title": "Vikunja",
+      "name": "vikunja",
+      "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
+      "note": "Vikunja",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/vikunja.png",
+      "image": "vikunja/vikunja:0.24.6",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/vikunja/docker-compose.yml"
+      },
+      "ports": [    "8081:3456"],
+      "volumes": [
+    {"container": "/app/vikunja/files"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.24.6"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 128,
+      "type": 2,
+      "title": "Obsidian Livesync",
+      "name": "obsidian-livesync",
+      "description": "Self-hosted database for synchronizing Obsidian vaults.",
+      "note": "Self-hosted database for synchronizing Obsidian vaults.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/obsidian.png",
+      "image": "couchdb:3.5.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/obsidian-livesync/docker-compose.yml"
+      },
+      "env": [
+    {"name": "COUCHDB_USER", "label": "COUCHDB_USER", "description": "Environment variable for COUCHDB_USER", "default": "casaos"},
+    {"name": "COUCHDB_PASSWORD", "label": "COUCHDB_PASSWORD", "description": "Environment variable for COUCHDB_PASSWORD", "default": "casaos"}
+      ],
+      "ports": [    "5984:5984"],
+      "volumes": [
+    {"container": "/opt/couchdb/data"},
+    {"container": "/opt/couchdb/etc/local.ini"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "3.5.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

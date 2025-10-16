@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 43,
+      "type": 2,
+      "title": "Erugo",
+      "name": "erugo",
+      "description": "A powerful, self-hosted file-sharing platform built with PHP and Laravel with a Vue.js frontend. It offers secure, customizable file-transfer capabilities through an elegant user interface, giving you complete control over your data while providing a seamless experience for both senders and recipients.",
+      "note": "A powerful, self-hosted file-sharing platform built with PHP and Laravel with a Vue.js frontend.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/erugo.png",
+      "image": "wardy784/erugo:0.1.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/erugo/docker-compose.yml"
+      },
+      "ports": [    "9997:80"],
+      "volumes": [
+    {"container": "/var/www/html/storage"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.1.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

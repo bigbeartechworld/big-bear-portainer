@@ -1,0 +1,33 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 162,
+      "type": 2,
+      "title": "Poste.io",
+      "name": "poste-io",
+      "description": "Full stack mail server solution with SSL TLS support. POP3s, SMTP(s), IMAPs, RSPAMD, Clamav, Roundcube(HTTPS), SPF, DKIM with easy installation and web administration.",
+      "note": "Free version of full mail server solution. POP3, SMTP, IMAP, Spamassassin, WebMail, WebAdmin",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/poste.png",
+      "image": "analogic/poste.io:2.5.7",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/poste-io/docker-compose.yml"
+      },
+      "env": [
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+      ],
+      "volumes": [
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.5.7"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

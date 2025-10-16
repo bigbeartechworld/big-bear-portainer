@@ -1,0 +1,34 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 68,
+      "type": 2,
+      "title": "Homarr",
+      "name": "homarr",
+      "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
+      "note": "Homarr",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homarr.png",
+      "image": "ghcr.io/ajnart/homarr:0.16.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/homarr/docker-compose.yml"
+      },
+      "ports": [    "7575:7575"],
+      "volumes": [
+    {"container": "/app/data/configs"},
+    {"container": "/app/public/icons"},
+    {"container": "/data"},
+    {"container": "/var/run/docker.sock"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.16.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

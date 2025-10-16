@@ -1,0 +1,39 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 90,
+      "type": 2,
+      "title": "Komf",
+      "name": "komf",
+      "description": "Komga and Kavita Metadata Fetcher is a tool that fetches metadata and thumbnails for your digital comic book library. It can automatically pick up added series and update their metadata and thumbnail. You can also manually search and identify series, or match the entire library or a series. Additionally, you can install the Komf userscript to add Komf integration directly to Komga and Kavita UI, allowing you to launch manual or automatic metadata identification.",
+      "note": "Komga and Kavita Metadata Fetcher",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/komga.png",
+      "image": "sndxr/komf:1.6.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/komf/docker-compose.yml"
+      },
+      "env": [
+    {"name": "KOMF_KOMGA_BASE_URI", "label": "KOMF_KOMGA_BASE_URI", "description": "Environment variable for KOMF_KOMGA_BASE_URI", "default": "http://komga:25600"},
+    {"name": "KOMF_KOMGA_USER", "label": "KOMF_KOMGA_USER", "description": "Environment variable for KOMF_KOMGA_USER", "default": "admin@example.org"},
+    {"name": "KOMF_KOMGA_PASSWORD", "label": "KOMF_KOMGA_PASSWORD", "description": "Environment variable for KOMF_KOMGA_PASSWORD", "default": "admin"},
+    {"name": "KOMF_KAVITA_BASE_URI", "label": "KOMF_KAVITA_BASE_URI", "description": "Environment variable for KOMF_KAVITA_BASE_URI", "default": "http://kavita:5000"},
+    {"name": "KOMF_KAVITA_API_KEY", "label": "KOMF_KAVITA_API_KEY", "description": "Environment variable for KOMF_KAVITA_API_KEY", "default": "cd1edcc1-6010-41a8-a82b-73f501dc2760"},
+    {"name": "KOMF_LOG_LEVEL", "label": "KOMF_LOG_LEVEL", "description": "Environment variable for KOMF_LOG_LEVEL", "default": "INFO"}
+      ],
+      "ports": [    "8085:8085"],
+      "volumes": [
+    {"container": "/config"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.6.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

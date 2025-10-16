@@ -1,0 +1,33 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 125,
+      "type": 2,
+      "title": "NPMPlus",
+      "name": "npmplus",
+      "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+      "note": "NPMPlus",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/nginx-proxy-manager.png",
+      "image": "zoeyvid/npmplus:449",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/npmplus/docker-compose.yml"
+      },
+      "env": [
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "America/Chicago"}
+      ],
+      "volumes": [
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "449"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

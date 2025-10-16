@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 129,
+      "type": 2,
+      "title": "OctoPrint",
+      "name": "octoprint",
+      "description": "OctoPrint is the snappy web interface for your 3D printer!",
+      "note": "OctoPrint",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/octoprint.png",
+      "image": "octoprint/octoprint:1.11.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/octoprint/docker-compose.yml"
+      },
+      "ports": [    "1080:80"],
+      "volumes": [
+    {"container": "/octoprint"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.11.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

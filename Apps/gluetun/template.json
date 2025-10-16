@@ -1,0 +1,39 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 63,
+      "type": 2,
+      "title": "Gluetun",
+      "name": "gluetun",
+      "description": "Lightweight swiss-knife-like VPN client to multiple VPN service providers",
+      "note": "Gluetun",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/gluetun.png",
+      "image": "qmcgaw/gluetun:v3.40.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/gluetun/docker-compose.yml"
+      },
+      "env": [
+    {"name": "VPN_SERVICE_PROVIDER", "label": "VPN_SERVICE_PROVIDER", "description": "Environment variable for VPN_SERVICE_PROVIDER", "default": "custom"},
+    {"name": "VPN_TYPE", "label": "VPN_TYPE", "description": "Environment variable for VPN_TYPE", "default": "openvpn"},
+    {"name": "OPENVPN_USER", "label": "OPENVPN_USER", "description": "Environment variable for OPENVPN_USER", "default": ""},
+    {"name": "OPENVPN_PASSWORD", "label": "OPENVPN_PASSWORD", "description": "Environment variable for OPENVPN_PASSWORD", "default": ""},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": ""},
+    {"name": "UPDATER_PERIOD", "label": "UPDATER_PERIOD", "description": "Environment variable for UPDATER_PERIOD", "default": ""}
+      ],
+      "ports": [    "8888:8888/tcp",    "8388:8388/tcp",    "8388:8388/udp"],
+      "volumes": [
+    {"container": "/gluetun"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "3.40.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 179,
+      "type": 2,
+      "title": "Speedtest Tracker",
+      "name": "speedtest-tracker",
+      "description": "A Docker image to check your internet speed using Ookla's Speedtest service. Build using Laravel and the Speedtest CLI.",
+      "note": "Speedtest Tracker",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/alexjustesen/speedtest-tracker/public/img/speedtest-tracker-icon.png",
+      "image": "linuxserver/speedtest-tracker:1.6.8",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/speedtest-tracker/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
+    {"name": "DB_CONNECTION", "label": "DB_CONNECTION", "description": "Environment variable for DB_CONNECTION", "default": "mysql"},
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-speedtest-tracker-db"},
+    {"name": "DB_PORT", "label": "DB_PORT", "description": "Environment variable for DB_PORT", "default": "3306"},
+    {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Environment variable for DB_DATABASE", "default": "speedtest_tracker"},
+    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "casaos"},
+    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "casaos"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "America/Chicago"},
+    {"name": "MARIADB_DATABASE", "label": "MARIADB_DATABASE", "description": "Environment variable for MARIADB_DATABASE", "default": "speedtest_tracker"},
+    {"name": "MARIADB_USER", "label": "MARIADB_USER", "description": "Environment variable for MARIADB_USER", "default": "casaos"},
+    {"name": "MARIADB_PASSWORD", "label": "MARIADB_PASSWORD", "description": "Environment variable for MARIADB_PASSWORD", "default": "casaos"},
+    {"name": "MARIADB_RANDOM_ROOT_PASSWORD", "label": "MARIADB_RANDOM_ROOT_PASSWORD", "description": "Environment variable for MARIADB_RANDOM_ROOT_PASSWORD", "default": "true"}
+      ],
+      "ports": [    "8080:80",    "8443:443"],
+      "volumes": [
+    {"container": "/etc/localtime"},
+    {"container": "/config"},
+    {"container": "/etc/ssl/web"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.6.8"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

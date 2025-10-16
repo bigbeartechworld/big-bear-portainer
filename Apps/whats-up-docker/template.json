@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 206,
+      "type": 2,
+      "title": "What's Up Docker",
+      "name": "whats-up-docker",
+      "description": "Gets you notified when new versions of your Docker containers are available and lets you react the way you want.",
+      "note": "What's Up Docker",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whats-up-docker.png",
+      "image": "fmartinou/whats-up-docker:6.6.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/whats-up-docker/docker-compose.yml"
+      },
+      "ports": [    "3000:3000"],
+      "volumes": [
+    {"container": "/var/run/docker.sock"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "6.6.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

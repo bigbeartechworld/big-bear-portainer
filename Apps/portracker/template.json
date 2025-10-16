@@ -1,0 +1,41 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 161,
+      "type": 2,
+      "title": "Portracker",
+      "name": "portracker",
+      "description": "A self-hosted, real-time port monitoring and discovery tool that automatically discovers and maps network services across systems.",
+      "note": "Real-time Port Monitoring Tool",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/portracker.png",
+      "image": "mostafawahied/portracker:1.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/portracker/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "4999"},
+    {"name": "DATABASE_PATH", "label": "DATABASE_PATH", "description": "Environment variable for DATABASE_PATH", "default": "/data/portracker.db"},
+    {"name": "TRUSTED_LOCAL_EMAIL", "label": "TRUSTED_LOCAL_EMAIL", "description": "Environment variable for TRUSTED_LOCAL_EMAIL", "default": "your@email.com"},
+    {"name": "CACHE_TIMEOUT_MS", "label": "CACHE_TIMEOUT_MS", "description": "Environment variable for CACHE_TIMEOUT_MS", "default": "30000"},
+    {"name": "DISABLE_CACHE", "label": "DISABLE_CACHE", "description": "Environment variable for DISABLE_CACHE", "default": "false"},
+    {"name": "INCLUDE_UDP", "label": "INCLUDE_UDP", "description": "Environment variable for INCLUDE_UDP", "default": "false"},
+    {"name": "DEBUG", "label": "DEBUG", "description": "Environment variable for DEBUG", "default": "false"}
+      ],
+      "ports": [    "4999:4999"],
+      "volumes": [
+    {"container": "/data"},
+    {"container": "/var/run/docker.sock"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

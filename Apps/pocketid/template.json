@@ -1,0 +1,34 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 158,
+      "type": 2,
+      "title": "Pocket ID",
+      "name": "pocketid",
+      "description": "Simple and easy-to-use OIDC provider that allows users to authenticate with their passkeys to your services.",
+      "note": "Passkey-based OIDC authentication",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://pocket-id.org/img/logo.png",
+      "image": "ghcr.io/pocket-id/pocket-id:v1.13",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/pocketid/docker-compose.yml"
+      },
+      "env": [
+    {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://localhost:1411"},
+    {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Environment variable for TRUST_PROXY", "default": "false"},
+    {"name": "MAXMIND_LICENSE_KEY", "label": "MAXMIND_LICENSE_KEY", "description": "Environment variable for MAXMIND_LICENSE_KEY", "default": ""},
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "techieanant"},
+        {"name": "version", "value": "1.13"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

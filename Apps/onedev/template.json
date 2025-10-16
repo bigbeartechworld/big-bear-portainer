@@ -1,0 +1,47 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 134,
+      "type": 2,
+      "title": "OneDev",
+      "name": "onedev",
+      "description": "Self-hosted Git Server with Kanban and CI/CD",
+      "note": "Self-hosted Git Server with Kanban and CI/CD",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/onedev.png",
+      "image": "1dev/server:13.0.8",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/onedev/docker-compose.yml"
+      },
+      "env": [
+    {"name": "hibernate_dialect", "label": "hibernate_dialect", "description": "Environment variable for hibernate_dialect", "default": "io.onedev.server.persistence.PostgreSQLDialect"},
+    {"name": "hibernate_connection_driver_class", "label": "hibernate_connection_driver_class", "description": "Environment variable for hibernate_connection_driver_class", "default": "org.postgresql.Driver"},
+    {"name": "hibernate_connection_url", "label": "hibernate_connection_url", "description": "Environment variable for hibernate_connection_url", "default": "jdbc:postgresql://big-bear-onedev-db:5432/onedev"},
+    {"name": "hibernate_connection_username", "label": "hibernate_connection_username", "description": "Environment variable for hibernate_connection_username", "default": "bigbear"},
+    {"name": "hibernate_connection_password", "label": "hibernate_connection_password", "description": "Environment variable for hibernate_connection_password", "default": "eea2dad6-2203-45eb-8908-e8ba4d1e7f92"},
+    {"name": "initial_user", "label": "initial_user", "description": "Environment variable for initial_user", "default": "bigbear"},
+    {"name": "initial_password", "label": "initial_password", "description": "Environment variable for initial_password", "default": "password"},
+    {"name": "initial_email", "label": "initial_email", "description": "Environment variable for initial_email", "default": "admin@example.com"},
+    {"name": "initial_server_url", "label": "initial_server_url", "description": "Environment variable for initial_server_url", "default": "http://localhost:6610"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbear"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "eea2dad6-2203-45eb-8908-e8ba4d1e7f92"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "onedev"}
+      ],
+      "ports": [    "6610:6610",    "6611:6611"],
+      "volumes": [
+    {"container": "/opt/onedev"},
+    {"container": "/var/run/docker.sock"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "13.0.8"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

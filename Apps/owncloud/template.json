@@ -1,0 +1,52 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 139,
+      "type": 2,
+      "title": "ownCloud",
+      "name": "owncloud",
+      "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",
+      "note": "ownCloud",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/owncloud.png",
+      "image": "owncloud/server:10.15.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/owncloud/docker-compose.yml"
+      },
+      "env": [
+    {"name": "OWNCLOUD_DOMAIN", "label": "OWNCLOUD_DOMAIN", "description": "Environment variable for OWNCLOUD_DOMAIN", "default": "http://[YOUR_CASAOS_IP]:8080"},
+    {"name": "OWNCLOUD_TRUSTED_DOMAINS", "label": "OWNCLOUD_TRUSTED_DOMAINS", "description": "Environment variable for OWNCLOUD_TRUSTED_DOMAINS", "default": "[YOUR_CASAOS_IP]"},
+    {"name": "OWNCLOUD_DB_TYPE", "label": "OWNCLOUD_DB_TYPE", "description": "Environment variable for OWNCLOUD_DB_TYPE", "default": "mysql"},
+    {"name": "OWNCLOUD_DB_NAME", "label": "OWNCLOUD_DB_NAME", "description": "Environment variable for OWNCLOUD_DB_NAME", "default": "big_bear_owncloud"},
+    {"name": "OWNCLOUD_DB_USERNAME", "label": "OWNCLOUD_DB_USERNAME", "description": "Environment variable for OWNCLOUD_DB_USERNAME", "default": "bigbear"},
+    {"name": "OWNCLOUD_DB_PASSWORD", "label": "OWNCLOUD_DB_PASSWORD", "description": "Environment variable for OWNCLOUD_DB_PASSWORD", "default": "f01914eb-2be3-4164-a57c-08e6518f313a"},
+    {"name": "OWNCLOUD_DB_HOST", "label": "OWNCLOUD_DB_HOST", "description": "Environment variable for OWNCLOUD_DB_HOST", "default": "big-bear-owncloud-db"},
+    {"name": "OWNCLOUD_ADMIN_USERNAME", "label": "OWNCLOUD_ADMIN_USERNAME", "description": "Environment variable for OWNCLOUD_ADMIN_USERNAME", "default": "bigbear"},
+    {"name": "OWNCLOUD_ADMIN_PASSWORD", "label": "OWNCLOUD_ADMIN_PASSWORD", "description": "Environment variable for OWNCLOUD_ADMIN_PASSWORD", "default": "ed135299-7c80-48d4-a2a0-357a012213e5"},
+    {"name": "OWNCLOUD_MYSQL_UTF8MB4", "label": "OWNCLOUD_MYSQL_UTF8MB4", "description": "Environment variable for OWNCLOUD_MYSQL_UTF8MB4", "default": "true"},
+    {"name": "OWNCLOUD_REDIS_ENABLED", "label": "OWNCLOUD_REDIS_ENABLED", "description": "Environment variable for OWNCLOUD_REDIS_ENABLED", "default": "true"},
+    {"name": "OWNCLOUD_REDIS_HOST", "label": "OWNCLOUD_REDIS_HOST", "description": "Environment variable for OWNCLOUD_REDIS_HOST", "default": "big-bear-owncloud-redis"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "f01914eb-2be3-4164-a57c-08e6518f313a"},
+    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "bigbear"},
+    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "f01914eb-2be3-4164-a57c-08e6518f313a"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "big_bear_owncloud"},
+    {"name": "MARIADB_AUTO_UPGRADE", "label": "MARIADB_AUTO_UPGRADE", "description": "Environment variable for MARIADB_AUTO_UPGRADE", "default": "1"}
+      ],
+      "ports": [    "8080:8080"],
+      "volumes": [
+    {"container": "/mnt/data"},
+    {"container": "/var/lib/mysql"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "10.15.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

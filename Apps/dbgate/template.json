@@ -1,0 +1,31 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 35,
+      "type": 2,
+      "title": "DBGate",
+      "name": "dbgate",
+      "description": "Web based UI for managing and exploring SQL database data",
+      "note": "DBGate",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/dbgate/logo.png",
+      "image": "dbgate/dbgate:6.6.4-alpine",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/dbgate/docker-compose.yml"
+      },
+      "ports": [    "3000:3000"],
+      "volumes": [
+    {"container": "/root/.dbgate"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "6.6.4-alpine"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "id": 8,
+      "type": 2,
+      "title": "Authentik",
+      "name": "authentik",
+      "description": "Authentik is a self-hosted identity and access management platform that provides a secure and scalable solution for managing user accounts, authentication, and authorization. It offers a range of features, including user management, role-based access control, and multi-factor authentication. Authentik is designed to be easy to use and integrate with your existing systems, making it a great choice for organizations looking to improve their security and compliance.",
+      "note": "Authentik",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/authentik.png",
+      "image": "ghcr.io/goauthentik/server:2025.8.4",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/authentik/docker-compose.yml"
+      },
+      "ports": [    "9443:9443"],
+      "volumes": [
+    {"container": "/media"},
+    {"container": "/templates"},
+    {"container": "/var/run/docker.sock"},
+    {"container": "/media"},
+    {"container": "/certs"},
+    {"container": "/templates"},
+    {"container": "/var/lib/postgresql/data"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2025.8.4"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}
