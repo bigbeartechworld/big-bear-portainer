@@ -602,7 +602,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/changedetection.png",
-      "image": "ghcr.io/dgtlmoon/changedetection.io:0.50.24",
+      "image": "ghcr.io/dgtlmoon/changedetection.io:0.50.25",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/changedetection/docker-compose.yml"
@@ -613,7 +613,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.50.24"},
+        {"name": "version", "value": "0.50.25"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -1219,7 +1219,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/dockpeek.png",
-      "image": "ghcr.io/dockpeek/dockpeek:v1.6.6",
+      "image": "ghcr.io/dockpeek/dockpeek:v1.6.7",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/dockpeek/docker-compose.yml"
@@ -1230,7 +1230,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.6.6"},
+        {"name": "version", "value": "1.6.7"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
@@ -2157,6 +2157,36 @@
     {
       "id": 69,
       "type": 2,
+      "title": "Homarr v1",
+      "name": "homarr-v1",
+      "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
+      "note": "Homarr v1 (Latest)",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homarr.png",
+      "image": "ghcr.io/homarr-labs/homarr:v1.40.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/homarr-v1/docker-compose.yml"
+      },
+      "env": [
+    {"name": "SECRET_ENCRYPTION_KEY", "label": "SECRET_ENCRYPTION_KEY", "description": "Environment variable for SECRET_ENCRYPTION_KEY", "default": ""}
+      ],
+      "ports": [    "7575:7575"],
+      "volumes": [
+    {"container": "/var/run/docker.sock"},
+    {"container": "/appdata"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "v1.40.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    },
+    {
+      "id": 70,
+      "type": 2,
       "title": "Home Assistant",
       "name": "home-assistant",
       "description": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
@@ -2182,7 +2212,7 @@
       "administrator_only": false
     },
     {
-      "id": 70,
+      "id": 71,
       "type": 2,
       "title": "HomeBridge",
       "name": "homebridge",
@@ -2210,7 +2240,7 @@
       "administrator_only": false
     },
     {
-      "id": 71,
+      "id": 72,
       "type": 2,
       "title": "Homepage",
       "name": "Homepage",
@@ -2237,7 +2267,7 @@
       "administrator_only": false
     },
     {
-      "id": 72,
+      "id": 73,
       "type": 2,
       "title": "Homer",
       "name": "homer",
@@ -2266,7 +2296,7 @@
       "administrator_only": false
     },
     {
-      "id": 73,
+      "id": 74,
       "type": 2,
       "title": "I Hate Money",
       "name": "ihatemoney",
@@ -2292,7 +2322,7 @@
       "administrator_only": false
     },
     {
-      "id": 74,
+      "id": 75,
       "type": 2,
       "title": "Immich",
       "name": "immich",
@@ -2301,7 +2331,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
-      "image": "ghcr.io/immich-app/immich-server:v2.0.1",
+      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/immich/docker-compose.yml"
@@ -2314,13 +2344,13 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.0.1"},
+        {"name": "version", "value": "2.1.0"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
     },
     {
-      "id": 75,
+      "id": 76,
       "type": 2,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
@@ -2364,7 +2394,7 @@
       "administrator_only": false
     },
     {
-      "id": 76,
+      "id": 77,
       "type": 2,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
@@ -2387,7 +2417,7 @@
       "administrator_only": false
     },
     {
-      "id": 77,
+      "id": 78,
       "type": 2,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
@@ -2396,7 +2426,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
-      "image": "ghcr.io/immich-app/immich-server:v2.0.1",
+      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/immich-without-machine-learning/docker-compose.yml"
@@ -2408,13 +2438,13 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.0.1"},
+        {"name": "version", "value": "2.1.0"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
     },
     {
-      "id": 78,
+      "id": 79,
       "type": 2,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
@@ -2466,7 +2496,7 @@
       "administrator_only": false
     },
     {
-      "id": 79,
+      "id": 80,
       "type": 2,
       "title": "IT Tools",
       "name": "it-tools",
@@ -2489,7 +2519,7 @@
       "administrator_only": false
     },
     {
-      "id": 80,
+      "id": 81,
       "type": 2,
       "title": "Jellyseerr",
       "name": "jellyseerr",
@@ -2519,7 +2549,7 @@
       "administrator_only": false
     },
     {
-      "id": 81,
+      "id": 82,
       "type": 2,
       "title": "Jellystat",
       "name": "jellystat",
@@ -2553,7 +2583,7 @@
       "administrator_only": false
     },
     {
-      "id": 82,
+      "id": 83,
       "type": 2,
       "title": "jfa-go",
       "name": "jfa-go",
@@ -2581,7 +2611,7 @@
       "administrator_only": false
     },
     {
-      "id": 83,
+      "id": 84,
       "type": 2,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
@@ -2611,7 +2641,7 @@
       "administrator_only": false
     },
     {
-      "id": 84,
+      "id": 85,
       "type": 2,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
@@ -2643,7 +2673,7 @@
       "administrator_only": false
     },
     {
-      "id": 85,
+      "id": 86,
       "type": 2,
       "title": "joplin",
       "name": "joplin",
@@ -2683,7 +2713,7 @@
       "administrator_only": false
     },
     {
-      "id": 86,
+      "id": 87,
       "type": 2,
       "title": "Kasm",
       "name": "kasm",
@@ -2715,7 +2745,7 @@
       "administrator_only": false
     },
     {
-      "id": 87,
+      "id": 88,
       "type": 2,
       "title": "Kavita",
       "name": "kavita",
@@ -2744,7 +2774,7 @@
       "administrator_only": false
     },
     {
-      "id": 88,
+      "id": 89,
       "type": 2,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
@@ -2770,7 +2800,7 @@
       "administrator_only": false
     },
     {
-      "id": 89,
+      "id": 90,
       "type": 2,
       "title": "Komf",
       "name": "komf",
@@ -2804,7 +2834,7 @@
       "administrator_only": false
     },
     {
-      "id": 90,
+      "id": 91,
       "type": 2,
       "title": "Komga",
       "name": "komga",
@@ -2834,7 +2864,7 @@
       "administrator_only": false
     },
     {
-      "id": 91,
+      "id": 92,
       "type": 2,
       "title": "Kopia",
       "name": "kopia",
@@ -2874,7 +2904,7 @@
       "administrator_only": false
     },
     {
-      "id": 92,
+      "id": 93,
       "type": 2,
       "title": "LAN Cache",
       "name": "lancache",
@@ -2921,7 +2951,7 @@
       "administrator_only": false
     },
     {
-      "id": 93,
+      "id": 94,
       "type": 2,
       "title": "Libredesk",
       "name": "libredesk",
@@ -2953,7 +2983,7 @@
       "administrator_only": false
     },
     {
-      "id": 94,
+      "id": 95,
       "type": 2,
       "title": "LibreTranslate",
       "name": "libretranslate",
@@ -2986,7 +3016,7 @@
       "administrator_only": false
     },
     {
-      "id": 95,
+      "id": 96,
       "type": 2,
       "title": "LinkStack",
       "name": "linkstack",
@@ -3020,7 +3050,7 @@
       "administrator_only": false
     },
     {
-      "id": 96,
+      "id": 97,
       "type": 2,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -3056,7 +3086,7 @@
       "administrator_only": false
     },
     {
-      "id": 97,
+      "id": 98,
       "type": 2,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -3085,7 +3115,7 @@
       "administrator_only": false
     },
     {
-      "id": 98,
+      "id": 99,
       "type": 2,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
@@ -3126,7 +3156,7 @@
       "administrator_only": false
     },
     {
-      "id": 99,
+      "id": 100,
       "type": 2,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
@@ -3159,7 +3189,7 @@
       "administrator_only": false
     },
     {
-      "id": 100,
+      "id": 101,
       "type": 2,
       "title": "Mailpit",
       "name": "mailpit",
@@ -3188,7 +3218,33 @@
       "administrator_only": false
     },
     {
-      "id": 101,
+      "id": 102,
+      "type": 2,
+      "title": "Matterbridge",
+      "name": "matterbridge",
+      "description": "Matterbridge is a Matter plugin manager that allows you to have all your Matter devices up and running in a couple of minutes without having to deal with the pairing process for each individual device. It creates a device that can be paired with any ecosystem, such as Apple Home, Google Home, Amazon Alexa, Home Assistant, or any other platform supporting Matter.",
+      "note": "Matter plugin manager for smart home devices",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/matterbridge.png",
+      "image": "luligu/matterbridge:3.3.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/matterbridge/docker-compose.yml"
+      },
+      "volumes": [
+    {"container": "/root/Matterbridge"},
+    {"container": "/root/.matterbridge"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "3.3.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    },
+    {
+      "id": 103,
       "type": 2,
       "title": "Maybe Finance",
       "name": "MaybeFinance",
@@ -3216,7 +3272,7 @@
       "administrator_only": false
     },
     {
-      "id": 102,
+      "id": 104,
       "type": 2,
       "title": "Mealie",
       "name": "mealie",
@@ -3242,7 +3298,7 @@
       "administrator_only": false
     },
     {
-      "id": 103,
+      "id": 105,
       "type": 2,
       "title": "Microbin",
       "name": "microbin",
@@ -3268,7 +3324,7 @@
       "administrator_only": false
     },
     {
-      "id": 104,
+      "id": 106,
       "type": 2,
       "title": "MIND",
       "name": "mind",
@@ -3297,7 +3353,7 @@
       "administrator_only": false
     },
     {
-      "id": 105,
+      "id": 107,
       "type": 2,
       "title": "Minio",
       "name": "minio",
@@ -3323,7 +3379,7 @@
       "administrator_only": false
     },
     {
-      "id": 106,
+      "id": 108,
       "type": 2,
       "title": "Monica",
       "name": "monica",
@@ -3361,7 +3417,7 @@
       "administrator_only": false
     },
     {
-      "id": 107,
+      "id": 109,
       "type": 2,
       "title": "Morphos",
       "name": "morphos",
@@ -3387,7 +3443,7 @@
       "administrator_only": false
     },
     {
-      "id": 108,
+      "id": 110,
       "type": 2,
       "title": "Mumble Server",
       "name": "mumble-server",
@@ -3410,7 +3466,7 @@
       "administrator_only": false
     },
     {
-      "id": 109,
+      "id": 111,
       "type": 2,
       "title": "Music Assistant",
       "name": "music-assistant",
@@ -3432,7 +3488,7 @@
       "administrator_only": false
     },
     {
-      "id": 110,
+      "id": 112,
       "type": 2,
       "title": "MySpeed",
       "name": "myspeed",
@@ -3458,7 +3514,7 @@
       "administrator_only": false
     },
     {
-      "id": 111,
+      "id": 113,
       "type": 2,
       "title": "n8n",
       "name": "n8n",
@@ -3497,7 +3553,7 @@
       "administrator_only": false
     },
     {
-      "id": 112,
+      "id": 114,
       "type": 2,
       "title": "Ncdu",
       "name": "ncdu",
@@ -3530,7 +3586,7 @@
       "administrator_only": false
     },
     {
-      "id": 113,
+      "id": 115,
       "type": 2,
       "title": "Neko Firefox",
       "name": "neko-firefox",
@@ -3553,7 +3609,7 @@
       "administrator_only": false
     },
     {
-      "id": 114,
+      "id": 116,
       "type": 2,
       "title": "NetAlertX",
       "name": "netalertx",
@@ -3584,7 +3640,7 @@
       "administrator_only": false
     },
     {
-      "id": 115,
+      "id": 117,
       "type": 2,
       "title": "Nextcloud",
       "name": "nextcloud",
@@ -3629,7 +3685,7 @@
       "administrator_only": false
     },
     {
-      "id": 116,
+      "id": 118,
       "type": 2,
       "title": "Nextcloud LS",
       "name": "nextcloud-ls",
@@ -3661,7 +3717,7 @@
       "administrator_only": false
     },
     {
-      "id": 117,
+      "id": 119,
       "type": 2,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",
@@ -3706,7 +3762,7 @@
       "administrator_only": false
     },
     {
-      "id": 118,
+      "id": 120,
       "type": 2,
       "title": "Nexterm",
       "name": "nexterm",
@@ -3732,7 +3788,7 @@
       "administrator_only": false
     },
     {
-      "id": 119,
+      "id": 121,
       "type": 2,
       "title": "nightscout",
       "name": "nightscout",
@@ -3758,7 +3814,7 @@
       "administrator_only": false
     },
     {
-      "id": 120,
+      "id": 122,
       "type": 2,
       "title": "NocoDB",
       "name": "nocodb",
@@ -3791,7 +3847,7 @@
       "administrator_only": false
     },
     {
-      "id": 121,
+      "id": 123,
       "type": 2,
       "title": "Node-RED",
       "name": "node-red",
@@ -3813,7 +3869,7 @@
       "administrator_only": false
     },
     {
-      "id": 122,
+      "id": 124,
       "type": 2,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
@@ -3843,7 +3899,7 @@
       "administrator_only": false
     },
     {
-      "id": 123,
+      "id": 125,
       "type": 2,
       "title": "NPMPlus",
       "name": "npmplus",
@@ -3871,7 +3927,7 @@
       "administrator_only": false
     },
     {
-      "id": 124,
+      "id": 126,
       "type": 2,
       "title": "Ntfy.sh",
       "name": "ntfysh",
@@ -3896,7 +3952,7 @@
       "administrator_only": false
     },
     {
-      "id": 125,
+      "id": 127,
       "type": 2,
       "title": "Obsidian",
       "name": "obsidian",
@@ -3927,7 +3983,7 @@
       "administrator_only": false
     },
     {
-      "id": 126,
+      "id": 128,
       "type": 2,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
@@ -3958,7 +4014,7 @@
       "administrator_only": false
     },
     {
-      "id": 127,
+      "id": 129,
       "type": 2,
       "title": "OctoPrint",
       "name": "octoprint",
@@ -3984,7 +4040,7 @@
       "administrator_only": false
     },
     {
-      "id": 128,
+      "id": 130,
       "type": 2,
       "title": "Odoo",
       "name": "odoo",
@@ -4020,7 +4076,7 @@
       "administrator_only": false
     },
     {
-      "id": 129,
+      "id": 131,
       "type": 2,
       "title": "Ollama - AMD",
       "name": "ollama-amd",
@@ -4049,7 +4105,7 @@
       "administrator_only": false
     },
     {
-      "id": 130,
+      "id": 132,
       "type": 2,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
@@ -4078,7 +4134,7 @@
       "administrator_only": false
     },
     {
-      "id": 131,
+      "id": 133,
       "type": 2,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
@@ -4104,7 +4160,7 @@
       "administrator_only": false
     },
     {
-      "id": 132,
+      "id": 134,
       "type": 2,
       "title": "OneDev",
       "name": "onedev",
@@ -4146,7 +4202,7 @@
       "administrator_only": false
     },
     {
-      "id": 133,
+      "id": 135,
       "type": 2,
       "title": "OnlyOffice",
       "name": "onlyoffice",
@@ -4177,7 +4233,7 @@
       "administrator_only": false
     },
     {
-      "id": 134,
+      "id": 136,
       "type": 2,
       "title": "Open WebUI",
       "name": "open-webui",
@@ -4207,7 +4263,7 @@
       "administrator_only": false
     },
     {
-      "id": 135,
+      "id": 137,
       "type": 2,
       "title": "OpenVPN",
       "name": "openvpn-as",
@@ -4238,7 +4294,7 @@
       "administrator_only": false
     },
     {
-      "id": 136,
+      "id": 138,
       "type": 2,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
@@ -4260,7 +4316,7 @@
       "administrator_only": false
     },
     {
-      "id": 137,
+      "id": 139,
       "type": 2,
       "title": "ownCloud",
       "name": "owncloud",
@@ -4307,7 +4363,7 @@
       "administrator_only": false
     },
     {
-      "id": 138,
+      "id": 140,
       "type": 2,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
@@ -4338,7 +4394,7 @@
       "administrator_only": false
     },
     {
-      "id": 139,
+      "id": 141,
       "type": 2,
       "title": "Password Pusher",
       "name": "passwordpusher",
@@ -4365,7 +4421,7 @@
       "administrator_only": false
     },
     {
-      "id": 140,
+      "id": 142,
       "type": 2,
       "title": "PD3F",
       "name": "pd3f",
@@ -4398,7 +4454,7 @@
       "administrator_only": false
     },
     {
-      "id": 141,
+      "id": 143,
       "type": 2,
       "title": "Penpot",
       "name": "penpot",
@@ -4444,7 +4500,7 @@
       "administrator_only": false
     },
     {
-      "id": 142,
+      "id": 144,
       "type": 2,
       "title": "Peppermint",
       "name": "peppermint",
@@ -4483,7 +4539,7 @@
       "administrator_only": false
     },
     {
-      "id": 143,
+      "id": 145,
       "type": 2,
       "title": "Photoprism",
       "name": "photoprism",
@@ -4511,7 +4567,7 @@
       "administrator_only": false
     },
     {
-      "id": 144,
+      "id": 146,
       "type": 2,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
@@ -4534,7 +4590,7 @@
       "administrator_only": false
     },
     {
-      "id": 145,
+      "id": 147,
       "type": 2,
       "title": "Pi-hole",
       "name": "pihole",
@@ -4561,7 +4617,7 @@
       "administrator_only": false
     },
     {
-      "id": 146,
+      "id": 148,
       "type": 2,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
@@ -4588,7 +4644,7 @@
       "administrator_only": false
     },
     {
-      "id": 147,
+      "id": 149,
       "type": 2,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
@@ -4619,7 +4675,7 @@
       "administrator_only": false
     },
     {
-      "id": 148,
+      "id": 150,
       "type": 2,
       "title": "Pingvin Share",
       "name": "pingvin-share",
@@ -4646,7 +4702,7 @@
       "administrator_only": false
     },
     {
-      "id": 149,
+      "id": 151,
       "type": 2,
       "title": "Piwigo",
       "name": "piwigo",
@@ -4683,7 +4739,7 @@
       "administrator_only": false
     },
     {
-      "id": 150,
+      "id": 152,
       "type": 2,
       "title": "Planka",
       "name": "planka",
@@ -4723,7 +4779,7 @@
       "administrator_only": false
     },
     {
-      "id": 151,
+      "id": 153,
       "type": 2,
       "title": "Plant-it",
       "name": "plant-it",
@@ -4774,7 +4830,7 @@
       "administrator_only": false
     },
     {
-      "id": 152,
+      "id": 154,
       "type": 2,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
@@ -4802,7 +4858,7 @@
       "administrator_only": false
     },
     {
-      "id": 153,
+      "id": 155,
       "type": 2,
       "title": "playit.gg",
       "name": "playitgg",
@@ -4827,7 +4883,7 @@
       "administrator_only": false
     },
     {
-      "id": 154,
+      "id": 156,
       "type": 2,
       "title": "Plex",
       "name": "plex",
@@ -4861,7 +4917,7 @@
       "administrator_only": false
     },
     {
-      "id": 155,
+      "id": 157,
       "type": 2,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
@@ -4897,7 +4953,7 @@
       "administrator_only": false
     },
     {
-      "id": 156,
+      "id": 158,
       "type": 2,
       "title": "Pocket ID",
       "name": "pocketid",
@@ -4926,7 +4982,7 @@
       "administrator_only": false
     },
     {
-      "id": 157,
+      "id": 159,
       "type": 2,
       "title": "Portainer",
       "name": "portainer",
@@ -4953,7 +5009,7 @@
       "administrator_only": false
     },
     {
-      "id": 158,
+      "id": 160,
       "type": 2,
       "title": "Portainer Agent",
       "name": "portainer-agent",
@@ -4979,7 +5035,7 @@
       "administrator_only": false
     },
     {
-      "id": 159,
+      "id": 161,
       "type": 2,
       "title": "Portracker",
       "name": "portracker",
@@ -5015,7 +5071,7 @@
       "administrator_only": false
     },
     {
-      "id": 160,
+      "id": 162,
       "type": 2,
       "title": "Poste.io",
       "name": "poste-io",
@@ -5043,7 +5099,7 @@
       "administrator_only": false
     },
     {
-      "id": 161,
+      "id": 163,
       "type": 2,
       "title": "Project Management",
       "name": "project-management",
@@ -5088,7 +5144,7 @@
       "administrator_only": false
     },
     {
-      "id": 162,
+      "id": 164,
       "type": 2,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
@@ -5118,7 +5174,7 @@
       "administrator_only": false
     },
     {
-      "id": 163,
+      "id": 165,
       "type": 2,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -5150,7 +5206,7 @@
       "administrator_only": false
     },
     {
-      "id": 164,
+      "id": 166,
       "type": 2,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -5176,7 +5232,7 @@
       "administrator_only": false
     },
     {
-      "id": 165,
+      "id": 167,
       "type": 2,
       "title": "Rallly",
       "name": "rallly",
@@ -5219,7 +5275,7 @@
       "administrator_only": false
     },
     {
-      "id": 166,
+      "id": 168,
       "type": 2,
       "title": "Reactive Resume",
       "name": "reactive-resume",
@@ -5246,7 +5302,7 @@
       "administrator_only": false
     },
     {
-      "id": 167,
+      "id": 169,
       "type": 2,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -5272,7 +5328,7 @@
       "administrator_only": false
     },
     {
-      "id": 168,
+      "id": 170,
       "type": 2,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
@@ -5298,7 +5354,7 @@
       "administrator_only": false
     },
     {
-      "id": 169,
+      "id": 171,
       "type": 2,
       "title": "RomM",
       "name": "romm",
@@ -5307,7 +5363,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/romm.png",
-      "image": "rommapp/romm:4.3.1",
+      "image": "rommapp/romm:4.3.2",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/romm/docker-compose.yml"
@@ -5347,13 +5403,13 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.3.1"},
+        {"name": "version", "value": "4.3.2"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
     },
     {
-      "id": 170,
+      "id": 172,
       "type": 2,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -5381,7 +5437,7 @@
       "administrator_only": false
     },
     {
-      "id": 171,
+      "id": 173,
       "type": 2,
       "title": "Scrypted",
       "name": "scrypted",
@@ -5415,7 +5471,7 @@
       "administrator_only": false
     },
     {
-      "id": 172,
+      "id": 174,
       "type": 2,
       "title": "seafile",
       "name": "seafile",
@@ -5454,7 +5510,7 @@
       "administrator_only": false
     },
     {
-      "id": 173,
+      "id": 175,
       "type": 2,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -5482,7 +5538,7 @@
       "administrator_only": false
     },
     {
-      "id": 174,
+      "id": 176,
       "type": 2,
       "title": "Send Visee",
       "name": "send-visee",
@@ -5516,7 +5572,7 @@
       "administrator_only": false
     },
     {
-      "id": 175,
+      "id": 177,
       "type": 2,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -5551,7 +5607,7 @@
       "administrator_only": false
     },
     {
-      "id": 176,
+      "id": 178,
       "type": 2,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -5580,7 +5636,7 @@
       "administrator_only": false
     },
     {
-      "id": 177,
+      "id": 179,
       "type": 2,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -5624,7 +5680,7 @@
       "administrator_only": false
     },
     {
-      "id": 178,
+      "id": 180,
       "type": 2,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -5650,7 +5706,7 @@
       "administrator_only": false
     },
     {
-      "id": 179,
+      "id": 181,
       "type": 2,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -5687,7 +5743,7 @@
       "administrator_only": false
     },
     {
-      "id": 180,
+      "id": 182,
       "type": 2,
       "title": "Syncthing",
       "name": "syncthing",
@@ -5718,7 +5774,7 @@
       "administrator_only": false
     },
     {
-      "id": 181,
+      "id": 183,
       "type": 2,
       "title": "Tailscale",
       "name": "tailscale",
@@ -5756,7 +5812,7 @@
       "administrator_only": false
     },
     {
-      "id": 182,
+      "id": 184,
       "type": 2,
       "title": "Tandoor",
       "name": "tandoor",
@@ -5797,7 +5853,7 @@
       "administrator_only": false
     },
     {
-      "id": 183,
+      "id": 185,
       "type": 2,
       "title": "Tianji",
       "name": "tianji",
@@ -5823,7 +5879,7 @@
       "administrator_only": false
     },
     {
-      "id": 184,
+      "id": 186,
       "type": 2,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -5868,7 +5924,7 @@
       "administrator_only": false
     },
     {
-      "id": 185,
+      "id": 187,
       "type": 2,
       "title": "Traccar",
       "name": "traccar",
@@ -5895,7 +5951,7 @@
       "administrator_only": false
     },
     {
-      "id": 186,
+      "id": 188,
       "type": 2,
       "title": "Trilium",
       "name": "trilium",
@@ -5924,7 +5980,7 @@
       "administrator_only": false
     },
     {
-      "id": 187,
+      "id": 189,
       "type": 2,
       "title": "Tududi",
       "name": "tududi",
@@ -5956,7 +6012,7 @@
       "administrator_only": false
     },
     {
-      "id": 188,
+      "id": 190,
       "type": 2,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -5983,7 +6039,7 @@
       "administrator_only": false
     },
     {
-      "id": 189,
+      "id": 191,
       "type": 2,
       "title": "UISP",
       "name": "uisp",
@@ -6012,7 +6068,7 @@
       "administrator_only": false
     },
     {
-      "id": 190,
+      "id": 192,
       "type": 2,
       "title": "Umami",
       "name": "umami",
@@ -6038,7 +6094,7 @@
       "administrator_only": false
     },
     {
-      "id": 191,
+      "id": 193,
       "type": 2,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -6065,7 +6121,7 @@
       "administrator_only": false
     },
     {
-      "id": 192,
+      "id": 194,
       "type": 2,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -6107,7 +6163,7 @@
       "administrator_only": false
     },
     {
-      "id": 193,
+      "id": 195,
       "type": 2,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -6149,7 +6205,7 @@
       "administrator_only": false
     },
     {
-      "id": 194,
+      "id": 196,
       "type": 2,
       "title": "Upsnap",
       "name": "upsnap",
@@ -6174,7 +6230,7 @@
       "administrator_only": false
     },
     {
-      "id": 195,
+      "id": 197,
       "type": 2,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -6200,7 +6256,7 @@
       "administrator_only": false
     },
     {
-      "id": 196,
+      "id": 198,
       "type": 2,
       "title": "Vikunja",
       "name": "vikunja",
@@ -6227,7 +6283,7 @@
       "administrator_only": false
     },
     {
-      "id": 197,
+      "id": 199,
       "type": 2,
       "title": "Viseron",
       "name": "viseron",
@@ -6262,7 +6318,7 @@
       "administrator_only": false
     },
     {
-      "id": 198,
+      "id": 200,
       "type": 2,
       "title": "Wallabag",
       "name": "wallabag",
@@ -6305,7 +6361,7 @@
       "administrator_only": false
     },
     {
-      "id": 199,
+      "id": 201,
       "type": 2,
       "title": "Wallos",
       "name": "wallos",
@@ -6332,7 +6388,7 @@
       "administrator_only": false
     },
     {
-      "id": 200,
+      "id": 202,
       "type": 2,
       "title": "Warracker",
       "name": "warracker",
@@ -6372,7 +6428,7 @@
       "administrator_only": false
     },
     {
-      "id": 201,
+      "id": 203,
       "type": 2,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -6401,7 +6457,7 @@
       "administrator_only": false
     },
     {
-      "id": 202,
+      "id": 204,
       "type": 2,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -6427,7 +6483,7 @@
       "administrator_only": false
     },
     {
-      "id": 203,
+      "id": 205,
       "type": 2,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -6453,7 +6509,7 @@
       "administrator_only": false
     },
     {
-      "id": 204,
+      "id": 206,
       "type": 2,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -6479,7 +6535,7 @@
       "administrator_only": false
     },
     {
-      "id": 205,
+      "id": 207,
       "type": 2,
       "title": "Wishlist",
       "name": "wishlist",
@@ -6506,7 +6562,7 @@
       "administrator_only": false
     },
     {
-      "id": 206,
+      "id": 208,
       "type": 2,
       "title": "WordPress",
       "name": "wordpress",
@@ -6533,7 +6589,7 @@
       "administrator_only": false
     },
     {
-      "id": 207,
+      "id": 209,
       "type": 2,
       "title": "Write Freely",
       "name": "write-freely",
@@ -6559,7 +6615,7 @@
       "administrator_only": false
     },
     {
-      "id": 208,
+      "id": 210,
       "type": 2,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -6589,7 +6645,7 @@
       "administrator_only": false
     },
     {
-      "id": 209,
+      "id": 211,
       "type": 2,
       "title": "zipline",
       "name": "zipline",
@@ -6628,7 +6684,7 @@
       "administrator_only": false
     },
     {
-      "id": 210,
+      "id": 212,
       "type": 2,
       "title": "Zotero",
       "name": "zotero",

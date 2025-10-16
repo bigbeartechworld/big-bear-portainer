@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 145,
+      "id": 147,
       "type": 2,
       "title": "Pi-hole",
       "name": "pihole",

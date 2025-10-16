@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 147,
+      "id": 149,
       "type": 2,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",

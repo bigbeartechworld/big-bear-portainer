@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 169,
+      "id": 171,
       "type": 2,
       "title": "RomM",
       "name": "romm",
@@ -11,7 +11,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/romm.png",
-      "image": "rommapp/romm:4.3.1",
+      "image": "rommapp/romm:4.3.2",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/romm/docker-compose.yml"
@@ -51,7 +51,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.3.1"},
+        {"name": "version", "value": "4.3.2"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false

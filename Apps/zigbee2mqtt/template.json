@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 208,
+      "id": 210,
       "type": 2,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
