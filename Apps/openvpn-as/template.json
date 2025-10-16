@@ -1,0 +1,36 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 137,
+      "type": 2,
+      "title": "OpenVPN",
+      "name": "openvpn-as",
+      "description": "OpenVPN is an open-source commercial software that implements virtual private network (VPN) techniques to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities.",
+      "note": "OpenVPN is an open-source commercial software that implements virtual private network (VPN).",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/openvpn-icon-512x512-nmf6geqm.png",
+      "image": "openvpn/openvpn-as:2.13.1-d8cdeb9c-Ubuntu22",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/openvpn-as/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Europe/Rome"}
+      ],
+      "ports": [    "943:943/tcp",    "443:443/tcp",    "1194:1194/udp"],
+      "volumes": [
+    {"container": "/openvpn"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearCommunity"},
+        {"name": "version", "value": "2.13.1-d8cdeb9c-Ubuntu22"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

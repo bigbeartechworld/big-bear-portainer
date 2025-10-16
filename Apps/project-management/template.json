@@ -1,0 +1,50 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 163,
+      "type": 2,
+      "title": "Project Management",
+      "name": "project-management",
+      "description": "An open source Project management tool based on Laravel and Filament",
+      "note": "Project Management",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/project-management/logo.png",
+      "image": "eloufirhatim/helper:1.2.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/project-management/docker-compose.yml"
+      },
+      "env": [
+    {"name": "DB_CONNECTION", "label": "DB_CONNECTION", "description": "Environment variable for DB_CONNECTION", "default": "mysql"},
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-project-management-db"},
+    {"name": "DB_PORT", "label": "DB_PORT", "description": "Environment variable for DB_PORT", "default": "3306"},
+    {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Environment variable for DB_DATABASE", "default": "project_management"},
+    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "project_management"},
+    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a"},
+    {"name": "MAIL_MAILER", "label": "MAIL_MAILER", "description": "Environment variable for MAIL_MAILER", "default": "smtp"},
+    {"name": "MAIL_HOST", "label": "MAIL_HOST", "description": "Environment variable for MAIL_HOST", "default": "mailpit"},
+    {"name": "MAIL_PORT", "label": "MAIL_PORT", "description": "Environment variable for MAIL_PORT", "default": "1025"},
+    {"name": "MAIL_USERNAME", "label": "MAIL_USERNAME", "description": "Environment variable for MAIL_USERNAME", "default": ""},
+    {"name": "MAIL_PASSWORD", "label": "MAIL_PASSWORD", "description": "Environment variable for MAIL_PASSWORD", "default": ""},
+    {"name": "MAIL_ENCRYPTION", "label": "MAIL_ENCRYPTION", "description": "Environment variable for MAIL_ENCRYPTION", "default": "null"},
+    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "project_management"},
+    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "project_management"},
+    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a"}
+      ],
+      "ports": [    "8000:8000"],
+      "volumes": [
+    {"container": "/etc/localtime"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.2.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

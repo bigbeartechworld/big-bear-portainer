@@ -1,0 +1,27 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 123,
+      "type": 2,
+      "title": "Node-RED",
+      "name": "node-red",
+      "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
+      "note": "Low-code programming for event-driven applications",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/node-red.png",
+      "image": "nodered/node-red:4.1.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/node-red/docker-compose.yml"
+      },
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "4.1.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

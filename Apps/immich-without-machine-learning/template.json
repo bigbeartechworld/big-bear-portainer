@@ -1,0 +1,32 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 78,
+      "type": 2,
+      "title": "Immich without machine learning",
+      "name": "immich-without-machine-learning",
+      "description": "Self-hosted photo and video storage. This does not include the machine learning part.",
+      "note": "Immich without machine learning",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
+      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/immich-without-machine-learning/docker-compose.yml"
+      },
+      "ports": [    "2283:2283"],
+      "volumes": [
+    {"container": "/usr/src/app/upload"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.1.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

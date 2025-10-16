@@ -1,0 +1,30 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 196,
+      "type": 2,
+      "title": "Upsnap",
+      "name": "upsnap",
+      "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
+      "note": "Upsnap",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/upsnap.png",
+      "image": "ghcr.io/seriousm4x/upsnap:5.2.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/upsnap/docker-compose.yml"
+      },
+      "volumes": [
+    {"container": "/app/pb_data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "5.2.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

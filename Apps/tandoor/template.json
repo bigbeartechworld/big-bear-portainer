@@ -1,0 +1,46 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 184,
+      "type": 2,
+      "title": "Tandoor",
+      "name": "tandoor",
+      "description": "Drop your collection of links and notes. Get Tandoor and never look back onto a time without recipe management, storage, sharing and collaborative cooking!",
+      "note": "Recipe collection manager.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/tandoor-recipes.png",
+      "image": "ghcr.io/tandoorrecipes/recipes:2.3.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/tandoor/docker-compose.yml"
+      },
+      "env": [
+    {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Environment variable for SECRET_KEY", "default": "6496f725-e4a4-4fa5-9f7b-db0114bc1568"},
+    {"name": "DB_ENGINE", "label": "DB_ENGINE", "description": "Environment variable for DB_ENGINE", "default": "django.db.backends.postgresql"},
+    {"name": "POSTGRES_HOST", "label": "POSTGRES_HOST", "description": "Environment variable for POSTGRES_HOST", "default": "big-bear-tandoor-db"},
+    {"name": "POSTGRES_PORT", "label": "POSTGRES_PORT", "description": "Environment variable for POSTGRES_PORT", "default": "5432"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "tandoor"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "100c7d31-9ec5-44ec-9101-e226c8e2420d"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "tandoordb"},
+    {"name": "POSTGRES_PORT", "label": "POSTGRES_PORT", "description": "Environment variable for POSTGRES_PORT", "default": "5432"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "tandoor"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "100c7d31-9ec5-44ec-9101-e226c8e2420d"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "tandoordb"}
+      ],
+      "ports": [    "8080:8080"],
+      "volumes": [
+    {"container": "/opt/recipes/staticfiles"},
+    {"container": "/opt/recipes/mediafiles"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.3.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

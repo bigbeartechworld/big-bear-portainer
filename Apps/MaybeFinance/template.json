@@ -1,0 +1,33 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 103,
+      "type": 2,
+      "title": "Maybe Finance",
+      "name": "MaybeFinance",
+      "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",
+      "note": "maybe-finance",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/maybe-finance/maybe/refs/heads/main/app/assets/images/logo-color.png",
+      "image": "ghcr.io/maybe-finance/maybe:sha-347c0a790693031fdd3b32792b5b6792693d1805",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/MaybeFinance/docker-compose.yml"
+      },
+      "ports": [    "4000:3000"],
+      "volumes": [
+    {"container": "/rails/storage"},
+    {"container": "/var/lib/postgresql/data"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearCommunity"},
+        {"name": "version", "value": "sha-347c0a790693031fdd3b32792b5b6792693d1805"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

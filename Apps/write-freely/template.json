@@ -1,0 +1,31 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 209,
+      "type": 2,
+      "title": "Write Freely",
+      "name": "write-freely",
+      "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
+      "note": "Markdown-based publishing platform.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/write-freely/logo.png",
+      "image": "nephatrine/write-freely:0.16",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/write-freely/docker-compose.yml"
+      },
+      "ports": [    "70:70/tcp",    "8080:8080/tcp"],
+      "volumes": [
+    {"container": "/mnt/config"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.16"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 203,
+      "type": 2,
+      "title": "WatchYourLAN",
+      "name": "watchyourlan",
+      "description": "Lightweight network IP scanner. Can be used to notify about new hosts and monitor host online/offline history",
+      "note": "WatchYourLAN",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/watchyourlan.png",
+      "image": "aceberg/watchyourlan:2.1.4",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/watchyourlan/docker-compose.yml"
+      },
+      "env": [
+    {"name": "IFACES", "label": "IFACES", "description": "Environment variable for IFACES", "default": "eth0"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+      ],
+      "volumes": [
+    {"container": "/data/WatchYourLAN"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.1.4"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

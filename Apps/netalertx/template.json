@@ -1,0 +1,36 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 116,
+      "type": 2,
+      "title": "NetAlertX",
+      "name": "netalertx",
+      "description": "WIFI / LAN intruder detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
+      "note": "NetAlertX",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/pi-alert.png",
+      "image": "jokobsk/netalertx:25.10.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/netalertx/docker-compose.yml"
+      },
+      "env": [
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"},
+    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "8080"},
+    {"name": "ALWAYS_FRESH_INSTALL", "label": "ALWAYS_FRESH_INSTALL", "description": "Environment variable for ALWAYS_FRESH_INSTALL", "default": "false"}
+      ],
+      "volumes": [
+    {"container": "/app/config"},
+    {"container": "/app/db"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "25.10.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

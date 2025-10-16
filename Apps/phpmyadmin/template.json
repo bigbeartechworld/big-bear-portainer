@@ -1,0 +1,28 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 146,
+      "type": 2,
+      "title": "phpMyAdmin",
+      "name": "phpmyadmin",
+      "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
+      "note": "phpMyAdmin",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/phpmyadmin.png",
+      "image": "phpmyadmin/phpmyadmin:5.2.3",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/phpmyadmin/docker-compose.yml"
+      },
+      "ports": [    "8080:80"],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "5.2.3"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

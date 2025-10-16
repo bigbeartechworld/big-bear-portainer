@@ -1,0 +1,41 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 97,
+      "type": 2,
+      "title": "Linkwarden",
+      "name": "linkwarden",
+      "description": "⚡️⚡️⚡️Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages and articles.",
+      "note": "Linkwarden",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/linkwarden.png",
+      "image": "ghcr.io/linkwarden/linkwarden:v2.13.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/linkwarden/docker-compose.yml"
+      },
+      "env": [
+    {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Environment variable for DATABASE_URL", "default": "postgresql://casaos:casaospassword@big-bear-linkwarden-db:5432/big-bear-linkwarden"},
+    {"name": "NEXTAUTH_SECRET", "label": "NEXTAUTH_SECRET", "description": "Environment variable for NEXTAUTH_SECRET", "default": "7e2d8797-dc20-422a-9a68-44b958bd33c0"},
+    {"name": "NEXTAUTH_URL", "label": "NEXTAUTH_URL", "description": "Environment variable for NEXTAUTH_URL", "default": "http://localhost/api/v1/auth"},
+    {"name": "NEXT_PUBLIC_DISABLE_REGISTRATION", "label": "NEXT_PUBLIC_DISABLE_REGISTRATION", "description": "Environment variable for NEXT_PUBLIC_DISABLE_REGISTRATION", "default": ""},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "casaos"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "casaospassword"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "big-bear-linkwarden"}
+      ],
+      "ports": [    "3000:3000"],
+      "volumes": [
+    {"container": "/data/data"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.13.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 207,
+      "type": 2,
+      "title": "Wishlist",
+      "name": "wishlist",
+      "description": "Wishlist is a self-hosted wishlist application that you can share with your friends and family. You no longer have to wonder what to get your family for the holidays, simply check their wishlist and claim any available item!",
+      "note": "Wishlist is a self-hosted wishlist application that you can share with your friends and family.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/wishlist/logo.png",
+      "image": "ghcr.io/cmintey/wishlist:v0.51.1",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/wishlist/docker-compose.yml"
+      },
+      "ports": [    "3280:3280"],
+      "volumes": [
+    {"container": "/usr/src/app/uploads"},
+    {"container": "/usr/src/app/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.51.1"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

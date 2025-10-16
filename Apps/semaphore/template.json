@@ -1,0 +1,33 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 175,
+      "type": 2,
+      "title": "Ansible Semaphore",
+      "name": "semaphore",
+      "description": "Ansible Semaphore is a modern UI for Ansible. It lets you easily run Ansible playbooks, get notifications about fails, control access to deployment system.",
+      "note": "Ansible Semaphore",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/semaphore-ui.png",
+      "image": "semaphoreui/semaphore:v2.16.34",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/semaphore/docker-compose.yml"
+      },
+      "ports": [    "3000:3000"],
+      "volumes": [
+    {"container": "/etc/semaphore"},
+    {"container": "/var/lib/semaphore"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2.16.34"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

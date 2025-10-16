@@ -1,0 +1,33 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 145,
+      "type": 2,
+      "title": "Photoprism",
+      "name": "photoprism",
+      "description": "PhotoPrism® is an AI-Powered Photos App for the Decentralized Web. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
+      "note": "AI-Powered Photos App",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/photoprism.png",
+      "image": "photoprism/photoprism:240915",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/photoprism/docker-compose.yml"
+      },
+      "ports": [    "2342:2342"],
+      "volumes": [
+    {"container": "/photoprism/originals"},
+    {"container": "/photoprism/storage"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "240915"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

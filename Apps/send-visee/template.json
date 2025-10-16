@@ -1,0 +1,39 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 176,
+      "type": 2,
+      "title": "Send Visee",
+      "name": "send-visee",
+      "description": "A fork of Mozilla's Firefox Send. Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.",
+      "note": "A fork of Mozilla's Firefox Send.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/send-visee.png",
+      "image": "registry.gitlab.com/timvisee/send:v3.4.27",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/send-visee/docker-compose.yml"
+      },
+      "env": [
+    {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Environment variable for NODE_ENV", "default": "production"},
+    {"name": "BASE_URL", "label": "BASE_URL", "description": "Environment variable for BASE_URL", "default": "http://${APP_DOMAIN}"},
+    {"name": "REDIS_HOST", "label": "REDIS_HOST", "description": "Environment variable for REDIS_HOST", "default": "big-bear-send-visee-redis"},
+    {"name": "MAX_FILE_SIZE", "label": "MAX_FILE_SIZE", "description": "Environment variable for MAX_FILE_SIZE", "default": "2147483648"},
+    {"name": "FILE_DIR", "label": "FILE_DIR", "description": "Environment variable for FILE_DIR", "default": "/uploads"}
+      ],
+      "ports": [    "1443:1443"],
+      "volumes": [
+    {"container": "/uploads"},
+    {"container": "/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "3.4.27"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

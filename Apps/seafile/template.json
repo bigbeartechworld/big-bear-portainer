@@ -1,0 +1,44 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 174,
+      "type": 2,
+      "title": "seafile",
+      "name": "seafile",
+      "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance. Seafile's built-in collaborative document SeaDoc, make it easy for collaborative writing and publishing documents.",
+      "note": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/seafile.png",
+      "image": "seafileltd/seafile-mc:11.0.13",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/seafile/docker-compose.yml"
+      },
+      "env": [
+    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-seafile-db"},
+    {"name": "DB_ROOT_PASSWD", "label": "DB_ROOT_PASSWD", "description": "Environment variable for DB_ROOT_PASSWD", "default": "seafilepassword"},
+    {"name": "TIME_ZONE", "label": "TIME_ZONE", "description": "Environment variable for TIME_ZONE", "default": "Etc/UTC"},
+    {"name": "SEAFILE_ADMIN_EMAIL", "label": "SEAFILE_ADMIN_EMAIL", "description": "Environment variable for SEAFILE_ADMIN_EMAIL", "default": "admin@example.com"},
+    {"name": "SEAFILE_ADMIN_PASSWORD", "label": "SEAFILE_ADMIN_PASSWORD", "description": "Environment variable for SEAFILE_ADMIN_PASSWORD", "default": "asecret"},
+    {"name": "SEAFILE_SERVER_LETSENCRYPT", "label": "SEAFILE_SERVER_LETSENCRYPT", "description": "Environment variable for SEAFILE_SERVER_LETSENCRYPT", "default": "false"},
+    {"name": "SEAFILE_SERVER_HOSTNAME", "label": "SEAFILE_SERVER_HOSTNAME", "description": "Environment variable for SEAFILE_SERVER_HOSTNAME", "default": "docs.seafile.com"},
+    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "seafilepassword"},
+    {"name": "MYSQL_LOG_CONSOLE", "label": "MYSQL_LOG_CONSOLE", "description": "Environment variable for MYSQL_LOG_CONSOLE", "default": "true"},
+    {"name": "MARIADB_AUTO_UPGRADE", "label": "MARIADB_AUTO_UPGRADE", "description": "Environment variable for MARIADB_AUTO_UPGRADE", "default": "1"}
+      ],
+      "ports": [    "8080:80"],
+      "volumes": [
+    {"container": "/shared"},
+    {"container": "/var/lib/mysql"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "11.0.13"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

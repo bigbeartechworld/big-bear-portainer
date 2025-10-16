@@ -1,0 +1,37 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 189,
+      "type": 2,
+      "title": "Tududi",
+      "name": "tududi",
+      "description": "tududi is a task and project management web application built with Sinatra. It allows users to efficiently manage their tasks and projects, categorize them into different areas, and track due dates. tududi is designed to be intuitive and easy to use, providing a seamless experience for personal productivity.",
+      "note": "tududi is a task and project management web application built with Sinatra",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/tududi/logo.png",
+      "image": "chrisvel/tududi:0.83",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/tududi/docker-compose.yml"
+      },
+      "env": [
+    {"name": "TUDUDI_USER_EMAIL", "label": "TUDUDI_USER_EMAIL", "description": "Environment variable for TUDUDI_USER_EMAIL", "default": "admin@example.com"},
+    {"name": "TUDUDI_USER_PASSWORD", "label": "TUDUDI_USER_PASSWORD", "description": "Environment variable for TUDUDI_USER_PASSWORD", "default": "2dd25e05-65f4-47d7-a9a6-1a3293c02461"},
+    {"name": "TUDUDI_SESSION_SECRET", "label": "TUDUDI_SESSION_SECRET", "description": "Environment variable for TUDUDI_SESSION_SECRET", "default": "3337c138d17ac7acefa412e5db0d7ef6540905b198cc28c5bf0d11e48807a71bdfe48d82ed0a0a6eb667c937cbdd1db3e1e6073b3148bff37f73cc6398a39671"},
+    {"name": "TUDUDI_INTERNAL_SSL_ENABLED", "label": "TUDUDI_INTERNAL_SSL_ENABLED", "description": "Environment variable for TUDUDI_INTERNAL_SSL_ENABLED", "default": "false"}
+      ],
+      "ports": [    "9292:9292"],
+      "volumes": [
+    {"container": "/usr/src/app/tududi_db"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.83"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

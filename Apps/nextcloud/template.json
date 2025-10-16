@@ -1,0 +1,50 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 117,
+      "type": 2,
+      "title": "Nextcloud",
+      "name": "nextcloud",
+      "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
+      "note": "The productivity platform that keeps you in control",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/nextcloud.png",
+      "image": "bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.11",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/nextcloud/docker-compose.yml"
+      },
+      "env": [
+    {"name": "POSTGRES_HOST", "label": "POSTGRES_HOST", "description": "Environment variable for POSTGRES_HOST", "default": "db-nextcloud"},
+    {"name": "REDIS_HOST", "label": "REDIS_HOST", "description": "Environment variable for REDIS_HOST", "default": "redis-nextcloud"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "casaos"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "casaos"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "nextcloud"},
+    {"name": "NEXTCLOUD_ADMIN_USER", "label": "NEXTCLOUD_ADMIN_USER", "description": "Environment variable for NEXTCLOUD_ADMIN_USER", "default": "casaos"},
+    {"name": "NEXTCLOUD_ADMIN_PASSWORD", "label": "NEXTCLOUD_ADMIN_PASSWORD", "description": "Environment variable for NEXTCLOUD_ADMIN_PASSWORD", "default": "casaos"},
+    {"name": "TRUSTED_PROXIES", "label": "TRUSTED_PROXIES", "description": "Environment variable for TRUSTED_PROXIES", "default": ""},
+    {"name": "OVERWRITEPROTOCOL", "label": "OVERWRITEPROTOCOL", "description": "Environment variable for OVERWRITEPROTOCOL", "default": "http"},
+    {"name": "PHP_MEMORY_LIMIT", "label": "PHP_MEMORY_LIMIT", "description": "Environment variable for PHP_MEMORY_LIMIT", "default": "1024M"},
+    {"name": "PHP_UPLOAD_LIMIT", "label": "PHP_UPLOAD_LIMIT", "description": "Environment variable for PHP_UPLOAD_LIMIT", "default": "1024M"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "casaos"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "casaos"},
+    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "nextcloud"}
+      ],
+      "ports": [    "7580:80"],
+      "volumes": [
+    {"container": "/var/www/html"},
+    {"container": "/var/lib/postgresql/data"},
+    {"container": "/data"},
+    {"container": "/var/www/html"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "0.0.11"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

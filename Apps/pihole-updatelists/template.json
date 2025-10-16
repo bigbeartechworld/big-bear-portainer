@@ -1,0 +1,36 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 149,
+      "type": 2,
+      "title": "Pi-hole® Updatelists",
+      "name": "pihole-updatelists",
+      "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.",
+      "note": "A black hole for Internet advertisements. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/pi-hole.png",
+      "image": "jacklul/pihole:2025.08.0",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/pihole-updatelists/docker-compose.yml"
+      },
+      "env": [
+    {"name": "https://v.firebog.net/hosts/lists.php?type", "label": "https://v.firebog.net/hosts/lists.php?type", "description": "Environment variable for https://v.firebog.net/hosts/lists.php?type", "default": "tick"}
+      ],
+      "ports": [    "53:53/tcp",    "53:53/udp",    "67:67/udp",    "8080:80/tcp",    "10443:443/tcp"],
+      "volumes": [
+    {"container": "/etc/pihole/"},
+    {"container": "/etc/pihole-updatelists/"},
+    {"container": "/etc/dnsmasq.d/"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "2025.08.0"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 83,
+      "type": 2,
+      "title": "jfa-go",
+      "name": "jfa-go",
+      "description": "jfa-go is a user management app for Jellyfin (and Emby as 2nd class) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
+      "note": "Manage users in Jellyfin",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellyfin.png",
+      "image": "hrfee/jfa-go:latest",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/jfa-go/docker-compose.yml"
+      },
+      "ports": [    "8056:8056"],
+      "volumes": [
+    {"container": "/data"},
+    {"container": "/jf"},
+    {"container": "/etc/localtime"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "latest"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 211,
+      "type": 2,
+      "title": "zipline",
+      "name": "zipline",
+      "description": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!",
+      "note": "zipline",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://github.com/bigbeartechworld/big-bear-casaos/assets/1289128/3b655316-f72c-4b89-8138-0abee624e9b8",
+      "image": "ghcr.io/diced/zipline:3.7.13",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/zipline/docker-compose.yml"
+      },
+      "env": [
+    {"name": "CORE_RETURN_HTTPS", "label": "CORE_RETURN_HTTPS", "description": "Environment variable for CORE_RETURN_HTTPS", "default": "false"},
+    {"name": "CORE_SECRET", "label": "CORE_SECRET", "description": "Environment variable for CORE_SECRET", "default": "changeme"},
+    {"name": "CORE_HOST", "label": "CORE_HOST", "description": "Environment variable for CORE_HOST", "default": "0.0.0.0"},
+    {"name": "CORE_PORT", "label": "CORE_PORT", "description": "Environment variable for CORE_PORT", "default": "3000"},
+    {"name": "CORE_DATABASE_URL", "label": "CORE_DATABASE_URL", "description": "Environment variable for CORE_DATABASE_URL", "default": "postgres://postgres:postgrespassword@zipline-db/zipline"},
+    {"name": "CORE_LOGGER", "label": "CORE_LOGGER", "description": "Environment variable for CORE_LOGGER", "default": "true"},
+    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "postgres"},
+    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "postgrespassword"},
+    {"name": "POSTGRES_DATABASE", "label": "POSTGRES_DATABASE", "description": "Environment variable for POSTGRES_DATABASE", "default": "zipline"}
+      ],
+      "ports": [    "3000:3000"],
+      "volumes": [
+    {"container": "/zipline/uploads"},
+    {"container": "/zipline/public"},
+    {"container": "/var/lib/postgresql/data"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "3.7.13"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}

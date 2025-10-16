@@ -1,0 +1,41 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 157,
+      "type": 2,
+      "title": "Plex with NVIDIA GPU",
+      "name": "plex-nvidia",
+      "description": "Stream Movies & TV Shows with NVIDIA GPU",
+      "note": "Stream Movies & TV Shows with NVIDIA GPU",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/plex.png",
+      "image": "linuxserver/plex:1.42.2",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "stackfile": "Apps/plex-nvidia/docker-compose.yml"
+      },
+      "env": [
+    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
+    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
+    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
+    {"name": "VERSION", "label": "VERSION", "description": "Environment variable for VERSION", "default": "docker"},
+    {"name": "PLEX_CLAIM", "label": "PLEX_CLAIM", "description": "Environment variable for PLEX_CLAIM", "default": ""},
+    {"name": "CPU_FALLBACK", "label": "CPU_FALLBACK", "description": "Environment variable for CPU_FALLBACK", "default": "true"},
+    {"name": "NVIDIA_VISIBLE_DEVICES", "label": "NVIDIA_VISIBLE_DEVICES", "description": "Environment variable for NVIDIA_VISIBLE_DEVICES", "default": "all"}
+      ],
+      "volumes": [
+    {"container": "/config"},
+    {"container": "/tv"},
+    {"container": "/movies"}
+      ],
+      "labels": [
+        {"name": "maintainer", "value": "BigBearTechWorld"},
+        {"name": "version", "value": "1.42.2"},
+        {"name": "source", "value": "big-bear-casaos"}
+      ],
+      "administrator_only": false
+    }
+  ]
+}
