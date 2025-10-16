@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 23,
-      "type": 2,
+            "type": 3,
       "title": "chromium",
       "name": "chromium",
       "description": "This Image contains a browser-accessible version of chromium.",

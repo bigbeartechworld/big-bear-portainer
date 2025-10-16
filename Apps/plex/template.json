@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 156,
-      "type": 2,
+            "type": 3,
       "title": "Plex",
       "name": "plex",
       "description": "Stream Movies & TV Shows",

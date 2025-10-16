@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 57,
-      "type": 2,
+            "type": 3,
       "title": "Genmon",
       "name": "genmon",
       "description": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi",

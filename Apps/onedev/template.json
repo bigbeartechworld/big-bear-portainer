@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 134,
-      "type": 2,
+            "type": 3,
       "title": "OneDev",
       "name": "onedev",
       "description": "Self-hosted Git Server with Kanban and CI/CD",

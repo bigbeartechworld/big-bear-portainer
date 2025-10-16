@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 79,
-      "type": 2,
+            "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
       "description": "Invoice Ninja is a free and open-source invoice and expense management system. It is a web-based application that allows you to create, manage, and track invoices and expenses.",

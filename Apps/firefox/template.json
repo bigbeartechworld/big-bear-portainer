@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 51,
-      "type": 2,
+            "type": 3,
       "title": "Firefox",
       "name": "firefox",
       "description": "This Image contains a browser-accessible version of Firefox.",

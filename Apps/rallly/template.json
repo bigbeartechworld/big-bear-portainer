@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 167,
-      "type": 2,
+            "type": 3,
       "title": "Rallly",
       "name": "rallly",
       "description": "Rallly is an open-source scheduling and collaboration tool designed to make organizing events and meetings easier.",

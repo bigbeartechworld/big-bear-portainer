@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 175,
-      "type": 2,
+            "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
       "description": "Ansible Semaphore is a modern UI for Ansible. It lets you easily run Ansible playbooks, get notifications about fails, control access to deployment system.",

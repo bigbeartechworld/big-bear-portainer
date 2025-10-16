@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 194,
-      "type": 2,
+            "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
       "description": "The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",

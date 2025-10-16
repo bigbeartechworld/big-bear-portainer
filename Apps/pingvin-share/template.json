@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 150,
-      "type": 2,
+            "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
       "description": "Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.",

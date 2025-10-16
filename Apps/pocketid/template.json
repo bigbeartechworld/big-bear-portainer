@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 158,
-      "type": 2,
+            "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
       "description": "Simple and easy-to-use OIDC provider that allows users to authenticate with their passkeys to your services.",

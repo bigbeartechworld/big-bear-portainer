@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 120,
-      "type": 2,
+            "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
       "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",

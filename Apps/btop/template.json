@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 16,
-      "type": 2,
+            "type": 3,
       "title": "btop",
       "name": "btop",
       "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",

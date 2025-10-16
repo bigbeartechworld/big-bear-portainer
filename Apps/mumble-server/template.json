@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 110,
-      "type": 2,
+            "type": 3,
       "title": "Mumble Server",
       "name": "mumble-server",
       "description": "Mumble is a free, open source, low latency, high quality voice chat application.",

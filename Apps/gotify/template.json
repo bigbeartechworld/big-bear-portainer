@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 65,
-      "type": 2,
+            "type": 3,
       "title": "Gotify",
       "name": "gotify",
       "description": "a simple server for sending and receiving messages",

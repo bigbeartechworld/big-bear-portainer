@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 138,
-      "type": 2,
+            "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
       "description": "An OpenTelemetry Backend in a Docker Image.",

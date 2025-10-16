@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 201,
-      "type": 2,
+            "type": 3,
       "title": "Wallos",
       "name": "wallos",
       "description": "Wallos: Open-Source Personal Subscription Tracker",

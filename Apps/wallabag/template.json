@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 200,
-      "type": 2,
+            "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
       "description": "Wallabag is a self-hosted application for saving web pages. Unlike other services, Wallabag is free and open source.",

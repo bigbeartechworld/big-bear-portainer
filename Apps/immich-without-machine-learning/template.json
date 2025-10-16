@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 78,
-      "type": 2,
+            "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
       "description": "Self-hosted photo and video storage. This does not include the machine learning part.",

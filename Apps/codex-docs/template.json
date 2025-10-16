@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 26,
-      "type": 2,
+            "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
       "description": "CodeX Docs is a free docs application. It's based on Editor.js ecosystem which gives all modern opportunities for working with content.",

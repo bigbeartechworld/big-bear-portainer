@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 84,
-      "type": 2,
+            "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
       "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",

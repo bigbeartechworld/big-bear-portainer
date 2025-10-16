@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 199,
-      "type": 2,
+            "type": 3,
       "title": "Viseron",
       "name": "viseron",
       "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",

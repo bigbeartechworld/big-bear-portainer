@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 135,
-      "type": 2,
+            "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
       "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities",

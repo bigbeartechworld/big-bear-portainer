@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 124,
-      "type": 2,
+            "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
       "description": "Note Mark Aio is a self-hosted note taking app that allows you to create, organize, and share notes. It's a fork of the popular note-mark app with a focus on simplicity and ease of use.",

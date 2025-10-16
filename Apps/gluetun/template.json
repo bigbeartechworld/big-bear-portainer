@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 63,
-      "type": 2,
+            "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
       "description": "Lightweight swiss-knife-like VPN client to multiple VPN service providers",

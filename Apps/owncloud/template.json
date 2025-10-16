@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 139,
-      "type": 2,
+            "type": 3,
       "title": "ownCloud",
       "name": "owncloud",
       "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 105,
-      "type": 2,
+            "type": 3,
       "title": "Microbin",
       "name": "microbin",
       "description": "Self-hosted, encrypted pastebin alternative with configurable features.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 112,
-      "type": 2,
+            "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
       "description": "MySpeed is a speed test analysis software that records your internet speed for up to 30 days.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 20,
-      "type": 2,
+            "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
       "description": "The best and simplest free open source website change detection, restock monitor and notification service.",

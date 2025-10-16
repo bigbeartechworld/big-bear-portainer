@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 212,
-      "type": 2,
+            "type": 3,
       "title": "Zotero",
       "name": "zotero",
       "description": "Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.",

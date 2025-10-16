@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 152,
-      "type": 2,
+            "type": 3,
       "title": "Planka",
       "name": "planka",
       "description": "The realtime kanban board for workgroups built with React and Redux.",

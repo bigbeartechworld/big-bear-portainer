@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 61,
-      "type": 2,
+            "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
       "description": "Gladys Assistant is a modern, privacy-first & open-source home automation software that runs anywhere.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 12,
-      "type": 2,
+            "type": 3,
       "title": "Beszel",
       "name": "beszel",
       "description": "A lightweight server resource monitoring hub with historical data, docker stats, and alerts.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 183,
-      "type": 2,
+            "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
       "description": "Zero config VPN. Installs on any device in minutes, manages firewall rules for you, and works from anywhere.",

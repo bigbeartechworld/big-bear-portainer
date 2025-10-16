@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 132,
-      "type": 2,
+            "type": 3,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",

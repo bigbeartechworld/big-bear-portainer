@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 202,
-      "type": 2,
+            "type": 3,
       "title": "Warracker",
       "name": "warracker",
       "description": "A self-hosted warranty tracker",

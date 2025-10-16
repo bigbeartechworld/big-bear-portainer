@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 161,
-      "type": 2,
+            "type": 3,
       "title": "Portracker",
       "name": "portracker",
       "description": "A self-hosted, real-time port monitoring and discovery tool that automatically discovers and maps network services across systems.",

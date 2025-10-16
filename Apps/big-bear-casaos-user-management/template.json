@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 13,
-      "type": 2,
+            "type": 3,
       "title": "Big Bear CasaOS User Management",
       "name": "big-bear-casaos-user-management",
       "description": "Manage users in CasaOS",

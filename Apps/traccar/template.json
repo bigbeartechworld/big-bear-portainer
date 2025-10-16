@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 187,
-      "type": 2,
+            "type": 3,
       "title": "Traccar",
       "name": "traccar",
       "description": "Traccar GPS Tracking System in Docker image.",

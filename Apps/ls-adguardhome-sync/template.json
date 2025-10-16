@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 99,
-      "type": 2,
+            "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
       "description": "🛡️ Synchronize AdGuard Home config to replicas. This is the LinuxServer version.",

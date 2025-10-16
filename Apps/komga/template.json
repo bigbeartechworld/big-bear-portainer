@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 91,
-      "type": 2,
+            "type": 3,
       "title": "Komga",
       "name": "komga",
       "description": "A media server for your comics, mangas, BDs, magazines and eBooks.",

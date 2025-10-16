@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 82,
-      "type": 2,
+            "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
       "description": "Jellystat is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)",

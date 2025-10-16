@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 77,
-      "type": 2,
+            "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
       "description": "Immich Kiosk is a lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source.",
