@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 158,
+      "id": 160,
       "type": 2,
       "title": "Portainer Agent",
       "name": "portainer-agent",

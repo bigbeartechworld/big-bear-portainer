@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 155,
+      "id": 157,
       "type": 2,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",

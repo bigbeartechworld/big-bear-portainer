@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 202,
+      "id": 204,
       "type": 2,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",

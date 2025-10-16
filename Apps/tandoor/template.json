@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 182,
+      "id": 184,
       "type": 2,
       "title": "Tandoor",
       "name": "tandoor",
@@ -11,7 +11,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/tandoor-recipes.png",
-      "image": "ghcr.io/tandoorrecipes/recipes:2.3.2",
+      "image": "ghcr.io/tandoorrecipes/recipes:2.3.3",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/tandoor/docker-compose.yml"
@@ -37,7 +37,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.3.2"},
+        {"name": "version", "value": "2.3.3"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
