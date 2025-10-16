@@ -11,10 +11,6 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/linkwarden.png",
-<<<<<<< Updated upstream
-      "image": "ghcr.io/linkwarden/linkwarden:v2.13.1",
-=======
->>>>>>> Stashed changes
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/linkwarden/docker-compose.yml"
@@ -27,22 +23,7 @@
     {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "casaos"},
     {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "casaospassword"},
     {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "big-bear-linkwarden"}
-<<<<<<< Updated upstream
-      ],
-      "ports": [    "3000:3000"],
-      "volumes": [
-    {"container": "/data/data"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.13.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
-=======
       ]
->>>>>>> Stashed changes
     }
   ]
 }
