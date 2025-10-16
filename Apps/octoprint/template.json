@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 127,
+      "id": 129,
       "type": 2,
       "title": "OctoPrint",
       "name": "octoprint",

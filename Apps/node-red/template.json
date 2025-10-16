@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 121,
+      "id": 123,
       "type": 2,
       "title": "Node-RED",
       "name": "node-red",

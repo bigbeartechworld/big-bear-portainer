@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 74,
+      "id": 75,
       "type": 2,
       "title": "Immich",
       "name": "immich",
@@ -11,7 +11,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/immich.png",
-      "image": "ghcr.io/immich-app/immich-server:v2.0.1",
+      "image": "ghcr.io/immich-app/immich-server:v2.1.0",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/immich/docker-compose.yml"
@@ -24,7 +24,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.0.1"},
+        {"name": "version", "value": "2.1.0"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false

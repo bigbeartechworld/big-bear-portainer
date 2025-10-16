@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 146,
+      "id": 148,
       "type": 2,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",

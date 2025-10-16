@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 96,
+      "id": 97,
       "type": 2,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -11,7 +11,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/linkwarden.png",
-      "image": "ghcr.io/linkwarden/linkwarden:v2.13.0",
+      "image": "ghcr.io/linkwarden/linkwarden:v2.13.1",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/linkwarden/docker-compose.yml"
@@ -32,7 +32,7 @@
       ],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.13.0"},
+        {"name": "version", "value": "2.13.1"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false

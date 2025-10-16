@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 88,
+      "id": 89,
       "type": 2,
       "title": "Kiwix Server",
       "name": "kiwix-serve",

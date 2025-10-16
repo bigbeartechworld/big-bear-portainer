@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 97,
+      "id": 98,
       "type": 2,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -11,7 +11,7 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/lobe-chat.png",
-      "image": "lobehub/lobe-chat:1.136.12",
+      "image": "lobehub/lobe-chat:1.137.0",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-casaos",
         "stackfile": "Apps/lobe-chat/docker-compose.yml"
@@ -25,7 +25,7 @@
       "ports": [    "3210:3210"],
       "labels": [
         {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.136.12"},
+        {"name": "version", "value": "1.137.0"},
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
