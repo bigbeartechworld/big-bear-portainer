@@ -11,27 +11,15 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/nextcloud.png",
-      "image": "linuxserver/nextcloud:32.0.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/nextcloud-ls/docker-compose.yml"
       },
       "env": [
     {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
     {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"}
-      ],
-      "ports": [    "10443:443"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "32.0.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

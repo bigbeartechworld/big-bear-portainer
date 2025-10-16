@@ -11,26 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/paperless-ngx.png",
-      "image": "ghcr.io/paperless-ngx/paperless-ngx:2.18.4",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/paperless-ngx/docker-compose.yml"
-      },
-      "ports": [    "8000:8000"],
-      "volumes": [
-    {"container": "/usr/src/paperless/data"},
-    {"container": "/usr/src/paperless/media"},
-    {"container": "/usr/src/paperless/export"},
-    {"container": "/usr/src/paperless/consume"},
-    {"container": "/data"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.18.4"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/omada.png",
-      "image": "mbentley/omada-controller:5.15",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/tp-link-omada-controller/docker-compose.yml"
       },
       "env": [
@@ -34,17 +33,7 @@
     {"name": "SSL_CERT_NAME", "label": "SSL_CERT_NAME", "description": "Environment variable for SSL_CERT_NAME", "default": "tls.crt"},
     {"name": "SSL_KEY_NAME", "label": "SSL_KEY_NAME", "description": "Environment variable for SSL_KEY_NAME", "default": "tls.key"},
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"}
-      ],
-      "volumes": [
-    {"container": "/opt/tplink/EAPController/data"},
-    {"container": "/opt/tplink/EAPController/logs"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "5.15"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

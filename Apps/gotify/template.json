@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/gotify.png",
-      "image": "gotify/server:2.7.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/gotify/docker-compose.yml"
       },
       "env": [
     {"name": "GOTIFY_DEFAULTUSER_NAME", "label": "GOTIFY_DEFAULTUSER_NAME", "description": "Environment variable for GOTIFY_DEFAULTUSER_NAME", "default": "admin"},
     {"name": "GOTIFY_DEFAULTUSER_PASS", "label": "GOTIFY_DEFAULTUSER_PASS", "description": "Environment variable for GOTIFY_DEFAULTUSER_PASS", "default": "custom"}
-      ],
-      "ports": [    "8091:80"],
-      "volumes": [
-    {"container": "/app/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.7.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

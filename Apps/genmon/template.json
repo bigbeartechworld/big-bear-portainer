@@ -11,26 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/genmon/logo.jpeg",
-      "image": "bigbeartechworld/big-bear-genmon:1.19.06",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/genmon/docker-compose.yml"
       },
       "env": [
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "America/Chicago"}
-      ],
-      "ports": [    "20022:22",    "38443:443",    "8000:8000"],
-      "volumes": [
-    {"container": "/git/genmon"},
-    {"container": "/etc/genmon"},
-    {"container": "/var/log"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.19.06"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

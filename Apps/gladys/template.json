@@ -11,23 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://gladysassistant.com/img/external/github-gladys-logo.png",
-      "image": "gladysassistant/gladys:v4.64.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/gladys/docker-compose.yml"
-      },
-      "volumes": [
-    {"container": "/var/run/docker.sock"},
-    {"container": "/var/lib/gladysassistant"},
-    {"container": "/dev"},
-    {"container": "/run/udev"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.64.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

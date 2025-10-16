@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/project-management/logo.png",
-      "image": "eloufirhatim/helper:1.2.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/project-management/docker-compose.yml"
       },
       "env": [
@@ -33,18 +32,7 @@
     {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "project_management"},
     {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a"},
     {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a"}
-      ],
-      "ports": [    "8000:8000"],
-      "volumes": [
-    {"container": "/etc/localtime"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.2.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

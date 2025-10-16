@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/ubiquiti-unifi.png",
-      "image": "mongo:6.0.11",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/unifi-network-application/docker-compose.yml"
       },
       "env": [
@@ -29,19 +28,7 @@
     {"name": "MEM_STARTUP", "label": "MEM_STARTUP", "description": "Environment variable for MEM_STARTUP", "default": "1024"},
     {"name": "MONGO_TLS", "label": "MONGO_TLS", "description": "Environment variable for MONGO_TLS", "default": ""},
     {"name": "MONGO_AUTHSOURCE", "label": "MONGO_AUTHSOURCE", "description": "Environment variable for MONGO_AUTHSOURCE", "default": ""}
-      ],
-      "ports": [    "27017:27017",    "8443:8443",    "3478:3478/udp",    "10001:10001/udp",    "8080:8080",    "1900:1900/udp",    "8843:8843",    "8880:8880",    "6789:6789",    "5514:5514/udp"],
-      "volumes": [
-    {"container": "/data/db"},
-    {"container": "/docker-entrypoint-initdb.d/init-mongo.js"},
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "6.0.11"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

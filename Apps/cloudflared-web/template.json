@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/cloudflare.png",
-      "image": "wisdomsky/cloudflared-web:2025.9.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/cloudflared-web/docker-compose.yml"
       },
       "env": [
@@ -24,13 +23,7 @@
     {"name": "METRICS_PORT", "label": "METRICS_PORT", "description": "Environment variable for METRICS_PORT", "default": "60123"},
     {"name": "BASIC_AUTH_USER", "label": "BASIC_AUTH_USER", "description": "Environment variable for BASIC_AUTH_USER", "default": "admin"},
     {"name": "BASIC_AUTH_PASS", "label": "BASIC_AUTH_PASS", "description": "Environment variable for BASIC_AUTH_PASS", "default": ""}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2025.9.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

@@ -11,31 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/filebrowser-quantum.png",
-      "image": "filebrowser/filebrowser:v2.44.0-s6",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/filebrowser/docker-compose.yml"
       },
       "env": [
     {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "0"},
     {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "0"}
-      ],
-      "ports": [    "8080:80"],
-      "volumes": [
-    {"container": "/srv/app-data"},
-    {"container": "/srv/documents"},
-    {"container": "/srv/downloads"},
-    {"container": "/srv/gallery"},
-    {"container": "/srv/media"},
-    {"container": "/database"},
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2.44.0-s6"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

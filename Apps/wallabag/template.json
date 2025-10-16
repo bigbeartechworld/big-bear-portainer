@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/wallabag.png",
-      "image": "wallabag/wallabag:2.6.14",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/wallabag/docker-compose.yml"
       },
       "env": [
@@ -31,18 +30,7 @@
     {"name": "SYMFONY__ENV__DOMAIN_NAME", "label": "SYMFONY__ENV__DOMAIN_NAME", "description": "Environment variable for SYMFONY__ENV__DOMAIN_NAME", "default": "http://[IP]:8080"},
     {"name": "SYMFONY__ENV__SERVER_NAME", "label": "SYMFONY__ENV__SERVER_NAME", "description": "Environment variable for SYMFONY__ENV__SERVER_NAME", "default": "Big Bear Wallabag"},
     {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "777134a0-4480-49f3-b00c-29db42c6d136"}
-      ],
-      "ports": [    "8080:80"],
-      "volumes": [
-    {"container": "/var/www/wallabag/web/assets/images"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "Wallabag Team"},
-        {"name": "version", "value": "2.6.14"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

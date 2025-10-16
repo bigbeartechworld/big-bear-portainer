@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/gitea-mirror/logo-new.png",
-      "image": "ghcr.io/raylabshq/gitea-mirror:v3.8.3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/gitea-mirror/docker-compose.yml"
       },
       "env": [
@@ -23,17 +22,7 @@
     {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "4321"},
     {"name": "BETTER_AUTH_URL", "label": "BETTER_AUTH_URL", "description": "Environment variable for BETTER_AUTH_URL", "default": "http://0.0.0.0:4321"},
     {"name": "BETTER_AUTH_SECRET", "label": "BETTER_AUTH_SECRET", "description": "Environment variable for BETTER_AUTH_SECRET", "default": "your-secret-key-change-this-in-production"}
-      ],
-      "ports": [    "4321:4321"],
-      "volumes": [
-    {"container": "/app/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "RayLabs HQ"},
-        {"name": "version", "value": "3.8.3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

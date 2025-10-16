@@ -11,28 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/authentik.png",
-      "image": "ghcr.io/goauthentik/server:2025.8.4",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/authentik/docker-compose.yml"
-      },
-      "ports": [    "9443:9443"],
-      "volumes": [
-    {"container": "/media"},
-    {"container": "/templates"},
-    {"container": "/var/run/docker.sock"},
-    {"container": "/media"},
-    {"container": "/certs"},
-    {"container": "/templates"},
-    {"container": "/var/lib/postgresql/data"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "2025.8.4"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

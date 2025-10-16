@@ -11,17 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/music-assistant/logo.png",
-      "image": "ghcr.io/music-assistant/server:2.6.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/music-assistant/docker-compose.yml"
-      },
-      "labels": [
-        {"name": "maintainer", "value": "Tofil"},
-        {"name": "version", "value": "2.6.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

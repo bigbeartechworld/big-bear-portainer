@@ -11,27 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://avatars.githubusercontent.com/u/44181855?s=280&v=4",
-      "image": "linuxserver/kasm:1.120.20221218",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/kasm/docker-compose.yml"
       },
       "env": [
     {"name": "KASM_PORT", "label": "KASM_PORT", "description": "Environment variable for KASM_PORT", "default": "443"}
-      ],
-      "ports": [    "3000:3000",    "443:443"],
-      "volumes": [
-    {"container": "/opt"},
-    {"container": "/profiles"},
-    {"container": "/dev/input"},
-    {"container": "/run/udev/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearCommunity"},
-        {"name": "version", "value": "1.120.20221218"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

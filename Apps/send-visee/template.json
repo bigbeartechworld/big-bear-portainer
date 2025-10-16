@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/send-visee.png",
-      "image": "registry.gitlab.com/timvisee/send:v3.4.27",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/send-visee/docker-compose.yml"
       },
       "env": [
@@ -22,18 +21,7 @@
     {"name": "REDIS_HOST", "label": "REDIS_HOST", "description": "Environment variable for REDIS_HOST", "default": "big-bear-send-visee-redis"},
     {"name": "MAX_FILE_SIZE", "label": "MAX_FILE_SIZE", "description": "Environment variable for MAX_FILE_SIZE", "default": "2147483648"},
     {"name": "FILE_DIR", "label": "FILE_DIR", "description": "Environment variable for FILE_DIR", "default": "/uploads"}
-      ],
-      "ports": [    "1443:1443"],
-      "volumes": [
-    {"container": "/uploads"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "3.4.27"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/brave.png",
-      "image": "kasmweb/brave:1.15.0-rolling",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/brave/docker-compose.yml"
       },
       "env": [
     {"name": "VNC_PW", "label": "VNC_PW", "description": "Environment variable for VNC_PW", "default": "casaos"},
     {"name": "LAUNCH_URL", "label": "LAUNCH_URL", "description": "Environment variable for LAUNCH_URL", "default": "https://community.bigbeartechworld.com/"}
-      ],
-      "ports": [    "6901:6901"],
-      "volumes": [
-    {"container": "/home/kasm-user/Downloads"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.15.0-rolling"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

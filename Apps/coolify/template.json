@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/coolify/logo.png",
-      "image": "ghcr.io/coollabsio/coolify:4.0.0-beta.434",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/coolify/docker-compose.yml"
       },
       "env": [
@@ -73,25 +72,7 @@
     {"name": "STRIPE_PRICE_ID_ULTIMATE_MONTHLY_OLD", "label": "STRIPE_PRICE_ID_ULTIMATE_MONTHLY_OLD", "description": "Environment variable for STRIPE_PRICE_ID_ULTIMATE_MONTHLY_OLD", "default": ""},
     {"name": "STRIPE_PRICE_ID_ULTIMATE_YEARLY_OLD", "label": "STRIPE_PRICE_ID_ULTIMATE_YEARLY_OLD", "description": "Environment variable for STRIPE_PRICE_ID_ULTIMATE_YEARLY_OLD", "default": ""},
     {"name": "STRIPE_EXCLUDED_PLANS", "label": "STRIPE_EXCLUDED_PLANS", "description": "Environment variable for STRIPE_EXCLUDED_PLANS", "default": ""}
-      ],
-      "ports": [    "8000:8080",    "5432:5432",    "6379:6379",    "6001:6001",    "6002:6002"],
-      "volumes": [
-    {"container": "/var/www/html/storage/app/ssh"},
-    {"container": "/var/www/html/storage/app/applications"},
-    {"container": "/var/www/html/storage/app/databases"},
-    {"container": "/var/www/html/storage/app/services"},
-    {"container": "/var/www/html/storage/app/backups"},
-    {"container": "/var/www/html/storage/app/webhooks-during-maintenance"},
-    {"container": "/var/www/html/storage/logs"},
-    {"container": "/var/lib/postgresql/data"},
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "4.0.0-beta.434"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

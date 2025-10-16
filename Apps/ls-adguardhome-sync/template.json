@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/adguard-home.png",
-      "image": "linuxserver/adguardhome-sync:0.8.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ls-adguardhome-sync/docker-compose.yml"
       },
       "env": [
@@ -30,17 +29,7 @@
     {"name": "CRON", "label": "CRON", "description": "Environment variable for CRON", "default": "0 */2 * * *"},
     {"name": "RUN_ON_START", "label": "RUN_ON_START", "description": "Environment variable for RUN_ON_START", "default": "true"},
     {"name": "API_PORT", "label": "API_PORT", "description": "Environment variable for API_PORT", "default": "8080"}
-      ],
-      "ports": [    "8080:8080"],
-      "volumes": [
-    {"container": "/config"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.8.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

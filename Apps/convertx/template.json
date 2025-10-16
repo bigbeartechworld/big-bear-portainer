@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/convertx/logo.png",
-      "image": "ghcr.io/c4illin/convertx:v0.15.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/convertx/docker-compose.yml"
       },
       "env": [
     {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Environment variable for JWT_SECRET", "default": "c8330437-e6ae-4cf0-9837-4d1326457e32"},
     {"name": "HTTP_ALLOWED", "label": "HTTP_ALLOWED", "description": "Environment variable for HTTP_ALLOWED", "default": "true"}
-      ],
-      "ports": [    "3000:3000"],
-      "volumes": [
-    {"container": "/app/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.15.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

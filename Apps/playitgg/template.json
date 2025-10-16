@@ -11,20 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://media.forgecdn.net/avatars/848/399/638248438568793075.png",
-      "image": "dysta/playitgg:1.1.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/playitgg/docker-compose.yml"
-      },
-      "volumes": [
-    {"container": "/secrets"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearCommunity"},
-        {"name": "version", "value": "1.1.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

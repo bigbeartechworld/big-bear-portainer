@@ -11,24 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homarr.png",
-      "image": "ghcr.io/ajnart/homarr:0.16.0",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/homarr/docker-compose.yml"
-      },
-      "ports": [    "7575:7575"],
-      "volumes": [
-    {"container": "/app/data/configs"},
-    {"container": "/app/public/icons"},
-    {"container": "/data"},
-    {"container": "/var/run/docker.sock"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.16.0"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

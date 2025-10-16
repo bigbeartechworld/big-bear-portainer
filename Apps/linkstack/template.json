@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/linkstack.png",
-      "image": "linkstackorg/linkstack:V4",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/linkstack/docker-compose.yml"
       },
       "env": [
@@ -23,17 +22,7 @@
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Europe/Berlin"},
     {"name": "PHP_MEMORY_LIMIT", "label": "PHP_MEMORY_LIMIT", "description": "Environment variable for PHP_MEMORY_LIMIT", "default": "512M"},
     {"name": "UPLOAD_MAX_FILESIZE", "label": "UPLOAD_MAX_FILESIZE", "description": "Environment variable for UPLOAD_MAX_FILESIZE", "default": "8M"}
-      ],
-      "ports": [    "8080:80",    "10443:443"],
-      "volumes": [
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "V4"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

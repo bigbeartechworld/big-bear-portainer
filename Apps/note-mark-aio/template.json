@@ -11,25 +11,14 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/note-mark-aio/logo.png",
-      "image": "ghcr.io/enchant97/note-mark-aio:0.17.1",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/note-mark-aio/docker-compose.yml"
       },
       "env": [
     {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Environment variable for JWT_SECRET", "default": "MGZiMzlkM2EtNmYxNC00NzNlLWI2YjItYTViY2M0Mzg0NjNl"},
     {"name": "CORS_ORIGINS", "label": "CORS_ORIGINS", "description": "Environment variable for CORS_ORIGINS", "default": "http://example.com:8000"}
-      ],
-      "ports": [    "8000:8000"],
-      "volumes": [
-    {"container": "/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.17.1"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/kopia.png",
-      "image": "ghcr.io/thespad/kopia-server:v0.17.0-spad3",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/kopia/docker-compose.yml"
       },
       "env": [
@@ -25,21 +24,7 @@
     {"name": "KOPIA_UI_PASSWORD", "label": "KOPIA_UI_PASSWORD", "description": "Environment variable for KOPIA_UI_PASSWORD", "default": "casaos"},
     {"name": "KOPIA_PASSWORD", "label": "KOPIA_PASSWORD", "description": "Environment variable for KOPIA_PASSWORD", "default": "casaos"},
     {"name": "REFRESH_INTERVAL", "label": "REFRESH_INTERVAL", "description": "Environment variable for REFRESH_INTERVAL", "default": ""}
-      ],
-      "ports": [    "51515:51515"],
-      "volumes": [
-    {"container": "/config"},
-    {"container": "/backups/home"},
-    {"container": "/repository"},
-    {"container": "/tmp"},
-    {"container": "/var/run/docker.sock"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "v0.17.0-spad3"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

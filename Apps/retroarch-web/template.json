@@ -11,21 +11,13 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/retroarch-web/logo.png",
-      "image": "inglebard/retroarch-web:latest",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/retroarch-web/docker-compose.yml"
       },
       "env": [
     {"name": "ROOT_WWW_PATH", "label": "ROOT_WWW_PATH", "description": "Environment variable for ROOT_WWW_PATH", "default": "/var/www/html"}
-      ],
-      "ports": [    "8080:80"],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "latest"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

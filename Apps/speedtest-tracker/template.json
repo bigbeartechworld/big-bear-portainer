@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/alexjustesen/speedtest-tracker/public/img/speedtest-tracker-icon.png",
-      "image": "linuxserver/speedtest-tracker:1.6.8",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/speedtest-tracker/docker-compose.yml"
       },
       "env": [
@@ -30,20 +29,7 @@
     {"name": "MARIADB_USER", "label": "MARIADB_USER", "description": "Environment variable for MARIADB_USER", "default": "casaos"},
     {"name": "MARIADB_PASSWORD", "label": "MARIADB_PASSWORD", "description": "Environment variable for MARIADB_PASSWORD", "default": "casaos"},
     {"name": "MARIADB_RANDOM_ROOT_PASSWORD", "label": "MARIADB_RANDOM_ROOT_PASSWORD", "description": "Environment variable for MARIADB_RANDOM_ROOT_PASSWORD", "default": "true"}
-      ],
-      "ports": [    "8080:80",    "8443:443"],
-      "volumes": [
-    {"container": "/etc/localtime"},
-    {"container": "/config"},
-    {"container": "/etc/ssl/web"},
-    {"container": "/var/lib/mysql"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "1.6.8"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

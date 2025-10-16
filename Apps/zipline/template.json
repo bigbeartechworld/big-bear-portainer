@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://github.com/bigbeartechworld/big-bear-casaos/assets/1289128/3b655316-f72c-4b89-8138-0abee624e9b8",
-      "image": "ghcr.io/diced/zipline:3.7.13",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/zipline/docker-compose.yml"
       },
       "env": [
@@ -26,19 +25,7 @@
     {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "postgres"},
     {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "postgrespassword"},
     {"name": "POSTGRES_DATABASE", "label": "POSTGRES_DATABASE", "description": "Environment variable for POSTGRES_DATABASE", "default": "zipline"}
-      ],
-      "ports": [    "3000:3000"],
-      "volumes": [
-    {"container": "/zipline/uploads"},
-    {"container": "/zipline/public"},
-    {"container": "/var/lib/postgresql/data"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "3.7.13"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/lancache-net.png",
-      "image": "lancachenet/monolithic:latest",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/lancache/docker-compose.yml"
       },
       "env": [
@@ -35,18 +34,7 @@
     {"name": "CACHE_INDEX_SIZE", "label": "CACHE_INDEX_SIZE", "description": "Environment variable for CACHE_INDEX_SIZE", "default": "500m"},
     {"name": "CACHE_MAX_AGE", "label": "CACHE_MAX_AGE", "description": "Environment variable for CACHE_MAX_AGE", "default": "3650d"},
     {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
-      ],
-      "ports": [    "8080:80",    "10443:443",    "53:53/udp",    "53:53/tcp"],
-      "volumes": [
-    {"container": "/data/cache"},
-    {"container": "/data/logs"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "latest"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

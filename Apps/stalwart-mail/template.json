@@ -11,21 +11,10 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/stalwart.png",
-      "image": "stalwartlabs/stalwart:v0.13.4",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/stalwart-mail/docker-compose.yml"
-      },
-      "ports": [    "8080:8080",    "25:25/tcp",    "143:143/tcp",    "465:465/tcp",    "587:587/tcp",    "993:993/tcp",    "4190:4190/tcp"],
-      "volumes": [
-    {"container": "/opt/stalwart"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "0.13.4"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      }
     }
   ]
 }

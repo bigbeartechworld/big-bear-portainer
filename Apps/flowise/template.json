@@ -11,9 +11,8 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/flowise/logo.png",
-      "image": "flowiseai/flowise:3.0.8",
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/flowise/docker-compose.yml"
       },
       "env": [
@@ -30,17 +29,7 @@
     {"name": "APIKEY_PATH", "label": "APIKEY_PATH", "description": "Environment variable for APIKEY_PATH", "default": "/root/.flowise"},
     {"name": "SECRETKEY_PATH", "label": "SECRETKEY_PATH", "description": "Environment variable for SECRETKEY_PATH", "default": "/root/.flowise/logs"},
     {"name": "LOG_PATH", "label": "LOG_PATH", "description": "Environment variable for LOG_PATH", "default": "/root/.flowise"}
-      ],
-      "ports": [    "8009:8009"],
-      "volumes": [
-    {"container": "/root/.flowise"}
-      ],
-      "labels": [
-        {"name": "maintainer", "value": "BigBearTechWorld"},
-        {"name": "version", "value": "3.0.8"},
-        {"name": "source", "value": "big-bear-casaos"}
-      ],
-      "administrator_only": false
+      ]
     }
   ]
 }

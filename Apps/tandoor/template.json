@@ -11,9 +11,12 @@
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/tandoor-recipes.png",
+<<<<<<< Updated upstream
       "image": "ghcr.io/tandoorrecipes/recipes:2.3.3",
+=======
+>>>>>>> Stashed changes
       "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-casaos",
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/tandoor/docker-compose.yml"
       },
       "env": [
@@ -28,6 +31,7 @@
     {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "tandoor"},
     {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "100c7d31-9ec5-44ec-9101-e226c8e2420d"},
     {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "tandoordb"}
+<<<<<<< Updated upstream
       ],
       "ports": [    "8080:8080"],
       "volumes": [
@@ -41,6 +45,9 @@
         {"name": "source", "value": "big-bear-casaos"}
       ],
       "administrator_only": false
+=======
+      ]
+>>>>>>> Stashed changes
     }
   ]
 }
