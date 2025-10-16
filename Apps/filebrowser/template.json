@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 49,
-      "type": 2,
+            "type": 3,
       "title": "Filebrowser",
       "name": "filebrowser",
       "description": "Reliable and Performant File Management Desktop Sync and File Sharing Tool.",

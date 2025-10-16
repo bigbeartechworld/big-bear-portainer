@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 6,
-      "type": 2,
+            "type": 3,
       "title": "Appsmith",
       "name": "appsmith",
       "description": "Low code project to build admin panels, internal tools, and dashboards, integrating 15+ databases.",

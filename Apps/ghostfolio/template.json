@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 59,
-      "type": 2,
+            "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
       "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",

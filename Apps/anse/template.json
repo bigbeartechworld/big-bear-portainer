@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 5,
-      "type": 2,
+            "type": 3,
       "title": "Anse",
       "name": "anse",
       "description": "Anse is a fully optimized UI for AI Chats. Supercharged experience for multiple models such as ChatGPT, DALL-E and Stable Diffusion.",

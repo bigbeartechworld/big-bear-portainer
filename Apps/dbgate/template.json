@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 35,
-      "type": 2,
+            "type": 3,
       "title": "DBGate",
       "name": "dbgate",
       "description": "Web based UI for managing and exploring SQL database data",

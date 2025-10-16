@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 170,
-      "type": 2,
+            "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
       "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",

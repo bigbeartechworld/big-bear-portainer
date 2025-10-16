@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 9,
-      "type": 2,
+            "type": 3,
       "title": "Ayon",
       "name": "ayon",
       "description": "This is the official Docker-based deployment for the Ayon Server. Ayon is a robust tool designed to manage and automate workflows in the animation and visual effects industries.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 88,
-      "type": 2,
+            "type": 3,
       "title": "Kavita",
       "name": "kavita",
       "description": "Kavita is a fast, feature rich, cross platform reading server",

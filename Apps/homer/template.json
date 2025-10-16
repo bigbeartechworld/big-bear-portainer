@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 73,
-      "type": 2,
+            "type": 3,
       "title": "Homer",
       "name": "homer",
       "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",

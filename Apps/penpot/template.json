@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 143,
-      "type": 2,
+            "type": 3,
       "title": "Penpot",
       "name": "penpot",
       "description": "Designers and developers can finally work in unison to build beautifully designed software experiences that truly scale up.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 176,
-      "type": 2,
+            "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
       "description": "A fork of Mozilla's Firefox Send. Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.",

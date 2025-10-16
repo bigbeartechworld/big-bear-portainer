@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 45,
-      "type": 2,
+            "type": 3,
       "title": "Excalidraw",
       "name": "excalidraw",
       "description": "Virtual whiteboard for sketching hand-drawn like diagrams",

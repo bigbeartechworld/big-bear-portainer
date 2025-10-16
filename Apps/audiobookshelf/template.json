@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 7,
-      "type": 2,
+            "type": 3,
       "title": "Audiobookshelf",
       "name": "audiobookshelf",
       "description": "Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks. Audiobookshelf has a clean, accessible design that's loaded with features but not overly complicated.",

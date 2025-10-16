@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 169,
-      "type": 2,
+            "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
       "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",

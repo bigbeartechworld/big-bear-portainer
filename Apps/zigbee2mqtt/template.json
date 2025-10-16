@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 210,
-      "type": 2,
+            "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
       "description": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",

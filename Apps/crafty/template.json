@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 30,
-      "type": 2,
+            "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
       "description": "Crafty 4 is the next iteration of our Minecraft Server Wrapper / Controller / Launcher.",

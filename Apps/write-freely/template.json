@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 209,
-      "type": 2,
+            "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
       "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",

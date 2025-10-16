@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 33,
-      "type": 2,
+            "type": 3,
       "title": "Dashy",
       "name": "dashy",
       "description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",

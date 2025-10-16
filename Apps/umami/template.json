@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 192,
-      "type": 2,
+            "type": 3,
       "title": "Umami",
       "name": "umami",
       "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",

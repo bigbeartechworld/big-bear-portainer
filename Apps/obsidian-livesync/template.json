@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 128,
-      "type": 2,
+            "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
       "description": "Self-hosted database for synchronizing Obsidian vaults.",

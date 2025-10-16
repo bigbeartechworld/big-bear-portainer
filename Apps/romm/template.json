@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 171,
-      "type": 2,
+            "type": 3,
       "title": "RomM",
       "name": "romm",
       "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 153,
-      "type": 2,
+            "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
       "description": "Plant-it is a self-hosted gardening companion app. Useful for keeping track of plant care, receiving notifications about when to water plants, uploading plant images, and more.",

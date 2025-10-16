@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 148,
-      "type": 2,
+            "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
       "description": "This is a custom pihole and unbound setup.",

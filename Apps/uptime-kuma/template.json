@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 197,
-      "type": 2,
+            "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
       "description": "A fancy self-hosted monitoring tool",

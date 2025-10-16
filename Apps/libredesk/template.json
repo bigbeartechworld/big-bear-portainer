@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 94,
-      "type": 2,
+            "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
       "description": "Open source, self-hosted customer support desk. Single binary app.",

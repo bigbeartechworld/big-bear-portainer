@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 71,
-      "type": 2,
+            "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
       "description": "HomeKit support for the impatient.",

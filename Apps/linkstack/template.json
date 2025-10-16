@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 96,
-      "type": 2,
+            "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
       "description": "LinkStack is a link-in-bio tool that allows you to create a personalized and easily customizable page that houses all the important links you want to share with your audience.",

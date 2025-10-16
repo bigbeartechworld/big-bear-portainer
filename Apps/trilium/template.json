@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 188,
-      "type": 2,
+            "type": 3,
       "title": "Trilium",
       "name": "trilium",
       "description": "Build your personal knowledge base with Trilium Notes",

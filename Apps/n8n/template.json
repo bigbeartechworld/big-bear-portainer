@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 113,
-      "type": 2,
+            "type": 3,
       "title": "n8n",
       "name": "n8n",
       "description": "Free and open fair-code licensed node based Workflow Automation Tool.",

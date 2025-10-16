@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 15,
-      "type": 2,
+            "type": 3,
       "title": "Brave",
       "name": "brave",
       "description": "This Image contains a browser-accessible version of Brave.",

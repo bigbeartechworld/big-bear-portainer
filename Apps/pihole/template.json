@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 147,
-      "type": 2,
+            "type": 3,
       "title": "Pi-hole",
       "name": "pihole",
       "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.",

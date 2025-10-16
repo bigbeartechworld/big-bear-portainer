@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 89,
-      "type": 2,
+            "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
       "description": "Kiwix Server is a web server for hosting .zim files",

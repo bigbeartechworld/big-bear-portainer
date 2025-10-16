@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 38,
-      "type": 2,
+            "type": 3,
       "title": "Dockge",
       "name": "dockge",
       "description": "A fancy, easy-to-use and reactive docker `compose.yaml` stack-oriented manager",

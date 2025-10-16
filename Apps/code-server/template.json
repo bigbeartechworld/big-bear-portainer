@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 25,
-      "type": 2,
+            "type": 3,
       "title": "Code Server",
       "name": "code-server",
       "description": "Run VS Code on any machine anywhere and access it in the browser.",

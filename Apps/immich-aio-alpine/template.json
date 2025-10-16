@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 76,
-      "type": 2,
+            "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
       "description": "AIO Alpine. Self-hosted photo and video storage.",

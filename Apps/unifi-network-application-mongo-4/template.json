@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 195,
-      "type": 2,
+            "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
       "description": "Supports Zimaboards and PI's. The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",

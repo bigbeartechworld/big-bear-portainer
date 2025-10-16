@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 67,
-      "type": 2,
+            "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
       "description": "Healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",

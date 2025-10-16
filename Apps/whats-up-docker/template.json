@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 206,
-      "type": 2,
+            "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
       "description": "Gets you notified when new versions of your Docker containers are available and lets you react the way you want.",

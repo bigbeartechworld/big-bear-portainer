@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 168,
-      "type": 2,
+            "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
       "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",

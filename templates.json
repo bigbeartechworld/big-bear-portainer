@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 1,
-      "type": 2,
+            "type": 3,
       "title": "2FAuth",
       "name": "2fauth",
       "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "type": 2,
+            "type": 3,
       "title": "Actual Budget",
       "name": "actual-server",
       "description": "Actual Budget is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology. You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.",
@@ -36,7 +36,7 @@
     },
     {
       "id": 3,
-      "type": 2,
+            "type": 3,
       "title": "AdGuard Home",
       "name": "adguard-home",
       "description": "AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover all your home devices, and you won't need any client-side software for that. Learn more on our official Github repository.",
@@ -51,7 +51,7 @@
     },
     {
       "id": 4,
-      "type": 2,
+            "type": 3,
       "title": "AdGuard Home (HOST)",
       "name": "adguard-home-host",
       "description": "Use if you're going to use Adguard Home as a DHCP server. AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover all your home devices, and you won't need any client-side software for that. Learn more on our official Github repository.",
@@ -66,7 +66,7 @@
     },
     {
       "id": 5,
-      "type": 2,
+            "type": 3,
       "title": "Anse",
       "name": "anse",
       "description": "Anse is a fully optimized UI for AI Chats. Supercharged experience for multiple models such as ChatGPT, DALL-E and Stable Diffusion.",
@@ -84,7 +84,7 @@
     },
     {
       "id": 6,
-      "type": 2,
+            "type": 3,
       "title": "Appsmith",
       "name": "appsmith",
       "description": "Low code project to build admin panels, internal tools, and dashboards, integrating 15+ databases.",
@@ -99,7 +99,7 @@
     },
     {
       "id": 7,
-      "type": 2,
+            "type": 3,
       "title": "Audiobookshelf",
       "name": "audiobookshelf",
       "description": "Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks. Audiobookshelf has a clean, accessible design that's loaded with features but not overly complicated.",
@@ -114,7 +114,7 @@
     },
     {
       "id": 8,
-      "type": 2,
+            "type": 3,
       "title": "Authentik",
       "name": "authentik",
       "description": "Authentik is a self-hosted identity and access management platform that provides a secure and scalable solution for managing user accounts, authentication, and authorization. It offers a range of features, including user management, role-based access control, and multi-factor authentication. Authentik is designed to be easy to use and integrate with your existing systems, making it a great choice for organizations looking to improve their security and compliance.",
@@ -129,7 +129,7 @@
     },
     {
       "id": 9,
-      "type": 2,
+            "type": 3,
       "title": "Ayon",
       "name": "ayon",
       "description": "This is the official Docker-based deployment for the Ayon Server. Ayon is a robust tool designed to manage and automate workflows in the animation and visual effects industries.",
@@ -149,7 +149,7 @@
     },
     {
       "id": 10,
-      "type": 2,
+            "type": 3,
       "title": "Baserow",
       "name": "baserow",
       "description": "Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser.",
@@ -164,7 +164,7 @@
     },
     {
       "id": 11,
-      "type": 2,
+            "type": 3,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
       "description": "A self-hosted habit tracking app without \"Goals\"",
@@ -185,7 +185,7 @@
     },
     {
       "id": 12,
-      "type": 2,
+            "type": 3,
       "title": "Beszel",
       "name": "beszel",
       "description": "A lightweight server resource monitoring hub with historical data, docker stats, and alerts.",
@@ -200,7 +200,7 @@
     },
     {
       "id": 13,
-      "type": 2,
+            "type": 3,
       "title": "Big Bear CasaOS User Management",
       "name": "big-bear-casaos-user-management",
       "description": "Manage users in CasaOS",
@@ -221,7 +221,7 @@
     },
     {
       "id": 14,
-      "type": 2,
+            "type": 3,
       "title": "bookstack",
       "name": "bookstack",
       "description": "BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. Default login admin@admin.com password password",
@@ -248,7 +248,7 @@
     },
     {
       "id": 15,
-      "type": 2,
+            "type": 3,
       "title": "Brave",
       "name": "brave",
       "description": "This Image contains a browser-accessible version of Brave.",
@@ -267,7 +267,7 @@
     },
     {
       "id": 16,
-      "type": 2,
+            "type": 3,
       "title": "btop",
       "name": "btop",
       "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",
@@ -287,7 +287,7 @@
     },
     {
       "id": 17,
-      "type": 2,
+            "type": 3,
       "title": "Budibase",
       "name": "budibase",
       "description": "Low code platform for creating internal tools, workflows, and admin panels in minutes. Supports PostgreSQL, MySQL, MSSQL, MongoDB, Rest API, Docker, K8s, and more 🚀. Budibase, the low code platform you'll enjoy using ⚡",
@@ -302,7 +302,7 @@
     },
     {
       "id": 18,
-      "type": 2,
+            "type": 3,
       "title": "cAdvisor",
       "name": "cadvisor",
       "description": "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This data is exported by container and machine-wide.",
@@ -317,7 +317,7 @@
     },
     {
       "id": 19,
-      "type": 2,
+            "type": 3,
       "title": "Cal.com",
       "name": "calcom",
       "description": "The open source Calendly successor. You are in charge of your own data, workflow, and appearance.\nCalendly and other scheduling tools are awesome. It made our lives massively easier. We're using it for business meetings, seminars, yoga classes, and even calls with our families. However, most tools are very limited in terms of control and customization.\n    That's where Cal.com comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data.",
@@ -359,7 +359,7 @@
     },
     {
       "id": 20,
-      "type": 2,
+            "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
       "description": "The best and simplest free open source website change detection, restock monitor and notification service.",
@@ -374,7 +374,7 @@
     },
     {
       "id": 21,
-      "type": 2,
+            "type": 3,
       "title": "Chatpad",
       "name": "chatpad",
       "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \"to-do app\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
@@ -389,7 +389,7 @@
     },
     {
       "id": 22,
-      "type": 2,
+            "type": 3,
       "title": "chrome",
       "name": "chrome",
       "description": "This Image contains a browser-accessible version of chrome.",
@@ -408,7 +408,7 @@
     },
     {
       "id": 23,
-      "type": 2,
+            "type": 3,
       "title": "chromium",
       "name": "chromium",
       "description": "This Image contains a browser-accessible version of chromium.",
@@ -427,7 +427,7 @@
     },
     {
       "id": 24,
-      "type": 2,
+            "type": 3,
       "title": "Cloudflared Web",
       "name": "cloudflared-web",
       "description": "Cloudflared-web is a docker image that packages both cloudflared cli and a simple Web UI to easily start or stop remotely-managed Cloudflare tunnel.",
@@ -451,7 +451,7 @@
     },
     {
       "id": 25,
-      "type": 2,
+            "type": 3,
       "title": "Code Server",
       "name": "code-server",
       "description": "Run VS Code on any machine anywhere and access it in the browser.",
@@ -474,7 +474,7 @@
     },
     {
       "id": 26,
-      "type": 2,
+            "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
       "description": "CodeX Docs is a free docs application. It's based on Editor.js ecosystem which gives all modern opportunities for working with content.",
@@ -489,7 +489,7 @@
     },
     {
       "id": 27,
-      "type": 2,
+            "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
       "description": "Self-hosted tool to edit, validate, and get suggestions for docker-compose.yml files.",
@@ -504,7 +504,7 @@
     },
     {
       "id": 28,
-      "type": 2,
+            "type": 3,
       "title": "ConvertX",
       "name": "convertx",
       "description": "A self-hosted online file converter. Supports over a thousand different formats. Written with TypeScript, Bun and Elysia.",
@@ -523,7 +523,7 @@
     },
     {
       "id": 29,
-      "type": 2,
+            "type": 3,
       "title": "Coolify",
       "name": "coolify",
       "description": "Coolify is a self-hosted web application that allows you to manage your servers, applications, and services. It provides a simple and intuitive interface for managing your infrastructure, making it easy to deploy and manage your applications. With Coolify, you can easily manage your servers, applications, and services, providing a streamlined experience for managing your infrastructure.",
@@ -596,7 +596,7 @@
     },
     {
       "id": 30,
-      "type": 2,
+            "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
       "description": "Crafty 4 is the next iteration of our Minecraft Server Wrapper / Controller / Launcher.",
@@ -614,7 +614,7 @@
     },
     {
       "id": 31,
-      "type": 2,
+            "type": 3,
       "title": "CyberChef",
       "name": "cyberchef",
       "description": "CyberChef is a simple, intuitive web app for carrying out all manner of \"cyber\" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.",
@@ -629,7 +629,7 @@
     },
     {
       "id": 32,
-      "type": 2,
+            "type": 3,
       "title": "Dashdot",
       "name": "dashdot",
       "description": "About A simple, modern server dashboard, primarily used by smaller private servers.",
@@ -644,7 +644,7 @@
     },
     {
       "id": 33,
-      "type": 2,
+            "type": 3,
       "title": "Dashy",
       "name": "dashy",
       "description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
@@ -662,7 +662,7 @@
     },
     {
       "id": 34,
-      "type": 2,
+            "type": 3,
       "title": "Davis",
       "name": "davis",
       "description": "A simple, fully translatable admin interface for sabre/dav based on Symfony 5 and Bootstrap 5, initially inspired by Baïkal. Provides user edition, calendar creation and sharing, and address book creation. The interface is simple and straightforward, responsive, and provides a light and a dark mode.",
@@ -700,7 +700,7 @@
     },
     {
       "id": 35,
-      "type": 2,
+            "type": 3,
       "title": "DBGate",
       "name": "dbgate",
       "description": "Web based UI for managing and exploring SQL database data",
@@ -715,7 +715,7 @@
     },
     {
       "id": 36,
-      "type": 2,
+            "type": 3,
       "title": "DIUN",
       "name": "diun",
       "description": "Docker Image Update Notifier is a CLI application written in Go and delivered as a single executable (and a Docker image) to receive notifications when a Docker image is updated on a Docker registry.",
@@ -730,7 +730,7 @@
     },
     {
       "id": 37,
-      "type": 2,
+            "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",
       "description": "This Docker image is designed to automatically restart specified Docker containers and send notifications to a Discord channel upon each restart. It's particularly useful for maintaining long-running services, ensuring they're periodically refreshed and stakeholders are informed of these actions.",
@@ -745,7 +745,7 @@
     },
     {
       "id": 38,
-      "type": 2,
+            "type": 3,
       "title": "Dockge",
       "name": "dockge",
       "description": "A fancy, easy-to-use and reactive docker `compose.yaml` stack-oriented manager",
@@ -760,7 +760,7 @@
     },
     {
       "id": 39,
-      "type": 2,
+            "type": 3,
       "title": "Dockpeek",
       "name": "dockpeek",
       "description": "A lightweight, self-hosted Docker dashboard that provides quick access to all running containers and their exposed ports with one-click access to web apps.",
@@ -775,7 +775,7 @@
     },
     {
       "id": 40,
-      "type": 2,
+            "type": 3,
       "title": "Docmost",
       "name": "docmost",
       "description": "Docmost is an open-source alternative to the likes of Notion and Confluence. Whether you're managing a wiki, a knowledge base, or extensive project documentation, Docmost provides the tools you need to create, collaborate, and share knowledge effortlessly.",
@@ -799,7 +799,7 @@
     },
     {
       "id": 41,
-      "type": 2,
+            "type": 3,
       "title": "Dozzle",
       "name": "dozzle",
       "description": "Dozzle is a real-time log viewer for docker containers.",
@@ -814,7 +814,7 @@
     },
     {
       "id": 42,
-      "type": 2,
+            "type": 3,
       "title": "EJBCA Community",
       "name": "ejbca-ce",
       "description": "The open-source public key infrastructure (PKI) and certificate authority (CA) software EJBCA is one of the longest running CA software projects. EJBCA covers all your needs - from certificate enrollment, via certificate management, to certificate validation.",
@@ -832,7 +832,7 @@
     },
     {
       "id": 43,
-      "type": 2,
+            "type": 3,
       "title": "Erugo",
       "name": "erugo",
       "description": "A powerful, self-hosted file-sharing platform built with PHP and Laravel with a Vue.js frontend. It offers secure, customizable file-transfer capabilities through an elegant user interface, giving you complete control over your data while providing a seamless experience for both senders and recipients.",
@@ -847,7 +847,7 @@
     },
     {
       "id": 44,
-      "type": 2,
+            "type": 3,
       "title": "Eufy Security WS",
       "name": "eufy-security-ws",
       "description": "eufy-security-ws is a small server wrapper around the eufy-security-client library to access it via a WebSocket. It allows you to control Eufy security devices by connecting to the Eufy cloud servers and local/remote stations.",
@@ -862,7 +862,7 @@
     },
     {
       "id": 45,
-      "type": 2,
+            "type": 3,
       "title": "Excalidraw",
       "name": "excalidraw",
       "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
@@ -877,7 +877,7 @@
     },
     {
       "id": 46,
-      "type": 2,
+            "type": 3,
       "title": "FarmOS",
       "name": "farmos",
       "description": "farmOS is a web-based application for farm management, planning, and record keeping. It is developed by a community of volunteers and aims to provide a standard platform for farmers, developers, and researchers to build upon.",
@@ -892,7 +892,7 @@
     },
     {
       "id": 47,
-      "type": 2,
+            "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",
       "description": "Faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
@@ -915,7 +915,7 @@
     },
     {
       "id": 48,
-      "type": 2,
+            "type": 3,
       "title": "Fastfetch",
       "name": "fastfetch",
       "description": "Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily. It is written mainly in C, with performance and customizability in mind. Currently, Linux, Android, FreeBSD, macOS, SunOS and Windows 7+ are supported. https://github.com/fastfetch-cli/fastfetch",
@@ -930,7 +930,7 @@
     },
     {
       "id": 49,
-      "type": 2,
+            "type": 3,
       "title": "Filebrowser",
       "name": "filebrowser",
       "description": "Reliable and Performant File Management Desktop Sync and File Sharing Tool.",
@@ -949,7 +949,7 @@
     },
     {
       "id": 50,
-      "type": 2,
+            "type": 3,
       "title": "Financial Freedom",
       "name": "financial-freedom",
       "description": "Keep investors and their buyers out of your financial data. Own 100% of your data and start building financial wealth.",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 51,
-      "type": 2,
+            "type": 3,
       "title": "Firefox",
       "name": "firefox",
       "description": "This Image contains a browser-accessible version of Firefox.",
@@ -1028,7 +1028,7 @@
     },
     {
       "id": 52,
-      "type": 2,
+            "type": 3,
       "title": "Flame",
       "name": "flame",
       "description": "Flame is a self-hosted startpage for your server. Its design is heavily inspired by SUI. Flame is user-friendly and easy to set up. With its built-in editors, users can quickly establish their own application hub without any file editing.",
@@ -1043,7 +1043,7 @@
     },
     {
       "id": 53,
-      "type": 2,
+            "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
       "description": "A Docker Container for Apache Guacamole, a client-less remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH over HTML5.",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 54,
-      "type": 2,
+            "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
       "description": "Flowise AI is an Open source UI visual tool to build your customized LLM orchestration flow & AI agents. Developing LLM apps takeslength iterations. With low code approach, Flowise AI enable quick iterations to go from testing to production.",
@@ -1088,7 +1088,7 @@
     },
     {
       "id": 55,
-      "type": 2,
+            "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
       "description": "Focalboard is an open source, multilingual, self-hosted project management tool that's an alternative to Trello, Notion, and Asana.",
@@ -1103,7 +1103,7 @@
     },
     {
       "id": 56,
-      "type": 2,
+            "type": 3,
       "title": "GemDigest Bot",
       "name": "GemDigest",
       "description": "Simplify your reads, amplify your time! 📚✨ GemDigest is a Telegram bot that summarizes articles from any website into bite-sized nuggets, saving you time and energy for what matters most. 📱👋",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 57,
-      "type": 2,
+            "type": 3,
       "title": "Genmon",
       "name": "genmon",
       "description": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi",
@@ -1136,7 +1136,7 @@
     },
     {
       "id": 58,
-      "type": 2,
+            "type": 3,
       "title": "Ghost",
       "name": "ghost",
       "description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
@@ -1151,7 +1151,7 @@
     },
     {
       "id": 59,
-      "type": 2,
+            "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
       "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 60,
-      "type": 2,
+            "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
       "description": "Gitea Mirror is a modern web app for automatically mirroring repositories from GitHub to your self-hosted Gitea instance. It features a user-friendly interface to sync public, private, or starred GitHub repos, mirror entire organizations with structure preservation, and optionally mirror issues and labels. The application includes smart filtering, detailed logs, and scheduled automatic mirroring.",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": 61,
-      "type": 2,
+            "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
       "description": "Gladys Assistant is a modern, privacy-first & open-source home automation software that runs anywhere.",
@@ -1207,7 +1207,7 @@
     },
     {
       "id": 62,
-      "type": 2,
+            "type": 3,
       "title": "Glances",
       "name": "glances",
       "description": "Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage etc. It also allows monitoring of running processes, logged in users, temperatures, voltages, fan speeds etc. It also supports container monitoring, it supports different container management systems such as Docker, LXC. The information is presented in an easy to read dashboard and can also be used for remote monitoring of systems via a web interface or command line interface. It is easy to install and use and can be customized to show only the information that you are interested in.",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 63,
-      "type": 2,
+            "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
       "description": "Lightweight swiss-knife-like VPN client to multiple VPN service providers",
@@ -1249,7 +1249,7 @@
     },
     {
       "id": 64,
-      "type": 2,
+            "type": 3,
       "title": "GoAway",
       "name": "goaway",
       "description": "GoAway is a lightweight DNS sinkhole that blocks ads, trackers, and malicious domains at the network level. It provides a web-based admin dashboard for management and supports customizable blocking rules with real-time statistics tracking.",
@@ -1264,7 +1264,7 @@
     },
     {
       "id": 65,
-      "type": 2,
+            "type": 3,
       "title": "Gotify",
       "name": "gotify",
       "description": "a simple server for sending and receiving messages",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 66,
-      "type": 2,
+            "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
       "description": "Apache Guacamole is a free and open-source, cross-platform, clientless remote desktop gateway maintained by the Apache Software Foundation.",
@@ -1309,7 +1309,7 @@
     },
     {
       "id": 67,
-      "type": 2,
+            "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
       "description": "Healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 68,
-      "type": 2,
+            "type": 3,
       "title": "Homarr",
       "name": "homarr",
       "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
@@ -1363,7 +1363,7 @@
     },
     {
       "id": 69,
-      "type": 2,
+            "type": 3,
       "title": "Homarr v1",
       "name": "homarr-v1",
       "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
@@ -1381,7 +1381,7 @@
     },
     {
       "id": 70,
-      "type": 2,
+            "type": 3,
       "title": "Home Assistant",
       "name": "home-assistant",
       "description": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
@@ -1396,7 +1396,7 @@
     },
     {
       "id": 71,
-      "type": 2,
+            "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
       "description": "HomeKit support for the impatient.",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": 72,
-      "type": 2,
+            "type": 3,
       "title": "Homepage",
       "name": "Homepage",
       "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
@@ -1429,7 +1429,7 @@
     },
     {
       "id": 73,
-      "type": 2,
+            "type": 3,
       "title": "Homer",
       "name": "homer",
       "description": "A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.",
@@ -1447,7 +1447,7 @@
     },
     {
       "id": 74,
-      "type": 2,
+            "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
       "description": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.",
@@ -1462,7 +1462,7 @@
     },
     {
       "id": 75,
-      "type": 2,
+            "type": 3,
       "title": "Immich",
       "name": "immich",
       "description": "Self-hosted photo and video storage.",
@@ -1477,7 +1477,7 @@
     },
     {
       "id": 76,
-      "type": 2,
+            "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
       "description": "AIO Alpine. Self-hosted photo and video storage.",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": 77,
-      "type": 2,
+            "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
       "description": "Immich Kiosk is a lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source.",
@@ -1523,7 +1523,7 @@
     },
     {
       "id": 78,
-      "type": 2,
+            "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
       "description": "Self-hosted photo and video storage. This does not include the machine learning part.",
@@ -1538,7 +1538,7 @@
     },
     {
       "id": 79,
-      "type": 2,
+            "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
       "description": "Invoice Ninja is a free and open-source invoice and expense management system. It is a web-based application that allows you to create, manage, and track invoices and expenses.",
@@ -1572,7 +1572,7 @@
     },
     {
       "id": 80,
-      "type": 2,
+            "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
       "description": "Collection of handy online tools for developers, with great UX as a web app.",
@@ -1587,7 +1587,7 @@
     },
     {
       "id": 81,
-      "type": 2,
+            "type": 3,
       "title": "Jellyseerr",
       "name": "jellyseerr",
       "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
@@ -1606,7 +1606,7 @@
     },
     {
       "id": 82,
-      "type": 2,
+            "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
       "description": "Jellystat is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)",
@@ -1628,7 +1628,7 @@
     },
     {
       "id": 83,
-      "type": 2,
+            "type": 3,
       "title": "jfa-go",
       "name": "jfa-go",
       "description": "jfa-go is a user management app for Jellyfin (and Emby as 2nd class) that provides invite-based account creation as well as other features that make one's instance much easier to manage.",
@@ -1643,7 +1643,7 @@
     },
     {
       "id": 84,
-      "type": 2,
+            "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
       "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
@@ -1662,7 +1662,7 @@
     },
     {
       "id": 85,
-      "type": 2,
+            "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
       "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
@@ -1680,7 +1680,7 @@
     },
     {
       "id": 86,
-      "type": 2,
+            "type": 3,
       "title": "joplin",
       "name": "joplin",
       "description": "Note taking and to-do application with synchronisation",
@@ -1709,7 +1709,7 @@
     },
     {
       "id": 87,
-      "type": 2,
+            "type": 3,
       "title": "Kasm",
       "name": "kasm",
       "description": "The Container Streaming Platform - Streaming containerized apps and desktops to end-users. The Workspaces platform provides enterprise-class orchestration, data loss prevention, and web streaming technology to enable the delivery of containerized workloads to your browser.",
@@ -1727,7 +1727,7 @@
     },
     {
       "id": 88,
-      "type": 2,
+            "type": 3,
       "title": "Kavita",
       "name": "kavita",
       "description": "Kavita is a fast, feature rich, cross platform reading server",
@@ -1742,7 +1742,7 @@
     },
     {
       "id": 89,
-      "type": 2,
+            "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
       "description": "Kiwix Server is a web server for hosting .zim files",
@@ -1757,7 +1757,7 @@
     },
     {
       "id": 90,
-      "type": 2,
+            "type": 3,
       "title": "Komf",
       "name": "komf",
       "description": "Komga and Kavita Metadata Fetcher is a tool that fetches metadata and thumbnails for your digital comic book library. It can automatically pick up added series and update their metadata and thumbnail. You can also manually search and identify series, or match the entire library or a series. Additionally, you can install the Komf userscript to add Komf integration directly to Komga and Kavita UI, allowing you to launch manual or automatic metadata identification.",
@@ -1780,7 +1780,7 @@
     },
     {
       "id": 91,
-      "type": 2,
+            "type": 3,
       "title": "Komga",
       "name": "komga",
       "description": "A media server for your comics, mangas, BDs, magazines and eBooks.",
@@ -1798,7 +1798,7 @@
     },
     {
       "id": 92,
-      "type": 2,
+            "type": 3,
       "title": "Kopia",
       "name": "kopia",
       "description": "Kopia is a fast and secure open-source backup/restore tool that allows you to create encrypted snapshots of your data and save the snapshots to remote or cloud storage of your choice, to network-attached storage or server, or locally on your machine.",
@@ -1823,7 +1823,7 @@
     },
     {
       "id": 93,
-      "type": 2,
+            "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
       "description": "Make the most of your network. Get more play for your gamers. Download your games once and serve them out to many people at your LAN.",
@@ -1858,7 +1858,7 @@
     },
     {
       "id": 94,
-      "type": 2,
+            "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
       "description": "Open source, self-hosted customer support desk. Single binary app.",
@@ -1876,7 +1876,7 @@
     },
     {
       "id": 95,
-      "type": 2,
+            "type": 3,
       "title": "LibreTranslate",
       "name": "libretranslate",
       "description": "Free and Open Source Machine Translation API, entirely self-hosted. Unlike other APIs, it doesn't rely on proprietary providers such as Google or Azure to perform translations. Instead, its translation engine is powered by the open source Argos Translate library.",
@@ -1897,7 +1897,7 @@
     },
     {
       "id": 96,
-      "type": 2,
+            "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
       "description": "LinkStack is a link-in-bio tool that allows you to create a personalized and easily customizable page that houses all the important links you want to share with your audience.",
@@ -1920,7 +1920,7 @@
     },
     {
       "id": 97,
-      "type": 2,
+            "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
       "description": "⚡️⚡️⚡️Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages and articles.",
@@ -1944,7 +1944,7 @@
     },
     {
       "id": 98,
-      "type": 2,
+            "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
       "description": "LobeChat is a open-source, extensible (Function Calling), high-performance chatbot framework. It supports one-click free deployment of your private ChatGPT/LLM web application.",
@@ -1965,7 +1965,7 @@
     },
     {
       "id": 99,
-      "type": 2,
+            "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
       "description": "🛡️ Synchronize AdGuard Home config to replicas. This is the LinuxServer version.",
@@ -1995,7 +1995,7 @@
     },
     {
       "id": 100,
-      "type": 2,
+            "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
       "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
@@ -2013,7 +2013,7 @@
     },
     {
       "id": 101,
-      "type": 2,
+            "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
       "description": "Mailpit is a multi-platform email testing tool & API for developers.",
@@ -2031,7 +2031,7 @@
     },
     {
       "id": 102,
-      "type": 2,
+            "type": 3,
       "title": "Matterbridge",
       "name": "matterbridge",
       "description": "Matterbridge is a Matter plugin manager that allows you to have all your Matter devices up and running in a couple of minutes without having to deal with the pairing process for each individual device. It creates a device that can be paired with any ecosystem, such as Apple Home, Google Home, Amazon Alexa, Home Assistant, or any other platform supporting Matter.",
@@ -2046,7 +2046,7 @@
     },
     {
       "id": 103,
-      "type": 2,
+            "type": 3,
       "title": "Maybe Finance",
       "name": "MaybeFinance",
       "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",
@@ -2061,7 +2061,7 @@
     },
     {
       "id": 104,
-      "type": 2,
+            "type": 3,
       "title": "Mealie",
       "name": "mealie",
       "description": "Mealie is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor",
@@ -2076,7 +2076,7 @@
     },
     {
       "id": 105,
-      "type": 2,
+            "type": 3,
       "title": "Microbin",
       "name": "microbin",
       "description": "Self-hosted, encrypted pastebin alternative with configurable features.",
@@ -2091,7 +2091,7 @@
     },
     {
       "id": 106,
-      "type": 2,
+            "type": 3,
       "title": "MIND",
       "name": "mind",
       "description": "A simple self hosted reminder application that can send push notifications to your device. Set the reminder and forget about it!",
@@ -2109,7 +2109,7 @@
     },
     {
       "id": 107,
-      "type": 2,
+            "type": 3,
       "title": "Minio",
       "name": "minio",
       "description": "A distributed object storage server built for cloud applications and devops. Default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables.",
@@ -2124,7 +2124,7 @@
     },
     {
       "id": 108,
-      "type": 2,
+            "type": 3,
       "title": "Monica",
       "name": "monica",
       "description": "Monica is an open-source web application to organize and record your interactions with your loved ones. We call it a PRM, or Personal Relationship Management. Think of it as a CRM (a popular tool used by sales teams in the corporate world) for your friends or family.",
@@ -2150,7 +2150,7 @@
     },
     {
       "id": 109,
-      "type": 2,
+            "type": 3,
       "title": "Morphos",
       "name": "morphos",
       "description": "Today we are forced to rely on third party services to convert files to other formats. This is a serious threat to our privacy, if we use such services to convert files with highly sensitive personal data. It can be used against us, sooner or later. Morphos server aims to solve the problem mentioned above, by providing a self-hosted server to convert files privately. The project provides an user-friendly web UI. For now, Morphos only supports images. Documents will be added soon.",
@@ -2165,7 +2165,7 @@
     },
     {
       "id": 110,
-      "type": 2,
+            "type": 3,
       "title": "Mumble Server",
       "name": "mumble-server",
       "description": "Mumble is a free, open source, low latency, high quality voice chat application.",
@@ -2180,7 +2180,7 @@
     },
     {
       "id": 111,
-      "type": 2,
+            "type": 3,
       "title": "Music Assistant",
       "name": "music-assistant",
       "description": "Music Assistant is a music library manager for your offline and online music sources which can easily stream your favourite music to a wide range of supported players and be combined with the power of Home Assistant!",
@@ -2195,7 +2195,7 @@
     },
     {
       "id": 112,
-      "type": 2,
+            "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
       "description": "MySpeed is a speed test analysis software that records your internet speed for up to 30 days.",
@@ -2210,7 +2210,7 @@
     },
     {
       "id": 113,
-      "type": 2,
+            "type": 3,
       "title": "n8n",
       "name": "n8n",
       "description": "Free and open fair-code licensed node based Workflow Automation Tool.",
@@ -2236,7 +2236,7 @@
     },
     {
       "id": 114,
-      "type": 2,
+            "type": 3,
       "title": "Ncdu",
       "name": "ncdu",
       "description": "Ncdu is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don’t have an entire graphical setup available, but it is a useful tool even on regular desktop systems. Ncdu aims to be fast, simple and easy to use, and should be able to run in any minimal POSIX-like environment with ncurses installed. Software made by Yorhel at https://dev.yorhel.nl/ncdu",
@@ -2254,7 +2254,7 @@
     },
     {
       "id": 115,
-      "type": 2,
+            "type": 3,
       "title": "Neko Firefox",
       "name": "neko-firefox",
       "description": "Welcome to Neko, a self-hosted virtual browser that runs in Docker and uses WebRTC technology. Neko is a powerful tool that allows you to run a fully-functional browser in a virtual environment, giving you the ability to access the internet securely and privately from anywhere. With Neko, you can browse the web, run applications, and perform other tasks just as you would on a regular browser, all within a secure and isolated environment. Whether you are a developer looking to test web applications, a privacy-conscious user seeking a secure browsing experience, or simply someone who wants to take advantage of the convenience and flexibility of a virtual browser, Neko is the perfect solution.",
@@ -2269,7 +2269,7 @@
     },
     {
       "id": 116,
-      "type": 2,
+            "type": 3,
       "title": "NetAlertX",
       "name": "netalertx",
       "description": "WIFI / LAN intruder detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
@@ -2289,7 +2289,7 @@
     },
     {
       "id": 117,
-      "type": 2,
+            "type": 3,
       "title": "Nextcloud",
       "name": "nextcloud",
       "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
@@ -2320,7 +2320,7 @@
     },
     {
       "id": 118,
-      "type": 2,
+            "type": 3,
       "title": "Nextcloud LS",
       "name": "nextcloud-ls",
       "description": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
@@ -2340,7 +2340,7 @@
     },
     {
       "id": 119,
-      "type": 2,
+            "type": 3,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",
       "description": "This is legacy and you should use the BigBearCasaOS Nextcloud instead. Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
@@ -2371,7 +2371,7 @@
     },
     {
       "id": 120,
-      "type": 2,
+            "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
       "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",
@@ -2386,7 +2386,7 @@
     },
     {
       "id": 121,
-      "type": 2,
+            "type": 3,
       "title": "nightscout",
       "name": "nightscout",
       "description": "This acts as a web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time. The server reads a MongoDB which is intended to be data from a physical CGM, where it sends new SGV (sensor glucose values) as the data becomes available. The data is then displayed graphically and blood glucose values are predicted 0.5 hours ahead using an autoregressive second order model. Alarms are generated for high and low values, which can be cleared by any watcher of the data.",
@@ -2401,7 +2401,7 @@
     },
     {
       "id": 122,
-      "type": 2,
+            "type": 3,
       "title": "NocoDB",
       "name": "nocodb",
       "description": "NocoDB allows building no-code database solutions with ease of spreadsheets. Bring your own database or choose ours! Millions of rows? Not a problem. Your Data. Your rules. You are in control.",
@@ -2421,7 +2421,7 @@
     },
     {
       "id": 123,
-      "type": 2,
+            "type": 3,
       "title": "Node-RED",
       "name": "node-red",
       "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
@@ -2436,7 +2436,7 @@
     },
     {
       "id": 124,
-      "type": 2,
+            "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
       "description": "Note Mark Aio is a self-hosted note taking app that allows you to create, organize, and share notes. It's a fork of the popular note-mark app with a focus on simplicity and ease of use.",
@@ -2455,7 +2455,7 @@
     },
     {
       "id": 125,
-      "type": 2,
+            "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
       "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
@@ -2473,7 +2473,7 @@
     },
     {
       "id": 126,
-      "type": 2,
+            "type": 3,
       "title": "Ntfy.sh",
       "name": "ntfysh",
       "description": "ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API. It's infinitely flexible, and 100% free software.",
@@ -2491,7 +2491,7 @@
     },
     {
       "id": 127,
-      "type": 2,
+            "type": 3,
       "title": "Obsidian",
       "name": "obsidian",
       "description": "Obsidian is a note-taking app that lets you create, link, and organize your notes on your device, with hundreds of plugins and themes to customize your workflow. You can also publish your notes online, access them offline, and sync them securely with end-to-end encryption.",
@@ -2511,7 +2511,7 @@
     },
     {
       "id": 128,
-      "type": 2,
+            "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
       "description": "Self-hosted database for synchronizing Obsidian vaults.",
@@ -2530,7 +2530,7 @@
     },
     {
       "id": 129,
-      "type": 2,
+            "type": 3,
       "title": "OctoPrint",
       "name": "octoprint",
       "description": "OctoPrint is the snappy web interface for your 3D printer!",
@@ -2545,7 +2545,7 @@
     },
     {
       "id": 130,
-      "type": 2,
+            "type": 3,
       "title": "Odoo",
       "name": "odoo",
       "description": "Open-source business management software suite designed to streamline various aspects of business operations. With its modular structure, users can choose and integrate specific applications such as accounting, inventory, and sales. Odoo provides a user-friendly interface, scalability for businesses of all sizes, and is available in both community (free) and enterprise editions. Its integrated approach and customization options make it a popular choice for comprehensive ERP (Enterprise Resource Planning) solutions.",
@@ -2568,7 +2568,7 @@
     },
     {
       "id": 131,
-      "type": 2,
+            "type": 3,
       "title": "Ollama - AMD",
       "name": "ollama-amd",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
@@ -2586,7 +2586,7 @@
     },
     {
       "id": 132,
-      "type": 2,
+            "type": 3,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
@@ -2604,7 +2604,7 @@
     },
     {
       "id": 133,
-      "type": 2,
+            "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
@@ -2619,7 +2619,7 @@
     },
     {
       "id": 134,
-      "type": 2,
+            "type": 3,
       "title": "OneDev",
       "name": "onedev",
       "description": "Self-hosted Git Server with Kanban and CI/CD",
@@ -2648,7 +2648,7 @@
     },
     {
       "id": 135,
-      "type": 2,
+            "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
       "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities",
@@ -2663,7 +2663,7 @@
     },
     {
       "id": 136,
-      "type": 2,
+            "type": 3,
       "title": "Open WebUI",
       "name": "open-webui",
       "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline.",
@@ -2682,7 +2682,7 @@
     },
     {
       "id": 137,
-      "type": 2,
+            "type": 3,
       "title": "OpenVPN",
       "name": "openvpn-as",
       "description": "OpenVPN is an open-source commercial software that implements virtual private network (VPN) techniques to create secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities.",
@@ -2702,7 +2702,7 @@
     },
     {
       "id": 138,
-      "type": 2,
+            "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
       "description": "An OpenTelemetry Backend in a Docker Image.",
@@ -2717,7 +2717,7 @@
     },
     {
       "id": 139,
-      "type": 2,
+            "type": 3,
       "title": "ownCloud",
       "name": "owncloud",
       "description": "ownCloud offers file sharing and collaboration trusted by 200+ million users worldwide regardless of device or location.",
@@ -2751,7 +2751,7 @@
     },
     {
       "id": 140,
-      "type": 2,
+            "type": 3,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
       "description": "Paperless-ngx is a community-supported open-source document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.",
@@ -2766,7 +2766,7 @@
     },
     {
       "id": 141,
-      "type": 2,
+            "type": 3,
       "title": "Password Pusher",
       "name": "passwordpusher",
       "description": "Password Pusher is an open source application to communicate passwords over the web. Links to passwords expire after a certain number of views and/or time has passed.",
@@ -2781,7 +2781,7 @@
     },
     {
       "id": 142,
-      "type": 2,
+            "type": 3,
       "title": "PD3F",
       "name": "pd3f",
       "description": "pd3f is a PDF text extraction pipeline that is self-hosted, local-first and Docker-based. It reconstructs the original continuous text with the help of machine learning.",
@@ -2799,7 +2799,7 @@
     },
     {
       "id": 143,
-      "type": 2,
+            "type": 3,
       "title": "Penpot",
       "name": "penpot",
       "description": "Designers and developers can finally work in unison to build beautifully designed software experiences that truly scale up.",
@@ -2832,7 +2832,7 @@
     },
     {
       "id": 144,
-      "type": 2,
+            "type": 3,
       "title": "Peppermint",
       "name": "peppermint",
       "description": "Peppermint is a central hub for your help desk. A powerfully easy system for tracking, prioritising, and solving customer support tickets.",
@@ -2860,7 +2860,7 @@
     },
     {
       "id": 145,
-      "type": 2,
+            "type": 3,
       "title": "Photoprism",
       "name": "photoprism",
       "description": "PhotoPrism® is an AI-Powered Photos App for the Decentralized Web. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
@@ -2875,7 +2875,7 @@
     },
     {
       "id": 146,
-      "type": 2,
+            "type": 3,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
       "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
@@ -2890,7 +2890,7 @@
     },
     {
       "id": 147,
-      "type": 2,
+            "type": 3,
       "title": "Pi-hole",
       "name": "pihole",
       "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.",
@@ -2905,7 +2905,7 @@
     },
     {
       "id": 148,
-      "type": 2,
+            "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
       "description": "This is a custom pihole and unbound setup.",
@@ -2920,7 +2920,7 @@
     },
     {
       "id": 149,
-      "type": 2,
+            "type": 3,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
       "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.",
@@ -2938,7 +2938,7 @@
     },
     {
       "id": 150,
-      "type": 2,
+            "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
       "description": "Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.",
@@ -2953,7 +2953,7 @@
     },
     {
       "id": 151,
-      "type": 2,
+            "type": 3,
       "title": "Piwigo",
       "name": "piwigo",
       "description": "Piwigo is a photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures.",
@@ -2977,7 +2977,7 @@
     },
     {
       "id": 152,
-      "type": 2,
+            "type": 3,
       "title": "Planka",
       "name": "planka",
       "description": "The realtime kanban board for workgroups built with React and Redux.",
@@ -3003,7 +3003,7 @@
     },
     {
       "id": 153,
-      "type": 2,
+            "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
       "description": "Plant-it is a self-hosted gardening companion app. Useful for keeping track of plant care, receiving notifications about when to water plants, uploading plant images, and more.",
@@ -3041,7 +3041,7 @@
     },
     {
       "id": 154,
-      "type": 2,
+            "type": 3,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
       "description": "Playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
@@ -3059,7 +3059,7 @@
     },
     {
       "id": 155,
-      "type": 2,
+            "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
       "description": "playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
@@ -3074,7 +3074,7 @@
     },
     {
       "id": 156,
-      "type": 2,
+            "type": 3,
       "title": "Plex",
       "name": "plex",
       "description": "Stream Movies & TV Shows",
@@ -3096,7 +3096,7 @@
     },
     {
       "id": 157,
-      "type": 2,
+            "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
       "description": "Stream Movies & TV Shows with NVIDIA GPU",
@@ -3120,7 +3120,7 @@
     },
     {
       "id": 158,
-      "type": 2,
+            "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
       "description": "Simple and easy-to-use OIDC provider that allows users to authenticate with their passkeys to your services.",
@@ -3142,7 +3142,7 @@
     },
     {
       "id": 159,
-      "type": 2,
+            "type": 3,
       "title": "Portainer",
       "name": "portainer",
       "description": "Irrespective of your industry, orchestration platform, or computing device, Portainer is the most versatile container management software that simplifies your secure adoption of containers with remarkable speed.",
@@ -3157,7 +3157,7 @@
     },
     {
       "id": 160,
-      "type": 2,
+            "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",
       "description": "Portainer uses the Portainer Agent container to communicate with the Portainer Server instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the Portainer Server installation guide first.",
@@ -3172,7 +3172,7 @@
     },
     {
       "id": 161,
-      "type": 2,
+            "type": 3,
       "title": "Portracker",
       "name": "portracker",
       "description": "A self-hosted, real-time port monitoring and discovery tool that automatically discovers and maps network services across systems.",
@@ -3196,7 +3196,7 @@
     },
     {
       "id": 162,
-      "type": 2,
+            "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
       "description": "Full stack mail server solution with SSL TLS support. POP3s, SMTP(s), IMAPs, RSPAMD, Clamav, Roundcube(HTTPS), SPF, DKIM with easy installation and web administration.",
@@ -3214,7 +3214,7 @@
     },
     {
       "id": 163,
-      "type": 2,
+            "type": 3,
       "title": "Project Management",
       "name": "project-management",
       "description": "An open source Project management tool based on Laravel and Filament",
@@ -3247,7 +3247,7 @@
     },
     {
       "id": 164,
-      "type": 2,
+            "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
       "description": "Pterodactyl® is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.",
@@ -3262,7 +3262,7 @@
     },
     {
       "id": 165,
-      "type": 2,
+            "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
       "description": "Wings is Pterodactyl's server control plane, built for the rapidly changing gaming industry and designed to be highly performant and secure. Wings provides an HTTP API allowing you to interface directly with running server instances, fetch server logs, generate backups, and control all aspects of the server lifecycle.",
@@ -3277,7 +3277,7 @@
     },
     {
       "id": 166,
-      "type": 2,
+            "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
       "description": "This project implements a Matter Controller Server over WebSockets using the official Matter (formerly CHIP) SDK as a base and provides both a server and client implementation. The goal of this project is primary to have Matter support in Home Assistant but its universal approach makes it suitable to be used in other projects too.",
@@ -3292,7 +3292,7 @@
     },
     {
       "id": 167,
-      "type": 2,
+            "type": 3,
       "title": "Rallly",
       "name": "rallly",
       "description": "Rallly is an open-source scheduling and collaboration tool designed to make organizing events and meetings easier.",
@@ -3324,7 +3324,7 @@
     },
     {
       "id": 168,
-      "type": 2,
+            "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
       "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
@@ -3339,7 +3339,7 @@
     },
     {
       "id": 169,
-      "type": 2,
+            "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
       "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",
@@ -3357,7 +3357,7 @@
     },
     {
       "id": 170,
-      "type": 2,
+            "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
       "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",
@@ -3372,7 +3372,7 @@
     },
     {
       "id": 171,
-      "type": 2,
+            "type": 3,
       "title": "RomM",
       "name": "romm",
       "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
@@ -3410,7 +3410,7 @@
     },
     {
       "id": 172,
-      "type": 2,
+            "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
       "description": "If you run a server with more than a couple of hard drives, you're probably already familiar with S.M.A.R.T and the smartd daemon.",
@@ -3425,7 +3425,7 @@
     },
     {
       "id": 173,
-      "type": 2,
+            "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
       "description": "Scrypted is an open source video integration platform. Using various Plugins, Scrypted can receive streams from a range of cameras and send them to other platforms (HomeKit, Google Home, Alexa, Home Assistant).",
@@ -3448,7 +3448,7 @@
     },
     {
       "id": 174,
-      "type": 2,
+            "type": 3,
       "title": "seafile",
       "name": "seafile",
       "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance. Seafile's built-in collaborative document SeaDoc, make it easy for collaborative writing and publishing documents.",
@@ -3475,7 +3475,7 @@
     },
     {
       "id": 175,
-      "type": 2,
+            "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
       "description": "Ansible Semaphore is a modern UI for Ansible. It lets you easily run Ansible playbooks, get notifications about fails, control access to deployment system.",
@@ -3490,7 +3490,7 @@
     },
     {
       "id": 176,
-      "type": 2,
+            "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
       "description": "A fork of Mozilla's Firefox Send. Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.",
@@ -3512,7 +3512,7 @@
     },
     {
       "id": 177,
-      "type": 2,
+            "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
       "description": "Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud Storage, Azure Blob",
@@ -3535,7 +3535,7 @@
     },
     {
       "id": 178,
-      "type": 2,
+            "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
       "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.",
@@ -3553,7 +3553,7 @@
     },
     {
       "id": 179,
-      "type": 2,
+            "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
       "description": "A Docker image to check your internet speed using Ookla's Speedtest service. Build using Laravel and the Speedtest CLI.",
@@ -3583,7 +3583,7 @@
     },
     {
       "id": 180,
-      "type": 2,
+            "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
       "description": "Stalwart Mail Server is an open-source mail server solution with JMAP, IMAP4, POP3, and SMTP support and a wide range of modern features. It is written in Rust and designed to be secure, fast, robust and scalable.",
@@ -3598,7 +3598,7 @@
     },
     {
       "id": 181,
-      "type": 2,
+            "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
       "description": "Stirling PDF - Local hosted web based PDF editor",
@@ -3623,7 +3623,7 @@
     },
     {
       "id": 182,
-      "type": 2,
+            "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
       "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers. We strive to fulfill the goals below. The goals are listed in order of importance, the most important one being the first.",
@@ -3642,7 +3642,7 @@
     },
     {
       "id": 183,
-      "type": 2,
+            "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
       "description": "Zero config VPN. Installs on any device in minutes, manages firewall rules for you, and works from anywhere.",
@@ -3668,7 +3668,7 @@
     },
     {
       "id": 184,
-      "type": 2,
+            "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
       "description": "Drop your collection of links and notes. Get Tandoor and never look back onto a time without recipe management, storage, sharing and collaborative cooking!",
@@ -3696,7 +3696,7 @@
     },
     {
       "id": 185,
-      "type": 2,
+            "type": 3,
       "title": "Tianji",
       "name": "tianji",
       "description": "During our observations of the website. We often need to use multiple applications together. For example, we need analysis tools such as GA/umami to check pv/uv and the number of visits to each page, we need an uptime monitor to check the network quality and connectivity of the server, and we need to use prometheus to obtain the status reported by the server to check the quality of the server. In addition, if we develop an application that allows open source deployment, we often need a telemetry system to help us collect the simplest information about other people's deployment situations. I think these tools should serve the same purpose, so is there an application that can integrate these common needs in a lightweight way? After all, most of the time we don't need very professional and in-depth functions. But in order to achieve comprehensive monitoring, I need to install so many services. It's good to specialize in one thing, if we are experts in related abilities we need such specialized tools. But for most users who only have lightweight needs, an All-in-One application will be more convenient and easier to use.",
@@ -3711,7 +3711,7 @@
     },
     {
       "id": 186,
-      "type": 2,
+            "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
       "description": "Docker image for TP-Link Omada Controller to control TP-Link Omada Hardware",
@@ -3745,7 +3745,7 @@
     },
     {
       "id": 187,
-      "type": 2,
+            "type": 3,
       "title": "Traccar",
       "name": "traccar",
       "description": "Traccar GPS Tracking System in Docker image.",
@@ -3760,7 +3760,7 @@
     },
     {
       "id": 188,
-      "type": 2,
+            "type": 3,
       "title": "Trilium",
       "name": "trilium",
       "description": "Build your personal knowledge base with Trilium Notes",
@@ -3778,7 +3778,7 @@
     },
     {
       "id": 189,
-      "type": 2,
+            "type": 3,
       "title": "Tududi",
       "name": "tududi",
       "description": "tududi is a task and project management web application built with Sinatra. It allows users to efficiently manage their tasks and projects, categorize them into different areas, and track due dates. tududi is designed to be intuitive and easy to use, providing a seamless experience for personal productivity.",
@@ -3799,7 +3799,7 @@
     },
     {
       "id": 190,
-      "type": 2,
+            "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
       "description": "Tugtainer is a self-hosted app for automating updates of your docker containers with a web UI. It's like watchtower but with more control and a user-friendly interface.",
@@ -3814,7 +3814,7 @@
     },
     {
       "id": 191,
-      "type": 2,
+            "type": 3,
       "title": "UISP",
       "name": "uisp",
       "description": "All-in-one docker image for Ubiquiti UISP (formerly UNMS). Supports x86_64 and ARM (Raspberry Pi).",
@@ -3832,7 +3832,7 @@
     },
     {
       "id": 192,
-      "type": 2,
+            "type": 3,
       "title": "Umami",
       "name": "umami",
       "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
@@ -3847,7 +3847,7 @@
     },
     {
       "id": 193,
-      "type": 2,
+            "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
       "description": "Umbrel is a personal server OS that makes self-hosting accessible to everyone.",
@@ -3862,7 +3862,7 @@
     },
     {
       "id": 194,
-      "type": 2,
+            "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
       "description": "The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
@@ -3891,7 +3891,7 @@
     },
     {
       "id": 195,
-      "type": 2,
+            "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
       "description": "Supports Zimaboards and PI's. The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
@@ -3920,7 +3920,7 @@
     },
     {
       "id": 196,
-      "type": 2,
+            "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
       "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
@@ -3935,7 +3935,7 @@
     },
     {
       "id": 197,
-      "type": 2,
+            "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
       "description": "A fancy self-hosted monitoring tool",
@@ -3950,7 +3950,7 @@
     },
     {
       "id": 198,
-      "type": 2,
+            "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
       "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
@@ -3965,7 +3965,7 @@
     },
     {
       "id": 199,
-      "type": 2,
+            "type": 3,
       "title": "Viseron",
       "name": "viseron",
       "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",
@@ -3984,7 +3984,7 @@
     },
     {
       "id": 200,
-      "type": 2,
+            "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
       "description": "Wallabag is a self-hosted application for saving web pages. Unlike other services, Wallabag is free and open source.",
@@ -4015,7 +4015,7 @@
     },
     {
       "id": 201,
-      "type": 2,
+            "type": 3,
       "title": "Wallos",
       "name": "wallos",
       "description": "Wallos: Open-Source Personal Subscription Tracker",
@@ -4030,7 +4030,7 @@
     },
     {
       "id": 202,
-      "type": 2,
+            "type": 3,
       "title": "Warracker",
       "name": "warracker",
       "description": "A self-hosted warranty tracker",
@@ -4058,7 +4058,7 @@
     },
     {
       "id": 203,
-      "type": 2,
+            "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
       "description": "Lightweight network IP scanner. Can be used to notify about new hosts and monitor host online/offline history",
@@ -4077,7 +4077,7 @@
     },
     {
       "id": 204,
-      "type": 2,
+            "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
       "description": "Access your homeserver from anywhere even on your mobile device. Wireguard-easy is a simple tool to configure and manage Wireguard VPN servers. It is written in Go and uses the official Wireguard client. You have to open and redirect port 51820 to your homeserver in order to connect.",
@@ -4092,7 +4092,7 @@
     },
     {
       "id": 205,
-      "type": 2,
+            "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
       "description": "WireGuard Easy v15 - Complete rewrite with new features and improved UI. Access your homeserver from anywhere with this modern VPN solution. NOTE: This is v15 which has breaking changes from v14. If you're currently using v14, please backup your configuration before migrating.",
@@ -4107,7 +4107,7 @@
     },
     {
       "id": 206,
-      "type": 2,
+            "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
       "description": "Gets you notified when new versions of your Docker containers are available and lets you react the way you want.",
@@ -4122,7 +4122,7 @@
     },
     {
       "id": 207,
-      "type": 2,
+            "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
       "description": "Wishlist is a self-hosted wishlist application that you can share with your friends and family. You no longer have to wonder what to get your family for the holidays, simply check their wishlist and claim any available item!",
@@ -4137,7 +4137,7 @@
     },
     {
       "id": 208,
-      "type": 2,
+            "type": 3,
       "title": "WordPress",
       "name": "wordpress",
       "description": "Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web (as of my last training data in 2022).",
@@ -4152,7 +4152,7 @@
     },
     {
       "id": 209,
-      "type": 2,
+            "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
       "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
@@ -4167,7 +4167,7 @@
     },
     {
       "id": 210,
-      "type": 2,
+            "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
       "description": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",
@@ -4185,7 +4185,7 @@
     },
     {
       "id": 211,
-      "type": 2,
+            "type": 3,
       "title": "zipline",
       "name": "zipline",
       "description": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!",
@@ -4211,7 +4211,7 @@
     },
     {
       "id": 212,
-      "type": 2,
+            "type": 3,
       "title": "Zotero",
       "name": "zotero",
       "description": "Zotero is a free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.",

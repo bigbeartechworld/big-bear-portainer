@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 163,
-      "type": 2,
+            "type": 3,
       "title": "Project Management",
       "name": "project-management",
       "description": "An open source Project management tool based on Laravel and Filament",

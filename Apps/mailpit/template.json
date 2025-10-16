@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 101,
-      "type": 2,
+            "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
       "description": "Mailpit is a multi-platform email testing tool & API for developers.",

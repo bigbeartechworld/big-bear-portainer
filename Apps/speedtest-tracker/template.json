@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 179,
-      "type": 2,
+            "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
       "description": "A Docker image to check your internet speed using Ookla's Speedtest service. Build using Laravel and the Speedtest CLI.",

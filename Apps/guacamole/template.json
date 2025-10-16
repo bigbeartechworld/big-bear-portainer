@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 66,
-      "type": 2,
+            "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
       "description": "Apache Guacamole is a free and open-source, cross-platform, clientless remote desktop gateway maintained by the Apache Software Foundation.",

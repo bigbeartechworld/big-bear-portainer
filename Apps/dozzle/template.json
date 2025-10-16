@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 41,
-      "type": 2,
+            "type": 3,
       "title": "Dozzle",
       "name": "dozzle",
       "description": "Dozzle is a real-time log viewer for docker containers.",

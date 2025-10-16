@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 125,
-      "type": 2,
+            "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
       "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",

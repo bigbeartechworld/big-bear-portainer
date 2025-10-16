@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 17,
-      "type": 2,
+            "type": 3,
       "title": "Budibase",
       "name": "budibase",
       "description": "Low code platform for creating internal tools, workflows, and admin panels in minutes. Supports PostgreSQL, MySQL, MSSQL, MongoDB, Rest API, Docker, K8s, and more 🚀. Budibase, the low code platform you'll enjoy using ⚡",

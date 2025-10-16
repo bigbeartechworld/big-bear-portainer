@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 196,
-      "type": 2,
+            "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
       "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",

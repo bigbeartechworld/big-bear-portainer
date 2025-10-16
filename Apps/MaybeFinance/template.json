@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 103,
-      "type": 2,
+            "type": 3,
       "title": "Maybe Finance",
       "name": "MaybeFinance",
       "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",

@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 133,
-      "type": 2,
+            "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",

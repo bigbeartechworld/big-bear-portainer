@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 56,
-      "type": 2,
+            "type": 3,
       "title": "GemDigest Bot",
       "name": "GemDigest",
       "description": "Simplify your reads, amplify your time! 📚✨ GemDigest is a Telegram bot that summarizes articles from any website into bite-sized nuggets, saving you time and energy for what matters most. 📱👋",

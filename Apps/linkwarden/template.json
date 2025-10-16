@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 97,
-      "type": 2,
+            "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
       "description": "⚡️⚡️⚡️Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages and articles.",

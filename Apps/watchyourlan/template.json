@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 203,
-      "type": 2,
+            "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
       "description": "Lightweight network IP scanner. Can be used to notify about new hosts and monitor host online/offline history",

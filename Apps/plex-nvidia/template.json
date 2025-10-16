@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 157,
-      "type": 2,
+            "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
       "description": "Stream Movies & TV Shows with NVIDIA GPU",

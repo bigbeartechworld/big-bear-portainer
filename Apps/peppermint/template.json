@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 144,
-      "type": 2,
+            "type": 3,
       "title": "Peppermint",
       "name": "peppermint",
       "description": "Peppermint is a central hub for your help desk. A powerfully easy system for tracking, prioritising, and solving customer support tickets.",

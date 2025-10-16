@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 211,
-      "type": 2,
+            "type": 3,
       "title": "zipline",
       "name": "zipline",
       "description": "A ShareX/file upload server that is easy to use, packed with features, and with an easy setup!",

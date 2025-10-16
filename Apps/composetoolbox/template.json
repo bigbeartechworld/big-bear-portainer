@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 27,
-      "type": 2,
+            "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
       "description": "Self-hosted tool to edit, validate, and get suggestions for docker-compose.yml files.",

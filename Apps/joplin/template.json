@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 86,
-      "type": 2,
+            "type": 3,
       "title": "joplin",
       "name": "joplin",
       "description": "Note taking and to-do application with synchronisation",
