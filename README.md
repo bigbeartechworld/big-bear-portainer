@@ -76,7 +76,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Authentik | ghcr.io/goauthentik/server:2025.8.4 | 2025.8.4 | BigBearCasaOS |  |  |
 | Ayon | ynput/ayon:1.3.6-20240823 | 1.3.6-20240823 | BigBearCasaOS |  |  |
 | Baserow | baserow/baserow:1.35.3 | 1.35.3 | BigBearCasaOS | [YouTube Video](https://youtu.be/Xej7sH5bNFs) |  |
-| Beaver Habit Tracker | daya0576/beaverhabits:0.7.2 | 0.7.2 | BigBearCasaOS |  |  |
+| Beaver Habit Tracker | daya0576/beaverhabits:0.7.3 | 0.7.3 | BigBearCasaOS |  |  |
 | Beszel | henrygd/beszel:0.13.2 | 0.13.2 | BigBearCasaOS | [YouTube Video](https://youtu.be/BUVVG-9RCbg) |  |
 | Big Bear CasaOS User Management | bigbeartechworld/big-bear-casaos-user-management:0.1.1 | 0.1.1 | BigBearCasaOS | [YouTube Video](https://youtu.be/-a9k8fLAbRE) |  |
 | bookstack | linuxserver/bookstack:25.07.20250804 | 25.07.20250804 | BigBearCasaOS | [YouTube Video](https://youtu.be/_jW4RjJm-6A) |  |
@@ -256,8 +256,8 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | UISP | nico640/docker-unms:2.4.155.1 | 2.4.155.1 | BigBearCasaOS |  |  |
 | Umami | ghcr.io/umami-software/umami:postgresql-latest | postgresql-latest | BigBearCasaOS | [YouTube Video](https://youtu.be/4DEF5fNf8hU) |  |
 | Umbrel OS | dockurr/umbrel:1.4.0 | 1.4.0 | BigBearCasaOS | [YouTube Video](https://youtu.be/O03CH-YLdk0) |  |
-| Unifi Network Application | mongo:4.4.28 | 4.4.28 | BigBearCasaOS | [YouTube Video](https://youtu.be/JCe-r_SHCe8) |  |
 | Unifi Network Application | mongo:6.0.11 | 6.0.11 | BigBearCasaOS | [YouTube Video](https://youtu.be/JCe-r_SHCe8) |  |
+| Unifi Network Application | mongo:4.4.28 | 4.4.28 | BigBearCasaOS | [YouTube Video](https://youtu.be/JCe-r_SHCe8) |  |
 | Upsnap | ghcr.io/seriousm4x/upsnap:5.2.2 | 5.2.2 | BigBearCasaOS |  |  |
 | Uptime Kuma | louislam/uptime-kuma:1 | 1 | BigBearCasaOS | [YouTube Video](https://youtu.be/Why5NU_Wafw) |  |
 | Vikunja | vikunja/vikunja:0.24.6 | 0.24.6 | BigBearCasaOS | [YouTube Video](https://youtu.be/T-dNbdIttoI) |  |
@@ -267,7 +267,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Warracker | ghcr.io/sassanix/warracker/main:9.9.3 | 9.9.3 | BigBearCasaOS |  |  |
 | WatchYourLAN | aceberg/watchyourlan:2.1.4 | 2.1.4 | BigBearCasaOS | [YouTube Video](https://youtu.be/LaYZjvUJ9U8) |  |
 | What's Up Docker | fmartinou/whats-up-docker:6.6.1 | 6.6.1 | BigBearCasaOS |  |  |
-| Wireguard Easy | ghcr.io/wg-easy/wg-easy:14 | 14 | BigBearCasaOS |  |  |
+| Wireguard Easy 14 (Legacy) | ghcr.io/wg-easy/wg-easy:14 | 14 | BigBearCasaOS |  |  |
 | WireGuard Easy v15 | ghcr.io/wg-easy/wg-easy:15 | 15 | BigBearCasaOS |  |  |
 | Wishlist | ghcr.io/cmintey/wishlist:v0.51.1 | 0.51.1 | BigBearCasaOS |  |  |
 | WordPress | wordpress:6.8.3 | 6.8.3 | BigBearCasaOS | [YouTube Video](https://youtu.be/j5M4qlRCbYs) |  |
