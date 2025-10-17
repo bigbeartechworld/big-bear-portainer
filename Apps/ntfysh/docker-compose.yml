@@ -21,9 +21,19 @@ services:
     restart: unless-stopped
     # Volumes to be mounted inside the container
     volumes:
-      - type: bind
-        source: ./data/cache
-        target: /var/cache/ntfy
-      - type: bind
-        source: ./data/config
-        target: /etc/ntfy
+      - |-
+        ntfysh_type
+        source
+        target: bind
+         /DATA/AppData/$AppID/cache
+         /var/cache/ntfy
+      - |2-
+         bind: bind
+         /DATA/AppData/$AppID/config
+         /etc/ntfy
+volumes:
+  ? |-
+    ntfysh_type
+    source
+    target
+  : {}

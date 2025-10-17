@@ -18,8 +18,8 @@ services:
       - financial-freedom-network
     # Volumes to be mounted to the container
     volumes:
-      - ./data/logs:/var/www/html/storage/logs
-      - ./data/sessions:/var/www/html/storage/framework/sessions
+      - financial-freedom_logs:/var/www/html/storage/logs
+      - financial-freedom_sessions:/var/www/html/storage/framework/sessions
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -73,7 +73,7 @@ services:
   mariadb:
     image: mariadb:10.11
     volumes:
-      - ./data/mariadb:/var/lib/mysql
+      - financial-freedom_mariadb:/var/lib/mysql
     # financial-freedom-network is defined in networks section
     networks:
       - financial-freedom-network
@@ -98,3 +98,7 @@ networks:
   # Define the network for AdGuard Home
   financial-freedom-network:
     driver: bridge
+volumes:
+  financial-freedom_logs: {}
+  financial-freedom_sessions: {}
+  financial-freedom_mariadb: {}

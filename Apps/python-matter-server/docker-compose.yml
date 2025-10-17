@@ -17,6 +17,8 @@ services:
     volumes:
       # Map the data directory from the host to the container
       # Make sure to create an .env file that sets the USERDIR environment variable
-      - ./data/data:/data/
+      - python-matter-server_data:/data/
       # Map the dbus directory from the host to the container in read-only mode
       - /run/dbus:/run/dbus:ro
+volumes:
+  python-matter-server_data: {}

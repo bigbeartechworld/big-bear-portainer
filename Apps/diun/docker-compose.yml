@@ -24,7 +24,9 @@ services:
       DIUN_PROVIDERS_DOCKER: "true"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/data
+      - diun_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
       - diun.enable=true
+volumes:
+  diun_data: {}

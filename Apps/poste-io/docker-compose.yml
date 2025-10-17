@@ -28,4 +28,6 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/data:/data
+      - poste-io_data:/data
+volumes:
+  poste-io_data: {}

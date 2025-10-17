@@ -28,7 +28,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Storage volume
-      - ./data/uploads:/uploads
+      - send-visee_uploads:/uploads
     # Ports mapping between host and container
     ports:
       # Mapping port 1443 of the host to port 1443 of the container
@@ -44,7 +44,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/redis:/data
+      - send-visee_redis:/data
     # Health check
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
@@ -59,3 +59,6 @@ networks:
   big_bear_send_visee_network:
     # Driver to be used for the network
     driver: bridge
+volumes:
+  send-visee_uploads: {}
+  send-visee_redis: {}

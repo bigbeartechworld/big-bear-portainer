@@ -10,4 +10,6 @@ services:
       - LAUNCH_URL=https://community.bigbeartechworld.com/ # Set the default URL to Big Bear Tech World
     shm_size: 512m # Allocate 512 MB of shared memory
     volumes:
-      - ./data/Downloads:/home/kasm-user/Downloads # Mount the host directory to the container's Downloads directory
+      - chromium_Downloads:/home/kasm-user/Downloads # Mount the host directory to the container's Downloads directory
+volumes:
+  chromium_Downloads: {}

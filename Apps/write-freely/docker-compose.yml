@@ -24,8 +24,10 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - ./data/data/config:/mnt/config
+      - write-freely_data_config:/mnt/config
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - 70:70/tcp
       - 8080:8080/tcp
+volumes:
+  write-freely_data_config: {}

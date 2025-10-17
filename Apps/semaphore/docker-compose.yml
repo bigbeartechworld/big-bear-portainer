@@ -28,8 +28,8 @@ services:
       TZ: UTC
     # Volumes to be mounted to the container
     volumes:
-      - ./data/home:/etc/semaphore # Configuration files for Semaphore
-      - ./data/lib:/var/lib/semaphore # Local storage for Semaphore data (not needed if using an external database)
+      - semaphore_home:/etc/semaphore # Configuration files for Semaphore
+      - semaphore_lib:/var/lib/semaphore # Local storage for Semaphore data (not needed if using an external database)
     # Ports mapping between host and container
     ports:
       - "3000:3000" # Expose port 3000 for web access
@@ -41,7 +41,7 @@ services:
     image: mysql:8.0
     restart: unless-stopped
     volumes:
-      - ./data/mysql:/var/lib/mysql # Data directory for MySQL
+      - semaphore_mysql:/var/lib/mysql # Data directory for MySQL
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "yes" # Generate a random root password
       MYSQL_DATABASE: "semaphore" # Database name to create
@@ -52,3 +52,7 @@ services:
 networks:
   big-bear-semaphore-network:
     driver: bridge # Specifies network driver type
+volumes:
+  semaphore_home: {}
+  semaphore_lib: {}
+  semaphore_mysql: {}

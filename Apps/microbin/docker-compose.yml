@@ -98,6 +98,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/app/microbin_data
+      - microbin_data:/app/microbin_data
     # Name of the container
     container_name: "big-bear-microbin"
+volumes:
+  microbin_data: {}

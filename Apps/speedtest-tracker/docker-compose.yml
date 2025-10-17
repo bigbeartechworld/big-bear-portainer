@@ -22,8 +22,8 @@ services:
       - TZ=America/Chicago
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
-      - "./data/config:/config"
-      - "./data/web:/etc/ssl/web"
+      - "speedtest-tracker_config:/config"
+      - "speedtest-tracker_web:/etc/ssl/web"
     image: "linuxserver/speedtest-tracker:1.6.8"
     restart: unless-stopped
     depends_on:
@@ -40,10 +40,14 @@ services:
       - MARIADB_PASSWORD=casaos
       - MARIADB_RANDOM_ROOT_PASSWORD=true
     volumes:
-      - "./data/mysql:/var/lib/mysql"
+      - "speedtest-tracker_mysql:/var/lib/mysql"
     networks:
       - big_bear_speedtest_tracker_network
 # Network definition for the big-bear-speedtest-tracker application
 networks:
   big_bear_speedtest_tracker_network:
     driver: bridge
+volumes:
+  speedtest-tracker_config: {}
+  speedtest-tracker_web: {}
+  speedtest-tracker_mysql: {}

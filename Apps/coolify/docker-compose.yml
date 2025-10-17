@@ -74,13 +74,13 @@ services:
     # Mount necessary volumes for accessing system information
     volumes:
       # ssh-keygen -f /DATA/AppData/big-bear-coolify/ssh/keys/id.root@host.docker.internal -t ed25519 -N '' -C root@coolify
-      - ./data/ssh:/var/www/html/storage/app/ssh
-      - ./data/applications:/var/www/html/storage/app/applications
-      - ./data/databases:/var/www/html/storage/app/databases
-      - ./data/services:/var/www/html/storage/app/services
-      - ./data/backups:/var/www/html/storage/app/backups
-      - ./data/webhooks-during-maintenance:/var/www/html/storage/app/webhooks-during-maintenance
-      - ./data/logs:/var/www/html/storage/logs
+      - coolify_ssh:/var/www/html/storage/app/ssh
+      - coolify_applications:/var/www/html/storage/app/applications
+      - coolify_databases:/var/www/html/storage/app/databases
+      - coolify_services:/var/www/html/storage/app/services
+      - coolify_backups:/var/www/html/storage/app/backups
+      - coolify_webhooks_during_maintenance:/var/www/html/storage/app/webhooks-during-maintenance
+      - coolify_logs:/var/www/html/storage/logs
     # Map port 8080 on the host to port 80 on the container
     ports:
       - "8000:8080"
@@ -102,7 +102,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - coolify_pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: "coolify"
       POSTGRES_PASSWORD: "f1986213-9d72-4c36-bbd4-adca2f414fa1"
@@ -123,7 +123,7 @@ services:
     environment:
       REDIS_PASSWORD: "9e3df6aa-ea48-4e59-a9c4-59798f1ba9b4"
     volumes:
-      - ./data/redis:/data
+      - coolify_redis:/data
     healthcheck:
       test: redis-cli ping
       interval: 5s
@@ -155,3 +155,13 @@ networks:
     driver: bridge
   coolify:
     external: true
+volumes:
+  coolify_ssh: {}
+  coolify_applications: {}
+  coolify_databases: {}
+  coolify_services: {}
+  coolify_backups: {}
+  coolify_webhooks_during_maintenance: {}
+  coolify_logs: {}
+  coolify_pgdata: {}
+  coolify_redis: {}

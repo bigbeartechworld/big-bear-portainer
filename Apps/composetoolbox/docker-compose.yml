@@ -21,6 +21,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/app/data
+      - composetoolbox_data:/app/data
     # Name of the container
     container_name: "big-bear-composetoolbox"
+volumes:
+  composetoolbox_data: {}

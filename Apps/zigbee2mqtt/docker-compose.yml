@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/app/data
+      - zigbee2mqtt_data:/app/data
       - /run/udev:/run/udev:ro
     # Ports mapping between host and container
     ports:
@@ -27,3 +27,5 @@ services:
     devices:
       # Make sure this matched your adapter location
       - /dev/serial/by-id/usb-Texas_Instruments_TI_CC2531_USB_CDC___0X00124B0018ED3DDF-if00:/dev/ttyACM0
+volumes:
+  zigbee2mqtt_data: {}

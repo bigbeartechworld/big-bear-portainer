@@ -36,7 +36,7 @@ services:
       POSTGRES_USER: tianji-user
       POSTGRES_PASSWORD: 227453b7-1286-48cc-b471-1c269495c5fc
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - tianji_pgdata:/var/lib/postgresql/data
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
@@ -48,3 +48,5 @@ services:
 networks:
   big_bear_tianji_network:
     driver: bridge
+volumes:
+  tianji_pgdata: {}

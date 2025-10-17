@@ -26,5 +26,7 @@ services:
       HTTPS: "FALSE"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/tugtainer
+      - tugtainer_data:/tugtainer
       - /var/run/docker.sock:/var/run/docker.sock
+volumes:
+  tugtainer_data: {}

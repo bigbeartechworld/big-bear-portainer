@@ -32,8 +32,8 @@ services:
       - 10443:443
     volumes:
       # Mount points for cache and logs
-      - ./data/cache:/data/cache
-      - ./data/logs:/data/logs
+      - lancache_cache:/data/cache
+      - lancache_logs:/data/logs
   # DNS service configuration
   dns:
     image: lancachenet/lancache-dns:latest # Docker image for DNS service
@@ -60,3 +60,6 @@ services:
     ports:
       - 53:53/udp
       - 53:53/tcp
+volumes:
+  lancache_cache: {}
+  lancache_logs: {}

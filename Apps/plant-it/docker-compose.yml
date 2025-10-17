@@ -55,9 +55,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Volume for uploads
-      - "./data/upload-dir:/upload-dir"
+      - "plant-it_upload_dir:/upload-dir"
       # Volume for SSL certificates
-      - "./data/certificates:/certificates"
+      - "plant-it_certificates:/certificates"
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -85,7 +85,7 @@ services:
       - "3306:3306"
     volumes:
       # Volume for MySQL data
-      - "./data/mysql:/var/lib/mysql"
+      - "plant-it_mysql:/var/lib/mysql"
     networks:
       # Network definition
       - big_bear_plant_it_network
@@ -105,3 +105,7 @@ networks:
   # Network definition
   big_bear_plant_it_network:
     driver: bridge
+volumes:
+  plant-it_upload_dir: {}
+  plant-it_certificates: {}
+  plant-it_mysql: {}

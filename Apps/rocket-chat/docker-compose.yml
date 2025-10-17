@@ -43,7 +43,7 @@ services:
     container_name: big-bear-rocketchat-db
     volumes:
       # Persistent storage for MongoDB
-      - ./data/db:/data/db
+      - rocket-chat_db:/data/db
     # Health Check
     # Checks the health of the MongoDB service.
     healthcheck:
@@ -60,3 +60,5 @@ services:
 networks:
   rocketchat-net:
     driver: bridge
+volumes:
+  rocket-chat_db: {}

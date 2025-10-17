@@ -15,8 +15,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/staticfiles:/opt/recipes/staticfiles
-      - ./data/mediafiles:/opt/recipes/mediafiles
+      - tandoor_staticfiles:/opt/recipes/staticfiles
+      - tandoor_mediafiles:/opt/recipes/mediafiles
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -41,7 +41,7 @@ services:
     image: postgres:15-alpine
     container_name: big-bear-tandoor-db
     volumes:
-      - ./data/postgresql:/var/lib/postgresql/data
+      - tandoor_postgresql:/var/lib/postgresql/data
     environment:
       - POSTGRES_PORT=5432
       - POSTGRES_USER=tandoor
@@ -60,3 +60,7 @@ services:
 networks:
   big_bear_tandoor_network:
     driver: bridge
+volumes:
+  tandoor_staticfiles: {}
+  tandoor_mediafiles: {}
+  tandoor_postgresql: {}

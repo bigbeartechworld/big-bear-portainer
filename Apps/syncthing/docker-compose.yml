@@ -15,8 +15,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/var/syncthing
-      - ./data/media/data/syncthing:/media/data/syncthing
+      - syncthing_data:/var/syncthing
+      - syncthing_media_data_syncthing:/media/data/syncthing
     # Ports mapping between host and container
     ports:
       - 8384:8384 # WebUI
@@ -29,3 +29,6 @@ services:
       - PGID=1000 # Group ID
     # Stop the container if it exits
     stop_grace_period: 1m
+volumes:
+  syncthing_data: {}
+  syncthing_media_data_syncthing: {}

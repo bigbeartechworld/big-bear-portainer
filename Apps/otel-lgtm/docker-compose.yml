@@ -15,12 +15,19 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /data inside the container
-      - type: bind
-        source: ./data/data
-        target: /data
-        bind:
-          create_host_path: true
+      # Mounting the local /DATA/AppData/$AppID/data directory to /data inside the container
+      - |-
+        otel-lgtm_
+        type
+        source
+        target
+        bind
+          create_host_path:
+         bind
+         /DATA/AppData/$AppID/data
+         /data
+
+         true
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container

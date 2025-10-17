@@ -19,7 +19,7 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/data:/opt/stalwart
+      - stalwart-mail_data:/opt/stalwart
     # Map port 8080 on the host to port 8080 on the container for the web interface
     ports:
       - 8080:8080
@@ -35,3 +35,5 @@ services:
       - 993:993/tcp
       # Map port 4190 on the host to port 4190 on the container for the web interface
       - 4190:4190/tcp
+volumes:
+  stalwart-mail_data: {}

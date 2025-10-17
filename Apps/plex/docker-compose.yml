@@ -23,6 +23,10 @@ services:
     network_mode: host
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
-      - ./data/tv:/tv
-      - ./data/movies:/movies
+      - plex_config:/config
+      - plex_tv:/tv
+      - plex_movies:/movies
+volumes:
+  plex_config: {}
+  plex_tv: {}
+  plex_movies: {}

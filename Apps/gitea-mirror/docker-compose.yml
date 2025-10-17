@@ -23,7 +23,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local data directory to the container
-      - ./data/data:/app/data
+      - gitea-mirror_data:/app/data
     # Environment variables for the container
     environment:
       - NODE_ENV=production
@@ -45,3 +45,5 @@ services:
       timeout: 10s
       retries: 5
       start_period: 30s
+volumes:
+  gitea-mirror_data: {}

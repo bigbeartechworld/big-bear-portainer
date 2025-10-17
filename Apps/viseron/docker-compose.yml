@@ -17,11 +17,11 @@ services:
     shm_size: "1024mb"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/segments:/segments
-      - ./data/snapshots:/snapshots
-      - ./data/thumbnails:/thumbnails
-      - ./data/event_clips:/event_clips
-      - ./data/config:/config
+      - viseron_segments:/segments
+      - viseron_snapshots:/snapshots
+      - viseron_thumbnails:/thumbnails
+      - viseron_event_clips:/event_clips
+      - viseron_config:/config
       - /etc/localtime:/etc/localtime:ro
     # Ports mapping between host and container
     ports:
@@ -31,3 +31,9 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
+volumes:
+  viseron_segments: {}
+  viseron_snapshots: {}
+  viseron_thumbnails: {}
+  viseron_event_clips: {}
+  viseron_config: {}

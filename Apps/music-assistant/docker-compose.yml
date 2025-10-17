@@ -15,9 +15,12 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - type: bind
-        source: ./data/data
-        target: /data
+      - |-
+        music-assistant_type
+        source
+        target: bind
+         /DATA/AppData/$AppID/data
+         /data
     # Network mode for the container
     network_mode: host
     # Security options for container runtime
@@ -29,3 +32,9 @@ services:
       # Required for system administration tasks within the container
       - SYS_ADMIN
       - DAC_READ_SEARCH
+volumes:
+  ? |-
+    music-assistant_type
+    source
+    target
+  : {}

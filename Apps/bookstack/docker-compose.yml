@@ -14,7 +14,7 @@ services:
     # Container restart policy
     restart: unless-stopped
     volumes:
-      - ./data/config:/config
+      - bookstack_config:/config
     # Environment variables
     environment:
       - APP_KEY=base64:3w/hRS2HYVFH5tJqD9AFlyurTh8mBByMKeMRyH9kEEQ=
@@ -41,7 +41,7 @@ services:
       - MYSQL_USER=bigbear # Database user
       - MYSQL_PASSWORD=a3e8949f-484c-4877-afdb-391f892f9bb6 # Database password
     volumes:
-      - ./data/mysql:/config # Mount the volume for MariaDB data
+      - bookstack_config:/config # Mount the volume for MariaDB data
     restart: unless-stopped # Restart policy
     networks:
       - big_bear_bookstack_network # Connect to the bookstack-network
@@ -49,3 +49,5 @@ services:
 networks:
   big_bear_bookstack_network:
     driver: bridge
+volumes:
+  bookstack_config: {}

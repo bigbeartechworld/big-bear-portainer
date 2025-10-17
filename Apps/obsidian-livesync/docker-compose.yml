@@ -15,8 +15,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data/couchdb:/opt/couchdb/data
-      - ./data/data/local.ini:/opt/couchdb/etc/local.ini
+      - obsidian-livesync_data_couchdb:/opt/couchdb/data
+      - obsidian-livesync_data_local.ini:/opt/couchdb/etc/local.ini
     environment:
       - COUCHDB_USER=casaos
       - COUCHDB_PASSWORD=casaos
@@ -24,3 +24,6 @@ services:
     ports:
       # Mapping port 5984 of the host to port 5984 of the container
       - "5984:5984"
+volumes:
+  obsidian-livesync_data_couchdb: {}
+  obsidian-livesync_data_local.ini: {}

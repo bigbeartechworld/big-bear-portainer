@@ -28,7 +28,7 @@ services:
       #NODE_ENV: development
     # Volume mappings for persistent storage
     volumes:
-      - ./data/content:/var/lib/ghost/content
+      - ghost_content:/var/lib/ghost/content
     # Port mappings for the service
     ports:
       - 2368:2368
@@ -45,7 +45,7 @@ services:
     restart: on-failure
     # Volume mappings for persistent storage
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ghost_mysql:/var/lib/mysql
     # MySQL environment variables
     environment:
       MYSQL_USER: "ghost"
@@ -60,3 +60,6 @@ networks:
   # Define the network for AdGuard Home
   ghost-network:
     driver: bridge
+volumes:
+  ghost_content: {}
+  ghost_mysql: {}

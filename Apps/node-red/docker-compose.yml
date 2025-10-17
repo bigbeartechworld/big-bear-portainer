@@ -4,7 +4,7 @@ name: big-bear-node-red
 services:
   app:
     # Docker image for the service
-    image: nodered/node-red:4.1.0
+    image: nodered/node-red:4.1.1
     # Use the host's network stack
     network_mode: host
     # Port mapping configurations
@@ -16,8 +16,12 @@ services:
     restart: always
     # Volume configurations for persistent storage
     volumes:
-      - type: bind # Bind type volume
-        source: ./data/data # Source path on the host
-        target: /data # Path inside the container
+      - "node-red_type\nsource\ntarget: bind \n /DATA/AppData/$AppID/data \n /data "
     # Name of the container
     container_name: node-red-updated
+volumes:
+  ? |-
+    node-red_type
+    source
+    target
+  : {}

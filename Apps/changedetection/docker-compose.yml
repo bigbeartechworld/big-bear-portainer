@@ -19,4 +19,6 @@ services:
       - "5000:5000"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/datastore:/datastore
+      - changedetection_datastore:/datastore
+volumes:
+  changedetection_datastore: {}

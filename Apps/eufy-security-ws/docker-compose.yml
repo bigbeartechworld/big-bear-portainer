@@ -22,6 +22,8 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local data directory to /data inside the container
-      - ./data/data:/data
+      - eufy-security-ws_data:/data
     # Network configuration
     network_mode: host
+volumes:
+  eufy-security-ws_data: {}
