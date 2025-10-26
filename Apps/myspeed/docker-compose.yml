@@ -11,5 +11,7 @@ services:
     ports:
       - "5216:5216" # Port mapping from host to container
     volumes:
-      - ./data/data:/myspeed/data # Mount host directory to container directory
+      - myspeed_data:/myspeed/data # Mount host directory to container directory
     restart: unless-stopped # Restart policy for the service
+volumes:
+  myspeed_data: {}

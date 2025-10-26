@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 37,
+      "id": 40,
             "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",

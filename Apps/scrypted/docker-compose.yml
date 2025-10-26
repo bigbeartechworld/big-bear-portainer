@@ -13,7 +13,7 @@ services:
       - SCRYPTED_WEBHOOK_UPDATE=http://localhost:10444/v1/update
     volumes:
       # Mounting data directory from host to the container
-      - ./data/data:/server/volume
+      - scrypted_data:/server/volume
     restart: unless-stopped # Restart policy
     logging:
       # JSON logging configuration
@@ -45,3 +45,5 @@ services:
       # Mapping the auto-update port; it should match the one in the URL above
       - 10444:8080
     command: --interval 3600 --cleanup --scope scrypted # Command to run watchtower with specified options
+volumes:
+  scrypted_data: {}

@@ -20,7 +20,7 @@ services:
       big-bear-seafile-memcached:
         condition: service_started
     volumes:
-      - ./data/shared:/shared
+      - seafile_shared:/shared
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -46,7 +46,7 @@ services:
       - MYSQL_LOG_CONSOLE=true
       - MARIADB_AUTO_UPGRADE=1
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - seafile_mysql:/var/lib/mysql
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
@@ -68,3 +68,6 @@ services:
 networks:
   big_bear_seafile_network:
     driver: bridge
+volumes:
+  seafile_shared: {}
+  seafile_mysql: {}

@@ -15,11 +15,16 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data/kavita-config:/kavita/config
-      - ./data/media/data/books:/books
-      - ./data/media/data/comics:/comics
-      - ./data/media/data/manga:/manga
+      - kavita_data_kavita_config:/kavita/config
+      - kavita_media_data_books:/books
+      - kavita_media_data_comics:/comics
+      - kavita_media_data_manga:/manga
     # Ports mapping between host and container
     ports:
       # Mapping port 5000 of the host to port 5000 of the container
       - "5000:5000"
+volumes:
+  kavita_data_kavita_config: {}
+  kavita_media_data_books: {}
+  kavita_media_data_comics: {}
+  kavita_media_data_manga: {}

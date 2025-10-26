@@ -20,9 +20,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local kasm/opt directory to /opt inside the container
-      - ./data/opt:/opt
+      - kasm_opt:/opt
       # Mounting the local kasm/profiles directory to /profiles inside the container
-      - ./data/profiles:/profiles
+      - kasm_profiles:/profiles
       # Mounting the local /dev/input directory to /dev/input inside the container
       - /dev/input:/dev/input
       # Mounting the local /run/udev/data directory to /run/udev/data inside the container
@@ -37,3 +37,6 @@ services:
     environment:
       # Tell Kasm where the port number
       - KASM_PORT=443
+volumes:
+  kasm_opt: {}
+  kasm_profiles: {}

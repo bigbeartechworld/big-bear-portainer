@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-tugtainer
     # Image to be used for the container
-    image: quenary/tugtainer:v1.1.6
+    image: quenary/tugtainer:v1.2.3
     # Container restart policy
     restart: unless-stopped
     # Ports to expose from the container
@@ -26,5 +26,7 @@ services:
       HTTPS: "FALSE"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/tugtainer
+      - tugtainer_data:/tugtainer
       - /var/run/docker.sock:/var/run/docker.sock
+volumes:
+  tugtainer_data: {}

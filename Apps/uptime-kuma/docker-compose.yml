@@ -13,9 +13,11 @@ services:
     container_name: uptime-kuma
     # Volume mappings: Maps host directory to container directory for persistent storage
     volumes:
-      - ./data/data:/app/data
+      - uptime_kuma_data:/app/data
     # Port mapping: Maps a port on the host to a port on the container
     ports:
       - "3001:3001" # <Host Port>:<Container Port>
     # Restart policy: Always restart the container if it stops
     restart: always
+volumes:
+  uptime_kuma_data: {}

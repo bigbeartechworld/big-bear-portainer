@@ -46,7 +46,7 @@ services:
       - MYSQL_PASSWORD=ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a
       - MYSQL_ROOT_PASSWORD=ed3f3aa2-9d2e-45e3-b20f-6c4c70f7382a
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - project_management_mysql:/var/lib/mysql
     restart: unless-stopped
     networks:
       - big_bear_project_management_network
@@ -58,3 +58,5 @@ services:
 networks:
   big_bear_project_management_network:
     driver: bridge
+volumes:
+  project_management_mysql: {}

@@ -38,7 +38,7 @@ services:
     image: postgres:14 # PostgreSQL version 14 as the database
     restart: unless-stopped # Restart policy similar to the application service
     volumes:
-      - ./data/postgresql:/var/lib/postgresql/data # Persistent data storage
+      - rallly_postgresql:/var/lib/postgresql/data # Persistent data storage
     environment:
       - POSTGRES_PASSWORD=f87c7126-f816-47ef-9193-2e5eec763fcd # DB password
       - POSTGRES_DB=big-bear-rallly # Database name
@@ -54,3 +54,5 @@ services:
 networks:
   big_bear_rally_network:
     driver: bridge # Uses bridge network driver
+volumes:
+  rallly_postgresql: {}

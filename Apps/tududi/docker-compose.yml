@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-tududi
     # Image to be used for the container
-    image: chrisvel/tududi:0.83
+    image: chrisvel/tududi:0.84
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -22,8 +22,10 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the tududi database directory
-      - ./data/tududi_db:/usr/src/app/tududi_db
+      - tududi_tududi_db:/usr/src/app/tududi_db
     # Ports mapping between host and container
     ports:
       # Mapping port 9292 of the host to port 9292 of the container
       - "9292:9292"
+volumes:
+  tududi_tududi_db: {}

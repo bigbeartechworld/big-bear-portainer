@@ -18,7 +18,7 @@ services:
     #  - /dev/ttyACM0:/dev/ttyACM0
     #  - /dev/video0:/dev/video0
     volumes:
-      - ./data/octoprint:/octoprint
+      - octoprint_octoprint:/octoprint
     # uncomment the lines below to ensure camera streaming is enabled when
     # you add a video device
     #environment:
@@ -28,3 +28,5 @@ services:
     ports:
       # Mapping port 7575 of the host to port 7575 of the container
       - "1080:80"
+volumes:
+  octoprint_octoprint: {}

@@ -21,8 +21,8 @@ services:
       retries: "3"
     # Volumes to be mounted to the container
     volumes:
-      - "./data/addons:/addons"
-      - "./data/storage:/storage"
+      - "ayon_addons:/addons"
+      - "ayon_storage:/storage"
       # comment out the following line on Windows
       - "/etc/localtime:/etc/localtime:ro"
     # Ports mapping between host and container
@@ -47,7 +47,7 @@ services:
       - POSTGRES_PASSWORD=ayon
       - POSTGRES_DB=ayon
     volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+      - ayon_postgres:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ayon"]
       interval: 10s
@@ -62,7 +62,7 @@ services:
     container_name: redis
     restart: unless-stopped
     volumes:
-      - ./data/redis:/data
+      - ayon_redis:/data
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
       interval: 5s
@@ -74,3 +74,8 @@ services:
 networks:
   big-bear-ayon-network:
     driver: bridge
+volumes:
+  ayon_addons: {}
+  ayon_storage: {}
+  ayon_postgres: {}
+  ayon_redis: {}

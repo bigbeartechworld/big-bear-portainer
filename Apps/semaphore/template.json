@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 175,
+      "id": 176,
             "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",

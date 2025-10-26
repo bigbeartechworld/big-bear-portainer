@@ -21,10 +21,22 @@ services:
     # Specifies the storage volumes that the application should use
     volumes:
       # Mounts the application data directory from the host system to the container
-      - type: bind
-        source: ./data/data
-        target: /app/data
+      - |-
+        flame_
+        type
+        source
+        target:
+         bind
+         /DATA/AppData/$AppID/data
+         /app/data
       # Mounts the Docker socket from the host system to the container
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
+volumes:
+  ? |-
+    flame_
+    type
+    source
+    target
+  : {}

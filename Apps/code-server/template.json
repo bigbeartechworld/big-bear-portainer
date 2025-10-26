@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 25,
+      "id": 28,
             "type": 3,
       "title": "Code Server",
       "name": "code-server",

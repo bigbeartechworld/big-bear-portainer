@@ -23,6 +23,10 @@ services:
     restart: unless-stopped # Restart the container unless it is explicitly stopped
     # Mount host paths or named volumes into the container
     volumes:
-      - ./data/git_genmon:/git/genmon # Mount a named volume 'big_bear_genmon_data' to store data persistently at /git/genmon in the container (this is the default location)
-      - ./data/etc_genmon:/etc/genmon # Mount a named volume 'big_bear_genmon_config' to store configuration files persistently at /etc/genmon in the container
-      - ./data/var_log:/var/log # Mount a named volume 'big_bear_genmon_logs' to store logs persistently at /var/log in the container
+      - genmon_git_genmon:/git/genmon # Mount a named volume 'big_bear_genmon_data' to store data persistently at /git/genmon in the container (this is the default location)
+      - genmon_etc_genmon:/etc/genmon # Mount a named volume 'big_bear_genmon_config' to store configuration files persistently at /etc/genmon in the container
+      - genmon_var_log:/var/log # Mount a named volume 'big_bear_genmon_logs' to store logs persistently at /var/log in the container
+volumes:
+  genmon_git_genmon: {}
+  genmon_etc_genmon: {}
+  genmon_var_log: {}

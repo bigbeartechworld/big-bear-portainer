@@ -50,6 +50,9 @@ services:
     # Define volume mappings between the host and the container.
     volumes:
       # Mapping for data storage.
-      - ./data/data:/opt/tplink/EAPController/data
+      - tp_link_omada_controller_data:/opt/tplink/EAPController/data
       # Mapping for log storage.
-      - ./data/logs:/opt/tplink/EAPController/logs
+      - tp_link_omada_controller_logs:/opt/tplink/EAPController/logs
+volumes:
+  tp_link_omada_controller_data: {}
+  tp_link_omada_controller_logs: {}

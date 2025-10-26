@@ -37,4 +37,6 @@ services:
       - MYSQL_PASSWORD=some_password
     # Volume mapping for persistent storage
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - guacamole_mysql:/var/lib/mysql
+volumes:
+  guacamole_mysql: {}

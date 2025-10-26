@@ -20,4 +20,6 @@ services:
     network_mode: host
     # Volumes HOST:CONTAINER
     volumes:
-      - ./data/data:/homebridge
+      - homebridge_data:/homebridge
+volumes:
+  homebridge_data: {}

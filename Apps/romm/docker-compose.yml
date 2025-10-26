@@ -30,12 +30,12 @@ services:
       - ENABLE_SCHEDULED_RESCAN=true # Enable scheduled rescan
       - ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB=true # Enable scheduled update of Switch TitleDB database
     volumes:
-      - "./data/resources:/romm/resources" # [Optional] Path where roms metadata (covers) are stored
-      - "./data/redis-data:/redis-data" # Cached data for background tasks
-      - "./data/library:/romm/library" # Path to the roms library
-      - "./data/assets:/romm/assets" # Uploaded saves, states, etc.
-      - "./data/config:/romm/config" # [Optional] Path where config is stored
-      - "./data/logs:/romm/logs" # [Optional] Path where logs are stored
+      - "romm_resources:/romm/resources" # [Optional] Path where roms metadata (covers) are stored
+      - "romm_redis_data:/redis-data" # Cached data for background tasks
+      - "romm_library:/romm/library" # Path to the roms library
+      - "romm_assets:/romm/assets" # Uploaded saves, states, etc.
+      - "romm_config:/romm/config" # [Optional] Path where config is stored
+      - "romm_logs:/romm/logs" # [Optional] Path where logs are stored
     ports:
       - 1080:8080 # Map host port 1080 to container port 8080
     depends_on:
@@ -53,7 +53,7 @@ services:
       - MYSQL_USER=romm-user # MariaDB user
       - MYSQL_PASSWORD=casaos # MariaDB password
     volumes:
-      - ./data/mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
+      - romm_mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
     ports:
       - 3306:3306 # Map host port 3306 to container port 3306
     restart: "unless-stopped"
@@ -63,3 +63,11 @@ services:
 networks:
   big-bear-romm-network:
     driver: bridge
+volumes:
+  romm_resources: {}
+  romm_redis_data: {}
+  romm_library: {}
+  romm_assets: {}
+  romm_config: {}
+  romm_logs: {}
+  romm_mysql: {}

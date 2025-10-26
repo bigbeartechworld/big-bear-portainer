@@ -27,7 +27,9 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/.user:/app/.user/
+      - beaverhabits_.user:/app/.user/
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - "8080:8080"
+volumes:
+  beaverhabits_.user: {}

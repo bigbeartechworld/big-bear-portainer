@@ -36,4 +36,6 @@ services:
       - "8009:8009"
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/root/.flowise
+      - flowise_data:/root/.flowise
+volumes:
+  flowise_data: {}

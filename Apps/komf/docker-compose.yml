@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-komf
     # Image to be used for the container
-    image: sndxr/komf:1.6.0
+    image: sndxr/komf:1.6.1
     # Container restart policy
     restart: unless-stopped
     environment:
@@ -25,7 +25,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /config directory to /config inside the container
-      - ./data/config:/config
+      - komf_config:/config
     # User to run the container as
     user: "1000:1000"
     # Ports mapping between host and container
@@ -39,3 +39,5 @@ services:
 networks:
   big_bear_komf_network:
     driver: bridge
+volumes:
+  komf_config: {}

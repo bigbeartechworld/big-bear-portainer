@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-ollama-cpu
     # Image to be used for the container
-    image: ollama/ollama:0.12.5
+    image: ollama/ollama:0.12.6
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -18,7 +18,7 @@ services:
       - PORT=11434
     # Volumes to be mounted to the container
     volumes:
-      - ./data/.ollama:/root/.ollama
+      - ollama_cpu_.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
@@ -27,3 +27,5 @@ services:
       # Attach GPU
       - /dev/kfd
       - /dev/dri
+volumes:
+  ollama_cpu_.ollama: {}

@@ -10,13 +10,13 @@ services:
     # Name of the container
     container_name: big-bear-penpot-frontend
     # Image to be used for the container
-    image: penpotapp/frontend:2.10.0
+    image: penpotapp/frontend:2.10.1
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/assets directory to /opt/data/assets inside the container
-      - ./data/assets:/opt/data/assets
+      # Mounting the local /DATA/AppData/$AppID/assets directory to /opt/data/assets inside the container
+      - penpot_assets:/opt/data/assets
     # Ports mapping between host and container
     ports:
       # Mapping port 9001 of the host to port 8080 of the container
@@ -31,14 +31,14 @@ services:
   # Definition for penpot-backend service
   penpot-backend:
     # Docker image for the service
-    image: penpotapp/backend:2.10.0
+    image: penpotapp/backend:2.10.1
     # Name of the container
     container_name: big-bear-penpot-backend
     # Restart policy for the container
     restart: unless-stopped
     # Volumes to mount to the container
     volumes:
-      - ./data/assets:/opt/data/assets
+      - penpot_assets:/opt/data/assets
     # Dependencies for the service
     depends_on:
       - penpot-postgres
@@ -61,7 +61,7 @@ services:
   # Define the penpot-exporter service
   penpot-exporter:
     # Use the penpotapp/exporter:1.19.3 Docker image
-    image: penpotapp/exporter:2.10.0
+    image: penpotapp/exporter:2.10.1
     # Set the container name to big-bear-penpot-exporter
     container_name: big-bear-penpot-exporter
     # Automatically restart the container unless stopped
@@ -82,7 +82,7 @@ services:
     container_name: big-bear-penpot-postgres
     stop_signal: SIGINT
     volumes:
-      - ./data/pgdata:/var/lib/postgresql/data
+      - penpot_pgdata:/var/lib/postgresql/data
     networks:
       - big-bear-penpot-network
     environment:
@@ -114,3 +114,6 @@ networks:
   big-bear-penpot-network:
     # Set the driver to bridge
     driver: bridge
+volumes:
+  penpot_assets: {}
+  penpot_pgdata: {}

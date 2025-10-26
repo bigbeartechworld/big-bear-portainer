@@ -17,8 +17,8 @@ services:
           memory: 64M
     # Volume mappings for the service
     volumes:
-      - "./data/data/work:/opt/adguardhome/work" # Map data work directory
-      - "./data/data/conf:/opt/adguardhome/conf" # Map configuration directory
+      - "adguard_home_data_work:/opt/adguardhome/work" # Map data work directory
+      - "adguard_home_data_conf:/opt/adguardhome/conf" # Map configuration directory
     restart: unless-stopped
     ports:
       - 53:53/tcp # Map TCP port 53
@@ -33,3 +33,6 @@ networks:
   # Define the network for AdGuard Home
   adguard-home-network:
     driver: bridge
+volumes:
+  adguard_home_data_work: {}
+  adguard_home_data_conf: {}

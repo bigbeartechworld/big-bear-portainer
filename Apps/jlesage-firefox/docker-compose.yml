@@ -9,4 +9,6 @@ services:
       - VNC_PASSWORD=casaos # Set the VNC password to 'casaos'
       - FF_OPEN_URL=https://community.bigbeartechworld.com/ # Set the default URL to Big Bear Tech World
     volumes:
-      - ./data/config:/config:rw # Mount the host directory to the container's Downloads directory
+      - jlesage_firefox_config:/config # Mount the host directory to the container's Downloads directory
+volumes:
+  jlesage_firefox_config: {}

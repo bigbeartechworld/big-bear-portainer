@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 24,
+      "id": 27,
             "type": 3,
       "title": "Cloudflared Web",
       "name": "cloudflared-web",
