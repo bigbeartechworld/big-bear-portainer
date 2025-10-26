@@ -12,7 +12,7 @@ This app store is maintained entirely by BigBearTechWorld and the community thro
 
 ## 📊 Project Stats
 
-- **212+ Applications** available as Portainer stacks
+- **213+ Applications** available as Portainer stacks
 - **350+ Video Tutorials** in our [Homelab playlist](https://youtube.com/playlist?list=PL2RAscIdkpt-OdTGH-BP7j-j24oaeJZVC&si=psROAO4uJMmjumAF)
 - **Maintained & Updated** regularly from BigBearCasaOS
 - **Community Driven** by BigBearCommunity members and contributors
@@ -234,6 +234,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Python Matter Server | undefined | latest | BigBearCasaOS |  |  |
 | Rallly | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/2MY3S6csrVw) | [Docs](https://community.bigbeartechworld.com/t/added-rallly-to-bigbearcasaos/1012#instructions-3) |
 | Reactive Resume | undefined | latest | BigBearCasaOS |  |  |
+| Readeck | undefined | latest | BigBearCasaOS |  |  |
 | RetroArch | undefined | latest | BigBearCasaOS |  |  |
 | Rocket.Chat | undefined | latest | BigBearCasaOS |  |  |
 | RomM | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/rommapp/romm/wiki) |
