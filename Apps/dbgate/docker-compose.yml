@@ -10,14 +10,16 @@ services:
     # Name of the container
     container_name: big-bear-dbgate
     # Image to be used for the container
-    image: dbgate/dbgate:6.6.4-alpine
+    image: dbgate/dbgate:6.6.5-alpine
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
-      - ./data/config:/root/.dbgate
+      - dbgate_config:/root/.dbgate
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
       - "3000:3000"
+volumes:
+  dbgate_config: {}

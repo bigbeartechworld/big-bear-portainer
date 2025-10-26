@@ -24,10 +24,10 @@ services:
       - KOPIA_PASSWORD=casaos # Repository password
       - REFRESH_INTERVAL= # Optional
     volumes:
-      - ./data/config:/config
-      - ./data/home:/backups/home:ro # Optional
+      - kopia_config:/config
+      - kopia_home:/backups/home # Optional
       - /var/lib/docker/volumes:/backups/docker:ro # Optional
-      - ./data/repository:/repository # Optional
+      - kopia_repository:/repository # Optional
       - /tmp:/tmp:shared # Optional
       - /var/run/docker.sock:/var/run/docker.sock:ro # Optional
     # Ports mapping between host and container
@@ -37,3 +37,7 @@ services:
     # Additional capabilities to be added to the container
     cap_add:
       - SYS_ADMIN # Optional
+volumes:
+  kopia_config: {}
+  kopia_home: {}
+  kopia_repository: {}

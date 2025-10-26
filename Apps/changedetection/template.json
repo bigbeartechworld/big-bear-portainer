@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 20,
+      "id": 23,
             "type": 3,
       "title": "Change Detection",
       "name": "changedetection",

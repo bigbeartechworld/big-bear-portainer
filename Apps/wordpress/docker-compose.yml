@@ -19,7 +19,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
     # Volume mapping for the application
     volumes:
-      - ./data/html:/var/www/html
+      - wordpress_html:/var/www/html
     # Service dependencies for the application
     depends_on:
       - db
@@ -35,4 +35,7 @@ services:
       MYSQL_ROOT_PASSWORD: casaos
     # Volume mapping for the database
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - wordpress_mysql:/var/lib/mysql
+volumes:
+  wordpress_html: {}
+  wordpress_mysql: {}

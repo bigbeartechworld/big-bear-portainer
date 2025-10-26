@@ -5,7 +5,7 @@ services:
   # Service configuration for the pocket-id application
   big-bear-pocketid:
     container_name: big-bear-pocketid # Name of the pocket-id container
-    image: ghcr.io/pocket-id/pocket-id:v1.13 # Docker image to use for pocket-id
+    image: ghcr.io/pocket-id/pocket-id:v1.14 # Docker image to use for pocket-id
     restart: unless-stopped # Restart policy: Restart unless manually stopped
     cpu_shares: 90
     command: []
@@ -27,9 +27,7 @@ services:
         published: "1411"
         protocol: tcp # Port mapping between host and container
     volumes:
-      - type: bind
-        source: ./data/data
-        target: /app/data # Volume for persistent data
+      - "pocketid_type\nsource\ntarget: bind\n /DATA/AppData/$AppID/data\n /app/data "
     devices: []
     cap_add: []
     network_mode: bridge
@@ -41,3 +39,9 @@ services:
       timeout: 5s
       retries: 2
       start_period: 10s
+volumes:
+  ? |-
+    pocketid_type
+    source
+    target
+  : {}

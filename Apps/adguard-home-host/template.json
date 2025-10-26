@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 4,
+      "id": 7,
             "type": 3,
       "title": "AdGuard Home (HOST)",
       "name": "adguard-home-host",

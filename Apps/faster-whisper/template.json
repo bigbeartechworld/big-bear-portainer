@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": 47,
+      "id": 50,
             "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",

@@ -19,4 +19,6 @@ services:
       - HTTP_ALLOWED=true
     # Volume mappings for data persistence
     volumes:
-      - ./data/data:/app/data
+      - convertx_data:/app/data
+volumes:
+  convertx_data: {}

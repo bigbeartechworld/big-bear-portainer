@@ -32,7 +32,7 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - ./data/uploads:/data/uploads
+      - warracker_uploads:/data/uploads
     # Map port 8005 on the host to port 80 on the container
     ports:
       - "8005:80"
@@ -50,7 +50,7 @@ services:
     image: postgres:15-alpine
     # Container volumes
     volumes:
-      - ./data/warrackerdb:/var/lib/postgresql/data
+      - warracker_warrackerdb:/var/lib/postgresql/data
     # Container environment variables
     environment:
       - POSTGRES_DB=big_bear_warracker
@@ -72,3 +72,6 @@ networks:
   big_bear_warracker_network:
     name: big_bear_warracker_network
     driver: bridge
+volumes:
+  warracker_uploads: {}
+  warracker_warrackerdb: {}

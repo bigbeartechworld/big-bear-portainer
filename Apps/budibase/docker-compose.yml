@@ -10,14 +10,16 @@ services:
     # Name of the container
     container_name: big-bear-budibase
     # Image to be used for the container
-    image: budibase/budibase:3.20.12
+    image: budibase/budibase:3.21.3
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local directory ./data/data to /data in the container
-      - ./data/data:/data
+      # Mounting the local directory /DATA/AppData/$AppID/data to /data in the container
+      - budibase_data:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 80 of the container to port 8080 of the host
       - "8080:80"
+volumes:
+  budibase_data: {}

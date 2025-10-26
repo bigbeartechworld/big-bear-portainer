@@ -29,8 +29,8 @@ services:
       - OWNCLOUD_REDIS_HOST=big-bear-owncloud-redis
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /mnt/data inside the container
-      - ./data/data:/mnt/data
+      # Mounting the local /DATA/AppData/$AppID/data directory to /mnt/data inside the container
+      - owncloud_data:/mnt/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -64,7 +64,7 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - owncloud_mysql:/var/lib/mysql
     networks:
       - big_bear_owncloud_network
   big-bear-owncloud-redis:
@@ -78,10 +78,14 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ./data/redis:/data
+      - owncloud_redis:/data
     networks:
       - big_bear_owncloud_network
 networks:
   big_bear_owncloud_network:
     name: big_bear_owncloud_network
     driver: bridge
+volumes:
+  owncloud_data: {}
+  owncloud_mysql: {}
+  owncloud_redis: {}

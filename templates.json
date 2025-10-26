@@ -22,6 +22,51 @@
     {
       "id": 2,
             "type": 3,
+      "title": "GemDigest Bot",
+      "name": "GemDigest",
+      "description": "Simplify your reads, amplify your time! 📚✨ GemDigest is a Telegram bot that summarizes articles from any website into bite-sized nuggets, saving you time and energy for what matters most. 📱👋",
+      "note": "Your personal article summarizer",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/Piero24/GemDigest/.github/images/casOS_logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/GemDigest/docker-compose.yml"
+      }
+    },
+    {
+      "id": 3,
+            "type": 3,
+      "title": "Homepage",
+      "name": "Homepage",
+      "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
+      "note": "Homepage",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homepage.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/Homepage/docker-compose.yml"
+      }
+    },
+    {
+      "id": 4,
+            "type": 3,
+      "title": "Maybe Finance",
+      "name": "MaybeFinance",
+      "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",
+      "note": "maybe-finance",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/maybe-finance/maybe/refs/heads/main/app/assets/images/logo-color.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/MaybeFinance/docker-compose.yml"
+      }
+    },
+    {
+      "id": 5,
+            "type": 3,
       "title": "Actual Budget",
       "name": "actual-server",
       "description": "Actual Budget is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology. You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.",
@@ -35,7 +80,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 6,
             "type": 3,
       "title": "AdGuard Home",
       "name": "adguard-home",
@@ -50,7 +95,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 7,
             "type": 3,
       "title": "AdGuard Home (HOST)",
       "name": "adguard-home-host",
@@ -65,7 +110,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 8,
             "type": 3,
       "title": "Anse",
       "name": "anse",
@@ -83,7 +128,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 9,
             "type": 3,
       "title": "Appsmith",
       "name": "appsmith",
@@ -98,7 +143,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 10,
             "type": 3,
       "title": "Audiobookshelf",
       "name": "audiobookshelf",
@@ -113,7 +158,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 11,
             "type": 3,
       "title": "Authentik",
       "name": "authentik",
@@ -128,7 +173,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 12,
             "type": 3,
       "title": "Ayon",
       "name": "ayon",
@@ -148,7 +193,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 13,
             "type": 3,
       "title": "Baserow",
       "name": "baserow",
@@ -163,7 +208,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 14,
             "type": 3,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
@@ -184,7 +229,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 15,
             "type": 3,
       "title": "Beszel",
       "name": "beszel",
@@ -199,7 +244,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 16,
             "type": 3,
       "title": "Big Bear CasaOS User Management",
       "name": "big-bear-casaos-user-management",
@@ -220,7 +265,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 17,
             "type": 3,
       "title": "bookstack",
       "name": "bookstack",
@@ -247,7 +292,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 18,
             "type": 3,
       "title": "Brave",
       "name": "brave",
@@ -266,7 +311,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 19,
             "type": 3,
       "title": "btop",
       "name": "btop",
@@ -286,7 +331,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 20,
             "type": 3,
       "title": "Budibase",
       "name": "budibase",
@@ -301,7 +346,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 21,
             "type": 3,
       "title": "cAdvisor",
       "name": "cadvisor",
@@ -316,7 +361,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 22,
             "type": 3,
       "title": "Cal.com",
       "name": "calcom",
@@ -358,7 +403,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 23,
             "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
@@ -373,7 +418,7 @@
       }
     },
     {
-      "id": 21,
+      "id": 24,
             "type": 3,
       "title": "Chatpad",
       "name": "chatpad",
@@ -388,7 +433,7 @@
       }
     },
     {
-      "id": 22,
+      "id": 25,
             "type": 3,
       "title": "chrome",
       "name": "chrome",
@@ -407,7 +452,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 26,
             "type": 3,
       "title": "chromium",
       "name": "chromium",
@@ -426,7 +471,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 27,
             "type": 3,
       "title": "Cloudflared Web",
       "name": "cloudflared-web",
@@ -450,7 +495,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 28,
             "type": 3,
       "title": "Code Server",
       "name": "code-server",
@@ -473,7 +518,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 29,
             "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
@@ -488,7 +533,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 30,
             "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
@@ -503,7 +548,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 31,
             "type": 3,
       "title": "ConvertX",
       "name": "convertx",
@@ -522,7 +567,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 32,
             "type": 3,
       "title": "Coolify",
       "name": "coolify",
@@ -595,7 +640,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 33,
             "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
@@ -613,7 +658,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 34,
             "type": 3,
       "title": "CyberChef",
       "name": "cyberchef",
@@ -628,7 +673,7 @@
       }
     },
     {
-      "id": 32,
+      "id": 35,
             "type": 3,
       "title": "Dashdot",
       "name": "dashdot",
@@ -643,7 +688,7 @@
       }
     },
     {
-      "id": 33,
+      "id": 36,
             "type": 3,
       "title": "Dashy",
       "name": "dashy",
@@ -661,7 +706,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 37,
             "type": 3,
       "title": "Davis",
       "name": "davis",
@@ -699,7 +744,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 38,
             "type": 3,
       "title": "DBGate",
       "name": "dbgate",
@@ -714,7 +759,7 @@
       }
     },
     {
-      "id": 36,
+      "id": 39,
             "type": 3,
       "title": "DIUN",
       "name": "diun",
@@ -729,7 +774,7 @@
       }
     },
     {
-      "id": 37,
+      "id": 40,
             "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",
@@ -744,7 +789,7 @@
       }
     },
     {
-      "id": 38,
+      "id": 41,
             "type": 3,
       "title": "Dockge",
       "name": "dockge",
@@ -759,7 +804,7 @@
       }
     },
     {
-      "id": 39,
+      "id": 42,
             "type": 3,
       "title": "Dockpeek",
       "name": "dockpeek",
@@ -774,7 +819,7 @@
       }
     },
     {
-      "id": 40,
+      "id": 43,
             "type": 3,
       "title": "Docmost",
       "name": "docmost",
@@ -798,7 +843,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": 44,
             "type": 3,
       "title": "Dozzle",
       "name": "dozzle",
@@ -813,7 +858,7 @@
       }
     },
     {
-      "id": 42,
+      "id": 45,
             "type": 3,
       "title": "EJBCA Community",
       "name": "ejbca-ce",
@@ -831,7 +876,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": 46,
             "type": 3,
       "title": "Erugo",
       "name": "erugo",
@@ -846,7 +891,7 @@
       }
     },
     {
-      "id": 44,
+      "id": 47,
             "type": 3,
       "title": "Eufy Security WS",
       "name": "eufy-security-ws",
@@ -861,7 +906,7 @@
       }
     },
     {
-      "id": 45,
+      "id": 48,
             "type": 3,
       "title": "Excalidraw",
       "name": "excalidraw",
@@ -876,7 +921,7 @@
       }
     },
     {
-      "id": 46,
+      "id": 49,
             "type": 3,
       "title": "FarmOS",
       "name": "farmos",
@@ -891,7 +936,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 50,
             "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",
@@ -914,7 +959,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": 51,
             "type": 3,
       "title": "Fastfetch",
       "name": "fastfetch",
@@ -929,7 +974,7 @@
       }
     },
     {
-      "id": 49,
+      "id": 52,
             "type": 3,
       "title": "Filebrowser",
       "name": "filebrowser",
@@ -948,7 +993,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": 53,
             "type": 3,
       "title": "Financial Freedom",
       "name": "financial-freedom",
@@ -1008,7 +1053,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": 54,
             "type": 3,
       "title": "Firefox",
       "name": "firefox",
@@ -1027,7 +1072,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": 55,
             "type": 3,
       "title": "Flame",
       "name": "flame",
@@ -1042,7 +1087,7 @@
       }
     },
     {
-      "id": 53,
+      "id": 56,
             "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
@@ -1057,7 +1102,7 @@
       }
     },
     {
-      "id": 54,
+      "id": 57,
             "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
@@ -1087,7 +1132,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": 58,
             "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
@@ -1102,22 +1147,7 @@
       }
     },
     {
-      "id": 56,
-            "type": 3,
-      "title": "GemDigest Bot",
-      "name": "GemDigest",
-      "description": "Simplify your reads, amplify your time! 📚✨ GemDigest is a Telegram bot that summarizes articles from any website into bite-sized nuggets, saving you time and energy for what matters most. 📱👋",
-      "note": "Your personal article summarizer",
-      "categories": ["BigBearCasaOS", "selfhosted"],
-      "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/Piero24/GemDigest/.github/images/casOS_logo.png",
-      "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
-        "stackfile": "Apps/GemDigest/docker-compose.yml"
-      }
-    },
-    {
-      "id": 57,
+      "id": 59,
             "type": 3,
       "title": "Genmon",
       "name": "genmon",
@@ -1135,7 +1165,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": 60,
             "type": 3,
       "title": "Ghost",
       "name": "ghost",
@@ -1150,7 +1180,7 @@
       }
     },
     {
-      "id": 59,
+      "id": 61,
             "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
@@ -1168,7 +1198,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": 62,
             "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
@@ -1191,7 +1221,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": 63,
             "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
@@ -1206,7 +1236,7 @@
       }
     },
     {
-      "id": 62,
+      "id": 64,
             "type": 3,
       "title": "Glances",
       "name": "glances",
@@ -1225,7 +1255,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": 65,
             "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
@@ -1248,7 +1278,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": 66,
             "type": 3,
       "title": "GoAway",
       "name": "goaway",
@@ -1263,7 +1293,7 @@
       }
     },
     {
-      "id": 65,
+      "id": 67,
             "type": 3,
       "title": "Gotify",
       "name": "gotify",
@@ -1282,7 +1312,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": 68,
             "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
@@ -1308,7 +1338,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": 69,
             "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
@@ -1347,7 +1377,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 70,
             "type": 3,
       "title": "Homarr",
       "name": "homarr",
@@ -1362,7 +1392,7 @@
       }
     },
     {
-      "id": 69,
+      "id": 71,
             "type": 3,
       "title": "Homarr v1",
       "name": "homarr-v1",
@@ -1380,7 +1410,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": 72,
             "type": 3,
       "title": "Home Assistant",
       "name": "home-assistant",
@@ -1395,7 +1425,7 @@
       }
     },
     {
-      "id": 71,
+      "id": 73,
             "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
@@ -1413,22 +1443,7 @@
       ]
     },
     {
-      "id": 72,
-            "type": 3,
-      "title": "Homepage",
-      "name": "Homepage",
-      "description": "A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.",
-      "note": "Homepage",
-      "categories": ["BigBearCasaOS", "selfhosted"],
-      "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homepage.png",
-      "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
-        "stackfile": "Apps/Homepage/docker-compose.yml"
-      }
-    },
-    {
-      "id": 73,
+      "id": 74,
             "type": 3,
       "title": "Homer",
       "name": "homer",
@@ -1446,7 +1461,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": 75,
             "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
@@ -1461,7 +1476,7 @@
       }
     },
     {
-      "id": 75,
+      "id": 76,
             "type": 3,
       "title": "Immich",
       "name": "immich",
@@ -1476,7 +1491,7 @@
       }
     },
     {
-      "id": 76,
+      "id": 77,
             "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
@@ -1507,7 +1522,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 78,
             "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
@@ -1522,7 +1537,7 @@
       }
     },
     {
-      "id": 78,
+      "id": 79,
             "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
@@ -1537,7 +1552,7 @@
       }
     },
     {
-      "id": 79,
+      "id": 80,
             "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
@@ -1571,7 +1586,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": 81,
             "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
@@ -1586,7 +1601,7 @@
       }
     },
     {
-      "id": 81,
+      "id": 82,
             "type": 3,
       "title": "Jellyseerr",
       "name": "jellyseerr",
@@ -1605,7 +1620,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": 83,
             "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
@@ -1627,7 +1642,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": 84,
             "type": 3,
       "title": "jfa-go",
       "name": "jfa-go",
@@ -1642,7 +1657,7 @@
       }
     },
     {
-      "id": 84,
+      "id": 85,
             "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
@@ -1661,7 +1676,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": 86,
             "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
@@ -1679,7 +1694,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": 87,
             "type": 3,
       "title": "joplin",
       "name": "joplin",
@@ -1708,7 +1723,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": 88,
             "type": 3,
       "title": "Kasm",
       "name": "kasm",
@@ -1726,7 +1741,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 89,
             "type": 3,
       "title": "Kavita",
       "name": "kavita",
@@ -1741,7 +1756,7 @@
       }
     },
     {
-      "id": 89,
+      "id": 90,
             "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
@@ -1756,7 +1771,7 @@
       }
     },
     {
-      "id": 90,
+      "id": 91,
             "type": 3,
       "title": "Komf",
       "name": "komf",
@@ -1779,7 +1794,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 92,
             "type": 3,
       "title": "Komga",
       "name": "komga",
@@ -1797,7 +1812,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": 93,
             "type": 3,
       "title": "Kopia",
       "name": "kopia",
@@ -1822,7 +1837,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 94,
             "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
@@ -1857,7 +1872,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 95,
             "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
@@ -1875,7 +1890,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": 96,
             "type": 3,
       "title": "LibreTranslate",
       "name": "libretranslate",
@@ -1896,7 +1911,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 97,
             "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
@@ -1919,7 +1934,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 98,
             "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -1943,7 +1958,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 99,
             "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -1964,7 +1979,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 100,
             "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
@@ -1994,7 +2009,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": 101,
             "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
@@ -2012,7 +2027,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": 102,
             "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
@@ -2030,7 +2045,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": 103,
             "type": 3,
       "title": "Matterbridge",
       "name": "matterbridge",
@@ -2042,21 +2057,6 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/matterbridge/docker-compose.yml"
-      }
-    },
-    {
-      "id": 103,
-            "type": 3,
-      "title": "Maybe Finance",
-      "name": "MaybeFinance",
-      "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",
-      "note": "maybe-finance",
-      "categories": ["BigBearCasaOS", "selfhosted"],
-      "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/maybe-finance/maybe/refs/heads/main/app/assets/images/logo-color.png",
-      "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
-        "stackfile": "Apps/MaybeFinance/docker-compose.yml"
       }
     },
     {
@@ -3340,6 +3340,27 @@
     {
       "id": 169,
             "type": 3,
+      "title": "Readeck",
+      "name": "readeck",
+      "description": "Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever. It is a self-hosted alternative to Instapaper and Wallabag with a modern interface and powerful features for managing your bookmarks and reading list.",
+      "note": "Self-hosted bookmark manager and read-it-later app",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/readeck.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/readeck/docker-compose.yml"
+      },
+      "env": [
+    {"name": "READECK_LOG_LEVEL", "label": "READECK_LOG_LEVEL", "description": "Environment variable for READECK_LOG_LEVEL", "default": "info"},
+    {"name": "READECK_SERVER_HOST", "label": "READECK_SERVER_HOST", "description": "Environment variable for READECK_SERVER_HOST", "default": "0.0.0.0"},
+    {"name": "READECK_SERVER_PORT", "label": "READECK_SERVER_PORT", "description": "Environment variable for READECK_SERVER_PORT", "default": "8000"},
+    {"name": "READECK_LOG_FORMAT", "label": "READECK_LOG_FORMAT", "description": "Environment variable for READECK_LOG_FORMAT", "default": "text"}
+      ]
+    },
+    {
+      "id": 170,
+            "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
       "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",
@@ -3356,7 +3377,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 171,
             "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
@@ -3371,7 +3392,7 @@
       }
     },
     {
-      "id": 171,
+      "id": 172,
             "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -3409,7 +3430,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 173,
             "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -3424,7 +3445,7 @@
       }
     },
     {
-      "id": 173,
+      "id": 174,
             "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -3447,7 +3468,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 175,
             "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -3474,7 +3495,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 176,
             "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -3489,7 +3510,7 @@
       }
     },
     {
-      "id": 176,
+      "id": 177,
             "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -3511,7 +3532,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 178,
             "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -3534,7 +3555,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": 179,
             "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -3552,7 +3573,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 180,
             "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -3582,7 +3603,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 181,
             "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -3597,7 +3618,7 @@
       }
     },
     {
-      "id": 181,
+      "id": 182,
             "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3622,7 +3643,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 183,
             "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3641,7 +3662,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 184,
             "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -3667,7 +3688,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 185,
             "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -3695,7 +3716,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 186,
             "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -3710,7 +3731,7 @@
       }
     },
     {
-      "id": 186,
+      "id": 187,
             "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -3744,7 +3765,7 @@
       ]
     },
     {
-      "id": 187,
+      "id": 188,
             "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -3759,7 +3780,7 @@
       }
     },
     {
-      "id": 188,
+      "id": 189,
             "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -3777,7 +3798,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 190,
             "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -3798,7 +3819,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 191,
             "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -3813,7 +3834,7 @@
       }
     },
     {
-      "id": 191,
+      "id": 192,
             "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -3831,7 +3852,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 193,
             "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -3846,7 +3867,7 @@
       }
     },
     {
-      "id": 193,
+      "id": 194,
             "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -3861,7 +3882,7 @@
       }
     },
     {
-      "id": 194,
+      "id": 195,
             "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -3890,7 +3911,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 196,
             "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -3919,7 +3940,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 197,
             "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -3934,7 +3955,7 @@
       }
     },
     {
-      "id": 197,
+      "id": 198,
             "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -3949,7 +3970,7 @@
       }
     },
     {
-      "id": 198,
+      "id": 199,
             "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
@@ -3964,7 +3985,7 @@
       }
     },
     {
-      "id": 199,
+      "id": 200,
             "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -3983,7 +4004,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 201,
             "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -4014,7 +4035,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
             "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -4029,7 +4050,7 @@
       }
     },
     {
-      "id": 202,
+      "id": 203,
             "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -4057,7 +4078,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
             "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -4076,7 +4097,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
             "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -4091,7 +4112,7 @@
       }
     },
     {
-      "id": 205,
+      "id": 206,
             "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4106,7 +4127,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 207,
             "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4121,7 +4142,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
             "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4136,7 +4157,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 209,
             "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4151,7 +4172,7 @@
       }
     },
     {
-      "id": 209,
+      "id": 210,
             "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4166,7 +4187,7 @@
       }
     },
     {
-      "id": 210,
+      "id": 211,
             "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4184,7 +4205,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 212,
             "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4210,7 +4231,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 213,
             "type": 3,
       "title": "Zotero",
       "name": "zotero",

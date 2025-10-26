@@ -19,4 +19,6 @@ services:
     network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
-      - ./data/data:/opt/focalboard/data
+      - focalboard_data:/opt/focalboard/data
+volumes:
+  focalboard_data: {}

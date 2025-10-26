@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-piwigo
     # Image to be used for the container
-    image: linuxserver/piwigo:15.6.0
+    image: linuxserver/piwigo:15.7.0
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -20,8 +20,8 @@ services:
       - TZ=UTC # Timezone setting for the container
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config # Configuration files
-      - ./data/gallery:/gallery # Gallery files
+      - piwigo_config:/config # Configuration files
+      - piwigo_gallery:/gallery # Gallery files
     # Ports mapping between host and container
     ports:
       - "8080:80" # Mapping port 8080 of the host to port 80 of the container
@@ -36,7 +36,7 @@ services:
       - MYSQL_USER=big_bear_piwigo # Database user
       - MYSQL_PASSWORD=358fac48-4beb-4027-9c11-840464aca400 # Database user password
     volumes:
-      - ./data/mysql:/var/lib/mysql # Persist database data
+      - piwigo_mysql:/var/lib/mysql # Persist database data
     restart: unless-stopped
     networks:
       - big_bear_piwigo_network
@@ -44,3 +44,7 @@ services:
 networks:
   big_bear_piwigo_network:
     driver: bridge # Defines the network driver to be used (bridge)
+volumes:
+  piwigo_config: {}
+  piwigo_gallery: {}
+  piwigo_mysql: {}

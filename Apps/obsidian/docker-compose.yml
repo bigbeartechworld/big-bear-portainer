@@ -20,8 +20,10 @@ services:
       - TZ=Etc/UTC
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
+      - obsidian_config:/config
     # Ports mapping between host and container
     ports:
       - 3000:3000
       - 3001:3001
+volumes:
+  obsidian_config: {}

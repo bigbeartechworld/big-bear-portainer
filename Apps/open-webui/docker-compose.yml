@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ./data/data:/app/backend/data
+      - open_webui_data:/app/backend/data
     # Environment variables
     environment:
       - OLLAMA_BASE_URL=
@@ -24,3 +24,5 @@ services:
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:8080"
+volumes:
+  open_webui_data: {}

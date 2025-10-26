@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-trilium
     # Image to be used for the container
-    image: zadam/trilium:0.63.7
+    image: triliumnext/trilium:v0.99.3
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -18,9 +18,11 @@ services:
       - TRILIUM_DATA_DIR=/home/node/trilium-data
     # Volumes to be mounted to the container
     volumes:
-      # Mounting the local ./data/data directory to /home/node/trilium-data inside the container
-      - ./data/data:/home/node/trilium-data
+      # Mounting the local /DATA/AppData/$AppID/data directory to /home/node/trilium-data inside the container
+      - trilium_data:/home/node/trilium-data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:8080"
+volumes:
+  trilium_data: {}

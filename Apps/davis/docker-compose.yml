@@ -45,7 +45,7 @@ services:
     image: axllent/mailpit:v1.27 # Image for the app service
     restart: unless-stopped # Restart policy for the container
     volumes: # Volumes to mount for the app service
-      - ./data/mailpit/data:/data
+      - davis_mailpit_data:/data
     environment: # Environment variables for the app service
       - TZ=UTC
     ports: # Ports to expose for the app service
@@ -63,7 +63,7 @@ services:
       - MYSQL_USER=bigbear
       - MYSQL_PASSWORD=0c9d2acc-d4f3-423c-8361-86f35cdd3eb2
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - davis_mysql:/var/lib/mysql
     networks:
       - big-bear-davis-network
     healthcheck:
@@ -74,3 +74,6 @@ services:
 networks:
   big-bear-davis-network:
     driver: bridge
+volumes:
+  davis_mailpit_data: {}
+  davis_mysql: {}

@@ -16,8 +16,10 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting storage directory to allow erugo to save data
-      - ./data/storage:/var/www/html/storage
+      - erugo_storage:/var/www/html/storage
     # Ports mapping between host and container
     ports:
       # Mapping port 9997 of the host to port 80 of the container
       - "9997:80"
+volumes:
+  erugo_storage: {}

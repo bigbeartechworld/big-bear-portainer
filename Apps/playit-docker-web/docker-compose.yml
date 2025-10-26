@@ -20,4 +20,6 @@ services:
       - WEBUI_PORT=8008
     # Volumes to be mounted to the container
     volumes:
-      - ./data/config:/config
+      - playit_docker_web_config:/config
+volumes:
+  playit_docker_web_config: {}

@@ -16,7 +16,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
-      - ./data/sites:/opt/drupal/web/sites
+      - farmos_sites:/opt/drupal/web/sites
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -31,7 +31,7 @@ services:
     image: mariadb:10
     # Mount the database files to persist data
     volumes:
-      - "./data/db:/var/lib/mysql"
+      - "farmos_db:/var/lib/mysql"
     # Expose MariaDB port to host
     ports:
       - "3306:3306"
@@ -60,3 +60,6 @@ networks:
   big-bear-farmos-network:
     name: big-bear-farmos-network
     driver: bridge
+volumes:
+  farmos_sites: {}
+  farmos_db: {}

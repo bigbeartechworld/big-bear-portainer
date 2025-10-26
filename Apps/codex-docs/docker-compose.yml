@@ -7,6 +7,10 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./data/uploads:/usr/src/app/uploads
-      - ./data/db:/usr/src/app/db
-      - ./data/codex-docs-config.local.yaml:/usr/src/app/docs-config.yaml
+      - codex_docs_uploads:/usr/src/app/uploads
+      - codex_docs_db:/usr/src/app/db
+      - codex_docs_codex_docs_config.local.yaml:/usr/src/app/docs-config.yaml
+volumes:
+  codex_docs_uploads: {}
+  codex_docs_db: {}
+  codex_docs_codex_docs_config.local.yaml: {}

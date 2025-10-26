@@ -18,4 +18,6 @@ services:
       - "7351:443" # Map port 7301 on the host to port 443 in the container.
     # Define volumes to persist data between container restarts.
     volumes:
-      - ./data/data:/baserow/data
+      - baserow_data:/baserow/data
+volumes:
+  baserow_data: {}

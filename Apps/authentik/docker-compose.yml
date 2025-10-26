@@ -20,8 +20,8 @@ services:
       AUTHENTIK_POSTGRESQL__PASSWORD: authentik-password
       AUTHENTIK_SECRET_KEY: changeme
     volumes:
-      - ./data/data/authentik-media:/media
-      - ./data/data/authentik-custom-templates:/templates
+      - authentik_data_authentik_media:/media
+      - authentik_data_authentik_custom_templates:/templates
     ports:
       - "9443:9443"
     depends_on:
@@ -50,9 +50,9 @@ services:
     user: root
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./data/data/authentik-media:/media
-      - ./data/data/authentik-certs:/certs
-      - ./data/data/authentik-custom-templates:/templates
+      - authentik_data_authentik_media:/media
+      - authentik_data_authentik_certs:/certs
+      - authentik_data_authentik_custom_templates:/templates
     depends_on:
       - big-bear-authentik-db
       - big-bear-authentik-redis
@@ -72,7 +72,7 @@ services:
       retries: 5
       timeout: 5s
     volumes:
-      - ./data/data/postgres:/var/lib/postgresql/data
+      - authentik_data_postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: authentik-password
       POSTGRES_USER: authentik
@@ -91,9 +91,15 @@ services:
       retries: 5
       timeout: 3s
     volumes:
-      - ./data/data/redis:/data
+      - authentik_data_redis:/data
     networks:
       - big_bear_authentik_network
 networks:
   big_bear_authentik_network:
     driver: bridge
+volumes:
+  authentik_data_authentik_media: {}
+  authentik_data_authentik_custom_templates: {}
+  authentik_data_authentik_certs: {}
+  authentik_data_postgres: {}
+  authentik_data_redis: {}
