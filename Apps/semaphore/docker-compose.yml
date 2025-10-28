@@ -53,6 +53,12 @@ networks:
   big-bear-semaphore-network:
     driver: bridge # Specifies network driver type
 volumes:
-  semaphore_home: {}
-  semaphore_lib: {}
-  semaphore_mysql: {}
+  semaphore_home:
+    name: semaphore_home
+    driver: local
+  semaphore_lib:
+    name: semaphore_lib
+    driver: local
+  semaphore_mysql:
+    name: semaphore_mysql
+    driver: local

@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 103,
+      "type": 3,
+      "title": "Maybe Finance",
+      "name": "maybe-finance",
+      "description": "Maybe is a fully* open-source OS for your personal finances built by a small team alongside an incredible community Discord",
+      "note": "maybe-finance",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/maybe-finance/maybe/refs/heads/main/app/assets/images/logo-color.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/maybe-finance/docker-compose.yml"
+      },
+      "env": [
+        {"name": "SELF_HOSTED", "label": "SELF_HOSTED", "description": "Indicates whether the application is self-hosted (true/false).", "default": ""},
+        {"name": "RAILS_FORCE_SSL", "label": "RAILS_FORCE_SSL", "description": "Determines if SSL should be forced (true/false).", "default": ""},
+        {"name": "GOOD_JOB_EXECUTION_MODE", "label": "GOOD_JOB_EXECUTION_MODE", "description": "Sets the execution mode for GoodJob (e.g., async).", "default": ""},
+        {"name": "SECRET_KEY_BASE", "label": "SECRET_KEY_BASE", "description": "Secret key used for verifying the integrity of signed cookies.", "default": ""},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Hostname for the PostgreSQL database service.", "default": ""},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database to be created and used by the application.", "default": ""},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Username for connecting to the PostgreSQL database.", "default": ""},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Password for the PostgreSQL user.", "default": ""}
+      ]
+    }]}

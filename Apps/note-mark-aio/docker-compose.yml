@@ -19,7 +19,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /config directory to /config inside the container
-      - note_mark_aio_data:/data
+      - note-mark-aio_data:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8000 of the host to port 8000 of the container
@@ -32,4 +32,6 @@ networks:
   big_bear_note_mark_aio_network:
     driver: bridge
 volumes:
-  note_mark_aio_data: {}
+  note-mark-aio_data:
+    name: note-mark-aio_data
+    driver: local

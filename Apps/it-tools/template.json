@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 81,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 80,
+      "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
       "description": "Collection of handy online tools for developers, with great UX as a web app.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/it-tools/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

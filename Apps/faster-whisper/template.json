@@ -1,28 +1,15 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 50,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 49,
+      "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",
       "description": "Faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
       "note": "Faster-whisper",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/faster-whisper/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/faster-whisper/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/faster-whisper/docker-compose.yml"
-      },
-      "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
-    {"name": "WHISPER_MODEL", "label": "WHISPER_MODEL", "description": "Environment variable for WHISPER_MODEL", "default": "tiny-int8"},
-    {"name": "WHISPER_BEAM", "label": "WHISPER_BEAM", "description": "Environment variable for WHISPER_BEAM", "default": "1"},
-    {"name": "WHISPER_LANG", "label": "WHISPER_LANG", "description": "Environment variable for WHISPER_LANG", "default": "en"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

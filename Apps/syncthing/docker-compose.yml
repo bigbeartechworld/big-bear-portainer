@@ -30,5 +30,9 @@ services:
     # Stop the container if it exits
     stop_grace_period: 1m
 volumes:
-  syncthing_data: {}
-  syncthing_media_data_syncthing: {}
+  syncthing_data:
+    name: syncthing_data
+    driver: local
+  syncthing_media_data_syncthing:
+    name: syncthing_media_data_syncthing
+    driver: local

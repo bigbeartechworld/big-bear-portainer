@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 105,
-            "type": 3,
+      "type": 3,
       "title": "Microbin",
       "name": "microbin",
       "description": "Self-hosted, encrypted pastebin alternative with configurable features.",
@@ -14,7 +11,47 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/microbin/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "MICROBIN_ADMIN_USERNAME", "label": "MICROBIN_ADMIN_USERNAME", "description": "Admin username for /admin/.", "default": ""},
+        {"name": "MICROBIN_ADMIN_PASSWORD", "label": "MICROBIN_ADMIN_PASSWORD", "description": "Admin password for /admin/.", "default": ""},
+        {"name": "MICROBIN_EDITABLE", "label": "MICROBIN_EDITABLE", "description": "Allow editing of pastas.", "default": ""},
+        {"name": "MICROBIN_FOOTER_TEXT", "label": "MICROBIN_FOOTER_TEXT", "description": "Custom footer text.", "default": ""},
+        {"name": "MICROBIN_HIDE_HEADER", "label": "MICROBIN_HIDE_HEADER", "description": "Hide header bar.", "default": ""},
+        {"name": "MICROBIN_HIDE_FOOTER", "label": "MICROBIN_HIDE_FOOTER", "description": "Hide footer bar.", "default": ""},
+        {"name": "MICROBIN_HIDE_LOGO", "label": "MICROBIN_HIDE_LOGO", "description": "Hide Microbin logo.", "default": ""},
+        {"name": "MICROBIN_NO_LISTING", "label": "MICROBIN_NO_LISTING", "description": "Disable /pastalist endpoint.", "default": ""},
+        {"name": "MICROBIN_HIGHLIGHTSYNTAX", "label": "MICROBIN_HIGHLIGHTSYNTAX", "description": "Enable syntax highlighting.", "default": ""},
+        {"name": "MICROBIN_PORT", "label": "MICROBIN_PORT", "description": "Port Microbin listens on.", "default": ""},
+        {"name": "MICROBIN_BIND", "label": "MICROBIN_BIND", "description": "Bind address for Microbin.", "default": ""},
+        {"name": "MICROBIN_PRIVATE", "label": "MICROBIN_PRIVATE", "description": "Enable private pastas.", "default": ""},
+        {"name": "MICROBIN_PURE_HTML", "label": "MICROBIN_PURE_HTML", "description": "Use minimal HTML, disables main CSS.", "default": ""},
+        {"name": "MICROBIN_DATA_DIR", "label": "MICROBIN_DATA_DIR", "description": "Data directory inside the container.", "default": ""},
+        {"name": "MICROBIN_JSON_DB", "label": "MICROBIN_JSON_DB", "description": "Store data in JSON instead of SQLite.", "default": ""},
+        {"name": "MICROBIN_PUBLIC_PATH", "label": "MICROBIN_PUBLIC_PATH", "description": "Public path prefix for reverse proxy.", "default": ""},
+        {"name": "MICROBIN_SHORT_PATH", "label": "MICROBIN_SHORT_PATH", "description": "Shorten URLs.", "default": ""},
+        {"name": "MICROBIN_UPLOADER_PASSWORD", "label": "MICROBIN_UPLOADER_PASSWORD", "description": "Password for uploading in read-only mode.", "default": ""},
+        {"name": "MICROBIN_READONLY", "label": "MICROBIN_READONLY", "description": "Enable read-only mode.", "default": ""},
+        {"name": "MICROBIN_SHOW_READ_STATS", "label": "MICROBIN_SHOW_READ_STATS", "description": "Show read count on pastas.", "default": ""},
+        {"name": "MICROBIN_TITLE", "label": "MICROBIN_TITLE", "description": "Custom title in navigation bar.", "default": ""},
+        {"name": "MICROBIN_THREADS", "label": "MICROBIN_THREADS", "description": "Number of worker threads.", "default": ""},
+        {"name": "MICROBIN_GC_DAYS", "label": "MICROBIN_GC_DAYS", "description": "Days before unused pastas are deleted.", "default": ""},
+        {"name": "MICROBIN_ENABLE_BURN_AFTER", "label": "MICROBIN_ENABLE_BURN_AFTER", "description": "Enable burn-after-reading.", "default": ""},
+        {"name": "MICROBIN_DEFAULT_BURN_AFTER", "label": "MICROBIN_DEFAULT_BURN_AFTER", "description": "Default burn-after value.", "default": ""},
+        {"name": "MICROBIN_WIDE", "label": "MICROBIN_WIDE", "description": "Use wider UI.", "default": ""},
+        {"name": "MICROBIN_QR", "label": "MICROBIN_QR", "description": "Enable QR code generation.", "default": ""},
+        {"name": "MICROBIN_ETERNAL_PASTA", "label": "MICROBIN_ETERNAL_PASTA", "description": "Enable 'never expire' option.", "default": ""},
+        {"name": "MICROBIN_ENABLE_READONLY", "label": "MICROBIN_ENABLE_READONLY", "description": "Enable read-only uploads.", "default": ""},
+        {"name": "MICROBIN_DEFAULT_EXPIRY", "label": "MICROBIN_DEFAULT_EXPIRY", "description": "Default expiry for pastas.", "default": ""},
+        {"name": "MICROBIN_NO_FILE_UPLOAD", "label": "MICROBIN_NO_FILE_UPLOAD", "description": "Disable file uploads.", "default": ""},
+        {"name": "MICROBIN_CUSTOM_CSS", "label": "MICROBIN_CUSTOM_CSS", "description": "URL for custom CSS.", "default": ""},
+        {"name": "MICROBIN_HASH_IDS", "label": "MICROBIN_HASH_IDS", "description": "Use hash IDs for URLs.", "default": ""},
+        {"name": "MICROBIN_ENCRYPTION_CLIENT_SIDE", "label": "MICROBIN_ENCRYPTION_CLIENT_SIDE", "description": "Enable client-side encryption.", "default": ""},
+        {"name": "MICROBIN_ENCRYPTION_SERVER_SIDE", "label": "MICROBIN_ENCRYPTION_SERVER_SIDE", "description": "Enable server-side encryption.", "default": ""},
+        {"name": "MICROBIN_MAX_FILE_SIZE_ENCRYPTED_MB", "label": "MICROBIN_MAX_FILE_SIZE_ENCRYPTED_MB", "description": "Max file size with encryption.", "default": ""},
+        {"name": "MICROBIN_MAX_FILE_SIZE_UNENCRYPTED_MB", "label": "MICROBIN_MAX_FILE_SIZE_UNENCRYPTED_MB", "description": "Max file size without encryption.", "default": ""},
+        {"name": "MICROBIN_DISABLE_UPDATE_CHECKING", "label": "MICROBIN_DISABLE_UPDATE_CHECKING", "description": "Disable update checking.", "default": ""},
+        {"name": "MICROBIN_DISABLE_TELEMETRY", "label": "MICROBIN_DISABLE_TELEMETRY", "description": "Disable telemetry.", "default": ""},
+        {"name": "MICROBIN_LIST_SERVER", "label": "MICROBIN_LIST_SERVER", "description": "List server publicly.", "default": ""}
+      ]
+    }]}

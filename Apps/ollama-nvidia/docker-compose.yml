@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ollama_nvidia_.ollama:/root/.ollama
+      - ollama-nvidia_.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
@@ -34,4 +34,6 @@ services:
                 # Define the required capabilities (gpu for GPU resources)
                 - gpu
 volumes:
-  ollama_nvidia_.ollama: {}
+  ollama-nvidia_.ollama:
+    name: ollama-nvidia_.ollama
+    driver: local

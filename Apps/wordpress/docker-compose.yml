@@ -37,5 +37,9 @@ services:
     volumes:
       - wordpress_mysql:/var/lib/mysql
 volumes:
-  wordpress_html: {}
-  wordpress_mysql: {}
+  wordpress_html:
+    name: wordpress_html
+    driver: local
+  wordpress_mysql:
+    name: wordpress_mysql
+    driver: local

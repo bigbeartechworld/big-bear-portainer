@@ -24,4 +24,6 @@ services:
     # Network mode to be used for the container
     network_mode: host
 volumes:
-  watchyourlan_data: {}
+  watchyourlan_data:
+    name: watchyourlan_data
+    driver: local

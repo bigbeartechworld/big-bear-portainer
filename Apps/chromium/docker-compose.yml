@@ -12,4 +12,6 @@ services:
     volumes:
       - chromium_Downloads:/home/kasm-user/Downloads # Mount the host directory to the container's Downloads directory
 volumes:
-  chromium_Downloads: {}
+  chromium_Downloads:
+    name: chromium_Downloads
+    driver: local

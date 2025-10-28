@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 174,
-            "type": 3,
+      "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
       "description": "Scrypted is an open source video integration platform. Using various Plugins, Scrypted can receive streams from a range of cameras and send them to other platforms (HomeKit, Google Home, Alexa, Home Assistant).",
@@ -16,13 +13,7 @@
         "stackfile": "Apps/scrypted/docker-compose.yml"
       },
       "env": [
-    {"name": "SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "label": "SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "description": "Environment variable for SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "default": "Bearer SET_THIS_TO_SOME_RANDOM_TEXT"},
-    {"name": "SCRYPTED_WEBHOOK_UPDATE", "label": "SCRYPTED_WEBHOOK_UPDATE", "description": "Environment variable for SCRYPTED_WEBHOOK_UPDATE", "default": "http://localhost:10444/v1/update"},
-    {"name": "WATCHTOWER_HTTP_API_TOKEN", "label": "WATCHTOWER_HTTP_API_TOKEN", "description": "Environment variable for WATCHTOWER_HTTP_API_TOKEN", "default": "SET_THIS_TO_SOME_RANDOM_TEXT"},
-    {"name": "WATCHTOWER_HTTP_API_UPDATE", "label": "WATCHTOWER_HTTP_API_UPDATE", "description": "Environment variable for WATCHTOWER_HTTP_API_UPDATE", "default": "true"},
-    {"name": "WATCHTOWER_SCOPE", "label": "WATCHTOWER_SCOPE", "description": "Environment variable for WATCHTOWER_SCOPE", "default": "scrypted"},
-    {"name": "WATCHTOWER_HTTP_API_PERIODIC_POLLS", "label": "WATCHTOWER_HTTP_API_PERIODIC_POLLS", "description": "Environment variable for WATCHTOWER_HTTP_API_PERIODIC_POLLS", "default": "true"}
+        {"name": "SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "label": "SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION", "description": "Scrypted webhook update authorization", "default": ""},
+        {"name": "SCRYPTED_WEBHOOK_UPDATE", "label": "SCRYPTED_WEBHOOK_UPDATE", "description": "Scrypted webhook update URL", "default": ""}
       ]
-    }
-  ]
-}
+    }]}
