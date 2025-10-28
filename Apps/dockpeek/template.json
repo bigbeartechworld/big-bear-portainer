@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 42,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 41,
+      "type": 3,
       "title": "Dockpeek",
       "name": "dockpeek",
       "description": "A lightweight, self-hosted Docker dashboard that provides quick access to all running containers and their exposed ports with one-click access to web apps.",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/dockpeek/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Secret key for the application. Change this for security.", "default": ""},
+        {"name": "USERNAME", "label": "USERNAME", "description": "Username for authentication. Change this from default.", "default": ""},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Password for authentication. Change this from default.", "default": ""},
+        {"name": "DOCKER_HOST", "label": "DOCKER_HOST", "description": "Docker host socket path.", "default": ""}
+      ]
+    }]}

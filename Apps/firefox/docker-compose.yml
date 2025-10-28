@@ -12,4 +12,6 @@ services:
     volumes:
       - firefox_Downloads:/home/kasm-user/Downloads # Mount the host directory to the container's Downloads directory
 volumes:
-  firefox_Downloads: {}
+  firefox_Downloads:
+    name: firefox_Downloads
+    driver: local

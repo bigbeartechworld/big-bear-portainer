@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 38,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 37,
+      "type": 3,
       "title": "DBGate",
       "name": "dbgate",
       "description": "Web based UI for managing and exploring SQL database data",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/dbgate/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

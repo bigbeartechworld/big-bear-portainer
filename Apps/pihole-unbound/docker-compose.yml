@@ -21,9 +21,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/etc directory to /etc/pihole/ inside the container
-      - pihole_unbound_etc:/etc/pihole/
+      - pihole-unbound_etc:/etc/pihole/
       # Mounting the local /DATA/AppData/$AppID/dnsmasq.d directory to /etc/dnsmasq.d inside the container
-      - pihole_unbound_dnsmasq.d:/etc/dnsmasq.d/
+      - pihole-unbound_dnsmasq.d:/etc/dnsmasq.d/
     # Ports mapping between host and container
     ports:
       - "53:53/tcp"
@@ -41,5 +41,9 @@ networks:
     # Set the network driver to bridge
     driver: bridge
 volumes:
-  pihole_unbound_etc: {}
-  pihole_unbound_dnsmasq.d: {}
+  pihole-unbound_dnsmasq.d:
+    name: pihole-unbound_dnsmasq.d
+    driver: local
+  pihole-unbound_etc:
+    name: pihole-unbound_etc
+    driver: local

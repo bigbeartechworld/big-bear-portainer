@@ -49,6 +49,12 @@ networks:
   big_bear_odoo_network:
     driver: bridge # Specifies network driver as bridge
 volumes:
-  odoo_data_etc: {}
-  odoo_data_addons: {}
-  odoo_data_postgresql: {}
+  odoo_data_addons:
+    name: odoo_data_addons
+    driver: local
+  odoo_data_etc:
+    name: odoo_data_etc
+    driver: local
+  odoo_data_postgresql:
+    name: odoo_data_postgresql
+    driver: local

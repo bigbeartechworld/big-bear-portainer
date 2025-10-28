@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 58,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 57,
+      "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
       "description": "Focalboard is an open source, multilingual, self-hosted project management tool that's an alternative to Trello, Notion, and Asana.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/focalboard/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

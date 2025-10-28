@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 67,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 66,
+      "type": 3,
       "title": "Gotify",
       "name": "gotify",
       "description": "a simple server for sending and receiving messages",
@@ -16,9 +13,7 @@
         "stackfile": "Apps/gotify/docker-compose.yml"
       },
       "env": [
-    {"name": "GOTIFY_DEFAULTUSER_NAME", "label": "GOTIFY_DEFAULTUSER_NAME", "description": "Environment variable for GOTIFY_DEFAULTUSER_NAME", "default": "admin"},
-    {"name": "GOTIFY_DEFAULTUSER_PASS", "label": "GOTIFY_DEFAULTUSER_PASS", "description": "Environment variable for GOTIFY_DEFAULTUSER_PASS", "default": "custom"}
+        {"name": "GOTIFY_DEFAULTUSER_NAME", "label": "GOTIFY_DEFAULTUSER_NAME", "description": "Gotify default user name", "default": ""},
+        {"name": "GOTIFY_DEFAULTUSER_PASS", "label": "GOTIFY_DEFAULTUSER_PASS", "description": "Gotify default user password", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

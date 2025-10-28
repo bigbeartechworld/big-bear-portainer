@@ -19,5 +19,9 @@ services:
       - matterbridge_Matterbridge:/root/Matterbridge
       - matterbridge_.matterbridge:/root/.matterbridge
 volumes:
-  matterbridge_Matterbridge: {}
-  matterbridge_.matterbridge: {}
+  matterbridge_.matterbridge:
+    name: matterbridge_.matterbridge
+    driver: local
+  matterbridge_Matterbridge:
+    name: matterbridge_Matterbridge
+    driver: local

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 40,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 39,
+      "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",
       "description": "This Docker image is designed to automatically restart specified Docker containers and send notifications to a Discord channel upon each restart. It's particularly useful for maintaining long-running services, ensuring they're periodically refreshed and stakeholders are informed of these actions.",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/docker-cron-restart-notifier/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "DISCORD_WEBHOOK_URL", "label": "DISCORD_WEBHOOK_URL", "description": "Discord Webhook URL", "default": ""},
+        {"name": "RESTART_CONTAINERS", "label": "RESTART_CONTAINERS", "description": "Restart Containers", "default": ""},
+        {"name": "RUN_ON_STARTUP", "label": "RUN_ON_STARTUP", "description": "Run on Startup", "default": ""},
+        {"name": "CRON_SCHEDULE", "label": "CRON_SCHEDULE", "description": "Cron Schedule", "default": ""}
+      ]
+    }]}

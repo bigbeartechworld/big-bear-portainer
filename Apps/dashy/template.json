@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 36,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 35,
+      "type": 3,
       "title": "Dashy",
       "name": "dashy",
       "description": "Dashy helps you organize your self-hosted services by making them accessible from a single place",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/dashy/docker-compose.yml"
       },
       "env": [
-    {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Environment variable for NODE_ENV", "default": "production"}
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Node environment", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

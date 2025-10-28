@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 135,
-            "type": 3,
+      "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
       "description": "Feature-rich web-based office suite with a vast range of collaborative capabilities",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/onlyoffice/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

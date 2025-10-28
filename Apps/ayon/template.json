@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 12,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 11,
+      "type": 3,
       "title": "Ayon",
       "name": "ayon",
       "description": "This is the official Docker-based deployment for the Ayon Server. Ayon is a robust tool designed to manage and automate workflows in the animation and visual effects industries.",
@@ -14,12 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ayon/docker-compose.yml"
-      },
-      "env": [
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "ayon"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "ayon"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "ayon"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

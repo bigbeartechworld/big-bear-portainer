@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 152,
-            "type": 3,
+      "type": 3,
       "title": "Planka",
       "name": "planka",
       "description": "The realtime kanban board for workgroups built with React and Redux.",
@@ -14,18 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/planka/docker-compose.yml"
-      },
-      "env": [
-    {"name": "BASE_URL", "label": "BASE_URL", "description": "Environment variable for BASE_URL", "default": "http://[YOUR_CASAOS_LAN_IP]:3000"},
-    {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Environment variable for DATABASE_URL", "default": "postgresql://postgres@big-bear-planka-postgres/planka"},
-    {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Environment variable for SECRET_KEY", "default": "notsecretkey"},
-    {"name": "DEFAULT_ADMIN_EMAIL", "label": "DEFAULT_ADMIN_EMAIL", "description": "Environment variable for DEFAULT_ADMIN_EMAIL", "default": "demo@demo.demo"},
-    {"name": "DEFAULT_ADMIN_PASSWORD", "label": "DEFAULT_ADMIN_PASSWORD", "description": "Environment variable for DEFAULT_ADMIN_PASSWORD", "default": "demo"},
-    {"name": "DEFAULT_ADMIN_NAME", "label": "DEFAULT_ADMIN_NAME", "description": "Environment variable for DEFAULT_ADMIN_NAME", "default": "Demo Demo"},
-    {"name": "DEFAULT_ADMIN_USERNAME", "label": "DEFAULT_ADMIN_USERNAME", "description": "Environment variable for DEFAULT_ADMIN_USERNAME", "default": "demo"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "planka"},
-    {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Environment variable for POSTGRES_HOST_AUTH_METHOD", "default": "trust"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

@@ -33,7 +33,7 @@ services:
     container_name: immich-machine-learning # Name of the running container
     image: ghcr.io/immich-app/immich-machine-learning:v2.1.0 # Image to be used
     volumes: # Mounting directories for persistent data storage
-      - immich_model_cache:/cache
+      - immich_model-cache:/cache
     environment: # Setting environment variables
       DB_HOSTNAME: immich-postgres
       DB_USERNAME: casaos
@@ -74,6 +74,12 @@ networks:
   big_bear_immich_network:
     driver: bridge # Uses bridge network driver
 volumes:
-  immich_upload: {}
-  immich_model_cache: {}
-  immich_pgdata: {}
+  immich_model-cache:
+    name: immich_model-cache
+    driver: local
+  immich_pgdata:
+    name: immich_pgdata
+    driver: local
+  immich_upload:
+    name: immich_upload
+    driver: local

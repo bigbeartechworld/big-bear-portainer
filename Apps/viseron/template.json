@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 200,
-            "type": 3,
+      "type": 3,
       "title": "Viseron",
       "name": "viseron",
       "description": "Viseron is a self-hosted, local only NVR and AI Computer Vision software",
@@ -16,9 +13,7 @@
         "stackfile": "Apps/viseron/docker-compose.yml"
       },
       "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"}
+        {"name": "PUID", "label": "PUID", "description": "Container Environment Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Environment Variable: PGID", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

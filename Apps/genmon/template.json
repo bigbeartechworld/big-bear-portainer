@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 59,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 58,
+      "type": 3,
       "title": "Genmon",
       "name": "genmon",
       "description": "Generac (and other models) Generator Monitoring using a Raspberry Pi and WiFi",
@@ -14,10 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/genmon/docker-compose.yml"
-      },
-      "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "America/Chicago"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

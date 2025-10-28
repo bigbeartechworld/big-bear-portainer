@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 168,
-            "type": 3,
+      "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
       "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/reactive-resume/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

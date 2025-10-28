@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 104,
-            "type": 3,
+      "type": 3,
       "title": "Mealie",
       "name": "mealie",
       "description": "Mealie is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/mealie/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

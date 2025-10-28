@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 62,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 61,
+      "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
       "description": "Gitea Mirror is a modern web app for automatically mirroring repositories from GitHub to your self-hosted Gitea instance. It features a user-friendly interface to sync public, private, or starred GitHub repos, mirror entire organizations with structure preservation, and optionally mirror issues and labels. The application includes smart filtering, detailed logs, and scheduled automatic mirroring.",
@@ -16,13 +13,10 @@
         "stackfile": "Apps/gitea-mirror/docker-compose.yml"
       },
       "env": [
-    {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Environment variable for NODE_ENV", "default": "production"},
-    {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Environment variable for DATABASE_URL", "default": "file:data/gitea-mirror.db"},
-    {"name": "HOST", "label": "HOST", "description": "Environment variable for HOST", "default": "0.0.0.0"},
-    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "4321"},
-    {"name": "BETTER_AUTH_URL", "label": "BETTER_AUTH_URL", "description": "Environment variable for BETTER_AUTH_URL", "default": "http://0.0.0.0:4321"},
-    {"name": "BETTER_AUTH_SECRET", "label": "BETTER_AUTH_SECRET", "description": "Environment variable for BETTER_AUTH_SECRET", "default": "your-secret-key-change-this-in-production"}
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Node Environment: production", "default": ""},
+        {"name": "HOST", "label": "HOST", "description": "Host Interface: 0.0.0.0", "default": ""},
+        {"name": "PORT", "label": "PORT", "description": "Application Port: 4321", "default": ""},
+        {"name": "BETTER_AUTH_URL", "label": "BETTER_AUTH_URL", "description": "Better Auth URL for authentication", "default": ""},
+        {"name": "BETTER_AUTH_SECRET", "label": "BETTER_AUTH_SECRET", "description": "Secret key for Better Auth authentication (change in production)", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

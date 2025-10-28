@@ -32,8 +32,18 @@ services:
       - PUID=1000
       - PGID=1000
 volumes:
-  viseron_segments: {}
-  viseron_snapshots: {}
-  viseron_thumbnails: {}
-  viseron_event_clips: {}
-  viseron_config: {}
+  viseron_config:
+    name: viseron_config
+    driver: local
+  viseron_event_clips:
+    name: viseron_event_clips
+    driver: local
+  viseron_segments:
+    name: viseron_segments
+    driver: local
+  viseron_snapshots:
+    name: viseron_snapshots
+    driver: local
+  viseron_thumbnails:
+    name: viseron_thumbnails
+    driver: local

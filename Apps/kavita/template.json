@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 89,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 88,
+      "type": 3,
       "title": "Kavita",
       "name": "kavita",
       "description": "Kavita is a fast, feature rich, cross platform reading server",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/kavita/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}
