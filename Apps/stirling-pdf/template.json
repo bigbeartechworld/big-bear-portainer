@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 182,
-            "type": 3,
+      "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
       "description": "Stirling PDF - Local hosted web based PDF editor",
@@ -16,15 +13,13 @@
         "stackfile": "Apps/stirling-pdf/docker-compose.yml"
       },
       "env": [
-    {"name": "DOCKER_ENABLE_SECURITY", "label": "DOCKER_ENABLE_SECURITY", "description": "Environment variable for DOCKER_ENABLE_SECURITY", "default": "false"},
-    {"name": "SECURITY_ENABLE_LOGIN", "label": "SECURITY_ENABLE_LOGIN", "description": "Environment variable for SECURITY_ENABLE_LOGIN", "default": "true"},
-    {"name": "SECURITY_INITIALLOGIN_USERNAME", "label": "SECURITY_INITIALLOGIN_USERNAME", "description": "Environment variable for SECURITY_INITIALLOGIN_USERNAME", "default": "bigbear"},
-    {"name": "SECURITY_INITIALLOGIN_PASSWORD", "label": "SECURITY_INITIALLOGIN_PASSWORD", "description": "Environment variable for SECURITY_INITIALLOGIN_PASSWORD", "default": "4500733e-a0f8-4605-a712-fd267404956a"},
-    {"name": "CSRF_DISABLED", "label": "CSRF_DISABLED", "description": "Environment variable for CSRF_DISABLED", "default": "false"},
-    {"name": "DEFAULT_LOCALE", "label": "DEFAULT_LOCALE", "description": "Environment variable for DEFAULT_LOCALE", "default": "en-US"},
-    {"name": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "label": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "description": "Environment variable for INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "default": "false"},
-    {"name": "LANGS", "label": "LANGS", "description": "Environment variable for LANGS", "default": "en_US"}
+        {"name": "DOCKER_ENABLE_SECURITY", "label": "DOCKER_ENABLE_SECURITY", "description": "Enable Security Jar for Authentication", "default": ""},
+        {"name": "SECURITY_ENABLE_LOGIN", "label": "SECURITY_ENABLE_LOGIN", "description": "Enable Login for Authentication", "default": ""},
+        {"name": "SECURITY_INITIALLOGIN_USERNAME", "label": "SECURITY_INITIALLOGIN_USERNAME", "description": "Initial admin username", "default": ""},
+        {"name": "SECURITY_INITIALLOGIN_PASSWORD", "label": "SECURITY_INITIALLOGIN_PASSWORD", "description": "Initial admin password", "default": ""},
+        {"name": "CSRF_DISABLED", "label": "CSRF_DISABLED", "description": "Disable CSRF Protection", "default": ""},
+        {"name": "DEFAULT_LOCALE", "label": "DEFAULT_LOCALE", "description": "Set Default Locale", "default": ""},
+        {"name": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "label": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS", "description": "Install Book and Advanced HTML Ops", "default": ""},
+        {"name": "LANGS", "label": "LANGS", "description": "Languages", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

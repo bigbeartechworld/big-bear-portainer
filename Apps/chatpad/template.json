@@ -1,12 +1,9 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 24,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 23,
+      "type": 3,
       "title": "Chatpad",
       "name": "chatpad",
-      "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new \"to-do app\" that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
+      "description": "Recently, there has been a surge of UIs for ChatGPT, making it the new to-do app that everyone wants to try their hand at. Chatpad sets itself apart with a broader vision - to become the ultimate interface for ChatGPT users.",
       "note": "Not just another ChatGPT user-interface!",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/chatpad/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

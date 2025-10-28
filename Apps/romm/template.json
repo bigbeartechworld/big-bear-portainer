@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 172,
-            "type": 3,
+      "type": 3,
       "title": "RomM",
       "name": "romm",
       "description": "ROM manager for organizing, enriching, and playing retro games, with support for 400+ platforms.",
@@ -16,28 +13,22 @@
         "stackfile": "Apps/romm/docker-compose.yml"
       },
       "env": [
-    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-rommdb"},
-    {"name": "DB_PORT", "label": "DB_PORT", "description": "Environment variable for DB_PORT", "default": "3306"},
-    {"name": "DB_USER", "label": "DB_USER", "description": "Environment variable for DB_USER", "default": "romm-user"},
-    {"name": "DB_NAME", "label": "DB_NAME", "description": "Environment variable for DB_NAME", "default": "romm"},
-    {"name": "DB_PASSWD", "label": "DB_PASSWD", "description": "Environment variable for DB_PASSWD", "default": "casaos"},
-    {"name": "ROMM_AUTH_SECRET_KEY", "label": "ROMM_AUTH_SECRET_KEY", "description": "Environment variable for ROMM_AUTH_SECRET_KEY", "default": "<secret key>"},
-    {"name": "IGDB_CLIENT_ID", "label": "IGDB_CLIENT_ID", "description": "Environment variable for IGDB_CLIENT_ID", "default": "<igdb client id>"},
-    {"name": "IGDB_CLIENT_SECRET", "label": "IGDB_CLIENT_SECRET", "description": "Environment variable for IGDB_CLIENT_SECRET", "default": "<igdb client secret>"},
-    {"name": "MOBYGAMES_API_KEY", "label": "MOBYGAMES_API_KEY", "description": "Environment variable for MOBYGAMES_API_KEY", "default": "<moby api key>"},
-    {"name": "STEAMGRIDDB_API_KEY", "label": "STEAMGRIDDB_API_KEY", "description": "Environment variable for STEAMGRIDDB_API_KEY", "default": "<sgdb api key>"},
-    {"name": "SCREENSCRAPER_USER", "label": "SCREENSCRAPER_USER", "description": "Environment variable for SCREENSCRAPER_USER", "default": "<screenscraper user>"},
-    {"name": "SCREENSCRAPER_PASSWORD", "label": "SCREENSCRAPER_PASSWORD", "description": "Environment variable for SCREENSCRAPER_PASSWORD", "default": "<screenscraper password>"},
-    {"name": "RETROACHIEVEMENTS_API_KEY", "label": "RETROACHIEVEMENTS_API_KEY", "description": "Environment variable for RETROACHIEVEMENTS_API_KEY", "default": "<retroachievements api key>"},
-    {"name": "HASHEOUS_API_ENABLED", "label": "HASHEOUS_API_ENABLED", "description": "Environment variable for HASHEOUS_API_ENABLED", "default": "true"},
-    {"name": "ENABLE_RESCAN_ON_FILESYSTEM_CHANGE", "label": "ENABLE_RESCAN_ON_FILESYSTEM_CHANGE", "description": "Environment variable for ENABLE_RESCAN_ON_FILESYSTEM_CHANGE", "default": "true"},
-    {"name": "ENABLE_SCHEDULED_RESCAN", "label": "ENABLE_SCHEDULED_RESCAN", "description": "Environment variable for ENABLE_SCHEDULED_RESCAN", "default": "true"},
-    {"name": "ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB", "label": "ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB", "description": "Environment variable for ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB", "default": "true"},
-    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "casaos"},
-    {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Environment variable for MYSQL_DATABASE", "default": "romm"},
-    {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Environment variable for MYSQL_USER", "default": "romm-user"},
-    {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Environment variable for MYSQL_PASSWORD", "default": "casaos"}
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Database Host: romm_db", "default": ""},
+        {"name": "DB_PORT", "label": "DB_PORT", "description": "Database Port: 3306", "default": ""},
+        {"name": "DB_USER", "label": "DB_USER", "description": "Database User: romm-user", "default": ""},
+        {"name": "DB_NAME", "label": "DB_NAME", "description": "Database Name: romm", "default": ""},
+        {"name": "DB_PASSWD", "label": "DB_PASSWD", "description": "Database Password: casaos", "default": ""},
+        {"name": "IGDB_CLIENT_ID", "label": "IGDB_CLIENT_ID", "description": "IGDB Client ID (Optional): Generate an ID and SECRET in IGDB", "default": ""},
+        {"name": "IGDB_CLIENT_SECRET", "label": "IGDB_CLIENT_SECRET", "description": "IGDB Client Secret (Optional): https://api-docs.igdb.com/#account-creation", "default": ""},
+        {"name": "MOBYGAMES_API_KEY", "label": "MOBYGAMES_API_KEY", "description": "MobyGames API Key (Optional): Generate at https://www.mobygames.com/info/api/", "default": ""},
+        {"name": "STEAMGRIDDB_API_KEY", "label": "STEAMGRIDDB_API_KEY", "description": "SteamGridDB API Key (Optional): See https://github.com/rommapp/romm/wiki/Generate-API-Keys#steamgriddb", "default": ""},
+        {"name": "SCREENSCRAPER_USER", "label": "SCREENSCRAPER_USER", "description": "ScreenScraper User (Optional): ScreenScraper username", "default": ""},
+        {"name": "SCREENSCRAPER_PASSWORD", "label": "SCREENSCRAPER_PASSWORD", "description": "ScreenScraper Password (Optional): ScreenScraper password", "default": ""},
+        {"name": "RETROACHIEVEMENTS_API_KEY", "label": "RETROACHIEVEMENTS_API_KEY", "description": "RetroAchievements API Key (Optional): RetroAchievements API key", "default": ""},
+        {"name": "HASHEOUS_API_ENABLED", "label": "HASHEOUS_API_ENABLED", "description": "Hasheous API Enabled (Optional): Enable Hasheous API integration", "default": ""},
+        {"name": "ROMM_AUTH_SECRET_KEY", "label": "ROMM_AUTH_SECRET_KEY", "description": "Authentication Secret Key: <secret key>", "default": ""},
+        {"name": "ENABLE_RESCAN_ON_FILESYSTEM_CHANGE", "label": "ENABLE_RESCAN_ON_FILESYSTEM_CHANGE", "description": "Rescan On Filesystem Change: true", "default": ""},
+        {"name": "ENABLE_SCHEDULED_RESCAN", "label": "ENABLE_SCHEDULED_RESCAN", "description": "Scheduled Rescan: true", "default": ""},
+        {"name": "ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB", "label": "ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB", "description": "Scheduled Update Switch TitleDB: true", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

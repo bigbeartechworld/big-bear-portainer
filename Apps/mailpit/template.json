@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 102,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 101,
+      "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
       "description": "Mailpit is a multi-platform email testing tool & API for developers.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/mailpit/docker-compose.yml"
       },
       "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

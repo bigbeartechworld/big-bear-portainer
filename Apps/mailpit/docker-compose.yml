@@ -15,4 +15,6 @@ services:
       - "8025:8025"
       - "1025:1025"
 volumes:
-  mailpit_data: {}
+  mailpit_data:
+    name: mailpit_data
+    driver: local

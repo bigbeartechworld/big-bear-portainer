@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-owncloud
     # Image to be used for the container
-    image: owncloud/server:10.15.3
+    image: owncloud/server:10.16.0
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -86,6 +86,12 @@ networks:
     name: big_bear_owncloud_network
     driver: bridge
 volumes:
-  owncloud_data: {}
-  owncloud_mysql: {}
-  owncloud_redis: {}
+  owncloud_data:
+    name: owncloud_data
+    driver: local
+  owncloud_mysql:
+    name: owncloud_mysql
+    driver: local
+  owncloud_redis:
+    name: owncloud_redis
+    driver: local

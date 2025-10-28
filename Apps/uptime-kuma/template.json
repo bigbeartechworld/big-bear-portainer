@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 198,
-            "type": 3,
+      "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
       "description": "A fancy self-hosted monitoring tool",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/uptime-kuma/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

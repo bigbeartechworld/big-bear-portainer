@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 146,
-            "type": 3,
+      "type": 3,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
       "description": "phpMyAdmin - A web interface for MySQL and MariaDB.",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/phpmyadmin/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "PMA_HOST", "label": "PMA_HOST", "description": "Host of the database server", "default": ""},
+        {"name": "PMA_PORT", "label": "PMA_PORT", "description": "Port of the database server", "default": ""},
+        {"name": "PMA_USER", "label": "PMA_USER", "description": "Username to connect to the database", "default": ""},
+        {"name": "PMA_PASSWORD", "label": "PMA_PASSWORD", "description": "Password to connect to the database", "default": ""}
+      ]
+    }]}

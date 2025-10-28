@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 165,
-            "type": 3,
+      "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
       "description": "Wings is Pterodactyl's server control plane, built for the rapidly changing gaming industry and designed to be highly performant and secure. Wings provides an HTTP API allowing you to interface directly with running server instances, fetch server logs, generate backups, and control all aspects of the server lifecycle.",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/pterodactyl-wings/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""},
+        {"name": "WINGS_UID", "label": "WINGS_UID", "description": "User ID for the Wings process", "default": ""},
+        {"name": "WINGS_GID", "label": "WINGS_GID", "description": "Group ID for the Wings process", "default": ""},
+        {"name": "WINGS_USERNAME", "label": "WINGS_USERNAME", "description": "Username for the Wings process", "default": ""}
+      ]
+    }]}

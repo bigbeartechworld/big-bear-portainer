@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 99,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 98,
+      "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
       "description": "LobeChat is a open-source, extensible (Function Calling), high-performance chatbot framework. It supports one-click free deployment of your private ChatGPT/LLM web application.",
@@ -16,11 +13,9 @@
         "stackfile": "Apps/lobe-chat/docker-compose.yml"
       },
       "env": [
-    {"name": "OPENAI_API_KEY", "label": "OPENAI_API_KEY", "description": "Environment variable for OPENAI_API_KEY", "default": ""},
-    {"name": "OPENAI_PROXY_URL", "label": "OPENAI_PROXY_URL", "description": "Environment variable for OPENAI_PROXY_URL", "default": ""},
-    {"name": "CUSTOM_MODELS", "label": "CUSTOM_MODELS", "description": "Environment variable for CUSTOM_MODELS", "default": ""},
-    {"name": "ACCESS_CODE", "label": "ACCESS_CODE", "description": "Environment variable for ACCESS_CODE", "default": ""}
+        {"name": "OPENAI_API_KEY", "label": "OPENAI_API_KEY", "description": "OpenAI API Key", "default": ""},
+        {"name": "OPENAI_PROXY_URL", "label": "OPENAI_PROXY_URL", "description": "OpenAI Proxy URL", "default": ""},
+        {"name": "CUSTOM_MODELS", "label": "CUSTOM_MODELS", "description": "Custom Models", "default": ""},
+        {"name": "ACCESS_CODE", "label": "ACCESS_CODE", "description": "Access Code", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

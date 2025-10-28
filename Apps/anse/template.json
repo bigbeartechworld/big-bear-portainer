@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 8,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 7,
+      "type": 3,
       "title": "Anse",
       "name": "anse",
       "description": "Anse is a fully optimized UI for AI Chats. Supercharged experience for multiple models such as ChatGPT, DALL-E and Stable Diffusion.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/anse/docker-compose.yml"
       },
       "env": [
-    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "8014"}
+        {"name": "PORT", "label": "PORT", "description": "Port: 8014", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

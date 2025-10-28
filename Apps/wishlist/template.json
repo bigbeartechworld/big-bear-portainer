@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 208,
-            "type": 3,
+      "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
       "description": "Wishlist is a self-hosted wishlist application that you can share with your friends and family. You no longer have to wonder what to get your family for the holidays, simply check their wishlist and claim any available item!",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/wishlist/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "ORIGIN", "label": "ORIGIN", "description": "If behind a reverse proxy, set this to your domain", "default": ""},
+        {"name": "TOKEN_TIME", "label": "TOKEN_TIME", "description": "Hours until signup and password reset tokens expire", "default": ""},
+        {"name": "DEFAULT_CURRENCY", "label": "DEFAULT_CURRENCY", "description": "The currency to use when a product search does not return a currency", "default": ""},
+        {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Set the logging level: trace | debug | info | warn | error | fatal | silent", "default": ""}
+      ]
+    }]}

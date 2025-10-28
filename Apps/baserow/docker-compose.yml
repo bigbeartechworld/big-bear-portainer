@@ -20,4 +20,6 @@ services:
     volumes:
       - baserow_data:/baserow/data
 volumes:
-  baserow_data: {}
+  baserow_data:
+    name: baserow_data
+    driver: local

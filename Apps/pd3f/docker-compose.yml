@@ -54,7 +54,7 @@ services:
       - big-bear-pd3f-network
     volumes:
       - pd3f_cache:/root/.cache/
-      - pd3f_to_ocr:/to-ocr/
+      - pd3f_to-ocr:/to-ocr/
       - pd3f_uploads:/uploads/
     # delete results / files after one day
     environment:
@@ -66,12 +66,18 @@ services:
     networks:
       - big-bear-pd3f-network
     volumes:
-      - pd3f_to_ocr:/to-ocr/
+      - pd3f_to-ocr:/to-ocr/
 # Network definitions
 networks:
   big-bear-pd3f-network:
     name: big-bear-pd3f-network
 volumes:
-  pd3f_uploads: {}
-  pd3f_cache: {}
-  pd3f_to_ocr: {}
+  pd3f_cache:
+    name: pd3f_cache
+    driver: local
+  pd3f_to-ocr:
+    name: pd3f_to-ocr
+    driver: local
+  pd3f_uploads:
+    name: pd3f_uploads
+    driver: local

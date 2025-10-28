@@ -29,4 +29,6 @@ services:
     labels:
       - diun.enable=true
 volumes:
-  diun_data: {}
+  diun_data:
+    name: diun_data
+    driver: local

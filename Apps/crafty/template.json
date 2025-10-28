@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 33,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 32,
+      "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
       "description": "Crafty 4 is the next iteration of our Minecraft Server Wrapper / Controller / Launcher.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/crafty/docker-compose.yml"
       },
       "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 206,
-            "type": 3,
+      "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
       "description": "WireGuard Easy v15 - Complete rewrite with new features and improved UI. Access your homeserver from anywhere with this modern VPN solution. NOTE: This is v15 which has breaking changes from v14. If you're currently using v14, please backup your configuration before migrating.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/wg-easy-v15/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

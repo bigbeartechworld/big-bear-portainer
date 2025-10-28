@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 170,
-            "type": 3,
+      "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
       "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/retroarch-web/docker-compose.yml"
       },
       "env": [
-    {"name": "ROOT_WWW_PATH", "label": "ROOT_WWW_PATH", "description": "Environment variable for ROOT_WWW_PATH", "default": "/var/www/html"}
+        {"name": "ROOT_WWW_PATH", "label": "ROOT_WWW_PATH", "description": "ROOT_WWW_PATH", "default": ""}
       ]
-    }
-  ]
-}
+    }]}
