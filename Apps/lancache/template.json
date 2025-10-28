@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 94,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 93,
+      "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
       "description": "Make the most of your network. Get more play for your gamers. Download your games once and serve them out to many people at your LAN.",
@@ -14,27 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/lancache/docker-compose.yml"
-      },
-      "env": [
-    {"name": "USE_GENERIC_CACHE", "label": "USE_GENERIC_CACHE", "description": "Environment variable for USE_GENERIC_CACHE", "default": "true"},
-    {"name": "LANCACHE_IP", "label": "LANCACHE_IP", "description": "Environment variable for LANCACHE_IP", "default": "10.0.39.1"},
-    {"name": "DNS_BIND_IP", "label": "DNS_BIND_IP", "description": "Environment variable for DNS_BIND_IP", "default": "10.0.39.1"},
-    {"name": "UPSTREAM_DNS", "label": "UPSTREAM_DNS", "description": "Environment variable for UPSTREAM_DNS", "default": "8.8.8.8"},
-    {"name": "CACHE_ROOT", "label": "CACHE_ROOT", "description": "Environment variable for CACHE_ROOT", "default": "./lancache"},
-    {"name": "CACHE_DISK_SIZE", "label": "CACHE_DISK_SIZE", "description": "Environment variable for CACHE_DISK_SIZE", "default": "2000g"},
-    {"name": "CACHE_INDEX_SIZE", "label": "CACHE_INDEX_SIZE", "description": "Environment variable for CACHE_INDEX_SIZE", "default": "500m"},
-    {"name": "CACHE_MAX_AGE", "label": "CACHE_MAX_AGE", "description": "Environment variable for CACHE_MAX_AGE", "default": "3650d"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"},
-    {"name": "USE_GENERIC_CACHE", "label": "USE_GENERIC_CACHE", "description": "Environment variable for USE_GENERIC_CACHE", "default": "true"},
-    {"name": "LANCACHE_IP", "label": "LANCACHE_IP", "description": "Environment variable for LANCACHE_IP", "default": "10.0.39.1"},
-    {"name": "DNS_BIND_IP", "label": "DNS_BIND_IP", "description": "Environment variable for DNS_BIND_IP", "default": "10.0.39.1"},
-    {"name": "UPSTREAM_DNS", "label": "UPSTREAM_DNS", "description": "Environment variable for UPSTREAM_DNS", "default": "8.8.8.8"},
-    {"name": "CACHE_ROOT", "label": "CACHE_ROOT", "description": "Environment variable for CACHE_ROOT", "default": "./lancache"},
-    {"name": "CACHE_DISK_SIZE", "label": "CACHE_DISK_SIZE", "description": "Environment variable for CACHE_DISK_SIZE", "default": "2000g"},
-    {"name": "CACHE_INDEX_SIZE", "label": "CACHE_INDEX_SIZE", "description": "Environment variable for CACHE_INDEX_SIZE", "default": "500m"},
-    {"name": "CACHE_MAX_AGE", "label": "CACHE_MAX_AGE", "description": "Environment variable for CACHE_MAX_AGE", "default": "3650d"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

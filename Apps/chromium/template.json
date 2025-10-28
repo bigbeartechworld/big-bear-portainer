@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 26,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 25,
+      "type": 3,
       "title": "chromium",
       "name": "chromium",
       "description": "This Image contains a browser-accessible version of chromium.",
@@ -16,9 +13,7 @@
         "stackfile": "Apps/chromium/docker-compose.yml"
       },
       "env": [
-    {"name": "VNC_PW", "label": "VNC_PW", "description": "Environment variable for VNC_PW", "default": "casaos"},
-    {"name": "LAUNCH_URL", "label": "LAUNCH_URL", "description": "Environment variable for LAUNCH_URL", "default": "https://community.bigbeartechworld.com/"}
+        {"name": "VNC_PW", "label": "VNC_PW", "description": "VNC Password", "default": ""},
+        {"name": "LAUNCH_URL", "label": "LAUNCH_URL", "description": "Launch URL", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

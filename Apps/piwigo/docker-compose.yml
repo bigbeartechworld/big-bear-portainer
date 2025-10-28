@@ -45,6 +45,12 @@ networks:
   big_bear_piwigo_network:
     driver: bridge # Defines the network driver to be used (bridge)
 volumes:
-  piwigo_config: {}
-  piwigo_gallery: {}
-  piwigo_mysql: {}
+  piwigo_config:
+    name: piwigo_config
+    driver: local
+  piwigo_gallery:
+    name: piwigo_gallery
+    driver: local
+  piwigo_mysql:
+    name: piwigo_mysql
+    driver: local

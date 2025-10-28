@@ -16,4 +16,6 @@ services:
       - appsmith_stacks:/appsmith-stacks # Mount volume for app data
     restart: unless-stopped # Container restart policy
 volumes:
-  appsmith_stacks: {}
+  appsmith_stacks:
+    name: appsmith_stacks
+    driver: local

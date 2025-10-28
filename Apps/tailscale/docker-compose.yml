@@ -33,5 +33,9 @@ services:
       - net_admin
       - sys_module
 volumes:
-  tailscale_state: {}
-  tailscale_config: {}
+  tailscale_config:
+    name: tailscale_config
+    driver: local
+  tailscale_state:
+    name: tailscale_state
+    driver: local

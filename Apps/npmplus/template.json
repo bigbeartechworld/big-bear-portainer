@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 125,
-            "type": 3,
+      "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
       "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/npmplus/docker-compose.yml"
       },
       "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "America/Chicago"}
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

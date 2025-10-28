@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 115,
-            "type": 3,
+      "type": 3,
       "title": "Neko Firefox",
       "name": "neko-firefox",
       "description": "Welcome to Neko, a self-hosted virtual browser that runs in Docker and uses WebRTC technology. Neko is a powerful tool that allows you to run a fully-functional browser in a virtual environment, giving you the ability to access the internet securely and privately from anywhere. With Neko, you can browse the web, run applications, and perform other tasks just as you would on a regular browser, all within a secure and isolated environment. Whether you are a developer looking to test web applications, a privacy-conscious user seeking a secure browsing experience, or simply someone who wants to take advantage of the convenience and flexibility of a virtual browser, Neko is the perfect solution.",
@@ -14,7 +11,12 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/neko-firefox/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "NEKO_SCREEN", "label": "NEKO_SCREEN", "description": "Container Environment: NEKO_SCREEN", "default": ""},
+        {"name": "NEKO_PASSWORD", "label": "NEKO_PASSWORD", "description": "Container Environment: NEKO_PASSWORD", "default": ""},
+        {"name": "NEKO_PASSWORD_ADMIN", "label": "NEKO_PASSWORD_ADMIN", "description": "Container Environment: NEKO_PASSWORD_ADMIN", "default": ""},
+        {"name": "NEKO_EPR", "label": "NEKO_EPR", "description": "Container Environment: NEKO_EPR", "default": ""},
+        {"name": "NEKO_ICELITE", "label": "NEKO_ICELITE", "description": "Container Environment: NEKO_ICELITE", "default": ""}
+      ]
+    }]}

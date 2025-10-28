@@ -44,4 +44,6 @@ networks:
   big_bear_ihatemoney_network: # Define a network named 'big_bear_ihatemoney_network'.
     driver: bridge # Use the bridge network driver.
 volumes:
-  ihatemoney_mysql: {}
+  ihatemoney_mysql:
+    name: ihatemoney_mysql
+    driver: local

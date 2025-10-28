@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 71,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 70,
+      "type": 3,
       "title": "Homarr v1",
       "name": "homarr-v1",
       "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
@@ -14,10 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/homarr-v1/docker-compose.yml"
-      },
-      "env": [
-    {"name": "SECRET_ENCRYPTION_KEY", "label": "SECRET_ENCRYPTION_KEY", "description": "Environment variable for SECRET_ENCRYPTION_KEY", "default": ""}
-      ]
-    }
-  ]
-}
+      }
+    }]}
