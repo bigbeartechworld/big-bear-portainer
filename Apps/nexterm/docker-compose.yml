@@ -22,4 +22,6 @@ services:
       # Mapping port 6989 of the host to port 6989 of the container
       - "6989:6989"
 volumes:
-  nexterm_data: {}
+  nexterm_data:
+    name: nexterm_data
+    driver: local

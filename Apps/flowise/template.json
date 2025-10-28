@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 57,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 56,
+      "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
       "description": "Flowise AI is an Open source UI visual tool to build your customized LLM orchestration flow & AI agents. Developing LLM apps takeslength iterations. With low code approach, Flowise AI enable quick iterations to go from testing to production.",
@@ -16,20 +13,18 @@
         "stackfile": "Apps/flowise/docker-compose.yml"
       },
       "env": [
-    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "8009"},
-    {"name": "FLOWISE_USERNAME", "label": "FLOWISE_USERNAME", "description": "Environment variable for FLOWISE_USERNAME", "default": "bigbear"},
-    {"name": "FLOWISE_PASSWORD", "label": "FLOWISE_PASSWORD", "description": "Environment variable for FLOWISE_PASSWORD", "default": "b0f91e4c-9d4b-4375-bc9b-9b57667ce7ab"},
-    {"name": "FLOWISE_SECRETKEY_OVERWRITE", "label": "FLOWISE_SECRETKEY_OVERWRITE", "description": "Environment variable for FLOWISE_SECRETKEY_OVERWRITE", "default": "true"},
-    {"name": "LANGCHAIN_ENDPOINT", "label": "LANGCHAIN_ENDPOINT", "description": "Environment variable for LANGCHAIN_ENDPOINT", "default": ""},
-    {"name": "LANGCHAIN_API_KEY", "label": "LANGCHAIN_API_KEY", "description": "Environment variable for LANGCHAIN_API_KEY", "default": ""},
-    {"name": "LANGCHAIN_PROJECT", "label": "LANGCHAIN_PROJECT", "description": "Environment variable for LANGCHAIN_PROJECT", "default": ""},
-    {"name": "LANGCHAIN_TRACING_V2", "label": "LANGCHAIN_TRACING_V2", "description": "Environment variable for LANGCHAIN_TRACING_V2", "default": ""},
-    {"name": "DISABLE_FLOWISE_TELEMETRY", "label": "DISABLE_FLOWISE_TELEMETRY", "description": "Environment variable for DISABLE_FLOWISE_TELEMETRY", "default": "true"},
-    {"name": "DATABASE_PATH", "label": "DATABASE_PATH", "description": "Environment variable for DATABASE_PATH", "default": "/root/.flowise"},
-    {"name": "APIKEY_PATH", "label": "APIKEY_PATH", "description": "Environment variable for APIKEY_PATH", "default": "/root/.flowise"},
-    {"name": "SECRETKEY_PATH", "label": "SECRETKEY_PATH", "description": "Environment variable for SECRETKEY_PATH", "default": "/root/.flowise/logs"},
-    {"name": "LOG_PATH", "label": "LOG_PATH", "description": "Environment variable for LOG_PATH", "default": "/root/.flowise"}
+        {"name": "PORT", "label": "PORT", "description": "Container Port: 8009", "default": ""},
+        {"name": "FLOWISE_USERNAME", "label": "FLOWISE_USERNAME", "description": "Username: bigbear", "default": ""},
+        {"name": "FLOWISE_PASSWORD", "label": "FLOWISE_PASSWORD", "description": "Password: b0f91e4c-9d4b-4375-bc9b-9b57667ce7ab", "default": ""},
+        {"name": "FLOWISE_SECRETKEY_OVERWRITE", "label": "FLOWISE_SECRETKEY_OVERWRITE", "description": "Secretkey Overwrite: true", "default": ""},
+        {"name": "LANGCHAIN_ENDPOINT", "label": "LANGCHAIN_ENDPOINT", "description": "Langchain Endpoint: ", "default": ""},
+        {"name": "LANGCHAIN_API_KEY", "label": "LANGCHAIN_API_KEY", "description": "Langchain API Key: ", "default": ""},
+        {"name": "LANGCHAIN_PROJECT", "label": "LANGCHAIN_PROJECT", "description": "Langchain Project: ", "default": ""},
+        {"name": "LANGCHAIN_TRACING_V2", "label": "LANGCHAIN_TRACING_V2", "description": "Langchain Tracing V2: ", "default": ""},
+        {"name": "DISABLE_FLOWISE_TELEMETRY", "label": "DISABLE_FLOWISE_TELEMETRY", "description": "Disable Flowise Telemetry: true", "default": ""},
+        {"name": "DATABASE_PATH", "label": "DATABASE_PATH", "description": "Database Path: /root/.flowise", "default": ""},
+        {"name": "APIKEY_PATH", "label": "APIKEY_PATH", "description": "Apikey Path: /root/.flowise", "default": ""},
+        {"name": "SECRETKEY_PATH", "label": "SECRETKEY_PATH", "description": "Secretkey Path: /root/.flowise/logs", "default": ""},
+        {"name": "LOG_PATH", "label": "LOG_PATH", "description": "Log Path: /root/.flowise", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

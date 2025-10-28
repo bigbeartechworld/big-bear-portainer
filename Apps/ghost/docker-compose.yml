@@ -61,5 +61,9 @@ networks:
   ghost-network:
     driver: bridge
 volumes:
-  ghost_content: {}
-  ghost_mysql: {}
+  ghost_content:
+    name: ghost_content
+    driver: local
+  ghost_mysql:
+    name: ghost_mysql
+    driver: local

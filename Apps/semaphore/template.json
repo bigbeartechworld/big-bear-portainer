@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 176,
-            "type": 3,
+      "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
       "description": "Ansible Semaphore is a modern UI for Ansible. It lets you easily run Ansible playbooks, get notifications about fails, control access to deployment system.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/semaphore/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

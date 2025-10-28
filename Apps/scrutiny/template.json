@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 173,
-            "type": 3,
+      "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
       "description": "If you run a server with more than a couple of hard drives, you're probably already familiar with S.M.A.R.T and the smartd daemon.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/scrutiny/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

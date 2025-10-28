@@ -15,8 +15,8 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container for persistent storage
     volumes:
-      - planka_user_avatars:/app/public/user-avatars
-      - planka_project_background_images:/app/public/project-background-images
+      - planka_user-avatars:/app/public/user-avatars
+      - planka_project-background-images:/app/public/project-background-images
       - planka_attachments:/app/private/attachments
     # Ports mapping between host and container for network access
     ports:
@@ -101,7 +101,15 @@ networks:
   big-bear-planka-network:
     driver: bridge
 volumes:
-  planka_user_avatars: {}
-  planka_project_background_images: {}
-  planka_attachments: {}
-  planka_postgresql: {}
+  planka_attachments:
+    name: planka_attachments
+    driver: local
+  planka_postgresql:
+    name: planka_postgresql
+    driver: local
+  planka_project-background-images:
+    name: planka_project-background-images
+    driver: local
+  planka_user-avatars:
+    name: planka_user-avatars
+    driver: local

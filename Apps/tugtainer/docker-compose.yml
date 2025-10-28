@@ -29,4 +29,6 @@ services:
       - tugtainer_data:/tugtainer
       - /var/run/docker.sock:/var/run/docker.sock
 volumes:
-  tugtainer_data: {}
+  tugtainer_data:
+    name: tugtainer_data
+    driver: local

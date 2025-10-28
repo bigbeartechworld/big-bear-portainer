@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 101,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 100,
+      "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
       "description": "Simplify the management of your server with Homarr - a sleek, modern dashboard that puts all of your apps and services at your fingertips. With Homarr, you can access and control everything in one convenient location. Homarr seamlessly integrates with the apps you've added, providing you with valuable information and giving you complete control. Installation is a breeze, and Homarr supports a wide range of deployment methods.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/lyrionmusicserver/docker-compose.yml"
       },
       "env": [
-    {"name": "HTTP_PORT", "label": "HTTP_PORT", "description": "Environment variable for HTTP_PORT", "default": "9000"}
+        {"name": "HTTP_PORT", "label": "HTTP_PORT", "description": "Container Port: 9000", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

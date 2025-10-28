@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 138,
-            "type": 3,
+      "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
       "description": "An OpenTelemetry Backend in a Docker Image.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/otel-lgtm/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

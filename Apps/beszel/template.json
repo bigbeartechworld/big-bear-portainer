@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 15,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 14,
+      "type": 3,
       "title": "Beszel",
       "name": "beszel",
       "description": "A lightweight server resource monitoring hub with historical data, docker stats, and alerts.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/beszel/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

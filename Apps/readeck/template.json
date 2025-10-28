@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 169,
-            "type": 3,
+      "type": 3,
       "title": "Readeck",
       "name": "readeck",
       "description": "Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever. It is a self-hosted alternative to Instapaper and Wallabag with a modern interface and powerful features for managing your bookmarks and reading list.",
@@ -16,11 +13,9 @@
         "stackfile": "Apps/readeck/docker-compose.yml"
       },
       "env": [
-    {"name": "READECK_LOG_LEVEL", "label": "READECK_LOG_LEVEL", "description": "Environment variable for READECK_LOG_LEVEL", "default": "info"},
-    {"name": "READECK_SERVER_HOST", "label": "READECK_SERVER_HOST", "description": "Environment variable for READECK_SERVER_HOST", "default": "0.0.0.0"},
-    {"name": "READECK_SERVER_PORT", "label": "READECK_SERVER_PORT", "description": "Environment variable for READECK_SERVER_PORT", "default": "8000"},
-    {"name": "READECK_LOG_FORMAT", "label": "READECK_LOG_FORMAT", "description": "Environment variable for READECK_LOG_FORMAT", "default": "text"}
+        {"name": "READECK_LOG_LEVEL", "label": "READECK_LOG_LEVEL", "description": "Application log level (error, warn, info, debug)", "default": ""},
+        {"name": "READECK_SERVER_HOST", "label": "READECK_SERVER_HOST", "description": "IP address on which Readeck listens", "default": ""},
+        {"name": "READECK_SERVER_PORT", "label": "READECK_SERVER_PORT", "description": "TCP port on which Readeck listens", "default": ""},
+        {"name": "READECK_LOG_FORMAT", "label": "READECK_LOG_FORMAT", "description": "Log format (json, text, or dev)", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

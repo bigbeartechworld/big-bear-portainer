@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 166,
-            "type": 3,
+      "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
       "description": "This project implements a Matter Controller Server over WebSockets using the official Matter (formerly CHIP) SDK as a base and provides both a server and client implementation. The goal of this project is primary to have Matter support in Home Assistant but its universal approach makes it suitable to be used in other projects too.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/python-matter-server/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}
