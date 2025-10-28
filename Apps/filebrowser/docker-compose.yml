@@ -40,5 +40,9 @@ services:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:80"
 volumes:
-  filebrowser_data_db: {}
-  filebrowser_data_config: {}
+  filebrowser_data_config:
+    name: filebrowser_data_config
+    driver: local
+  filebrowser_data_db:
+    name: filebrowser_data_db
+    driver: local

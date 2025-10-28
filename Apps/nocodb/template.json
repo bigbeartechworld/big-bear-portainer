@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 122,
-            "type": 3,
+      "type": 3,
       "title": "NocoDB",
       "name": "nocodb",
       "description": "NocoDB allows building no-code database solutions with ease of spreadsheets. Bring your own database or choose ours! Millions of rows? Not a problem. Your Data. Your rules. You are in control.",
@@ -14,12 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/nocodb/docker-compose.yml"
-      },
-      "env": [
-    {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Environment variable for DATABASE_URL", "default": "postgres://nocodb:nocodb@big-bear-nocodb-db:5432/nocodb"},
-    {"name": "NC_AUTH_JWT_SECRET", "label": "NC_AUTH_JWT_SECRET", "description": "Environment variable for NC_AUTH_JWT_SECRET", "default": "899499fc-36a0-4131-b077-7bb9f051ac9b"},
-    {"name": "NC_REDIS_URL", "label": "NC_REDIS_URL", "description": "Environment variable for NC_REDIS_URL", "default": "redis://default:casaos@big-bear-nocodb-redis:6379"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

@@ -54,6 +54,12 @@ networks:
   big-bear-docmost-network:
     driver: bridge
 volumes:
-  docmost_data_storage: {}
-  docmost_data_pgdata: {}
-  docmost_data_redis: {}
+  docmost_data_pgdata:
+    name: docmost_data_pgdata
+    driver: local
+  docmost_data_redis:
+    name: docmost_data_redis
+    driver: local
+  docmost_data_storage:
+    name: docmost_data_storage
+    driver: local

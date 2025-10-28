@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 116,
-            "type": 3,
+      "type": 3,
       "title": "NetAlertX",
       "name": "netalertx",
       "description": "WIFI / LAN intruder detector. Scans for devices connected to your network and alerts you if new and unknown devices are found.",
@@ -14,12 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/netalertx/docker-compose.yml"
-      },
-      "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"},
-    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "8080"},
-    {"name": "ALWAYS_FRESH_INSTALL", "label": "ALWAYS_FRESH_INSTALL", "description": "Environment variable for ALWAYS_FRESH_INSTALL", "default": "false"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

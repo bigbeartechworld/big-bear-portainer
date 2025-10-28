@@ -18,10 +18,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/zim directory to /data inside the container
-      - kiwix_serve_zim:/data
+      - kiwix-serve_zim:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:8080"
 volumes:
-  kiwix_serve_zim: {}
+  kiwix-serve_zim:
+    name: kiwix-serve_zim
+    driver: local

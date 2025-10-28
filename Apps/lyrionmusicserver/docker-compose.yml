@@ -19,11 +19,11 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local big-bear-lyrionmusicserver/config directory to /config inside the container
-      - lyrionmusicserver_config:/config
+      - lyrionmusicserver_config:/config:rw
       # Mounting the local big-bear-lyrionmusicserver/music directory to /music inside the container
-      - lyrionmusicserver_music:/music
+      - lyrionmusicserver_music:/music:ro
       # Mounting the local big-bear-lyrionmusicserver/playlists directory to /playlist inside the container
-      - lyrionmusicserver_playlists:/playlist
+      - lyrionmusicserver_playlists:/playlist:rw
       # Mounting the local /etc/localtime directory to /etc/localtime inside the container
       - /etc/localtime:/etc/localtime:ro
       # Mounting the local /etc/timezone directory to /etc/timezone inside the container
@@ -39,6 +39,12 @@ services:
       # Mapping port 3483 of the host to port 3483 of the container
       - 3483:3483/udp
 volumes:
-  lyrionmusicserver_config: {}
-  lyrionmusicserver_music: {}
-  lyrionmusicserver_playlists: {}
+  lyrionmusicserver_config:
+    name: lyrionmusicserver_config
+    driver: local
+  lyrionmusicserver_music:
+    name: lyrionmusicserver_music
+    driver: local
+  lyrionmusicserver_playlists:
+    name: lyrionmusicserver_playlists
+    driver: local

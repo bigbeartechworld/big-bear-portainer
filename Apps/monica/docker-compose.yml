@@ -47,5 +47,9 @@ networks:
   big_bear_monica_network:
     driver: bridge
 volumes:
-  monica_storage: {}
-  monica_mysql: {}
+  monica_mysql:
+    name: monica_mysql
+    driver: local
+  monica_storage:
+    name: monica_storage
+    driver: local

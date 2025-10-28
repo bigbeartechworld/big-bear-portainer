@@ -1,28 +1,20 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 130,
-            "type": 3,
+      "type": 3,
       "title": "Odoo",
       "name": "odoo",
       "description": "Open-source business management software suite designed to streamline various aspects of business operations. With its modular structure, users can choose and integrate specific applications such as accounting, inventory, and sales. Odoo provides a user-friendly interface, scalability for businesses of all sizes, and is available in both community (free) and enterprise editions. Its integrated approach and customization options make it a popular choice for comprehensive ERP (Enterprise Resource Planning) solutions.",
       "note": "Open-source business management software with modular applications for streamlined operations.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/odoo/logo.jpg",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/odoo/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/odoo/docker-compose.yml"
       },
       "env": [
-    {"name": "HOST", "label": "HOST", "description": "Environment variable for HOST", "default": "big-bear-odoo-db"},
-    {"name": "USER", "label": "USER", "description": "Environment variable for USER", "default": "odoo"},
-    {"name": "PASSWORD", "label": "PASSWORD", "description": "Environment variable for PASSWORD", "default": "a8d785b6-bc00-49cc-8675-d404093d1507"},
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "odoo"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "a8d785b6-bc00-49cc-8675-d404093d1507"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "postgres"}
+        {"name": "HOST", "label": "HOST", "description": "Container Host: big-bear-odoo-db", "default": ""},
+        {"name": "USER", "label": "USER", "description": "Container User: odoo", "default": ""},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Container Password: a8d785b6-bc00-49cc-8675-d404093d1507", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

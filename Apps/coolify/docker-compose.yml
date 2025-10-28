@@ -79,7 +79,7 @@ services:
       - coolify_databases:/var/www/html/storage/app/databases
       - coolify_services:/var/www/html/storage/app/services
       - coolify_backups:/var/www/html/storage/app/backups
-      - coolify_webhooks_during_maintenance:/var/www/html/storage/app/webhooks-during-maintenance
+      - coolify_webhooks-during-maintenance:/var/www/html/storage/app/webhooks-during-maintenance
       - coolify_logs:/var/www/html/storage/logs
     # Map port 8080 on the host to port 80 on the container
     ports:
@@ -156,12 +156,30 @@ networks:
   coolify:
     external: true
 volumes:
-  coolify_ssh: {}
-  coolify_applications: {}
-  coolify_databases: {}
-  coolify_services: {}
-  coolify_backups: {}
-  coolify_webhooks_during_maintenance: {}
-  coolify_logs: {}
-  coolify_pgdata: {}
-  coolify_redis: {}
+  coolify_applications:
+    name: coolify_applications
+    driver: local
+  coolify_backups:
+    name: coolify_backups
+    driver: local
+  coolify_databases:
+    name: coolify_databases
+    driver: local
+  coolify_logs:
+    name: coolify_logs
+    driver: local
+  coolify_pgdata:
+    name: coolify_pgdata
+    driver: local
+  coolify_redis:
+    name: coolify_redis
+    driver: local
+  coolify_services:
+    name: coolify_services
+    driver: local
+  coolify_ssh:
+    name: coolify_ssh
+    driver: local
+  coolify_webhooks-during-maintenance:
+    name: coolify_webhooks-during-maintenance
+    driver: local

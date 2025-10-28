@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 158,
-            "type": 3,
+      "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
       "description": "Simple and easy-to-use OIDC provider that allows users to authenticate with their passkeys to your services.",
@@ -16,12 +13,10 @@
         "stackfile": "Apps/pocketid/docker-compose.yml"
       },
       "env": [
-    {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://localhost:1411"},
-    {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Environment variable for TRUST_PROXY", "default": "false"},
-    {"name": "MAXMIND_LICENSE_KEY", "label": "MAXMIND_LICENSE_KEY", "description": "Environment variable for MAXMIND_LICENSE_KEY", "default": ""},
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"}
+        {"name": "APP_URL", "label": "APP_URL", "description": "Application URL for pocket-id", "default": ""},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Whether to trust proxy headers", "default": ""},
+        {"name": "MAXMIND_LICENSE_KEY", "label": "MAXMIND_LICENSE_KEY", "description": "MaxMind license key for geolocation (optional)", "default": ""},
+        {"name": "PUID", "label": "PUID", "description": "User ID for file permissions", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Group ID for file permissions", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

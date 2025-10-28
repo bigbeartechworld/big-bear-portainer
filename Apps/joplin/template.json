@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 87,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 86,
+      "type": 3,
       "title": "joplin",
       "name": "joplin",
       "description": "Note taking and to-do application with synchronisation",
@@ -16,19 +13,14 @@
         "stackfile": "Apps/joplin/docker-compose.yml"
       },
       "env": [
-    {"name": "APP_PORT", "label": "APP_PORT", "description": "Environment variable for APP_PORT", "default": "22300"},
-    {"name": "APP_BASE_URL", "label": "APP_BASE_URL", "description": "Environment variable for APP_BASE_URL", "default": "http://localhost:22300"},
-    {"name": "DB_CLIENT", "label": "DB_CLIENT", "description": "Environment variable for DB_CLIENT", "default": "pg"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "27a1d42a-a15d-43dd-903c-2a73538647fe"},
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbear"},
-    {"name": "POSTGRES_DATABASE", "label": "POSTGRES_DATABASE", "description": "Environment variable for POSTGRES_DATABASE", "default": "joplin"},
-    {"name": "POSTGRES_PORT", "label": "POSTGRES_PORT", "description": "Environment variable for POSTGRES_PORT", "default": "5432"},
-    {"name": "POSTGRES_HOST", "label": "POSTGRES_HOST", "description": "Environment variable for POSTGRES_HOST", "default": "big-bear-joplin-db"},
-    {"name": "MAX_TIME_DRIFT", "label": "MAX_TIME_DRIFT", "description": "Environment variable for MAX_TIME_DRIFT", "default": "0"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "27a1d42a-a15d-43dd-903c-2a73538647fe"},
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbear"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "joplin"}
+        {"name": "null", "label": "null", "description": "Application Port: 22300", "default": ""},
+        {"name": "null", "label": "null", "description": "Application Base URL", "default": ""},
+        {"name": "null", "label": "null", "description": "Database Client: pg", "default": ""},
+        {"name": "null", "label": "null", "description": "Postgres Password: 27a1d42a-a15d-43dd-903c-2a73538647fe", "default": ""},
+        {"name": "null", "label": "null", "description": "Postgres User: bigbear", "default": ""},
+        {"name": "null", "label": "null", "description": "Postgres Database: joplin", "default": ""},
+        {"name": "null", "label": "null", "description": "Postgres Port: 5432", "default": ""},
+        {"name": "null", "label": "null", "description": "Postgres Host: big-bear-joplin-db", "default": ""},
+        {"name": "null", "label": "null", "description": "Max Time Drift: 0", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

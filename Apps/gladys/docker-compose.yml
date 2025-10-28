@@ -24,4 +24,6 @@ services:
       - /dev:/dev # Access to host devices
       - /run/udev:/run/udev # Access to host devices
 volumes:
-  gladys_data: {}
+  gladys_data:
+    name: gladys_data
+    driver: local

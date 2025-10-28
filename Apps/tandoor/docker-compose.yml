@@ -61,6 +61,12 @@ networks:
   big_bear_tandoor_network:
     driver: bridge
 volumes:
-  tandoor_staticfiles: {}
-  tandoor_mediafiles: {}
-  tandoor_postgresql: {}
+  tandoor_mediafiles:
+    name: tandoor_mediafiles
+    driver: local
+  tandoor_postgresql:
+    name: tandoor_postgresql
+    driver: local
+  tandoor_staticfiles:
+    name: tandoor_staticfiles
+    driver: local

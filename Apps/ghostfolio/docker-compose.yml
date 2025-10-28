@@ -74,5 +74,9 @@ networks:
   big_bear_ghostfolio_network:
     driver: bridge # Uses a bridge network for container communication
 volumes:
-  ghostfolio_data_db: {}
-  ghostfolio_data_redis: {}
+  ghostfolio_data_db:
+    name: ghostfolio_data_db
+    driver: local
+  ghostfolio_data_redis:
+    name: ghostfolio_data_redis
+    driver: local

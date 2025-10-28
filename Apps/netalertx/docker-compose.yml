@@ -30,5 +30,9 @@ services:
     # Network mode for the container
     network_mode: host
 volumes:
-  netalertx_config: {}
-  netalertx_db: {}
+  netalertx_config:
+    name: netalertx_config
+    driver: local
+  netalertx_db:
+    name: netalertx_db
+    driver: local

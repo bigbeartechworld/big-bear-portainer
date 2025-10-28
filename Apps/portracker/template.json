@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 161,
-            "type": 3,
+      "type": 3,
       "title": "Portracker",
       "name": "portracker",
       "description": "A self-hosted, real-time port monitoring and discovery tool that automatically discovers and maps network services across systems.",
@@ -16,14 +13,12 @@
         "stackfile": "Apps/portracker/docker-compose.yml"
       },
       "env": [
-    {"name": "PORT", "label": "PORT", "description": "Environment variable for PORT", "default": "4999"},
-    {"name": "DATABASE_PATH", "label": "DATABASE_PATH", "description": "Environment variable for DATABASE_PATH", "default": "/data/portracker.db"},
-    {"name": "TRUSTED_LOCAL_EMAIL", "label": "TRUSTED_LOCAL_EMAIL", "description": "Environment variable for TRUSTED_LOCAL_EMAIL", "default": "your@email.com"},
-    {"name": "CACHE_TIMEOUT_MS", "label": "CACHE_TIMEOUT_MS", "description": "Environment variable for CACHE_TIMEOUT_MS", "default": "30000"},
-    {"name": "DISABLE_CACHE", "label": "DISABLE_CACHE", "description": "Environment variable for DISABLE_CACHE", "default": "false"},
-    {"name": "INCLUDE_UDP", "label": "INCLUDE_UDP", "description": "Environment variable for INCLUDE_UDP", "default": "false"},
-    {"name": "DEBUG", "label": "DEBUG", "description": "Environment variable for DEBUG", "default": "false"}
+        {"name": "PORT", "label": "PORT", "description": "Web application port", "default": ""},
+        {"name": "DATABASE_PATH", "label": "DATABASE_PATH", "description": "SQLite database file path", "default": ""},
+        {"name": "TRUSTED_LOCAL_EMAIL", "label": "TRUSTED_LOCAL_EMAIL", "description": "Trusted local email for authentication", "default": ""},
+        {"name": "CACHE_TIMEOUT_MS", "label": "CACHE_TIMEOUT_MS", "description": "Cache timeout in milliseconds", "default": ""},
+        {"name": "DISABLE_CACHE", "label": "DISABLE_CACHE", "description": "Disable caching (true/false)", "default": ""},
+        {"name": "INCLUDE_UDP", "label": "INCLUDE_UDP", "description": "Include UDP ports in scanning (true/false)", "default": ""},
+        {"name": "DEBUG", "label": "DEBUG", "description": "Enable debug logging (true/false)", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

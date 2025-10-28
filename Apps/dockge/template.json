@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 41,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 40,
+      "type": 3,
       "title": "Dockge",
       "name": "dockge",
       "description": "A fancy, easy-to-use and reactive docker `compose.yaml` stack-oriented manager",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/dockge/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

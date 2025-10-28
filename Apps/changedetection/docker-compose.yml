@@ -21,4 +21,6 @@ services:
     volumes:
       - changedetection_datastore:/datastore
 volumes:
-  changedetection_datastore: {}
+  changedetection_datastore:
+    name: changedetection_datastore
+    driver: local
