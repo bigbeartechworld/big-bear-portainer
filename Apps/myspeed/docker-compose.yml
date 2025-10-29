@@ -14,4 +14,6 @@ services:
       - myspeed_data:/myspeed/data # Mount host directory to container directory
     restart: unless-stopped # Restart policy for the service
 volumes:
-  myspeed_data: {}
+  myspeed_data:
+    name: myspeed_data
+    driver: local

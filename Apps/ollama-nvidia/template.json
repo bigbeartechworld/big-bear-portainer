@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 133,
-            "type": 3,
+      "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
       "description": "Get up and running with Llama 3, Mistral, Gemma, and other large language models.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ollama-nvidia/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 1,
-            "type": 3,
+      "type": 3,
       "title": "2FAuth",
       "name": "2fauth",
       "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/2fauth/docker-compose.yml"
       },
       "env": [
-    {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://[CHANGE_TO_LAN_IP]:8000"}
+        {"name": "APP_URL", "label": "APP_URL", "description": "Application URL", "default": "http://[CHANGE_TO_LAN_IP]:8000"}
       ]
-    }
-  ]
-}
+    }]}

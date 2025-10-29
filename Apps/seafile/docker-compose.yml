@@ -69,5 +69,9 @@ networks:
   big_bear_seafile_network:
     driver: bridge
 volumes:
-  seafile_shared: {}
-  seafile_mysql: {}
+  seafile_mysql:
+    name: seafile_mysql
+    driver: local
+  seafile_shared:
+    name: seafile_shared
+    driver: local

@@ -75,5 +75,9 @@ networks:
   big-bear-davis-network:
     driver: bridge
 volumes:
-  davis_mailpit_data: {}
-  davis_mysql: {}
+  davis_mailpit_data:
+    name: davis_mailpit_data
+    driver: local
+  davis_mysql:
+    name: davis_mysql
+    driver: local

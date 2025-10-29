@@ -38,4 +38,6 @@ services:
     volumes:
       - flowise_data:/root/.flowise
 volumes:
-  flowise_data: {}
+  flowise_data:
+    name: flowise_data
+    driver: local

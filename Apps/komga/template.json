@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 92,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 91,
+      "type": 3,
       "title": "Komga",
       "name": "komga",
       "description": "A media server for your comics, mangas, BDs, magazines and eBooks.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/komga/docker-compose.yml"
       },
       "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""}
       ]
-    }
-  ]
-}
+    }]}
