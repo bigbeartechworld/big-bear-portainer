@@ -73,5 +73,9 @@ networks:
     name: big_bear_warracker_network
     driver: bridge
 volumes:
-  warracker_uploads: {}
-  warracker_warrackerdb: {}
+  warracker_uploads:
+    name: warracker_uploads
+    driver: local
+  warracker_warrackerdb:
+    name: warracker_warrackerdb
+    driver: local

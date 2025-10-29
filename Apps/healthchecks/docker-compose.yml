@@ -46,4 +46,6 @@ services:
       # Mapping port 2525 of the host to port 2525 of the container
       - "2525:2525"
 volumes:
-  healthchecks_config: {}
+  healthchecks_config:
+    name: healthchecks_config
+    driver: local

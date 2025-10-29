@@ -61,5 +61,9 @@ services:
       - 53:53/udp
       - 53:53/tcp
 volumes:
-  lancache_cache: {}
-  lancache_logs: {}
+  lancache_cache:
+    name: lancache_cache
+    driver: local
+  lancache_logs:
+    name: lancache_logs
+    driver: local

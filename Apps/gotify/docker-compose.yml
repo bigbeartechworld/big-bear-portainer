@@ -14,4 +14,6 @@ services:
       - "gotify_data:/app/data"
     network_mode: bridge # Network mode
 volumes:
-  gotify_data: {}
+  gotify_data:
+    name: gotify_data
+    driver: local

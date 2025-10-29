@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 19,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 18,
+      "type": 3,
       "title": "btop",
       "name": "btop",
       "description": "A monitor of resources. Software made by Aristocratos at https://github.com/aristocratos/btop",
@@ -16,10 +13,8 @@
         "stackfile": "Apps/btop/docker-compose.yml"
       },
       "env": [
-    {"name": "GOTTY_AUTH_USER", "label": "GOTTY_AUTH_USER", "description": "Environment variable for GOTTY_AUTH_USER", "default": "bigbear"},
-    {"name": "GOTTY_AUTH_PASS", "label": "GOTTY_AUTH_PASS", "description": "Environment variable for GOTTY_AUTH_PASS", "default": "password"},
-    {"name": "GOTTY_AUTH_ENABLED", "label": "GOTTY_AUTH_ENABLED", "description": "Environment variable for GOTTY_AUTH_ENABLED", "default": "true"}
+        {"name": "GOTTY_AUTH_USER", "label": "GOTTY_AUTH_USER", "description": "Container Environment Variable: GOTTY_AUTH_USER", "default": ""},
+        {"name": "GOTTY_AUTH_PASS", "label": "GOTTY_AUTH_PASS", "description": "Container Environment Variable: GOTTY_AUTH_PASS", "default": ""},
+        {"name": "GOTTY_AUTH_ENABLED", "label": "GOTTY_AUTH_ENABLED", "description": "Container Environment Variable: GOTTY_AUTH_ENABLED", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

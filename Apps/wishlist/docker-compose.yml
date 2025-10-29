@@ -35,5 +35,9 @@ services:
     ports:
       - "3280:3280"
 volumes:
-  wishlist_uploads: {}
-  wishlist_data: {}
+  wishlist_data:
+    name: wishlist_data
+    driver: local
+  wishlist_uploads:
+    name: wishlist_uploads
+    driver: local

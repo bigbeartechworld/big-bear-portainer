@@ -22,4 +22,6 @@ services:
       # Mounting the local /DATA/AppData/$AppID/data directory to /data inside the container
       - "npmplus_data:/data"
 volumes:
-  npmplus_data: {}
+  npmplus_data:
+    name: npmplus_data
+    driver: local

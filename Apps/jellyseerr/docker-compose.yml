@@ -12,4 +12,6 @@ services:
     restart: unless-stopped # Service will restart unless it is explicitly stopped
     network_mode: bridge # Uses bridge network mode
 volumes:
-  jellyseerr_config: {}
+  jellyseerr_config:
+    name: jellyseerr_config
+    driver: local

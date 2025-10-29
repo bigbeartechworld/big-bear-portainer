@@ -26,4 +26,6 @@ services:
       - 3000:3000
       - 3001:3001
 volumes:
-  obsidian_config: {}
+  obsidian_config:
+    name: obsidian_config
+    driver: local

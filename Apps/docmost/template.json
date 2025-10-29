@@ -1,29 +1,21 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 43,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 42,
+      "type": 3,
       "title": "Docmost",
       "name": "docmost",
       "description": "Docmost is an open-source alternative to the likes of Notion and Confluence. Whether you're managing a wiki, a knowledge base, or extensive project documentation, Docmost provides the tools you need to create, collaborate, and share knowledge effortlessly.",
       "note": "Docmost",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/docmost/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/docmost/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/docmost/docker-compose.yml"
       },
       "env": [
-    {"name": "APP_URL", "label": "APP_URL", "description": "Environment variable for APP_URL", "default": "http://localhost:3000"},
-    {"name": "APP_SECRET", "label": "APP_SECRET", "description": "Environment variable for APP_SECRET", "default": "d4e8f3c3-72b9-4003-be4c-168f13024853"},
-    {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Environment variable for DATABASE_URL", "default": "postgresql://docmost:ea9dee39-c390-4a88-be39-8034f4bb9b82@big-bear-docmost-db:5432/docmost?schema=public"},
-    {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Environment variable for REDIS_URL", "default": "redis://big-bear-docmost-redis:6379/0"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "docmost"},
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "docmost"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "ea9dee39-c390-4a88-be39-8034f4bb9b82"}
+        {"name": "APP_URL", "label": "APP_URL", "description": "Container Environment Variable: APP_URL", "default": ""},
+        {"name": "APP_SECRET", "label": "APP_SECRET", "description": "Container Environment Variable: APP_SECRET", "default": ""},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Container Environment Variable: DATABASE_URL", "default": ""},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Container Environment Variable: REDIS_URL", "default": ""}
       ]
-    }
-  ]
-}
+    }]}
