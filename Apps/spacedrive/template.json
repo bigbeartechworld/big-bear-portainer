@@ -1,23 +1,18 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 179,
-            "type": 3,
+      "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
       "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.",
       "note": "Cross-platform file explorer",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/spacedrive/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/spacedrive/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/spacedrive/docker-compose.yml"
       },
       "env": [
-    {"name": "SD_AUTH", "label": "SD_AUTH", "description": "Environment variable for SD_AUTH", "default": "bigbear:casaos"}
+        {"name": "SD_AUTH", "label": "SD_AUTH", "description": "Container Environment Variable: SD_AUTH", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

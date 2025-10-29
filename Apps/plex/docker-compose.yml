@@ -27,6 +27,12 @@ services:
       - plex_tv:/tv
       - plex_movies:/movies
 volumes:
-  plex_config: {}
-  plex_tv: {}
-  plex_movies: {}
+  plex_config:
+    name: plex_config
+    driver: local
+  plex_movies:
+    name: plex_movies
+    driver: local
+  plex_tv:
+    name: plex_tv
+    driver: local

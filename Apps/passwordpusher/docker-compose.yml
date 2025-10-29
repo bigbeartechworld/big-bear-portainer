@@ -24,7 +24,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Storage volume
-      - passwordpusher_storage:/opt/PasswordPusher/storage
+      - passwordpusher_storage:/opt/PasswordPusher/storage:rw
     # Ports mapping between host and container
     ports:
       # Mapping port 5100 of the host to port 5100 of the container
@@ -49,5 +49,9 @@ networks:
   big_bear_pwpush_network:
     driver: bridge
 volumes:
-  passwordpusher_storage: {}
-  passwordpusher_mysql: {}
+  passwordpusher_mysql:
+    name: passwordpusher_mysql
+    driver: local
+  passwordpusher_storage:
+    name: passwordpusher_storage
+    driver: local

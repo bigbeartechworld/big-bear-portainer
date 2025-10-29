@@ -55,5 +55,9 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  linkwarden_data_linkwarden: {}
-  linkwarden_data_postgres: {}
+  linkwarden_data_linkwarden:
+    name: linkwarden_data_linkwarden
+    driver: local
+  linkwarden_data_postgres:
+    name: linkwarden_data_postgres
+    driver: local

@@ -49,5 +49,9 @@ networks:
   vikunja-network:
     driver: bridge
 volumes:
-  vikunja_files: {}
-  vikunja_mysql: {}
+  vikunja_files:
+    name: vikunja_files
+    driver: local
+  vikunja_mysql:
+    name: vikunja_mysql
+    driver: local

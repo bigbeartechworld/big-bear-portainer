@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 164,
-            "type": 3,
+      "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
       "description": "Pterodactyl® is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.",
@@ -14,7 +11,27 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/pterodactyl-panel/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "APP_URL", "label": "APP_URL", "description": "App URL", "default": ""},
+        {"name": "APP_TIMEZONE", "label": "APP_TIMEZONE", "description": "App timezone", "default": ""},
+        {"name": "APP_SERVICE_AUTHOR", "label": "APP_SERVICE_AUTHOR", "description": "Service author email", "default": ""},
+        {"name": "LE_EMAIL", "label": "LE_EMAIL", "description": "Let's Encrypt email", "default": ""},
+        {"name": "MAIL_FROM", "label": "MAIL_FROM", "description": "Email sender", "default": ""},
+        {"name": "MAIL_DRIVER", "label": "MAIL_DRIVER", "description": "Email driver", "default": ""},
+        {"name": "MAIL_HOST", "label": "MAIL_HOST", "description": "Email host", "default": ""},
+        {"name": "MAIL_PORT", "label": "MAIL_PORT", "description": "Email port", "default": ""},
+        {"name": "MAIL_USERNAME", "label": "MAIL_USERNAME", "description": "Email username", "default": ""},
+        {"name": "MAIL_PASSWORD", "label": "MAIL_PASSWORD", "description": "Email password", "default": ""},
+        {"name": "MAIL_ENCRYPTION", "label": "MAIL_ENCRYPTION", "description": "Use email encryption", "default": ""},
+        {"name": "APP_ENV", "label": "APP_ENV", "description": "App environment", "default": ""},
+        {"name": "APP_ENVIRONMENT_ONLY", "label": "APP_ENVIRONMENT_ONLY", "description": "Environment setting", "default": ""},
+        {"name": "CACHE_DRIVER", "label": "CACHE_DRIVER", "description": "Cache driver", "default": ""},
+        {"name": "SESSION_DRIVER", "label": "SESSION_DRIVER", "description": "Session driver", "default": ""},
+        {"name": "QUEUE_DRIVER", "label": "QUEUE_DRIVER", "description": "Queue driver", "default": ""},
+        {"name": "REDIS_HOST", "label": "REDIS_HOST", "description": "Redis host", "default": ""},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Database host", "default": ""},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Database password", "default": ""},
+        {"name": "DB_PORT", "label": "DB_PORT", "description": "Database port", "default": ""}
+      ]
+    }]}

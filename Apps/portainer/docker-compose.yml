@@ -15,4 +15,6 @@ services:
       - portainer_data:/data # Bind mount for Docker volumes
       - /var/run/docker.sock:/var/run/docker.sock # Bind mount for Docker socket
 volumes:
-  portainer_data: {}
+  portainer_data:
+    name: portainer_data
+    driver: local

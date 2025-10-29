@@ -9,8 +9,8 @@ services:
     ports: # Mapping ports from the host OS to the container
       - 2283:8080
     volumes: # Mounting directories for persistent data storage
-      - immich_aio_alpine_config:/config
-      - immich_aio_alpine_photos:/usr/src/app/photos
+      - immich-aio-alpine_config:/config
+      - immich-aio-alpine_photos:/usr/src/app/photos
       # - path_to_imports:/import:ro #optional
     environment: # Setting environment variables
       - PUID=1000
@@ -51,7 +51,7 @@ services:
       POSTGRES_DB: immich
       PG_DATA: /var/lib/postgresql/data
     volumes: # Mounting directories for persistent data storage
-      - immich_aio_alpine_pgdata:/var/lib/postgresql/data
+      - immich-aio-alpine_pgdata:/var/lib/postgresql/data
     restart: unless-stopped # Policy to always restart the container if it stops
     # CasaOS specific configuration for the database service
     networks:
@@ -60,6 +60,12 @@ networks: # Defines network configurations for the services
   big_bear_immich_network:
     driver: bridge # Uses bridge network driver
 volumes:
-  immich_aio_alpine_config: {}
-  immich_aio_alpine_photos: {}
-  immich_aio_alpine_pgdata: {}
+  immich-aio-alpine_config:
+    name: immich-aio-alpine_config
+    driver: local
+  immich-aio-alpine_pgdata:
+    name: immich-aio-alpine_pgdata
+    driver: local
+  immich-aio-alpine_photos:
+    name: immich-aio-alpine_photos
+    driver: local

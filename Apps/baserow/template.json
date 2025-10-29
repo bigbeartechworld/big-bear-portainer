@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 13,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 12,
+      "type": 3,
       "title": "Baserow",
       "name": "baserow",
       "description": "Create your own online database without technical experience. Our user-friendly no-code tool gives you the powers of a developer without leaving your browser.",
@@ -14,7 +11,8 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/baserow/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "BASEROW_PUBLIC_URL", "label": "BASEROW_PUBLIC_URL", "description": "Baserow Public URL", "default": ""}
+      ]
+    }]}

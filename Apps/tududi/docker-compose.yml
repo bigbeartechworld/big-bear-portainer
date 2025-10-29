@@ -28,4 +28,6 @@ services:
       # Mapping port 9292 of the host to port 9292 of the container
       - "9292:9292"
 volumes:
-  tududi_tududi_db: {}
+  tududi_tududi_db:
+    name: tududi_tududi_db
+    driver: local

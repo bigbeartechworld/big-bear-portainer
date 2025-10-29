@@ -22,4 +22,6 @@ services:
       # Mapping port 3000 of the host to port 3000 of the container
       - "3000:3000"
 volumes:
-  dbgate_config: {}
+  dbgate_config:
+    name: dbgate_config
+    driver: local

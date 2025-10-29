@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-wg-easy
     # Image to be used for the container
-    image: ghcr.io/wg-easy/wg-easy:14
+    image: ghcr.io/wg-easy/wg-easy:15
     # Container restart policy
     restart: unless-stopped
     # Environment variables for the container
@@ -30,10 +30,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/data directory to /etc/wireguard inside the container
-      - wg_easy_data:/etc/wireguard
+      - wg-easy_data:/etc/wireguard
     # Ports mapping between host and container
     ports:
       - 51820:51820/udp
       - 51821:51821/tcp # UI port
 volumes:
-  wg_easy_data: {}
+  wg-easy_data:
+    name: wg-easy_data
+    driver: local

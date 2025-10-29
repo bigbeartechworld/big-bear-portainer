@@ -20,10 +20,10 @@ services:
       - cache
     # Volumes mapping: [HOST:CONTAINER]
     volumes:
-      - "pterodactyl_panel_var_:/app/var/" # Map app data
-      - "pterodactyl_panel_nginx_:/etc/nginx/http.d/" # Map nginx config
-      - "pterodactyl_panel_certs_:/etc/letsencrypt/" # Map SSL certificates
-      - "pterodactyl_panel_logs_:/app/storage/logs" # Map logs
+      - "pterodactyl-panel_var_:/app/var/" # Map app data
+      - "pterodactyl-panel_nginx_:/etc/nginx/http.d/" # Map nginx config
+      - "pterodactyl-panel_certs_:/etc/letsencrypt/" # Map SSL certificates
+      - "pterodactyl-panel_logs_:/app/storage/logs" # Map logs
     # Environment variables for the container
     environment:
       APP_URL: "http://example.com" # App URL
@@ -56,7 +56,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     # Volumes mapping: [HOST:CONTAINER]
     volumes:
-      - "pterodactyl_panel_database:/var/lib/mysql" # Map database data
+      - "pterodactyl-panel_database:/var/lib/mysql" # Map database data
     # Environment variables for the container
     environment:
       MYSQL_DATABASE: "panel" # Database name
@@ -70,8 +70,18 @@ services:
     # Restart the container automatically if it stops
     restart: always
 volumes:
-  pterodactyl_panel_var_: {}
-  pterodactyl_panel_nginx_: {}
-  pterodactyl_panel_certs_: {}
-  pterodactyl_panel_logs_: {}
-  pterodactyl_panel_database: {}
+  pterodactyl-panel_certs_:
+    name: pterodactyl-panel_certs_
+    driver: local
+  pterodactyl-panel_database:
+    name: pterodactyl-panel_database
+    driver: local
+  pterodactyl-panel_logs_:
+    name: pterodactyl-panel_logs_
+    driver: local
+  pterodactyl-panel_nginx_:
+    name: pterodactyl-panel_nginx_
+    driver: local
+  pterodactyl-panel_var_:
+    name: pterodactyl-panel_var_
+    driver: local

@@ -39,4 +39,6 @@ services:
     volumes:
       - guacamole_mysql:/var/lib/mysql
 volumes:
-  guacamole_mysql: {}
+  guacamole_mysql:
+    name: guacamole_mysql
+    driver: local

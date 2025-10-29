@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 127,
-            "type": 3,
+      "type": 3,
       "title": "Obsidian",
       "name": "obsidian",
       "description": "Obsidian is a note-taking app that lets you create, link, and organize your notes on your device, with hundreds of plugins and themes to customize your workflow. You can also publish your notes online, access them offline, and sync them securely with end-to-end encryption.",
@@ -14,12 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/obsidian/docker-compose.yml"
-      },
-      "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

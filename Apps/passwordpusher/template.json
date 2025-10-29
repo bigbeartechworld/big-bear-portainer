@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 141,
-            "type": 3,
+      "type": 3,
       "title": "Password Pusher",
       "name": "passwordpusher",
       "description": "Password Pusher is an open source application to communicate passwords over the web. Links to passwords expire after a certain number of views and/or time has passed.",
@@ -14,7 +11,10 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/passwordpusher/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "PWP__PW__EXPIRE_AFTER_DAYS_DEFAULT", "label": "PWP__PW__EXPIRE_AFTER_DAYS_DEFAULT", "description": "Password Expire After Days Default", "default": ""},
+        {"name": "PWP__PW__EXPIRE_AFTER_VIEWS_MIN", "label": "PWP__PW__EXPIRE_AFTER_VIEWS_MIN", "description": "Password Expire After Views Min", "default": ""},
+        {"name": "PWP__PW__RETRIEVAL_STEP_DEFAULT", "label": "PWP__PW__RETRIEVAL_STEP_DEFAULT", "description": "Password Retrieval Step Default", "default": ""}
+      ]
+    }]}

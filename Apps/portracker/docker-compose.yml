@@ -31,4 +31,6 @@ services:
       # Mapping port 4999 of the host to port 4999 of the container
       - "4999:4999"
 volumes:
-  portracker_data: {}
+  portracker_data:
+    name: portracker_data
+    driver: local

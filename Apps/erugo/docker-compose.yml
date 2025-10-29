@@ -22,4 +22,6 @@ services:
       # Mapping port 9997 of the host to port 80 of the container
       - "9997:80"
 volumes:
-  erugo_storage: {}
+  erugo_storage:
+    name: erugo_storage
+    driver: local

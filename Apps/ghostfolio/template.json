@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 61,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 60,
+      "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
       "description": "Open Source Wealth Management Software. Angular + NestJS + Prisma + Nx + TypeScript 🤍",
@@ -16,8 +13,17 @@
         "stackfile": "Apps/ghostfolio/docker-compose.yml"
       },
       "env": [
-    {"name": "postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode", "label": "postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode", "description": "Environment variable for postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode", "default": "prefer"}
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Environment: production", "default": ""},
+        {"name": "HOST", "label": "HOST", "description": "Container Interface: 0.0.0.0", "default": ""},
+        {"name": "PORT", "label": "PORT", "description": "Container Port: 3333", "default": ""},
+        {"name": "ACCESS_TOKEN_SALT", "label": "ACCESS_TOKEN_SALT", "description": "Access Token Salt: 5a7f9e0d-0e64-4c19-8279-bbe8b4c590f4", "default": ""},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Database URL: postgresql://ghostfolio:casaospassword@big-bear-ghostfolio-db:5432/ghostfolio?sslmode=prefer", "default": ""},
+        {"name": "JWT_SECRET_KEY", "label": "JWT_SECRET_KEY", "description": "JWT Secret Key: 534e820d-da30-4dd3-baf9-0511847c478a", "default": ""},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Database Type: ghostfolio", "default": ""},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Database User: ghostfolio", "default": ""},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Database Password: casaospassword", "default": ""},
+        {"name": "REDIS_HOST", "label": "REDIS_HOST", "description": "Redis Host: big-bear-ghostfolio-redis", "default": ""},
+        {"name": "REDIS_PASSWORD", "label": "REDIS_PASSWORD", "description": "Redis Password: casaosredispassword", "default": ""},
+        {"name": "REDIS_PORT", "label": "REDIS_PORT", "description": "Redis Port: 6379", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

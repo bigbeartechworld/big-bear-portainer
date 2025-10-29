@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 63,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 62,
+      "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
       "description": "Gladys Assistant is a modern, privacy-first & open-source home automation software that runs anywhere.",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/gladys/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "null", "label": "null", "description": "Node environment", "default": ""},
+        {"name": "null", "label": "null", "description": "Path to SQLite database file", "default": ""},
+        {"name": "null", "label": "null", "description": "Timezone", "default": ""},
+        {"name": "null", "label": "null", "description": "Exposed port for the server", "default": ""}
+      ]
+    }]}

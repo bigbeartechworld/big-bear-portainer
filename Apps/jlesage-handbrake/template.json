@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 86,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 85,
+      "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
       "description": "The GUI of the application is accessed through a modern web browser (no installation or configuration needed on the client side) or via any VNC client.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/jlesage-handbrake/docker-compose.yml"
       },
       "env": [
-    {"name": "VNC_PASSWORD", "label": "VNC_PASSWORD", "description": "Environment variable for VNC_PASSWORD", "default": "casaos"}
+        {"name": "VNC_PASSWORD", "label": "VNC_PASSWORD", "description": "VNC Password", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

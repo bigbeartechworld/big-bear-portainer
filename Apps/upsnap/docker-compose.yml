@@ -20,4 +20,6 @@ services:
       # Mounting the local /DATA/AppData/$AppID/pb_data directory to /app/pb_data inside the container
       - upsnap_pb_data:/app/pb_data
 volumes:
-  upsnap_pb_data: {}
+  upsnap_pb_data:
+    name: upsnap_pb_data
+    driver: local

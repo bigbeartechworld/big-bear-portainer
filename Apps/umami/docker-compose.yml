@@ -31,4 +31,6 @@ services:
       timeout: 5s
       retries: 5
 volumes:
-  umami_pgdata: {}
+  umami_pgdata:
+    name: umami_pgdata
+    driver: local
