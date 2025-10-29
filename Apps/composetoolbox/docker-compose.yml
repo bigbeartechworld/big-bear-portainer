@@ -25,4 +25,6 @@ services:
     # Name of the container
     container_name: "big-bear-composetoolbox"
 volumes:
-  composetoolbox_data: {}
+  composetoolbox_data:
+    name: composetoolbox_data
+    driver: local

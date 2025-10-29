@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 113,
-            "type": 3,
+      "type": 3,
       "title": "n8n",
       "name": "n8n",
       "description": "Free and open fair-code licensed node based Workflow Automation Tool.",
@@ -16,16 +13,6 @@
         "stackfile": "Apps/n8n/docker-compose.yml"
       },
       "env": [
-    {"name": "DB_TYPE", "label": "DB_TYPE", "description": "Environment variable for DB_TYPE", "default": "postgresdb"},
-    {"name": "DB_POSTGRESDB_DATABASE", "label": "DB_POSTGRESDB_DATABASE", "description": "Environment variable for DB_POSTGRESDB_DATABASE", "default": "n8n"},
-    {"name": "DB_POSTGRESDB_HOST", "label": "DB_POSTGRESDB_HOST", "description": "Environment variable for DB_POSTGRESDB_HOST", "default": "db-n8n"},
-    {"name": "DB_POSTGRESDB_PORT", "label": "DB_POSTGRESDB_PORT", "description": "Environment variable for DB_POSTGRESDB_PORT", "default": "5432"},
-    {"name": "DB_POSTGRESDB_USER", "label": "DB_POSTGRESDB_USER", "description": "Environment variable for DB_POSTGRESDB_USER", "default": "bigbearcasaos"},
-    {"name": "DB_POSTGRESDB_PASSWORD", "label": "DB_POSTGRESDB_PASSWORD", "description": "Environment variable for DB_POSTGRESDB_PASSWORD", "default": "bigbearcasaos"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "bigbearcasaos"},
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "bigbearcasaos"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "n8n"}
+        {"name": "DB_TYPE", "label": "DB_TYPE", "description": "Database type: postgresdb", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

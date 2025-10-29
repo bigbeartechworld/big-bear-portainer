@@ -9,14 +9,18 @@ services:
     # Name of the container
     container_name: big-bear-adguard-home-host
     # Docker image to be used
-    image: adguard/adguardhome:v0.107.67
+    image: adguard/adguardhome:v0.107.68
     # Volume mappings for the service
     volumes:
-      - "adguard_home_host_data_work:/opt/adguardhome/work" # Map data work directory
-      - "adguard_home_host_data_conf:/opt/adguardhome/conf" # Map configuration directory
+      - "adguard-home-host_data_work:/opt/adguardhome/work" # Map data work directory
+      - "adguard-home-host_data_conf:/opt/adguardhome/conf" # Map configuration directory
     restart: unless-stopped
     # Define the networks section
     network_mode: host
 volumes:
-  adguard_home_host_data_work: {}
-  adguard_home_host_data_conf: {}
+  adguard-home-host_data_conf:
+    name: adguard-home-host_data_conf
+    driver: local
+  adguard-home-host_data_work:
+    name: adguard-home-host_data_work
+    driver: local

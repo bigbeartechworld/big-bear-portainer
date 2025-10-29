@@ -39,4 +39,6 @@ services:
       timeout: 2s
       retries: 3
 volumes:
-  readeck_data: {}
+  readeck_data:
+    name: readeck_data
+    driver: local

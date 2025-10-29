@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 21,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 20,
+      "type": 3,
       "title": "cAdvisor",
       "name": "cadvisor",
       "description": "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This data is exported by container and machine-wide.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/cadvisor/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

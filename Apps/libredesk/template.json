@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 95,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 94,
+      "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
       "description": "Open source, self-hosted customer support desk. Single binary app.",
@@ -14,10 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/libredesk/docker-compose.yml"
-      },
-      "env": [
-    {"name": "LIBREDESK_SYSTEM_USER_PASSWORD", "label": "LIBREDESK_SYSTEM_USER_PASSWORD", "description": "Environment variable for LIBREDESK_SYSTEM_USER_PASSWORD", "default": "c6b51a4e-ab9d-4f4f-933e-e96ed3570c1A"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

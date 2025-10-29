@@ -5,7 +5,7 @@ services:
   # Service configuration for the n8n application
   app:
     container_name: n8n # Name of the n8n container
-    image: n8nio/n8n:1.117.0 # Docker image and version to use for n8n
+    image: n8nio/n8n:1.117.1 # Docker image and version to use for n8n
     restart: unless-stopped # Restart policy: Restart unless manually stopped
     ports:
       - 5678:5678 # Port mapping between host and container
@@ -31,7 +31,7 @@ services:
     restart: on-failure # Restart policy: Restart on failure
     volumes:
       - n8n_pgdata:/var/lib/postgresql/data # Persistent DB data
-      - n8n_db_init_data.sh:/docker-entrypoint-initdb.d/init-data.sh # DB initialization script
+      - n8n_db_init-data.sh:/docker-entrypoint-initdb.d/init-data.sh # DB initialization script
     environment:
       # PostgreSQL user, password, and database environment variables
       - POSTGRES_PASSWORD=bigbearcasaos
@@ -44,6 +44,12 @@ services:
       timeout: 5s
       retries: 10
 volumes:
-  n8n_.n8n: {}
-  n8n_pgdata: {}
-  n8n_db_init_data.sh: {}
+  n8n_.n8n:
+    name: n8n_.n8n
+    driver: local
+  n8n_db_init-data.sh:
+    name: n8n_db_init-data.sh
+    driver: local
+  n8n_pgdata:
+    name: n8n_pgdata
+    driver: local

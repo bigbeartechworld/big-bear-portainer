@@ -1,20 +1,15 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 112,
-            "type": 3,
+      "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
       "description": "MySpeed is a speed test analysis software that records your internet speed for up to 30 days.",
       "note": "A speed test analysis software that shows your internet speed for up to 30 days",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/myspeed/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/myspeed/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/myspeed/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

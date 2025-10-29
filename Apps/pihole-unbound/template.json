@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 148,
-            "type": 3,
+      "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
       "description": "This is a custom pihole and unbound setup.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/pihole-unbound/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

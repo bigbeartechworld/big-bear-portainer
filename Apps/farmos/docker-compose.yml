@@ -61,5 +61,9 @@ networks:
     name: big-bear-farmos-network
     driver: bridge
 volumes:
-  farmos_sites: {}
-  farmos_db: {}
+  farmos_db:
+    name: farmos_db
+    driver: local
+  farmos_sites:
+    name: farmos_sites
+    driver: local

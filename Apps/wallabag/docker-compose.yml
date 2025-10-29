@@ -89,5 +89,9 @@ networks:
   big-bear-wallabag-network:
     driver: bridge
 volumes:
-  wallabag_images: {}
-  wallabag_mysql: {}
+  wallabag_images:
+    name: wallabag_images
+    driver: local
+  wallabag_mysql:
+    name: wallabag_mysql
+    driver: local
