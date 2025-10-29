@@ -26,9 +26,9 @@ services:
     network_mode: host
     # Volumes to be mounted to the container
     volumes:
-      - plex_nvidia_config:/config
-      - plex_nvidia_tv:/tv
-      - plex_nvidia_movies:/movies
+      - plex-nvidia_config:/config
+      - plex-nvidia_tv:/tv
+      - plex-nvidia_movies:/movies
     # Devices to be mounted to the container
     devices:
       - /dev/dri:/dev/dri # Optional, only if you have a GPU
@@ -42,6 +42,12 @@ services:
             - capabilities:
                 - gpu
 volumes:
-  plex_nvidia_config: {}
-  plex_nvidia_tv: {}
-  plex_nvidia_movies: {}
+  plex-nvidia_config:
+    name: plex-nvidia_config
+    driver: local
+  plex-nvidia_movies:
+    name: plex-nvidia_movies
+    driver: local
+  plex-nvidia_tv:
+    name: plex-nvidia_tv
+    driver: local

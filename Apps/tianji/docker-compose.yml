@@ -49,4 +49,6 @@ networks:
   big_bear_tianji_network:
     driver: bridge
 volumes:
-  tianji_pgdata: {}
+  tianji_pgdata:
+    name: tianji_pgdata
+    driver: local

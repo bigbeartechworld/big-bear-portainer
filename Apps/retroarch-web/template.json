@@ -1,23 +1,18 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 170,
-            "type": 3,
+      "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
       "description": "Online retro games emulator.The RetroArch Web Player is RetroArch compiled through Emscripten.",
       "note": "RetroArch Web Player",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/retroarch-web/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/retroarch-web/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/retroarch-web/docker-compose.yml"
       },
       "env": [
-    {"name": "ROOT_WWW_PATH", "label": "ROOT_WWW_PATH", "description": "Environment variable for ROOT_WWW_PATH", "default": "/var/www/html"}
+        {"name": "ROOT_WWW_PATH", "label": "ROOT_WWW_PATH", "description": "ROOT_WWW_PATH", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 75,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 74,
+      "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
       "description": "I hate money is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.",
@@ -14,7 +11,12 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ihatemoney/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "null", "label": "null", "description": "Sets the secret key environment variable for the application.", "default": ""},
+        {"name": "null", "label": "null", "description": "Database connection string.", "default": ""},
+        {"name": "null", "label": "null", "description": "Enables the admin dashboard.", "default": ""},
+        {"name": "null", "label": "null", "description": "Sets the admin password. On the host run: docker run -it --rm --entrypoint ihatemoney ihatemoney/ihatemoney generate_password_hash", "default": ""},
+        {"name": "null", "label": "null", "description": "Disables secure session cookies for development.", "default": ""}
+      ]
+    }]}

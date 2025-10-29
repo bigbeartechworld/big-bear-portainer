@@ -10,7 +10,5 @@ services:
     ports:
       - "3001:3001" # Port 3001 on the host is mapped to port 3001 in the container
     volumes:
-      - dashdot_mnt_host:/mnt/host
+      - /DATA/AppData/$AppID:/mnt/host# Mounting the local dashdot directory to /mnt/host inside the container
     privileged: true # Runs the container in privileged mode, allowing it access to host devices
-volumes:
-  dashdot_mnt_host: {}

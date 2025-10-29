@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 145,
-            "type": 3,
+      "type": 3,
       "title": "Photoprism",
       "name": "photoprism",
       "description": "PhotoPrism® is an AI-Powered Photos App for the Decentralized Web. It makes use of the latest technologies to tag and find pictures automatically without getting in your way. You can run it at home, on a private server, or in the cloud.",
@@ -14,7 +11,32 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/photoprism/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "PHOTOPRISM_ADMIN_PASSWORD", "label": "PHOTOPRISM_ADMIN_PASSWORD", "description": "Photoprism admin password: casaos", "default": ""},
+        {"name": "PHOTOPRISM_SITE_URL", "label": "PHOTOPRISM_SITE_URL", "description": "Photoprism site url: http://locahost/", "default": ""},
+        {"name": "PHOTOPRISM_ORIGINALS_LIMIT", "label": "PHOTOPRISM_ORIGINALS_LIMIT", "description": "Photoprism originals limit: 5000", "default": ""},
+        {"name": "PHOTOPRISM_HTTP_COMPRESSION", "label": "PHOTOPRISM_HTTP_COMPRESSION", "description": "Photoprism http compression: gzip", "default": ""},
+        {"name": "PHOTOPRISM_LOG_LEVEL", "label": "PHOTOPRISM_LOG_LEVEL", "description": "Photoprism log level: info", "default": ""},
+        {"name": "PHOTOPRISM_PUBLIC", "label": "PHOTOPRISM_PUBLIC", "description": "Photoprism public: false", "default": ""},
+        {"name": "PHOTOPRISM_READONLY", "label": "PHOTOPRISM_READONLY", "description": "Photoprism readonly: false", "default": ""},
+        {"name": "PHOTOPRISM_EXPERIMENTAL", "label": "PHOTOPRISM_EXPERIMENTAL", "description": "Photoprism experimental: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_CHOWN", "label": "PHOTOPRISM_DISABLE_CHOWN", "description": "Photoprism disable chown: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_WEBDAV", "label": "PHOTOPRISM_DISABLE_WEBDAV", "description": "Photoprism disable webdav: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_SETTINGS", "label": "PHOTOPRISM_DISABLE_SETTINGS", "description": "Photoprism disable settings: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_TENSORFLOW", "label": "PHOTOPRISM_DISABLE_TENSORFLOW", "description": "Photoprism disable tensorflow: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_FACES", "label": "PHOTOPRISM_DISABLE_FACES", "description": "Photoprism disable faces: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_CLASSIFICATION", "label": "PHOTOPRISM_DISABLE_CLASSIFICATION", "description": "Photoprism disable classification: false", "default": ""},
+        {"name": "PHOTOPRISM_DISABLE_RAW", "label": "PHOTOPRISM_DISABLE_RAW", "description": "Photoprism disable raw: false", "default": ""},
+        {"name": "PHOTOPRISM_RAW_PRESETS", "label": "PHOTOPRISM_RAW_PRESETS", "description": "Photoprism raw presets: false", "default": ""},
+        {"name": "PHOTOPRISM_JPEG_QUALITY", "label": "PHOTOPRISM_JPEG_QUALITY", "description": "Photoprism jpeg quality: 85", "default": ""},
+        {"name": "PHOTOPRISM_DETECT_NSFW", "label": "PHOTOPRISM_DETECT_NSFW", "description": "Photoprism detect nsfw: false", "default": ""},
+        {"name": "PHOTOPRISM_UPLOAD_NSFW", "label": "PHOTOPRISM_UPLOAD_NSFW", "description": "Photoprism upload nsfw: true", "default": ""},
+        {"name": "PHOTOPRISM_DATABASE_DRIVER", "label": "PHOTOPRISM_DATABASE_DRIVER", "description": "Photoprism database driver: mysql", "default": ""},
+        {"name": "PHOTOPRISM_DATABASE_SERVER", "label": "PHOTOPRISM_DATABASE_SERVER", "description": "Photoprism database server: photoprism-db:3306", "default": ""},
+        {"name": "PHOTOPRISM_DATABASE_NAME", "label": "PHOTOPRISM_DATABASE_NAME", "description": "Photoprism database name: photoprism", "default": ""},
+        {"name": "PHOTOPRISM_DATABASE_USER", "label": "PHOTOPRISM_DATABASE_USER", "description": "Photoprism database user: photoprism", "default": ""},
+        {"name": "PHOTOPRISM_DATABASE_PASSWORD", "label": "PHOTOPRISM_DATABASE_PASSWORD", "description": "Photoprism database password: casaos", "default": ""},
+        {"name": "PHOTOPRISM_SITE_CAPTION", "label": "PHOTOPRISM_SITE_CAPTION", "description": "Photoprism site caption: AI-Powered Photos App", "default": ""}
+      ]
+    }]}

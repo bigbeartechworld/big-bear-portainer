@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 162,
-            "type": 3,
+      "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
       "description": "Full stack mail server solution with SSL TLS support. POP3s, SMTP(s), IMAPs, RSPAMD, Clamav, Roundcube(HTTPS), SPF, DKIM with easy installation and web administration.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/poste-io/docker-compose.yml"
       },
       "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+        {"name": "TZ", "label": "TZ", "description": "Timezone: UTC", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

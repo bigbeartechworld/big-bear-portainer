@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 47,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 46,
+      "type": 3,
       "title": "Eufy Security WS",
       "name": "eufy-security-ws",
       "description": "eufy-security-ws is a small server wrapper around the eufy-security-client library to access it via a WebSocket. It allows you to control Eufy security devices by connecting to the Eufy cloud servers and local/remote stations.",
@@ -14,7 +11,12 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/eufy-security-ws/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "null", "label": "null", "description": "Eufy Account Username (required)", "default": ""},
+        {"name": "null", "label": "null", "description": "Eufy Account Password (required)", "default": ""},
+        {"name": "null", "label": "null", "description": "ISO 3166-1 Alpha-2 country code (default: US)", "default": ""},
+        {"name": "null", "label": "null", "description": "ISO 639 language code (default: en)", "default": ""},
+        {"name": "null", "label": "null", "description": "Label of the trusted devices (viewable with 2fa activated in Eufy App; default: random device name)", "default": ""}
+      ]
+    }]}

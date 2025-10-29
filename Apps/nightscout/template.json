@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 121,
-            "type": 3,
+      "type": 3,
       "title": "nightscout",
       "name": "nightscout",
       "description": "This acts as a web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time. The server reads a MongoDB which is intended to be data from a physical CGM, where it sends new SGV (sensor glucose values) as the data becomes available. The data is then displayed graphically and blood glucose values are predicted 0.5 hours ahead using an autoregressive second order model. Alarms are generated for high and low values, which can be cleared by any watcher of the data.",
@@ -14,7 +11,13 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/nightscout/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "NODE_ENV", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "TZ", "default": ""},
+        {"name": "MONGO_CONNECTION", "label": "MONGO_CONNECTION", "description": "MONGO_CONNECTION", "default": ""},
+        {"name": "API_SECRET", "label": "API_SECRET", "description": "API_SECRET", "default": ""},
+        {"name": "ENABLE", "label": "ENABLE", "description": "ENABLE", "default": ""},
+        {"name": "AUTH_DEFAULT_ROLES", "label": "AUTH_DEFAULT_ROLES", "description": "AUTH_DEFAULT_ROLES", "default": ""}
+      ]
+    }]}

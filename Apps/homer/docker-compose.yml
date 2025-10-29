@@ -27,4 +27,6 @@ services:
     environment:
       - INIT_ASSETS=1 # default
 volumes:
-  homer_assets: {}
+  homer_assets:
+    name: homer_assets
+    driver: local
