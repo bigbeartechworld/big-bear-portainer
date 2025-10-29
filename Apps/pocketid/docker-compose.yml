@@ -27,7 +27,9 @@ services:
         published: "1411"
         protocol: tcp # Port mapping between host and container
     volumes:
-      - "pocketid_type\nsource\ntarget: bind\n /DATA/AppData/$AppID/data\n /app/data "
+      - type: bind
+        source: pocketid_data
+        target: /app/data # Volume for persistent data
     devices: []
     cap_add: []
     network_mode: bridge
@@ -40,8 +42,6 @@ services:
       retries: 2
       start_period: 10s
 volumes:
-  ? |-
-    pocketid_type
-    source
-    target
-  : {}
+  pocketid_data:
+    name: pocketid_data
+    driver: local

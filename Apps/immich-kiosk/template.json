@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 78,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 77,
+      "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
       "description": "Immich Kiosk is a lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source.",
@@ -14,7 +11,12 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/immich-kiosk/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "LANG", "label": "LANG", "description": "Sets the language and timezone for the container", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Sets the language and timezone for the container", "default": ""},
+        {"name": "KIOSK_IMMICH_API_KEY", "label": "KIOSK_IMMICH_API_KEY", "description": "Sets the Immich API key for the container", "default": ""},
+        {"name": "KIOSK_IMMICH_URL", "label": "KIOSK_IMMICH_URL", "description": "Sets the Immich server URL for the container", "default": ""},
+        {"name": "KIOSK_IMMICH_EXTERNAL_URL", "label": "KIOSK_IMMICH_EXTERNAL_URL", "description": "Sets the Immich external URL for the container", "default": ""}
+      ]
+    }]}

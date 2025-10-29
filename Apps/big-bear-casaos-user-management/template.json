@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 16,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 15,
+      "type": 3,
       "title": "Big Bear CasaOS User Management",
       "name": "big-bear-casaos-user-management",
       "description": "Manage users in CasaOS",
@@ -16,11 +13,9 @@
         "stackfile": "Apps/big-bear-casaos-user-management/docker-compose.yml"
       },
       "env": [
-    {"name": "FLASK_APP", "label": "FLASK_APP", "description": "Environment variable for FLASK_APP", "default": "app.py"},
-    {"name": "FLASK_ENV", "label": "FLASK_ENV", "description": "Environment variable for FLASK_ENV", "default": "production"},
-    {"name": "ADMIN_USERNAME", "label": "ADMIN_USERNAME", "description": "Environment variable for ADMIN_USERNAME", "default": "casaos"},
-    {"name": "ADMIN_PASSWORD", "label": "ADMIN_PASSWORD", "description": "Environment variable for ADMIN_PASSWORD", "default": "casaos"}
+        {"name": "FLASK_APP", "label": "FLASK_APP", "description": "Sets the Flask application entry point", "default": ""},
+        {"name": "FLASK_ENV", "label": "FLASK_ENV", "description": "Configures Flask to run in production mode", "default": ""},
+        {"name": "ADMIN_USERNAME", "label": "ADMIN_USERNAME", "description": "Specifies the admin username for the service", "default": ""},
+        {"name": "ADMIN_PASSWORD", "label": "ADMIN_PASSWORD", "description": "Specifies the admin password for the service", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

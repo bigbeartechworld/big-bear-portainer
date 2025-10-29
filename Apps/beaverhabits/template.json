@@ -1,13 +1,10 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 14,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 13,
+      "type": 3,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
-      "description": "A self-hosted habit tracking app without \"Goals\"",
-      "note": "A self-hosted habit tracking app without \"Goals\"",
+      "description": "A self-hosted habit tracking app without Goals",
+      "note": "A self-hosted habit tracking app without Goals",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/beaver-habit-tracker.png",
@@ -16,11 +13,9 @@
         "stackfile": "Apps/beaverhabits/docker-compose.yml"
       },
       "env": [
-    {"name": "HABITS_STORAGE", "label": "HABITS_STORAGE", "description": "Environment variable for HABITS_STORAGE", "default": "USER_DISK"},
-    {"name": "TRUSTED_LOCAL_EMAIL", "label": "TRUSTED_LOCAL_EMAIL", "description": "Environment variable for TRUSTED_LOCAL_EMAIL", "default": "your@email.com"},
-    {"name": "INDEX_HABIT_DATE_COLUMNS", "label": "INDEX_HABIT_DATE_COLUMNS", "description": "Environment variable for INDEX_HABIT_DATE_COLUMNS", "default": "5"},
-    {"name": "ENABLE_IOS_STANDALONE", "label": "ENABLE_IOS_STANDALONE", "description": "Environment variable for ENABLE_IOS_STANDALONE", "default": "true"}
+        {"name": "HABITS_STORAGE", "label": "HABITS_STORAGE", "description": "Sets the storage type for habits", "default": ""},
+        {"name": "TRUSTED_LOCAL_EMAIL", "label": "TRUSTED_LOCAL_EMAIL", "description": "Sets the trusted local email", "default": ""},
+        {"name": "INDEX_HABIT_DATE_COLUMNS", "label": "INDEX_HABIT_DATE_COLUMNS", "description": "Specifies the number of date columns for the index page", "default": ""},
+        {"name": "ENABLE_IOS_STANDALONE", "label": "ENABLE_IOS_STANDALONE", "description": "Enables iOS standalone mode", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

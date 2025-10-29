@@ -10,24 +10,17 @@ services:
     # Name of the container
     container_name: big-bear-otel-lgtm
     # Image to be used for the container
-    image: grafana/otel-lgtm:0.11.12
+    image: grafana/otel-lgtm:0.11.14
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/data directory to /data inside the container
-      - |-
-        otel_lgtm_
-        type
-        source
-        target
-        bind
-          create_host_path:
-         bind
-         /DATA/AppData/$AppID/data
-         /data
-
-         true
+      - type: bind
+        source: otel-lgtm_data
+        target: /data
+        bind:
+          create_host_path: true
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
@@ -51,3 +44,7 @@ services:
 networks:
   big-bear-otel-lgtm:
     driver: bridge
+volumes:
+  otel-lgtm_data:
+    name: otel-lgtm_data
+    driver: local

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 10,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 9,
+      "type": 3,
       "title": "Audiobookshelf",
       "name": "audiobookshelf",
       "description": "Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks. Audiobookshelf has a clean, accessible design that's loaded with features but not overly complicated.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/audiobookshelf/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 129,
-            "type": 3,
+      "type": 3,
       "title": "OctoPrint",
       "name": "octoprint",
       "description": "OctoPrint is the snappy web interface for your 3D printer!",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/octoprint/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

@@ -62,5 +62,9 @@ networks:
   big_bear_calcom_network:
     driver: bridge
 volumes:
-  calcom_config: {}
-  calcom_data_db: {}
+  calcom_config:
+    name: calcom_config
+    driver: local
+  calcom_data_db:
+    name: calcom_data_db
+    driver: local
