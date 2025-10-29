@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 23,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 22,
+      "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
       "description": "The best and simplest free open source website change detection, restock monitor and notification service.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/changedetection/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

@@ -22,4 +22,6 @@ services:
     volumes:
       - homebridge_data:/homebridge
 volumes:
-  homebridge_data: {}
+  homebridge_data:
+    name: homebridge_data
+    driver: local

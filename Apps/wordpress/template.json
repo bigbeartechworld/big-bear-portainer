@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 209,
-            "type": 3,
+      "type": 3,
       "title": "WordPress",
       "name": "wordpress",
       "description": "Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web (as of my last training data in 2022).",
@@ -14,7 +11,11 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/wordpress/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "WORDPRESS_DB_HOST", "label": "WORDPRESS_DB_HOST", "description": "Database host", "default": ""},
+        {"name": "WORDPRESS_DB_USER", "label": "WORDPRESS_DB_USER", "description": "Database user", "default": ""},
+        {"name": "WORDPRESS_DB_PASSWORD", "label": "WORDPRESS_DB_PASSWORD", "description": "Database password", "default": ""},
+        {"name": "WORDPRESS_DB_NAME", "label": "WORDPRESS_DB_NAME", "description": "Database name", "default": ""}
+      ]
+    }]}

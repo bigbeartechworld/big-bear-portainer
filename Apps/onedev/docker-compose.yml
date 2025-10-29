@@ -57,5 +57,9 @@ networks:
   big_bear_ondedev_network: # Network name
     driver: bridge # Network driver
 volumes:
-  onedev_data: {}
-  onedev_postgres_data: {}
+  onedev_data:
+    name: onedev_data
+    driver: local
+  onedev_postgres_data:
+    name: onedev_postgres_data
+    driver: local

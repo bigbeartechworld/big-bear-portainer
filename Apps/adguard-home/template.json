@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 6,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 5,
+      "type": 3,
       "title": "AdGuard Home",
       "name": "adguard-home",
       "description": "AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover all your home devices, and you won't need any client-side software for that. Learn more on our official Github repository.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/adguard-home/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

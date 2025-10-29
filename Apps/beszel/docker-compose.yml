@@ -21,4 +21,6 @@ services:
       # Mapping port 8090 of the host to port 8090 of the container
       - "8090:8090"
 volumes:
-  beszel_data: {}
+  beszel_data:
+    name: beszel_data
+    driver: local

@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 193,
-            "type": 3,
+      "type": 3,
       "title": "Umami",
       "name": "umami",
       "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
@@ -14,7 +11,10 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/umami/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Database URL", "default": ""},
+        {"name": "DATABASE_TYPE", "label": "DATABASE_TYPE", "description": "Database type", "default": ""},
+        {"name": "APP_SECRET", "label": "APP_SECRET", "description": "Application secret", "default": ""}
+      ]
+    }]}

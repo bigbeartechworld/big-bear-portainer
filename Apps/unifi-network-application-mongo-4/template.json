@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 196,
-            "type": 3,
+      "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
       "description": "Supports Zimaboards and PI's. The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
@@ -16,19 +13,17 @@
         "stackfile": "Apps/unifi-network-application-mongo-4/docker-compose.yml"
       },
       "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
-    {"name": "MONGO_HOST", "label": "MONGO_HOST", "description": "Environment variable for MONGO_HOST", "default": "big-bear-unifi-db"},
-    {"name": "MONGO_USER", "label": "MONGO_USER", "description": "Environment variable for MONGO_USER", "default": "unifi"},
-    {"name": "MONGO_PASS", "label": "MONGO_PASS", "description": "Environment variable for MONGO_PASS", "default": "unifi_password"},
-    {"name": "MONGO_PORT", "label": "MONGO_PORT", "description": "Environment variable for MONGO_PORT", "default": "27017"},
-    {"name": "MONGO_DBNAME", "label": "MONGO_DBNAME", "description": "Environment variable for MONGO_DBNAME", "default": "unifi"},
-    {"name": "MEM_LIMIT", "label": "MEM_LIMIT", "description": "Environment variable for MEM_LIMIT", "default": "1024"},
-    {"name": "MEM_STARTUP", "label": "MEM_STARTUP", "description": "Environment variable for MEM_STARTUP", "default": "1024"},
-    {"name": "MONGO_TLS", "label": "MONGO_TLS", "description": "Environment variable for MONGO_TLS", "default": ""},
-    {"name": "MONGO_AUTHSOURCE", "label": "MONGO_AUTHSOURCE", "description": "Environment variable for MONGO_AUTHSOURCE", "default": ""}
+        {"name": "PUID", "label": "PUID", "description": "User ID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Group ID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""},
+        {"name": "MONGO_HOST", "label": "MONGO_HOST", "description": "MongoDB host", "default": ""},
+        {"name": "MONGO_USER", "label": "MONGO_USER", "description": "MongoDB username", "default": ""},
+        {"name": "MONGO_PASS", "label": "MONGO_PASS", "description": "MongoDB password", "default": ""},
+        {"name": "MONGO_PORT", "label": "MONGO_PORT", "description": "MongoDB port", "default": ""},
+        {"name": "MONGO_DBNAME", "label": "MONGO_DBNAME", "description": "MongoDB database name", "default": ""},
+        {"name": "MEM_LIMIT", "label": "MEM_LIMIT", "description": "Memory limit for the container", "default": ""},
+        {"name": "MEM_STARTUP", "label": "MEM_STARTUP", "description": "Memory to allocate on container startup", "default": ""},
+        {"name": "MONGO_TLS", "label": "MONGO_TLS", "description": "MongoDB TLS setting", "default": ""},
+        {"name": "MONGO_AUTHSOURCE", "label": "MONGO_AUTHSOURCE", "description": "MongoDB authentication source", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

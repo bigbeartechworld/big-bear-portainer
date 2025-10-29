@@ -84,4 +84,6 @@ networks:
   default:
     name: peppermint_default
 volumes:
-  peppermint_postgres_data: {}
+  peppermint_postgres_data:
+    name: peppermint_postgres_data
+    driver: local

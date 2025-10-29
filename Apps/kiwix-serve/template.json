@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 90,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 89,
+      "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
       "description": "Kiwix Server is a web server for hosting .zim files",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/kiwix-serve/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

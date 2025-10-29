@@ -1,20 +1,15 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 120,
-            "type": 3,
+      "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
       "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",
       "note": "Nexterm",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/nexterm/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/nexterm/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/nexterm/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

@@ -29,4 +29,6 @@ services:
       # Mapping port 7575 of the host to port 7575 of the container
       - "1080:80"
 volumes:
-  octoprint_octoprint: {}
+  octoprint_octoprint:
+    name: octoprint_octoprint
+    driver: local

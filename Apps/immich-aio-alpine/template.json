@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 77,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 76,
+      "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
       "description": "AIO Alpine. Self-hosted photo and video storage.",
@@ -16,21 +13,19 @@
         "stackfile": "Apps/immich-aio-alpine/docker-compose.yml"
       },
       "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
-    {"name": "DB_HOSTNAME", "label": "DB_HOSTNAME", "description": "Environment variable for DB_HOSTNAME", "default": "big-bear-immich-db"},
-    {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Environment variable for DB_USERNAME", "default": "casaos"},
-    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "casaos"},
-    {"name": "DB_DATABASE_NAME", "label": "DB_DATABASE_NAME", "description": "Environment variable for DB_DATABASE_NAME", "default": "immich"},
-    {"name": "REDIS_HOSTNAME", "label": "REDIS_HOSTNAME", "description": "Environment variable for REDIS_HOSTNAME", "default": "big-bear-immich-redis"},
-    {"name": "DB_PORT", "label": "DB_PORT", "description": "Environment variable for DB_PORT", "default": "5432"},
-    {"name": "REDIS_PORT", "label": "REDIS_PORT", "description": "Environment variable for REDIS_PORT", "default": "6379"},
-    {"name": "REDIS_PASSWORD", "label": "REDIS_PASSWORD", "description": "Environment variable for REDIS_PASSWORD", "default": ""},
-    {"name": "MACHINE_LEARNING_GPU_ACCELERATION", "label": "MACHINE_LEARNING_GPU_ACCELERATION", "description": "Environment variable for MACHINE_LEARNING_GPU_ACCELERATION", "default": ""},
-    {"name": "MACHINE_LEARNING_WORKERS", "label": "MACHINE_LEARNING_WORKERS", "description": "Environment variable for MACHINE_LEARNING_WORKERS", "default": "1"},
-    {"name": "MACHINE_LEARNING_WORKER_TIMEOUT", "label": "MACHINE_LEARNING_WORKER_TIMEOUT", "description": "Environment variable for MACHINE_LEARNING_WORKER_TIMEOUT", "default": "120"}
+        {"name": "PUID", "label": "PUID", "description": "Process UID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Process GID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""},
+        {"name": "DB_HOSTNAME", "label": "DB_HOSTNAME", "description": "Database Hostname", "default": ""},
+        {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Database Username", "default": ""},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Database Password", "default": ""},
+        {"name": "DB_DATABASE_NAME", "label": "DB_DATABASE_NAME", "description": "Database Name", "default": ""},
+        {"name": "DB_PORT", "label": "DB_PORT", "description": "Database Port", "default": ""},
+        {"name": "REDIS_HOSTNAME", "label": "REDIS_HOSTNAME", "description": "Redis Hostname", "default": ""},
+        {"name": "REDIS_PORT", "label": "REDIS_PORT", "description": "Redis Port", "default": ""},
+        {"name": "REDIS_PASSWORD", "label": "REDIS_PASSWORD", "description": "Redis Password", "default": ""},
+        {"name": "MACHINE_LEARNING_GPU_ACCELERATION", "label": "MACHINE_LEARNING_GPU_ACCELERATION", "description": "Machine Learning GPU Acceleration", "default": ""},
+        {"name": "MACHINE_LEARNING_WORKERS", "label": "MACHINE_LEARNING_WORKERS", "description": "Machine Learning Workers", "default": ""},
+        {"name": "MACHINE_LEARNING_WORKER_TIMEOUT", "label": "MACHINE_LEARNING_WORKER_TIMEOUT", "description": "Machine Learning Worker Timeout", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

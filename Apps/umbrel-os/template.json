@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 194,
-            "type": 3,
+      "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
       "description": "Umbrel is a personal server OS that makes self-hosting accessible to everyone.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/umbrel-os/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

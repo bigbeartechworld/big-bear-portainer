@@ -1,24 +1,19 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 31,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 30,
+      "type": 3,
       "title": "ConvertX",
       "name": "convertx",
       "description": "A self-hosted online file converter. Supports over a thousand different formats. Written with TypeScript, Bun and Elysia.",
       "note": "💾 Self-hosted online file converter. Supports 1000+ formats ⚙️",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/convertx/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/convertx/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/convertx/docker-compose.yml"
       },
       "env": [
-    {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Environment variable for JWT_SECRET", "default": "c8330437-e6ae-4cf0-9837-4d1326457e32"},
-    {"name": "HTTP_ALLOWED", "label": "HTTP_ALLOWED", "description": "Environment variable for HTTP_ALLOWED", "default": "true"}
+        {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "JWT Secret", "default": ""},
+        {"name": "HTTP_ALLOWED", "label": "HTTP_ALLOWED", "description": "HTTP Allowed", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

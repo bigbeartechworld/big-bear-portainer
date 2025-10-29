@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 203,
-            "type": 3,
+      "type": 3,
       "title": "Warracker",
       "name": "warracker",
       "description": "A self-hosted warranty tracker",
@@ -16,18 +13,13 @@
         "stackfile": "Apps/warracker/docker-compose.yml"
       },
       "env": [
-    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-warrackerdb"},
-    {"name": "DB_NAME", "label": "DB_NAME", "description": "Environment variable for DB_NAME", "default": "big_bear_warracker"},
-    {"name": "DB_USER", "label": "DB_USER", "description": "Environment variable for DB_USER", "default": "big_bear_warracker_user"},
-    {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Environment variable for DB_PASSWORD", "default": "4892f1bc-f1ea-464f-b528-1d52b2c9bb05"},
-    {"name": "SMTP_HOST", "label": "SMTP_HOST", "description": "Environment variable for SMTP_HOST", "default": "smtp.email.com"},
-    {"name": "SMTP_PORT", "label": "SMTP_PORT", "description": "Environment variable for SMTP_PORT", "default": "465"},
-    {"name": "SMTP_USERNAME", "label": "SMTP_USERNAME", "description": "Environment variable for SMTP_USERNAME", "default": "youremail@email.com"},
-    {"name": "SMTP_PASSWORD", "label": "SMTP_PASSWORD", "description": "Environment variable for SMTP_PASSWORD", "default": "password"},
-    {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Environment variable for POSTGRES_DB", "default": "big_bear_warracker"},
-    {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Environment variable for POSTGRES_USER", "default": "big_bear_warracker_user"},
-    {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Environment variable for POSTGRES_PASSWORD", "default": "4892f1bc-f1ea-464f-b528-1d52b2c9bb05"}
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Sets the database host", "default": ""},
+        {"name": "DB_NAME", "label": "DB_NAME", "description": "Sets the database name", "default": ""},
+        {"name": "DB_USER", "label": "DB_USER", "description": "Sets the database user", "default": ""},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Sets the database password", "default": ""},
+        {"name": "SMTP_HOST", "label": "SMTP_HOST", "description": "Sets the SMTP host", "default": ""},
+        {"name": "SMTP_PORT", "label": "SMTP_PORT", "description": "Sets the SMTP port", "default": ""},
+        {"name": "SMTP_USERNAME", "label": "SMTP_USERNAME", "description": "Sets the SMTP username", "default": ""},
+        {"name": "SMTP_PASSWORD", "label": "SMTP_PASSWORD", "description": "Sets the SMTP password", "default": ""}
       ]
-    }
-  ]
-}
+    }]}
