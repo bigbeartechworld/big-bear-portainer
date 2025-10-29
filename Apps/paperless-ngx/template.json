@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 140,
-            "type": 3,
+      "type": 3,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
       "description": "Paperless-ngx is a community-supported open-source document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.",
@@ -14,7 +11,17 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/paperless-ngx/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "PAPERLESS_REDIS", "label": "PAPERLESS_REDIS", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_DBHOST", "label": "PAPERLESS_DBHOST", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_ADMIN_USER", "label": "PAPERLESS_ADMIN_USER", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_ADMIN_PASSWORD", "label": "PAPERLESS_ADMIN_PASSWORD", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_TIKA_ENABLED", "label": "PAPERLESS_TIKA_ENABLED", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_TIKA_GOTENBERG_ENDPOINT", "label": "PAPERLESS_TIKA_GOTENBERG_ENDPOINT", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_TIKA_ENDPOINT", "label": "PAPERLESS_TIKA_ENDPOINT", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_URL", "label": "PAPERLESS_URL", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "COMPOSE_PROJECT_NAME", "label": "COMPOSE_PROJECT_NAME", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_CSRF_TRUSTED_ORIGINS", "label": "PAPERLESS_CSRF_TRUSTED_ORIGINS", "description": "Container Path: /usr/src/paperless/data", "default": ""}
+      ]
+    }]}

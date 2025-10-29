@@ -53,6 +53,12 @@ networks:
   big-bear-nocodb-network:
     driver: bridge # Uses a bridge network for inter-container communication
 volumes:
-  nocodb_data: {}
-  nocodb_pgdata: {}
-  nocodb_redis: {}
+  nocodb_data:
+    name: nocodb_data
+    driver: local
+  nocodb_pgdata:
+    name: nocodb_pgdata
+    driver: local
+  nocodb_redis:
+    name: nocodb_redis
+    driver: local

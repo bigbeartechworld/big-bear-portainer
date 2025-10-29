@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 69,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 68,
+      "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
       "description": "Healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
@@ -16,29 +13,27 @@
         "stackfile": "Apps/healthchecks/docker-compose.yml"
       },
       "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
-    {"name": "SITE_ROOT", "label": "SITE_ROOT", "description": "Environment variable for SITE_ROOT", "default": "http://[YOUR_CASAOS_IP]"},
-    {"name": "SITE_NAME", "label": "SITE_NAME", "description": "Environment variable for SITE_NAME", "default": "Big Bear HealthChecks"},
-    {"name": "SUPERUSER_EMAIL", "label": "SUPERUSER_EMAIL", "description": "Environment variable for SUPERUSER_EMAIL", "default": "user@example.com"},
-    {"name": "SUPERUSER_PASSWORD", "label": "SUPERUSER_PASSWORD", "description": "Environment variable for SUPERUSER_PASSWORD", "default": "8a4c087a-2652-4d12-a6cc-feeb60e59dd4"},
-    {"name": "ALLOWED_HOSTS", "label": "ALLOWED_HOSTS", "description": "Environment variable for ALLOWED_HOSTS", "default": ""},
-    {"name": "APPRISE_ENABLED", "label": "APPRISE_ENABLED", "description": "Environment variable for APPRISE_ENABLED", "default": "False"},
-    {"name": "CSRF_TRUSTED_ORIGINS", "label": "CSRF_TRUSTED_ORIGINS", "description": "Environment variable for CSRF_TRUSTED_ORIGINS", "default": ""},
-    {"name": "DEBUG", "label": "DEBUG", "description": "Environment variable for DEBUG", "default": "True"},
-    {"name": "DEFAULT_FROM_EMAIL", "label": "DEFAULT_FROM_EMAIL", "description": "Environment variable for DEFAULT_FROM_EMAIL", "default": ""},
-    {"name": "EMAIL_HOST", "label": "EMAIL_HOST", "description": "Environment variable for EMAIL_HOST", "default": ""},
-    {"name": "EMAIL_PORT", "label": "EMAIL_PORT", "description": "Environment variable for EMAIL_PORT", "default": ""},
-    {"name": "EMAIL_HOST_USER", "label": "EMAIL_HOST_USER", "description": "Environment variable for EMAIL_HOST_USER", "default": ""},
-    {"name": "EMAIL_HOST_PASSWORD", "label": "EMAIL_HOST_PASSWORD", "description": "Environment variable for EMAIL_HOST_PASSWORD", "default": ""},
-    {"name": "EMAIL_USE_TLS", "label": "EMAIL_USE_TLS", "description": "Environment variable for EMAIL_USE_TLS", "default": ""},
-    {"name": "INTEGRATIONS_ALLOW_PRIVATE_IPS", "label": "INTEGRATIONS_ALLOW_PRIVATE_IPS", "description": "Environment variable for INTEGRATIONS_ALLOW_PRIVATE_IPS", "default": ""},
-    {"name": "PING_EMAIL_DOMAIN", "label": "PING_EMAIL_DOMAIN", "description": "Environment variable for PING_EMAIL_DOMAIN", "default": ""},
-    {"name": "RP_ID", "label": "RP_ID", "description": "Environment variable for RP_ID", "default": ""},
-    {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Environment variable for SECRET_KEY", "default": "b2ea4094-c950-4890-b85f-301d8a777af2"},
-    {"name": "SITE_LOGO_URL", "label": "SITE_LOGO_URL", "description": "Environment variable for SITE_LOGO_URL", "default": ""}
+        {"name": "PUID", "label": "PUID", "description": "Process UID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Process GID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""},
+        {"name": "SITE_ROOT", "label": "SITE_ROOT", "description": "Site root", "default": ""},
+        {"name": "SITE_NAME", "label": "SITE_NAME", "description": "Site name", "default": ""},
+        {"name": "SUPERUSER_EMAIL", "label": "SUPERUSER_EMAIL", "description": "Superuser email", "default": ""},
+        {"name": "SUPERUSER_PASSWORD", "label": "SUPERUSER_PASSWORD", "description": "Superuser password", "default": ""},
+        {"name": "ALLOWED_HOSTS", "label": "ALLOWED_HOSTS", "description": "Allowed hosts", "default": ""},
+        {"name": "APPRISE_ENABLED", "label": "APPRISE_ENABLED", "description": "Apprise enabled", "default": ""},
+        {"name": "CSRF_TRUSTED_ORIGINS", "label": "CSRF_TRUSTED_ORIGINS", "description": "CSRF trusted origins", "default": ""},
+        {"name": "DEBUG", "label": "DEBUG", "description": "Debug", "default": ""},
+        {"name": "DEFAULT_FROM_EMAIL", "label": "DEFAULT_FROM_EMAIL", "description": "Default from email", "default": ""},
+        {"name": "EMAIL_HOST", "label": "EMAIL_HOST", "description": "Email host", "default": ""},
+        {"name": "EMAIL_PORT", "label": "EMAIL_PORT", "description": "Email port", "default": ""},
+        {"name": "EMAIL_HOST_USER", "label": "EMAIL_HOST_USER", "description": "Email host user", "default": ""},
+        {"name": "EMAIL_HOST_PASSWORD", "label": "EMAIL_HOST_PASSWORD", "description": "Email host password", "default": ""},
+        {"name": "EMAIL_USE_TLS", "label": "EMAIL_USE_TLS", "description": "Email use TLS", "default": ""},
+        {"name": "INTEGRATIONS_ALLOW_PRIVATE_IPS", "label": "INTEGRATIONS_ALLOW_PRIVATE_IPS", "description": "Integrations allow private IPs", "default": ""},
+        {"name": "PING_EMAIL_DOMAIN", "label": "PING_EMAIL_DOMAIN", "description": "Ping email domain", "default": ""},
+        {"name": "RP_ID", "label": "RP_ID", "description": "RP ID", "default": ""},
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Secret key", "default": ""},
+        {"name": "SITE_LOGO_URL", "label": "SITE_LOGO_URL", "description": "Site logo URL", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

@@ -45,4 +45,6 @@ networks:
   big_bear_joplin_network:
     driver: bridge # Uses a bridge network for inter-container communication.
 volumes:
-  joplin_postgresql_data: {}
+  joplin_postgresql_data:
+    name: joplin_postgresql_data
+    driver: local

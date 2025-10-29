@@ -27,5 +27,9 @@ services:
       # Mapping port 8282 of the host to port 80 of the container
       - "8282:80"
 volumes:
-  wallos_db: {}
-  wallos_logos: {}
+  wallos_db:
+    name: wallos_db
+    driver: local
+  wallos_logos:
+    name: wallos_logos
+    driver: local

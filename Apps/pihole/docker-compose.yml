@@ -10,7 +10,7 @@ services:
     # Name of the container
     container_name: big-bear-pihole
     # Image to be used for the container
-    image: pihole/pihole:2025.08.0
+    image: pihole/pihole:2025.10.3
     # Container restart policy
     restart: unless-stopped
     # Environment variables
@@ -41,5 +41,9 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  pihole_etc: {}
-  pihole_dnsmasq.d: {}
+  pihole_dnsmasq.d:
+    name: pihole_dnsmasq.d
+    driver: local
+  pihole_etc:
+    name: pihole_etc
+    driver: local

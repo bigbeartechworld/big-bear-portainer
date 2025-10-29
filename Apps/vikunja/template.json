@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 199,
-            "type": 3,
+      "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
       "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
@@ -14,7 +11,14 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/vikunja/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "VIKUNJA_DATABASE_HOST", "label": "VIKUNJA_DATABASE_HOST", "description": "Database host", "default": ""},
+        {"name": "VIKUNJA_DATABASE_PASSWORD", "label": "VIKUNJA_DATABASE_PASSWORD", "description": "Database password", "default": ""},
+        {"name": "VIKUNJA_DATABASE_TYPE", "label": "VIKUNJA_DATABASE_TYPE", "description": "Database type", "default": ""},
+        {"name": "VIKUNJA_DATABASE_USER", "label": "VIKUNJA_DATABASE_USER", "description": "Database user", "default": ""},
+        {"name": "VIKUNJA_DATABASE_DATABASE", "label": "VIKUNJA_DATABASE_DATABASE", "description": "Database name", "default": ""},
+        {"name": "VIKUNJA_SERVICE_JWTSECRET", "label": "VIKUNJA_SERVICE_JWTSECRET", "description": "JWT secret", "default": ""},
+        {"name": "VIKUNJA_SERVICE_FRONTENDURL", "label": "VIKUNJA_SERVICE_FRONTENDURL", "description": "Frontend URL", "default": ""}
+      ]
+    }]}

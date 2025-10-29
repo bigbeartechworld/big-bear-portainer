@@ -22,4 +22,6 @@ services:
       # Mapping port 7575 of the host to port 9000 of the container
       - "9925:9000"
 volumes:
-  mealie_data: {}
+  mealie_data:
+    name: mealie_data
+    driver: local

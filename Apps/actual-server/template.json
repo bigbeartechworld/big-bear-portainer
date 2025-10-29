@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 5,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 4,
+      "type": 3,
       "title": "Actual Budget",
       "name": "actual-server",
       "description": "Actual Budget is a super fast and privacy-focused app for managing your finances. At its heart is the well proven and much loved Envelope Budgeting methodology. You own your data and can do whatever you want with it. Featuring multi-device sync, optional end-to-end encryption and so much more.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/actual-server/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

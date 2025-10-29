@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 30,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 29,
+      "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
       "description": "Self-hosted tool to edit, validate, and get suggestions for docker-compose.yml files.",
@@ -14,7 +11,8 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/composetoolbox/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Node environment (should be 'production' for deployment)", "default": ""}
+      ]
+    }]}

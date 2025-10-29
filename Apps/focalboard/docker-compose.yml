@@ -21,4 +21,6 @@ services:
     volumes:
       - focalboard_data:/opt/focalboard/data
 volumes:
-  focalboard_data: {}
+  focalboard_data:
+    name: focalboard_data
+    driver: local

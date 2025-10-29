@@ -21,4 +21,6 @@ services:
     volumes:
       - convertx_data:/app/data
 volumes:
-  convertx_data: {}
+  convertx_data:
+    name: convertx_data
+    driver: local

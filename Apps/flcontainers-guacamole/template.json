@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 56,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 55,
+      "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
       "description": "A Docker Container for Apache Guacamole, a client-less remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH over HTML5.",
@@ -14,7 +11,9 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/flcontainers-guacamole/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "User Timezone", "default": ""},
+        {"name": "EXTENSIONS", "label": "EXTENSIONS", "description": "Extensions to be enabled", "default": ""}
+      ]
+    }]}

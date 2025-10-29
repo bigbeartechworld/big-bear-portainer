@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 171,
-            "type": 3,
+      "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
       "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",
@@ -14,7 +11,8 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/rocket-chat/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "MONGO_OPLOG_URL", "label": "MONGO_OPLOG_URL", "description": "Database URL: mongodb://db:27017/local", "default": ""}
+      ]
+    }]}

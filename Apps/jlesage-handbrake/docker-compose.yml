@@ -8,12 +8,20 @@ services:
     environment:
       - VNC_PASSWORD=casaos # Set the VNC password to 'casaos'
     volumes:
-      - jlesage_handbrake_config:/config
-      - jlesage_handbrake_storage:/storage
-      - jlesage_handbrake_watch:/watch
-      - jlesage_handbrake_output:/output
+      - jlesage-handbrake_config:/config:rw
+      - jlesage-handbrake_storage:/storage:ro
+      - jlesage-handbrake_watch:/watch:rw
+      - jlesage-handbrake_output:/output:rw
 volumes:
-  jlesage_handbrake_config: {}
-  jlesage_handbrake_storage: {}
-  jlesage_handbrake_watch: {}
-  jlesage_handbrake_output: {}
+  jlesage-handbrake_config:
+    name: jlesage-handbrake_config
+    driver: local
+  jlesage-handbrake_output:
+    name: jlesage-handbrake_output
+    driver: local
+  jlesage-handbrake_storage:
+    name: jlesage-handbrake_storage
+    driver: local
+  jlesage-handbrake_watch:
+    name: jlesage-handbrake_watch
+    driver: local
