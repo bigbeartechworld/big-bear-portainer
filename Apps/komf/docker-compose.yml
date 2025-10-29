@@ -40,4 +40,6 @@ networks:
   big_bear_komf_network:
     driver: bridge
 volumes:
-  komf_config: {}
+  komf_config:
+    name: komf_config
+    driver: local

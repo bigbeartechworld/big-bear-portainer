@@ -26,5 +26,9 @@ services:
     ports:
       - 5001:5001
 volumes:
-  dockge_data: {}
-  dockge_stacks: {}
+  dockge_data:
+    name: dockge_data
+    driver: local
+  dockge_stacks:
+    name: dockge_stacks
+    driver: local

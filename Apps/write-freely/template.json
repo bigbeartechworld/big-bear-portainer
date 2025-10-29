@@ -1,20 +1,20 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 210,
-            "type": 3,
+      "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
       "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
       "note": "Markdown-based publishing platform.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/write-freely/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/write-freely/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/write-freely/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Container Environment Variable: TZ", "default": ""},
+        {"name": "PUID", "label": "PUID", "description": "Container Environment Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Environment Variable: PGID", "default": ""}
+      ]
+    }]}

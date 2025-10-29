@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 184,
-            "type": 3,
+      "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
       "description": "Zero config VPN. Installs on any device in minutes, manages firewall rules for you, and works from anywhere.",
@@ -16,16 +13,14 @@
         "stackfile": "Apps/tailscale/docker-compose.yml"
       },
       "env": [
-    {"name": "TS_SERVE_CONFIG", "label": "TS_SERVE_CONFIG", "description": "Environment variable for TS_SERVE_CONFIG", "default": ""},
-    {"name": "TS_ACCEPT_DNS", "label": "TS_ACCEPT_DNS", "description": "Environment variable for TS_ACCEPT_DNS", "default": "false"},
-    {"name": "TS_AUTH_ONCE", "label": "TS_AUTH_ONCE", "description": "Environment variable for TS_AUTH_ONCE", "default": "false"},
-    {"name": "TS_AUTHKEY", "label": "TS_AUTHKEY", "description": "Environment variable for TS_AUTHKEY", "default": ""},
-    {"name": "TS_HOSTNAME", "label": "TS_HOSTNAME", "description": "Environment variable for TS_HOSTNAME", "default": ""},
-    {"name": "TS_ROUTES", "label": "TS_ROUTES", "description": "Environment variable for TS_ROUTES", "default": ""},
-    {"name": "TS_EXTRA_ARGS", "label": "TS_EXTRA_ARGS", "description": "Environment variable for TS_EXTRA_ARGS", "default": ""},
-    {"name": "TS_USERSPACE", "label": "TS_USERSPACE", "description": "Environment variable for TS_USERSPACE", "default": "true"},
-    {"name": "TS_STATE_DIR", "label": "TS_STATE_DIR", "description": "Environment variable for TS_STATE_DIR", "default": "/var/lib/tailscale"}
+        {"name": "TS_SERVE_CONFIG", "label": "TS_SERVE_CONFIG", "description": "Path to serve configuration file for persistent drive shares (file will be created if it doesn't exist)", "default": "/config/serve-config.json"},
+        {"name": "TS_ACCEPT_DNS", "label": "TS_ACCEPT_DNS", "description": "Accept DNS configuration from Tailscale", "default": "false"},
+        {"name": "TS_AUTH_ONCE", "label": "TS_AUTH_ONCE", "description": "Only authenticate once, then reuse credentials", "default": "false"},
+        {"name": "TS_AUTHKEY", "label": "TS_AUTHKEY", "description": "Tailscale authentication key (get from admin console)", "default": ""},
+        {"name": "TS_HOSTNAME", "label": "TS_HOSTNAME", "description": "Hostname for this Tailscale node", "default": ""},
+        {"name": "TS_ROUTES", "label": "TS_ROUTES", "description": "Subnet routes to advertise (comma-separated)", "default": ""},
+        {"name": "TS_EXTRA_ARGS", "label": "TS_EXTRA_ARGS", "description": "Extra arguments to pass to 'tailscale up'", "default": ""},
+        {"name": "TS_USERSPACE", "label": "TS_USERSPACE", "description": "Run with userspace networking", "default": "true"},
+        {"name": "TS_STATE_DIR", "label": "TS_STATE_DIR", "description": "Directory to store Tailscale state", "default": "/var/lib/tailscale"}
       ]
-    }
-  ]
-}
+    }]}

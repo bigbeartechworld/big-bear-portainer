@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 150,
-            "type": 3,
+      "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
       "description": "Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/pingvin-share/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

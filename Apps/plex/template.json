@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 156,
-            "type": 3,
+      "type": 3,
       "title": "Plex",
       "name": "plex",
       "description": "Stream Movies & TV Shows",
@@ -14,14 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/plex/docker-compose.yml"
-      },
-      "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "Etc/UTC"},
-    {"name": "VERSION", "label": "VERSION", "description": "Environment variable for VERSION", "default": "docker"},
-    {"name": "PLEX_CLAIM", "label": "PLEX_CLAIM", "description": "Environment variable for PLEX_CLAIM", "default": ""}
-      ]
-    }
-  ]
-}
+      }
+    }]}

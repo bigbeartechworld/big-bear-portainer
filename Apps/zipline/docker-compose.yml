@@ -58,6 +58,12 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  zipline_uploads: {}
-  zipline_public: {}
-  zipline_postgres: {}
+  zipline_postgres:
+    name: zipline_postgres
+    driver: local
+  zipline_public:
+    name: zipline_public
+    driver: local
+  zipline_uploads:
+    name: zipline_uploads
+    driver: local

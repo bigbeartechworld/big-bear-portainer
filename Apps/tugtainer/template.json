@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 191,
-            "type": 3,
+      "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
       "description": "Tugtainer is a self-hosted app for automating updates of your docker containers with a web UI. It's like watchtower but with more control and a user-friendly interface.",
@@ -14,7 +11,13 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/tugtainer/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""},
+        {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Log level (critical, error, warning, info, debug, trace)", "default": ""},
+        {"name": "JWT_SECRET_KEY", "label": "JWT_SECRET_KEY", "description": "JWT secret key for authentication", "default": ""},
+        {"name": "ACCESS_TOKEN_LIFETIME_MIN", "label": "ACCESS_TOKEN_LIFETIME_MIN", "description": "Access token lifetime in minutes", "default": ""},
+        {"name": "REFRESH_TOKEN_LIFETIME_MIN", "label": "REFRESH_TOKEN_LIFETIME_MIN", "description": "Refresh token lifetime in minutes", "default": ""},
+        {"name": "HTTPS", "label": "HTTPS", "description": "Enable HTTPS (true/false)", "default": ""}
+      ]
+    }]}

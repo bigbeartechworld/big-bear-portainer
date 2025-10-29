@@ -25,7 +25,7 @@ services:
       - REFRESH_INTERVAL= # Optional
     volumes:
       - kopia_config:/config
-      - kopia_home:/backups/home # Optional
+      - kopia_home:/backups/home:ro # Optional
       - /var/lib/docker/volumes:/backups/docker:ro # Optional
       - kopia_repository:/repository # Optional
       - /tmp:/tmp:shared # Optional
@@ -38,6 +38,12 @@ services:
     cap_add:
       - SYS_ADMIN # Optional
 volumes:
-  kopia_config: {}
-  kopia_home: {}
-  kopia_repository: {}
+  kopia_config:
+    name: kopia_config
+    driver: local
+  kopia_home:
+    name: kopia_home
+    driver: local
+  kopia_repository:
+    name: kopia_repository
+    driver: local

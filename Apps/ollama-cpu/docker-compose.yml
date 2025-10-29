@@ -18,7 +18,7 @@ services:
       - PORT=11434
     # Volumes to be mounted to the container
     volumes:
-      - ollama_cpu_.ollama:/root/.ollama
+      - ollama-cpu_.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
@@ -28,4 +28,6 @@ services:
       - /dev/kfd
       - /dev/dri
 volumes:
-  ollama_cpu_.ollama: {}
+  ollama-cpu_.ollama:
+    name: ollama-cpu_.ollama
+    driver: local

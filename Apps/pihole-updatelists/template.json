@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 149,
-            "type": 3,
+      "type": 3,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
       "description": "The Pi-hole® is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software. This is a fork of the Pi-hole® application that adds the ability to update the lists of blocked domains and regexes.",
@@ -16,8 +13,9 @@
         "stackfile": "Apps/pihole-updatelists/docker-compose.yml"
       },
       "env": [
-    {"name": "https://v.firebog.net/hosts/lists.php?type", "label": "https://v.firebog.net/hosts/lists.php?type", "description": "Environment variable for https://v.firebog.net/hosts/lists.php?type", "default": "tick"}
+        {"name": "TZ", "label": "TZ", "description": "Container Environment: TZ", "default": ""},
+        {"name": "FTLCONF_webserver_api_password", "label": "FTLCONF_webserver_api_password", "description": "Container Environment: FTLCONF_webserver_api_password", "default": ""},
+        {"name": "BLOCKLISTS_URL", "label": "BLOCKLISTS_URL", "description": "Container Environment: BLOCKLISTS_URL", "default": ""},
+        {"name": "REGEX_BLACKLIST_URL", "label": "REGEX_BLACKLIST_URL", "description": "Container Environment: REGEX_BLACKLIST_URL", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

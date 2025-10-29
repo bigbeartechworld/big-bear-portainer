@@ -32,4 +32,6 @@ services:
     ports:
       - "8080:8080"
 volumes:
-  beaverhabits_.user: {}
+  beaverhabits_.user:
+    name: beaverhabits_.user
+    driver: local

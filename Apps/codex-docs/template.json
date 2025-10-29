@@ -1,20 +1,15 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 29,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 28,
+      "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
       "description": "CodeX Docs is a free docs application. It's based on Editor.js ecosystem which gives all modern opportunities for working with content.",
       "note": "CodeX Docs",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/codex-docs/logo.jpg",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/codex-docs/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/codex-docs/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

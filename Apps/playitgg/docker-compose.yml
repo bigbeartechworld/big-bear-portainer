@@ -18,4 +18,6 @@ services:
       # Mounting the local playitgg directory to /secrets inside the container
       - playitgg_secrets:/secrets
 volumes:
-  playitgg_secrets: {}
+  playitgg_secrets:
+    name: playitgg_secrets
+    driver: local

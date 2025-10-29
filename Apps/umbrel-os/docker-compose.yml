@@ -20,10 +20,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID directory to /data inside the container
-      - umbrel_os_data:/data
+      - umbrel-os_data:/data
       # Mounting docker.sock to allow docker management via Umbrel
       - /var/run/docker.sock:/var/run/docker.sock
     # Stop grace period for the container
     stop_grace_period: 1m
 volumes:
-  umbrel_os_data: {}
+  umbrel-os_data:
+    name: umbrel-os_data
+    driver: local
