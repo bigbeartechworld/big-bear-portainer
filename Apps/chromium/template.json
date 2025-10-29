@@ -13,7 +13,9 @@
         "stackfile": "Apps/chromium/docker-compose.yml"
       },
       "env": [
-        {"name": "VNC_PW", "label": "VNC_PW", "description": "VNC Password", "default": ""},
-        {"name": "LAUNCH_URL", "label": "LAUNCH_URL", "description": "Launch URL", "default": ""}
+        {"name": "PUID", "label": "PUID", "description": "User ID", "default": "1000"},
+        {"name": "PGID", "label": "PGID", "description": "Group ID", "default": "1000"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": "Etc/UTC"},
+        {"name": "CHROME_CLI", "label": "CHROME_CLI", "description": "Default URL to open", "default": "https://community.bigbeartechworld.com/"}
       ]
     }]}
