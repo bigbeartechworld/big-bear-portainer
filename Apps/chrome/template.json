@@ -14,6 +14,6 @@
       },
       "env": [
         {"name": "VNC_PW", "label": "VNC_PW", "description": "VNC Password", "default": ""},
-        {"name": "LAUNCH_URL", "label": "LAUNCH_URL", "description": "Launch URL", "default": ""}
+        {"name": "LAUNCH_URL", "label": "LAUNCH_URL", "description": "Launch URL", "default": "https://community.bigbeartechworld.com/"}
       ]
     }]}
