@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 128,
-            "type": 3,
+      "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
       "description": "Self-hosted database for synchronizing Obsidian vaults.",
@@ -14,11 +11,5 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/obsidian-livesync/docker-compose.yml"
-      },
-      "env": [
-    {"name": "COUCHDB_USER", "label": "COUCHDB_USER", "description": "Environment variable for COUCHDB_USER", "default": "casaos"},
-    {"name": "COUCHDB_PASSWORD", "label": "COUCHDB_PASSWORD", "description": "Environment variable for COUCHDB_PASSWORD", "default": "casaos"}
-      ]
-    }
-  ]
-}
+      }
+    }]}

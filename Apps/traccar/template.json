@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 188,
-            "type": 3,
+      "type": 3,
       "title": "Traccar",
       "name": "traccar",
       "description": "Traccar GPS Tracking System in Docker image.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/traccar/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

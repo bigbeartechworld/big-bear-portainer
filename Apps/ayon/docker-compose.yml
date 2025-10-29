@@ -75,7 +75,15 @@ networks:
   big-bear-ayon-network:
     driver: bridge
 volumes:
-  ayon_addons: {}
-  ayon_storage: {}
-  ayon_postgres: {}
-  ayon_redis: {}
+  ayon_addons:
+    name: ayon_addons
+    driver: local
+  ayon_postgres:
+    name: ayon_postgres
+    driver: local
+  ayon_redis:
+    name: ayon_redis
+    driver: local
+  ayon_storage:
+    name: ayon_storage
+    driver: local

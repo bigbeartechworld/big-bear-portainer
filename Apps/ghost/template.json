@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 60,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 59,
+      "type": 3,
       "title": "Ghost",
       "name": "ghost",
       "description": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
@@ -14,7 +11,13 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ghost/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "database__client", "label": "database__client", "description": "Database client", "default": ""},
+        {"name": "database__connection__host", "label": "database__connection__host", "description": "Database host", "default": ""},
+        {"name": "database__connection__user", "label": "database__connection__user", "description": "Database user", "default": ""},
+        {"name": "database__connection__password", "label": "database__connection__password", "description": "Database password", "default": ""},
+        {"name": "database__connection__database", "label": "database__connection__database", "description": "Database name", "default": ""},
+        {"name": "url", "label": "url", "description": "Ghost URL", "default": ""}
+      ]
+    }]}

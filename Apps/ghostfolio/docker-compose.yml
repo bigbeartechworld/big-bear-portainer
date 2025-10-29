@@ -7,7 +7,7 @@ services:
   # Service definition for the Ghostfolio application
   big-bear-ghostfolio:
     container_name: big-bear-ghostfolio # Unique name for the container instance
-    image: ghostfolio/ghostfolio:2.210.1 # Docker image to use
+    image: ghostfolio/ghostfolio:2.211.0 # Docker image to use
     restart: unless-stopped # Policy to restart the container unless manually stopped
     environment: # Environment variables for configuration
       NODE_ENV: production # Node environment setting (production, development, etc.)
@@ -74,5 +74,9 @@ networks:
   big_bear_ghostfolio_network:
     driver: bridge # Uses a bridge network for container communication
 volumes:
-  ghostfolio_data_db: {}
-  ghostfolio_data_redis: {}
+  ghostfolio_data_db:
+    name: ghostfolio_data_db
+    driver: local
+  ghostfolio_data_redis:
+    name: ghostfolio_data_redis
+    driver: local

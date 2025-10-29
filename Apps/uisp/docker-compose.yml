@@ -27,4 +27,6 @@ services:
       # Mapping port 10443 of the host to port 443 of the container
       - "10443:443"
 volumes:
-  uisp_config: {}
+  uisp_config:
+    name: uisp_config
+    driver: local

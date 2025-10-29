@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 45,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 44,
+      "type": 3,
       "title": "EJBCA Community",
       "name": "ejbca-ce",
       "description": "The open-source public key infrastructure (PKI) and certificate authority (CA) software EJBCA is one of the longest running CA software projects. EJBCA covers all your needs - from certificate enrollment, via certificate management, to certificate validation.",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/ejbca-ce/docker-compose.yml"
       },
       "env": [
-    {"name": "TLS_SETUP_ENABLED", "label": "TLS_SETUP_ENABLED", "description": "Environment variable for TLS_SETUP_ENABLED", "default": "simple"}
+        {"name": "TLS_SETUP_ENABLED", "label": "TLS_SETUP_ENABLED", "description": "Controls Admin UI access", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

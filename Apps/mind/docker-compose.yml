@@ -12,4 +12,6 @@ services:
     ports:
       - "8080:8080"
 volumes:
-  mind_db: {}
+  mind_db:
+    name: mind_db
+    driver: local

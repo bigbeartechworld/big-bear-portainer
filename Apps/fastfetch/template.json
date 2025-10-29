@@ -1,20 +1,15 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 51,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 50,
+      "type": 3,
       "title": "Fastfetch",
       "name": "fastfetch",
       "description": "Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily. It is written mainly in C, with performance and customizability in mind. Currently, Linux, Android, FreeBSD, macOS, SunOS and Windows 7+ are supported. https://github.com/fastfetch-cli/fastfetch",
       "note": "Fastfetch is a neofetch-like tool.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/fastfetch/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/fastfetch/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/fastfetch/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

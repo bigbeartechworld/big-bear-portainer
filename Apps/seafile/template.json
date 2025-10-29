@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 175,
-            "type": 3,
+      "type": 3,
       "title": "seafile",
       "name": "seafile",
       "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance. Seafile's built-in collaborative document SeaDoc, make it easy for collaborative writing and publishing documents.",
@@ -16,17 +13,12 @@
         "stackfile": "Apps/seafile/docker-compose.yml"
       },
       "env": [
-    {"name": "DB_HOST", "label": "DB_HOST", "description": "Environment variable for DB_HOST", "default": "big-bear-seafile-db"},
-    {"name": "DB_ROOT_PASSWD", "label": "DB_ROOT_PASSWD", "description": "Environment variable for DB_ROOT_PASSWD", "default": "seafilepassword"},
-    {"name": "TIME_ZONE", "label": "TIME_ZONE", "description": "Environment variable for TIME_ZONE", "default": "Etc/UTC"},
-    {"name": "SEAFILE_ADMIN_EMAIL", "label": "SEAFILE_ADMIN_EMAIL", "description": "Environment variable for SEAFILE_ADMIN_EMAIL", "default": "admin@example.com"},
-    {"name": "SEAFILE_ADMIN_PASSWORD", "label": "SEAFILE_ADMIN_PASSWORD", "description": "Environment variable for SEAFILE_ADMIN_PASSWORD", "default": "asecret"},
-    {"name": "SEAFILE_SERVER_LETSENCRYPT", "label": "SEAFILE_SERVER_LETSENCRYPT", "description": "Environment variable for SEAFILE_SERVER_LETSENCRYPT", "default": "false"},
-    {"name": "SEAFILE_SERVER_HOSTNAME", "label": "SEAFILE_SERVER_HOSTNAME", "description": "Environment variable for SEAFILE_SERVER_HOSTNAME", "default": "docs.seafile.com"},
-    {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Environment variable for MYSQL_ROOT_PASSWORD", "default": "seafilepassword"},
-    {"name": "MYSQL_LOG_CONSOLE", "label": "MYSQL_LOG_CONSOLE", "description": "Environment variable for MYSQL_LOG_CONSOLE", "default": "true"},
-    {"name": "MARIADB_AUTO_UPGRADE", "label": "MARIADB_AUTO_UPGRADE", "description": "Environment variable for MARIADB_AUTO_UPGRADE", "default": "1"}
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Database host", "default": ""},
+        {"name": "DB_ROOT_PASSWD", "label": "DB_ROOT_PASSWD", "description": "Database root password", "default": ""},
+        {"name": "TIME_ZONE", "label": "TIME_ZONE", "description": "Timezone", "default": ""},
+        {"name": "SEAFILE_ADMIN_EMAIL", "label": "SEAFILE_ADMIN_EMAIL", "description": "Seafile admin email", "default": ""},
+        {"name": "SEAFILE_ADMIN_PASSWORD", "label": "SEAFILE_ADMIN_PASSWORD", "description": "Seafile admin password", "default": ""},
+        {"name": "SEAFILE_SERVER_LETSENCRYPT", "label": "SEAFILE_SERVER_LETSENCRYPT", "description": "Seafile server Let's Encrypt", "default": ""},
+        {"name": "SEAFILE_SERVER_HOSTNAME", "label": "SEAFILE_SERVER_HOSTNAME", "description": "Seafile server hostname", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

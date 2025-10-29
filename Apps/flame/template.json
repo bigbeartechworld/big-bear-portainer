@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 55,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 54,
+      "type": 3,
       "title": "Flame",
       "name": "flame",
       "description": "Flame is a self-hosted startpage for your server. Its design is heavily inspired by SUI. Flame is user-friendly and easy to set up. With its built-in editors, users can quickly establish their own application hub without any file editing.",
@@ -14,7 +11,8 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/flame/docker-compose.yml"
-      }
-    }
-  ]
-}
+      },
+      "env": [
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Specifies the password to be used by the Flame application", "default": ""}
+      ]
+    }]}
