@@ -55,4 +55,6 @@ networks:
   big_bear_rally_network:
     driver: bridge # Uses bridge network driver
 volumes:
-  rallly_postgresql: {}
+  rallly_postgresql:
+    name: rallly_postgresql
+    driver: local

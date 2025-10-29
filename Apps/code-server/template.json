@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 28,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 27,
+      "type": 3,
       "title": "Code Server",
       "name": "code-server",
       "description": "Run VS Code on any machine anywhere and access it in the browser.",
@@ -16,13 +13,8 @@
         "stackfile": "Apps/code-server/docker-compose.yml"
       },
       "env": [
-    {"name": "PUID", "label": "PUID", "description": "Environment variable for PUID", "default": "1000"},
-    {"name": "PGID", "label": "PGID", "description": "Environment variable for PGID", "default": "1000"},
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"},
-    {"name": "PASSWORD", "label": "PASSWORD", "description": "Environment variable for PASSWORD", "default": "my_password"},
-    {"name": "SUDO_PASSWORD", "label": "SUDO_PASSWORD", "description": "Environment variable for SUDO_PASSWORD", "default": "sudo_my_password"},
-    {"name": "DEFAULT_WORKSPACE", "label": "DEFAULT_WORKSPACE", "description": "Environment variable for DEFAULT_WORKSPACE", "default": "/config/workspace"}
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Password to access code-server", "default": ""},
+        {"name": "PUID", "label": "PUID", "description": "User ID under which code-server will run", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Group ID under which code-server will run", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

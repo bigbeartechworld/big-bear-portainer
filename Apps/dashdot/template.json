@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
-      "id": 35,
-            "type": 3,
+{"version": "3", "templates": [    {
+      "id": 34,
+      "type": 3,
       "title": "Dashdot",
       "name": "dashdot",
       "description": "About A simple, modern server dashboard, primarily used by smaller private servers.",
@@ -15,6 +12,4 @@
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/dashdot/docker-compose.yml"
       }
-    }
-  ]
-}
+    }]}

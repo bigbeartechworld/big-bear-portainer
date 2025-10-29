@@ -1,9 +1,6 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 106,
-            "type": 3,
+      "type": 3,
       "title": "MIND",
       "name": "mind",
       "description": "A simple self hosted reminder application that can send push notifications to your device. Set the reminder and forget about it!",
@@ -16,8 +13,6 @@
         "stackfile": "Apps/mind/docker-compose.yml"
       },
       "env": [
-    {"name": "TZ", "label": "TZ", "description": "Environment variable for TZ", "default": "UTC"}
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

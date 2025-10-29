@@ -95,6 +95,12 @@ networks:
   nextcloud_network:
     driver: bridge
 volumes:
-  nextcloud_html: {}
-  nextcloud_pgdata: {}
-  nextcloud_redis: {}
+  nextcloud_html:
+    name: nextcloud_html
+    driver: local
+  nextcloud_pgdata:
+    name: nextcloud_pgdata
+    driver: local
+  nextcloud_redis:
+    name: nextcloud_redis
+    driver: local

@@ -102,4 +102,6 @@ services:
     # Name of the container
     container_name: "big-bear-microbin"
 volumes:
-  microbin_data: {}
+  microbin_data:
+    name: microbin_data
+    driver: local

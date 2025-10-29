@@ -36,4 +36,6 @@ services:
     ports:
       - "7681:7681"
 volumes:
-  btop_config: {}
+  btop_config:
+    name: btop_config
+    driver: local

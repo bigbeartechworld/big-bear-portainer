@@ -1,24 +1,19 @@
-{
-  "version": "3",
-  "templates": [
-    {
+{"version": "3", "templates": [    {
       "id": 124,
-            "type": 3,
+      "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
       "description": "Note Mark Aio is a self-hosted note taking app that allows you to create, organize, and share notes. It's a fork of the popular note-mark app with a focus on simplicity and ease of use.",
       "note": "Note Mark Aio",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/note-mark-aio/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/note-mark-aio/logo.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/note-mark-aio/docker-compose.yml"
       },
       "env": [
-    {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Environment variable for JWT_SECRET", "default": "MGZiMzlkM2EtNmYxNC00NzNlLWI2YjItYTViY2M0Mzg0NjNl"},
-    {"name": "CORS_ORIGINS", "label": "CORS_ORIGINS", "description": "Environment variable for CORS_ORIGINS", "default": "http://example.com:8000"}
+        {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "JWT Secret", "default": ""},
+        {"name": "CORS_ORIGINS", "label": "CORS_ORIGINS", "description": "CORS Origins", "default": ""}
       ]
-    }
-  ]
-}
+    }]}

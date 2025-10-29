@@ -28,6 +28,12 @@ services:
       # Mapping port 7575 of the host to port 7575 of the container
       - "7575:7575"
 volumes:
-  homarr_configs: {}
-  homarr_icons: {}
-  homarr_data: {}
+  homarr_configs:
+    name: homarr_configs
+    driver: local
+  homarr_data:
+    name: homarr_data
+    driver: local
+  homarr_icons:
+    name: homarr_icons
+    driver: local

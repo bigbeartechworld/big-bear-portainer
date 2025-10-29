@@ -10,17 +10,14 @@ services:
     # Name of the container
     container_name: big-bear-music-assistant-server
     # Image to be used for the container
-    image: ghcr.io/music-assistant/server:2.6.0
+    image: ghcr.io/music-assistant/server:2.6.1
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - |-
-        music_assistant_type
-        source
-        target: bind
-         /DATA/AppData/$AppID/data
-         /data
+      - type: bind
+        source: music-assistant_data
+        target: /data
     # Network mode for the container
     network_mode: host
     # Security options for container runtime
@@ -33,8 +30,6 @@ services:
       - SYS_ADMIN
       - DAC_READ_SEARCH
 volumes:
-  ? |-
-    music_assistant_type
-    source
-    target
-  : {}
+  music-assistant_data:
+    name: music-assistant_data
+    driver: local

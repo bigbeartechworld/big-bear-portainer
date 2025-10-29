@@ -38,5 +38,9 @@ services:
       # Tell Kasm where the port number
       - KASM_PORT=443
 volumes:
-  kasm_opt: {}
-  kasm_profiles: {}
+  kasm_opt:
+    name: kasm_opt
+    driver: local
+  kasm_profiles:
+    name: kasm_profiles
+    driver: local

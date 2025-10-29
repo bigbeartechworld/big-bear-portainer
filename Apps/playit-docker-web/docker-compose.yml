@@ -20,6 +20,8 @@ services:
       - WEBUI_PORT=8008
     # Volumes to be mounted to the container
     volumes:
-      - playit_docker_web_config:/config
+      - playit-docker-web_config:/config
 volumes:
-  playit_docker_web_config: {}
+  playit-docker-web_config:
+    name: playit-docker-web_config
+    driver: local

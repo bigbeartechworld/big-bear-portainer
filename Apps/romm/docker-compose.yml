@@ -31,7 +31,7 @@ services:
       - ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB=true # Enable scheduled update of Switch TitleDB database
     volumes:
       - "romm_resources:/romm/resources" # [Optional] Path where roms metadata (covers) are stored
-      - "romm_redis_data:/redis-data" # Cached data for background tasks
+      - "romm_redis-data:/redis-data" # Cached data for background tasks
       - "romm_library:/romm/library" # Path to the roms library
       - "romm_assets:/romm/assets" # Uploaded saves, states, etc.
       - "romm_config:/romm/config" # [Optional] Path where config is stored
@@ -64,10 +64,24 @@ networks:
   big-bear-romm-network:
     driver: bridge
 volumes:
-  romm_resources: {}
-  romm_redis_data: {}
-  romm_library: {}
-  romm_assets: {}
-  romm_config: {}
-  romm_logs: {}
-  romm_mysql: {}
+  romm_assets:
+    name: romm_assets
+    driver: local
+  romm_config:
+    name: romm_config
+    driver: local
+  romm_library:
+    name: romm_library
+    driver: local
+  romm_logs:
+    name: romm_logs
+    driver: local
+  romm_mysql:
+    name: romm_mysql
+    driver: local
+  romm_redis-data:
+    name: romm_redis-data
+    driver: local
+  romm_resources:
+    name: romm_resources
+    driver: local

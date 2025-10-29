@@ -24,7 +24,15 @@ services:
       # Mapping port 8080 of the host to port 80 of the container
       - "8080:80"
 volumes:
-  audiobookshelf_media_data_books_spoken: {}
-  audiobookshelf_media_data_podcasts: {}
-  audiobookshelf_data_config: {}
-  audiobookshelf_data_metadata: {}
+  audiobookshelf_data_config:
+    name: audiobookshelf_data_config
+    driver: local
+  audiobookshelf_data_metadata:
+    name: audiobookshelf_data_metadata
+    driver: local
+  audiobookshelf_media_data_books_spoken:
+    name: audiobookshelf_media_data_books_spoken
+    driver: local
+  audiobookshelf_media_data_podcasts:
+    name: audiobookshelf_media_data_podcasts
+    driver: local

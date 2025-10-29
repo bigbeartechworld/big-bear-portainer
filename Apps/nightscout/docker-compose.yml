@@ -60,10 +60,12 @@ services:
       - big-bear-nightscout-network
     # Volume mappings for the MongoDB container
     volumes:
-      - nightscout_mongo_data:/data/db
+      - nightscout_mongo-data:/data/db:cached
 # Network definitions
 networks:
   big-bear-nightscout-network:
     driver: bridge
 volumes:
-  nightscout_mongo_data: {}
+  nightscout_mongo-data:
+    name: nightscout_mongo-data
+    driver: local

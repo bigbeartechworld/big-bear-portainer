@@ -1,27 +1,28 @@
-# Name of the service configuration
-name: big-bear-node-red
-# Define the services for this configuration
+# Configuration for node-red setup
+
+# Application Name
+name: node-red
+
+# Services used in the application
 services:
+  # The `app` service for the node-red application
   app:
-    # Docker image for the service
-    image: nodered/node-red:4.1.1
-    # Use the host's network stack
-    network_mode: host
-    # Port mapping configurations
-    ports:
-      - target: 1880 # Container's port
-        published: "1880" # Host's port
-        protocol: tcp # Communication protocol
-    # Restart policy for the service
-    restart: always
-    # Volume configurations for persistent storage
-    volumes:
-      - "node_red_type\nsource\ntarget: bind \n /DATA/AppData/$AppID/data \n /data "
     # Name of the container
-    container_name: node-red-updated
+    container_name: node-red
+    # Docker image to be used
+    image: nodered/node-red:4.1.1
+    # Restart policy for the service
+    restart: unless-stopped
+    # Port mappings for the service
+    ports:
+      - "1880:1880"
+    # Network mode for the service
+    network_mode: bridge
+    # Volumes for the service HOST -> CONTAINER
+    volumes:
+      - node-red_data:/data
+
 volumes:
-  ? |-
-    node_red_type
-    source
-    target
-  : {}
+  node-red_data:
+    name: node-red_data
+    driver: local
