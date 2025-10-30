@@ -3,14 +3,25 @@
   "version": "1.0.0",
   "description": "Portainer templates from BigBearCasaOS",
   "scripts": {
-    "generate-readme": "bun .github/scripts/readme-generator.ts"
+    "generate-readme": "bun .github/scripts/readme-generator.ts",
+    "test": "jest"
   },
-  "keywords": ["portainer", "docker", "templates", "bigbear"],
+  "keywords": [
+    "portainer",
+    "docker",
+    "templates",
+    "bigbear"
+  ],
   "author": "BigBearTechWorld",
   "license": "MIT",
   "devDependencies": {
     "@types/bun": "^1.0.0",
+    "@types/jest": "^29.5.0",
     "@types/node": "^20.0.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.0.0"
   }
 }
