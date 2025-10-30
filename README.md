@@ -12,7 +12,7 @@ This app store is maintained entirely by BigBearTechWorld and the community thro
 
 ## 📊 Project Stats
 
-- **213+ Applications** available as Portainer stacks
+- **215+ Applications** available as Portainer stacks
 - **350+ Video Tutorials** in our [Homelab playlist](https://youtube.com/playlist?list=PL2RAscIdkpt-OdTGH-BP7j-j24oaeJZVC&si=psROAO4uJMmjumAF)
 - **Maintained & Updated** regularly from BigBearCasaOS
 - **Community Driven** by BigBearCommunity members and contributors
@@ -84,7 +84,6 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | btop | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/mD52bujMt68) |  |
 | Budibase | undefined | latest | BigBearCasaOS |  |  |
 | cAdvisor | undefined | latest | BigBearCasaOS |  |  |
-| Cal.com | undefined | latest | BigBearCasaOS |  |  |
 | Change Detection | undefined | latest | BigBearCasaOS |  |  |
 | Chatpad | undefined | latest | BigBearCasaOS |  |  |
 | chrome | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/jYm_Ih8VHAs) |  |
@@ -122,6 +121,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Flowise AI | undefined | latest | BigBearCasaOS |  |  |
 | Focalboard | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/fBDpqpN8sks) |  |
 | GemDigest Bot | undefined | latest | BigBearCasaOS |  |  |
+| GemDigest Bot | undefined | latest | BigBearCasaOS |  |  |
 | Genmon | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/b0_zuVVeIP4) |  |
 | Ghost | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/oJZK9vH4W4Y) |  |
 | Ghostfolio | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/CNe4-8Vyhos) |  |
@@ -137,6 +137,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Homarr v1 | undefined | latest | BigBearCasaOS |  | [Docs](https://homarr.dev/docs) |
 | Home Assistant | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/YnCpj5sND_A) |  |
 | HomeBridge | undefined | latest | BigBearCasaOS |  |  |
+| Homepage | undefined | latest | BigBearCasaOS |  |  |
 | Homepage | undefined | latest | BigBearCasaOS |  |  |
 | Homer | undefined | latest | BigBearCasaOS |  |  |
 | I Hate Money | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/aHz0Vh-KbXw) |  |
@@ -168,6 +169,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | LyriOn Music Server | undefined | latest | BigBearCasaOS |  |  |
 | Mailpit | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/2MY3S6csrVw) |  |
 | Matterbridge | undefined | latest | BigBearCasaOS |  |  |
+| Maybe Finance | undefined | latest | BigBearCasaOS |  |  |
 | Maybe Finance | undefined | latest | BigBearCasaOS |  |  |
 | Mealie | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/S4MfNLV2Uf4) |  |
 | Microbin | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/szabodanika/microbin) |
