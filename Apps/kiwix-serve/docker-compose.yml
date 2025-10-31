@@ -18,12 +18,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local kiwix-serve_zim directory to /data inside the container
-      - kiwix-serve_zim:/data
+      - big-bear-kiwix-serve_zim:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:8080"
 volumes:
-  kiwix-serve_zim:
-    name: kiwix-serve_zim
+  big-bear-kiwix-serve_zim:
+    name: big-bear-kiwix-serve_zim
     driver: local

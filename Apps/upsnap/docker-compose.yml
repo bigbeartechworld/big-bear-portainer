@@ -18,8 +18,8 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/pb_data directory to /app/pb_data inside the container
-      - upsnap_pb_data:/app/pb_data
+      - big-bear-upsnap_pb_data:/app/pb_data
 volumes:
-  upsnap_pb_data:
-    name: upsnap_pb_data
+  big-bear-upsnap_pb_data:
+    name: big-bear-upsnap_pb_data
     driver: local

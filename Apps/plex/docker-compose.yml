@@ -23,16 +23,16 @@ services:
     network_mode: host
     # Volumes to be mounted to the container
     volumes:
-      - plex_config:/config
-      - plex_tv:/tv
-      - plex_movies:/movies
+      - big-bear-plex_config:/config
+      - big-bear-plex_tv:/tv
+      - big-bear-plex_movies:/movies
 volumes:
-  plex_config:
-    name: plex_config
+  big-bear-plex_config:
+    name: big-bear-plex_config
     driver: local
-  plex_movies:
-    name: plex_movies
+  big-bear-plex_movies:
+    name: big-bear-plex_movies
     driver: local
-  plex_tv:
-    name: plex_tv
+  big-bear-plex_tv:
+    name: big-bear-plex_tv
     driver: local

@@ -37,8 +37,8 @@ services:
       - MYSQL_PASSWORD=some_password
     # Volume mapping for persistent storage
     volumes:
-      - guacamole_mysql:/var/lib/mysql
+      - big-bear-guacamole_mysql:/var/lib/mysql
 volumes:
-  guacamole_mysql:
-    name: guacamole_mysql
+  big-bear-guacamole_mysql:
+    name: big-bear-guacamole_mysql
     driver: local

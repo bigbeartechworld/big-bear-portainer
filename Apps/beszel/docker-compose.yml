@@ -15,12 +15,12 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - beszel_data:/beszel_data
+      - big-bear-beszel_data:/beszel_data
     # Ports mapping between host and container
     ports:
       # Mapping port 8090 of the host to port 8090 of the container
       - "8090:8090"
 volumes:
-  beszel_data:
-    name: beszel_data
+  big-bear-beszel_data:
+    name: big-bear-beszel_data
     driver: local

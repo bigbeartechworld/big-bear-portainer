@@ -13,13 +13,13 @@ services:
     container_name: uptime-kuma
     # Volume mappings: Maps host directory to container directory for persistent storage
     volumes:
-      - uptime-kuma_data:/app/data
+      - big-bear-uptime-kuma_data:/app/data
     # Port mapping: Maps a port on the host to a port on the container
     ports:
       - "3001:3001" # <Host Port>:<Container Port>
     # Restart policy: Always restart the container if it stops
     restart: always
 volumes:
-  uptime-kuma_data:
-    name: uptime-kuma_data
+  big-bear-uptime-kuma_data:
+    name: big-bear-uptime-kuma_data
     driver: local

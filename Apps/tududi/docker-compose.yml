@@ -22,12 +22,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the tududi database directory
-      - tududi_tududi_db:/usr/src/app/tududi_db
+      - big-bear-tududi_tududi_db:/usr/src/app/tududi_db
     # Ports mapping between host and container
     ports:
       # Mapping port 9292 of the host to port 9292 of the container
       - "9292:9292"
 volumes:
-  tududi_tududi_db:
-    name: tududi_tududi_db
+  big-bear-tududi_tududi_db:
+    name: big-bear-tududi_tududi_db
     driver: local

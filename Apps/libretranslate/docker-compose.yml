@@ -19,8 +19,8 @@ services:
       - LT_UPDATE_MODELS=true # Allows the LibreTranslate service to update its translation models on startup.
       - LT_LOAD_ONLY=en,fr,es,de,it,pt,ru,ja,zh # Restricts the languages loaded by LibreTranslate to these language codes.
     volumes:
-      - libretranslate_db:/app/db # Mounts a volume at /app/db within the container for persistent API key storage.
-      - libretranslate_.local:/home/libretranslate/.local:rw # Mounts a volume for storing and updating translation models.
+      - big-bear-libretranslate_db:/app/db # Mounts a volume at /app/db within the container for persistent API key storage.
+      - big-bear-libretranslate_.local:/home/libretranslate/.local:rw # Mounts a volume for storing and updating translation models.
     # Ports mapping between host and container
     ports:
       # Mapping port 5000 of the host to port 5000 of the container
@@ -31,9 +31,9 @@ services:
       # If the command exits with a 0 status, the service is considered healthy. Any other exit status indicates an unhealthy service.
       test: ["CMD-SHELL", "./venv/bin/python scripts/healthcheck.py"]
 volumes:
-  libretranslate_.local:
-    name: libretranslate_.local
+  big-bear-libretranslate_.local:
+    name: big-bear-libretranslate_.local
     driver: local
-  libretranslate_db:
-    name: libretranslate_db
+  big-bear-libretranslate_db:
+    name: big-bear-libretranslate_db
     driver: local

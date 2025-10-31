@@ -18,7 +18,7 @@ services:
       - 7580:80
     # Mount the nextcloud_html directory on the host to /var/www/html in the container
     volumes:
-      - nextcloud_html:/var/www/html
+      - big-bear-nextcloud_html:/var/www/html
     # Set environment variables for the container
     environment:
       - POSTGRES_HOST=db-nextcloud
@@ -47,7 +47,7 @@ services:
     image: postgres:14.2
     restart: unless-stopped
     volumes:
-      - nextcloud_pgdata:/var/lib/postgresql/data # Mount the PostgreSQL data directory
+      - big-bear-nextcloud_pgdata:/var/lib/postgresql/data # Mount the PostgreSQL data directory
     environment:
       - POSTGRES_PASSWORD=casaos # Set the PostgreSQL password
       - POSTGRES_USER=casaos # Set the PostgreSQL username
@@ -80,7 +80,7 @@ services:
     image: bigbeartechworld/big-bear-nextcloud-with-smbclient:0.0.11
     restart: unless-stopped
     volumes:
-      - nextcloud_html:/var/www/html
+      - big-bear-nextcloud_html:/var/www/html
     entrypoint: /cron.sh
     # Specify the dependencies
     depends_on:
@@ -95,12 +95,12 @@ networks:
   nextcloud_network:
     driver: bridge
 volumes:
-  nextcloud_html:
-    name: nextcloud_html
+  big-bear-nextcloud_html:
+    name: big-bear-nextcloud_html
     driver: local
-  nextcloud_pgdata:
-    name: nextcloud_pgdata
+  big-bear-nextcloud_pgdata:
+    name: big-bear-nextcloud_pgdata
     driver: local
-  nextcloud_redis:
-    name: nextcloud_redis
+  big-bear-nextcloud_redis:
+    name: big-bear-nextcloud_redis
     driver: local

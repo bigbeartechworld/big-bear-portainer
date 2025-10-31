@@ -26,20 +26,20 @@ services:
       - TS_STATE_DIR=/var/lib/tailscale
     # Volumes to be mounted to the container
     volumes:
-      - tailscale_state:/var/lib/tailscale
-      - tailscale_config:/config
-      - tailscale_shared:/shared
+      - big-bear-tailscale_state:/var/lib/tailscale
+      - big-bear-tailscale_config:/config
+      - big-bear-tailscale_shared:/shared
       - /dev/net/tun:/dev/net/tun
     cap_add:
       - net_admin
       - sys_module
 volumes:
-  tailscale_config:
-    name: tailscale_config
+  big-bear-tailscale_config:
+    name: big-bear-tailscale_config
     driver: local
-  tailscale_state:
-    name: tailscale_state
+  big-bear-tailscale_state:
+    name: big-bear-tailscale_state
     driver: local
-  tailscale_shared:
-    name: tailscale_shared
+  big-bear-tailscale_shared:
+    name: big-bear-tailscale_shared
     driver: local

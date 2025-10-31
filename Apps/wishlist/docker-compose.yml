@@ -29,15 +29,15 @@ services:
     # Volume mappings required for system integration
     # These mounts allow the container to interact with the host system
     volumes:
-      - wishlist_uploads:/usr/src/app/uploads
-      - wishlist_data:/usr/src/app/data
+      - big-bear-wishlist_uploads:/usr/src/app/uploads
+      - big-bear-wishlist_data:/usr/src/app/data
     # Map port 3280 on the host to port 3280 on the container
     ports:
       - "3280:3280"
 volumes:
-  wishlist_data:
-    name: wishlist_data
+  big-bear-wishlist_data:
+    name: big-bear-wishlist_data
     driver: local
-  wishlist_uploads:
-    name: wishlist_uploads
+  big-bear-wishlist_uploads:
+    name: big-bear-wishlist_uploads
     driver: local

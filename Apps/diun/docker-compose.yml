@@ -24,11 +24,11 @@ services:
       DIUN_PROVIDERS_DOCKER: "true"
     # Volumes to be mounted to the container
     volumes:
-      - diun_data:/data
+      - big-bear-diun_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
       - diun.enable=true
 volumes:
-  diun_data:
-    name: diun_data
+  big-bear-diun_data:
+    name: big-bear-diun_data
     driver: local

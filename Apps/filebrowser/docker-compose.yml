@@ -32,17 +32,17 @@ services:
       # Volume mapping for the media files from CasaOS
       - /DATA/media:/srv/media
       # Volume mapping for the database files for filebrowser
-      - filebrowser_data_db:/database
+      - big-bear-filebrowser_data_db:/database
       # Volume mapping for the config files for filebrowser
-      - filebrowser_data_config:/config
+      - big-bear-filebrowser_data_config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:80"
 volumes:
-  filebrowser_data_config:
-    name: filebrowser_data_config
+  big-bear-filebrowser_data_config:
+    name: big-bear-filebrowser_data_config
     driver: local
-  filebrowser_data_db:
-    name: filebrowser_data_db
+  big-bear-filebrowser_data_db:
+    name: big-bear-filebrowser_data_db
     driver: local

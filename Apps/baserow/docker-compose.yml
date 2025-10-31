@@ -18,8 +18,8 @@ services:
       - "7351:443" # Map port 7301 on the host to port 443 in the container.
     # Define volumes to persist data between container restarts.
     volumes:
-      - baserow_data:/baserow/data
+      - big-bear-baserow_data:/baserow/data
 volumes:
-  baserow_data:
-    name: baserow_data
+  big-bear-baserow_data:
+    name: big-bear-baserow_data
     driver: local

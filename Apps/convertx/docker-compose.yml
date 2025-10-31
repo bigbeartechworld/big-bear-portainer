@@ -19,8 +19,8 @@ services:
       - HTTP_ALLOWED=true
     # Volume mappings for data persistence
     volumes:
-      - convertx_data:/app/data
+      - big-bear-convertx_data:/app/data
 volumes:
-  convertx_data:
-    name: convertx_data
+  big-bear-convertx_data:
+    name: big-bear-convertx_data
     driver: local

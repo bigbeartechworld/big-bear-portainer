@@ -33,7 +33,7 @@ services:
       - "8080:80"
     # Volume mappings for persistent storage
     volumes:
-      - wallabag_images:/var/www/wallabag/web/assets/images
+      - big-bear-wallabag_images:/var/www/wallabag/web/assets/images
     # Health check configuration
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/api/info"]
@@ -59,7 +59,7 @@ services:
       - MYSQL_ROOT_PASSWORD=777134a0-4480-49f3-b00c-29db42c6d136
     # Volume mappings for database persistence
     volumes:
-      - wallabag_mysql:/var/lib/mysql
+      - big-bear-wallabag_mysql:/var/lib/mysql
     # Network configuration
     networks:
       - big-bear-wallabag-network
@@ -89,9 +89,9 @@ networks:
   big-bear-wallabag-network:
     driver: bridge
 volumes:
-  wallabag_images:
-    name: wallabag_images
+  big-bear-wallabag_images:
+    name: big-bear-wallabag_images
     driver: local
-  wallabag_mysql:
-    name: wallabag_mysql
+  big-bear-wallabag_mysql:
+    name: big-bear-wallabag_mysql
     driver: local

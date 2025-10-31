@@ -30,7 +30,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local owncloud_data directory to /mnt/data inside the container
-      - owncloud_data:/mnt/data
+      - big-bear-owncloud_data:/mnt/data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
@@ -64,7 +64,7 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - owncloud_mysql:/var/lib/mysql
+      - big-bear-owncloud_mysql:/var/lib/mysql
     networks:
       - big_bear_owncloud_network
   big-bear-owncloud-redis:
@@ -78,7 +78,7 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - owncloud_redis:/data
+      - big-bear-owncloud_redis:/data
     networks:
       - big_bear_owncloud_network
 networks:
@@ -86,12 +86,12 @@ networks:
     name: big_bear_owncloud_network
     driver: bridge
 volumes:
-  owncloud_data:
-    name: owncloud_data
+  big-bear-owncloud_data:
+    name: big-bear-owncloud_data
     driver: local
-  owncloud_mysql:
-    name: owncloud_mysql
+  big-bear-owncloud_mysql:
+    name: big-bear-owncloud_mysql
     driver: local
-  owncloud_redis:
-    name: owncloud_redis
+  big-bear-owncloud_redis:
+    name: big-bear-owncloud_redis
     driver: local

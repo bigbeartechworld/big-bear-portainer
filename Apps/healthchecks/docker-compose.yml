@@ -38,7 +38,7 @@ services:
       - SITE_LOGO_URL= #optional
     # Volumes to be mounted to the container
     volumes:
-      - healthchecks_config:/config
+      - big-bear-healthchecks_config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 8000 of the host to port 8000 of the container
@@ -46,6 +46,6 @@ services:
       # Mapping port 2525 of the host to port 2525 of the container
       - "2525:2525"
 volumes:
-  healthchecks_config:
-    name: healthchecks_config
+  big-bear-healthchecks_config:
+    name: big-bear-healthchecks_config
     driver: local

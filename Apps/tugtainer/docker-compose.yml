@@ -26,9 +26,9 @@ services:
       HTTPS: "FALSE"
     # Volumes to be mounted to the container
     volumes:
-      - tugtainer_data:/tugtainer
+      - big-bear-tugtainer_data:/tugtainer
       - /var/run/docker.sock:/var/run/docker.sock
 volumes:
-  tugtainer_data:
-    name: tugtainer_data
+  big-bear-tugtainer_data:
+    name: big-bear-tugtainer_data
     driver: local

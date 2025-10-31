@@ -20,9 +20,9 @@ services:
     network_mode: bridge
     # Volumes for the service HOST -> CONTAINER
     volumes:
-      - node-red_data:/data
+      - big-bear-node-red_data:/data
 
 volumes:
-  node-red_data:
-    name: node-red_data
+  big-bear-node-red_data:
+    name: big-bear-node-red_data
     driver: local

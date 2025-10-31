@@ -20,15 +20,15 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - dockge_data:/app/data
-      - dockge_stacks:/DATA/AppData/big-bear-dockge/stacks
+      - big-bear-dockge_data:/app/data
+      - big-bear-dockge_stacks:/DATA/AppData/big-bear-dockge/stacks
     # Ports mapping between host and container
     ports:
       - 5001:5001
 volumes:
-  dockge_data:
-    name: dockge_data
+  big-bear-dockge_data:
+    name: big-bear-dockge_data
     driver: local
-  dockge_stacks:
-    name: dockge_stacks
+  big-bear-dockge_stacks:
+    name: big-bear-dockge_stacks
     driver: local

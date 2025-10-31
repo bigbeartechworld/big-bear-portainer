@@ -16,7 +16,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local homarr/configs directory to /app/data/configs inside the container
-      - farmos_sites:/opt/drupal/web/sites
+      - big-bear-farmos_sites:/opt/drupal/web/sites
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
@@ -61,9 +61,9 @@ networks:
     name: big-bear-farmos-network
     driver: bridge
 volumes:
-  farmos_db:
-    name: farmos_db
+  big-bear-farmos_db:
+    name: big-bear-farmos_db
     driver: local
-  farmos_sites:
-    name: farmos_sites
+  big-bear-farmos_sites:
+    name: big-bear-farmos_sites
     driver: local

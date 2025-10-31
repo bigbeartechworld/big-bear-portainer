@@ -32,8 +32,8 @@ services:
       - 10443:443
     volumes:
       # Mount points for cache and logs
-      - lancache_cache:/data/cache
-      - lancache_logs:/data/logs
+      - big-bear-lancache_cache:/data/cache
+      - big-bear-lancache_logs:/data/logs
   # DNS service configuration
   dns:
     image: lancachenet/lancache-dns:latest # Docker image for DNS service
@@ -61,9 +61,9 @@ services:
       - 53:53/udp
       - 53:53/tcp
 volumes:
-  lancache_cache:
-    name: lancache_cache
+  big-bear-lancache_cache:
+    name: big-bear-lancache_cache
     driver: local
-  lancache_logs:
-    name: lancache_logs
+  big-bear-lancache_logs:
+    name: big-bear-lancache_logs
     driver: local

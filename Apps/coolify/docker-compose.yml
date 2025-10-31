@@ -74,13 +74,13 @@ services:
     # Mount necessary volumes for accessing system information
     volumes:
       # ssh-keygen -f /DATA/AppData/big-bear-coolify/ssh/keys/id.root@host.docker.internal -t ed25519 -N '' -C root@coolify
-      - coolify_ssh:/var/www/html/storage/app/ssh
-      - coolify_applications:/var/www/html/storage/app/applications
-      - coolify_databases:/var/www/html/storage/app/databases
-      - coolify_services:/var/www/html/storage/app/services
-      - coolify_backups:/var/www/html/storage/app/backups
-      - coolify_webhooks-during-maintenance:/var/www/html/storage/app/webhooks-during-maintenance
-      - coolify_logs:/var/www/html/storage/logs
+      - big-bear-coolify_ssh:/var/www/html/storage/app/ssh
+      - big-bear-coolify_applications:/var/www/html/storage/app/applications
+      - big-bear-coolify_databases:/var/www/html/storage/app/databases
+      - big-bear-coolify_services:/var/www/html/storage/app/services
+      - big-bear-coolify_backups:/var/www/html/storage/app/backups
+      - big-bear-coolify_webhooks-during-maintenance:/var/www/html/storage/app/webhooks-during-maintenance
+      - big-bear-coolify_logs:/var/www/html/storage/logs
     # Map port 8080 on the host to port 80 on the container
     ports:
       - "8000:8080"
@@ -102,7 +102,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - coolify_pgdata:/var/lib/postgresql/data
+      - big-bear-coolify_pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: "coolify"
       POSTGRES_PASSWORD: "f1986213-9d72-4c36-bbd4-adca2f414fa1"
@@ -123,7 +123,7 @@ services:
     environment:
       REDIS_PASSWORD: "9e3df6aa-ea48-4e59-a9c4-59798f1ba9b4"
     volumes:
-      - coolify_redis:/data
+      - big-bear-coolify_redis:/data
     healthcheck:
       test: redis-cli ping
       interval: 5s
@@ -156,30 +156,30 @@ networks:
   coolify:
     external: true
 volumes:
-  coolify_applications:
-    name: coolify_applications
+  big-bear-coolify_applications:
+    name: big-bear-coolify_applications
     driver: local
-  coolify_backups:
-    name: coolify_backups
+  big-bear-coolify_backups:
+    name: big-bear-coolify_backups
     driver: local
-  coolify_databases:
-    name: coolify_databases
+  big-bear-coolify_databases:
+    name: big-bear-coolify_databases
     driver: local
-  coolify_logs:
-    name: coolify_logs
+  big-bear-coolify_logs:
+    name: big-bear-coolify_logs
     driver: local
-  coolify_pgdata:
-    name: coolify_pgdata
+  big-bear-coolify_pgdata:
+    name: big-bear-coolify_pgdata
     driver: local
-  coolify_redis:
-    name: coolify_redis
+  big-bear-coolify_redis:
+    name: big-bear-coolify_redis
     driver: local
-  coolify_services:
-    name: coolify_services
+  big-bear-coolify_services:
+    name: big-bear-coolify_services
     driver: local
-  coolify_ssh:
-    name: coolify_ssh
+  big-bear-coolify_ssh:
+    name: big-bear-coolify_ssh
     driver: local
-  coolify_webhooks-during-maintenance:
-    name: coolify_webhooks-during-maintenance
+  big-bear-coolify_webhooks-during-maintenance:
+    name: big-bear-coolify_webhooks-during-maintenance
     driver: local

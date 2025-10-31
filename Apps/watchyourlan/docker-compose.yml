@@ -20,10 +20,10 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-watchyourlan/data directory to /data/WatchYourLAN inside the container
-      - watchyourlan_data:/data/WatchYourLAN
+      - big-bear-watchyourlan_data:/data/WatchYourLAN
     # Network mode to be used for the container
     network_mode: host
 volumes:
-  watchyourlan_data:
-    name: watchyourlan_data
+  big-bear-watchyourlan_data:
+    name: big-bear-watchyourlan_data
     driver: local
