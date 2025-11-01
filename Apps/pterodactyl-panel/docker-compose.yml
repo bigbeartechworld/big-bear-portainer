@@ -70,18 +70,18 @@ services:
     # Restart the container automatically if it stops
     restart: always
 volumes:
-  pterodactyl-panel_certs_:
-    name: pterodactyl-panel_certs_
+  big-bear-pterodactyl-panel_certs_:
+    name: big-bear-pterodactyl-panel_certs_
     driver: local
-  pterodactyl-panel_database:
-    name: pterodactyl-panel_database
+  big-bear-pterodactyl-panel_database:
+    name: big-bear-pterodactyl-panel_database
     driver: local
-  pterodactyl-panel_logs_:
-    name: pterodactyl-panel_logs_
+  big-bear-pterodactyl-panel_logs_:
+    name: big-bear-pterodactyl-panel_logs_
     driver: local
-  pterodactyl-panel_nginx_:
-    name: pterodactyl-panel_nginx_
+  big-bear-pterodactyl-panel_nginx_:
+    name: big-bear-pterodactyl-panel_nginx_
     driver: local
-  pterodactyl-panel_var_:
-    name: pterodactyl-panel_var_
+  big-bear-pterodactyl-panel_var_:
+    name: big-bear-pterodactyl-panel_var_
     driver: local

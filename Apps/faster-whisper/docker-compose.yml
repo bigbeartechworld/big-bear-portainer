@@ -24,12 +24,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local faster-whisper_config directory to /config inside the container
-      - faster-whisper_config:/config
+      - big-bear-faster-whisper_config:/config
     # Ports mapping between host and container
     ports:
       # Mapping port 10300 of the host to port 10300 of the container
       - "10300:10300"
 volumes:
-  faster-whisper_config:
-    name: faster-whisper_config
+  big-bear-faster-whisper_config:
+    name: big-bear-faster-whisper_config
     driver: local

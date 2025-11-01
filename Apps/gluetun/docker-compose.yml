@@ -25,7 +25,7 @@ services:
       - 8388:8388/udp # Shadowsocks UDP port mapping.
     # Map volumes from the host to the container.
     volumes:
-      - gluetun_data:/gluetun # Map the data directory.
+      - big-bear-gluetun_data:/gluetun # Map the data directory.
     # Define environment variables for the container.
     environment:
       # Specify the VPN service provider.
@@ -45,6 +45,6 @@ services:
       # See https://github.com/qdm12/gluetun-wiki/blob/main/setup/servers.md#update-the-vpn-servers-list
       - UPDATER_PERIOD=
 volumes:
-  gluetun_data:
-    name: gluetun_data
+  big-bear-gluetun_data:
+    name: big-bear-gluetun_data
     driver: local

@@ -16,12 +16,12 @@ services:
     network_mode: host
     # Volume mappings for persistent storage
     volumes:
-      - matterbridge_Matterbridge:/root/Matterbridge
-      - matterbridge_.matterbridge:/root/.matterbridge
+      - big-bear-matterbridge_Matterbridge:/root/Matterbridge
+      - big-bear-matterbridge_.matterbridge:/root/.matterbridge
 volumes:
-  matterbridge_.matterbridge:
-    name: matterbridge_.matterbridge
+  big-bear-matterbridge_.matterbridge:
+    name: big-bear-matterbridge_.matterbridge
     driver: local
-  matterbridge_Matterbridge:
-    name: matterbridge_Matterbridge
+  big-bear-matterbridge_Matterbridge:
+    name: big-bear-matterbridge_Matterbridge
     driver: local

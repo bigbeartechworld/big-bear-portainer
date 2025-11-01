@@ -16,12 +16,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local mealie_data directory to /app/data inside the container
-      - mealie_data:/app/data
+      - big-bear-mealie_data:/app/data
     # Ports mapping between host and container
     ports:
       # Mapping port 7575 of the host to port 9000 of the container
       - "9925:9000"
 volumes:
-  mealie_data:
-    name: mealie_data
+  big-bear-mealie_data:
+    name: big-bear-mealie_data
     driver: local

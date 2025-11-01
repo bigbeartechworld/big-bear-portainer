@@ -47,7 +47,7 @@ services:
       - POSTGRES_DATABASE=zipline
     # Volumes to be mounted
     volumes:
-      - zipline_postgres:/var/lib/postgresql/data
+      - big-bear-zipline_postgres:/var/lib/postgresql/data
     # Networks to be attached
     networks:
       - zipline_network
@@ -58,12 +58,12 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  zipline_postgres:
-    name: zipline_postgres
+  big-bear-zipline_postgres:
+    name: big-bear-zipline_postgres
     driver: local
-  zipline_public:
-    name: zipline_public
+  big-bear-zipline_public:
+    name: big-bear-zipline_public
     driver: local
-  zipline_uploads:
-    name: zipline_uploads
+  big-bear-zipline_uploads:
+    name: big-bear-zipline_uploads
     driver: local

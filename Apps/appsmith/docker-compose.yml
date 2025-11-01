@@ -13,9 +13,9 @@ services:
       - "1080:80" # Port mapping host:container for HTTP
       - "10443:443" # Port mapping host:container for HTTPS
     volumes:
-      - appsmith_stacks:/appsmith-stacks # Mount volume for app data
+      - big-bear-appsmith_stacks:/appsmith-stacks # Mount volume for app data
     restart: unless-stopped # Container restart policy
 volumes:
-  appsmith_stacks:
-    name: appsmith_stacks
+  big-bear-appsmith_stacks:
+    name: big-bear-appsmith_stacks
     driver: local

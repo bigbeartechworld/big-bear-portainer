@@ -14,6 +14,6 @@ services:
       - "gotify_data:/app/data"
     network_mode: bridge # Network mode
 volumes:
-  gotify_data:
-    name: gotify_data
+  big-bear-gotify_data:
+    name: big-bear-gotify_data
     driver: local

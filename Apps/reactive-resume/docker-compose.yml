@@ -73,7 +73,7 @@ services:
     image: postgres:15-alpine
     restart: unless-stopped
     volumes:
-      - reactive-resume_pg_data:/var/lib/postgresql/data
+      - big-bear-reactive-resume_pg_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: "postgres"
       POSTGRES_USER: "postgres"
@@ -94,7 +94,7 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - reactive-resume_minio_data:/data
+      - big-bear-reactive-resume_minio_data:/data
     environment:
       MINIO_ROOT_USER: "minioadmin"
       MINIO_ROOT_PASSWORD: "minioadmin"
@@ -125,9 +125,9 @@ networks:
   reactive-resume-network:
     driver: bridge
 volumes:
-  reactive-resume_minio_data:
-    name: reactive-resume_minio_data
+  big-bear-reactive-resume_minio_data:
+    name: big-bear-reactive-resume_minio_data
     driver: local
-  reactive-resume_pg_data:
-    name: reactive-resume_pg_data
+  big-bear-reactive-resume_pg_data:
+    name: big-bear-reactive-resume_pg_data
     driver: local
