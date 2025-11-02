@@ -16,7 +16,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/assets directory to /opt/data/assets inside the container
-      - penpot_assets:/opt/data/assets
+      - big-bear-penpot_assets:/opt/data/assets
     # Ports mapping between host and container
     ports:
       # Mapping port 9001 of the host to port 8080 of the container
@@ -38,7 +38,7 @@ services:
     restart: unless-stopped
     # Volumes to mount to the container
     volumes:
-      - penpot_assets:/opt/data/assets
+      - big-bear-penpot_assets:/opt/data/assets
     # Dependencies for the service
     depends_on:
       - penpot-postgres
@@ -82,7 +82,7 @@ services:
     container_name: big-bear-penpot-postgres
     stop_signal: SIGINT
     volumes:
-      - penpot_pgdata:/var/lib/postgresql/data
+      - big-bear-penpot_pgdata:/var/lib/postgresql/data
     networks:
       - big-bear-penpot-network
     environment:
@@ -115,9 +115,9 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  penpot_assets:
-    name: penpot_assets
+  big-bear-penpot_assets:
+    name: big-bear-penpot_assets
     driver: local
-  penpot_pgdata:
-    name: penpot_pgdata
+  big-bear-penpot_pgdata:
+    name: big-bear-penpot_pgdata
     driver: local

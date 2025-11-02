@@ -27,11 +27,11 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - beaverhabits_.user:/app/.user/
+      - big-bear-beaverhabits_.user:/app/.user/
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - "8080:8080"
 volumes:
-  beaverhabits_.user:
-    name: beaverhabits_.user
+  big-bear-beaverhabits_.user:
+    name: big-bear-beaverhabits_.user
     driver: local

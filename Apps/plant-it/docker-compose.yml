@@ -106,12 +106,12 @@ networks:
   big_bear_plant_it_network:
     driver: bridge
 volumes:
-  plant-it_certificates:
-    name: plant-it_certificates
+  big-bear-plant-it_certificates:
+    name: big-bear-plant-it_certificates
     driver: local
-  plant-it_mysql:
-    name: plant-it_mysql
+  big-bear-plant-it_mysql:
+    name: big-bear-plant-it_mysql
     driver: local
-  plant-it_upload-dir:
-    name: plant-it_upload-dir
+  big-bear-plant-it_upload-dir:
+    name: big-bear-plant-it_upload-dir
     driver: local

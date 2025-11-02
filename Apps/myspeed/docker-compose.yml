@@ -11,9 +11,9 @@ services:
     ports:
       - "5216:5216" # Port mapping from host to container
     volumes:
-      - myspeed_data:/myspeed/data # Mount host directory to container directory
+      - big-bear-myspeed_data:/myspeed/data # Mount host directory to container directory
     restart: unless-stopped # Restart policy for the service
 volumes:
-  myspeed_data:
-    name: myspeed_data
+  big-bear-myspeed_data:
+    name: big-bear-myspeed_data
     driver: local

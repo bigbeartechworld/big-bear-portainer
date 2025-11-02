@@ -15,7 +15,7 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Temporary storage for morphos
-      - morphos_tmp:/tmp
+      - big-bear-morphos_tmp:/tmp
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - "8080:8080"
@@ -27,6 +27,6 @@ services:
       start_period: 20s
       timeout: 30s
 volumes:
-  morphos_tmp:
-    name: morphos_tmp
+  big-bear-morphos_tmp:
+    name: big-bear-morphos_tmp
     driver: local

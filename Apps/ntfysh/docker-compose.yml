@@ -22,15 +22,15 @@ services:
     # Volumes to be mounted inside the container
     volumes:
       - type: bind
-        source: ntfysh_cache
+        source: big-bear-ntfysh_cache
         target: /var/cache/ntfy
       - type: bind
-        source: ntfysh_config
+        source: big-bear-ntfysh_config
         target: /etc/ntfy
 volumes:
-  ntfysh_cache:
-    name: ntfysh_cache
+  big-bear-ntfysh_cache:
+    name: big-bear-ntfysh_cache
     driver: local
-  ntfysh_config:
-    name: ntfysh_config
+  big-bear-ntfysh_config:
+    name: big-bear-ntfysh_config
     driver: local

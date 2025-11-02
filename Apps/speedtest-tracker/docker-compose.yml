@@ -48,12 +48,12 @@ networks:
   big_bear_speedtest_tracker_network:
     driver: bridge
 volumes:
-  speedtest-tracker_config:
-    name: speedtest-tracker_config
+  big-bear-speedtest-tracker_config:
+    name: big-bear-speedtest-tracker_config
     driver: local
-  speedtest-tracker_mysql:
-    name: speedtest-tracker_mysql
+  big-bear-speedtest-tracker_mysql:
+    name: big-bear-speedtest-tracker_mysql
     driver: local
-  speedtest-tracker_web:
-    name: speedtest-tracker_web
+  big-bear-speedtest-tracker_web:
+    name: big-bear-speedtest-tracker_web
     driver: local

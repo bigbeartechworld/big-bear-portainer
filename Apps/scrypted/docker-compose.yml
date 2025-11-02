@@ -13,7 +13,7 @@ services:
       - SCRYPTED_WEBHOOK_UPDATE=http://localhost:10444/v1/update
     volumes:
       # Mounting data directory from host to the container
-      - scrypted_data:/server/volume
+      - big-bear-scrypted_data:/server/volume
     restart: unless-stopped # Restart policy
     logging:
       # JSON logging configuration
@@ -46,6 +46,6 @@ services:
       - 10444:8080
     command: --interval 3600 --cleanup --scope scrypted # Command to run watchtower with specified options
 volumes:
-  scrypted_data:
-    name: scrypted_data
+  big-bear-scrypted_data:
+    name: big-bear-scrypted_data
     driver: local

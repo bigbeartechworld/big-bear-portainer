@@ -39,7 +39,7 @@ services:
       - NODE_ENV=production
     # Volumes to be mounted to the container
     volumes:
-      - calcom_config:/config
+      - big-bear-calcom_config:/config
     # Ports mapping between host and container
     ports:
       - 3000:3000
@@ -51,7 +51,7 @@ services:
     image: postgres:16.1
     restart: on-failure
     volumes:
-      - calcom_data_db:/var/lib/postgresql/data
+      - big-bear-calcom_data_db:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=9e45944b-37bb-41f7-aa6f-b74195fb58ec
       - POSTGRES_USER=bigbear
@@ -62,9 +62,9 @@ networks:
   big_bear_calcom_network:
     driver: bridge
 volumes:
-  calcom_config:
-    name: calcom_config
+  big-bear-calcom_config:
+    name: big-bear-calcom_config
     driver: local
-  calcom_data_db:
-    name: calcom_data_db
+  big-bear-calcom_data_db:
+    name: big-bear-calcom_data_db
     driver: local

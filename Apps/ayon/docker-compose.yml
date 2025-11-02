@@ -47,7 +47,7 @@ services:
       - POSTGRES_PASSWORD=ayon
       - POSTGRES_DB=ayon
     volumes:
-      - ayon_postgres:/var/lib/postgresql/data
+      - big-bear-ayon_postgres:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ayon"]
       interval: 10s
@@ -62,7 +62,7 @@ services:
     container_name: redis
     restart: unless-stopped
     volumes:
-      - ayon_redis:/data
+      - big-bear-ayon_redis:/data
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
       interval: 5s
@@ -75,15 +75,15 @@ networks:
   big-bear-ayon-network:
     driver: bridge
 volumes:
-  ayon_addons:
-    name: ayon_addons
+  big-bear-ayon_addons:
+    name: big-bear-ayon_addons
     driver: local
-  ayon_postgres:
-    name: ayon_postgres
+  big-bear-ayon_postgres:
+    name: big-bear-ayon_postgres
     driver: local
-  ayon_redis:
-    name: ayon_redis
+  big-bear-ayon_redis:
+    name: big-bear-ayon_redis
     driver: local
-  ayon_storage:
-    name: ayon_storage
+  big-bear-ayon_storage:
+    name: big-bear-ayon_storage
     driver: local

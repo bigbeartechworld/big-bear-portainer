@@ -36,15 +36,15 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - stirling-pdf_tessdata:/usr/share/tessdata # Required for extra OCR languages
-      - stirling-pdf_configs:/configs
+      - big-bear-stirling-pdf_tessdata:/usr/share/tessdata # Required for extra OCR languages
+      - big-bear-stirling-pdf_configs:/configs
     # Map port 8080 on the host to port 8080 on the container
     ports:
       - "8080:8080"
 volumes:
-  stirling-pdf_configs:
-    name: stirling-pdf_configs
+  big-bear-stirling-pdf_configs:
+    name: big-bear-stirling-pdf_configs
     driver: local
-  stirling-pdf_tessdata:
-    name: stirling-pdf_tessdata
+  big-bear-stirling-pdf_tessdata:
+    name: big-bear-stirling-pdf_tessdata
     driver: local

@@ -15,24 +15,24 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - audiobookshelf_media_data_books_spoken:/audiobooks
-      - audiobookshelf_media_data_podcasts:/podcasts
-      - audiobookshelf_data_config:/config
-      - audiobookshelf_data_metadata:/metadata
+      - big-bear-audiobookshelf_media_data_books_spoken:/audiobooks
+      - big-bear-audiobookshelf_media_data_podcasts:/podcasts
+      - big-bear-audiobookshelf_data_config:/config
+      - big-bear-audiobookshelf_data_metadata:/metadata
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 80 of the container
       - "8080:80"
 volumes:
-  audiobookshelf_data_config:
-    name: audiobookshelf_data_config
+  big-bear-audiobookshelf_data_config:
+    name: big-bear-audiobookshelf_data_config
     driver: local
-  audiobookshelf_data_metadata:
-    name: audiobookshelf_data_metadata
+  big-bear-audiobookshelf_data_metadata:
+    name: big-bear-audiobookshelf_data_metadata
     driver: local
-  audiobookshelf_media_data_books_spoken:
-    name: audiobookshelf_media_data_books_spoken
+  big-bear-audiobookshelf_media_data_books_spoken:
+    name: big-bear-audiobookshelf_media_data_books_spoken
     driver: local
-  audiobookshelf_media_data_podcasts:
-    name: audiobookshelf_media_data_podcasts
+  big-bear-audiobookshelf_media_data_podcasts:
+    name: big-bear-audiobookshelf_media_data_podcasts
     driver: local

@@ -24,10 +24,10 @@ services:
       - KOPIA_PASSWORD=casaos # Repository password
       - REFRESH_INTERVAL= # Optional
     volumes:
-      - kopia_config:/config
-      - kopia_home:/backups/home:ro # Optional
+      - big-bear-kopia_config:/config
+      - big-bear-kopia_home:/backups/home:ro # Optional
       - /var/lib/docker/volumes:/backups/docker:ro # Optional
-      - kopia_repository:/repository # Optional
+      - big-bear-kopia_repository:/repository # Optional
       - /tmp:/tmp:shared # Optional
       - /var/run/docker.sock:/var/run/docker.sock:ro # Optional
     # Ports mapping between host and container
@@ -38,12 +38,12 @@ services:
     cap_add:
       - SYS_ADMIN # Optional
 volumes:
-  kopia_config:
-    name: kopia_config
+  big-bear-kopia_config:
+    name: big-bear-kopia_config
     driver: local
-  kopia_home:
-    name: kopia_home
+  big-bear-kopia_home:
+    name: big-bear-kopia_home
     driver: local
-  kopia_repository:
-    name: kopia_repository
+  big-bear-kopia_repository:
+    name: big-bear-kopia_repository
     driver: local

@@ -24,24 +24,24 @@ services:
       - 25500-25600:25500-25600
     # Volumes mapping between host and container
     volumes:
-      - crafty_data_backups:/crafty/backups
-      - crafty_data_logs:/crafty/logs
-      - crafty_data_servers:/crafty/servers
-      - crafty_data_config:/crafty/app/config
-      - crafty_data_import:/crafty/import
+      - big-bear-crafty_data_backups:/crafty/backups
+      - big-bear-crafty_data_logs:/crafty/logs
+      - big-bear-crafty_data_servers:/crafty/servers
+      - big-bear-crafty_data_config:/crafty/app/config
+      - big-bear-crafty_data_import:/crafty/import
 volumes:
-  crafty_data_backups:
-    name: crafty_data_backups
+  big-bear-crafty_data_backups:
+    name: big-bear-crafty_data_backups
     driver: local
-  crafty_data_config:
-    name: crafty_data_config
+  big-bear-crafty_data_config:
+    name: big-bear-crafty_data_config
     driver: local
-  crafty_data_import:
-    name: crafty_data_import
+  big-bear-crafty_data_import:
+    name: big-bear-crafty_data_import
     driver: local
-  crafty_data_logs:
-    name: crafty_data_logs
+  big-bear-crafty_data_logs:
+    name: big-bear-crafty_data_logs
     driver: local
-  crafty_data_servers:
-    name: crafty_data_servers
+  big-bear-crafty_data_servers:
+    name: big-bear-crafty_data_servers
     driver: local

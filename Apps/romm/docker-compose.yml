@@ -53,7 +53,7 @@ services:
       - MYSQL_USER=romm-user # MariaDB user
       - MYSQL_PASSWORD=casaos # MariaDB password
     volumes:
-      - romm_mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
+      - big-bear-romm_mysql:/var/lib/mysql # MariaDB data volume (can also be mounted locally)
     ports:
       - 3306:3306 # Map host port 3306 to container port 3306
     restart: "unless-stopped"
@@ -64,24 +64,24 @@ networks:
   big-bear-romm-network:
     driver: bridge
 volumes:
-  romm_assets:
-    name: romm_assets
+  big-bear-romm_assets:
+    name: big-bear-romm_assets
     driver: local
-  romm_config:
-    name: romm_config
+  big-bear-romm_config:
+    name: big-bear-romm_config
     driver: local
-  romm_library:
-    name: romm_library
+  big-bear-romm_library:
+    name: big-bear-romm_library
     driver: local
-  romm_logs:
-    name: romm_logs
+  big-bear-romm_logs:
+    name: big-bear-romm_logs
     driver: local
-  romm_mysql:
-    name: romm_mysql
+  big-bear-romm_mysql:
+    name: big-bear-romm_mysql
     driver: local
-  romm_redis-data:
-    name: romm_redis-data
+  big-bear-romm_redis-data:
+    name: big-bear-romm_redis-data
     driver: local
-  romm_resources:
-    name: romm_resources
+  big-bear-romm_resources:
+    name: big-bear-romm_resources
     driver: local

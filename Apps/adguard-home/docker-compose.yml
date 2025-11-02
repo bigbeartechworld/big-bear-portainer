@@ -34,9 +34,9 @@ networks:
   adguard-home-network:
     driver: bridge
 volumes:
-  adguard-home_data_conf:
-    name: adguard-home_data_conf
+  big-bear-adguard-home_data_conf:
+    name: big-bear-adguard-home_data_conf
     driver: local
-  adguard-home_data_work:
-    name: adguard-home_data_work
+  big-bear-adguard-home_data_work:
+    name: big-bear-adguard-home_data_work
     driver: local

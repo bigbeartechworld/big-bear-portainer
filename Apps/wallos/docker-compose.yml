@@ -19,17 +19,17 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/big-bear-wallos/db directory to /var/www/html/db inside the container
-      - wallos_db:/var/www/html/db
+      - big-bear-wallos_db:/var/www/html/db
       # Mounting the local /DATA/AppData/big-bear-wallos/logos directory to /var/www/html/images/uploads/logos inside the container
-      - wallos_logos:/var/www/html/images/uploads/logos
+      - big-bear-wallos_logos:/var/www/html/images/uploads/logos
     # Ports mapping between host and container
     ports:
       # Mapping port 8282 of the host to port 80 of the container
       - "8282:80"
 volumes:
-  wallos_db:
-    name: wallos_db
+  big-bear-wallos_db:
+    name: big-bear-wallos_db
     driver: local
-  wallos_logos:
-    name: wallos_logos
+  big-bear-wallos_logos:
+    name: big-bear-wallos_logos
     driver: local

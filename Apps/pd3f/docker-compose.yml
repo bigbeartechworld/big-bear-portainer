@@ -16,7 +16,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/uploads directory to /uploads/ inside the container
-      - pd3f_uploads:/uploads/
+      - big-bear-pd3f_uploads:/uploads/
     # Ports mapping between host and container
     ports:
       # Mapping port 1616 of the host to port 5000 of the container
@@ -53,9 +53,9 @@ services:
     networks:
       - big-bear-pd3f-network
     volumes:
-      - pd3f_cache:/root/.cache/
-      - pd3f_to-ocr:/to-ocr/
-      - pd3f_uploads:/uploads/
+      - big-bear-pd3f_cache:/root/.cache/
+      - big-bear-pd3f_to-ocr:/to-ocr/
+      - big-bear-pd3f_uploads:/uploads/
     # delete results / files after one day
     environment:
       - KEEP_RESULTS_HOURS=24
@@ -66,18 +66,18 @@ services:
     networks:
       - big-bear-pd3f-network
     volumes:
-      - pd3f_to-ocr:/to-ocr/
+      - big-bear-pd3f_to-ocr:/to-ocr/
 # Network definitions
 networks:
   big-bear-pd3f-network:
     name: big-bear-pd3f-network
 volumes:
-  pd3f_cache:
-    name: pd3f_cache
+  big-bear-pd3f_cache:
+    name: big-bear-pd3f_cache
     driver: local
-  pd3f_to-ocr:
-    name: pd3f_to-ocr
+  big-bear-pd3f_to-ocr:
+    name: big-bear-pd3f_to-ocr
     driver: local
-  pd3f_uploads:
-    name: pd3f_uploads
+  big-bear-pd3f_uploads:
+    name: big-bear-pd3f_uploads
     driver: local

@@ -13,8 +13,8 @@ services:
       - CHROME_CLI=https://community.bigbeartechworld.com/ # Set the default URL to Big Bear Tech World
     shm_size: 1gb # Allocate 1 GB of shared memory
     volumes:
-      - chromium_config:/config # Mount the config directory for persistent data
+      - big-bear-chromium_config:/config # Mount the config directory for persistent data
 volumes:
-  chromium_config:
-    name: chromium_config
+  big-bear-chromium_config:
+    name: big-bear-chromium_config
     driver: local
