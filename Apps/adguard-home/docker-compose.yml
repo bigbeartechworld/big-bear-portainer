@@ -9,7 +9,7 @@ services:
     # Name of the container
     container_name: adguard-home
     # Docker image to be used
-    image: adguard/adguardhome:v0.107.68
+    image: adguard/adguardhome:v0.107.69
     # Resources for the service
     deploy:
       resources:
@@ -34,9 +34,9 @@ networks:
   adguard-home-network:
     driver: bridge
 volumes:
-  adguard-home_data_conf:
-    name: adguard-home_data_conf
+  big-bear-adguard-home_data_conf:
+    name: big-bear-adguard-home_data_conf
     driver: local
-  adguard-home_data_work:
-    name: adguard-home_data_work
+  big-bear-adguard-home_data_work:
+    name: big-bear-adguard-home_data_work
     driver: local

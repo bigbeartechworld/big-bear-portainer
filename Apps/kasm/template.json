@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 87,
+      "id": 86,
       "type": 3,
       "title": "Kasm",
       "name": "kasm",
@@ -7,7 +7,7 @@
       "note": "Kasm",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://avatars.githubusercontent.com/u/44181855?s=280&v=4",
+      "logo": "https://via.placeholder.com/512.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/kasm/docker-compose.yml"

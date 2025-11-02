@@ -17,10 +17,10 @@ services:
     volumes:
       # Mount the config directory from the host to the container
       # This allows the user to persist configuration changes
-      - scrutiny_config:/opt/scrutiny/config
+      - big-bear-scrutiny_config:/opt/scrutiny/config
       # Mount the InfluxDB data directory from the host to the container
       # This allows the user to persist data from the InfluxDB database
-      - scrutiny_influxdb:/opt/scrutiny/influxdb
+      - big-bear-scrutiny_influxdb:/opt/scrutiny/influxdb
       # Mount the udev directory from the host to the container
       # This is required for the container to access raw I/O devices
       - /run/udev:/run/udev:ro
@@ -63,9 +63,9 @@ services:
       # The amount of time to wait after the container starts before running the healthcheck
       start_period: 40s
 volumes:
-  scrutiny_config:
-    name: scrutiny_config
+  big-bear-scrutiny_config:
+    name: big-bear-scrutiny_config
     driver: local
-  scrutiny_influxdb:
-    name: scrutiny_influxdb
+  big-bear-scrutiny_influxdb:
+    name: big-bear-scrutiny_influxdb
     driver: local

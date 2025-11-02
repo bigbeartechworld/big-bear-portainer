@@ -23,7 +23,7 @@ services:
       POSTGRES_USER: umami
       POSTGRES_PASSWORD: umami
     volumes: # Volumes for data persistence
-      - umami_pgdata:/var/lib/postgresql/data
+      - big-bear-umami_pgdata:/var/lib/postgresql/data
     restart: always # Restart policy
     healthcheck: # Health check configuration
       test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
@@ -31,6 +31,6 @@ services:
       timeout: 5s
       retries: 5
 volumes:
-  umami_pgdata:
-    name: umami_pgdata
+  big-bear-umami_pgdata:
+    name: big-bear-umami_pgdata
     driver: local

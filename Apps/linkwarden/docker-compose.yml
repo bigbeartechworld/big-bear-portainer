@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - linkwarden_data_linkwarden:/data/data
+      - big-bear-linkwarden_data_linkwarden:/data/data
     # Environment variables
     environment:
       - DATABASE_URL=postgresql://casaos:casaospassword@big-bear-linkwarden-db:5432/big-bear-linkwarden
@@ -44,7 +44,7 @@ services:
       - POSTGRES_DB=big-bear-linkwarden
     # Volumes to be mounted
     volumes:
-      - linkwarden_data_postgres:/var/lib/postgresql/data
+      - big-bear-linkwarden_data_postgres:/var/lib/postgresql/data
     # Networks to be attached
     networks:
       - linkwarden_network
@@ -55,9 +55,9 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  linkwarden_data_linkwarden:
-    name: linkwarden_data_linkwarden
+  big-bear-linkwarden_data_linkwarden:
+    name: big-bear-linkwarden_data_linkwarden
     driver: local
-  linkwarden_data_postgres:
-    name: linkwarden_data_postgres
+  big-bear-linkwarden_data_postgres:
+    name: big-bear-linkwarden_data_postgres
     driver: local

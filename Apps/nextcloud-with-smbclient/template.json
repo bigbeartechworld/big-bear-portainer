@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 119,
+      "id": 118,
       "type": 3,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",

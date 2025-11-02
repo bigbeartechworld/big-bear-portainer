@@ -36,8 +36,8 @@ services:
       - "8009:8009"
     # Volumes to be mounted to the container
     volumes:
-      - flowise_data:/root/.flowise
+      - big-bear-flowise_data:/root/.flowise
 volumes:
-  flowise_data:
-    name: flowise_data
+  big-bear-flowise_data:
+    name: big-bear-flowise_data
     driver: local

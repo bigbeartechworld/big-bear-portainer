@@ -28,8 +28,8 @@ services:
     # These mounts allow the container to interact with the host system
     volumes:
       # Required for monitoring system resources and container metrics
-      - poste-io_data:/data
+      - big-bear-poste-io_data:/data
 volumes:
-  poste-io_data:
-    name: poste-io_data
+  big-bear-poste-io_data:
+    name: big-bear-poste-io_data
     driver: local

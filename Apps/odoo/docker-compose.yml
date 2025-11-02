@@ -17,8 +17,8 @@ services:
     user: root # Specifies running the container as root
     # Volumes to be mounted to the container
     volumes:
-      - odoo_data_etc:/etc/odoo # Mounts Odoo configuration files
-      - odoo_data_addons:/mnt/extra-addons # Mounts additional Odoo addons
+      - big-bear-odoo_data_etc:/etc/odoo # Mounts Odoo configuration files
+      - big-bear-odoo_data_addons:/mnt/extra-addons # Mounts additional Odoo addons
     # Ports mapping between host and container
     ports:
       - "8069:8069" # Exposes port 8069 on host and container for web access
@@ -41,7 +41,7 @@ services:
       - POSTGRES_DB=postgres # Database name
     restart: unless-stopped # Restart policy for the database
     volumes:
-      - odoo_data_postgresql:/var/lib/postgresql/data # Mounts PostgreSQL data directory
+      - big-bear-odoo_data_postgresql:/var/lib/postgresql/data # Mounts PostgreSQL data directory
     networks:
       - big_bear_odoo_network # Attached network for internal communication
 # Network definition for the big-bear-odoo application
@@ -49,12 +49,12 @@ networks:
   big_bear_odoo_network:
     driver: bridge # Specifies network driver as bridge
 volumes:
-  odoo_data_addons:
-    name: odoo_data_addons
+  big-bear-odoo_data_addons:
+    name: big-bear-odoo_data_addons
     driver: local
-  odoo_data_etc:
-    name: odoo_data_etc
+  big-bear-odoo_data_etc:
+    name: big-bear-odoo_data_etc
     driver: local
-  odoo_data_postgresql:
-    name: odoo_data_postgresql
+  big-bear-odoo_data_postgresql:
+    name: big-bear-odoo_data_postgresql
     driver: local

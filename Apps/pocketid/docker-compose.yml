@@ -28,7 +28,7 @@ services:
         protocol: tcp # Port mapping between host and container
     volumes:
       - type: bind
-        source: pocketid_data
+        source: big-bear-pocketid_data
         target: /app/data # Volume for persistent data
     devices: []
     cap_add: []
@@ -42,6 +42,6 @@ services:
       retries: 2
       start_period: 10s
 volumes:
-  pocketid_data:
-    name: pocketid_data
+  big-bear-pocketid_data:
+    name: big-bear-pocketid_data
     driver: local

@@ -22,6 +22,6 @@ services:
       # Mounting the local npmplus_data directory to /data inside the container
       - "npmplus_data:/data"
 volumes:
-  npmplus_data:
-    name: npmplus_data
+  big-bear-npmplus_data:
+    name: big-bear-npmplus_data
     driver: local

@@ -11,7 +11,7 @@ services:
       - 8081:3456
     volumes:
       # Map container path to host path for files
-      - vikunja_files:/app/vikunja/files
+      - big-bear-vikunja_files:/app/vikunja/files
     environment:
       # Set the Vikunja frontend URL, replace <your public frontend url with slash> with the actual URL
       VIKUNJA_SERVICE_PUBLICURL: http://<your public frontend url with slash>/
@@ -41,7 +41,7 @@ services:
       MYSQL_DATABASE: vikunja
     volumes:
       # Map container path to host path for MariaDB data
-      - vikunja_mysql:/var/lib/mysql
+      - big-bear-vikunja_mysql:/var/lib/mysql
     restart: unless-stopped
     networks:
       - vikunja-network
@@ -49,9 +49,9 @@ networks:
   vikunja-network:
     driver: bridge
 volumes:
-  vikunja_files:
-    name: vikunja_files
+  big-bear-vikunja_files:
+    name: big-bear-vikunja_files
     driver: local
-  vikunja_mysql:
-    name: vikunja_mysql
+  big-bear-vikunja_mysql:
+    name: big-bear-vikunja_mysql
     driver: local

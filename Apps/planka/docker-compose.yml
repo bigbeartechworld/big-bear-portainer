@@ -15,9 +15,9 @@ services:
     restart: unless-stopped
     # Volumes to be mounted to the container for persistent storage
     volumes:
-      - planka_user-avatars:/app/public/user-avatars
-      - planka_project-background-images:/app/public/project-background-images
-      - planka_attachments:/app/private/attachments
+      - big-bear-planka_user-avatars:/app/public/user-avatars
+      - big-bear-planka_project-background-images:/app/public/project-background-images
+      - big-bear-planka_attachments:/app/private/attachments
     # Ports mapping between host and container for network access
     ports:
       # Mapping port 3000 of the host to port 1337 of the container
@@ -72,7 +72,7 @@ services:
     # Maps a host directory to the container's data directory
     # Ensures that the database data persists across container restarts and deployments
     volumes:
-      - planka_postgresql:/var/lib/postgresql/data
+      - big-bear-planka_postgresql:/var/lib/postgresql/data
     # Environment variables passed to the PostgreSQL container for configuration
     environment:
       # Sets the default database that is created when the container starts
@@ -101,15 +101,15 @@ networks:
   big-bear-planka-network:
     driver: bridge
 volumes:
-  planka_attachments:
-    name: planka_attachments
+  big-bear-planka_attachments:
+    name: big-bear-planka_attachments
     driver: local
-  planka_postgresql:
-    name: planka_postgresql
+  big-bear-planka_postgresql:
+    name: big-bear-planka_postgresql
     driver: local
-  planka_project-background-images:
-    name: planka_project-background-images
+  big-bear-planka_project-background-images:
+    name: big-bear-planka_project-background-images
     driver: local
-  planka_user-avatars:
-    name: planka_user-avatars
+  big-bear-planka_user-avatars:
+    name: big-bear-planka_user-avatars
     driver: local

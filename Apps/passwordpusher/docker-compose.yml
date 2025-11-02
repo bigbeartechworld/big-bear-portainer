@@ -24,7 +24,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Storage volume
-      - passwordpusher_storage:/opt/PasswordPusher/storage:rw
+      - big-bear-passwordpusher_storage:/opt/PasswordPusher/storage:rw
     # Ports mapping between host and container
     ports:
       # Mapping port 5100 of the host to port 5100 of the container
@@ -42,16 +42,16 @@ services:
       MARIADB_DATABASE: "passwordpusher_db"
       MARIADB_RANDOM_ROOT_PASSWORD: "yes"
     volumes:
-      - passwordpusher_mysql:/var/lib/mysql
+      - big-bear-passwordpusher_mysql:/var/lib/mysql
     networks:
       - big_bear_pwpush_network
 networks:
   big_bear_pwpush_network:
     driver: bridge
 volumes:
-  passwordpusher_mysql:
-    name: passwordpusher_mysql
+  big-bear-passwordpusher_mysql:
+    name: big-bear-passwordpusher_mysql
     driver: local
-  passwordpusher_storage:
-    name: passwordpusher_storage
+  big-bear-passwordpusher_storage:
+    name: big-bear-passwordpusher_storage
     driver: local

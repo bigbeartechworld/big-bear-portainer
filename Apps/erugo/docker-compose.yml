@@ -16,12 +16,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting storage directory to allow erugo to save data
-      - erugo_storage:/var/www/html/storage
+      - big-bear-erugo_storage:/var/www/html/storage
     # Ports mapping between host and container
     ports:
       # Mapping port 9997 of the host to port 80 of the container
       - "9997:80"
 volumes:
-  erugo_storage:
-    name: erugo_storage
+  big-bear-erugo_storage:
+    name: big-bear-erugo_storage
     driver: local

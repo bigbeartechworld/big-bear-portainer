@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 212,
+      "id": 211,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -7,7 +7,7 @@
       "note": "zipline",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://github.com/bigbeartechworld/big-bear-casaos/assets/1289128/3b655316-f72c-4b89-8138-0abee624e9b8",
+      "logo": "https://via.placeholder.com/512.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/zipline/docker-compose.yml"
