@@ -17,7 +17,7 @@ services:
     ports:
       - "8080:8080" # Maps port 8080 from the container to the host
     volumes:
-      - nocodb_data:/usr/src/app/data # Maps persistent data storage for NocoDB
+      - big-bear-nocodb_data:/usr/src/app/data # Maps persistent data storage for NocoDB
     networks:
       - big-bear-nocodb-network # Connects to the custom network
   # Database service configuration
@@ -30,7 +30,7 @@ services:
       POSTGRES_USER: nocodb # Database user
       POSTGRES_PASSWORD: nocodb # Database password
     volumes:
-      - nocodb_pgdata:/var/lib/postgresql/data # Persistent storage for the database
+      - big-bear-nocodb_pgdata:/var/lib/postgresql/data # Persistent storage for the database
     networks:
       - big-bear-nocodb-network # Connects to the custom network
   # Redis service configuration
@@ -40,7 +40,7 @@ services:
     restart: unless-stopped # Ensures Redis container is available unless manually stopped
     command: ["redis-server", "--requirepass", "casaos"] # Starts Redis with a password
     volumes:
-      - nocodb_redis:/data # Persistent storage for Redis data
+      - big-bear-nocodb_redis:/data # Persistent storage for Redis data
     healthcheck:
       test: ["CMD", "redis-cli", "ping"] # Health check command for Redis
       interval: 1s # Interval between health checks
@@ -53,12 +53,12 @@ networks:
   big-bear-nocodb-network:
     driver: bridge # Uses a bridge network for inter-container communication
 volumes:
-  nocodb_data:
-    name: nocodb_data
+  big-bear-nocodb_data:
+    name: big-bear-nocodb_data
     driver: local
-  nocodb_pgdata:
-    name: nocodb_pgdata
+  big-bear-nocodb_pgdata:
+    name: big-bear-nocodb_pgdata
     driver: local
-  nocodb_redis:
-    name: nocodb_redis
+  big-bear-nocodb_redis:
+    name: big-bear-nocodb_redis
     driver: local

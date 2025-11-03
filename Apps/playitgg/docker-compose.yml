@@ -16,8 +16,8 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local playitgg directory to /secrets inside the container
-      - playitgg_secrets:/secrets
+      - big-bear-playitgg_secrets:/secrets
 volumes:
-  playitgg_secrets:
-    name: playitgg_secrets
+  big-bear-playitgg_secrets:
+    name: big-bear-playitgg_secrets
     driver: local

@@ -27,7 +27,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Volume mapping for persistent data storage
-      - readeck_data:/readeck
+      - big-bear-readeck_data:/readeck
     # Ports mapping between host and container
     ports:
       # Mapping port 8000 of the host to port 8000 of the container
@@ -39,6 +39,6 @@ services:
       timeout: 2s
       retries: 3
 volumes:
-  readeck_data:
-    name: readeck_data
+  big-bear-readeck_data:
+    name: big-bear-readeck_data
     driver: local

@@ -18,7 +18,7 @@ services:
     #  - /dev/ttyACM0:/dev/ttyACM0
     #  - /dev/video0:/dev/video0
     volumes:
-      - octoprint_octoprint:/octoprint
+      - big-bear-octoprint_octoprint:/octoprint
     # uncomment the lines below to ensure camera streaming is enabled when
     # you add a video device
     #environment:
@@ -29,6 +29,6 @@ services:
       # Mapping port 7575 of the host to port 7575 of the container
       - "1080:80"
 volumes:
-  octoprint_octoprint:
-    name: octoprint_octoprint
+  big-bear-octoprint_octoprint:
+    name: big-bear-octoprint_octoprint
     driver: local

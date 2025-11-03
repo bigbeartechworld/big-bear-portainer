@@ -16,7 +16,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local home-assistant_config directory to /config inside the container
-      - home-assistant_config:/config
+      - big-bear-home-assistant_config:/config
       # Mounting the local /etc/localtime to /etc/localtime inside the container
       - /etc/localtime:/etc/localtime:ro
       # Mounting the local /run/dbus to /run/dbus inside the container
@@ -24,6 +24,6 @@ services:
     # Network mode for the container
     network_mode: host
 volumes:
-  home-assistant_config:
-    name: home-assistant_config
+  big-bear-home-assistant_config:
+    name: big-bear-home-assistant_config
     driver: local

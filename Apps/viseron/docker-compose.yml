@@ -17,11 +17,11 @@ services:
     shm_size: "1024mb"
     # Volumes to be mounted to the container
     volumes:
-      - viseron_segments:/segments
-      - viseron_snapshots:/snapshots
-      - viseron_thumbnails:/thumbnails
-      - viseron_event_clips:/event_clips
-      - viseron_config:/config
+      - big-bear-viseron_segments:/segments
+      - big-bear-viseron_snapshots:/snapshots
+      - big-bear-viseron_thumbnails:/thumbnails
+      - big-bear-viseron_event_clips:/event_clips
+      - big-bear-viseron_config:/config
       - /etc/localtime:/etc/localtime:ro
     # Ports mapping between host and container
     ports:
@@ -32,18 +32,18 @@ services:
       - PUID=1000
       - PGID=1000
 volumes:
-  viseron_config:
-    name: viseron_config
+  big-bear-viseron_config:
+    name: big-bear-viseron_config
     driver: local
-  viseron_event_clips:
-    name: viseron_event_clips
+  big-bear-viseron_event_clips:
+    name: big-bear-viseron_event_clips
     driver: local
-  viseron_segments:
-    name: viseron_segments
+  big-bear-viseron_segments:
+    name: big-bear-viseron_segments
     driver: local
-  viseron_snapshots:
-    name: viseron_snapshots
+  big-bear-viseron_snapshots:
+    name: big-bear-viseron_snapshots
     driver: local
-  viseron_thumbnails:
-    name: viseron_thumbnails
+  big-bear-viseron_thumbnails:
+    name: big-bear-viseron_thumbnails
     driver: local

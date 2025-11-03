@@ -12,7 +12,7 @@ services:
     container_name: big-bear-dashy
     # Uncomment below if you want to mount volumes
     volumes:
-      - dashy_public:/app/public
+      - big-bear-dashy_public:/app/public
     # Ports mapping
     ports:
       - 4000:8080
@@ -29,6 +29,6 @@ services:
       retries: 3
       start_period: 40s
 volumes:
-  dashy_public:
-    name: dashy_public
+  big-bear-dashy_public:
+    name: big-bear-dashy_public
     driver: local

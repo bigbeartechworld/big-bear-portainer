@@ -18,16 +18,16 @@ services:
       - TZ=UTC
     # Volumes to be mounted to the container
     volumes:
-      - komga_config:/config
-      - komga_data:/data
+      - big-bear-komga_config:/config
+      - big-bear-komga_data:/data
     # Ports mapping between host and container
     ports:
       # Mapping port 25600 of the host to port 25600 of the container
       - "25600:25600"
 volumes:
-  komga_config:
-    name: komga_config
+  big-bear-komga_config:
+    name: big-bear-komga_config
     driver: local
-  komga_data:
-    name: komga_data
+  big-bear-komga_data:
+    name: big-bear-komga_data
     driver: local

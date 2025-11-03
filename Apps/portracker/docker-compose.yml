@@ -24,13 +24,13 @@ services:
       - DEBUG=false
     # Volumes to be mounted to the container
     volumes:
-      - portracker_data:/data
+      - big-bear-portracker_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
     # Ports mapping between host and container
     ports:
       # Mapping port 4999 of the host to port 4999 of the container
       - "4999:4999"
 volumes:
-  portracker_data:
-    name: portracker_data
+  big-bear-portracker_data:
+    name: big-bear-portracker_data
     driver: local

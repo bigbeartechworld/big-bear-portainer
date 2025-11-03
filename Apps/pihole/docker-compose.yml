@@ -20,9 +20,9 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/etc directory to /etc/pihole/ inside the container
-      - pihole_etc:/etc/pihole/
+      - big-bear-pihole_etc:/etc/pihole/
       # Mounting the local /DATA/AppData/$AppID/dnsmasq.d directory to /etc/dnsmasq.d inside the container
-      - pihole_dnsmasq.d:/etc/dnsmasq.d/
+      - big-bear-pihole_dnsmasq.d:/etc/dnsmasq.d/
     # Ports mapping between host and container
     ports:
       - "53:53/tcp"
@@ -41,9 +41,9 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  pihole_dnsmasq.d:
-    name: pihole_dnsmasq.d
+  big-bear-pihole_dnsmasq.d:
+    name: big-bear-pihole_dnsmasq.d
     driver: local
-  pihole_etc:
-    name: pihole_etc
+  big-bear-pihole_etc:
+    name: big-bear-pihole_etc
     driver: local

@@ -229,27 +229,6 @@
     {
       "id": 15,
       "type": 3,
-      "title": "Big Bear CasaOS User Management",
-      "name": "big-bear-casaos-user-management",
-      "description": "Manage users in CasaOS",
-      "note": "Manage users in CasaOS",
-      "categories": ["BigBearCasaOS", "selfhosted"],
-      "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-docker-images/big-bear-casaos-user-management/logo.jpg",
-      "repository": {
-        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
-        "stackfile": "Apps/big-bear-casaos-user-management/docker-compose.yml"
-      },
-      "env": [
-        {"name": "FLASK_APP", "label": "FLASK_APP", "description": "Sets the Flask application entry point", "default": ""},
-        {"name": "FLASK_ENV", "label": "FLASK_ENV", "description": "Configures Flask to run in production mode", "default": ""},
-        {"name": "ADMIN_USERNAME", "label": "ADMIN_USERNAME", "description": "Specifies the admin username for the service", "default": ""},
-        {"name": "ADMIN_PASSWORD", "label": "ADMIN_PASSWORD", "description": "Specifies the admin password for the service", "default": ""}
-      ]
-    },
-    {
-      "id": 16,
-      "type": 3,
       "title": "bookstack",
       "name": "bookstack",
       "description": "BookStack is a simple, self-hosted, easy-to-use platform for organising and storing information. Default login admin@admin.com password password",
@@ -263,7 +242,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 16,
       "type": 3,
       "title": "Brave",
       "name": "brave",
@@ -282,7 +261,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 17,
       "type": 3,
       "title": "btop",
       "name": "btop",
@@ -302,7 +281,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 18,
       "type": 3,
       "title": "Budibase",
       "name": "budibase",
@@ -317,7 +296,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 19,
       "type": 3,
       "title": "cAdvisor",
       "name": "cadvisor",
@@ -332,13 +311,11 @@
       }
     },
     {
-      "id": 21,
+      "id": 20,
       "type": 3,
       "title": "Cal.com",
       "name": "calcom",
-      "description": "The open source Calendly successor. You are in charge of your own data, workflow, and appearance.
-Calendly and other scheduling tools are awesome. It made our lives massively easier. We're using it for business meetings, seminars, yoga classes, and even calls with our families. However, most tools are very limited in terms of control and customization.
-    That's where Cal.com comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data.",
+      "description": "The open source Calendly successor. You are in charge of your own data, workflow, and appearance.\nCalendly and other scheduling tools are awesome. It made our lives massively easier. We're using it for business meetings, seminars, yoga classes, and even calls with our families. However, most tools are very limited in terms of control and customization.\n    That's where Cal.com comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data.",
       "note": "Cal.com",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
@@ -373,7 +350,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 22,
+      "id": 21,
       "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
@@ -388,7 +365,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 23,
+      "id": 22,
       "type": 3,
       "title": "Chatpad",
       "name": "chatpad",
@@ -403,7 +380,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 24,
+      "id": 23,
       "type": 3,
       "title": "chrome",
       "name": "chrome",
@@ -422,7 +399,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 25,
+      "id": 24,
       "type": 3,
       "title": "chromium",
       "name": "chromium",
@@ -443,7 +420,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 26,
+      "id": 25,
       "type": 3,
       "title": "Cloudflared Web",
       "name": "cloudflared-web",
@@ -467,7 +444,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 27,
+      "id": 26,
       "type": 3,
       "title": "Code Server",
       "name": "code-server",
@@ -487,7 +464,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 28,
+      "id": 27,
       "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
@@ -502,7 +479,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 29,
+      "id": 28,
       "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
@@ -520,7 +497,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 30,
+      "id": 29,
       "type": 3,
       "title": "ConvertX",
       "name": "convertx",
@@ -539,7 +516,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 31,
+      "id": 30,
       "type": 3,
       "title": "Coolify",
       "name": "coolify",
@@ -611,7 +588,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 32,
+      "id": 31,
       "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
@@ -629,7 +606,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 33,
+      "id": 32,
       "type": 3,
       "title": "CyberChef",
       "name": "cyberchef",
@@ -644,7 +621,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 34,
+      "id": 33,
       "type": 3,
       "title": "Dashdot",
       "name": "dashdot",
@@ -659,7 +636,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 35,
+      "id": 34,
       "type": 3,
       "title": "Dashy",
       "name": "dashy",
@@ -677,7 +654,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 36,
+      "id": 35,
       "type": 3,
       "title": "Davis",
       "name": "davis",
@@ -710,7 +687,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 37,
+      "id": 36,
       "type": 3,
       "title": "DBGate",
       "name": "dbgate",
@@ -725,7 +702,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 38,
+      "id": 37,
       "type": 3,
       "title": "DIUN",
       "name": "diun",
@@ -747,7 +724,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 39,
+      "id": 38,
       "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",
@@ -768,7 +745,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 40,
+      "id": 39,
       "type": 3,
       "title": "Dockge",
       "name": "dockge",
@@ -783,7 +760,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 41,
+      "id": 40,
       "type": 3,
       "title": "Dockpeek",
       "name": "dockpeek",
@@ -804,7 +781,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 42,
+      "id": 41,
       "type": 3,
       "title": "Docmost",
       "name": "docmost",
@@ -825,7 +802,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 43,
+      "id": 42,
       "type": 3,
       "title": "Dozzle",
       "name": "dozzle",
@@ -840,7 +817,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 44,
+      "id": 43,
       "type": 3,
       "title": "EJBCA Community",
       "name": "ejbca-ce",
@@ -858,7 +835,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 45,
+      "id": 44,
       "type": 3,
       "title": "Erugo",
       "name": "erugo",
@@ -873,7 +850,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 46,
+      "id": 45,
       "type": 3,
       "title": "Eufy Security WS",
       "name": "eufy-security-ws",
@@ -881,7 +858,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       "note": "eufy-security-ws",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/eufy-security-ws/docker-compose.yml"
@@ -895,7 +872,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 47,
+      "id": 46,
       "type": 3,
       "title": "Excalidraw",
       "name": "excalidraw",
@@ -910,7 +887,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 48,
+      "id": 47,
       "type": 3,
       "title": "FarmOS",
       "name": "farmos",
@@ -925,7 +902,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 49,
+      "id": 48,
       "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",
@@ -940,7 +917,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 50,
+      "id": 49,
       "type": 3,
       "title": "Fastfetch",
       "name": "fastfetch",
@@ -955,7 +932,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 51,
+      "id": 50,
       "type": 3,
       "title": "Filebrowser",
       "name": "filebrowser",
@@ -974,7 +951,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 52,
+      "id": 51,
       "type": 3,
       "title": "Financial Freedom",
       "name": "financial-freedom",
@@ -1021,7 +998,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 53,
+      "id": 52,
       "type": 3,
       "title": "Firefox",
       "name": "firefox",
@@ -1042,7 +1019,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 54,
+      "id": 53,
       "type": 3,
       "title": "Flame",
       "name": "flame",
@@ -1060,7 +1037,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 55,
+      "id": 54,
       "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
@@ -1079,7 +1056,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 56,
+      "id": 55,
       "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
@@ -1109,7 +1086,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 57,
+      "id": 56,
       "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
@@ -1124,7 +1101,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 58,
+      "id": 57,
       "type": 3,
       "title": "Genmon",
       "name": "genmon",
@@ -1139,7 +1116,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 59,
+      "id": 58,
       "type": 3,
       "title": "Ghost",
       "name": "ghost",
@@ -1162,7 +1139,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 60,
+      "id": 59,
       "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
@@ -1191,7 +1168,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 61,
+      "id": 60,
       "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
@@ -1213,7 +1190,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 62,
+      "id": 61,
       "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
@@ -1234,7 +1211,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 63,
+      "id": 62,
       "type": 3,
       "title": "Glances",
       "name": "glances",
@@ -1253,7 +1230,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 64,
+      "id": 63,
       "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
@@ -1268,7 +1245,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 65,
+      "id": 64,
       "type": 3,
       "title": "GoAway",
       "name": "goaway",
@@ -1283,7 +1260,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 66,
+      "id": 65,
       "type": 3,
       "title": "Gotify",
       "name": "gotify",
@@ -1302,7 +1279,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 67,
+      "id": 66,
       "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
@@ -1324,7 +1301,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 68,
+      "id": 67,
       "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
@@ -1363,7 +1340,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 69,
+      "id": 68,
       "type": 3,
       "title": "Homarr",
       "name": "homarr",
@@ -1378,7 +1355,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 70,
+      "id": 69,
       "type": 3,
       "title": "Homarr v1",
       "name": "homarr-v1",
@@ -1393,7 +1370,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 71,
+      "id": 70,
       "type": 3,
       "title": "Home Assistant",
       "name": "home-assistant",
@@ -1408,7 +1385,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 72,
+      "id": 71,
       "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
@@ -1423,7 +1400,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 73,
+      "id": 72,
       "type": 3,
       "title": "Homer",
       "name": "homer",
@@ -1441,7 +1418,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 74,
+      "id": 73,
       "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
@@ -1463,7 +1440,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 75,
+      "id": 74,
       "type": 3,
       "title": "Immich",
       "name": "immich",
@@ -1487,7 +1464,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 76,
+      "id": 75,
       "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
@@ -1518,7 +1495,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 77,
+      "id": 76,
       "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
@@ -1540,7 +1517,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 78,
+      "id": 77,
       "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
@@ -1563,7 +1540,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 79,
+      "id": 78,
       "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
@@ -1578,7 +1555,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 80,
+      "id": 79,
       "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
@@ -1593,7 +1570,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 81,
+      "id": 80,
       "type": 3,
       "title": "Jellyseerr",
       "name": "jellyseerr",
@@ -1612,7 +1589,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 82,
+      "id": 81,
       "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
@@ -1627,7 +1604,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 83,
+      "id": 82,
       "type": 3,
       "title": "jfa-go",
       "name": "jfa-go",
@@ -1642,7 +1619,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 84,
+      "id": 83,
       "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
@@ -1661,7 +1638,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 85,
+      "id": 84,
       "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
@@ -1679,7 +1656,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 86,
+      "id": 85,
       "type": 3,
       "title": "joplin",
       "name": "joplin",
@@ -1705,7 +1682,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 87,
+      "id": 86,
       "type": 3,
       "title": "Kasm",
       "name": "kasm",
@@ -1713,14 +1690,14 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       "note": "Kasm",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://avatars.githubusercontent.com/u/44181855?s=280&v=4",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/kasm/docker-compose.yml"
       }
     },
     {
-      "id": 88,
+      "id": 87,
       "type": 3,
       "title": "Kavita",
       "name": "kavita",
@@ -1735,7 +1712,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 89,
+      "id": 88,
       "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
@@ -1750,7 +1727,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 90,
+      "id": 89,
       "type": 3,
       "title": "Komf",
       "name": "komf",
@@ -1774,7 +1751,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 91,
+      "id": 90,
       "type": 3,
       "title": "Komga",
       "name": "komga",
@@ -1792,7 +1769,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 92,
+      "id": 91,
       "type": 3,
       "title": "Kopia",
       "name": "kopia",
@@ -1807,7 +1784,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 93,
+      "id": 92,
       "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
@@ -1822,7 +1799,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 94,
+      "id": 93,
       "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
@@ -1830,14 +1807,14 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       "note": "Open source, self-hosted customer support desk. Single binary app.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/libredesk/docker-compose.yml"
       }
     },
     {
-      "id": 95,
+      "id": 94,
       "type": 3,
       "title": "LibreTranslate",
       "name": "libretranslate",
@@ -1852,7 +1829,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 96,
+      "id": 95,
       "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
@@ -1867,7 +1844,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 97,
+      "id": 96,
       "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -1882,7 +1859,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 98,
+      "id": 97,
       "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -1903,7 +1880,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 99,
+      "id": 98,
       "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
@@ -1933,7 +1910,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 100,
+      "id": 99,
       "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
@@ -1951,7 +1928,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 101,
+      "id": 100,
       "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
@@ -1969,7 +1946,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 102,
+      "id": 101,
       "type": 3,
       "title": "Matterbridge",
       "name": "matterbridge",
@@ -1984,7 +1961,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 103,
+      "id": 102,
       "type": 3,
       "title": "Maybe Finance",
       "name": "maybe-finance",
@@ -2009,7 +1986,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 104,
+      "id": 103,
       "type": 3,
       "title": "Mealie",
       "name": "mealie",
@@ -2024,7 +2001,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 105,
+      "id": 104,
       "type": 3,
       "title": "Microbin",
       "name": "microbin",
@@ -2081,7 +2058,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 106,
+      "id": 105,
       "type": 3,
       "title": "MIND",
       "name": "mind",
@@ -2099,7 +2076,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 107,
+      "id": 106,
       "type": 3,
       "title": "Minio",
       "name": "minio",
@@ -2118,7 +2095,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 108,
+      "id": 107,
       "type": 3,
       "title": "Monica",
       "name": "monica",
@@ -2133,7 +2110,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 109,
+      "id": 108,
       "type": 3,
       "title": "Morphos",
       "name": "morphos",
@@ -2148,7 +2125,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 110,
+      "id": 109,
       "type": 3,
       "title": "Mumble Server",
       "name": "mumble-server",
@@ -2163,7 +2140,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 111,
+      "id": 110,
       "type": 3,
       "title": "Music Assistant",
       "name": "music-assistant",
@@ -2178,7 +2155,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 112,
+      "id": 111,
       "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
@@ -2193,7 +2170,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 113,
+      "id": 112,
       "type": 3,
       "title": "n8n",
       "name": "n8n",
@@ -2211,7 +2188,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 114,
+      "id": 113,
       "type": 3,
       "title": "Ncdu",
       "name": "ncdu",
@@ -2226,7 +2203,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 115,
+      "id": 114,
       "type": 3,
       "title": "Neko Firefox",
       "name": "neko-firefox",
@@ -2248,7 +2225,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 116,
+      "id": 115,
       "type": 3,
       "title": "NetAlertX",
       "name": "netalertx",
@@ -2263,7 +2240,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 117,
+      "id": 116,
       "type": 3,
       "title": "Nextcloud",
       "name": "nextcloud",
@@ -2290,7 +2267,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 118,
+      "id": 117,
       "type": 3,
       "title": "Nextcloud LS",
       "name": "nextcloud-ls",
@@ -2310,7 +2287,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 119,
+      "id": 118,
       "type": 3,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",
@@ -2337,7 +2314,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 120,
+      "id": 119,
       "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
@@ -2352,7 +2329,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 121,
+      "id": 120,
       "type": 3,
       "title": "nightscout",
       "name": "nightscout",
@@ -2375,7 +2352,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 122,
+      "id": 121,
       "type": 3,
       "title": "NocoDB",
       "name": "nocodb",
@@ -2390,7 +2367,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 123,
+      "id": 122,
       "type": 3,
       "title": "Node-RED",
       "name": "node-red",
@@ -2405,7 +2382,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 124,
+      "id": 123,
       "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
@@ -2424,7 +2401,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 125,
+      "id": 124,
       "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
@@ -2442,7 +2419,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 126,
+      "id": 125,
       "type": 3,
       "title": "Ntfy.sh",
       "name": "ntfysh",
@@ -2460,7 +2437,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 127,
+      "id": 126,
       "type": 3,
       "title": "Obsidian",
       "name": "obsidian",
@@ -2475,7 +2452,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 128,
+      "id": 127,
       "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
@@ -2490,7 +2467,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 129,
+      "id": 128,
       "type": 3,
       "title": "OctoPrint",
       "name": "octoprint",
@@ -2505,7 +2482,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 130,
+      "id": 129,
       "type": 3,
       "title": "Odoo",
       "name": "odoo",
@@ -2525,7 +2502,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 131,
+      "id": 130,
       "type": 3,
       "title": "Ollama - AMD",
       "name": "ollama-amd",
@@ -2540,7 +2517,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 132,
+      "id": 131,
       "type": 3,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
@@ -2555,7 +2532,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 133,
+      "id": 132,
       "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
@@ -2570,7 +2547,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 134,
+      "id": 133,
       "type": 3,
       "title": "OneDev",
       "name": "onedev",
@@ -2585,7 +2562,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 135,
+      "id": 134,
       "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
@@ -2600,7 +2577,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 136,
+      "id": 135,
       "type": 3,
       "title": "Open WebUI",
       "name": "open-webui",
@@ -2615,7 +2592,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 137,
+      "id": 136,
       "type": 3,
       "title": "OpenVPN",
       "name": "openvpn-as",
@@ -2630,7 +2607,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 138,
+      "id": 137,
       "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
@@ -2638,14 +2615,14 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       "note": "OpenTelemetry Backend",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://www.gravatar.com/avatar/31cea69afa424609b2d83621b4d47f1d?s=120&r=g&d=404",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/otel-lgtm/docker-compose.yml"
       }
     },
     {
-      "id": 139,
+      "id": 138,
       "type": 3,
       "title": "ownCloud",
       "name": "owncloud",
@@ -2674,7 +2651,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 140,
+      "id": 139,
       "type": 3,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
@@ -2701,7 +2678,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 141,
+      "id": 140,
       "type": 3,
       "title": "Password Pusher",
       "name": "passwordpusher",
@@ -2721,7 +2698,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 142,
+      "id": 141,
       "type": 3,
       "title": "PD3F",
       "name": "pd3f",
@@ -2736,7 +2713,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 143,
+      "id": 142,
       "type": 3,
       "title": "Penpot",
       "name": "penpot",
@@ -2751,7 +2728,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 144,
+      "id": 143,
       "type": 3,
       "title": "Peppermint",
       "name": "peppermint",
@@ -2766,7 +2743,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 145,
+      "id": 144,
       "type": 3,
       "title": "Photoprism",
       "name": "photoprism",
@@ -2808,7 +2785,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 146,
+      "id": 145,
       "type": 3,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
@@ -2829,7 +2806,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 147,
+      "id": 146,
       "type": 3,
       "title": "Pi-hole",
       "name": "pihole",
@@ -2844,7 +2821,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 148,
+      "id": 147,
       "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
@@ -2859,7 +2836,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 149,
+      "id": 148,
       "type": 3,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
@@ -2880,7 +2857,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 150,
+      "id": 149,
       "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
@@ -2895,7 +2872,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 151,
+      "id": 150,
       "type": 3,
       "title": "Piwigo",
       "name": "piwigo",
@@ -2910,7 +2887,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 152,
+      "id": 151,
       "type": 3,
       "title": "Planka",
       "name": "planka",
@@ -2925,7 +2902,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 153,
+      "id": 152,
       "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
@@ -2940,7 +2917,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 154,
+      "id": 153,
       "type": 3,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
@@ -2958,7 +2935,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 155,
+      "id": 154,
       "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
@@ -2973,7 +2950,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 156,
+      "id": 155,
       "type": 3,
       "title": "Plex",
       "name": "plex",
@@ -2988,7 +2965,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 157,
+      "id": 156,
       "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
@@ -3012,7 +2989,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 158,
+      "id": 157,
       "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
@@ -3034,7 +3011,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 159,
+      "id": 158,
       "type": 3,
       "title": "Portainer",
       "name": "portainer",
@@ -3049,7 +3026,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 160,
+      "id": 159,
       "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",
@@ -3064,7 +3041,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 161,
+      "id": 160,
       "type": 3,
       "title": "Portracker",
       "name": "portracker",
@@ -3088,7 +3065,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 162,
+      "id": 161,
       "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
@@ -3106,7 +3083,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 163,
+      "id": 162,
       "type": 3,
       "title": "Project Management",
       "name": "project-management",
@@ -3121,7 +3098,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 164,
+      "id": 163,
       "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
@@ -3158,7 +3135,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 165,
+      "id": 164,
       "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -3179,7 +3156,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 166,
+      "id": 165,
       "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -3194,7 +3171,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 167,
+      "id": 166,
       "type": 3,
       "title": "Rallly",
       "name": "rallly",
@@ -3223,7 +3200,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 168,
+      "id": 167,
       "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
@@ -3238,7 +3215,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 169,
+      "id": 168,
       "type": 3,
       "title": "Readeck",
       "name": "readeck",
@@ -3259,7 +3236,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 170,
+      "id": 169,
       "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -3277,7 +3254,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 171,
+      "id": 170,
       "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
@@ -3295,7 +3272,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 172,
+      "id": 171,
       "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -3329,7 +3306,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 173,
+      "id": 172,
       "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -3344,7 +3321,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 174,
+      "id": 173,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -3363,7 +3340,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 175,
+      "id": 174,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -3387,7 +3364,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 176,
+      "id": 175,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -3402,7 +3379,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 177,
+      "id": 176,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -3424,7 +3401,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 178,
+      "id": 177,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -3439,7 +3416,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 179,
+      "id": 178,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -3457,7 +3434,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 180,
+      "id": 179,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -3483,7 +3460,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 181,
+      "id": 180,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -3498,7 +3475,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 182,
+      "id": 181,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3523,7 +3500,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 183,
+      "id": 182,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3538,7 +3515,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 184,
+      "id": 183,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -3564,7 +3541,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 185,
+      "id": 184,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -3579,7 +3556,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 186,
+      "id": 185,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -3594,7 +3571,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 187,
+      "id": 186,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -3628,7 +3605,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 188,
+      "id": 187,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -3643,7 +3620,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 189,
+      "id": 188,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -3658,7 +3635,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 190,
+      "id": 189,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -3679,7 +3656,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 191,
+      "id": 190,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -3702,7 +3679,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 192,
+      "id": 191,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -3720,7 +3697,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 193,
+      "id": 192,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -3740,7 +3717,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 194,
+      "id": 193,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -3755,7 +3732,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 195,
+      "id": 194,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -3784,7 +3761,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 196,
+      "id": 195,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -3813,7 +3790,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 197,
+      "id": 196,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -3828,7 +3805,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 198,
+      "id": 197,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -3843,7 +3820,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 199,
+      "id": 198,
       "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
@@ -3867,7 +3844,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 200,
+      "id": 199,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -3886,7 +3863,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 201,
+      "id": 200,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -3916,7 +3893,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 202,
+      "id": 201,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -3934,7 +3911,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 203,
+      "id": 202,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -3959,7 +3936,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 204,
+      "id": 203,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -3974,7 +3951,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 205,
+      "id": 204,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -3989,7 +3966,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 206,
+      "id": 205,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4004,7 +3981,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 207,
+      "id": 206,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4019,7 +3996,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 208,
+      "id": 207,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4040,7 +4017,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 209,
+      "id": 208,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4061,7 +4038,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 210,
+      "id": 209,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4081,7 +4058,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       ]
     },
     {
-      "id": 211,
+      "id": 210,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4096,7 +4073,7 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       }
     },
     {
-      "id": 212,
+      "id": 211,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4104,14 +4081,14 @@ Calendly and other scheduling tools are awesome. It made our lives massively eas
       "note": "zipline",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://github.com/bigbeartechworld/big-bear-casaos/assets/1289128/3b655316-f72c-4b89-8138-0abee624e9b8",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/zipline/docker-compose.yml"
       }
     },
     {
-      "id": 213,
+      "id": 212,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",

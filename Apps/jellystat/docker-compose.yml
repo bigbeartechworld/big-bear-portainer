@@ -21,7 +21,7 @@ services:
       - JWT_SECRET="my-secret-jwt-key"
     # Volumes to be mounted to the container
     volumes:
-      - jellystat_backup-data:/app/backend/backup-data
+      - big-bear-jellystat_backup-data:/app/backend/backup-data
     # Ports mapping between host and container
     ports:
       # Mapping port 3000 of the host to port 3000 of the container
@@ -36,7 +36,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 8a23ad09-61cf-4178-a783-6d4586496e3a
     volumes:
-      - jellystat_postgres-data:/var/lib/postgresql/data # Mounting the volume
+      - big-bear-jellystat_postgres-data:/var/lib/postgresql/data # Mounting the volume
     networks:
       - big-bear-jellystat-network
 networks:
@@ -44,9 +44,9 @@ networks:
     name: big-bear-jellystat-network
     driver: bridge
 volumes:
-  jellystat_backup-data:
-    name: jellystat_backup-data
+  big-bear-jellystat_backup-data:
+    name: big-bear-jellystat_backup-data
     driver: local
-  jellystat_postgres-data:
-    name: jellystat_postgres-data
+  big-bear-jellystat_postgres-data:
+    name: big-bear-jellystat_postgres-data
     driver: local

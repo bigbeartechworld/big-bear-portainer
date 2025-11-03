@@ -13,7 +13,7 @@ services:
     # Name of the container
     container_name: big-bear-gitea-mirror
     # Image to be used for the container
-    image: ghcr.io/raylabshq/gitea-mirror:v3.8.10
+    image: ghcr.io/raylabshq/gitea-mirror:v3.8.11
     # Container restart policy
     restart: unless-stopped
     # Ports mapping between host and container
@@ -23,7 +23,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local data directory to the container
-      - gitea-mirror_data:/app/data
+      - big-bear-gitea-mirror_data:/app/data
     # Environment variables for the container
     environment:
       - NODE_ENV=production
@@ -46,6 +46,6 @@ services:
       retries: 5
       start_period: 30s
 volumes:
-  gitea-mirror_data:
-    name: gitea-mirror_data
+  big-bear-gitea-mirror_data:
+    name: big-bear-gitea-mirror_data
     driver: local

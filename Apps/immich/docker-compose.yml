@@ -5,14 +5,14 @@ services:
   # Main Immich Server service configuration
   immich-server:
     container_name: immich-server # Name of the running container
-    image: ghcr.io/immich-app/immich-server:v2.1.0 # Image to be used
+    image: ghcr.io/immich-app/immich-server:v2.2.1 # Image to be used
     # extends:
     #   file: hwaccel.transcoding.yml
     #   service: cpu # set to one of [nvenc, quicksync, rkmpp, vaapi, vaapi-wsl] for accelerated transcoding
     ports: # Mapping ports from the host OS to the container
       - 2283:2283
     volumes: # Mounting directories for persistent data storage
-      - immich_upload:/usr/src/app/upload
+      - big-bear-immich_upload:/usr/src/app/upload
     environment: # Setting environment variables
       DB_HOSTNAME: immich-postgres
       DB_USERNAME: casaos
@@ -31,9 +31,9 @@ services:
   # Configuration for Immich Machine Learning service
   immich-machine-learning:
     container_name: immich-machine-learning # Name of the running container
-    image: ghcr.io/immich-app/immich-machine-learning:v2.1.0 # Image to be used
+    image: ghcr.io/immich-app/immich-machine-learning:v2.2.1 # Image to be used
     volumes: # Mounting directories for persistent data storage
-      - immich_model-cache:/cache
+      - big-bear-immich_model-cache:/cache
     environment: # Setting environment variables
       DB_HOSTNAME: immich-postgres
       DB_USERNAME: casaos
@@ -64,7 +64,7 @@ services:
       # Uncomment the DB_STORAGE_TYPE: 'HDD' var if your database isn't stored on SSDs
       # DB_STORAGE_TYPE: 'HDD'
     volumes: # Mounting directories for persistent data storage
-      - immich_pgdata:/var/lib/postgresql/data
+      - big-bear-immich_pgdata:/var/lib/postgresql/data
     restart: unless-stopped # Policy to always restart the container if it stops
     # CasaOS specific configuration for the database service
     networks:
@@ -74,12 +74,12 @@ networks:
   big_bear_immich_network:
     driver: bridge # Uses bridge network driver
 volumes:
-  immich_model-cache:
-    name: immich_model-cache
+  big-bear-immich_model-cache:
+    name: big-bear-immich_model-cache
     driver: local
-  immich_pgdata:
-    name: immich_pgdata
+  big-bear-immich_pgdata:
+    name: big-bear-immich_pgdata
     driver: local
-  immich_upload:
-    name: immich_upload
+  big-bear-immich_upload:
+    name: big-bear-immich_upload
     driver: local

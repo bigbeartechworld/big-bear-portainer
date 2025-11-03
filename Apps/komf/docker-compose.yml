@@ -25,7 +25,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /config directory to /config inside the container
-      - komf_config:/config
+      - big-bear-komf_config:/config
     # User to run the container as
     user: "1000:1000"
     # Ports mapping between host and container
@@ -40,6 +40,6 @@ networks:
   big_bear_komf_network:
     driver: bridge
 volumes:
-  komf_config:
-    name: komf_config
+  big-bear-komf_config:
+    name: big-bear-komf_config
     driver: local

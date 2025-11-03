@@ -18,17 +18,17 @@ services:
       - 10443:443
     # Mount the nextcloud-ls_data directory on the host to /var/www/html in the container
     volumes:
-      - nextcloud-ls_config:/config
-      - nextcloud-ls_data:/data
+      - big-bear-nextcloud-ls_config:/config
+      - big-bear-nextcloud-ls_data:/data
     # Set environment variables
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
 volumes:
-  nextcloud-ls_config:
-    name: nextcloud-ls_config
+  big-bear-nextcloud-ls_config:
+    name: big-bear-nextcloud-ls_config
     driver: local
-  nextcloud-ls_data:
-    name: nextcloud-ls_data
+  big-bear-nextcloud-ls_data:
+    name: big-bear-nextcloud-ls_data
     driver: local

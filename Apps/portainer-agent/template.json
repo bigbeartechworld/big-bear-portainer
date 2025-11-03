@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 160,
+      "id": 159,
       "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",

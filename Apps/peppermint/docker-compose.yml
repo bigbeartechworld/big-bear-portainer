@@ -74,7 +74,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local peppermint/postgres/data directory to /var/lib/postgresql/data inside the container
-      - peppermint_postgres_data:/var/lib/postgresql/data
+      - big-bear-peppermint_postgres_data:/var/lib/postgresql/data
     # Uses default network mode
     networks:
       - default
@@ -84,6 +84,6 @@ networks:
   default:
     name: peppermint_default
 volumes:
-  peppermint_postgres_data:
-    name: peppermint_postgres_data
+  big-bear-peppermint_postgres_data:
+    name: big-bear-peppermint_postgres_data
     driver: local

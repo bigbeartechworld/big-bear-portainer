@@ -17,7 +17,7 @@ services:
     volumes:
       # Mounting the local otel-lgtm_data directory to /data inside the container
       - type: bind
-        source: otel-lgtm_data
+        source: big-bear-otel-lgtm_data
         target: /data
         bind:
           create_host_path: true
@@ -45,6 +45,6 @@ networks:
   big-bear-otel-lgtm:
     driver: bridge
 volumes:
-  otel-lgtm_data:
-    name: otel-lgtm_data
+  big-bear-otel-lgtm_data:
+    name: big-bear-otel-lgtm_data
     driver: local
