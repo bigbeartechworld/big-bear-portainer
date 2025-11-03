@@ -7,7 +7,7 @@ services:
   # Service definition for the Ghostfolio application
   big-bear-ghostfolio:
     container_name: big-bear-ghostfolio # Unique name for the container instance
-    image: ghostfolio/ghostfolio:2.211.0 # Docker image to use
+    image: ghostfolio/ghostfolio:2.213.0 # Docker image to use
     restart: unless-stopped # Policy to restart the container unless manually stopped
     environment: # Environment variables for configuration
       NODE_ENV: production # Node environment setting (production, development, etc.)
@@ -48,7 +48,7 @@ services:
       timeout: 5s
       retries: 5
     volumes: # Persistent volume mapping for database data
-      - ghostfolio_data_db:/var/lib/postgresql/data
+      - big-bear-ghostfolio_data_db:/var/lib/postgresql/data
     networks:
       - big_bear_ghostfolio_network # Connects the service to the defined network
   # Redis service for Ghostfolio, used for caching and session storage
@@ -66,7 +66,7 @@ services:
       retries: 5
       start_period: 30s
     volumes: # Persistent volume mapping for Redis data
-      - ghostfolio_data_redis:/data
+      - big-bear-ghostfolio_data_redis:/data
     networks:
       - big_bear_ghostfolio_network # Connects the service to the defined network
 # Network definition for inter-service communication
@@ -74,9 +74,9 @@ networks:
   big_bear_ghostfolio_network:
     driver: bridge # Uses a bridge network for container communication
 volumes:
-  ghostfolio_data_db:
-    name: ghostfolio_data_db
+  big-bear-ghostfolio_data_db:
+    name: big-bear-ghostfolio_data_db
     driver: local
-  ghostfolio_data_redis:
-    name: ghostfolio_data_redis
+  big-bear-ghostfolio_data_redis:
+    name: big-bear-ghostfolio_data_redis
     driver: local

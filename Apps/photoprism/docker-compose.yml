@@ -81,12 +81,12 @@ networks:
     # Set the driver to bridge
     driver: bridge
 volumes:
-  photoprism_mysql:
-    name: photoprism_mysql
+  big-bear-photoprism_mysql:
+    name: big-bear-photoprism_mysql
     driver: local
-  photoprism_originals:
-    name: photoprism_originals
+  big-bear-photoprism_originals:
+    name: big-bear-photoprism_originals
     driver: local
-  photoprism_storage:
-    name: photoprism_storage
+  big-bear-photoprism_storage:
+    name: big-bear-photoprism_storage
     driver: local

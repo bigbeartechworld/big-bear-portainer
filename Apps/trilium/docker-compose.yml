@@ -19,12 +19,12 @@ services:
     # Volumes to be mounted to the container
     volumes:
       # Mounting the local /DATA/AppData/$AppID/data directory to /home/node/trilium-data inside the container
-      - trilium_data:/home/node/trilium-data
+      - big-bear-trilium_data:/home/node/trilium-data
     # Ports mapping between host and container
     ports:
       # Mapping port 8080 of the host to port 8080 of the container
       - "8080:8080"
 volumes:
-  trilium_data:
-    name: trilium_data
+  big-bear-trilium_data:
+    name: big-bear-trilium_data
     driver: local

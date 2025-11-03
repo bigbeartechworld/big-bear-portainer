@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 138,
+      "id": 137,
       "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
@@ -7,7 +7,7 @@
       "note": "OpenTelemetry Backend",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://www.gravatar.com/avatar/31cea69afa424609b2d83621b4d47f1d?s=120&r=g&d=404",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/otel-lgtm/docker-compose.yml"

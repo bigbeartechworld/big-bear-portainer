@@ -5,9 +5,9 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - dashdot_data:/mnt/host
+      - big-bear-dashdot_data:/mnt/host
     privileged: true
 volumes:
-  dashdot_data:
-    name: dashdot_data
+  big-bear-dashdot_data:
+    name: big-bear-dashdot_data
     driver: local

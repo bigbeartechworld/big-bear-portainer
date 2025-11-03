@@ -16,7 +16,7 @@ services:
     # Volumes to be mounted to the container
     volumes:
       - type: bind
-        source: music-assistant_data
+        source: big-bear-music-assistant_data
         target: /data
     # Network mode for the container
     network_mode: host
@@ -30,6 +30,6 @@ services:
       - SYS_ADMIN
       - DAC_READ_SEARCH
 volumes:
-  music-assistant_data:
-    name: music-assistant_data
+  big-bear-music-assistant_data:
+    name: big-bear-music-assistant_data
     driver: local

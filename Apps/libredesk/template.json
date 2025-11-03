@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 94,
+      "id": 93,
       "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
@@ -7,7 +7,7 @@
       "note": "Open source, self-hosted customer support desk. Single binary app.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/libredesk/docker-compose.yml"

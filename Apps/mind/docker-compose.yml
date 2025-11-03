@@ -12,6 +12,6 @@ services:
     ports:
       - "8080:8080"
 volumes:
-  mind_db:
-    name: mind_db
+  big-bear-mind_db:
+    name: big-bear-mind_db
     driver: local

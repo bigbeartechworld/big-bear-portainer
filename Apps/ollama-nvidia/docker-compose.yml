@@ -10,12 +10,12 @@ services:
     # Name of the container
     container_name: big-bear-ollama-nvidia
     # Image to be used for the container
-    image: ollama/ollama:0.12.6
+    image: ollama/ollama:0.12.7
     # Container restart policy
     restart: unless-stopped
     # Volumes to be mounted to the container
     volumes:
-      - ollama-nvidia_.ollama:/root/.ollama
+      - big-bear-ollama-nvidia_.ollama:/root/.ollama
     # Ports mapping between host and container
     ports:
       # Mapping port 11434 of the host to port 11434 of the container
@@ -34,6 +34,6 @@ services:
                 # Define the required capabilities (gpu for GPU resources)
                 - gpu
 volumes:
-  ollama-nvidia_.ollama:
-    name: ollama-nvidia_.ollama
+  big-bear-ollama-nvidia_.ollama:
+    name: big-bear-ollama-nvidia_.ollama
     driver: local
