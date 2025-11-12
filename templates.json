@@ -940,7 +940,7 @@
       "note": "Access your homeserver files from your browser",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/filebrowser-quantum.png",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/file-browser.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/filebrowser/docker-compose.yml"
