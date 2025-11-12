@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 180,
+      "type": 3,
+      "title": "Spoolman",
+      "name": "spoolman",
+      "description": "Keep track of your inventory of 3D-printer filament spools. Spoolman is a self-hosted web service designed to help you efficiently manage your 3D printer filament spools and monitor their usage.",
+      "note": "Filament spool inventory management for 3D printing",
+      "categories": ["Utilities", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/spoolman.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/spoolman/docker-compose.yml"
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"},
+        {"name": "SPOOLMAN_DB_TYPE", "label": "SPOOLMAN_DB_TYPE", "description": "Database type: sqlite, mysql, postgres, cockroachdb", "default": "sqlite"},
+        {"name": "SPOOLMAN_LOGGING_LEVEL", "label": "SPOOLMAN_LOGGING_LEVEL", "description": "Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL", "default": "INFO"},
+        {"name": "SPOOLMAN_AUTOMATIC_BACKUP", "label": "SPOOLMAN_AUTOMATIC_BACKUP", "description": "Automatic nightly backup for SQLite databases", "default": "TRUE"}
+      ]
+    }]}

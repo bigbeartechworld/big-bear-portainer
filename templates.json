@@ -3462,6 +3462,27 @@
     {
       "id": 180,
       "type": 3,
+      "title": "Spoolman",
+      "name": "spoolman",
+      "description": "Keep track of your inventory of 3D-printer filament spools. Spoolman is a self-hosted web service designed to help you efficiently manage your 3D printer filament spools and monitor their usage.",
+      "note": "Filament spool inventory management for 3D printing",
+      "categories": ["Utilities", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/spoolman.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/spoolman/docker-compose.yml"
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"},
+        {"name": "SPOOLMAN_DB_TYPE", "label": "SPOOLMAN_DB_TYPE", "description": "Database type: sqlite, mysql, postgres, cockroachdb", "default": "sqlite"},
+        {"name": "SPOOLMAN_LOGGING_LEVEL", "label": "SPOOLMAN_LOGGING_LEVEL", "description": "Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL", "default": "INFO"},
+        {"name": "SPOOLMAN_AUTOMATIC_BACKUP", "label": "SPOOLMAN_AUTOMATIC_BACKUP", "description": "Automatic nightly backup for SQLite databases", "default": "TRUE"}
+      ]
+    },
+    {
+      "id": 181,
+      "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
       "description": "Stalwart Mail Server is an open-source mail server solution with JMAP, IMAP4, POP3, and SMTP support and a wide range of modern features. It is written in Rust and designed to be secure, fast, robust and scalable.",
@@ -3475,7 +3496,7 @@
       }
     },
     {
-      "id": 181,
+      "id": 182,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3500,7 +3521,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 183,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3515,7 +3536,7 @@
       }
     },
     {
-      "id": 183,
+      "id": 184,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -3541,7 +3562,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 185,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -3556,7 +3577,7 @@
       }
     },
     {
-      "id": 185,
+      "id": 186,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -3571,7 +3592,7 @@
       }
     },
     {
-      "id": 186,
+      "id": 187,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -3605,7 +3626,7 @@
       ]
     },
     {
-      "id": 187,
+      "id": 188,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -3620,7 +3641,7 @@
       }
     },
     {
-      "id": 188,
+      "id": 189,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -3635,7 +3656,7 @@
       }
     },
     {
-      "id": 189,
+      "id": 190,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -3656,7 +3677,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 191,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -3679,7 +3700,7 @@
       ]
     },
     {
-      "id": 191,
+      "id": 192,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -3697,7 +3718,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 193,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -3717,7 +3738,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": 194,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -3732,7 +3753,7 @@
       }
     },
     {
-      "id": 194,
+      "id": 195,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -3761,7 +3782,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 196,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -3790,7 +3811,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 197,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -3805,7 +3826,7 @@
       }
     },
     {
-      "id": 197,
+      "id": 198,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -3820,7 +3841,7 @@
       }
     },
     {
-      "id": 198,
+      "id": 199,
       "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
@@ -3844,7 +3865,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 200,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -3863,7 +3884,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -3893,7 +3914,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -3911,7 +3932,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -3936,7 +3957,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -3951,7 +3972,7 @@
       }
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -3966,7 +3987,7 @@
       }
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -3981,7 +4002,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -3996,7 +4017,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4017,7 +4038,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4038,7 +4059,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4058,7 +4079,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4073,7 +4094,7 @@
       }
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4088,7 +4109,7 @@
       }
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
