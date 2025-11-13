@@ -1,5 +1,4 @@
 # Configuration for big-bear-actual-server setup
-name: big-bear-actual-server
 # Service definitions for the big-bear-actual-server application
 services:
   # Service name: app
@@ -11,7 +10,6 @@ services:
     ports:
       - "5006:5006" # Expose actual-server's port 5006 on the host's port 5006
     restart: unless-stopped # Policy to restart the container if it stops unexpectedly
-
 # Named volumes for persistent data
 volumes:
   big-bear-actual-server_data:
