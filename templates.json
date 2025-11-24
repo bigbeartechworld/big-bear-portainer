@@ -2600,7 +2600,7 @@
       "note": "OpenVPN is an open-source commercial software that implements virtual private network (VPN).",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://static-00.iconduck.com/assets.00/openvpn-icon-512x512-nmf6geqm.png",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/openvpn.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/openvpn-as/docker-compose.yml"
