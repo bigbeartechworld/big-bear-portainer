@@ -3843,6 +3843,21 @@
     {
       "id": 199,
       "type": 3,
+      "title": "VERT",
+      "name": "vert",
+      "description": "VERT is a file conversion utility that uses WebAssembly to convert files on your device instead of a cloud. Convert images, audio, documents, and video with support for over 250+ file formats. No file or file size limits.",
+      "note": "The next-generation file converter. Open source, fully local and free forever.",
+      "categories": ["BigBearUniversalApps", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/vert.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vert/docker-compose.yml"
+      }
+    },
+    {
+      "id": 200,
+      "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
       "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
@@ -3865,7 +3880,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -3884,7 +3899,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -3914,7 +3929,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -3932,7 +3947,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -3957,7 +3972,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -3972,7 +3987,7 @@
       }
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -3987,7 +4002,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4002,7 +4017,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4017,7 +4032,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4038,7 +4053,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4059,7 +4074,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4079,7 +4094,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4094,7 +4109,7 @@
       }
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4109,7 +4124,7 @@
       }
     },
     {
-      "id": 213,
+      "id": 214,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",

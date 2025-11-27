@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 199,
+      "type": 3,
+      "title": "VERT",
+      "name": "vert",
+      "description": "VERT is a file conversion utility that uses WebAssembly to convert files on your device instead of a cloud. Convert images, audio, documents, and video with support for over 250+ file formats. No file or file size limits.",
+      "note": "The next-generation file converter. Open source, fully local and free forever.",
+      "categories": ["BigBearUniversalApps", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/vert.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vert/docker-compose.yml"
+      }
+    }]}
