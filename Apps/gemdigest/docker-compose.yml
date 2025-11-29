@@ -1,6 +1,7 @@
 # Configuration for GemDigest bot setup
 
 # Name of the gem-digest-bot application
+name: big-bear-gem-digest-bot
 # Service definitions for the gem-digest-bot application
 services:
   # Service name: big-bear-gem-digest-bot
@@ -12,7 +13,7 @@ services:
     image: piero24/gemdigest:1.0
     # Mount local directory to the container's /home/dev directory
     volumes:
-      - big-bear-GemDigest_extra_configs:/gem_digest_bot/extra_configs
+      - GemDigest_extra_configs:/gem_digest_bot/extra_configs
     # Environment variables with default values
     environment:
       TELEGRAM_API_KEY: TELEGRAM_API_KEY
@@ -26,6 +27,4 @@ services:
       # Example: Mapping port 8080 of the host to port 8080 of the container (adjust as needed)
       - "3333:8080"
 volumes:
-  big-bear-GemDigest_extra_configs:
-    name: big-bear-GemDigest_extra_configs
-    driver: local
+  GemDigest_extra_configs: {}
