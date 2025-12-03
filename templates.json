@@ -3100,6 +3100,30 @@
     {
       "id": 163,
       "type": 3,
+      "title": "PsiTransfer",
+      "name": "psitransfer",
+      "description": "PsiTransfer is a simple open source self-hosted file sharing solution. It's an alternative to paid services like Dropbox and WeTransfer. Features include no accounts or logins required, mobile friendly responsive interface, support for many and very big files with resumable uploads and downloads, expiring upload buckets, one-time downloads, password protected downloads, and admin dashboard.",
+      "note": "Simple self-hosted file sharing solution",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/psitransfer.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/psitransfer/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PSITRANSFER_ADMIN_PASS", "label": "PSITRANSFER_ADMIN_PASS", "description": "Admin password for /admin page. Leave empty to disable admin page.", "default": ""},
+        {"name": "PSITRANSFER_UPLOAD_PASS", "label": "PSITRANSFER_UPLOAD_PASS", "description": "Password required for uploading files. Leave empty to allow public uploads.", "default": ""},
+        {"name": "PSITRANSFER_REQUIRE_BUCKET_PASSWORD", "label": "PSITRANSFER_REQUIRE_BUCKET_PASSWORD", "description": "Make the bucket password field mandatory.", "default": "false"},
+        {"name": "PSITRANSFER_MAX_FILE_SIZE", "label": "PSITRANSFER_MAX_FILE_SIZE", "description": "Maximum file size in bytes. Leave empty for no limit.", "default": ""},
+        {"name": "PSITRANSFER_MAX_BUCKET_SIZE", "label": "PSITRANSFER_MAX_BUCKET_SIZE", "description": "Maximum bucket size in bytes. Leave empty for no limit.", "default": ""},
+        {"name": "PSITRANSFER_DEFAULT_RETENTION", "label": "PSITRANSFER_DEFAULT_RETENTION", "description": "Default retention time in seconds (604800 = 1 week).", "default": "604800"},
+        {"name": "PSITRANSFER_MAX_AGE", "label": "PSITRANSFER_MAX_AGE", "description": "Maximum age for files in seconds (6480000 = 75 days).", "default": "6480000"}
+      ]
+    },
+    {
+      "id": 164,
+      "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
       "description": "Pterodactyl® is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.",
@@ -3135,7 +3159,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 165,
       "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -3156,7 +3180,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 166,
       "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -3171,7 +3195,7 @@
       }
     },
     {
-      "id": 166,
+      "id": 167,
       "type": 3,
       "title": "Rallly",
       "name": "rallly",
@@ -3200,7 +3224,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 168,
       "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
@@ -3215,7 +3239,7 @@
       }
     },
     {
-      "id": 168,
+      "id": 169,
       "type": 3,
       "title": "Readeck",
       "name": "readeck",
@@ -3236,7 +3260,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 170,
       "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -3254,7 +3278,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 171,
       "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
@@ -3272,7 +3296,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": 172,
       "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -3306,7 +3330,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 173,
       "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -3321,7 +3345,7 @@
       }
     },
     {
-      "id": 173,
+      "id": 174,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -3340,7 +3364,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 175,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -3364,7 +3388,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 176,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -3379,7 +3403,7 @@
       }
     },
     {
-      "id": 176,
+      "id": 177,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -3401,7 +3425,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 178,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -3416,7 +3440,7 @@
       }
     },
     {
-      "id": 178,
+      "id": 179,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -3434,7 +3458,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 180,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -3460,7 +3484,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 181,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -3481,7 +3505,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 182,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -3496,7 +3520,7 @@
       }
     },
     {
-      "id": 182,
+      "id": 183,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3521,7 +3545,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 184,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3536,7 +3560,7 @@
       }
     },
     {
-      "id": 184,
+      "id": 185,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -3562,7 +3586,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 186,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -3577,7 +3601,7 @@
       }
     },
     {
-      "id": 186,
+      "id": 187,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -3592,7 +3616,7 @@
       }
     },
     {
-      "id": 187,
+      "id": 188,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -3626,7 +3650,7 @@
       ]
     },
     {
-      "id": 188,
+      "id": 189,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -3641,7 +3665,7 @@
       }
     },
     {
-      "id": 189,
+      "id": 190,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -3656,7 +3680,7 @@
       }
     },
     {
-      "id": 190,
+      "id": 191,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -3677,7 +3701,7 @@
       ]
     },
     {
-      "id": 191,
+      "id": 192,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -3700,7 +3724,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 193,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -3718,7 +3742,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": 194,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -3738,7 +3762,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": 195,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -3753,7 +3777,7 @@
       }
     },
     {
-      "id": 195,
+      "id": 196,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -3782,7 +3806,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 197,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -3811,7 +3835,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": 198,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -3826,7 +3850,7 @@
       }
     },
     {
-      "id": 198,
+      "id": 199,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -3841,7 +3865,7 @@
       }
     },
     {
-      "id": 199,
+      "id": 200,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -3856,7 +3880,7 @@
       }
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
@@ -3880,7 +3904,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -3899,7 +3923,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -3929,7 +3953,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -3947,7 +3971,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -3972,7 +3996,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -3987,7 +4011,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -4002,7 +4026,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4017,7 +4041,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4032,7 +4056,7 @@
       }
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4053,7 +4077,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4074,7 +4098,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4094,7 +4118,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4109,7 +4133,7 @@
       }
     },
     {
-      "id": 213,
+      "id": 214,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4124,7 +4148,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 215,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",

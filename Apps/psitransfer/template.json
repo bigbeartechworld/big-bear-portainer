@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 163,
+      "type": 3,
+      "title": "PsiTransfer",
+      "name": "psitransfer",
+      "description": "PsiTransfer is a simple open source self-hosted file sharing solution. It's an alternative to paid services like Dropbox and WeTransfer. Features include no accounts or logins required, mobile friendly responsive interface, support for many and very big files with resumable uploads and downloads, expiring upload buckets, one-time downloads, password protected downloads, and admin dashboard.",
+      "note": "Simple self-hosted file sharing solution",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/psitransfer.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/psitransfer/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PSITRANSFER_ADMIN_PASS", "label": "PSITRANSFER_ADMIN_PASS", "description": "Admin password for /admin page. Leave empty to disable admin page.", "default": ""},
+        {"name": "PSITRANSFER_UPLOAD_PASS", "label": "PSITRANSFER_UPLOAD_PASS", "description": "Password required for uploading files. Leave empty to allow public uploads.", "default": ""},
+        {"name": "PSITRANSFER_REQUIRE_BUCKET_PASSWORD", "label": "PSITRANSFER_REQUIRE_BUCKET_PASSWORD", "description": "Make the bucket password field mandatory.", "default": "false"},
+        {"name": "PSITRANSFER_MAX_FILE_SIZE", "label": "PSITRANSFER_MAX_FILE_SIZE", "description": "Maximum file size in bytes. Leave empty for no limit.", "default": ""},
+        {"name": "PSITRANSFER_MAX_BUCKET_SIZE", "label": "PSITRANSFER_MAX_BUCKET_SIZE", "description": "Maximum bucket size in bytes. Leave empty for no limit.", "default": ""},
+        {"name": "PSITRANSFER_DEFAULT_RETENTION", "label": "PSITRANSFER_DEFAULT_RETENTION", "description": "Default retention time in seconds (604800 = 1 week).", "default": "604800"},
+        {"name": "PSITRANSFER_MAX_AGE", "label": "PSITRANSFER_MAX_AGE", "description": "Maximum age for files in seconds (6480000 = 75 days).", "default": "6480000"}
+      ]
+    }]}
