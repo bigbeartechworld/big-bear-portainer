@@ -3332,6 +3332,27 @@
     {
       "id": 173,
       "type": 3,
+      "title": "RustFS",
+      "name": "rustfs",
+      "description": "RustFS is a high-performance, distributed object storage system built in Rust. It combines the simplicity of MinIO with the memory safety and raw performance of Rust. It offers full S3 compatibility, is completely open-source under Apache 2.0 license, and is optimized for data lakes, AI, and big data workloads.",
+      "note": "High-performance S3-compatible object storage built in Rust",
+      "categories": ["Storage", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/rustfs.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rustfs/docker-compose.yml"
+      },
+      "env": [
+        {"name": "RUSTFS_ACCESS_KEY", "label": "RUSTFS_ACCESS_KEY", "description": "Access key for RustFS authentication", "default": "rustfsadmin"},
+        {"name": "RUSTFS_SECRET_KEY", "label": "RUSTFS_SECRET_KEY", "description": "Secret key for RustFS authentication", "default": "rustfsadmin"},
+        {"name": "RUSTFS_CONSOLE_ENABLE", "label": "RUSTFS_CONSOLE_ENABLE", "description": "Enable the web console", "default": "true"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"}
+      ]
+    },
+    {
+      "id": 174,
+      "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
       "description": "If you run a server with more than a couple of hard drives, you're probably already familiar with S.M.A.R.T and the smartd daemon.",
@@ -3345,7 +3366,7 @@
       }
     },
     {
-      "id": 174,
+      "id": 175,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -3364,7 +3385,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 176,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -3388,7 +3409,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 177,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -3403,7 +3424,7 @@
       }
     },
     {
-      "id": 177,
+      "id": 178,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -3425,7 +3446,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": 179,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -3440,7 +3461,7 @@
       }
     },
     {
-      "id": 179,
+      "id": 180,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -3458,7 +3479,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 181,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -3484,7 +3505,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 182,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -3505,7 +3526,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 183,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -3520,7 +3541,7 @@
       }
     },
     {
-      "id": 183,
+      "id": 184,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3545,7 +3566,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 185,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3560,7 +3581,7 @@
       }
     },
     {
-      "id": 185,
+      "id": 186,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -3586,7 +3607,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": 187,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -3601,7 +3622,7 @@
       }
     },
     {
-      "id": 187,
+      "id": 188,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -3616,7 +3637,7 @@
       }
     },
     {
-      "id": 188,
+      "id": 189,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -3650,7 +3671,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 190,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -3665,7 +3686,7 @@
       }
     },
     {
-      "id": 190,
+      "id": 191,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -3680,7 +3701,7 @@
       }
     },
     {
-      "id": 191,
+      "id": 192,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -3701,7 +3722,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 193,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -3724,7 +3745,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": 194,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -3742,7 +3763,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": 195,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -3762,7 +3783,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 196,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -3777,7 +3798,7 @@
       }
     },
     {
-      "id": 196,
+      "id": 197,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -3806,7 +3827,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": 198,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -3835,7 +3856,7 @@
       ]
     },
     {
-      "id": 198,
+      "id": 199,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -3850,7 +3871,7 @@
       }
     },
     {
-      "id": 199,
+      "id": 200,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -3865,7 +3886,7 @@
       }
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -3880,7 +3901,7 @@
       }
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
@@ -3904,7 +3925,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -3923,7 +3944,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -3953,7 +3974,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -3971,7 +3992,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -3996,7 +4017,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -4011,7 +4032,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -4026,7 +4047,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4041,7 +4062,7 @@
       }
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4056,7 +4077,7 @@
       }
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4077,7 +4098,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4098,7 +4119,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4118,7 +4139,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 214,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4133,7 +4154,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 215,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4148,7 +4169,7 @@
       }
     },
     {
-      "id": 215,
+      "id": 216,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",

@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 173,
+      "type": 3,
+      "title": "RustFS",
+      "name": "rustfs",
+      "description": "RustFS is a high-performance, distributed object storage system built in Rust. It combines the simplicity of MinIO with the memory safety and raw performance of Rust. It offers full S3 compatibility, is completely open-source under Apache 2.0 license, and is optimized for data lakes, AI, and big data workloads.",
+      "note": "High-performance S3-compatible object storage built in Rust",
+      "categories": ["Storage", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/rustfs.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rustfs/docker-compose.yml"
+      },
+      "env": [
+        {"name": "RUSTFS_ACCESS_KEY", "label": "RUSTFS_ACCESS_KEY", "description": "Access key for RustFS authentication", "default": "rustfsadmin"},
+        {"name": "RUSTFS_SECRET_KEY", "label": "RUSTFS_SECRET_KEY", "description": "Secret key for RustFS authentication", "default": "rustfsadmin"},
+        {"name": "RUSTFS_CONSOLE_ENABLE", "label": "RUSTFS_CONSOLE_ENABLE", "description": "Enable the web console", "default": "true"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"}
+      ]
+    }]}
