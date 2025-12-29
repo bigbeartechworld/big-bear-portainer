@@ -789,7 +789,7 @@
       "note": "Docmost",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/docmost/logo.png",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/docmost.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/docmost/docker-compose.yml"
