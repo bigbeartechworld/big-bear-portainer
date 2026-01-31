@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 136,
+      "type": 3,
+      "title": "OpenClaw",
+      "name": "openclaw",
+      "description": "OpenClaw is a self-hosted AI agent platform that provides Claude AI integration through a local gateway. It enables running AI assistants with local tool execution, file access, and workspace management. Features include WebSocket gateway, browser automation, and extensible command framework.",
+      "note": "Self-hosted AI agent platform with Claude integration",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/openclaw/docker-compose.yml"
+      },
+      "env": [
+        {"name": "OPENCLAW_GATEWAY_TOKEN", "label": "OPENCLAW_GATEWAY_TOKEN", "description": "Gateway authentication token (required). Generate using: openssl rand -hex 32", "default": ""},
+        {"name": "CLAUDE_AI_SESSION_KEY", "label": "CLAUDE_AI_SESSION_KEY", "description": "Claude AI session key for API access (optional)", "default": ""},
+        {"name": "CLAUDE_WEB_SESSION_KEY", "label": "CLAUDE_WEB_SESSION_KEY", "description": "Claude web session key (optional)", "default": ""},
+        {"name": "CLAUDE_WEB_COOKIE", "label": "CLAUDE_WEB_COOKIE", "description": "Claude web cookie for authentication (optional)", "default": ""}
+      ]
+    }]}
