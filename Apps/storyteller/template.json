@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 185,
+      "type": 3,
+      "title": "Storyteller",
+      "name": "storyteller",
+      "description": "Storyteller is a self-hosted platform for ebook reading and library management. It supports multiple ebook formats including EPUB, PDF, and MOBI. Features include a modern web-based reader, library organization, metadata management, and multi-user support. Built with Django and includes optional Readium reader integration for enhanced reading experience.",
+      "note": "Self-hosted ebook reading platform",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/storyteller.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/storyteller/docker-compose.yml"
+      },
+      "env": [
+        {"name": "STORYTELLER_SECRET_KEY", "label": "STORYTELLER_SECRET_KEY", "description": "Secret key for authentication (required). Generate using: openssl rand -base64 32", "default": ""},
+        {"name": "STORYTELLER_LOG_LEVEL", "label": "STORYTELLER_LOG_LEVEL", "description": "Log level (debug, info, warning, error)", "default": "info"},
+        {"name": "STORYTELLER_DATA_DIR", "label": "STORYTELLER_DATA_DIR", "description": "Data directory path inside container", "default": "/data"},
+        {"name": "STORYTELLER_MAX_UPLOAD_CHUNK_SIZE", "label": "STORYTELLER_MAX_UPLOAD_CHUNK_SIZE", "description": "Maximum upload chunk size in MB", "default": "10"},
+        {"name": "STORYTELLER_DEMO_MODE", "label": "STORYTELLER_DEMO_MODE", "description": "Enable demo mode (true/false)", "default": "false"},
+        {"name": "ENABLE_WEB_READER", "label": "ENABLE_WEB_READER", "description": "Enable integrated web reader (true/false)", "default": "false"},
+        {"name": "READIUM_PORT", "label": "READIUM_PORT", "description": "Readium server port (not exposed by default)", "default": "8002"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": "UTC"}
+      ]
+    }]}
