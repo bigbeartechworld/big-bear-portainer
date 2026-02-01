@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 216,
+      "id": 217,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
