@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 52,
+      "type": 3,
+      "title": "FileBrowser Quantum",
+      "name": "filebrowser-quantum",
+      "description": "A self-hosted web file manager forked from FileBrowser with advanced features including OIDC authentication, indexed search, office document previews, and multi-source support.",
+      "note": "Advanced self-hosted web file manager",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/gtsteffaniak/filebrowser@main/frontend/public/img/logo.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/filebrowser-quantum/docker-compose.yml"
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"}
+      ]
+    }]}
