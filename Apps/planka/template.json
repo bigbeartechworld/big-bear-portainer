@@ -1,10 +1,10 @@
 {"version": "3", "templates": [    {
       "id": 154,
       "type": 3,
-      "title": "Planka",
+      "title": "Planka (Legacy)",
       "name": "planka",
       "description": "The realtime kanban board for workgroups built with React and Redux.",
-      "note": "Free open source kanban board for workgroups.",
+      "note": "Legacy v1 - Use Planka v2 for new installs.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/planka.png",
