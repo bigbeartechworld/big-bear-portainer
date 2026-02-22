@@ -2943,10 +2943,10 @@
     {
       "id": 154,
       "type": 3,
-      "title": "Planka",
+      "title": "Planka (Legacy)",
       "name": "planka",
       "description": "The realtime kanban board for workgroups built with React and Redux.",
-      "note": "Free open source kanban board for workgroups.",
+      "note": "Legacy v1 - Use Planka v2 for new installs.",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/planka.png",
@@ -2957,6 +2957,51 @@
     },
     {
       "id": 155,
+      "type": 3,
+      "title": "Planka v2",
+      "name": "planka-v2",
+      "description": "The realtime kanban board for workgroups built with React and Redux.",
+      "note": "Free open source kanban board for workgroups.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/planka.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/planka-v2/docker-compose.yml"
+      },
+      "env": [
+        {"name": "BASE_URL", "label": "BASE_URL", "description": "The base URL where Planka will be accessed (required)", "default": "http://[YOUR_CASAOS_LAN_IP]:3001"},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "PostgreSQL database connection URL (required)", "default": "postgresql://postgres@big-bear-planka-v2-postgres/planka"},
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Secret key for session encryption - CHANGE THIS IN PRODUCTION (required)", "default": "notsecretkey"},
+        {"name": "DEFAULT_ADMIN_EMAIL", "label": "DEFAULT_ADMIN_EMAIL", "description": "Default admin email for initial setup (required)", "default": "demo@demo.demo"},
+        {"name": "DEFAULT_ADMIN_PASSWORD", "label": "DEFAULT_ADMIN_PASSWORD", "description": "Default admin password for initial setup (required)", "default": "demo"},
+        {"name": "DEFAULT_ADMIN_NAME", "label": "DEFAULT_ADMIN_NAME", "description": "Default admin full name for initial setup (required)", "default": "Demo Demo"},
+        {"name": "DEFAULT_ADMIN_USERNAME", "label": "DEFAULT_ADMIN_USERNAME", "description": "Default admin username for initial setup (required)", "default": "demo"},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "v2.0.0: Set to 'true' if behind reverse proxy (uses boolean strings, not numeric)", "default": ""},
+        {"name": "TOKEN_EXPIRES_IN", "label": "TOKEN_EXPIRES_IN", "description": "Token expiration in days (optional)", "default": "365"},
+        {"name": "DEFAULT_LANGUAGE", "label": "DEFAULT_LANGUAGE", "description": "v2.0.0: Default UI language (optional)", "default": "en-US"},
+        {"name": "MAX_UPLOAD_FILE_SIZE", "label": "MAX_UPLOAD_FILE_SIZE", "description": "v2.0.0: Maximum file upload size in bytes (default: 100MB)", "default": "100000000"},
+        {"name": "STORAGE_LIMIT", "label": "STORAGE_LIMIT", "description": "v2.0.0: Total storage limit in bytes (0 = unlimited)", "default": "0"},
+        {"name": "ACTIVE_USERS_LIMIT", "label": "ACTIVE_USERS_LIMIT", "description": "v2.0.0: Maximum active users (0 = unlimited)", "default": "0"},
+        {"name": "OUTGOING_BLOCKED_HOSTS", "label": "OUTGOING_BLOCKED_HOSTS", "description": "v2.0.0: Comma-separated list of hosts to block for SSRF protection (e.g., localhost,postgres)", "default": ""},
+        {"name": "OUTGOING_PROXY", "label": "OUTGOING_PROXY", "description": "v2.0.0: HTTP proxy for outgoing requests (optional)", "default": ""},
+        {"name": "OUTGOING_PROXY_TLS_REJECT_UNAUTHORIZED", "label": "OUTGOING_PROXY_TLS_REJECT_UNAUTHORIZED", "description": "v2.0.0: Reject unauthorized TLS certificates for proxy (optional)", "default": "true"},
+        {"name": "OIDC_ISSUER", "label": "OIDC_ISSUER", "description": "OpenID Connect issuer URL (optional)", "default": ""},
+        {"name": "OIDC_CLIENT_ID", "label": "OIDC_CLIENT_ID", "description": "OpenID Connect client ID (optional)", "default": ""},
+        {"name": "OIDC_CLIENT_SECRET", "label": "OIDC_CLIENT_SECRET", "description": "OpenID Connect client secret (optional)", "default": ""},
+        {"name": "OIDC_SCOPES", "label": "OIDC_SCOPES", "description": "OpenID Connect scopes (optional)", "default": "openid email profile"},
+        {"name": "OIDC_ADMIN_ROLES", "label": "OIDC_ADMIN_ROLES", "description": "OpenID Connect admin roles (optional)", "default": "admin"},
+        {"name": "OIDC_EMAIL_ATTRIBUTE", "label": "OIDC_EMAIL_ATTRIBUTE", "description": "OpenID Connect email attribute name (optional)", "default": "email"},
+        {"name": "OIDC_NAME_ATTRIBUTE", "label": "OIDC_NAME_ATTRIBUTE", "description": "OpenID Connect name attribute (optional)", "default": "name"},
+        {"name": "OIDC_USERNAME_ATTRIBUTE", "label": "OIDC_USERNAME_ATTRIBUTE", "description": "OpenID Connect username attribute (optional)", "default": "preferred_username"},
+        {"name": "OIDC_ROLES_ATTRIBUTE", "label": "OIDC_ROLES_ATTRIBUTE", "description": "OpenID Connect roles attribute (optional)", "default": "groups"},
+        {"name": "OIDC_IGNORE_USERNAME", "label": "OIDC_IGNORE_USERNAME", "description": "Ignore OIDC username attribute (optional)", "default": "true"},
+        {"name": "OIDC_IGNORE_ROLES", "label": "OIDC_IGNORE_ROLES", "description": "Ignore OIDC roles attribute (optional)", "default": "true"},
+        {"name": "OIDC_ENFORCED", "label": "OIDC_ENFORCED", "description": "Enforce OIDC authentication (optional)", "default": "true"}
+      ]
+    },
+    {
+      "id": 156,
       "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
@@ -2971,7 +3016,7 @@
       }
     },
     {
-      "id": 156,
+      "id": 157,
       "type": 3,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
@@ -2989,7 +3034,7 @@
       ]
     },
     {
-      "id": 157,
+      "id": 158,
       "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
@@ -3004,7 +3049,7 @@
       }
     },
     {
-      "id": 158,
+      "id": 159,
       "type": 3,
       "title": "Plex",
       "name": "plex",
@@ -3019,7 +3064,7 @@
       }
     },
     {
-      "id": 159,
+      "id": 160,
       "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
@@ -3043,7 +3088,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 161,
       "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
@@ -3065,7 +3110,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 162,
       "type": 3,
       "title": "Portainer",
       "name": "portainer",
@@ -3080,7 +3125,7 @@
       }
     },
     {
-      "id": 162,
+      "id": 163,
       "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",
@@ -3095,7 +3140,7 @@
       }
     },
     {
-      "id": 163,
+      "id": 164,
       "type": 3,
       "title": "Portracker",
       "name": "portracker",
@@ -3119,7 +3164,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 165,
       "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
@@ -3137,7 +3182,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 166,
       "type": 3,
       "title": "Project Management",
       "name": "project-management",
@@ -3152,7 +3197,7 @@
       }
     },
     {
-      "id": 166,
+      "id": 167,
       "type": 3,
       "title": "PsiTransfer",
       "name": "psitransfer",
@@ -3176,7 +3221,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 168,
       "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
@@ -3213,7 +3258,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 169,
       "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -3234,7 +3279,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 170,
       "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -3249,7 +3294,7 @@
       }
     },
     {
-      "id": 170,
+      "id": 171,
       "type": 3,
       "title": "Rallly",
       "name": "rallly",
@@ -3278,7 +3323,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": 172,
       "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
@@ -3293,7 +3338,7 @@
       }
     },
     {
-      "id": 172,
+      "id": 173,
       "type": 3,
       "title": "Readeck",
       "name": "readeck",
@@ -3314,7 +3359,7 @@
       ]
     },
     {
-      "id": 173,
+      "id": 174,
       "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -3332,7 +3377,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 175,
       "type": 3,
       "title": "Rocket.Chat",
       "name": "rocket-chat",
@@ -3350,7 +3395,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 176,
       "type": 3,
       "title": "Rocket.Chat v8",
       "name": "rocket-chat-v8",
@@ -3369,7 +3414,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 177,
       "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -3403,7 +3448,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 178,
       "type": 3,
       "title": "RustFS",
       "name": "rustfs",
@@ -3424,7 +3469,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": 179,
       "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -3439,7 +3484,7 @@
       }
     },
     {
-      "id": 179,
+      "id": 180,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -3458,7 +3503,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 181,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -3482,7 +3527,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 182,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -3497,7 +3542,7 @@
       }
     },
     {
-      "id": 182,
+      "id": 183,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -3519,7 +3564,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 184,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -3534,7 +3579,7 @@
       }
     },
     {
-      "id": 184,
+      "id": 185,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -3552,7 +3597,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 186,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -3578,7 +3623,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": 187,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -3599,7 +3644,7 @@
       ]
     },
     {
-      "id": 187,
+      "id": 188,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -3614,7 +3659,7 @@
       }
     },
     {
-      "id": 188,
+      "id": 189,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3639,7 +3684,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 190,
       "type": 3,
       "title": "Storyteller",
       "name": "storyteller",
@@ -3664,7 +3709,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 191,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3679,7 +3724,7 @@
       }
     },
     {
-      "id": 191,
+      "id": 192,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -3705,7 +3750,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 193,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -3720,7 +3765,7 @@
       }
     },
     {
-      "id": 193,
+      "id": 194,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -3735,7 +3780,7 @@
       }
     },
     {
-      "id": 194,
+      "id": 195,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -3769,7 +3814,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 196,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -3784,7 +3829,7 @@
       }
     },
     {
-      "id": 196,
+      "id": 197,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -3799,7 +3844,7 @@
       }
     },
     {
-      "id": 197,
+      "id": 198,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -3820,7 +3865,7 @@
       ]
     },
     {
-      "id": 198,
+      "id": 199,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -3843,7 +3888,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 200,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -3861,7 +3906,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -3881,7 +3926,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -3896,7 +3941,7 @@
       }
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -3925,7 +3970,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -3954,7 +3999,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -3969,7 +4014,7 @@
       }
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -3984,7 +4029,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -3999,7 +4044,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "Vikunja",
       "name": "vikunja",
@@ -4023,7 +4068,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -4042,7 +4087,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -4072,7 +4117,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -4090,7 +4135,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -4115,7 +4160,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -4130,7 +4175,7 @@
       }
     },
     {
-      "id": 213,
+      "id": 214,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -4145,7 +4190,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 215,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4160,7 +4205,7 @@
       }
     },
     {
-      "id": 215,
+      "id": 216,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4175,7 +4220,7 @@
       }
     },
     {
-      "id": 216,
+      "id": 217,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4196,7 +4241,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 218,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4217,7 +4262,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 219,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4237,7 +4282,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 220,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4252,7 +4297,7 @@
       }
     },
     {
-      "id": 220,
+      "id": 221,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4267,7 +4312,7 @@
       }
     },
     {
-      "id": 221,
+      "id": 222,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
