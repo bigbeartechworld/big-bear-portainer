@@ -23,3 +23,11 @@ services:
       - METRICS_PORT=60123
       - BASIC_AUTH_USER=admin
       - BASIC_AUTH_PASS=""
+    # Volumes for the service
+    volumes:
+      - big-bear-cloudflared-web_config:/config
+# Volumes used by the application
+volumes:
+  big-bear-cloudflared-web_config:
+    name: big-bear-cloudflared-web_config
+    driver: local
