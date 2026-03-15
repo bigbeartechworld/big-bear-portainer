@@ -7,7 +7,7 @@
       "note": "A simple shared budget manager web application",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/ihatemoney.png",
+      "logo": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ihatemoney.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/ihatemoney/docker-compose.yml"
