@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
-      "id": 144,
+      "id": 145,
       "type": 3,
-      "title": "Password Pusher",
+      "title": "Password Pusher (Legacy)",
       "name": "passwordpusher",
       "description": "Password Pusher is an open source application to communicate passwords over the web. Links to passwords expire after a certain number of views and/or time has passed.",
       "note": "Give your users the tools to be secure by default.",

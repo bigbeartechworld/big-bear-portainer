@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
-      "id": 176,
+      "id": 178,
       "type": 3,
-      "title": "Rocket.Chat",
+      "title": "Rocket.Chat (Legacy)",
       "name": "rocket-chat",
       "description": "Rocket.Chat is an open-source fully customizable communications platform [...]",
       "note": "The communications platform that puts data protection first.",

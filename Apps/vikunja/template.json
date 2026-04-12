@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
-      "id": 209,
+      "id": 211,
       "type": 3,
-      "title": "Vikunja",
+      "title": "Vikunja (Legacy)",
       "name": "vikunja",
       "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
       "note": "Vikunja",

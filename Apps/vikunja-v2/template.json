@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 212,
+      "type": 3,
+      "title": "Vikunja v2",
+      "name": "vikunja-v2",
+      "description": "The open-source, self-hostable to-do app. Organize everything, on all platforms.",
+      "note": "Vikunja",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/vikunja.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vikunja-v2/docker-compose.yml"
+      },
+      "env": [
+        {"name": "VIKUNJA_DATABASE_HOST", "label": "VIKUNJA_DATABASE_HOST", "description": "Database host", "default": "vikunja-v2-db"},
+        {"name": "VIKUNJA_DATABASE_PASSWORD", "label": "VIKUNJA_DATABASE_PASSWORD", "description": "Database password", "default": "secret"},
+        {"name": "VIKUNJA_DATABASE_TYPE", "label": "VIKUNJA_DATABASE_TYPE", "description": "Database type", "default": "mysql"},
+        {"name": "VIKUNJA_DATABASE_USER", "label": "VIKUNJA_DATABASE_USER", "description": "Database user", "default": "vikunja"},
+        {"name": "VIKUNJA_DATABASE_DATABASE", "label": "VIKUNJA_DATABASE_DATABASE", "description": "Database name", "default": "vikunja"},
+        {"name": "VIKUNJA_SERVICE_PUBLICURL", "label": "VIKUNJA_SERVICE_PUBLICURL", "description": "Public frontend URL (required)", "default": ""}
+      ]
+    }]}
