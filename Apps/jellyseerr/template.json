@@ -1,10 +1,10 @@
 {"version": "3", "templates": [    {
       "id": 83,
       "type": 3,
-      "title": "Jellyseerr",
+      "title": "Jellyseerr (Legacy)",
       "name": "jellyseerr",
-      "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
-      "note": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+      "description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers! Note: Jellyseerr is no longer actively maintained. New users should use Seerr instead.",
+      "note": "Legacy media request manager - new users should use Seerr instead",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellyseerr.png",

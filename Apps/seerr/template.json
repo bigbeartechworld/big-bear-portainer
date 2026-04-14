@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 185,
+      "type": 3,
+      "title": "Seerr",
+      "name": "seerr",
+      "description": "Seerr is a free and open source software application for managing requests for your media library. It is the successor to Overseerr and Jellyseerr, bringing support for Jellyfin, Plex, and Emby media servers.",
+      "note": "Media request management for Jellyfin, Plex, and Emby",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/seerr.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/seerr/docker-compose.yml"
+      },
+      "env": [
+        {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Log level", "default": "debug"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""}
+      ]
+    }]}
