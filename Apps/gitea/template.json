@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 63,
+      "type": 3,
+      "title": "Gitea",
+      "name": "gitea",
+      "description": "Gitea is a painless self-hosted all-in-one software development service. It includes Git hosting, code review, team collaboration, package registry, and CI/CD. It is similar to GitHub, Bitbucket and GitLab.",
+      "note": "Self-hosted Git service",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/gitea.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/gitea/docker-compose.yml"
+      },
+      "env": [
+        {"name": "USER_UID", "label": "USER_UID", "description": "UID of the user running Gitea inside the container", "default": "1000"},
+        {"name": "USER_GID", "label": "USER_GID", "description": "GID of the user running Gitea inside the container", "default": "1000"},
+        {"name": "GITEA__server__SSH_PORT", "label": "GITEA__server__SSH_PORT", "description": "Advertised SSH port for Gitea", "default": "2222"},
+        {"name": "GITEA__server__DOMAIN", "label": "GITEA__server__DOMAIN", "description": "Domain or IP used to access Gitea (e.g. git.example.com). Required behind a reverse proxy.", "default": ""},
+        {"name": "GITEA__server__ROOT_URL", "label": "GITEA__server__ROOT_URL", "description": "Full public URL of Gitea (e.g. https://git.example.com/). Required behind a reverse proxy to fix clone URLs and webhooks.", "default": ""}
+      ]
+    }]}
