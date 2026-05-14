@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 130,
+      "type": 3,
+      "title": "Nova DSO Tracker",
+      "name": "nova-dso-tracker",
+      "description": "Nova DSO Tracker is a tool for astrophotographers to track Deep Space Objects, check observability, and manage imaging sessions.",
+      "note": "Real-time tracking and planning for Deep Space Objects.",
+      "categories": ["Photography", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/nova-dso-tracker/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/nova-dso-tracker/docker-compose.yml"
+      }
+    }]}
