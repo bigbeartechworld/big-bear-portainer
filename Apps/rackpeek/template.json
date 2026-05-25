@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 177,
+      "type": 3,
+      "title": "RackPeek",
+      "name": "rackpeek",
+      "description": "A webui and CLI tool to discover, manage, and document your home lab and small-scale IT infrastructure. Track hardware, services, networks, and their relationships using open, non-proprietary YAML.",
+      "note": "Document Your Home Lab",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/rackpeek/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rackpeek/docker-compose.yml"
+      }
+    }]}
