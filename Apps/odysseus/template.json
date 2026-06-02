@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 137,
+      "type": 3,
+      "title": "Odysseus",
+      "name": "odysseus",
+      "description": "Odysseus is a self-hosted AI workspace. It bundles chat, web search via SearXNG, and a ChromaDB vector store so you can run your own private AI environment with the LLM provider of your choice.",
+      "note": "Self-hosted AI workspace",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/odysseus/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/odysseus/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ODYSSEUS_ADMIN_PASSWORD", "label": "ODYSSEUS_ADMIN_PASSWORD", "description": "Admin password for the workspace. Change this before exposing the app.", "default": "changeme"},
+        {"name": "AUTH_ENABLED", "label": "AUTH_ENABLED", "description": "Require login to access the workspace.", "default": "true"}
+      ]
+    }]}
