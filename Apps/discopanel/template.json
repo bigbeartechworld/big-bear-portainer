@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 38,
+      "type": 3,
+      "title": "DiscoPanel",
+      "name": "discopanel",
+      "description": "DiscoPanel is a game server panel for Minecraft. It provides a clean interface for creating and managing Minecraft servers, installing modpacks, and running each server as its own Docker container. Features include modpack browsing and installation, per-server configuration, backups, and real-time server management.",
+      "note": "A game server panel for Minecraft",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://discopanel.app/g1_256x256.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/discopanel/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DISCOPANEL_DATA_DIR", "label": "DISCOPANEL_DATA_DIR", "description": "Path inside the container where DiscoPanel stores its data", "default": "/app/data"},
+        {"name": "DISCOPANEL_HOST_DATA_PATH", "label": "DISCOPANEL_HOST_DATA_PATH", "description": "Real host path of the data mount. DiscoPanel passes this to the Minecraft containers it spawns so they can bind-mount their worlds. Must match the host source of the /app/data bind mount.", "default": "/DATA/AppData/discopanel/data"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"}
+      ]
+    }]}
