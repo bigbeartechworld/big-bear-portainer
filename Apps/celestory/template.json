@@ -1,0 +1,26 @@
+{"version": "3", "templates": [    {
+      "id": 21,
+      "type": 3,
+      "title": "Celestory & Voltask",
+      "name": "celestory",
+      "description": "The all-in-one no-code platform for interactive storytelling and Voltask automation engine. Paid license required, no free tier available. Purchase a license at https://celestory.io/pricing",
+      "note": "No-code interactive storytelling & automation",
+      "categories": ["Development", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://storage.googleapis.com/voltask-assets/celestory.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/celestory/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ADMIN_USERNAME", "label": "ADMIN_USERNAME", "description": "Main Admin Username", "default": "admin@celestory.io"},
+        {"name": "ADMIN_PASSWORD", "label": "ADMIN_PASSWORD", "description": "Main Admin Password", "default": ""},
+        {"name": "VOLTASK_ADMIN_EMAIL", "label": "VOLTASK_ADMIN_EMAIL", "description": "Voltask Admin Email", "default": "admin@voltask.tech"},
+        {"name": "VOLTASK_ADMIN_PASSWORD", "label": "VOLTASK_ADMIN_PASSWORD", "description": "Voltask Admin Password", "default": ""},
+        {"name": "AUTH_AUTHORITY_SECRET", "label": "AUTH_AUTHORITY_SECRET", "description": "JWT Authority Secret", "default": ""},
+        {"name": "API_ORIGIN", "label": "API_ORIGIN", "description": "Full URL to the API service (e.g. http://yourdomain.com/celestory/api)", "default": "http://localhost:1500/celestory/api"},
+        {"name": "AUTH_REDIRECT_URI", "label": "AUTH_REDIRECT_URI", "description": "Full URL for authentication callback (e.g. http://yourdomain.com/celestory/callback)", "default": "http://localhost:1500/celestory/callback"},
+        {"name": "HUB_ORIGIN", "label": "HUB_ORIGIN", "description": "Full URL to the Hub service (e.g. http://yourdomain.com/hub)", "default": "http://localhost:1500/hub"},
+        {"name": "VOLTASK_WEBHOOK_URL", "label": "VOLTASK_WEBHOOK_URL", "description": "Full URL for Voltask webhooks (e.g. http://yourdomain.com/voltask)", "default": "http://localhost:1500/voltask"}
+      ]
+    }]}
