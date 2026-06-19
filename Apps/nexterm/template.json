@@ -3,7 +3,7 @@
       "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
-      "description": "The open source server management software for SSH, VNC & RDP. This is in Preview Release.",
+      "description": "The open source server management software for SSH, VNC & RDP. This is in BETA.",
       "note": "Nexterm",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
@@ -11,5 +11,8 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/nexterm/docker-compose.yml"
-      }
+      },
+      "env": [
+        {"name": "ENCRYPTION_KEY", "label": "ENCRYPTION_KEY", "description": "Key used to encrypt stored credentials. Generate with: openssl rand -hex 32", "default": ""}
+      ]
     }]}
