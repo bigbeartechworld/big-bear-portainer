@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 48,
+      "type": 3,
+      "title": "Ente Photos",
+      "name": "ente",
+      "description": "Ente is a self-hosted, end-to-end encrypted platform to store, share, and rediscover your photos and videos across all your devices.",
+      "note": "End-to-end encrypted photo storage",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/ente-photos.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/ente/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ENTE_S3_B2_EU_CEN_ENDPOINT", "label": "ENTE_S3_B2_EU_CEN_ENDPOINT", "description": "MinIO S3 endpoint reachable by both museum and clients. Change localhost to the server LAN IP for multi-device access.", "default": "localhost:3200"},
+        {"name": "ENTE_API_ORIGIN", "label": "ENTE_API_ORIGIN", "description": "URL of the museum API as reached by the web app. Change localhost to the server LAN IP for multi-device access.", "default": "http://localhost:8080"},
+        {"name": "ENTE_APPS_PUBLIC_ALBUMS", "label": "ENTE_APPS_PUBLIC_ALBUMS", "description": "Public albums URL. Change localhost to the server LAN IP for multi-device access.", "default": "http://localhost:3002"},
+        {"name": "ENTE_JWT_SECRET", "label": "ENTE_JWT_SECRET", "description": "JWT signing secret. Rotate before real use.", "default": "i2DecQmfGreG6q1vBj5tCokhlN41gcfS2cjOs9Po-u8="}
+      ]
+    }]}
