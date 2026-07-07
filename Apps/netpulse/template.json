@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 124,
+      "type": 3,
+      "title": "NetPulse",
+      "name": "netpulse",
+      "description": "A self-hosted network monitoring dashboard that runs real Ookla speedtests on a schedule, pings continuously to track uptime, and shows the history as graphs you can actually reflect on — not just a live number that resets every refresh.",
+      "note": "Self-hosted internet speed & uptime monitor",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/netpulse/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/netpulse/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NETPULSE_USERNAME", "label": "NETPULSE_USERNAME", "description": "Login username for the dashboard", "default": "admin"},
+        {"name": "NETPULSE_PASSWORD", "label": "NETPULSE_PASSWORD", "description": "Login password for the dashboard — change this default value", "default": "97f76f53-c2b9-499d-b5cb-1643e6b29cf3"},
+        {"name": "SPEEDTEST_INTERVAL_MIN", "label": "SPEEDTEST_INTERVAL_MIN", "description": "Minutes between full speedtests", "default": "10"},
+        {"name": "PING_INTERVAL_SEC", "label": "PING_INTERVAL_SEC", "description": "Seconds between uptime pings", "default": "60"},
+        {"name": "PING_HOST", "label": "PING_HOST", "description": "Host to ping for uptime checks", "default": "1.1.1.1"},
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"}
+      ]
+    }]}
