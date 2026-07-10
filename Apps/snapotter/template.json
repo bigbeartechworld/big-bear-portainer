@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 198,
+      "type": 3,
+      "title": "SnapOtter",
+      "name": "snapotter",
+      "description": "SnapOtter is an open-source, self-hosted file manipulation suite with 200+ tools across images, video, audio, PDFs, and files. It includes batch processing, reusable pipelines, local AI tools, a browser image editor, and a REST API so files stay on your own server.",
+      "note": "Self-hosted file toolkit for images, video, audio, PDFs, and files.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/snapotter/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/snapotter/docker-compose.yml"
+      },
+      "env": [
+        {"name": "AUTH_ENABLED", "label": "AUTH_ENABLED", "description": "Require login before using SnapOtter.", "default": "true"},
+        {"name": "DEFAULT_USERNAME", "label": "DEFAULT_USERNAME", "description": "Initial administrator username, used only on first run.", "default": "admin"},
+        {"name": "DEFAULT_PASSWORD", "label": "DEFAULT_PASSWORD", "description": "Initial administrator password. Change this after first login.", "default": "admin"},
+        {"name": "MAX_UPLOAD_SIZE_MB", "label": "MAX_UPLOAD_SIZE_MB", "description": "Maximum upload size in MB. Set to 0 for unlimited.", "default": "0"},
+        {"name": "MAX_BATCH_SIZE", "label": "MAX_BATCH_SIZE", "description": "Maximum number of files per batch. Set to 0 for unlimited.", "default": "0"},
+        {"name": "CONCURRENT_JOBS", "label": "CONCURRENT_JOBS", "description": "Number of concurrent jobs. Set to 0 to auto-detect.", "default": "0"},
+        {"name": "REDIS_MAXMEMORY", "label": "REDIS_MAXMEMORY", "description": "Memory cap for embedded Redis.", "default": "512mb"},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Trust reverse proxy headers.", "default": "true"}
+      ]
+    }]}
