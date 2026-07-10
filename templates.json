@@ -3832,6 +3832,31 @@
     {
       "id": 198,
       "type": 3,
+      "title": "SnapOtter",
+      "name": "snapotter",
+      "description": "SnapOtter is an open-source, self-hosted file manipulation suite with 200+ tools across images, video, audio, PDFs, and files. It includes batch processing, reusable pipelines, local AI tools, a browser image editor, and a REST API so files stay on your own server.",
+      "note": "Self-hosted file toolkit for images, video, audio, PDFs, and files.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/snapotter/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/snapotter/docker-compose.yml"
+      },
+      "env": [
+        {"name": "AUTH_ENABLED", "label": "AUTH_ENABLED", "description": "Require login before using SnapOtter.", "default": "true"},
+        {"name": "DEFAULT_USERNAME", "label": "DEFAULT_USERNAME", "description": "Initial administrator username, used only on first run.", "default": "admin"},
+        {"name": "DEFAULT_PASSWORD", "label": "DEFAULT_PASSWORD", "description": "Initial administrator password. Change this after first login.", "default": "admin"},
+        {"name": "MAX_UPLOAD_SIZE_MB", "label": "MAX_UPLOAD_SIZE_MB", "description": "Maximum upload size in MB. Set to 0 for unlimited.", "default": "0"},
+        {"name": "MAX_BATCH_SIZE", "label": "MAX_BATCH_SIZE", "description": "Maximum number of files per batch. Set to 0 for unlimited.", "default": "0"},
+        {"name": "CONCURRENT_JOBS", "label": "CONCURRENT_JOBS", "description": "Number of concurrent jobs. Set to 0 to auto-detect.", "default": "0"},
+        {"name": "REDIS_MAXMEMORY", "label": "REDIS_MAXMEMORY", "description": "Memory cap for embedded Redis.", "default": "512mb"},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Trust reverse proxy headers.", "default": "true"}
+      ]
+    },
+    {
+      "id": 199,
+      "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
       "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.",
@@ -3848,7 +3873,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 200,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -3874,7 +3899,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -3895,7 +3920,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -3910,7 +3935,7 @@
       }
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -3935,7 +3960,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "Storyteller",
       "name": "storyteller",
@@ -3960,7 +3985,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -3975,7 +4000,7 @@
       }
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -4001,7 +4026,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -4016,7 +4041,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -4031,7 +4056,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -4065,7 +4090,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -4080,7 +4105,7 @@
       }
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -4095,7 +4120,7 @@
       }
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -4116,7 +4141,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -4139,7 +4164,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 214,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -4157,7 +4182,7 @@
       ]
     },
     {
-      "id": 214,
+      "id": 215,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -4177,7 +4202,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 216,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -4192,7 +4217,7 @@
       }
     },
     {
-      "id": 216,
+      "id": 217,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -4221,7 +4246,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 218,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -4250,7 +4275,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 219,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -4265,7 +4290,7 @@
       }
     },
     {
-      "id": 219,
+      "id": 220,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -4280,7 +4305,7 @@
       }
     },
     {
-      "id": 220,
+      "id": 221,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -4295,7 +4320,7 @@
       }
     },
     {
-      "id": 221,
+      "id": 222,
       "type": 3,
       "title": "Vikunja (Legacy)",
       "name": "vikunja",
@@ -4319,7 +4344,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 223,
       "type": 3,
       "title": "Vikunja v2",
       "name": "vikunja-v2",
@@ -4342,7 +4367,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 224,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -4361,7 +4386,7 @@
       ]
     },
     {
-      "id": 224,
+      "id": 225,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -4391,7 +4416,7 @@
       ]
     },
     {
-      "id": 225,
+      "id": 226,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -4409,7 +4434,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": 227,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -4434,7 +4459,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": 228,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -4449,7 +4474,7 @@
       }
     },
     {
-      "id": 228,
+      "id": 229,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -4464,7 +4489,7 @@
       }
     },
     {
-      "id": 229,
+      "id": 230,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -4479,7 +4504,7 @@
       }
     },
     {
-      "id": 230,
+      "id": 231,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -4494,7 +4519,7 @@
       }
     },
     {
-      "id": 231,
+      "id": 232,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -4515,7 +4540,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": 233,
       "type": 3,
       "title": "WordPress",
       "name": "wordpress",
@@ -4536,7 +4561,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 234,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -4556,7 +4581,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 235,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4571,7 +4596,7 @@
       }
     },
     {
-      "id": 235,
+      "id": 236,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4586,7 +4611,7 @@
       }
     },
     {
-      "id": 236,
+      "id": 237,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
