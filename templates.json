@@ -4542,7 +4542,7 @@
     {
       "id": 233,
       "type": 3,
-      "title": "WordPress",
+      "title": "WordPress (Legacy)",
       "name": "wordpress",
       "description": "Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web (as of my last training data in 2022).",
       "note": "WordPress",
@@ -4563,6 +4563,27 @@
     {
       "id": 234,
       "type": 3,
+      "title": "WordPress v7",
+      "name": "wordpress-v7",
+      "description": "Initially started as a blogging tool in 2003, it has evolved into a highly flexible CMS that powers over 40% of the web. WordPress 7 requires MySQL 8.0 and is packaged as a new app alongside the legacy WordPress 6 entry.",
+      "note": "WordPress",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/wordpress.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/wordpress-v7/docker-compose.yml"
+      },
+      "env": [
+        {"name": "WORDPRESS_DB_HOST", "label": "WORDPRESS_DB_HOST", "description": "Database host", "default": ""},
+        {"name": "WORDPRESS_DB_USER", "label": "WORDPRESS_DB_USER", "description": "Database user", "default": ""},
+        {"name": "WORDPRESS_DB_PASSWORD", "label": "WORDPRESS_DB_PASSWORD", "description": "Database password", "default": ""},
+        {"name": "WORDPRESS_DB_NAME", "label": "WORDPRESS_DB_NAME", "description": "Database name", "default": ""}
+      ]
+    },
+    {
+      "id": 235,
+      "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
       "description": "WriteFreely is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.",
@@ -4581,7 +4602,7 @@
       ]
     },
     {
-      "id": 235,
+      "id": 236,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -4596,7 +4617,7 @@
       }
     },
     {
-      "id": 236,
+      "id": 237,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -4611,7 +4632,7 @@
       }
     },
     {
-      "id": 237,
+      "id": 238,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
