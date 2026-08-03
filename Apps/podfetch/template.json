@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 173,
+      "type": 3,
+      "title": "PodFetch",
+      "name": "podfetch",
+      "description": "PodFetch is a sleek and efficient self-hosted podcast manager written in Rust. It automatically downloads new episodes, offers a web UI for listening and managing podcasts, and provides a GPodder-compatible sync API so you can keep using podcast apps like AntennaPod.",
+      "note": "Sleek podcast downloader with GPodder sync",
+      "categories": ["Media", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/podfetch.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/podfetch/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "SQLite database location (or a PostgreSQL connection string)", "default": "sqlite:///app/db/podcast.db"},
+        {"name": "POLLING_INTERVAL", "label": "POLLING_INTERVAL", "description": "Minutes between checks for new episodes", "default": "300"},
+        {"name": "BASIC_AUTH", "label": "BASIC_AUTH", "description": "Set to true to enable login (required for GPodder sync); also set USERNAME and PASSWORD", "default": "false"},
+        {"name": "USERNAME", "label": "USERNAME", "description": "Admin username when BASIC_AUTH is enabled", "default": "bigbear"},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Admin password when BASIC_AUTH is enabled", "default": "15c40698-3cd9-40ce-8039-e8d80fc1a030"},
+        {"name": "GPODDER_INTEGRATION_ENABLED", "label": "GPODDER_INTEGRATION_ENABLED", "description": "Set to true to enable the GPodder-compatible sync API for apps like AntennaPod", "default": "false"}
+      ]
+    }]}
