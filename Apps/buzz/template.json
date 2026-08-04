@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 19,
+      "type": 3,
+      "title": "Buzz",
+      "name": "buzz",
+      "description": "Buzz is a self-hostable workspace for humans and agents from Block. It runs a Nostr relay, a REST bridge, git-over-object-storage, and a web interface from a single Rust binary, so you can host your own community and agent infrastructure.",
+      "note": "Self-hosted workspace and Nostr relay for humans and agents",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/block/buzz@main/desktop/public/app-icon@2x.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/buzz/docker-compose.yml"
+      },
+      "env": [
+        {"name": "BUZZ_RELAY_PRIVATE_KEY", "label": "BUZZ_RELAY_PRIVATE_KEY", "description": "Relay signing identity as 64-character hex. This default is published in a public repository, so replace it before real use. Generate one with: docker exec buzz-relay buzz-admin generate-key", "default": "7c0d0f000f4cdafc380ab93c413d97deceff42e273c97200d3fb35ad74e29231"},
+        {"name": "RELAY_URL", "label": "RELAY_URL", "description": "Address this relay answers on. Buzz serves its web interface only for this exact host and port, so change localhost to the server LAN IP or domain or other devices get 'no community is configured for this host'.", "default": "ws://localhost:3000"},
+        {"name": "BUZZ_MEDIA_BASE_URL", "label": "BUZZ_MEDIA_BASE_URL", "description": "Base URL written into the link of every uploaded file. Change localhost to the same address used in RELAY_URL. Links published before this is corrected cannot be fixed later.", "default": "http://localhost:3000/media"},
+        {"name": "RELAY_OWNER_PUBKEY", "label": "RELAY_OWNER_PUBKEY", "description": "Owner Nostr public key as 64-character hex. Only needed when BUZZ_REQUIRE_RELAY_MEMBERSHIP is true.", "default": ""},
+        {"name": "BUZZ_REQUIRE_RELAY_MEMBERSHIP", "label": "BUZZ_REQUIRE_RELAY_MEMBERSHIP", "description": "Set to true to run a closed relay that only approved members can use. Requires RELAY_OWNER_PUBKEY.", "default": "false"},
+        {"name": "BUZZ_AUTO_MIGRATE", "label": "BUZZ_AUTO_MIGRATE", "description": "Runs database migrations on start. Leave enabled so the schema is created on first launch.", "default": "true"}
+      ]
+    }]}
