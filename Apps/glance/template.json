@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 71,
+      "type": 3,
+      "title": "Glance",
+      "name": "glance",
+      "description": "Glance is a self-hosted dashboard that puts all your feeds in one place.",
+      "note": "Self-hosted dashboard for your feeds",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/glance/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/glance/docker-compose.yml"
+      }
+    }]}
