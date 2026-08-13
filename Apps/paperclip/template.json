@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 153,
+      "type": 3,
+      "title": "Paperclip",
+      "name": "paperclip",
+      "description": "Paperclip is an open-source self-hosted board for managing AI coding agents such as Claude Code, Codex, OpenCode, and Gemini CLI. Assign work to agents, run them, and track cost and output from a single dashboard.",
+      "note": "Self-hosted board for managing AI coding agents",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/paperclipai/paperclip@master/ui/public/apple-touch-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/paperclip/docker-compose.yml"
+      },
+      "env": [
+        {"name": "BETTER_AUTH_SECRET", "label": "BETTER_AUTH_SECRET", "description": "Session signing secret as 64-character hex. Paperclip refuses to start without it. This shipped value is a placeholder shared by every install, so you must replace it before real use. Generate one with: openssl rand -hex 32", "default": "change-this-run-openssl-rand-hex-32"},
+        {"name": "PAPERCLIP_TOOL_ACTION_SIGNING_SECRET", "label": "PAPERCLIP_TOOL_ACTION_SIGNING_SECRET", "description": "Signs agent tool-action approvals as 64-character hex. The server boots without it but every agent approval fails. This shipped value is a placeholder shared by every install, so you must replace it before real use. Generate one with: openssl rand -hex 32", "default": "change-this-run-openssl-rand-hex-32"},
+        {"name": "PAPERCLIP_PUBLIC_URL", "label": "PAPERCLIP_PUBLIC_URL", "description": "External address Paperclip is reached on. Sign-in callbacks fail unless this matches the address you actually browse to, so change localhost to the server LAN IP or domain and use the port your platform serves Paperclip on, for example http://192.168.1.50:3101. On Umbrel the port is 10201.", "default": "http://localhost:3101"},
+        {"name": "ANTHROPIC_API_KEY", "label": "ANTHROPIC_API_KEY", "description": "Anthropic API key for Claude Code agents. Optional: Paperclip runs without it, but Claude agents cannot.", "default": ""},
+        {"name": "OPENAI_API_KEY", "label": "OPENAI_API_KEY", "description": "OpenAI API key for Codex agents. Optional: Paperclip runs without it, but Codex agents cannot.", "default": ""},
+        {"name": "GEMINI_API_KEY", "label": "GEMINI_API_KEY", "description": "Google Gemini API key for Gemini CLI agents. Optional: Paperclip runs without it, but Gemini agents cannot.", "default": ""},
+        {"name": "GITHUB_TOKEN", "label": "GITHUB_TOKEN", "description": "GitHub token used by agents to read and write repositories. Optional: Paperclip runs without it, but repository actions fail.", "default": ""}
+      ]
+    }]}
