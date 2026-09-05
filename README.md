@@ -12,7 +12,7 @@ This app store is maintained entirely by BigBearTechWorld and the community thro
 
 ## 📊 Project Stats
 
-- **213+ Applications** available as Portainer stacks
+- **242+ Applications** available as Portainer stacks
 - **350+ Video Tutorials** in our [Homelab playlist](https://youtube.com/playlist?list=PL2RAscIdkpt-OdTGH-BP7j-j24oaeJZVC&si=psROAO4uJMmjumAF)
 - **Maintained & Updated** regularly from BigBearCasaOS
 - **Community Driven** by BigBearCommunity members and contributors
@@ -67,7 +67,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | --- | --- | --- | --- | --- | --- |
 | 2FAuth | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/yCnjxSryD_U) |  |
 | Actual Budget | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/fa8j7ZfkYaM) |  |
-| AdGuard Home | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/6cu0kfP50Jg) |  |
+| AdGuard Home | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/7NGnCbxBf_U) | [Docs](https://github.com/AdguardTeam/AdGuardHome/wiki) |
 | AdGuard Home (HOST) | undefined | latest | BigBearCasaOS |  |  |
 | Anse | undefined | latest | BigBearCasaOS |  |  |
 | Ansible Semaphore | undefined | latest | BigBearCasaOS |  |  |
@@ -78,18 +78,19 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Baserow | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/Xej7sH5bNFs) |  |
 | Beaver Habit Tracker | undefined | latest | BigBearCasaOS |  |  |
 | Beszel | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/BUVVG-9RCbg) |  |
-| Big Bear CasaOS User Management | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/-a9k8fLAbRE) |  |
 | bookstack | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/_jW4RjJm-6A) |  |
 | Brave | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/CJ2x-yCW-co) |  |
-| btop | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/mD52bujMt68) |  |
+| btop | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/chaRoQV1V2I) |  |
 | Budibase | undefined | latest | BigBearCasaOS |  |  |
+| Buzz | undefined | latest | BigBearCasaOS |  | [Docs](https://engineering.block.xyz/blog/run-your-own-buzz-relay) |
 | cAdvisor | undefined | latest | BigBearCasaOS |  |  |
 | Cal.com | undefined | latest | BigBearCasaOS |  |  |
+| Celestory & Voltask | undefined | latest | Development |  |  |
 | Change Detection | undefined | latest | BigBearCasaOS |  |  |
 | Chatpad | undefined | latest | BigBearCasaOS |  |  |
 | chrome | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/jYm_Ih8VHAs) |  |
 | chromium | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/ziy4c4n7KnU) |  |
-| Cloudflared Web | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/JvyyolXJ0-A) |  |
+| Cloudflared Web | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/JvyyolXJ0-A) | [Docs](https://github.com/wisdomsky/cloudflared-web) |
 | Code Server | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/aiYcwXDfgE8) |  |
 | CodeX Docs | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/dKm2VJwam24) |  |
 | Compose Toolbox | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/bluegoosemedia/composetoolbox) |
@@ -98,23 +99,29 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Crafty Controller | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/Vw4su8hT_7A) |  |
 | CyberChef | undefined | latest | BigBearCasaOS |  |  |
 | Dashdot | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/if_fyuX_5fU) |  |
-| Dashy | undefined | latest | BigBearCasaOS |  |  |
+| Dashy (Legacy) | undefined | latest | BigBearCasaOS |  |  |
+| Dashy v4 | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/Lissy93/dashy/blob/master/docs/changelog.md) |
 | Davis | undefined | latest | BigBearCasaOS |  |  |
 | DBGate | undefined | latest | BigBearCasaOS |  |  |
+| DiscoPanel | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.discopanel.app) |
 | DIUN | undefined | latest | BigBearCasaOS |  |  |
 | Docker Cron Restart Notifier | undefined | latest | BigBearCasaOS |  |  |
 | Dockge | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/8Z6psh-t5iU) |  |
+| Dockhand | undefined | latest | BigBearCasaOS |  | [Docs](https://dockhand.pro/manual/) |
 | Dockpeek | undefined | latest | BigBearCasaOS |  |  |
 | Docmost | undefined | latest | BigBearCasaOS |  |  |
 | Dozzle | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/lLLNDcHNOuM) |  |
 | EJBCA Community | undefined | latest | BigBearCasaOS |  | [Docs](https://doc.primekey.com/ejbca/ejbca-introduction) |
+| Ente Photos | undefined | latest | BigBearCasaOS |  | [Docs](https://help.ente.io/self-hosting/) |
 | Erugo | undefined | latest | BigBearCasaOS |  |  |
 | Eufy Security WS | undefined | latest | BigBearCasaOS |  |  |
 | Excalidraw | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/T4K6RDhieIA) |  |
-| FarmOS | undefined | latest | BigBearCasaOS |  |  |
+| FarmOS (Legacy) | undefined | latest | BigBearCasaOS |  |  |
+| FarmOS v4 | undefined | latest | BigBearCasaOS |  | [Docs](https://farmos.org/hosting/install/) |
 | Faster-whisper | undefined | latest | BigBearCasaOS |  |  |
 | Fastfetch | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/pVBMvIMzfpw) |  |
 | Filebrowser | undefined | latest | BigBearCasaOS |  |  |
+| FileBrowser Quantum | undefined | latest | BigBearCasaOS |  |  |
 | Financial Freedom | undefined | latest | BigBearCasaOS |  |  |
 | Firefox | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/RPBshN5hGWQ) |  |
 | Flame | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/p_P_jKmJRz8) |  |
@@ -125,8 +132,10 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Genmon | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/b0_zuVVeIP4) |  |
 | Ghost | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/oJZK9vH4W4Y) |  |
 | Ghostfolio | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/CNe4-8Vyhos) |  |
+| Gitea | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.gitea.com/) |
 | Gitea Mirror | undefined | latest | BigBearCasaOS |  | [Docs](https://community.bigbeartechworld.com/t/added-gitea-mirror-to-bigbearcasaos/3515?u=dragonfire1119#p-5962-documentation-6) |
 | Gladys Assistant | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/l4GPomJMIT0) |  |
+| Glance | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/glanceapp/glance/blob/main/docs/configuration.md) |
 | Glances | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/nwsVJ0QB0sM) |  |
 | Gluetun | undefined | latest | BigBearCasaOS |  | [Docs](https://community.bigbeartechworld.com/t/added-gluetun-to-big-bear-casaos/175) |
 | GoAway | undefined | latest | BigBearCasaOS |  | [Docs](https://community.bigbeartechworld.com/t/added-goaway-to-bigbearcasaos/4085) |
@@ -146,7 +155,7 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Immich without machine learning | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/ZIx2jDHYjjE) |  |
 | Invoice Ninja | undefined | latest | BigBearCasaOS |  |  |
 | IT Tools | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/MlGypCrUJug) |  |
-| Jellyseerr | undefined | latest | BigBearCasaOS |  |  |
+| Jellyseerr (Legacy) | undefined | latest | BigBearCasaOS |  |  |
 | Jellystat | undefined | latest | BigBearCasaOS |  |  |
 | jfa-go | undefined | latest | BigBearCasaOS |  |  |
 | Jlesage Firefox | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/JWhR8RKGh9Y) | [Docs](https://community.bigbeartechworld.com/t/added-jlesage-firefox-to-bigbearcasaos/2506#p-4575-documentation-4) |
@@ -181,7 +190,9 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | n8n | undefined | latest | BigBearCasaOS |  |  |
 | Ncdu | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/5RCTglGRXss) |  |
 | Neko Firefox | undefined | latest | BigBearCasaOS |  |  |
-| NetAlertX | undefined | latest | BigBearCasaOS |  |  |
+| NetAlertX (Legacy) | undefined | latest | BigBearCasaOS |  |  |
+| NetAlertX v26 | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.netalertx.com) |
+| NetPulse | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/BentFender/netpulse) |
 | Nextcloud | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/O0fzG16COYc) |  |
 | Nextcloud LS | undefined | latest | BigBearCasaOS |  |  |
 | Nextcloud with SMB (Legacy) | undefined | latest | BigBearCasaOS |  |  |
@@ -190,23 +201,28 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | NocoDB | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/mO2YzWpBu4o) | [Docs](https://community.bigbeartechworld.com/t/added-nocodb-to-big-bear-casaos/177) |
 | Node-RED | undefined | latest | BigBearCasaOS |  |  |
 | Note Mark AIO | undefined | latest | BigBearCasaOS |  |  |
+| Nova DSO Tracker | undefined | latest | Photography |  | [Docs](https://nova-tracker.com) |
 | NPMPlus | undefined | latest | BigBearCasaOS |  |  |
 | Ntfy.sh | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/wSWhtSNwTd8) |  |
 | Obsidian | undefined | latest | BigBearCasaOS |  |  |
 | Obsidian Livesync | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/-n1abMPLmFg) |  |
 | OctoPrint | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/gQ0J9y8w2wE) |  |
 | Odoo | undefined | latest | BigBearCasaOS |  | [Docs](https://community.bigbeartechworld.com/t/added-odoo-to-bigbearcasaos/1115?u=dragonfire1119) |
+| Odysseus | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/pewdiepie-archdaemon/odysseus) |
 | Ollama - AMD | undefined | latest | BigBearCasaOS |  |  |
 | Ollama - CPU | undefined | latest | BigBearCasaOS |  |  |
 | Ollama - NVIDIA | undefined | latest | BigBearCasaOS |  |  |
 | OneDev | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/ps3JLYRB3SA) |  |
 | OnlyOffice | undefined | latest | BigBearCasaOS |  |  |
 | Open WebUI | undefined | latest | BigBearCasaOS |  |  |
+| OpenClaw | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.openclaw.ai/install/docker) |
 | OpenVPN | undefined | latest | BigBearCasaOS |  |  |
 | OTEL LGTM | undefined | latest | BigBearCasaOS |  |  |
 | ownCloud | undefined | latest | BigBearCasaOS |  |  |
+| Paperclip | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/paperclipai/paperclip/blob/master/doc/DOCKER.md) |
 | Paperless-ngx | undefined | latest | BigBearCasaOS |  |  |
-| Password Pusher | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/U17LWqXfOmU) |  |
+| Password Pusher (Legacy) | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/U17LWqXfOmU) |  |
+| Password Pusher v2 | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/7Ej56MDo95g) | [Docs](https://docs.pwpush.com/docs/upgrading/) |
 | PD3F | undefined | latest | BigBearCasaOS |  |  |
 | Penpot | undefined | latest | BigBearCasaOS |  |  |
 | Peppermint | undefined | latest | BigBearCasaOS |  |  |
@@ -217,36 +233,46 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Pi-hole® Updatelists | undefined | latest | BigBearCasaOS |  |  |
 | Pingvin Share | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/SRJUS7h1vhU) |  |
 | Piwigo | undefined | latest | BigBearCasaOS |  |  |
-| Planka | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/rsyU2cBbbSI) |  |
+| Planka (Legacy) | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/rsyU2cBbbSI) |  |
+| Planka v2 | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/rsyU2cBbbSI) | [Docs](https://docs.planka.cloud/docs/upgrade-to-v2/docker/) |
 | Plant-it | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/mUOAQRa17T4) |  |
 | Playit Docker Web | undefined | latest | BigBearCasaOS |  |  |
 | playit.gg | undefined | latest | BigBearCasaOS |  |  |
 | Plex | undefined | latest | BigBearCasaOS |  |  |
 | Plex with NVIDIA GPU | undefined | latest | BigBearCasaOS |  |  |
 | Pocket ID | undefined | latest | BigBearCasaOS |  | [Docs](https://pocket-id.org/docs/introduction) |
+| PodFetch | undefined | latest | Media |  | [Docs](https://samtv12345.github.io/PodFetch/) |
 | Portainer | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/GW4_OALLI_s) |  |
 | Portainer Agent | undefined | latest | BigBearCasaOS |  |  |
 | Portracker | undefined | latest | BigBearCasaOS |  |  |
 | Poste.io | undefined | latest | BigBearCasaOS |  |  |
 | Project Management | undefined | latest | BigBearCasaOS |  |  |
+| PsiTransfer | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/psi-4ward/psitransfer/tree/master/docs) |
 | Pterodactyl Panel | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/p_140cc6_1g) |  |
 | Pterodactyl Wings | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/p_140cc6_1g) |  |
 | Python Matter Server | undefined | latest | BigBearCasaOS |  |  |
+| RackPeek | undefined | latest | BigBearCasaOS |  | [Docs](https://timmoth.github.io/RackPeek/docs/overview) |
 | Rallly | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/2MY3S6csrVw) | [Docs](https://community.bigbeartechworld.com/t/added-rallly-to-bigbearcasaos/1012#instructions-3) |
 | Reactive Resume | undefined | latest | BigBearCasaOS |  |  |
 | Readeck | undefined | latest | BigBearCasaOS |  |  |
 | RetroArch | undefined | latest | BigBearCasaOS |  |  |
-| Rocket.Chat | undefined | latest | BigBearCasaOS |  |  |
+| Rocket.Chat (Legacy) | undefined | latest | BigBearCasaOS |  |  |
+| Rocket.Chat v8 | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.rocket.chat/docs/rocketchat-release-notes) |
 | RomM | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/rommapp/romm/wiki) |
+| RustFS | undefined | latest | Storage |  | [Docs](https://community.bigbeartechworld.com/t/added-rustfs-to-bigbearuniversal-apps/5143#p-7884-documentation-5) |
 | Scrutiny | undefined | latest | BigBearCasaOS |  |  |
 | Scrypted | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/5uH0LaSyKTY) | [Docs](https://community.bigbeartechworld.com/t/how-to-install-scrypted-on-casaos-using-bigbearcasaos/155) |
 | seafile | undefined | latest | BigBearCasaOS |  |  |
+| Seerr | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.seerr.dev) |
 | Send Visee | undefined | latest | BigBearCasaOS |  |  |
 | SFTPGO | undefined | latest | BigBearCasaOS |  |  |
+| SnapOtter | undefined | latest | BigBearCasaOS |  | [Docs](https://docs.snapotter.com/guide/getting-started) |
 | Spacedrive | undefined | latest | BigBearCasaOS |  |  |
 | Speedtest Tracker | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/TLjS8xNNwis) |  |
+| Spoolman | undefined | latest | Utilities |  | [Docs](https://community.bigbeartechworld.com/t/added-spoolman-to-bigbearuniversal-apps/5108#p-7792-documentation-4) |
 | Stalwart Mail | undefined | latest | BigBearCasaOS |  |  |
 | Stirling-PDF | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/ZoPSPDvOPdo) | [Docs](https://community.bigbeartechworld.com/t/added-stirling-pdf-to-bigbearcasaos/2265#p-4248-documentation-3) |
+| Storyteller | undefined | latest | BigBearCasaOS |  | [Docs](https://storyteller-platform.gitlab.io/storyteller/docs/installation/self-hosting) |
 | Syncthing | undefined | latest | BigBearCasaOS |  |  |
 | Tailscale | undefined | latest | BigBearCasaOS |  |  |
 | Tandoor | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/f4-op1UOaWc) |  |
@@ -263,7 +289,9 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Unifi Network Application | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/JCe-r_SHCe8) |  |
 | Upsnap | undefined | latest | BigBearCasaOS |  |  |
 | Uptime Kuma | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/Why5NU_Wafw) |  |
-| Vikunja | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/T-dNbdIttoI) |  |
+| VERT | undefined | latest | BigBearCasaOS |  | [Docs](https://github.com/VERT-sh/VERT/blob/main/docs/DOCKER.md) |
+| Vikunja (Legacy) | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/T-dNbdIttoI) |  |
+| Vikunja v2 | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/T-dNbdIttoI) | [Docs](https://vikunja.io/docs/api-login-session-migration/) |
 | Viseron | undefined | latest | BigBearCasaOS |  |  |
 | Wallabag | undefined | latest | BigBearCasaOS |  |  |
 | Wallos | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/feYTW02YDb8) |  |
@@ -273,7 +301,8 @@ If you have a suggestion for an app, please post in the [BigBearCommunity](https
 | Wireguard Easy 14 (Legacy) | undefined | latest | BigBearCasaOS |  |  |
 | WireGuard Easy v15 | undefined | latest | BigBearCasaOS |  |  |
 | Wishlist | undefined | latest | BigBearCasaOS |  |  |
-| WordPress | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/j5M4qlRCbYs) |  |
+| WordPress (Legacy) | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/j5M4qlRCbYs) |  |
+| WordPress v7 | undefined | latest | BigBearCasaOS | [YouTube Video](https://youtu.be/j5M4qlRCbYs) |  |
 | Write Freely | undefined | latest | BigBearCasaOS |  |  |
 | Zigbee to MQTT bridge | undefined | latest | BigBearCasaOS |  |  |
 | zipline | undefined | latest | BigBearCasaOS |  |  |
