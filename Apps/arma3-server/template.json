@@ -1,0 +1,27 @@
+{"version": "3", "templates": [    {
+      "id": 13,
+      "type": 3,
+      "title": "Arma 3 Server",
+      "name": "arma3-server",
+      "description": "Arma 3 Dedicated Server. Updates to the latest version every time it is restarted. Supports mission configs mods and headless clients.",
+      "note": "Arma 3 Dedicated Server",
+      "categories": ["Gaming", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/steam.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/arma3-server/docker-compose.yml"
+      },
+      "env": [
+        {"name": "STEAM_USER", "label": "STEAM_USER", "description": "Steam username used to login to steamcmd", "default": ""},
+        {"name": "STEAM_PASSWORD", "label": "STEAM_PASSWORD", "description": "Steam password", "default": ""},
+        {"name": "PORT", "label": "PORT", "description": "Port used by the server uses PORT to PORT+3", "default": "2302"},
+        {"name": "ARMA_CONFIG", "label": "ARMA_CONFIG", "description": "Config file to load from /arma3/configs", "default": "main.cfg"},
+        {"name": "ARMA_PROFILE", "label": "ARMA_PROFILE", "description": "Profile name stored in /arma3/configs/profiles", "default": "main"},
+        {"name": "ARMA_WORLD", "label": "ARMA_WORLD", "description": "World to load on startup", "default": "empty"},
+        {"name": "ARMA_LIMITFPS", "label": "ARMA_LIMITFPS", "description": "Maximum FPS", "default": "100"},
+        {"name": "ARMA_BINARY", "label": "ARMA_BINARY", "description": "Arma 3 server binary to use", "default": "./arma3server_x64"},
+        {"name": "ARMA_PARAMS", "label": "ARMA_PARAMS", "description": "Additional Arma CLI parameters", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Timezone", "default": "UTC"}
+      ]
+    }]}

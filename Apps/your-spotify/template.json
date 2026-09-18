@@ -1,0 +1,26 @@
+{"version": "3", "templates": [    {
+      "id": 430,
+      "type": 3,
+      "title": "Your_spotify",
+      "name": "your-spotify",
+      "description": "Your_spotify is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
+      "note": "A self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it. It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/your_spotify-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/your-spotify/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "APP_URL", "label": "APP_URL", "description": "Container Variable: APP_URL", "default": ""},
+        {"name": "SPOTIFY_PUBLIC", "label": "SPOTIFY_PUBLIC", "description": "Container Variable: SPOTIFY_PUBLIC", "default": ""},
+        {"name": "SPOTIFY_SECRET", "label": "SPOTIFY_SECRET", "description": "Container Variable: SPOTIFY_SECRET", "default": ""},
+        {"name": "SPOTIFY_API_DELAY_MS", "label": "SPOTIFY_API_DELAY_MS", "description": "Container Variable: SPOTIFY_API_DELAY_MS", "default": ""},
+        {"name": "CORS", "label": "CORS", "description": "Container Variable: CORS", "default": ""},
+        {"name": "MONGO_ENDPOINT", "label": "MONGO_ENDPOINT", "description": "Container Variable: MONGO_ENDPOINT", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 337,
+      "type": 3,
+      "title": "Rpcs3",
+      "name": "rpcs3",
+      "description": "RPCS3 is a multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux, macOS and FreeBSD.",
+      "note": "A multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux, macOS and FreeBSD.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/rpcs3-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rpcs3/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

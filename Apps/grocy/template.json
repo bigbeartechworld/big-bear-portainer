@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 139,
+      "type": 3,
+      "title": "Grocy",
+      "name": "grocy",
+      "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy.info",
+      "note": "An ERP system for your kitchen. Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy. Info",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/grocy-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/grocy/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

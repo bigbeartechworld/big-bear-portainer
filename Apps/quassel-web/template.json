@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 322,
+      "type": 3,
+      "title": "Quassel-web",
+      "name": "quassel-web",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/quassel-web/",
+      "note": "A web client for Quassel. Note that a Quassel-Core instance is required, we have a container available here.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/quassel-web-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/quassel-web/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "QUASSEL_CORE", "label": "QUASSEL_CORE", "description": "Container Variable: QUASSEL_CORE", "default": ""},
+        {"name": "QUASSEL_PORT", "label": "QUASSEL_PORT", "description": "Container Variable: QUASSEL_PORT", "default": ""},
+        {"name": "QUASSEL_HTTPS", "label": "QUASSEL_HTTPS", "description": "Container Variable: QUASSEL_HTTPS", "default": ""},
+        {"name": "URL_BASE", "label": "URL_BASE", "description": "Container Variable: URL_BASE", "default": ""}
+      ]
+    }]}

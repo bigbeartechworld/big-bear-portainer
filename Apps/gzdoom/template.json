@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 141,
+      "type": 3,
+      "title": "Gzdoom",
+      "name": "gzdoom",
+      "description": "GZDoom is a feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.",
+      "note": "A feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/gzdoom-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/gzdoom/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

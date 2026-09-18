@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 378,
+      "type": 3,
+      "title": "Thunderbird",
+      "name": "thunderbird",
+      "description": "Thunderbird is a free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
+      "note": "A free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/thunderbird-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/thunderbird/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

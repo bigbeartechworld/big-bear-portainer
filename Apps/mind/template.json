@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 115,
+      "id": 215,
       "type": 3,
       "title": "MIND",
       "name": "mind",
@@ -7,7 +7,7 @@
       "note": "A simple self hosted reminder application that can send push notifications to your device. Set the reminder and forget about it!",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://i.imgur.com/UgjalkK.png",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/docker.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/mind/docker-compose.yml"

@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 107,
+      "type": 3,
+      "title": "Feed2toot",
+      "name": "feed2toot",
+      "description": "Feed2toot automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.",
+      "note": "Automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/WisdomSky/CasaOS-LinuxServer-AppStore@main/default-icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/feed2toot/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "FEED_LIMIT", "label": "FEED_LIMIT", "description": "Container Variable: FEED_LIMIT", "default": ""}
+      ]
+    }]}

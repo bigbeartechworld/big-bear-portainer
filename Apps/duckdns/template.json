@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 89,
+      "type": 3,
+      "title": "Duckdns",
+      "name": "duckdns",
+      "description": "Duckdns is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
+      "note": "A free service which will point a DNS (sub domains of duckdns. Org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/duckdns.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/duckdns/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "SUBDOMAINS", "label": "SUBDOMAINS", "description": "Container Variable: SUBDOMAINS", "default": ""},
+        {"name": "TOKEN", "label": "TOKEN", "description": "Container Variable: TOKEN", "default": ""},
+        {"name": "UPDATE_IP", "label": "UPDATE_IP", "description": "Container Variable: UPDATE_IP", "default": ""},
+        {"name": "LOG_FILE", "label": "LOG_FILE", "description": "Container Variable: LOG_FILE", "default": ""}
+      ]
+    }]}

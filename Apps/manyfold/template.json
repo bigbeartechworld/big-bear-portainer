@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 206,
+      "type": 3,
+      "title": "Manyfold",
+      "name": "manyfold",
+      "description": "Manyfold is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+      "note": "An open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/manyfold.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/manyfold/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Container Variable: DATABASE_URL", "default": ""},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Container Variable: REDIS_URL", "default": ""},
+        {"name": "SECRET_KEY_BASE", "label": "SECRET_KEY_BASE", "description": "Container Variable: SECRET_KEY_BASE", "default": ""}
+      ]
+    }]}

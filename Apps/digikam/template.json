@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 71,
+      "type": 3,
+      "title": "Digikam",
+      "name": "digikam",
+      "description": "digiKam: Professional Photo Management with the Power of Open Source",
+      "note": "digiKam: Professional Photo Management with the Power of Open Source",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/digikam.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/digikam/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 376,
+      "type": 3,
+      "title": "Tester",
+      "name": "tester",
+      "description": "This internal tool is used as a desktop sandbox in our CI process to grab a screenshot of a hopefully functional endpoint",
+      "note": "This internal tool is used as a desktop sandbox in our CI process to grab a screenshot of a hopefully functional endpoint",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/tester/docker-compose.yml"
+      },
+      "env": [
+        {"name": "URL", "label": "URL", "description": "Container Variable: URL", "default": ""}
+      ]
+    }]}

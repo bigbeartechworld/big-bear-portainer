@@ -1,0 +1,26 @@
+{"version": "3", "templates": [    {
+      "id": 207,
+      "type": 3,
+      "title": "Mariadb",
+      "name": "mariadb",
+      "description": "Mariadb is one of the most popular database servers. Made by the original developers of MySQL.",
+      "note": "One of the most popular database servers. Made by the original developers of MySQL.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/mariadb-git.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/mariadb/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Container Variable: MYSQL_ROOT_PASSWORD", "default": ""},
+        {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Container Variable: MYSQL_DATABASE", "default": ""},
+        {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Container Variable: MYSQL_USER", "default": ""},
+        {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Container Variable: MYSQL_PASSWORD", "default": ""},
+        {"name": "REMOTE_SQL", "label": "REMOTE_SQL", "description": "Container Variable: REMOTE_SQL", "default": ""},
+        {"name": "CLI_OPTS", "label": "CLI_OPTS", "description": "Container Variable: CLI_OPTS", "default": ""}
+      ]
+    }]}

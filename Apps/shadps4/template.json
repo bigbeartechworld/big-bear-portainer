@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 351,
+      "type": 3,
+      "title": "Shadps4",
+      "name": "shadps4",
+      "description": "shadPS4 is an early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+      "note": "An early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/shadps4-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/shadps4/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

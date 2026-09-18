@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 96,
+      "type": 3,
+      "title": "Emulatorjs",
+      "name": "emulatorjs",
+      "description": "Emulatorjs - In browser web based emulation portable to nearly any device for many retro consoles. A mix of emulators is used between Libretro and EmulatorJS.",
+      "note": "In browser web based emulation portable to nearly any device for many retro consoles. A mix of emulators is used between Libretro and EmulatorJS. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/emulatorjs-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/emulatorjs/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "SUBFOLDER", "label": "SUBFOLDER", "description": "Container Variable: SUBFOLDER", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 315,
+      "type": 3,
+      "title": "Pydio-cells",
+      "name": "pydio-cells",
+      "description": "Pydio-cells is the nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
+      "note": "The nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/pydio-cells-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/pydio-cells/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "EXTERNALURL", "label": "EXTERNALURL", "description": "Container Variable: EXTERNALURL", "default": ""},
+        {"name": "SERVER_IP", "label": "SERVER_IP", "description": "Container Variable: SERVER_IP", "default": ""}
+      ]
+    }]}

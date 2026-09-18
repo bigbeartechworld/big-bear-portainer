@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 411,
+      "type": 3,
+      "title": "Webstation",
+      "name": "webstation",
+      "description": "Webstation is a web native emulation focused LXQt desktop based on Ubuntu.",
+      "note": "A web native emulation focused LXQt desktop based on Ubuntu.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/webstation-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/webstation/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

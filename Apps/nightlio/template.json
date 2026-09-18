@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 246,
+      "type": 3,
+      "title": "Nightlio",
+      "name": "nightlio",
+      "description": "Nightlio is a privacy-first mood tracker and daily journal designed for effortless self-hosting. Log your daily mood on a simple five-point scale, write rich Markdown journal entries with customizable tags, and view insightful analytics including mood history calendars, average mood trends, and journaling streaks. All data is stored in a local SQLite database on your own server with no telemetry, ads, or subscriptions.",
+      "note": "Privacy-first mood tracker and daily journal",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/nightlio.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/nightlio/docker-compose.yml"
+      },
+      "env": [
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Secret key used by the API for session signing. Change to a long random string", "default": "changeme"},
+        {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Secret used to sign JWT authentication tokens. Change to a different long random string", "default": "changeme-too"},
+        {"name": "CORS_ORIGINS", "label": "CORS_ORIGINS", "description": "Comma-separated list of origins allowed to call the API directly. Add your public domain when exposing the app", "default": "http://localhost:5173"},
+        {"name": "ENABLE_GOOGLE_OAUTH", "label": "ENABLE_GOOGLE_OAUTH", "description": "Enables Google OAuth for multi-user support (1 to enable, 0 to disable)", "default": "0"},
+        {"name": "ENABLE_MOOD_MUSIC", "label": "ENABLE_MOOD_MUSIC", "description": "Enables the mood music feature powered by Jamendo (1 to enable, 0 to disable)", "default": "0"},
+        {"name": "DEFAULT_SELF_HOST_ID", "label": "DEFAULT_SELF_HOST_ID", "description": "Identifier of the default single-user account in self-hosted mode", "default": "selfhost_default_user"}
+      ]
+    }]}

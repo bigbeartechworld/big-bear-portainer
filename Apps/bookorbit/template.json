@@ -1,0 +1,27 @@
+{"version": "3", "templates": [    {
+      "id": 29,
+      "type": 3,
+      "title": "BookOrbit",
+      "name": "bookorbit",
+      "description": "BookOrbit is a self-hosted library and reading platform for ebooks, PDFs, audiobooks, and comics. It syncs progress and highlights across the web reader, Kobo, and KOReader, with metadata lookup, reading stats, OPDS, and multi-user OIDC support.",
+      "note": "Your self-hosted reading space for books, audiobooks, and comics",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/bookorbit.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/bookorbit/docker-compose.yml"
+      },
+      "env": [
+        {"name": "APP_URL", "label": "APP_URL", "description": "Public URL used by emails and Kobo endpoints - replace [YOUR_CASAOS_LAN_IP] with your server IP (required)", "default": "http://[YOUR_CASAOS_LAN_IP]:3000"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL username (required)", "default": "bookorbit"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password - CHANGE THIS IN PRODUCTION (required)", "default": "7b0aee8dc43c518eef646e2d"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name (required)", "default": "bookorbit"},
+        {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Secret used to sign login tokens - CHANGE THIS IN PRODUCTION (required)", "default": "cd94b64e8c98c7e5cab21ebc9c1e82e739c770d0f00f2626def2987942167c4e"},
+        {"name": "SETUP_BOOTSTRAP_TOKEN", "label": "SETUP_BOOTSTRAP_TOKEN", "description": "One-time token required to complete the setup wizard (required)", "default": "1ba75f44baee64b32d1af876cc38e2b6"},
+        {"name": "PUID", "label": "PUID", "description": "Runtime UID for files written to app data folders - match your books folder owner on NAS (optional)", "default": "1000"},
+        {"name": "PGID", "label": "PGID", "description": "Runtime GID for files written to app data folders - match your books folder owner on NAS (optional)", "default": "1000"},
+        {"name": "LIBRARY_BROWSE_ROOT", "label": "LIBRARY_BROWSE_ROOT", "description": "Container folder where the library picker starts instead of / (optional)", "default": "/books"},
+        {"name": "BOOK_DOCK_PATH", "label": "BOOK_DOCK_PATH", "description": "Container path for the automated ingestion drop folder (optional)", "default": ""}
+      ]
+    }]}

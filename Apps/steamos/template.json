@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 365,
+      "type": 3,
+      "title": "Steamos",
+      "name": "steamos",
+      "description": "SteamOS is an Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. This container will only work with modern AMD/Intel GPUs on a real Linux Host",
+      "note": "An Arch based Linux distribution made by Valve Software. This container is a vanilla Arch install with Steam repositories added for software support. This container will only work with modern AMD/Intel GPUs on a real Linux Host",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/steamos-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/steamos/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "DRINODE", "label": "DRINODE", "description": "Container Variable: DRINODE", "default": ""},
+        {"name": "HOST_IP", "label": "HOST_IP", "description": "Container Variable: HOST_IP", "default": ""},
+        {"name": "STARTUP", "label": "STARTUP", "description": "Container Variable: STARTUP", "default": ""},
+        {"name": "RESOLUTION", "label": "RESOLUTION", "description": "Container Variable: RESOLUTION", "default": ""}
+      ]
+    }]}

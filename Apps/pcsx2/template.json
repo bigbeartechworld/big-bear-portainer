@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 279,
+      "type": 3,
+      "title": "Pcsx2",
+      "name": "pcsx2",
+      "description": "PCSX2 is an open source PS2 Emulator.",
+      "note": "An open source PS2 Emulator.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/pcsx2-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/pcsx2/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

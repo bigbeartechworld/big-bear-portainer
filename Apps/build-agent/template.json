@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 36,
+      "type": 3,
+      "title": "Build-agent",
+      "name": "build-agent",
+      "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/build-agent for details.",
+      "note": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/build-agent for details. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/WisdomSky/CasaOS-LinuxServer-AppStore@main/default-icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/build-agent/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

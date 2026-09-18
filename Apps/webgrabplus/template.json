@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 410,
+      "type": 3,
+      "title": "Webgrabplus",
+      "name": "webgrabplus",
+      "description": "Webgrabplus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+      "note": "A multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.webgrabplus.com%2Fsites%2Fdefault%2Fthemes%2FWgTheme%2Fimages%2Fslideshows%2FEPG_fading.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/webgrabplus/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

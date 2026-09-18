@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 7,
+      "type": 3,
+      "title": "Airsonic-advanced",
+      "name": "airsonic-advanced",
+      "description": "Airsonic-advanced is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+      "note": "A free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/airsonic-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/airsonic-advanced/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CONTEXT_PATH", "label": "CONTEXT_PATH", "description": "Container Variable: CONTEXT_PATH", "default": ""},
+        {"name": "JAVA_OPTS", "label": "JAVA_OPTS", "description": "Container Variable: JAVA_OPTS", "default": ""}
+      ]
+    }]}

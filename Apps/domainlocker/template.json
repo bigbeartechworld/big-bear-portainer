@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 84,
+      "type": 3,
+      "title": "Domain Locker",
+      "name": "domainlocker",
+      "description": "🌐 The all-in-one tool, for keeping track of your domain name portfolio. Got domain names? Get Domain Locker!",
+      "note": "Domain Locker",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/domain-locker.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/domainlocker/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DL_ENV_TYPE", "label": "DL_ENV_TYPE", "description": "Environment type", "default": "selfHosted"},
+        {"name": "DL_PG_HOST", "label": "DL_PG_HOST", "description": "Postgres host", "default": "postgres"},
+        {"name": "DL_PG_PORT", "label": "DL_PG_PORT", "description": "Postgres port", "default": "5432"},
+        {"name": "DL_PG_USER", "label": "DL_PG_USER", "description": "Postgres user", "default": "postgres"},
+        {"name": "DL_PG_PASSWORD", "label": "DL_PG_PASSWORD", "description": "Postgres password", "default": "changeme2420"},
+        {"name": "DL_PG_NAME", "label": "DL_PG_NAME", "description": "Postgres database name", "default": "domain_locker"}
+      ]
+    }]}

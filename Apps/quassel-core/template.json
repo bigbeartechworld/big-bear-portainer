@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 321,
+      "type": 3,
+      "title": "Quassel-core",
+      "name": "quassel-core",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/quassel-core/",
+      "note": "A modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core. This container handles the IRC connection (quasselcore) and requires a desktop client (quasselclient) to be used and configured. It is designed to be always on and will keep your identity present in IRC even when your clients cannot be online. Backlog (history) is downloaded by your client upon reconnection allowing infinite scrollback through time.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/quassel-core-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/quassel-core/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "RUN_OPTS", "label": "RUN_OPTS", "description": "Container Variable: RUN_OPTS", "default": ""}
+      ]
+    }]}

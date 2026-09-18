@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 148,
+      "type": 3,
+      "title": "Hermes Agent",
+      "name": "hermes",
+      "description": "Hermes Agent 0.21.3 is a self-hosted AI agent with a gateway API and an authenticated web dashboard.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Hermes/icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/hermes/docker-compose.yml"
+      },
+      "env": [
+        {"name": "HERMES_DASHBOARD", "label": "HERMES_DASHBOARD", "description": "Enable the Hermes web dashboard.", "default": "1"},
+        {"name": "HERMES_DASHBOARD_BASIC_AUTH_USERNAME", "label": "HERMES_DASHBOARD_BASIC_AUTH_USERNAME", "description": "Username for dashboard basic authentication.", "default": "zimaos"},
+        {"name": "HERMES_DASHBOARD_BASIC_AUTH_PASSWORD", "label": "HERMES_DASHBOARD_BASIC_AUTH_PASSWORD", "description": "Provide a private password before startup. The dashboard refuses an empty password.", "default": ""}
+      ]
+    }]}

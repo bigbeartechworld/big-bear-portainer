@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 362,
+      "type": 3,
+      "title": "Sqlitebrowser",
+      "name": "sqlitebrowser",
+      "description": "DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
+      "note": "A high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/sqlitebrowser-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/sqlitebrowser/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,34 @@
+{"version": "3", "templates": [    {
+      "id": 368,
+      "type": 3,
+      "title": "Swag",
+      "name": "swag",
+      "description": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.",
+      "note": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/swag.gif",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/swag/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "URL", "label": "URL", "description": "Container Variable: URL", "default": ""},
+        {"name": "VALIDATION", "label": "VALIDATION", "description": "Container Variable: VALIDATION", "default": ""},
+        {"name": "SUBDOMAINS", "label": "SUBDOMAINS", "description": "Container Variable: SUBDOMAINS", "default": ""},
+        {"name": "CERTPROVIDER", "label": "CERTPROVIDER", "description": "Container Variable: CERTPROVIDER", "default": ""},
+        {"name": "CERT_PROFILE", "label": "CERT_PROFILE", "description": "Container Variable: CERT_PROFILE", "default": ""},
+        {"name": "DNSPLUGIN", "label": "DNSPLUGIN", "description": "Container Variable: DNSPLUGIN", "default": ""},
+        {"name": "PROPAGATION", "label": "PROPAGATION", "description": "Container Variable: PROPAGATION", "default": ""},
+        {"name": "EMAIL", "label": "EMAIL", "description": "Container Variable: EMAIL", "default": ""},
+        {"name": "ONLY_SUBDOMAINS", "label": "ONLY_SUBDOMAINS", "description": "Container Variable: ONLY_SUBDOMAINS", "default": ""},
+        {"name": "EXTRA_DOMAINS", "label": "EXTRA_DOMAINS", "description": "Container Variable: EXTRA_DOMAINS", "default": ""},
+        {"name": "STAGING", "label": "STAGING", "description": "Container Variable: STAGING", "default": ""},
+        {"name": "DISABLE_F2B", "label": "DISABLE_F2B", "description": "Container Variable: DISABLE_F2B", "default": ""},
+        {"name": "SWAG_AUTORELOAD", "label": "SWAG_AUTORELOAD", "description": "Container Variable: SWAG_AUTORELOAD", "default": ""},
+        {"name": "SWAG_AUTORELOAD_WATCHLIST", "label": "SWAG_AUTORELOAD_WATCHLIST", "description": "Container Variable: SWAG_AUTORELOAD_WATCHLIST", "default": ""}
+      ]
+    }]}

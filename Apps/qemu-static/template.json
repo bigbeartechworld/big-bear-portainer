@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 320,
+      "type": 3,
+      "title": "Qemu-static",
+      "name": "qemu-static",
+      "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/qemu-static for details.",
+      "note": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/qemu-static for details.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/qemu-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/qemu-static/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

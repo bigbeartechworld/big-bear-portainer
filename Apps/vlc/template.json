@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 401,
+      "type": 3,
+      "title": "Vlc",
+      "name": "vlc",
+      "description": "VLC Media Player is a free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.",
+      "note": "A free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/vlc-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vlc/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "VLC_CLI", "label": "VLC_CLI", "description": "Container Variable: VLC_CLI", "default": ""}
+      ]
+    }]}

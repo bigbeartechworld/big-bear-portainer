@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 237,
+      "type": 3,
+      "title": "netboot.xyz",
+      "name": "netboot-xyz",
+      "description": "netboot.xyz is a PXE app: an iPXE menu that boots OS installers and utilities over the network. This Universal App wraps the official container (web UI, TFTP, local asset HTTP). It does not run DHCP; point the LAN DHCP next-server and bootfile at this host.",
+      "note": "Network boot menu (iPXE) with TFTP and a web UI",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/netboot-xyz.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/netboot-xyz/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NGINX_PORT", "label": "NGINX_PORT", "description": "nginx listen port inside the container for local assets", "default": "80"},
+        {"name": "WEB_APP_PORT", "label": "WEB_APP_PORT", "description": "web UI listen port inside the container", "default": "3000"},
+        {"name": "TZ", "label": "TZ", "description": "container timezone", "default": "UTC"}
+      ]
+    }]}

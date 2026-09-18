@@ -1,0 +1,31 @@
+{"version": "3", "templates": [    {
+      "id": 145,
+      "type": 3,
+      "title": "Hedgedoc",
+      "name": "hedgedoc",
+      "description": "HedgeDoc gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
+      "note": "Gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/hedgedoc-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/hedgedoc/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Container Variable: DB_HOST", "default": ""},
+        {"name": "DB_PORT", "label": "DB_PORT", "description": "Container Variable: DB_PORT", "default": ""},
+        {"name": "DB_USER", "label": "DB_USER", "description": "Container Variable: DB_USER", "default": ""},
+        {"name": "DB_PASS", "label": "DB_PASS", "description": "Container Variable: DB_PASS", "default": ""},
+        {"name": "DB_NAME", "label": "DB_NAME", "description": "Container Variable: DB_NAME", "default": ""},
+        {"name": "CMD_DOMAIN", "label": "CMD_DOMAIN", "description": "Container Variable: CMD_DOMAIN", "default": ""},
+        {"name": "CMD_URL_ADDPORT", "label": "CMD_URL_ADDPORT", "description": "Container Variable: CMD_URL_ADDPORT", "default": ""},
+        {"name": "CMD_PROTOCOL_USESSL", "label": "CMD_PROTOCOL_USESSL", "description": "Container Variable: CMD_PROTOCOL_USESSL", "default": ""},
+        {"name": "CMD_PORT", "label": "CMD_PORT", "description": "Container Variable: CMD_PORT", "default": ""},
+        {"name": "CMD_ALLOW_ORIGIN", "label": "CMD_ALLOW_ORIGIN", "description": "Container Variable: CMD_ALLOW_ORIGIN", "default": ""},
+        {"name": "CMD_DB_DIALECT", "label": "CMD_DB_DIALECT", "description": "Container Variable: CMD_DB_DIALECT", "default": ""}
+      ]
+    }]}

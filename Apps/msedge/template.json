@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 223,
+      "type": 3,
+      "title": "Msedge",
+      "name": "msedge",
+      "description": "Microsoft Edge is a cross-platform web browser developed by Microsoft and based on Chromium.",
+      "note": "A cross-platform web browser developed by Microsoft and based on Chromium.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/edge-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/msedge/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "EDGE_CLI", "label": "EDGE_CLI", "description": "Container Variable: EDGE_CLI", "default": ""}
+      ]
+    }]}

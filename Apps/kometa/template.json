@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 181,
+      "type": 3,
+      "title": "Kometa",
+      "name": "kometa",
+      "description": "Kometa is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+      "note": "A powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/kometa-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/kometa/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "KOMETA_CONFIG", "label": "KOMETA_CONFIG", "description": "Container Variable: KOMETA_CONFIG", "default": ""},
+        {"name": "KOMETA_TIMES", "label": "KOMETA_TIMES", "description": "Container Variable: KOMETA_TIMES", "default": ""},
+        {"name": "KOMETA_RUN", "label": "KOMETA_RUN", "description": "Container Variable: KOMETA_RUN", "default": ""},
+        {"name": "KOMETA_TESTS", "label": "KOMETA_TESTS", "description": "Container Variable: KOMETA_TESTS", "default": ""},
+        {"name": "KOMETA_NO_MISSING", "label": "KOMETA_NO_MISSING", "description": "Container Variable: KOMETA_NO_MISSING", "default": ""}
+      ]
+    }]}

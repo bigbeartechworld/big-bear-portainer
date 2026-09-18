@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 418,
+      "type": 3,
+      "title": "Winegui",
+      "name": "winegui",
+      "description": "WineGUI is a user-interface friendly Wine manager that provides a graphical frontend for creating and managing Wine bottles.",
+      "note": "A user-interface friendly Wine manager that provides a graphical frontend for creating and managing Wine bottles.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/winegui-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/winegui/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

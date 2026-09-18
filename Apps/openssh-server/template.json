@@ -1,0 +1,30 @@
+{"version": "3", "templates": [    {
+      "id": 267,
+      "type": 3,
+      "title": "Openssh-server",
+      "name": "openssh-server",
+      "description": "Openssh-server is a sandboxed environment that allows ssh access without giving keys to the entire server. Giving ssh access via private key often means giving full access to the server. This container creates a limited and sandboxed environment that others can ssh into. The users only have access to the folders mapped and the processes running inside this container.",
+      "note": "A sandboxed environment that allows ssh access without giving keys to the entire server. Giving ssh access via private key often means giving full access to the server. This container creates a limited and sandboxed environment that others can ssh into. The users only have access to the folders mapped and the processes running inside this container.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/openssh-server-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/openssh-server/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "PUBLIC_KEY", "label": "PUBLIC_KEY", "description": "Container Variable: PUBLIC_KEY", "default": ""},
+        {"name": "PUBLIC_KEY_FILE", "label": "PUBLIC_KEY_FILE", "description": "Container Variable: PUBLIC_KEY_FILE", "default": ""},
+        {"name": "PUBLIC_KEY_DIR", "label": "PUBLIC_KEY_DIR", "description": "Container Variable: PUBLIC_KEY_DIR", "default": ""},
+        {"name": "PUBLIC_KEY_URL", "label": "PUBLIC_KEY_URL", "description": "Container Variable: PUBLIC_KEY_URL", "default": ""},
+        {"name": "SUDO_ACCESS", "label": "SUDO_ACCESS", "description": "Container Variable: SUDO_ACCESS", "default": ""},
+        {"name": "PASSWORD_ACCESS", "label": "PASSWORD_ACCESS", "description": "Container Variable: PASSWORD_ACCESS", "default": ""},
+        {"name": "USER_PASSWORD", "label": "USER_PASSWORD", "description": "Container Variable: USER_PASSWORD", "default": ""},
+        {"name": "USER_PASSWORD_FILE", "label": "USER_PASSWORD_FILE", "description": "Container Variable: USER_PASSWORD_FILE", "default": ""},
+        {"name": "USER_NAME", "label": "USER_NAME", "description": "Container Variable: USER_NAME", "default": ""},
+        {"name": "LOG_STDOUT", "label": "LOG_STDOUT", "description": "Container Variable: LOG_STDOUT", "default": ""}
+      ]
+    }]}

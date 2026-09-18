@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 404,
+      "type": 3,
+      "title": "Vscodium-web",
+      "name": "vscodium-web",
+      "description": "Vscodium-web is a community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+      "note": "A community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/vscodium-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vscodium-web/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CONNECTION_TOKEN", "label": "CONNECTION_TOKEN", "description": "Container Variable: CONNECTION_TOKEN", "default": ""},
+        {"name": "CONNECTION_TOKEN_FILE", "label": "CONNECTION_TOKEN_FILE", "description": "Container Variable: CONNECTION_TOKEN_FILE", "default": ""},
+        {"name": "SUDO_PASSWORD", "label": "SUDO_PASSWORD", "description": "Container Variable: SUDO_PASSWORD", "default": ""},
+        {"name": "SUDO_PASSWORD_HASH", "label": "SUDO_PASSWORD_HASH", "description": "Container Variable: SUDO_PASSWORD_HASH", "default": ""},
+        {"name": "CODE_ARGS", "label": "CODE_ARGS", "description": "Container Variable: CODE_ARGS", "default": ""}
+      ]
+    }]}

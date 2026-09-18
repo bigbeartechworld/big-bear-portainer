@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 402,
+      "type": 3,
+      "title": "Vscode",
+      "name": "vscode",
+      "description": "VS Code is an integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
+      "note": "An integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/vscode-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vscode/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

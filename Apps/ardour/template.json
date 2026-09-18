@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 12,
+      "type": 3,
+      "title": "Ardour",
+      "name": "ardour",
+      "description": "Ardour is an open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+      "note": "An open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/ardour-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/ardour/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

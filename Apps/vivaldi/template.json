@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 400,
+      "type": 3,
+      "title": "Vivaldi",
+      "name": "vivaldi",
+      "description": "Vivaldi is a Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
+      "note": "A Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/vivaldi-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/vivaldi/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "VIVALDI_CLI", "label": "VIVALDI_CLI", "description": "Container Variable: VIVALDI_CLI", "default": ""}
+      ]
+    }]}

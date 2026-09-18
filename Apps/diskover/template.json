@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 74,
+      "type": 3,
+      "title": "Diskover",
+      "name": "diskover",
+      "description": "Diskover is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+      "note": "An open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/diskoverdata/diskover-community@master/diskover-web/public/images/diskover.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/diskover/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "ES_HOST", "label": "ES_HOST", "description": "Container Variable: ES_HOST", "default": ""},
+        {"name": "ES_PORT", "label": "ES_PORT", "description": "Container Variable: ES_PORT", "default": ""}
+      ]
+    }]}

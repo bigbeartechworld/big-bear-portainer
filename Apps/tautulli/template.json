@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 374,
+      "type": 3,
+      "title": "Tautulli",
+      "name": "tautulli",
+      "description": "Tautulli is a python based web application for monitoring, analytics and notifications for Plex Media Server.",
+      "note": "A python based web application for monitoring, analytics and notifications for Plex Media Server.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/tautulli-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/tautulli/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}
