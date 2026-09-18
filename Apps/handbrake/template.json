@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 143,
+      "type": 3,
+      "title": "Handbrake",
+      "name": "handbrake",
+      "description": "HandBrake is an open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
+      "note": "An open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/handbrake-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/handbrake/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

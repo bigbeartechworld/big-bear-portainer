@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 371,
+      "type": 3,
+      "title": "Syslog-ng",
+      "name": "syslog-ng",
+      "description": "syslog-ng allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+      "note": "Allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/syslog-ng-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/syslog-ng/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "LOG_TO_STDOUT", "label": "LOG_TO_STDOUT", "description": "Container Variable: LOG_TO_STDOUT", "default": ""}
+      ]
+    }]}

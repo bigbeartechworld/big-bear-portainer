@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 179,
+      "type": 3,
+      "title": "KitchenOwl",
+      "name": "kitchenowl",
+      "description": "KitchenOwl is a self-hosted grocery list and recipe manager. Track what you need to buy, add recipes, plan meals, and sync your household shopping lists across all your devices in real time.",
+      "note": "Self-hosted grocery list and recipe manager",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/kitchenowl.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/kitchenowl/docker-compose.yml"
+      },
+      "env": [
+        {"name": "JWT_SECRET_KEY", "label": "JWT_SECRET_KEY", "description": "Secret key used for signing authentication tokens", "default": "7c7884a9-f13a-4e01-a2f0-310add0acf60"}
+      ]
+    }]}

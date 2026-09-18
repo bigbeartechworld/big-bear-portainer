@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 216,
+      "type": 3,
+      "title": "Minetest",
+      "name": "minetest",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/minetest/",
+      "note": "(server) is a near-infinite-world block sandbox game and a game engine, inspired by InfiniMiner, Minecraft, and the like. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/beta-templates@master/lsiodev/img/minetest-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/minetest/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CLI_ARGS", "label": "CLI_ARGS", "description": "Container Variable: CLI_ARGS", "default": ""}
+      ]
+    }]}

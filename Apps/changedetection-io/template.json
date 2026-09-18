@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 45,
+      "type": 3,
+      "title": "Changedetection.io",
+      "name": "changedetection-io",
+      "description": "Changedetection.io provides free, open-source web page monitoring, notification and change detection.",
+      "note": "Provides free, open-source web page monitoring, notification and change detection.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/changedetection-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/changedetection-io/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "BASE_URL", "label": "BASE_URL", "description": "Container Variable: BASE_URL", "default": ""},
+        {"name": "PLAYWRIGHT_DRIVER_URL", "label": "PLAYWRIGHT_DRIVER_URL", "description": "Container Variable: PLAYWRIGHT_DRIVER_URL", "default": ""}
+      ]
+    }]}

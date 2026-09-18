@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 176,
+      "type": 3,
+      "title": "Keepassxc",
+      "name": "keepassxc",
+      "description": "KeePassXC is a free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+      "note": "A free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/keepassxc-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/keepassxc/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

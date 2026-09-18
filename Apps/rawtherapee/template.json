@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 326,
+      "type": 3,
+      "title": "Rawtherapee",
+      "name": "rawtherapee",
+      "description": "RawTherapee is a free, cross-platform raw image processing program!",
+      "note": "A free, cross-platform raw image processing program.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/rawtherapee-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rawtherapee/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

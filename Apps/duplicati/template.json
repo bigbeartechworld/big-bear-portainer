@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 91,
+      "type": 3,
+      "title": "Duplicati",
+      "name": "duplicati",
+      "description": "Duplicati is a backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box.com, Mega, B2, and many others.",
+      "note": "A backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box. Com, Mega, B2, and many others.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/duplicati-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/duplicati/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "SETTINGS_ENCRYPTION_KEY", "label": "SETTINGS_ENCRYPTION_KEY", "description": "Container Variable: SETTINGS_ENCRYPTION_KEY", "default": ""},
+        {"name": "CLI_ARGS", "label": "CLI_ARGS", "description": "Container Variable: CLI_ARGS", "default": ""},
+        {"name": "DUPLICATI__WEBSERVICE_PASSWORD", "label": "DUPLICATI__WEBSERVICE_PASSWORD", "description": "Container Variable: DUPLICATI__WEBSERVICE_PASSWORD", "default": ""}
+      ]
+    }]}

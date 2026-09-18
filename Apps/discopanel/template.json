@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 40,
+      "id": 73,
       "type": 3,
       "title": "DiscoPanel",
       "name": "discopanel",
@@ -7,7 +7,7 @@
       "note": "A game server panel for Minecraft",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://discopanel.app/g1_256x256.png",
+      "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fdiscopanel.app%2Fg1_256x256.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/discopanel/docker-compose.yml"

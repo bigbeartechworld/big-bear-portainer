@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 49,
+      "type": 3,
+      "title": "Ci",
+      "name": "ci",
+      "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ci for details.",
+      "note": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ci for details. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/WisdomSky/CasaOS-LinuxServer-AppStore@main/default-icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/ci/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

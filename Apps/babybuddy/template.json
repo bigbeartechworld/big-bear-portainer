@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 19,
+      "type": 3,
+      "title": "Babybuddy",
+      "name": "babybuddy",
+      "description": "Babybuddy is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.",
+      "note": "A buddy for babies. Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/babybuddy-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/babybuddy/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CSRF_TRUSTED_ORIGINS", "label": "CSRF_TRUSTED_ORIGINS", "description": "Container Variable: CSRF_TRUSTED_ORIGINS", "default": ""}
+      ]
+    }]}

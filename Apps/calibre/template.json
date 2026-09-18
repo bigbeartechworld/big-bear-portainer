@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 40,
+      "type": 3,
+      "title": "Calibre",
+      "name": "calibre",
+      "description": "Calibre is a powerful and easy to use e-book manager. Users say it's outstanding and a must-have. It'll allow you to do nearly everything and it takes things a step beyond normal e-book software. It's also completely free and open source and great for both casual users and computer experts.",
+      "note": "A powerful and easy to use e-book manager. Users say it's outstanding and a must-have. It'll allow you to do nearly everything and it takes things a step beyond normal e-book software. It's also completely free and open source and great for both casual users and computer experts.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/calibre-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/calibre/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CUSTOM_USER", "label": "CUSTOM_USER", "description": "Username for the Calibre desktop UI", "default": "admin"},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Password for the Calibre desktop UI; change this after installation", "default": "4f5e8c2a-7b31-4d96-a0c4-92e1f7b68d53"},
+        {"name": "CLI_ARGS", "label": "CLI_ARGS", "description": "Container Variable: CLI_ARGS", "default": ""}
+      ]
+    }]}

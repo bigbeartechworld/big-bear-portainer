@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 274,
+      "type": 3,
+      "title": "Pairdrop",
+      "name": "pairdrop",
+      "description": "PairDrop is a sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.",
+      "note": "A sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/schlagmichdoch/PairDrop@master/public/images/android-chrome-512x512.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/pairdrop/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "RATE_LIMIT", "label": "RATE_LIMIT", "description": "Container Variable: RATE_LIMIT", "default": ""},
+        {"name": "WS_FALLBACK", "label": "WS_FALLBACK", "description": "Container Variable: WS_FALLBACK", "default": ""},
+        {"name": "RTC_CONFIG", "label": "RTC_CONFIG", "description": "Container Variable: RTC_CONFIG", "default": ""},
+        {"name": "DEBUG_MODE", "label": "DEBUG_MODE", "description": "Container Variable: DEBUG_MODE", "default": ""}
+      ]
+    }]}

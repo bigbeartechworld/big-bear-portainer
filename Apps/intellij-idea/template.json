@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 161,
+      "type": 3,
+      "title": "Intellij-idea",
+      "name": "intellij-idea",
+      "description": "IntelliJ IDEA helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters – building great software.",
+      "note": "Helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters – building great software.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/intellij-idea-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/intellij-idea/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

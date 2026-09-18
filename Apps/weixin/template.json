@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 413,
+      "type": 3,
+      "title": "Weixin",
+      "name": "weixin",
+      "description": "Weixin (WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.",
+      "note": "(WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/weixin-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/weixin/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

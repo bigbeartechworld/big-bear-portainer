@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 389,
+      "type": 3,
+      "title": "Ungoogled-chromium",
+      "name": "ungoogled-chromium",
+      "description": "Ungoogled Chromium is Google Chromium, sans dependency on Google web services.",
+      "note": "Google Chromium, sans dependency on Google web services.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/ungoogled-chromium-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/ungoogled-chromium/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CHROME_CLI", "label": "CHROME_CLI", "description": "Container Variable: CHROME_CLI", "default": ""}
+      ]
+    }]}

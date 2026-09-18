@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 123,
+      "type": 3,
+      "title": "Freshrss",
+      "name": "freshrss",
+      "description": "Freshrss is a free, self-hostable aggregator for rss feeds.",
+      "note": "A free, self-hostable aggregator for rss feeds.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/freshrss-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/freshrss/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

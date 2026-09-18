@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 112,
+      "id": 210,
       "type": 3,
       "title": "Maybe Finance",
       "name": "maybe-finance",
@@ -7,7 +7,7 @@
       "note": "maybe-finance",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/maybe-finance/maybe/refs/heads/main/app/assets/images/logo-color.png",
+      "logo": "https://cdn.jsdelivr.net/gh/maybe-finance/maybe@refs/heads/main/app/assets/images/logo-color.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/maybe-finance/docker-compose.yml"

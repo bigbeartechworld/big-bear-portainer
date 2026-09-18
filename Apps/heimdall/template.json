@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 146,
+      "type": 3,
+      "title": "Heimdall",
+      "name": "heimdall",
+      "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall. Why not use it as your browser start page? It even has the ability to include a search bar using either Google, Bing or DuckDuckGo.",
+      "note": "A way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall. Why not use it as your browser start page. It even has the ability to include a search bar using either Google, Bing or DuckDuckGo.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/heimdall-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/heimdall/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "ALLOW_INTERNAL_REQUESTS", "label": "ALLOW_INTERNAL_REQUESTS", "description": "Container Variable: ALLOW_INTERNAL_REQUESTS", "default": ""}
+      ]
+    }]}

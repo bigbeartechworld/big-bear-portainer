@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 316,
+      "type": 3,
+      "title": "Pylon",
+      "name": "pylon",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/pylon/",
+      "note": "A web based integrated development environment built with Node. Js as a backend and with a supercharged JavaScript/HTML5 frontend, licensed under GPL version 3. This project originates from Cloud9 v2 project. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/cloud9-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/pylon/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "GITURL", "label": "GITURL", "description": "Container Variable: GITURL", "default": ""},
+        {"name": "PYUSER", "label": "PYUSER", "description": "Container Variable: PYUSER", "default": ""},
+        {"name": "PYPASS", "label": "PYPASS", "description": "Container Variable: PYPASS", "default": ""}
+      ]
+    }]}

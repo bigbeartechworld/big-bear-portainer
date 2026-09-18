@@ -1,0 +1,26 @@
+{"version": "3", "templates": [    {
+      "id": 417,
+      "type": 3,
+      "title": "Wikijs",
+      "name": "wikijs",
+      "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
+      "note": "A modern, lightweight and powerful wiki app built on NodeJS.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fstatic.requarks.io%2Flogo%2Fwikijs-full.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/wikijs/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "DB_TYPE", "label": "DB_TYPE", "description": "Container Variable: DB_TYPE", "default": ""},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Container Variable: DB_HOST", "default": ""},
+        {"name": "DB_PORT", "label": "DB_PORT", "description": "Container Variable: DB_PORT", "default": ""},
+        {"name": "DB_NAME", "label": "DB_NAME", "description": "Container Variable: DB_NAME", "default": ""},
+        {"name": "DB_USER", "label": "DB_USER", "description": "Container Variable: DB_USER", "default": ""},
+        {"name": "DB_PASS", "label": "DB_PASS", "description": "Container Variable: DB_PASS", "default": ""}
+      ]
+    }]}

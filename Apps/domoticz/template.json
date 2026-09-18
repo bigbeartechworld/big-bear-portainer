@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 85,
+      "type": 3,
+      "title": "Domoticz",
+      "name": "domoticz",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/domoticz/",
+      "note": "A Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/domoticz-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/domoticz/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "WEBROOT", "label": "WEBROOT", "description": "Container Variable: WEBROOT", "default": ""},
+        {"name": "DBASE", "label": "DBASE", "description": "Container Variable: DBASE", "default": ""}
+      ]
+    }]}

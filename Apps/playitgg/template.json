@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 172,
+      "id": 297,
       "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
@@ -7,7 +7,7 @@
       "note": "playit.gg is a global proxy that allows anyone to host a server without port forwarding. We use tunneling. Only the server needs to run the program, not every player!",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
-      "logo": "https://media.forgecdn.net/avatars/848/399/638248438568793075.png",
+      "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.forgecdn.net%2Favatars%2F848%2F399%2F638248438568793075.png",
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/playitgg/docker-compose.yml"

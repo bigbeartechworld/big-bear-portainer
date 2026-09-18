@@ -1,0 +1,28 @@
+{"version": "3", "templates": [    {
+      "id": 419,
+      "type": 3,
+      "title": "Wireguard",
+      "name": "wireguard",
+      "description": "WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
+      "note": "An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/wireguard.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/wireguard/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "SERVERURL", "label": "SERVERURL", "description": "Container Variable: SERVERURL", "default": ""},
+        {"name": "SERVERPORT", "label": "SERVERPORT", "description": "Container Variable: SERVERPORT", "default": ""},
+        {"name": "PEERS", "label": "PEERS", "description": "Container Variable: PEERS", "default": ""},
+        {"name": "PEERDNS", "label": "PEERDNS", "description": "Container Variable: PEERDNS", "default": ""},
+        {"name": "INTERNAL_SUBNET", "label": "INTERNAL_SUBNET", "description": "Container Variable: INTERNAL_SUBNET", "default": ""},
+        {"name": "ALLOWEDIPS", "label": "ALLOWEDIPS", "description": "Container Variable: ALLOWEDIPS", "default": ""},
+        {"name": "PERSISTENTKEEPALIVE_PEERS", "label": "PERSISTENTKEEPALIVE_PEERS", "description": "Container Variable: PERSISTENTKEEPALIVE_PEERS", "default": ""},
+        {"name": "LOG_CONFS", "label": "LOG_CONFS", "description": "Container Variable: LOG_CONFS", "default": ""}
+      ]
+    }]}

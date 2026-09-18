@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 299,
+      "type": 3,
+      "title": "Plex-meta-manager",
+      "name": "plex-meta-manager",
+      "description": "Plex-meta-manager is a Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.",
+      "note": "A Python 3 script that can be continuously run using YAML configuration files to update on a schedule the metadata of the movies, shows, and collections in your libraries as well as automatically build collections based on various methods all detailed in the wiki.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/plex-meta-manager-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/plex-meta-manager/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "PMM_CONFIG", "label": "PMM_CONFIG", "description": "Container Variable: PMM_CONFIG", "default": ""},
+        {"name": "PMM_TIME", "label": "PMM_TIME", "description": "Container Variable: PMM_TIME", "default": ""},
+        {"name": "PMM_RUN", "label": "PMM_RUN", "description": "Container Variable: PMM_RUN", "default": ""},
+        {"name": "PMM_TEST", "label": "PMM_TEST", "description": "Container Variable: PMM_TEST", "default": ""},
+        {"name": "PMM_NO_MISSING", "label": "PMM_NO_MISSING", "description": "Container Variable: PMM_NO_MISSING", "default": ""}
+      ]
+    }]}

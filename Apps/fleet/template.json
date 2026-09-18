@@ -1,0 +1,25 @@
+{"version": "3", "templates": [    {
+      "id": 117,
+      "type": 3,
+      "title": "Fleet",
+      "name": "fleet",
+      "description": "Fleet provides an online web interface which displays a set of maintained images from one or more owned repositories.",
+      "note": "Provides an online web interface which displays a set of maintained images from one or more owned repositories. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/WisdomSky/CasaOS-LinuxServer-AppStore@main/default-icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/fleet/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "fleet_admin_authentication_type", "label": "fleet_admin_authentication_type", "description": "Container Variable: fleet_admin_authentication_type", "default": ""},
+        {"name": "fleet_database_url", "label": "fleet_database_url", "description": "Container Variable: fleet_database_url", "default": ""},
+        {"name": "fleet_database_username", "label": "fleet_database_username", "description": "Container Variable: fleet_database_username", "default": ""},
+        {"name": "fleet_database_password", "label": "fleet_database_password", "description": "Container Variable: fleet_database_password", "default": ""},
+        {"name": "fleet_admin_secret", "label": "fleet_admin_secret", "description": "Container Variable: fleet_admin_secret", "default": ""}
+      ]
+    }]}

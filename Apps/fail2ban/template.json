@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 102,
+      "type": 3,
+      "title": "Fail2ban",
+      "name": "fail2ban",
+      "description": "Fail2ban is a daemon to ban hosts that cause multiple authentication errors.",
+      "note": "A daemon to ban hosts that cause multiple authentication errors.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/fail2ban-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/fail2ban/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "VERBOSITY", "label": "VERBOSITY", "description": "Container Variable: VERBOSITY", "default": ""}
+      ]
+    }]}

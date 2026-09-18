@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 187,
+      "type": 3,
+      "title": "Ldap-auth",
+      "name": "ldap-auth",
+      "description": "Ldap-auth software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).",
+      "note": "Software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/ldap-auth-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/ldap-auth/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "FERNETKEY", "label": "FERNETKEY", "description": "Container Variable: FERNETKEY", "default": ""},
+        {"name": "CERTFILE", "label": "CERTFILE", "description": "Container Variable: CERTFILE", "default": ""},
+        {"name": "KEYFILE", "label": "KEYFILE", "description": "Container Variable: KEYFILE", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,38 @@
+{"version": "3", "templates": [    {
+      "id": 357,
+      "type": 3,
+      "title": "Snipe-it",
+      "name": "snipe-it",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/snipe-it/",
+      "note": "Makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster. ",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/snipe-it-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/snipe-it/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "APP_KEY", "label": "APP_KEY", "description": "Container Variable: APP_KEY", "default": ""},
+        {"name": "APP_URL", "label": "APP_URL", "description": "Container Variable: APP_URL", "default": ""},
+        {"name": "MYSQL_PORT_3306_TCP_ADDR", "label": "MYSQL_PORT_3306_TCP_ADDR", "description": "Container Variable: MYSQL_PORT_3306_TCP_ADDR", "default": ""},
+        {"name": "MYSQL_PORT_3306_TCP_PORT", "label": "MYSQL_PORT_3306_TCP_PORT", "description": "Container Variable: MYSQL_PORT_3306_TCP_PORT", "default": ""},
+        {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Container Variable: MYSQL_DATABASE", "default": ""},
+        {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Container Variable: MYSQL_USER", "default": ""},
+        {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Container Variable: MYSQL_PASSWORD", "default": ""},
+        {"name": "APP_DEBUG", "label": "APP_DEBUG", "description": "Container Variable: APP_DEBUG", "default": ""},
+        {"name": "APP_ENV", "label": "APP_ENV", "description": "Container Variable: APP_ENV", "default": ""},
+        {"name": "APP_FORCE_TLS", "label": "APP_FORCE_TLS", "description": "Container Variable: APP_FORCE_TLS", "default": ""},
+        {"name": "APP_LOCALE", "label": "APP_LOCALE", "description": "Container Variable: APP_LOCALE", "default": ""},
+        {"name": "MAIL_PORT_587_TCP_ADDR", "label": "MAIL_PORT_587_TCP_ADDR", "description": "Container Variable: MAIL_PORT_587_TCP_ADDR", "default": ""},
+        {"name": "MAIL_PORT_587_TCP_PORT", "label": "MAIL_PORT_587_TCP_PORT", "description": "Container Variable: MAIL_PORT_587_TCP_PORT", "default": ""},
+        {"name": "MAIL_ENV_FROM_ADDR", "label": "MAIL_ENV_FROM_ADDR", "description": "Container Variable: MAIL_ENV_FROM_ADDR", "default": ""},
+        {"name": "MAIL_ENV_FROM_NAME", "label": "MAIL_ENV_FROM_NAME", "description": "Container Variable: MAIL_ENV_FROM_NAME", "default": ""},
+        {"name": "MAIL_ENV_ENCRYPTION", "label": "MAIL_ENV_ENCRYPTION", "description": "Container Variable: MAIL_ENV_ENCRYPTION", "default": ""},
+        {"name": "MAIL_ENV_USERNAME", "label": "MAIL_ENV_USERNAME", "description": "Container Variable: MAIL_ENV_USERNAME", "default": ""},
+        {"name": "MAIL_ENV_PASSWORD", "label": "MAIL_ENV_PASSWORD", "description": "Container Variable: MAIL_ENV_PASSWORD", "default": ""}
+      ]
+    }]}

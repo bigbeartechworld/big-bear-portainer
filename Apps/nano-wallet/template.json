@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 232,
+      "type": 3,
+      "title": "Nano-wallet",
+      "name": "nano-wallet",
+      "description": "Nano-wallet is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located here. You will need to pass a valid RPC host when accessing this container.",
+      "note": "A digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions. This container is a simple nginx wrapper for the light wallet located here. You will need to pass a valid RPC host when accessing this container.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/WisdomSky/CasaOS-LinuxServer-AppStore@main/default-icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/nano-wallet/docker-compose.yml"
+      }
+    }]}

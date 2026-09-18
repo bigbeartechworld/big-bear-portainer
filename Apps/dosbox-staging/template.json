@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 86,
+      "type": 3,
+      "title": "Dosbox-staging",
+      "name": "dosbox-staging",
+      "description": "DOSBox Staging is a modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.",
+      "note": "A modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/dosbox-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/dosbox-staging/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

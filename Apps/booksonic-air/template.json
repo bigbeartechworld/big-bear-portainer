@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 30,
+      "type": 3,
+      "title": "Booksonic-air",
+      "name": "booksonic-air",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/booksonic-air/",
+      "note": "A platform for accessing the audiobooks you own wherever you are. At the moment the platform consists of: * Booksonic Air - A server for streaming your audiobooks, successor to the original Booksonic server and based on Airsonic. * Booksonic App - An DSub based Android app for connection to Booksonic-Air servers.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/booksonic-air.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/booksonic-air/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CONTEXT_PATH", "label": "CONTEXT_PATH", "description": "Container Variable: CONTEXT_PATH", "default": ""}
+      ]
+    }]}

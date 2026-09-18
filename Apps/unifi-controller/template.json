@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 390,
+      "type": 3,
+      "title": "Unifi-controller",
+      "name": "unifi-controller",
+      "description": "Visit homepage: https://hub.docker.com/r/linuxserver/unifi-controller/",
+      "note": "The Unifi-controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/unifi-controller-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/unifi-controller/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "MEM_LIMIT", "label": "MEM_LIMIT", "description": "Container Variable: MEM_LIMIT", "default": ""},
+        {"name": "MEM_STARTUP", "label": "MEM_STARTUP", "description": "Container Variable: MEM_STARTUP", "default": ""}
+      ]
+    }]}

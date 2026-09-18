@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 269,
+      "type": 3,
+      "title": "Openvscode-server",
+      "name": "openvscode-server",
+      "description": "Openvscode-server provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
+      "note": "Provides a version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/openvscode-server-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/openvscode-server/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "CONNECTION_TOKEN", "label": "CONNECTION_TOKEN", "description": "Container Variable: CONNECTION_TOKEN", "default": ""},
+        {"name": "CONNECTION_SECRET", "label": "CONNECTION_SECRET", "description": "Container Variable: CONNECTION_SECRET", "default": ""},
+        {"name": "SUDO_PASSWORD", "label": "SUDO_PASSWORD", "description": "Container Variable: SUDO_PASSWORD", "default": ""},
+        {"name": "SUDO_PASSWORD_HASH", "label": "SUDO_PASSWORD_HASH", "description": "Container Variable: SUDO_PASSWORD_HASH", "default": ""}
+      ]
+    }]}

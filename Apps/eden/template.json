@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 92,
+      "type": 3,
+      "title": "Eden",
+      "name": "eden",
+      "description": "Eden is an experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
+      "note": "An experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/eden-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/eden/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

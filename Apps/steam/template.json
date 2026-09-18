@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 364,
+      "type": 3,
+      "title": "Steam",
+      "name": "steam",
+      "description": "Steam is the ultimate destination for playing, discussing, and creating games.",
+      "note": "The ultimate destination for playing, discussing, and creating games.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/steam-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/steam/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 178,
+      "type": 3,
+      "title": "Kimai",
+      "name": "kimai",
+      "description": "Kimai is a professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users. Kimai was build to track your project times and ships with many advanced features, including but not limited to: JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing!), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search & filtering, money and time budgets, advanced reporting, support for plugins and so much more.",
+      "note": "A professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users. Kimai was build to track your project times and ships with many advanced features, including but not limited to: JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing. ), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search & filtering, money and time budgets, advanced reporting, support for plugins and so much more.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/kimai-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/kimai/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "APP_SECRET", "label": "APP_SECRET", "description": "Container Variable: APP_SECRET", "default": ""},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Container Variable: DATABASE_URL", "default": ""},
+        {"name": "TRUSTED_HOSTS", "label": "TRUSTED_HOSTS", "description": "Container Variable: TRUSTED_HOSTS", "default": ""},
+        {"name": "TRUSTED_PROXIES", "label": "TRUSTED_PROXIES", "description": "Container Variable: TRUSTED_PROXIES", "default": ""}
+      ]
+    }]}

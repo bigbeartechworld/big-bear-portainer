@@ -1,0 +1,27 @@
+{"version": "3", "templates": [    {
+      "id": 291,
+      "type": 3,
+      "title": "Piper",
+      "name": "piper",
+      "description": "Piper is a fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+      "note": "A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/piper-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/piper/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "PIPER_VOICE", "label": "PIPER_VOICE", "description": "Container Variable: PIPER_VOICE", "default": ""},
+        {"name": "LOCAL_ONLY", "label": "LOCAL_ONLY", "description": "Container Variable: LOCAL_ONLY", "default": ""},
+        {"name": "PIPER_LENGTH", "label": "PIPER_LENGTH", "description": "Container Variable: PIPER_LENGTH", "default": ""},
+        {"name": "PIPER_NOISE", "label": "PIPER_NOISE", "description": "Container Variable: PIPER_NOISE", "default": ""},
+        {"name": "PIPER_NOISEW", "label": "PIPER_NOISEW", "description": "Container Variable: PIPER_NOISEW", "default": ""},
+        {"name": "PIPER_SPEAKER", "label": "PIPER_SPEAKER", "description": "Container Variable: PIPER_SPEAKER", "default": ""},
+        {"name": "NO_STREAMING", "label": "NO_STREAMING", "description": "Container Variable: NO_STREAMING", "default": ""}
+      ]
+    }]}

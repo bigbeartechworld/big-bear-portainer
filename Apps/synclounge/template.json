@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 369,
+      "type": 3,
+      "title": "Synclounge",
+      "name": "synclounge",
+      "description": "Synclounge is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+      "note": "A third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/synclounge-banner.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/synclounge/docker-compose.yml"
+      },
+      "env": [
+        {"name": "AUTH_LIST", "label": "AUTH_LIST", "description": "Container Variable: AUTH_LIST", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 41,
+      "type": 3,
+      "title": "Calibre-web",
+      "name": "calibre-web",
+      "description": "Calibre-web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
+      "note": "A web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
+      "categories": ["Smart Home", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/linuxserver/docker-templates@master/linuxserver.io/img/calibre-web-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/calibre-web/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "DOCKER_MODS", "label": "DOCKER_MODS", "description": "Container Variable: DOCKER_MODS", "default": ""},
+        {"name": "OAUTHLIB_RELAX_TOKEN_SCOPE", "label": "OAUTHLIB_RELAX_TOKEN_SCOPE", "description": "Container Variable: OAUTHLIB_RELAX_TOKEN_SCOPE", "default": ""}
+      ]
+    }]}

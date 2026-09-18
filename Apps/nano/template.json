@@ -1,0 +1,27 @@
+{"version": "3", "templates": [    {
+      "id": 231,
+      "type": 3,
+      "title": "Nano",
+      "name": "nano",
+      "description": "Nano is a digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
+      "note": "A digital payment protocol designed to be accessible and lightweight, with a focus on removing inefficiencies present in other cryptocurrencies. With ultrafast transactions and zero fees on a secure, green and decentralized network, this makes Nano ideal for everyday transactions.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/WisdomSky/CasaOS-LinuxServer-AppStore@main/default-icon.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/nano/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": ""},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": ""},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": ""},
+        {"name": "PEER_HOST", "label": "PEER_HOST", "description": "Container Variable: PEER_HOST", "default": ""},
+        {"name": "LIVE_GENESIS_PUB", "label": "LIVE_GENESIS_PUB", "description": "Container Variable: LIVE_GENESIS_PUB", "default": ""},
+        {"name": "LIVE_GENESIS_ACCOUNT", "label": "LIVE_GENESIS_ACCOUNT", "description": "Container Variable: LIVE_GENESIS_ACCOUNT", "default": ""},
+        {"name": "LIVE_GENESIS_WORK", "label": "LIVE_GENESIS_WORK", "description": "Container Variable: LIVE_GENESIS_WORK", "default": ""},
+        {"name": "LIVE_GENESIS_SIG", "label": "LIVE_GENESIS_SIG", "description": "Container Variable: LIVE_GENESIS_SIG", "default": ""},
+        {"name": "CLI_OPTIONS", "label": "CLI_OPTIONS", "description": "Container Variable: CLI_OPTIONS", "default": ""},
+        {"name": "LMDB_BOOTSTRAP_URL", "label": "LMDB_BOOTSTRAP_URL", "description": "Container Variable: LMDB_BOOTSTRAP_URL", "default": ""}
+      ]
+    }]}
