@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 360,
+      "type": 3,
+      "title": "Snipe-IT v8",
+      "name": "snipe-it-v8",
+      "description": "Snipe-IT is a free, open source IT asset management system.",
+      "note": "Open source IT asset management",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/snipe-it.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/snipe-it-v8/docker-compose.yml"
+      },
+      "env": [
+        {"name": "APP_KEY", "label": "APP_KEY", "description": "Persistent Laravel application key. Generate it before first start and never rotate it during migration.", "default": ""},
+        {"name": "APP_URL", "label": "APP_URL", "description": "URL used to access Snipe-IT.", "default": ""},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Snipe-IT database password.", "default": ""},
+        {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "MariaDB root password.", "default": ""}
+      ]
+    }]}
