@@ -22,6 +22,7 @@
         {"name": "PAPERLESS_TIKA_ENDPOINT", "label": "PAPERLESS_TIKA_ENDPOINT", "description": "Container Path: /usr/src/paperless/data", "default": ""},
         {"name": "PAPERLESS_URL", "label": "PAPERLESS_URL", "description": "Container Path: /usr/src/paperless/data", "default": ""},
         {"name": "COMPOSE_PROJECT_NAME", "label": "COMPOSE_PROJECT_NAME", "description": "Container Path: /usr/src/paperless/data", "default": ""},
-        {"name": "PAPERLESS_CSRF_TRUSTED_ORIGINS", "label": "PAPERLESS_CSRF_TRUSTED_ORIGINS", "description": "Container Path: /usr/src/paperless/data", "default": ""}
+        {"name": "PAPERLESS_CSRF_TRUSTED_ORIGINS", "label": "PAPERLESS_CSRF_TRUSTED_ORIGINS", "description": "Container Path: /usr/src/paperless/data", "default": ""},
+        {"name": "PAPERLESS_SECRET_KEY", "label": "PAPERLESS_SECRET_KEY", "description": "Persistent secret required by Paperless-ngx v3. Keep the same value across restarts and upgrades.", "default": ""}
       ]
     }]}
