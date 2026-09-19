@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 320,
+      "id": 322,
       "type": 3,
       "title": "Qemu-static",
       "name": "qemu-static",
