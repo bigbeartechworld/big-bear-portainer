@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 267,
+      "id": 269,
       "type": 3,
       "title": "Openssh-server",
       "name": "openssh-server",

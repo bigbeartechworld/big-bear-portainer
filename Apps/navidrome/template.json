@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 234,
+      "type": 3,
+      "title": "Navidrome",
+      "name": "navidrome",
+      "description": "Modern web-based music server and streamer for your personal music collection.",
+      "note": "Modern music server and streamer",
+      "categories": ["Media", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/navidrome.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/navidrome/docker-compose.yml"
+      }
+    }]}
