@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 349,
+      "id": 350,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
