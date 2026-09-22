@@ -1,0 +1,26 @@
+{"version": "3", "templates": [    {
+      "id": 116,
+      "type": 3,
+      "title": "Fireshare",
+      "name": "fireshare",
+      "description": "Fireshare lets you host your own video and image content and share it with others via public or private links — no third-party services required. Drop videos into a watched folder and Fireshare automatically scans, generates thumbnails, and organizes them into a clean, searchable library with folder support. Great for game clips, screen recordings, screenshots, and home videos. Features include public/private share links, an admin login, automatic video scanning, OpenGraph link previews, and optional GPU transcoding.",
+      "note": "Store and share your video game clips and screenshots",
+      "categories": ["Media", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/fireshare.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/fireshare/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ADMIN_USERNAME", "label": "ADMIN_USERNAME", "description": "Administrator account username", "default": "admin"},
+        {"name": "ADMIN_PASSWORD", "label": "ADMIN_PASSWORD", "description": "Administrator account password (change this!)", "default": "admin"},
+        {"name": "DOMAIN", "label": "DOMAIN", "description": "Public domain for OpenGraph link previews (optional)", "default": ""},
+        {"name": "MINUTES_BETWEEN_VIDEO_SCANS", "label": "MINUTES_BETWEEN_VIDEO_SCANS", "description": "How often Fireshare scans for new videos", "default": "5"},
+        {"name": "THUMBNAIL_VIDEO_LOCATION", "label": "THUMBNAIL_VIDEO_LOCATION", "description": "Percentage into each video to grab the thumbnail frame (e.g. 10 = 10% in)", "default": "10"},
+        {"name": "PUID", "label": "PUID", "description": "User ID for file ownership", "default": "1000"},
+        {"name": "PGID", "label": "PGID", "description": "Group ID for file ownership", "default": "1000"},
+        {"name": "ENABLE_TRANSCODING", "label": "ENABLE_TRANSCODING", "description": "Enable video transcoding", "default": "false"},
+        {"name": "TRANSCODE_GPU", "label": "TRANSCODE_GPU", "description": "Use NVIDIA GPU for transcoding (requires ENABLE_TRANSCODING)", "default": "false"}
+      ]
+    }]}
