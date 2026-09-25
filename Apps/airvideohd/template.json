@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 8,
+      "type": 3,
+      "title": "Air Video HD",
+      "name": "airvideohd",
+      "description": "Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV.",
+      "note": "Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://airvideo.app/images/icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/airvideohd/docker-compose.yml"
+      }
+    }]}

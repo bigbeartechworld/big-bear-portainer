@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 319,
+      "type": 3,
+      "title": "Portainer Tools",
+      "name": "portainer-tools",
+      "description": "Portainer Tools allows you to add your own Portainer App Template definitions, merge them with existing ones and host them on your own server. You can set the Portainer App Templates URL from within the application to easily switch App Template definitions. Detailed information about installing and using the application and more can be found on https://www.technorabilia.com/portainer-tools-merge-and-host-app-template-definitions.",
+      "note": "Portainer Tools allows you to add your own Portainer App Template definitions, merge them with existing ones and host them on your own server.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Portainer/icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/portainer-tools/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"},
+        {"name": "PORTAINER_USERNAME", "label": "PORTAINER_USERNAME", "description": "Portainer admin username", "default": ""},
+        {"name": "PORTAINER_PASSWORD", "label": "PORTAINER_PASSWORD", "description": "Portainer admin password", "default": ""},
+        {"name": "PORTAINER_URL", "label": "PORTAINER_URL", "description": "Portainer Base URL", "default": "0.0.0.0:9000"},
+        {"name": "SERVER_URL", "label": "SERVER_URL", "description": "Container Variable: SERVER_URL", "default": "http://0.0.0.0:9999"}
+      ]
+    }]}

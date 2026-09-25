@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 358,
+      "type": 3,
+      "title": "Rustdesk Server",
+      "name": "rustdesk-server",
+      "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration. You have full control of your data, with no concerns about security.",
+      "note": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration. You have full control of your data, with no concerns about security.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Rustdesk.svg/48px-Rustdesk.svg.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rustdesk-server/docker-compose.yml"
+      }
+    }]}

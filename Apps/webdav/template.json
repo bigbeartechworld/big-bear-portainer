@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 432,
+      "type": 3,
+      "title": "WebDAV",
+      "name": "webdav",
+      "description": "Web-based distributed authoring and versioning (WebDAV) is a set of extensions to the HTTP protocol that allows WebDAV clients (such as Microsoft Web Folders) to collaboratively edit and manage files on remote Web servers.",
+      "note": "Web-based distributed authoring and versioning (WebDAV) is a set of extensions to the HTTP protocol that allows WebDAV clients (such as Microsoft Web Folders) to collaboratively edit and manage files on remote Web servers.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://debrid-link.com/screen/webdav_logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/webdav/docker-compose.yml"
+      },
+      "env": [
+        {"name": "AUTH_TYPE", "label": "AUTH_TYPE", "description": "Container Variable: AUTH_TYPE", "default": "Digest"},
+        {"name": "USERNAME", "label": "USERNAME", "description": "Container Variable: USERNAME", "default": "bigbear"},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Container Variable: PASSWORD", "default": "437830b0-693e-47c3-863c-465522d720db"}
+      ]
+    }]}

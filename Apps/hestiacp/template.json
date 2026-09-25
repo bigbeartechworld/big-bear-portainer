@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 156,
+      "type": 3,
+      "title": "Hestia CP",
+      "name": "hestiacp",
+      "description": "Hestia Control Panel (HestiaCP) is an open-source web hosting control panel that allows users to manage their websites, domains, email accounts, databases, and more. It provides a user-friendly interface for managing web hosting environments and simplifies various administrative tasks.",
+      "note": "An open-source web hosting control panel that allows users to manage their websites, domains, email accounts, databases, and more. It provides a user-friendly interface for managing web hosting environments and simplifies various administrative tasks.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/hestiacp/hestiacp/main/web/images/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/hestiacp/docker-compose.yml"
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": "$TZ"}
+      ]
+    }]}
