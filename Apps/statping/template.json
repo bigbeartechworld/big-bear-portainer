@@ -1,0 +1,31 @@
+{"version": "3", "templates": [    {
+      "id": 384,
+      "type": 3,
+      "title": "Statping",
+      "name": "statping",
+      "description": "An easy to use Status Page for your websites and applications. Statping will automatically fetch the application and render a beautiful status page with tons of features for you to build an even better status page.",
+      "note": "An Easy To Use Status Page For Your Websites And Applications. Statping Will Automatically Fetch The Application And Render A Beautiful Status Page With Tons Of Features For You To Build An Even Better Status Page.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/statping.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/statping/docker-compose.yml"
+      },
+      "env": [
+        {"name": "VIRTUAL_PORT", "label": "VIRTUAL_PORT", "description": "Container Variable: VIRTUAL_PORT", "default": "8080"},
+        {"name": "DB_CONN", "label": "DB_CONN", "description": "Container Variable: DB_CONN", "default": "postgres"},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Container Variable: DB_HOST", "default": "db"},
+        {"name": "DB_USER", "label": "DB_USER", "description": "Container Variable: DB_USER", "default": "bigbear"},
+        {"name": "DB_PASS", "label": "DB_PASS", "description": "Container Variable: DB_PASS", "default": "dc640cd4-0450-4a94-aedb-ee5b43b32a45"},
+        {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Container Variable: DB_DATABASE", "default": "casaos"},
+        {"name": "NAME", "label": "NAME", "description": "Container Variable: NAME", "default": ""},
+        {"name": "DESCRIPTION", "label": "DESCRIPTION", "description": "Container Variable: DESCRIPTION", "default": ""},
+        {"name": "PUID", "label": "PUID", "description": "for UserID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "for GroupID", "default": "$PGID"},
+        {"name": "TZ", "label": "TZ", "description": "specify a timezone to use, see this list.", "default": "$TZ"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres server username", "default": "bigbear"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Postgres server password", "default": "dc640cd4-0450-4a94-aedb-ee5b43b32a45"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Specify the name of a database to be created on image startup.", "default": "casaos"}
+      ]
+    }]}

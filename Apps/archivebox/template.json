@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 13,
+      "type": 3,
+      "title": "Archivebox",
+      "name": "archivebox",
+      "description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+      "note": "Archivebox Is A Powerful, Self-hosted Internet Archiving Solution To Collect, Save, And View Sites You Want To Preserve Offline.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/archivebox/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ALLOWED_HOSTS", "label": "ALLOWED_HOSTS", "description": "Container Variable: ALLOWED_HOSTS", "default": "*"},
+        {"name": "MEDIA_MAX_SIZE", "label": "MEDIA_MAX_SIZE", "description": "Container Variable: MEDIA_MAX_SIZE", "default": "500m"},
+        {"name": "PUBLIC_INDEX", "label": "PUBLIC_INDEX", "description": "Container Variable: PUBLIC_INDEX", "default": "true"},
+        {"name": "PUBLIC_SNAPSHOTS", "label": "PUBLIC_SNAPSHOTS", "description": "Container Variable: PUBLIC_SNAPSHOTS", "default": "true"},
+        {"name": "PUBLIC_ADD_VIEW", "label": "PUBLIC_ADD_VIEW", "description": "Container Variable: PUBLIC_ADD_VIEW", "default": "true"}
+      ]
+    }]}

@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 163,
+      "type": 3,
+      "title": "HRConvert2",
+      "name": "hrconvert2",
+      "description": "HRConvert2 is a self-hosted drag-and-drop file conversion server & file sharing tool that supports 86 file formats with 4 color schemes & 13 end-user selctable languages.",
+      "note": "HRConvert2 is a self-hosted drag-and-drop file conversion server & file sharing tool that supports 86 file formats with 4 color schemes & 13 end-user selctable languages.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/hrconvert2/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/hrconvert2/docker-compose.yml"
+      }
+    }]}

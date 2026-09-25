@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 299,
+      "type": 3,
+      "title": "Pi.alert",
+      "name": "pi-alert",
+      "description": "WIFI / LAN intruder detector",
+      "note": "Wifi / Lan Intruder Detector",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pucherot/Pi.Alert/main/docs/img/1_devices.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/pi-alert/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"},
+        {"name": "HOST_USER_ID", "label": "HOST_USER_ID", "description": "Container Variable: HOST_USER_ID", "default": "$PUID"},
+        {"name": "HOST_USER_GID", "label": "HOST_USER_GID", "description": "Container Variable: HOST_USER_GID", "default": "$PGID"},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": "$TZ"}
+      ]
+    }]}

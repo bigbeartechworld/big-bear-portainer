@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 356,
+      "type": 3,
+      "title": "RSShub",
+      "name": "rsshub",
+      "description": "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything. RSSHub delivers millions of contents aggregated from all kinds of sources, our vibrant open source community is ensuring the deliver of RSSHub's new routes, new features and bug fixes. RSSHub can be used with browser extension RSSHub Radar and mobile auxiliary app RSSBud (iOS) and RSSAid (Android)",
+      "note": "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://docs.rsshub.app/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rsshub/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Container Variable: NODE_ENV", "default": "production"},
+        {"name": "CACHE_TYPE", "label": "CACHE_TYPE", "description": "Container Variable: CACHE_TYPE", "default": "redis"},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Container Variable: REDIS_URL", "default": "redis://redis:6379/"},
+        {"name": "PUPPETEER_WS_ENDPOINT", "label": "PUPPETEER_WS_ENDPOINT", "description": "Container Variable: PUPPETEER_WS_ENDPOINT", "default": "ws://browserless:3000"}
+      ]
+    }]}

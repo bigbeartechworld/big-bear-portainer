@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 323,
+      "type": 3,
+      "title": "Privatebin",
+      "name": "privatebin",
+      "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!",
+      "note": "Privatebin Is A Minimalist, Open Source Online Pastebin Where The Server Has Zero Knowledge Of Pasted Data!",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/privatebin.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/privatebin/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"}
+      ]
+    }]}

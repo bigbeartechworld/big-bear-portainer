@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 403,
+      "type": 3,
+      "title": "Traefik",
+      "name": "traefik",
+      "description": "Cloud-Native Networking Stack That Just Works.",
+      "note": "Cloud-native Networking Stack That Just Works.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/traefik.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/traefik/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": "$TZ"},
+        {"name": "TRAEFIK_API", "label": "TRAEFIK_API", "description": "Container Variable: TRAEFIK_API", "default": "false"},
+        {"name": "TRAEFIK_API_DASHBOARD", "label": "TRAEFIK_API_DASHBOARD", "description": "Container Variable: TRAEFIK_API_DASHBOARD", "default": "true"},
+        {"name": "TRAEFIK_API_INSECURE", "label": "TRAEFIK_API_INSECURE", "description": "Container Variable: TRAEFIK_API_INSECURE", "default": "false"}
+      ]
+    }]}

@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 105,
+      "type": 3,
+      "title": "ESPHome",
+      "name": "esphome",
+      "description": "ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+      "note": "ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/esphome/docker-compose.yml"
+      },
+      "env": [
+        {"name": "USERNAME", "label": "USERNAME", "description": "Container Variable: USERNAME", "default": "bigbear"},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Container Variable: PASSWORD", "default": "f87989f5-0dd4-44af-a286-6c6a325001cc"}
+      ]
+    }]}

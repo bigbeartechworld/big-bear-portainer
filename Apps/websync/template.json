@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 435,
+      "type": 3,
+      "title": "Web Sync (RSync)",
+      "name": "websync",
+      "description": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
+      "note": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn0.iconfinder.com/data/icons/octicons/1024/sync-1024.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/websync/docker-compose.yml"
+      }
+    }]}

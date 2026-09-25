@@ -119,6 +119,21 @@
     {
       "id": 8,
       "type": 3,
+      "title": "Air Video HD",
+      "name": "airvideohd",
+      "description": "Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV.",
+      "note": "Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://airvideo.app/images/icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/airvideohd/docker-compose.yml"
+      }
+    },
+    {
+      "id": 9,
+      "type": 3,
       "title": "Altus",
       "name": "altus",
       "description": "Altus is an Electron-based WhatsApp client with themes and multiple account support.",
@@ -137,7 +152,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
       "type": 3,
       "title": "Anse",
       "name": "anse",
@@ -155,7 +170,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 11,
       "type": 3,
       "title": "Apprise-api",
       "name": "apprise-api",
@@ -176,7 +191,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 12,
       "type": 3,
       "title": "Appsmith",
       "name": "appsmith",
@@ -191,7 +206,29 @@
       }
     },
     {
-      "id": 12,
+      "id": 13,
+      "type": 3,
+      "title": "Archivebox",
+      "name": "archivebox",
+      "description": "ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.",
+      "note": "Archivebox Is A Powerful, Self-hosted Internet Archiving Solution To Collect, Save, And View Sites You Want To Preserve Offline.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/archivebox/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ALLOWED_HOSTS", "label": "ALLOWED_HOSTS", "description": "Container Variable: ALLOWED_HOSTS", "default": "*"},
+        {"name": "MEDIA_MAX_SIZE", "label": "MEDIA_MAX_SIZE", "description": "Container Variable: MEDIA_MAX_SIZE", "default": "500m"},
+        {"name": "PUBLIC_INDEX", "label": "PUBLIC_INDEX", "description": "Container Variable: PUBLIC_INDEX", "default": "true"},
+        {"name": "PUBLIC_SNAPSHOTS", "label": "PUBLIC_SNAPSHOTS", "description": "Container Variable: PUBLIC_SNAPSHOTS", "default": "true"},
+        {"name": "PUBLIC_ADD_VIEW", "label": "PUBLIC_ADD_VIEW", "description": "Container Variable: PUBLIC_ADD_VIEW", "default": "true"}
+      ]
+    },
+    {
+      "id": 14,
       "type": 3,
       "title": "Ardour",
       "name": "ardour",
@@ -211,7 +248,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 15,
       "type": 3,
       "title": "Arma 3 Server",
       "name": "arma3-server",
@@ -238,7 +275,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 16,
       "type": 3,
       "title": "Audacity",
       "name": "audacity",
@@ -258,7 +295,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 17,
       "type": 3,
       "title": "Audiobookshelf",
       "name": "audiobookshelf",
@@ -273,7 +310,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 18,
       "type": 3,
       "title": "Authentik",
       "name": "authentik",
@@ -288,7 +325,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 19,
       "type": 3,
       "title": "Ayon",
       "name": "ayon",
@@ -303,7 +340,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 20,
       "type": 3,
       "title": "Azahar",
       "name": "azahar",
@@ -323,7 +360,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": 21,
       "type": 3,
       "title": "Babybuddy",
       "name": "babybuddy",
@@ -344,7 +381,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 22,
       "type": 3,
       "title": "Bambustudio",
       "name": "bambustudio",
@@ -365,7 +402,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 23,
       "type": 3,
       "title": "Baserow",
       "name": "baserow",
@@ -383,7 +420,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 24,
       "type": 3,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
@@ -404,7 +441,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 25,
       "type": 3,
       "title": "Beets",
       "name": "beets",
@@ -424,7 +461,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 26,
       "type": 3,
       "title": "Beszel",
       "name": "beszel",
@@ -439,7 +476,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 27,
       "type": 3,
       "title": "Bitcoin-knots",
       "name": "bitcoin-knots",
@@ -459,7 +496,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 28,
       "type": 3,
       "title": "Blade-of-agony",
       "name": "blade-of-agony",
@@ -479,7 +516,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 29,
       "type": 3,
       "title": "Blender",
       "name": "blender",
@@ -499,7 +536,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 30,
       "type": 3,
       "title": "Boinc",
       "name": "boinc",
@@ -520,7 +557,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 31,
       "type": 3,
       "title": "BookOrbit",
       "name": "bookorbit",
@@ -547,7 +584,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 32,
       "type": 3,
       "title": "Booksonic-air",
       "name": "booksonic-air",
@@ -568,7 +605,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 33,
       "type": 3,
       "title": "bookstack",
       "name": "bookstack",
@@ -583,7 +620,7 @@
       }
     },
     {
-      "id": 32,
+      "id": 34,
       "type": 3,
       "title": "Brave",
       "name": "brave",
@@ -602,7 +639,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 35,
       "type": 3,
       "title": "btop",
       "name": "btop",
@@ -622,7 +659,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 36,
       "type": 3,
       "title": "Budge",
       "name": "budge",
@@ -642,7 +679,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 37,
       "type": 3,
       "title": "Budibase",
       "name": "budibase",
@@ -657,7 +694,7 @@
       }
     },
     {
-      "id": 36,
+      "id": 38,
       "type": 3,
       "title": "Build-agent",
       "name": "build-agent",
@@ -677,7 +714,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 39,
       "type": 3,
       "title": "Buzz",
       "name": "buzz",
@@ -700,7 +737,22 @@
       ]
     },
     {
-      "id": 38,
+      "id": 40,
+      "type": 3,
+      "title": "Caddy",
+      "name": "caddy",
+      "description": "Caddy - The Ultimate Server with Automatic HTTPS.",
+      "note": "Caddy - The Ultimate Server With Automatic Https.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/caddy/docker-compose.yml"
+      }
+    },
+    {
+      "id": 41,
       "type": 3,
       "title": "cAdvisor",
       "name": "cadvisor",
@@ -715,7 +767,7 @@
       }
     },
     {
-      "id": 39,
+      "id": 42,
       "type": 3,
       "title": "Cal.com",
       "name": "calcom",
@@ -754,7 +806,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": 43,
       "type": 3,
       "title": "Calibre",
       "name": "calibre",
@@ -777,7 +829,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": 44,
       "type": 3,
       "title": "Calibre-web",
       "name": "calibre-web",
@@ -799,7 +851,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": 45,
       "type": 3,
       "title": "Calligra",
       "name": "calligra",
@@ -819,7 +871,35 @@
       ]
     },
     {
-      "id": 43,
+      "id": 46,
+      "type": 3,
+      "title": "CasaOS Toolbox",
+      "name": "casaos-toolbox",
+      "description": "CasaOS Toolbox is an extension application that provides additional features to CasaOS.",
+      "note": "Provides additional features to CasaOS.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/casaos-toolbox/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/casaos-toolbox/docker-compose.yml"
+      },
+      "env": [
+        {"name": "FORCE_HTTPS", "label": "FORCE_HTTPS", "description": "Container Variable: FORCE_HTTPS", "default": "false"},
+        {"name": "WEBUI_PORT", "label": "WEBUI_PORT", "description": "Container Variable: WEBUI_PORT", "default": "8088"},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Container Variable: DB_HOST", "default": "0.0.0.0"},
+        {"name": "DB_PORT", "label": "DB_PORT", "description": "Container Variable: DB_PORT", "default": "33066"},
+        {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Container Variable: DB_DATABASE", "default": "casaos"},
+        {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "Container Variable: DB_USERNAME", "default": "bigbear"},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "Container Variable: DB_PASSWORD", "default": "fe8a627d-d00f-4486-9bb4-20d58b8b6d3e"},
+        {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Container Variable: MYSQL_ROOT_PASSWORD", "default": "05e5827c-ff33-4a7d-9b95-fddbf290b839"},
+        {"name": "MYSQL_DATABASE", "label": "MYSQL_DATABASE", "description": "Container Variable: MYSQL_DATABASE", "default": "casaos"},
+        {"name": "MYSQL_USER", "label": "MYSQL_USER", "description": "Container Variable: MYSQL_USER", "default": "bigbear"},
+        {"name": "MYSQL_PASSWORD", "label": "MYSQL_PASSWORD", "description": "Container Variable: MYSQL_PASSWORD", "default": "fe8a627d-d00f-4486-9bb4-20d58b8b6d3e"}
+      ]
+    },
+    {
+      "id": 47,
       "type": 3,
       "title": "Celestory & Voltask",
       "name": "celestory",
@@ -845,7 +925,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": 48,
       "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
@@ -860,7 +940,7 @@
       }
     },
     {
-      "id": 45,
+      "id": 49,
       "type": 3,
       "title": "Changedetection.io",
       "name": "changedetection-io",
@@ -882,7 +962,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": 50,
       "type": 3,
       "title": "Chatpad",
       "name": "chatpad",
@@ -897,7 +977,7 @@
       }
     },
     {
-      "id": 47,
+      "id": 51,
       "type": 3,
       "title": "chrome",
       "name": "chrome",
@@ -916,7 +996,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": 52,
       "type": 3,
       "title": "chromium",
       "name": "chromium",
@@ -937,7 +1017,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": 53,
       "type": 3,
       "title": "Ci",
       "name": "ci",
@@ -957,7 +1037,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": 54,
       "type": 3,
       "title": "Ci-debug",
       "name": "ci-debug",
@@ -977,7 +1057,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": 55,
       "type": 3,
       "title": "Citron",
       "name": "citron",
@@ -997,7 +1077,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": 56,
       "type": 3,
       "title": "Cloudflared Web",
       "name": "cloudflared-web",
@@ -1021,7 +1101,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": 57,
       "type": 3,
       "title": "Code Server",
       "name": "code-server",
@@ -1041,7 +1121,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": 58,
       "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
@@ -1056,7 +1136,7 @@
       }
     },
     {
-      "id": 55,
+      "id": 59,
       "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
@@ -1074,7 +1154,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": 60,
       "type": 3,
       "title": "ConvertX",
       "name": "convertx",
@@ -1093,7 +1173,7 @@
       ]
     },
     {
-      "id": 57,
+      "id": 61,
       "type": 3,
       "title": "Coolify",
       "name": "coolify",
@@ -1165,7 +1245,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": 62,
       "type": 3,
       "title": "Cops",
       "name": "cops",
@@ -1185,7 +1265,7 @@
       ]
     },
     {
-      "id": 59,
+      "id": 63,
       "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
@@ -1203,7 +1283,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": 64,
       "type": 3,
       "title": "Cura",
       "name": "cura",
@@ -1223,7 +1303,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": 65,
       "type": 3,
       "title": "CyberChef",
       "name": "cyberchef",
@@ -1238,7 +1318,7 @@
       }
     },
     {
-      "id": 62,
+      "id": 66,
       "type": 3,
       "title": "D2-builder",
       "name": "d2-builder",
@@ -1258,7 +1338,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": 67,
       "type": 3,
       "title": "Daapd",
       "name": "daapd",
@@ -1278,7 +1358,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": 68,
       "type": 3,
       "title": "Darktable",
       "name": "darktable",
@@ -1298,7 +1378,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": 69,
       "type": 3,
       "title": "Dashdot",
       "name": "dashdot",
@@ -1313,7 +1393,7 @@
       }
     },
     {
-      "id": 66,
+      "id": 70,
       "type": 3,
       "title": "Dashy (Legacy)",
       "name": "dashy",
@@ -1331,7 +1411,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": 71,
       "type": 3,
       "title": "Dashy v4",
       "name": "dashy-v4",
@@ -1349,7 +1429,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 72,
       "type": 3,
       "title": "Davis",
       "name": "davis",
@@ -1382,7 +1462,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": 73,
       "type": 3,
       "title": "DBGate",
       "name": "dbgate",
@@ -1397,7 +1477,7 @@
       }
     },
     {
-      "id": 70,
+      "id": 74,
       "type": 3,
       "title": "Ddclient",
       "name": "ddclient",
@@ -1417,7 +1497,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": 75,
       "type": 3,
       "title": "Digikam",
       "name": "digikam",
@@ -1437,7 +1517,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": 76,
       "type": 3,
       "title": "Dillinger",
       "name": "dillinger",
@@ -1457,7 +1537,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": 77,
       "type": 3,
       "title": "DiscoPanel",
       "name": "discopanel",
@@ -1477,7 +1557,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": 78,
       "type": 3,
       "title": "Diskover",
       "name": "diskover",
@@ -1499,7 +1579,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": 79,
       "type": 3,
       "title": "DIUN",
       "name": "diun",
@@ -1521,7 +1601,7 @@
       ]
     },
     {
-      "id": 76,
+      "id": 80,
       "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",
@@ -1542,7 +1622,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 81,
       "type": 3,
       "title": "Dockge",
       "name": "dockge",
@@ -1557,7 +1637,7 @@
       }
     },
     {
-      "id": 78,
+      "id": 82,
       "type": 3,
       "title": "Dockhand",
       "name": "dockhand",
@@ -1572,7 +1652,7 @@
       }
     },
     {
-      "id": 79,
+      "id": 83,
       "type": 3,
       "title": "Dockpeek",
       "name": "dockpeek",
@@ -1593,7 +1673,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": 84,
       "type": 3,
       "title": "Docmost",
       "name": "docmost",
@@ -1614,7 +1694,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": 85,
       "type": 3,
       "title": "Dogwalk",
       "name": "dogwalk",
@@ -1634,7 +1714,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": 86,
       "type": 3,
       "title": "Dokuwiki",
       "name": "dokuwiki",
@@ -1654,7 +1734,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": 87,
       "type": 3,
       "title": "Dolphin",
       "name": "dolphin",
@@ -1674,7 +1754,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": 88,
       "type": 3,
       "title": "Domain Locker",
       "name": "domainlocker",
@@ -1697,7 +1777,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": 89,
       "type": 3,
       "title": "Domoticz",
       "name": "domoticz",
@@ -1719,7 +1799,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": 90,
       "type": 3,
       "title": "Dosbox-staging",
       "name": "dosbox-staging",
@@ -1739,7 +1819,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": 91,
       "type": 3,
       "title": "Doublecommander",
       "name": "doublecommander",
@@ -1759,7 +1839,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 92,
       "type": 3,
       "title": "Dozzle",
       "name": "dozzle",
@@ -1774,7 +1854,7 @@
       }
     },
     {
-      "id": 89,
+      "id": 93,
       "type": 3,
       "title": "Draw.io",
       "name": "drawio",
@@ -1789,7 +1869,7 @@
       }
     },
     {
-      "id": 90,
+      "id": 94,
       "type": 3,
       "title": "Duckdns",
       "name": "duckdns",
@@ -1813,7 +1893,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 95,
       "type": 3,
       "title": "Duckstation",
       "name": "duckstation",
@@ -1833,7 +1913,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": 96,
       "type": 3,
       "title": "Duplicati",
       "name": "duplicati",
@@ -1856,7 +1936,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 97,
       "type": 3,
       "title": "Eden",
       "name": "eden",
@@ -1876,7 +1956,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 98,
       "type": 3,
       "title": "EJBCA Community",
       "name": "ejbca-ce",
@@ -1894,7 +1974,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": 99,
       "type": 3,
       "title": "Emby",
       "name": "emby",
@@ -1914,7 +1994,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 100,
       "type": 3,
       "title": "Embystat",
       "name": "embystat",
@@ -1934,7 +2014,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 101,
       "type": 3,
       "title": "Emulatorjs",
       "name": "emulatorjs",
@@ -1955,7 +2035,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 102,
       "type": 3,
       "title": "Endlessh",
       "name": "endlessh",
@@ -1980,7 +2060,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 103,
       "type": 3,
       "title": "Ente Photos",
       "name": "ente",
@@ -2001,7 +2081,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": 104,
       "type": 3,
       "title": "Erugo",
       "name": "erugo",
@@ -2016,7 +2096,26 @@
       }
     },
     {
-      "id": 101,
+      "id": 105,
+      "type": 3,
+      "title": "ESPHome",
+      "name": "esphome",
+      "description": "ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+      "note": "ESPHome is a system to control your microcontrollers by simple yet powerful configuration files and control them remotely through Home Automation systems.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/_example/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/esphome/docker-compose.yml"
+      },
+      "env": [
+        {"name": "USERNAME", "label": "USERNAME", "description": "Container Variable: USERNAME", "default": "bigbear"},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Container Variable: PASSWORD", "default": "f87989f5-0dd4-44af-a286-6c6a325001cc"}
+      ]
+    },
+    {
+      "id": 106,
       "type": 3,
       "title": "Eufy Security WS",
       "name": "eufy-security-ws",
@@ -2038,7 +2137,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": 107,
       "type": 3,
       "title": "Excalidraw",
       "name": "excalidraw",
@@ -2053,7 +2152,7 @@
       }
     },
     {
-      "id": 103,
+      "id": 108,
       "type": 3,
       "title": "Fail2ban",
       "name": "fail2ban",
@@ -2074,7 +2173,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": 109,
       "type": 3,
       "title": "FarmOS (Legacy)",
       "name": "farmos",
@@ -2089,7 +2188,7 @@
       }
     },
     {
-      "id": 105,
+      "id": 110,
       "type": 3,
       "title": "FarmOS v4",
       "name": "farmos-v4",
@@ -2104,7 +2203,7 @@
       }
     },
     {
-      "id": 106,
+      "id": 111,
       "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",
@@ -2119,7 +2218,7 @@
       }
     },
     {
-      "id": 107,
+      "id": 112,
       "type": 3,
       "title": "Fastfetch",
       "name": "fastfetch",
@@ -2134,7 +2233,7 @@
       }
     },
     {
-      "id": 108,
+      "id": 113,
       "type": 3,
       "title": "Feed2toot",
       "name": "feed2toot",
@@ -2155,7 +2254,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": 114,
       "type": 3,
       "title": "Ferdium",
       "name": "ferdium",
@@ -2175,7 +2274,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 115,
       "type": 3,
       "title": "Ffmpeg",
       "name": "ffmpeg",
@@ -2195,7 +2294,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": 116,
       "type": 3,
       "title": "Filebrowser",
       "name": "filebrowser",
@@ -2214,7 +2313,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": 117,
       "type": 3,
       "title": "FileBrowser Quantum",
       "name": "filebrowser-quantum",
@@ -2232,7 +2331,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": 118,
       "type": 3,
       "title": "Filezilla",
       "name": "filezilla",
@@ -2252,7 +2351,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 119,
       "type": 3,
       "title": "Financial Freedom",
       "name": "financial-freedom",
@@ -2299,7 +2398,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 120,
       "type": 3,
       "title": "Firefox",
       "name": "firefox",
@@ -2320,7 +2419,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 121,
       "type": 3,
       "title": "Fireshare",
       "name": "fireshare",
@@ -2346,7 +2445,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 122,
       "type": 3,
       "title": "Flame",
       "name": "flame",
@@ -2364,7 +2463,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 123,
       "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
@@ -2383,7 +2482,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 124,
       "type": 3,
       "title": "Fleet",
       "name": "fleet",
@@ -2408,7 +2507,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 125,
       "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
@@ -2438,7 +2537,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 126,
       "type": 3,
       "title": "Flycast",
       "name": "flycast",
@@ -2458,7 +2557,7 @@
       ]
     },
     {
-      "id": 122,
+      "id": 127,
       "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
@@ -2473,7 +2572,7 @@
       }
     },
     {
-      "id": 123,
+      "id": 128,
       "type": 3,
       "title": "Foldingathome",
       "name": "foldingathome",
@@ -2496,7 +2595,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 129,
       "type": 3,
       "title": "Freecad",
       "name": "freecad",
@@ -2516,7 +2615,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 130,
       "type": 3,
       "title": "Freshrss",
       "name": "freshrss",
@@ -2536,7 +2635,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": 131,
       "type": 3,
       "title": "Genmon",
       "name": "genmon",
@@ -2551,7 +2650,7 @@
       }
     },
     {
-      "id": 127,
+      "id": 132,
       "type": 3,
       "title": "Ghost",
       "name": "ghost",
@@ -2574,7 +2673,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": 133,
       "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
@@ -2603,7 +2702,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": 134,
       "type": 3,
       "title": "Gimp",
       "name": "gimp",
@@ -2623,7 +2722,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 135,
       "type": 3,
       "title": "Gitea",
       "name": "gitea",
@@ -2645,7 +2744,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 136,
       "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
@@ -2667,7 +2766,7 @@
       ]
     },
     {
-      "id": 132,
+      "id": 137,
       "type": 3,
       "title": "Github-desktop",
       "name": "github-desktop",
@@ -2687,7 +2786,7 @@
       ]
     },
     {
-      "id": 133,
+      "id": 138,
       "type": 3,
       "title": "Gitqlient",
       "name": "gitqlient",
@@ -2707,7 +2806,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": 139,
       "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
@@ -2728,7 +2827,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": 140,
       "type": 3,
       "title": "Glance",
       "name": "glance",
@@ -2743,7 +2842,7 @@
       }
     },
     {
-      "id": 136,
+      "id": 141,
       "type": 3,
       "title": "Glances",
       "name": "glances",
@@ -2762,7 +2861,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": 142,
       "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
@@ -2777,7 +2876,7 @@
       }
     },
     {
-      "id": 138,
+      "id": 143,
       "type": 3,
       "title": "GoAway",
       "name": "goaway",
@@ -2792,7 +2891,7 @@
       }
     },
     {
-      "id": 139,
+      "id": 144,
       "type": 3,
       "title": "Gotify",
       "name": "gotify",
@@ -2811,7 +2910,7 @@
       ]
     },
     {
-      "id": 140,
+      "id": 145,
       "type": 3,
       "title": "Grav",
       "name": "grav",
@@ -2831,7 +2930,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 146,
       "type": 3,
       "title": "Grocy",
       "name": "grocy",
@@ -2851,7 +2950,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": 147,
       "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
@@ -2873,7 +2972,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": 148,
       "type": 3,
       "title": "Gzdoom",
       "name": "gzdoom",
@@ -2893,7 +2992,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": 149,
       "type": 3,
       "title": "Habridge",
       "name": "habridge",
@@ -2914,7 +3013,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": 150,
       "type": 3,
       "title": "Handbrake",
       "name": "handbrake",
@@ -2934,7 +3033,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": 151,
       "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
@@ -2973,7 +3072,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": 152,
       "type": 3,
       "title": "Hedgedoc",
       "name": "hedgedoc",
@@ -3004,7 +3103,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 153,
       "type": 3,
       "title": "Heimdall",
       "name": "heimdall",
@@ -3025,7 +3124,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 154,
       "type": 3,
       "title": "Helium",
       "name": "helium",
@@ -3046,7 +3145,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 155,
       "type": 3,
       "title": "Hermes Agent",
       "name": "hermes",
@@ -3066,7 +3165,25 @@
       ]
     },
     {
-      "id": 151,
+      "id": 156,
+      "type": 3,
+      "title": "Hestia CP",
+      "name": "hestiacp",
+      "description": "Hestia Control Panel (HestiaCP) is an open-source web hosting control panel that allows users to manage their websites, domains, email accounts, databases, and more. It provides a user-friendly interface for managing web hosting environments and simplifies various administrative tasks.",
+      "note": "An open-source web hosting control panel that allows users to manage their websites, domains, email accounts, databases, and more. It provides a user-friendly interface for managing web hosting environments and simplifies various administrative tasks.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/hestiacp/hestiacp/main/web/images/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/hestiacp/docker-compose.yml"
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": "$TZ"}
+      ]
+    },
+    {
+      "id": 157,
       "type": 3,
       "title": "Hishtory-server",
       "name": "hishtory-server",
@@ -3088,7 +3205,7 @@
       ]
     },
     {
-      "id": 152,
+      "id": 158,
       "type": 3,
       "title": "Homarr",
       "name": "homarr",
@@ -3103,7 +3220,7 @@
       }
     },
     {
-      "id": 153,
+      "id": 159,
       "type": 3,
       "title": "Homarr v1",
       "name": "homarr-v1",
@@ -3118,7 +3235,7 @@
       }
     },
     {
-      "id": 154,
+      "id": 160,
       "type": 3,
       "title": "Home Assistant",
       "name": "home-assistant",
@@ -3133,7 +3250,7 @@
       }
     },
     {
-      "id": 155,
+      "id": 161,
       "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
@@ -3148,7 +3265,7 @@
       }
     },
     {
-      "id": 156,
+      "id": 162,
       "type": 3,
       "title": "Homer",
       "name": "homer",
@@ -3166,7 +3283,22 @@
       ]
     },
     {
-      "id": 157,
+      "id": 163,
+      "type": 3,
+      "title": "HRConvert2",
+      "name": "hrconvert2",
+      "description": "HRConvert2 is a self-hosted drag-and-drop file conversion server & file sharing tool that supports 86 file formats with 4 color schemes & 13 end-user selctable languages.",
+      "note": "HRConvert2 is a self-hosted drag-and-drop file conversion server & file sharing tool that supports 86 file formats with 4 color schemes & 13 end-user selctable languages.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/hrconvert2/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/hrconvert2/docker-compose.yml"
+      }
+    },
+    {
+      "id": 164,
       "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
@@ -3188,7 +3320,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": 165,
       "type": 3,
       "title": "Immich",
       "name": "immich",
@@ -3212,7 +3344,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 166,
       "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
@@ -3243,7 +3375,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 167,
       "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
@@ -3265,7 +3397,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 168,
       "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
@@ -3288,7 +3420,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": 169,
       "type": 3,
       "title": "Inkscape",
       "name": "inkscape",
@@ -3308,7 +3440,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 170,
       "type": 3,
       "title": "Intellij-idea",
       "name": "intellij-idea",
@@ -3328,7 +3460,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 171,
       "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
@@ -3343,7 +3475,7 @@
       }
     },
     {
-      "id": 165,
+      "id": 172,
       "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
@@ -3358,7 +3490,7 @@
       }
     },
     {
-      "id": 166,
+      "id": 173,
       "type": 3,
       "title": "Jellyfin",
       "name": "jellyfin",
@@ -3379,7 +3511,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 174,
       "type": 3,
       "title": "Jellyseerr (Legacy)",
       "name": "jellyseerr",
@@ -3398,7 +3530,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 175,
       "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
@@ -3413,7 +3545,7 @@
       }
     },
     {
-      "id": 169,
+      "id": 176,
       "type": 3,
       "title": "Jenkins-builder",
       "name": "jenkins-builder",
@@ -3433,7 +3565,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 177,
       "type": 3,
       "title": "jfa-go",
       "name": "jfa-go",
@@ -3448,7 +3580,7 @@
       }
     },
     {
-      "id": 171,
+      "id": 178,
       "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
@@ -3467,7 +3599,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 179,
       "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
@@ -3485,7 +3617,27 @@
       ]
     },
     {
-      "id": 173,
+      "id": 180,
+      "type": 3,
+      "title": "Joomla",
+      "name": "joomla",
+      "description": "Another free and open-source CMS",
+      "note": "Another Free And Open-source Cms",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/joomla.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/joomla/docker-compose.yml"
+      },
+      "env": [
+        {"name": "JOOMLA_DB_HOST", "label": "JOOMLA_DB_HOST", "description": "Container Variable: JOOMLA_DB_HOST", "default": "joomladb"},
+        {"name": "JOOMLA_DB_PASSWORD", "label": "JOOMLA_DB_PASSWORD", "description": "Container Variable: JOOMLA_DB_PASSWORD", "default": "15311349-803b-40a2-9153-5b13f8d4022e"},
+        {"name": "MYSQL_ROOT_PASSWORD", "label": "MYSQL_ROOT_PASSWORD", "description": "Container Variable: MYSQL_ROOT_PASSWORD", "default": "15311349-803b-40a2-9153-5b13f8d4022e"}
+      ]
+    },
+    {
+      "id": 181,
       "type": 3,
       "title": "joplin",
       "name": "joplin",
@@ -3511,7 +3663,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 182,
       "type": 3,
       "title": "Kali-linux",
       "name": "kali-linux",
@@ -3531,7 +3683,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 183,
       "type": 3,
       "title": "Kasm",
       "name": "kasm",
@@ -3546,7 +3698,7 @@
       }
     },
     {
-      "id": 176,
+      "id": 184,
       "type": 3,
       "title": "Kavita",
       "name": "kavita",
@@ -3561,7 +3713,7 @@
       }
     },
     {
-      "id": 177,
+      "id": 185,
       "type": 3,
       "title": "Kdenlive",
       "name": "kdenlive",
@@ -3581,7 +3733,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": 186,
       "type": 3,
       "title": "Keepassxc",
       "name": "keepassxc",
@@ -3601,7 +3753,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 187,
       "type": 3,
       "title": "Kicad",
       "name": "kicad",
@@ -3621,7 +3773,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 188,
       "type": 3,
       "title": "Kimai",
       "name": "kimai",
@@ -3645,7 +3797,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 189,
       "type": 3,
       "title": "KitchenOwl",
       "name": "kitchenowl",
@@ -3663,7 +3815,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 190,
       "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
@@ -3678,7 +3830,7 @@
       }
     },
     {
-      "id": 183,
+      "id": 191,
       "type": 3,
       "title": "Kometa",
       "name": "kometa",
@@ -3703,7 +3855,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 192,
       "type": 3,
       "title": "Komf",
       "name": "komf",
@@ -3727,7 +3879,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 193,
       "type": 3,
       "title": "Komga",
       "name": "komga",
@@ -3745,7 +3897,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": 194,
       "type": 3,
       "title": "Kopia",
       "name": "kopia",
@@ -3760,7 +3912,7 @@
       }
     },
     {
-      "id": 187,
+      "id": 195,
       "type": 3,
       "title": "Krita",
       "name": "krita",
@@ -3780,7 +3932,7 @@
       ]
     },
     {
-      "id": 188,
+      "id": 196,
       "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
@@ -3795,7 +3947,7 @@
       }
     },
     {
-      "id": 189,
+      "id": 197,
       "type": 3,
       "title": "Ldap-auth",
       "name": "ldap-auth",
@@ -3818,7 +3970,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 198,
       "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
@@ -3833,7 +3985,7 @@
       }
     },
     {
-      "id": 191,
+      "id": 199,
       "type": 3,
       "title": "Libreoffice",
       "name": "libreoffice",
@@ -3853,7 +4005,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 200,
       "type": 3,
       "title": "Librespeed",
       "name": "librespeed",
@@ -3882,7 +4034,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": 201,
       "type": 3,
       "title": "LibreTranslate",
       "name": "libretranslate",
@@ -3897,7 +4049,7 @@
       }
     },
     {
-      "id": 194,
+      "id": 202,
       "type": 3,
       "title": "Librewolf",
       "name": "librewolf",
@@ -3918,7 +4070,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 203,
       "type": 3,
       "title": "Limnoria",
       "name": "limnoria",
@@ -3938,7 +4090,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 204,
       "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
@@ -3953,7 +4105,7 @@
       }
     },
     {
-      "id": 197,
+      "id": 205,
       "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -3968,7 +4120,7 @@
       }
     },
     {
-      "id": 198,
+      "id": 206,
       "type": 3,
       "title": "Lm-studio",
       "name": "lm-studio",
@@ -3988,7 +4140,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 207,
       "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -4009,7 +4161,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 208,
       "type": 3,
       "title": "Lollypop",
       "name": "lollypop",
@@ -4029,7 +4181,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 209,
       "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
@@ -4059,7 +4211,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 210,
       "type": 3,
       "title": "Lsio-api",
       "name": "lsio-api",
@@ -4079,7 +4231,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 211,
       "type": 3,
       "title": "Luanti",
       "name": "luanti",
@@ -4100,7 +4252,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 212,
       "type": 3,
       "title": "Lychee",
       "name": "lychee",
@@ -4129,7 +4281,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 213,
       "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
@@ -4147,7 +4299,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 214,
       "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
@@ -4165,7 +4317,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": 215,
       "type": 3,
       "title": "Mame",
       "name": "mame",
@@ -4185,7 +4337,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 216,
       "type": 3,
       "title": "Manyfold",
       "name": "manyfold",
@@ -4208,7 +4360,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 217,
       "type": 3,
       "title": "Mariadb",
       "name": "mariadb",
@@ -4234,7 +4386,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 218,
       "type": 3,
       "title": "Mastodon",
       "name": "mastodon",
@@ -4292,7 +4444,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 219,
       "type": 3,
       "title": "Matterbridge",
       "name": "matterbridge",
@@ -4307,7 +4459,7 @@
       }
     },
     {
-      "id": 212,
+      "id": 220,
       "type": 3,
       "title": "Maybe Finance",
       "name": "maybe-finance",
@@ -4332,7 +4484,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 221,
       "type": 3,
       "title": "Mealie",
       "name": "mealie",
@@ -4347,7 +4499,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 222,
       "type": 3,
       "title": "Mediaelch",
       "name": "mediaelch",
@@ -4367,7 +4519,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 223,
       "type": 3,
       "title": "Melonds",
       "name": "melonds",
@@ -4387,7 +4539,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": 224,
       "type": 3,
       "title": "Microbin",
       "name": "microbin",
@@ -4444,7 +4596,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 225,
       "type": 3,
       "title": "MIND",
       "name": "mind",
@@ -4462,7 +4614,25 @@
       ]
     },
     {
-      "id": 218,
+      "id": 226,
+      "type": 3,
+      "title": "Minecraft Server",
+      "name": "minecraft",
+      "description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot. See the Versions section below for more information.",
+      "note": "This Docker Image Provides A Minecraft Server That Will Automatically Download The Latest Stable Version At Startup. You Can Also Run/upgrade To Any Specific Version Or The Latest Snapshot. See The Versions Section Below For More Information.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/minecraft.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/minecraft/docker-compose.yml"
+      },
+      "env": [
+        {"name": "EULA", "label": "EULA", "description": "Container Variable: EULA", "default": "true"}
+      ]
+    },
+    {
+      "id": 227,
       "type": 3,
       "title": "Minetest",
       "name": "minetest",
@@ -4483,7 +4653,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 228,
       "type": 3,
       "title": "Minio",
       "name": "minio",
@@ -4502,7 +4672,7 @@
       ]
     },
     {
-      "id": 220,
+      "id": 229,
       "type": 3,
       "title": "Minisatip",
       "name": "minisatip",
@@ -4523,7 +4693,7 @@
       ]
     },
     {
-      "id": 221,
+      "id": 230,
       "type": 3,
       "title": "Modmanager",
       "name": "modmanager",
@@ -4543,7 +4713,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 231,
       "type": 3,
       "title": "Modrinth",
       "name": "modrinth",
@@ -4563,7 +4733,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 232,
       "type": 3,
       "title": "Monica",
       "name": "monica",
@@ -4578,7 +4748,7 @@
       }
     },
     {
-      "id": 224,
+      "id": 233,
       "type": 3,
       "title": "Morphos",
       "name": "morphos",
@@ -4593,7 +4763,22 @@
       }
     },
     {
-      "id": 225,
+      "id": 234,
+      "type": 3,
+      "title": "Eclipse Mosquitto",
+      "name": "mosquitto",
+      "description": "Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol. You will need to create /portainer/Files/AppData/Config/Mosquitto/config/mosquitto.conf and if needed your password file. Have a look on https://mosquitto.org/man/mosquitto_passwd-1.html",
+      "note": "Eclipse Mosquitto Is An Open Source Implementation Of A Server For Versions 5, 3.1.1, And 3.1 Of The Mqtt Protocol. you Will Need To Create /portainer/files/appdata/config/mosquitto/config/mosquitto.conf And If Needed Your Password File. have A Look On Https://mosquitto.org/man/mosquitto_passwd-1.html",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/mosquitto/docker-compose.yml"
+      }
+    },
+    {
+      "id": 235,
       "type": 3,
       "title": "Msedge",
       "name": "msedge",
@@ -4614,7 +4799,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": 236,
       "type": 3,
       "title": "Mstream",
       "name": "mstream",
@@ -4634,7 +4819,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": 237,
       "type": 3,
       "title": "Mullvad-browser",
       "name": "mullvad-browser",
@@ -4655,7 +4840,7 @@
       ]
     },
     {
-      "id": 228,
+      "id": 238,
       "type": 3,
       "title": "Mumble Server",
       "name": "mumble-server",
@@ -4670,7 +4855,7 @@
       }
     },
     {
-      "id": 229,
+      "id": 239,
       "type": 3,
       "title": "Music Assistant",
       "name": "music-assistant",
@@ -4685,7 +4870,7 @@
       }
     },
     {
-      "id": 230,
+      "id": 240,
       "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
@@ -4700,7 +4885,7 @@
       }
     },
     {
-      "id": 231,
+      "id": 241,
       "type": 3,
       "title": "Mysql-workbench",
       "name": "mysql-workbench",
@@ -4720,7 +4905,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": 242,
       "type": 3,
       "title": "n8n",
       "name": "n8n",
@@ -4738,7 +4923,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 243,
       "type": 3,
       "title": "Nano",
       "name": "nano",
@@ -4765,7 +4950,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 244,
       "type": 3,
       "title": "Nano-wallet",
       "name": "nano-wallet",
@@ -4780,7 +4965,7 @@
       }
     },
     {
-      "id": 235,
+      "id": 245,
       "type": 3,
       "title": "Navidrome",
       "name": "navidrome",
@@ -4795,7 +4980,7 @@
       }
     },
     {
-      "id": 236,
+      "id": 246,
       "type": 3,
       "title": "Ncdu",
       "name": "ncdu",
@@ -4810,7 +4995,7 @@
       }
     },
     {
-      "id": 237,
+      "id": 247,
       "type": 3,
       "title": "Neko Firefox",
       "name": "neko-firefox",
@@ -4832,7 +5017,7 @@
       ]
     },
     {
-      "id": 238,
+      "id": 248,
       "type": 3,
       "title": "NetAlertX (Legacy)",
       "name": "netalertx",
@@ -4847,7 +5032,7 @@
       }
     },
     {
-      "id": 239,
+      "id": 249,
       "type": 3,
       "title": "NetAlertX v26",
       "name": "netalertx-v26",
@@ -4862,7 +5047,7 @@
       }
     },
     {
-      "id": 240,
+      "id": 250,
       "type": 3,
       "title": "netboot.xyz",
       "name": "netboot-xyz",
@@ -4882,7 +5067,7 @@
       ]
     },
     {
-      "id": 241,
+      "id": 251,
       "type": 3,
       "title": "Netbox",
       "name": "netbox",
@@ -4924,7 +5109,7 @@
       ]
     },
     {
-      "id": 242,
+      "id": 252,
       "type": 3,
       "title": "NetPulse",
       "name": "netpulse",
@@ -4947,7 +5132,7 @@
       ]
     },
     {
-      "id": 243,
+      "id": 253,
       "type": 3,
       "title": "Nextcloud",
       "name": "nextcloud",
@@ -4974,7 +5159,7 @@
       ]
     },
     {
-      "id": 244,
+      "id": 254,
       "type": 3,
       "title": "Nextcloud LS",
       "name": "nextcloud-ls",
@@ -4994,7 +5179,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": 255,
       "type": 3,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",
@@ -5021,7 +5206,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": 256,
       "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
@@ -5039,7 +5224,7 @@
       ]
     },
     {
-      "id": 247,
+      "id": 257,
       "type": 3,
       "title": "Nginx",
       "name": "nginx",
@@ -5061,7 +5246,7 @@
       ]
     },
     {
-      "id": 248,
+      "id": 258,
       "type": 3,
       "title": "Ngircd",
       "name": "ngircd",
@@ -5081,7 +5266,7 @@
       ]
     },
     {
-      "id": 249,
+      "id": 259,
       "type": 3,
       "title": "Nightlio",
       "name": "nightlio",
@@ -5104,7 +5289,7 @@
       ]
     },
     {
-      "id": 250,
+      "id": 260,
       "type": 3,
       "title": "nightscout",
       "name": "nightscout",
@@ -5127,7 +5312,7 @@
       ]
     },
     {
-      "id": 251,
+      "id": 261,
       "type": 3,
       "title": "NocoDB",
       "name": "nocodb",
@@ -5142,7 +5327,7 @@
       }
     },
     {
-      "id": 252,
+      "id": 262,
       "type": 3,
       "title": "Node-RED",
       "name": "node-red",
@@ -5157,7 +5342,7 @@
       }
     },
     {
-      "id": 253,
+      "id": 263,
       "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
@@ -5176,7 +5361,7 @@
       ]
     },
     {
-      "id": 254,
+      "id": 264,
       "type": 3,
       "title": "Nova DSO Tracker",
       "name": "nova-dso-tracker",
@@ -5191,7 +5376,7 @@
       }
     },
     {
-      "id": 255,
+      "id": 265,
       "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
@@ -5209,7 +5394,7 @@
       ]
     },
     {
-      "id": 256,
+      "id": 266,
       "type": 3,
       "title": "Ntfy.sh",
       "name": "ntfysh",
@@ -5227,7 +5412,7 @@
       ]
     },
     {
-      "id": 257,
+      "id": 267,
       "type": 3,
       "title": "Obsidian",
       "name": "obsidian",
@@ -5242,7 +5427,7 @@
       }
     },
     {
-      "id": 258,
+      "id": 268,
       "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
@@ -5257,7 +5442,7 @@
       }
     },
     {
-      "id": 259,
+      "id": 269,
       "type": 3,
       "title": "OctoPrint",
       "name": "octoprint",
@@ -5272,7 +5457,7 @@
       }
     },
     {
-      "id": 260,
+      "id": 270,
       "type": 3,
       "title": "Odoo",
       "name": "odoo",
@@ -5292,7 +5477,7 @@
       ]
     },
     {
-      "id": 261,
+      "id": 271,
       "type": 3,
       "title": "Odysseus",
       "name": "odysseus",
@@ -5311,7 +5496,7 @@
       ]
     },
     {
-      "id": 262,
+      "id": 272,
       "type": 3,
       "title": "Ollama - AMD",
       "name": "ollama-amd",
@@ -5326,7 +5511,7 @@
       }
     },
     {
-      "id": 263,
+      "id": 273,
       "type": 3,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
@@ -5341,7 +5526,7 @@
       }
     },
     {
-      "id": 264,
+      "id": 274,
       "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
@@ -5356,7 +5541,7 @@
       }
     },
     {
-      "id": 265,
+      "id": 275,
       "type": 3,
       "title": "OneDev",
       "name": "onedev",
@@ -5371,7 +5556,7 @@
       }
     },
     {
-      "id": 266,
+      "id": 276,
       "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
@@ -5386,7 +5571,7 @@
       }
     },
     {
-      "id": 267,
+      "id": 277,
       "type": 3,
       "title": "Open WebUI",
       "name": "open-webui",
@@ -5401,7 +5586,7 @@
       }
     },
     {
-      "id": 268,
+      "id": 278,
       "type": 3,
       "title": "OpenClaw",
       "name": "openclaw",
@@ -5422,7 +5607,7 @@
       ]
     },
     {
-      "id": 269,
+      "id": 279,
       "type": 3,
       "title": "Openshot",
       "name": "openshot",
@@ -5442,7 +5627,7 @@
       ]
     },
     {
-      "id": 270,
+      "id": 280,
       "type": 3,
       "title": "Openssh-server",
       "name": "openssh-server",
@@ -5472,7 +5657,7 @@
       ]
     },
     {
-      "id": 271,
+      "id": 281,
       "type": 3,
       "title": "OpenVPN",
       "name": "openvpn-as",
@@ -5487,7 +5672,7 @@
       }
     },
     {
-      "id": 272,
+      "id": 282,
       "type": 3,
       "title": "Openvscode-server",
       "name": "openvscode-server",
@@ -5511,7 +5696,7 @@
       ]
     },
     {
-      "id": 273,
+      "id": 283,
       "type": 3,
       "title": "Opera",
       "name": "opera",
@@ -5532,7 +5717,7 @@
       ]
     },
     {
-      "id": 274,
+      "id": 284,
       "type": 3,
       "title": "Orcaslicer",
       "name": "orcaslicer",
@@ -5552,7 +5737,7 @@
       ]
     },
     {
-      "id": 275,
+      "id": 285,
       "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
@@ -5567,7 +5752,7 @@
       }
     },
     {
-      "id": 276,
+      "id": 286,
       "type": 3,
       "title": "ownCloud",
       "name": "owncloud",
@@ -5596,7 +5781,7 @@
       ]
     },
     {
-      "id": 277,
+      "id": 287,
       "type": 3,
       "title": "Pairdrop",
       "name": "pairdrop",
@@ -5620,7 +5805,7 @@
       ]
     },
     {
-      "id": 278,
+      "id": 288,
       "type": 3,
       "title": "Paperclip",
       "name": "paperclip",
@@ -5644,7 +5829,7 @@
       ]
     },
     {
-      "id": 279,
+      "id": 289,
       "type": 3,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
@@ -5672,7 +5857,7 @@
       ]
     },
     {
-      "id": 280,
+      "id": 290,
       "type": 3,
       "title": "Password Pusher (Legacy)",
       "name": "passwordpusher",
@@ -5692,7 +5877,7 @@
       ]
     },
     {
-      "id": 281,
+      "id": 291,
       "type": 3,
       "title": "Password Pusher v2",
       "name": "passwordpusher-v2",
@@ -5712,7 +5897,7 @@
       ]
     },
     {
-      "id": 282,
+      "id": 292,
       "type": 3,
       "title": "Pcsx2",
       "name": "pcsx2",
@@ -5732,7 +5917,7 @@
       ]
     },
     {
-      "id": 283,
+      "id": 293,
       "type": 3,
       "title": "PD3F",
       "name": "pd3f",
@@ -5747,7 +5932,7 @@
       }
     },
     {
-      "id": 284,
+      "id": 294,
       "type": 3,
       "title": "Pelorus",
       "name": "pelorus",
@@ -5767,7 +5952,7 @@
       ]
     },
     {
-      "id": 285,
+      "id": 295,
       "type": 3,
       "title": "Penpot",
       "name": "penpot",
@@ -5782,7 +5967,7 @@
       }
     },
     {
-      "id": 286,
+      "id": 296,
       "type": 3,
       "title": "Peppermint",
       "name": "peppermint",
@@ -5797,7 +5982,7 @@
       }
     },
     {
-      "id": 287,
+      "id": 297,
       "type": 3,
       "title": "Photoprism",
       "name": "photoprism",
@@ -5839,7 +6024,7 @@
       ]
     },
     {
-      "id": 288,
+      "id": 298,
       "type": 3,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
@@ -5860,7 +6045,29 @@
       ]
     },
     {
-      "id": 289,
+      "id": 299,
+      "type": 3,
+      "title": "Pi.alert",
+      "name": "pi-alert",
+      "description": "WIFI / LAN intruder detector",
+      "note": "Wifi / Lan Intruder Detector",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pucherot/Pi.Alert/main/docs/img/1_devices.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/pi-alert/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"},
+        {"name": "HOST_USER_ID", "label": "HOST_USER_ID", "description": "Container Variable: HOST_USER_ID", "default": "$PUID"},
+        {"name": "HOST_USER_GID", "label": "HOST_USER_GID", "description": "Container Variable: HOST_USER_GID", "default": "$PGID"},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": "$TZ"}
+      ]
+    },
+    {
+      "id": 300,
       "type": 3,
       "title": "Pidgin",
       "name": "pidgin",
@@ -5880,7 +6087,7 @@
       ]
     },
     {
-      "id": 290,
+      "id": 301,
       "type": 3,
       "title": "Pi-hole",
       "name": "pihole",
@@ -5895,7 +6102,7 @@
       }
     },
     {
-      "id": 291,
+      "id": 302,
       "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
@@ -5910,7 +6117,7 @@
       }
     },
     {
-      "id": 292,
+      "id": 303,
       "type": 3,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
@@ -5931,7 +6138,7 @@
       ]
     },
     {
-      "id": 293,
+      "id": 304,
       "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
@@ -5946,7 +6153,7 @@
       }
     },
     {
-      "id": 294,
+      "id": 305,
       "type": 3,
       "title": "Piper",
       "name": "piper",
@@ -5973,7 +6180,7 @@
       ]
     },
     {
-      "id": 295,
+      "id": 306,
       "type": 3,
       "title": "Piwigo",
       "name": "piwigo",
@@ -5988,7 +6195,7 @@
       }
     },
     {
-      "id": 296,
+      "id": 307,
       "type": 3,
       "title": "Planka (Legacy)",
       "name": "planka",
@@ -6003,7 +6210,7 @@
       }
     },
     {
-      "id": 297,
+      "id": 308,
       "type": 3,
       "title": "Planka v2",
       "name": "planka-v2",
@@ -6048,7 +6255,7 @@
       ]
     },
     {
-      "id": 298,
+      "id": 309,
       "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
@@ -6063,7 +6270,7 @@
       }
     },
     {
-      "id": 299,
+      "id": 310,
       "type": 3,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
@@ -6081,7 +6288,7 @@
       ]
     },
     {
-      "id": 300,
+      "id": 311,
       "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
@@ -6096,7 +6303,7 @@
       }
     },
     {
-      "id": 301,
+      "id": 312,
       "type": 3,
       "title": "Plex",
       "name": "plex",
@@ -6111,7 +6318,7 @@
       }
     },
     {
-      "id": 302,
+      "id": 313,
       "type": 3,
       "title": "Plex-meta-manager",
       "name": "plex-meta-manager",
@@ -6136,7 +6343,7 @@
       ]
     },
     {
-      "id": 303,
+      "id": 314,
       "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
@@ -6160,7 +6367,7 @@
       ]
     },
     {
-      "id": 304,
+      "id": 315,
       "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
@@ -6182,7 +6389,7 @@
       ]
     },
     {
-      "id": 305,
+      "id": 316,
       "type": 3,
       "title": "PodFetch",
       "name": "podfetch",
@@ -6205,7 +6412,7 @@
       ]
     },
     {
-      "id": 306,
+      "id": 317,
       "type": 3,
       "title": "Portainer",
       "name": "portainer",
@@ -6220,7 +6427,7 @@
       }
     },
     {
-      "id": 307,
+      "id": 318,
       "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",
@@ -6235,7 +6442,30 @@
       }
     },
     {
-      "id": 308,
+      "id": 319,
+      "type": 3,
+      "title": "Portainer Tools",
+      "name": "portainer-tools",
+      "description": "Portainer Tools allows you to add your own Portainer App Template definitions, merge them with existing ones and host them on your own server. You can set the Portainer App Templates URL from within the application to easily switch App Template definitions. Detailed information about installing and using the application and more can be found on https://www.technorabilia.com/portainer-tools-merge-and-host-app-template-definitions.",
+      "note": "Portainer Tools allows you to add your own Portainer App Template definitions, merge them with existing ones and host them on your own server.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Portainer/icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/portainer-tools/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"},
+        {"name": "PORTAINER_USERNAME", "label": "PORTAINER_USERNAME", "description": "Portainer admin username", "default": ""},
+        {"name": "PORTAINER_PASSWORD", "label": "PORTAINER_PASSWORD", "description": "Portainer admin password", "default": ""},
+        {"name": "PORTAINER_URL", "label": "PORTAINER_URL", "description": "Portainer Base URL", "default": "0.0.0.0:9000"},
+        {"name": "SERVER_URL", "label": "SERVER_URL", "description": "Container Variable: SERVER_URL", "default": "http://0.0.0.0:9999"}
+      ]
+    },
+    {
+      "id": 320,
       "type": 3,
       "title": "Portracker",
       "name": "portracker",
@@ -6259,7 +6489,7 @@
       ]
     },
     {
-      "id": 309,
+      "id": 321,
       "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
@@ -6277,7 +6507,7 @@
       ]
     },
     {
-      "id": 310,
+      "id": 322,
       "type": 3,
       "title": "Ppsspp",
       "name": "ppsspp",
@@ -6297,7 +6527,26 @@
       ]
     },
     {
-      "id": 311,
+      "id": 323,
+      "type": 3,
+      "title": "Privatebin",
+      "name": "privatebin",
+      "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data!",
+      "note": "Privatebin Is A Minimalist, Open Source Online Pastebin Where The Server Has Zero Knowledge Of Pasted Data!",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/privatebin.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/privatebin/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"}
+      ]
+    },
+    {
+      "id": 324,
       "type": 3,
       "title": "Project Management",
       "name": "project-management",
@@ -6312,7 +6561,7 @@
       }
     },
     {
-      "id": 312,
+      "id": 325,
       "type": 3,
       "title": "Projectsend",
       "name": "projectsend",
@@ -6332,7 +6581,7 @@
       ]
     },
     {
-      "id": 313,
+      "id": 326,
       "type": 3,
       "title": "PsiTransfer",
       "name": "psitransfer",
@@ -6356,7 +6605,7 @@
       ]
     },
     {
-      "id": 314,
+      "id": 327,
       "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
@@ -6393,7 +6642,7 @@
       ]
     },
     {
-      "id": 315,
+      "id": 328,
       "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -6414,7 +6663,7 @@
       ]
     },
     {
-      "id": 316,
+      "id": 329,
       "type": 3,
       "title": "Pwndrop",
       "name": "pwndrop",
@@ -6435,7 +6684,7 @@
       ]
     },
     {
-      "id": 317,
+      "id": 330,
       "type": 3,
       "title": "Pycharm",
       "name": "pycharm",
@@ -6455,7 +6704,7 @@
       ]
     },
     {
-      "id": 318,
+      "id": 331,
       "type": 3,
       "title": "Pydio-cells",
       "name": "pydio-cells",
@@ -6477,7 +6726,7 @@
       ]
     },
     {
-      "id": 319,
+      "id": 332,
       "type": 3,
       "title": "Pylon",
       "name": "pylon",
@@ -6500,7 +6749,7 @@
       ]
     },
     {
-      "id": 320,
+      "id": 333,
       "type": 3,
       "title": "Python",
       "name": "python",
@@ -6520,7 +6769,7 @@
       ]
     },
     {
-      "id": 321,
+      "id": 334,
       "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -6535,7 +6784,7 @@
       }
     },
     {
-      "id": 322,
+      "id": 335,
       "type": 3,
       "title": "Qdirstat",
       "name": "qdirstat",
@@ -6555,7 +6804,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 336,
       "type": 3,
       "title": "Qemu-static",
       "name": "qemu-static",
@@ -6575,7 +6824,7 @@
       ]
     },
     {
-      "id": 324,
+      "id": 337,
       "type": 3,
       "title": "Quassel-core",
       "name": "quassel-core",
@@ -6596,7 +6845,7 @@
       ]
     },
     {
-      "id": 325,
+      "id": 338,
       "type": 3,
       "title": "Quassel-web",
       "name": "quassel-web",
@@ -6620,7 +6869,7 @@
       ]
     },
     {
-      "id": 326,
+      "id": 339,
       "type": 3,
       "title": "RackPeek",
       "name": "rackpeek",
@@ -6635,7 +6884,7 @@
       }
     },
     {
-      "id": 327,
+      "id": 340,
       "type": 3,
       "title": "Rallly",
       "name": "rallly",
@@ -6664,7 +6913,7 @@
       ]
     },
     {
-      "id": 328,
+      "id": 341,
       "type": 3,
       "title": "Raneto",
       "name": "raneto",
@@ -6684,7 +6933,7 @@
       ]
     },
     {
-      "id": 329,
+      "id": 342,
       "type": 3,
       "title": "Rawtherapee",
       "name": "rawtherapee",
@@ -6704,7 +6953,7 @@
       ]
     },
     {
-      "id": 330,
+      "id": 343,
       "type": 3,
       "title": "Rdesktop",
       "name": "rdesktop",
@@ -6724,7 +6973,7 @@
       ]
     },
     {
-      "id": 331,
+      "id": 344,
       "type": 3,
       "title": "Reactive Resume",
       "name": "reactive-resume",
@@ -6739,7 +6988,7 @@
       }
     },
     {
-      "id": 332,
+      "id": 345,
       "type": 3,
       "title": "Readeck",
       "name": "readeck",
@@ -6760,7 +7009,7 @@
       ]
     },
     {
-      "id": 333,
+      "id": 346,
       "type": 3,
       "title": "Readme-sync",
       "name": "readme-sync",
@@ -6780,7 +7029,22 @@
       ]
     },
     {
-      "id": 334,
+      "id": 347,
+      "type": 3,
+      "title": "Redis",
+      "name": "redis",
+      "description": "Redis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+      "note": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/redis/docker-compose.yml"
+      }
+    },
+    {
+      "id": 348,
       "type": 3,
       "title": "Remmina",
       "name": "remmina",
@@ -6800,7 +7064,7 @@
       ]
     },
     {
-      "id": 335,
+      "id": 349,
       "type": 3,
       "title": "Retroarch",
       "name": "retroarch",
@@ -6820,7 +7084,7 @@
       ]
     },
     {
-      "id": 336,
+      "id": 350,
       "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -6838,7 +7102,7 @@
       ]
     },
     {
-      "id": 337,
+      "id": 351,
       "type": 3,
       "title": "Rocket.Chat (Legacy)",
       "name": "rocket-chat",
@@ -6856,7 +7120,7 @@
       ]
     },
     {
-      "id": 338,
+      "id": 352,
       "type": 3,
       "title": "Rocket.Chat v8",
       "name": "rocket-chat-v8",
@@ -6875,7 +7139,7 @@
       ]
     },
     {
-      "id": 339,
+      "id": 353,
       "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -6909,7 +7173,7 @@
       ]
     },
     {
-      "id": 340,
+      "id": 354,
       "type": 3,
       "title": "Rpcs3",
       "name": "rpcs3",
@@ -6929,7 +7193,7 @@
       ]
     },
     {
-      "id": 341,
+      "id": 355,
       "type": 3,
       "title": "Rsnapshot",
       "name": "rsnapshot",
@@ -6949,7 +7213,28 @@
       ]
     },
     {
-      "id": 342,
+      "id": 356,
+      "type": 3,
+      "title": "RSShub",
+      "name": "rsshub",
+      "description": "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything. RSSHub delivers millions of contents aggregated from all kinds of sources, our vibrant open source community is ensuring the deliver of RSSHub's new routes, new features and bug fixes. RSSHub can be used with browser extension RSSHub Radar and mobile auxiliary app RSSBud (iOS) and RSSAid (Android)",
+      "note": "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://docs.rsshub.app/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rsshub/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Container Variable: NODE_ENV", "default": "production"},
+        {"name": "CACHE_TYPE", "label": "CACHE_TYPE", "description": "Container Variable: CACHE_TYPE", "default": "redis"},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Container Variable: REDIS_URL", "default": "redis://redis:6379/"},
+        {"name": "PUPPETEER_WS_ENDPOINT", "label": "PUPPETEER_WS_ENDPOINT", "description": "Container Variable: PUPPETEER_WS_ENDPOINT", "default": "ws://browserless:3000"}
+      ]
+    },
+    {
+      "id": 357,
       "type": 3,
       "title": "Rustdesk",
       "name": "rustdesk",
@@ -6969,7 +7254,22 @@
       ]
     },
     {
-      "id": 343,
+      "id": 358,
+      "type": 3,
+      "title": "Rustdesk Server",
+      "name": "rustdesk-server",
+      "description": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration. You have full control of your data, with no concerns about security.",
+      "note": "RustDesk is a full-featured open source remote control alternative for self-hosting and security with minimal configuration. You have full control of your data, with no concerns about security.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Rustdesk.svg/48px-Rustdesk.svg.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/rustdesk-server/docker-compose.yml"
+      }
+    },
+    {
+      "id": 359,
       "type": 3,
       "title": "RustFS",
       "name": "rustfs",
@@ -6990,7 +7290,7 @@
       ]
     },
     {
-      "id": 344,
+      "id": 360,
       "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -7005,7 +7305,7 @@
       }
     },
     {
-      "id": 345,
+      "id": 361,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -7024,7 +7324,7 @@
       ]
     },
     {
-      "id": 346,
+      "id": 362,
       "type": 3,
       "title": "Scummvm",
       "name": "scummvm",
@@ -7044,7 +7344,7 @@
       ]
     },
     {
-      "id": 347,
+      "id": 363,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -7068,7 +7368,7 @@
       ]
     },
     {
-      "id": 348,
+      "id": 364,
       "type": 3,
       "title": "Sealskin",
       "name": "sealskin",
@@ -7089,7 +7389,7 @@
       ]
     },
     {
-      "id": 349,
+      "id": 365,
       "type": 3,
       "title": "Seerr",
       "name": "seerr",
@@ -7108,7 +7408,7 @@
       ]
     },
     {
-      "id": 350,
+      "id": 366,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -7123,7 +7423,7 @@
       }
     },
     {
-      "id": 351,
+      "id": 367,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -7145,7 +7445,7 @@
       ]
     },
     {
-      "id": 352,
+      "id": 368,
       "type": 3,
       "title": "Series-troxide",
       "name": "series-troxide",
@@ -7165,7 +7465,7 @@
       ]
     },
     {
-      "id": 353,
+      "id": 369,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -7180,7 +7480,7 @@
       }
     },
     {
-      "id": 354,
+      "id": 370,
       "type": 3,
       "title": "Shadps4",
       "name": "shadps4",
@@ -7200,7 +7500,7 @@
       ]
     },
     {
-      "id": 355,
+      "id": 371,
       "type": 3,
       "title": "Shotcut",
       "name": "shotcut",
@@ -7220,7 +7520,7 @@
       ]
     },
     {
-      "id": 356,
+      "id": 372,
       "type": 3,
       "title": "Signal",
       "name": "signal",
@@ -7240,7 +7540,7 @@
       ]
     },
     {
-      "id": 357,
+      "id": 373,
       "type": 3,
       "title": "Smokeping",
       "name": "smokeping",
@@ -7263,7 +7563,7 @@
       ]
     },
     {
-      "id": 358,
+      "id": 374,
       "type": 3,
       "title": "Snapdrop",
       "name": "snapdrop",
@@ -7283,7 +7583,7 @@
       ]
     },
     {
-      "id": 359,
+      "id": 375,
       "type": 3,
       "title": "SnapOtter",
       "name": "snapotter",
@@ -7308,7 +7608,7 @@
       ]
     },
     {
-      "id": 360,
+      "id": 376,
       "type": 3,
       "title": "Snipe-it",
       "name": "snipe-it",
@@ -7346,7 +7646,7 @@
       ]
     },
     {
-      "id": 361,
+      "id": 377,
       "type": 3,
       "title": "Snipe-IT v8",
       "name": "snipe-it-v8",
@@ -7367,7 +7667,7 @@
       ]
     },
     {
-      "id": 362,
+      "id": 378,
       "type": 3,
       "title": "Socket-proxy",
       "name": "socket-proxy",
@@ -7387,7 +7687,7 @@
       ]
     },
     {
-      "id": 363,
+      "id": 379,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -7405,7 +7705,7 @@
       ]
     },
     {
-      "id": 364,
+      "id": 380,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -7431,7 +7731,7 @@
       ]
     },
     {
-      "id": 365,
+      "id": 381,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -7452,7 +7752,7 @@
       ]
     },
     {
-      "id": 366,
+      "id": 382,
       "type": 3,
       "title": "Sqlitebrowser",
       "name": "sqlitebrowser",
@@ -7472,7 +7772,7 @@
       ]
     },
     {
-      "id": 367,
+      "id": 383,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -7487,7 +7787,38 @@
       }
     },
     {
-      "id": 368,
+      "id": 384,
+      "type": 3,
+      "title": "Statping",
+      "name": "statping",
+      "description": "An easy to use Status Page for your websites and applications. Statping will automatically fetch the application and render a beautiful status page with tons of features for you to build an even better status page.",
+      "note": "An Easy To Use Status Page For Your Websites And Applications. Statping Will Automatically Fetch The Application And Render A Beautiful Status Page With Tons Of Features For You To Build An Even Better Status Page.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/statping.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/statping/docker-compose.yml"
+      },
+      "env": [
+        {"name": "VIRTUAL_PORT", "label": "VIRTUAL_PORT", "description": "Container Variable: VIRTUAL_PORT", "default": "8080"},
+        {"name": "DB_CONN", "label": "DB_CONN", "description": "Container Variable: DB_CONN", "default": "postgres"},
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "Container Variable: DB_HOST", "default": "db"},
+        {"name": "DB_USER", "label": "DB_USER", "description": "Container Variable: DB_USER", "default": "bigbear"},
+        {"name": "DB_PASS", "label": "DB_PASS", "description": "Container Variable: DB_PASS", "default": "dc640cd4-0450-4a94-aedb-ee5b43b32a45"},
+        {"name": "DB_DATABASE", "label": "DB_DATABASE", "description": "Container Variable: DB_DATABASE", "default": "casaos"},
+        {"name": "NAME", "label": "NAME", "description": "Container Variable: NAME", "default": ""},
+        {"name": "DESCRIPTION", "label": "DESCRIPTION", "description": "Container Variable: DESCRIPTION", "default": ""},
+        {"name": "PUID", "label": "PUID", "description": "for UserID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "for GroupID", "default": "$PGID"},
+        {"name": "TZ", "label": "TZ", "description": "specify a timezone to use, see this list.", "default": "$TZ"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres server username", "default": "bigbear"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Postgres server password", "default": "dc640cd4-0450-4a94-aedb-ee5b43b32a45"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Specify the name of a database to be created on image startup.", "default": "casaos"}
+      ]
+    },
+    {
+      "id": 385,
       "type": 3,
       "title": "Steam",
       "name": "steam",
@@ -7507,7 +7838,7 @@
       ]
     },
     {
-      "id": 369,
+      "id": 386,
       "type": 3,
       "title": "Steamos",
       "name": "steamos",
@@ -7531,7 +7862,7 @@
       ]
     },
     {
-      "id": 370,
+      "id": 387,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -7556,7 +7887,7 @@
       ]
     },
     {
-      "id": 371,
+      "id": 388,
       "type": 3,
       "title": "Storyteller",
       "name": "storyteller",
@@ -7581,7 +7912,7 @@
       ]
     },
     {
-      "id": 372,
+      "id": 389,
       "type": 3,
       "title": "Swag",
       "name": "swag",
@@ -7615,7 +7946,7 @@
       ]
     },
     {
-      "id": 373,
+      "id": 390,
       "type": 3,
       "title": "Synclounge",
       "name": "synclounge",
@@ -7633,7 +7964,7 @@
       ]
     },
     {
-      "id": 374,
+      "id": 391,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -7648,7 +7979,7 @@
       }
     },
     {
-      "id": 375,
+      "id": 392,
       "type": 3,
       "title": "Syslog-ng",
       "name": "syslog-ng",
@@ -7669,7 +8000,7 @@
       ]
     },
     {
-      "id": 376,
+      "id": 393,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -7695,7 +8026,7 @@
       ]
     },
     {
-      "id": 377,
+      "id": 394,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -7710,7 +8041,7 @@
       }
     },
     {
-      "id": 378,
+      "id": 395,
       "type": 3,
       "title": "Tautulli",
       "name": "tautulli",
@@ -7730,7 +8061,7 @@
       ]
     },
     {
-      "id": 379,
+      "id": 396,
       "type": 3,
       "title": "Telegram",
       "name": "telegram",
@@ -7750,7 +8081,7 @@
       ]
     },
     {
-      "id": 380,
+      "id": 397,
       "type": 3,
       "title": "Tester",
       "name": "tester",
@@ -7768,7 +8099,7 @@
       ]
     },
     {
-      "id": 381,
+      "id": 398,
       "type": 3,
       "title": "Thelounge",
       "name": "thelounge",
@@ -7788,7 +8119,7 @@
       ]
     },
     {
-      "id": 382,
+      "id": 399,
       "type": 3,
       "title": "Thunderbird",
       "name": "thunderbird",
@@ -7808,7 +8139,7 @@
       ]
     },
     {
-      "id": 383,
+      "id": 400,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -7823,7 +8154,7 @@
       }
     },
     {
-      "id": 384,
+      "id": 401,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -7857,7 +8188,7 @@
       ]
     },
     {
-      "id": 385,
+      "id": 402,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -7872,7 +8203,30 @@
       }
     },
     {
-      "id": 386,
+      "id": 403,
+      "type": 3,
+      "title": "Traefik",
+      "name": "traefik",
+      "description": "Cloud-Native Networking Stack That Just Works.",
+      "note": "Cloud-native Networking Stack That Just Works.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/traefik.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/traefik/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PUID", "label": "PUID", "description": "Container Variable: PUID", "default": "$PUID"},
+        {"name": "PGID", "label": "PGID", "description": "Container Variable: PGID", "default": "$PGID"},
+        {"name": "TZ", "label": "TZ", "description": "Container Variable: TZ", "default": "$TZ"},
+        {"name": "TRAEFIK_API", "label": "TRAEFIK_API", "description": "Container Variable: TRAEFIK_API", "default": "false"},
+        {"name": "TRAEFIK_API_DASHBOARD", "label": "TRAEFIK_API_DASHBOARD", "description": "Container Variable: TRAEFIK_API_DASHBOARD", "default": "true"},
+        {"name": "TRAEFIK_API_INSECURE", "label": "TRAEFIK_API_INSECURE", "description": "Container Variable: TRAEFIK_API_INSECURE", "default": "false"}
+      ]
+    },
+    {
+      "id": 404,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -7887,7 +8241,7 @@
       }
     },
     {
-      "id": 387,
+      "id": 405,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -7908,7 +8262,7 @@
       ]
     },
     {
-      "id": 388,
+      "id": 406,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -7931,7 +8285,7 @@
       ]
     },
     {
-      "id": 389,
+      "id": 407,
       "type": 3,
       "title": "Ubooquity",
       "name": "ubooquity",
@@ -7952,7 +8306,7 @@
       ]
     },
     {
-      "id": 390,
+      "id": 408,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -7970,7 +8324,7 @@
       ]
     },
     {
-      "id": 391,
+      "id": 409,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -7990,7 +8344,7 @@
       ]
     },
     {
-      "id": 392,
+      "id": 410,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -8005,7 +8359,7 @@
       }
     },
     {
-      "id": 393,
+      "id": 411,
       "type": 3,
       "title": "Ungoogled-chromium",
       "name": "ungoogled-chromium",
@@ -8026,7 +8380,7 @@
       ]
     },
     {
-      "id": 394,
+      "id": 412,
       "type": 3,
       "title": "Unifi-controller",
       "name": "unifi-controller",
@@ -8048,7 +8402,7 @@
       ]
     },
     {
-      "id": 395,
+      "id": 413,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -8077,7 +8431,7 @@
       ]
     },
     {
-      "id": 396,
+      "id": 414,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -8106,7 +8460,7 @@
       ]
     },
     {
-      "id": 397,
+      "id": 415,
       "type": 3,
       "title": "Unrar",
       "name": "unrar",
@@ -8126,7 +8480,7 @@
       ]
     },
     {
-      "id": 398,
+      "id": 416,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -8141,7 +8495,7 @@
       }
     },
     {
-      "id": 399,
+      "id": 417,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -8156,7 +8510,7 @@
       }
     },
     {
-      "id": 400,
+      "id": 418,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -8171,7 +8525,7 @@
       }
     },
     {
-      "id": 401,
+      "id": 419,
       "type": 3,
       "title": "Vikunja (Legacy)",
       "name": "vikunja",
@@ -8195,7 +8549,7 @@
       ]
     },
     {
-      "id": 402,
+      "id": 420,
       "type": 3,
       "title": "Vikunja v2",
       "name": "vikunja-v2",
@@ -8218,7 +8572,7 @@
       ]
     },
     {
-      "id": 403,
+      "id": 421,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -8237,7 +8591,7 @@
       ]
     },
     {
-      "id": 404,
+      "id": 422,
       "type": 3,
       "title": "Vivaldi",
       "name": "vivaldi",
@@ -8258,7 +8612,7 @@
       ]
     },
     {
-      "id": 405,
+      "id": 423,
       "type": 3,
       "title": "Vlc",
       "name": "vlc",
@@ -8279,7 +8633,7 @@
       ]
     },
     {
-      "id": 406,
+      "id": 424,
       "type": 3,
       "title": "Vscode",
       "name": "vscode",
@@ -8299,7 +8653,7 @@
       ]
     },
     {
-      "id": 407,
+      "id": 425,
       "type": 3,
       "title": "Vscodium",
       "name": "vscodium",
@@ -8319,7 +8673,7 @@
       ]
     },
     {
-      "id": 408,
+      "id": 426,
       "type": 3,
       "title": "Vscodium-web",
       "name": "vscodium-web",
@@ -8344,7 +8698,7 @@
       ]
     },
     {
-      "id": 409,
+      "id": 427,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -8374,7 +8728,7 @@
       ]
     },
     {
-      "id": 410,
+      "id": 428,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -8392,7 +8746,7 @@
       ]
     },
     {
-      "id": 411,
+      "id": 429,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -8417,7 +8771,7 @@
       ]
     },
     {
-      "id": 412,
+      "id": 430,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -8432,7 +8786,7 @@
       }
     },
     {
-      "id": 413,
+      "id": 431,
       "type": 3,
       "title": "Webcord",
       "name": "webcord",
@@ -8452,7 +8806,27 @@
       ]
     },
     {
-      "id": 414,
+      "id": 432,
+      "type": 3,
+      "title": "WebDAV",
+      "name": "webdav",
+      "description": "Web-based distributed authoring and versioning (WebDAV) is a set of extensions to the HTTP protocol that allows WebDAV clients (such as Microsoft Web Folders) to collaboratively edit and manage files on remote Web servers.",
+      "note": "Web-based distributed authoring and versioning (WebDAV) is a set of extensions to the HTTP protocol that allows WebDAV clients (such as Microsoft Web Folders) to collaboratively edit and manage files on remote Web servers.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://debrid-link.com/screen/webdav_logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/webdav/docker-compose.yml"
+      },
+      "env": [
+        {"name": "AUTH_TYPE", "label": "AUTH_TYPE", "description": "Container Variable: AUTH_TYPE", "default": "Digest"},
+        {"name": "USERNAME", "label": "USERNAME", "description": "Container Variable: USERNAME", "default": "bigbear"},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Container Variable: PASSWORD", "default": "437830b0-693e-47c3-863c-465522d720db"}
+      ]
+    },
+    {
+      "id": 433,
       "type": 3,
       "title": "Webgrabplus",
       "name": "webgrabplus",
@@ -8472,7 +8846,7 @@
       ]
     },
     {
-      "id": 415,
+      "id": 434,
       "type": 3,
       "title": "Webstation",
       "name": "webstation",
@@ -8492,7 +8866,22 @@
       ]
     },
     {
-      "id": 416,
+      "id": 435,
+      "type": 3,
+      "title": "Web Sync (RSync)",
+      "name": "websync",
+      "description": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
+      "note": "Websync is intended to be an rsync task manager, where rsync tasks can be added, scheduled and maintained in a sane manner.",
+      "categories": ["Other", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn0.iconfinder.com/data/icons/octicons/1024/sync-1024.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/websync/docker-compose.yml"
+      }
+    },
+    {
+      "id": 436,
       "type": 3,
       "title": "Webtop",
       "name": "webtop",
@@ -8512,7 +8901,7 @@
       ]
     },
     {
-      "id": 417,
+      "id": 437,
       "type": 3,
       "title": "Weixin",
       "name": "weixin",
@@ -8532,7 +8921,7 @@
       ]
     },
     {
-      "id": 418,
+      "id": 438,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -8547,7 +8936,7 @@
       }
     },
     {
-      "id": 419,
+      "id": 439,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -8562,7 +8951,7 @@
       }
     },
     {
-      "id": 420,
+      "id": 440,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -8577,7 +8966,7 @@
       }
     },
     {
-      "id": 421,
+      "id": 441,
       "type": 3,
       "title": "Wikijs",
       "name": "wikijs",
@@ -8603,7 +8992,7 @@
       ]
     },
     {
-      "id": 422,
+      "id": 442,
       "type": 3,
       "title": "Winegui",
       "name": "winegui",
@@ -8623,7 +9012,7 @@
       ]
     },
     {
-      "id": 423,
+      "id": 443,
       "type": 3,
       "title": "Wireguard",
       "name": "wireguard",
@@ -8651,7 +9040,7 @@
       ]
     },
     {
-      "id": 424,
+      "id": 444,
       "type": 3,
       "title": "Wireshark",
       "name": "wireshark",
@@ -8671,7 +9060,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 445,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -8692,7 +9081,7 @@
       ]
     },
     {
-      "id": 426,
+      "id": 446,
       "type": 3,
       "title": "WordPress (Legacy)",
       "name": "wordpress",
@@ -8713,7 +9102,7 @@
       ]
     },
     {
-      "id": 427,
+      "id": 447,
       "type": 3,
       "title": "WordPress v7",
       "name": "wordpress-v7",
@@ -8734,7 +9123,7 @@
       ]
     },
     {
-      "id": 428,
+      "id": 448,
       "type": 3,
       "title": "Wps-office",
       "name": "wps-office",
@@ -8754,7 +9143,7 @@
       ]
     },
     {
-      "id": 429,
+      "id": 449,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -8774,7 +9163,7 @@
       ]
     },
     {
-      "id": 430,
+      "id": 450,
       "type": 3,
       "title": "Xbackbone",
       "name": "xbackbone",
@@ -8794,7 +9183,7 @@
       ]
     },
     {
-      "id": 431,
+      "id": 451,
       "type": 3,
       "title": "Xemu",
       "name": "xemu",
@@ -8814,7 +9203,7 @@
       ]
     },
     {
-      "id": 432,
+      "id": 452,
       "type": 3,
       "title": "Xvfb",
       "name": "xvfb",
@@ -8834,7 +9223,7 @@
       ]
     },
     {
-      "id": 433,
+      "id": 453,
       "type": 3,
       "title": "Yaak",
       "name": "yaak",
@@ -8854,7 +9243,7 @@
       ]
     },
     {
-      "id": 434,
+      "id": 454,
       "type": 3,
       "title": "Your_spotify",
       "name": "your-spotify",
@@ -8880,7 +9269,7 @@
       ]
     },
     {
-      "id": 435,
+      "id": 455,
       "type": 3,
       "title": "Yq",
       "name": "yq",
@@ -8900,7 +9289,7 @@
       ]
     },
     {
-      "id": 436,
+      "id": 456,
       "type": 3,
       "title": "Zen",
       "name": "zen",
@@ -8920,7 +9309,7 @@
       ]
     },
     {
-      "id": 437,
+      "id": 457,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -8935,7 +9324,7 @@
       }
     },
     {
-      "id": 438,
+      "id": 458,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -8950,7 +9339,7 @@
       }
     },
     {
-      "id": 439,
+      "id": 459,
       "type": 3,
       "title": "Znc",
       "name": "znc",
@@ -8970,7 +9359,7 @@
       ]
     },
     {
-      "id": 440,
+      "id": 460,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
