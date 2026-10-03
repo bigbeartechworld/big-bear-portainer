@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 46,
+      "type": 3,
+      "title": "Cantinarr",
+      "name": "cantinarr",
+      "description": "Cantinarr brings media requests and server management into one app. Household members browse and request movies, shows, books, and music, follow downloads, and get notified when content is ready. Admins manage Radarr, Sonarr, Chaptarr, Lidarr, and download clients, review approvals, and investigate stuck downloads from a phone or browser. Connect the services you use after setup. AI is optional: an assistant can help with library questions and requests, while the repair agent investigates persistent download problems and proposes actions for an administrator to review. Cantinarr also offers MCP tools for authorized clients. Service credentials stay server-side and are encrypted at rest.",
+      "note": "Media requests and server management in one app",
+      "categories": ["Media", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/windoze95/cantinarr/main/app/web/icons/Icon-512.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/cantinarr/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CANTINARR_PUSH_GATEWAY_URL", "label": "CANTINARR_PUSH_GATEWAY_URL", "description": "Push gateway for the companion iOS and Android apps. The server enrolls itself on first start with no signup; clear the value to disable push, or point it at your own gateway.", "default": "https://push.cantinarr.com"},
+        {"name": "CANTINARR_ARR_CALLBACK_URL", "label": "CANTINARR_ARR_CALLBACK_URL", "description": "Origin your Radarr, Sonarr, Chaptarr, and Lidarr containers POST webhooks back to, for example http://192.168.1.10:8585. Leave blank to use whatever address you browse to. This is not the address people reach Cantinarr at; set that in the app under Settings, External Address. Formerly named CANTINARR_PUBLIC_URL, which existing containers can keep using.", "default": ""}
+      ]
+    }]}
