@@ -1,10 +1,10 @@
 {"version": "3", "templates": [    {
       "id": 160,
       "type": 3,
-      "title": "Homarr v1",
+      "title": "Homarr v1 (Legacy)",
       "name": "homarr-v1",
-      "description": "Homarr v1 - A sleek, modern dashboard for your server. This is the latest major version (v1.x) from homarr-labs with improved architecture and features. Note: This version uses a different data structure and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
-      "note": "Homarr v1 (Latest)",
+      "description": "Homarr v1 dashboard, pinned at v1.63.0. Use Homarr v2 for new installs. This version uses a different data structure from Homarr v0 and requires SECRET_ENCRYPTION_KEY. Not compatible with legacy Homarr (v0.x) data without migration.",
+      "note": "Homarr v1",
       "categories": ["BigBearCasaOS", "selfhosted"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/homarr.png",
