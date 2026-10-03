@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 273,
+      "type": 3,
+      "title": "Odoo v20",
+      "name": "odoo-v20",
+      "description": "Open-source business management software suite designed to streamline various aspects of business operations. With its modular structure, users can choose and integrate specific applications such as accounting, inventory, and sales. Odoo provides a user-friendly interface, scalability for businesses of all sizes, and is available in both community (free) and enterprise editions. Its integrated approach and customization options make it a popular choice for comprehensive ERP (Enterprise Resource Planning) solutions.",
+      "note": "Odoo 20 with PostgreSQL 16",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/odoo-v20/logo.jpg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/odoo-v20/docker-compose.yml"
+      },
+      "env": [
+        {"name": "HOST", "label": "HOST", "description": "Container Host: big-bear-odoo-v20-db", "default": ""},
+        {"name": "USER", "label": "USER", "description": "Container User: odoo", "default": ""},
+        {"name": "PASSWORD", "label": "PASSWORD", "description": "Container Password: c9983a93-bf4f-491a-bfef-c42eca42f04d", "default": ""}
+      ]
+    }]}
