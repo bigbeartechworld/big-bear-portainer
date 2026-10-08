@@ -7763,6 +7763,21 @@
     {
       "id": 383,
       "type": 3,
+      "title": "SolidPing",
+      "name": "solidping",
+      "description": "SolidPing monitors HTTP(S) endpoints, TCP/UDP ports, DNS records, SSL certificates, ICMP ping, and databases, plus scriptable browser and JavaScript checks for anything those don't cover. Alerts go out over email, Slack, Discord, Telegram, WhatsApp and generic webhooks, with escalation policies and maintenance windows. Public status pages, a multi-region distributed worker system, and multi-user organizations with role-based access are included. Existing Uptime Kuma users can import their monitors directly. Single Go binary, SQLite by default.",
+      "note": "Uptime monitoring, alerting and status pages, self-hosted",
+      "categories": ["Monitoring", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/fclairamb/solidping@main/res/favicons/favicon-512.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/solidping/docker-compose.yml"
+      }
+    },
+    {
+      "id": 384,
+      "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
       "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust.",
@@ -7779,7 +7794,7 @@
       ]
     },
     {
-      "id": 384,
+      "id": 385,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -7805,7 +7820,7 @@
       ]
     },
     {
-      "id": 385,
+      "id": 386,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -7826,7 +7841,7 @@
       ]
     },
     {
-      "id": 386,
+      "id": 387,
       "type": 3,
       "title": "Sqlitebrowser",
       "name": "sqlitebrowser",
@@ -7846,7 +7861,7 @@
       ]
     },
     {
-      "id": 387,
+      "id": 388,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -7861,7 +7876,7 @@
       }
     },
     {
-      "id": 388,
+      "id": 389,
       "type": 3,
       "title": "Statping",
       "name": "statping",
@@ -7892,7 +7907,7 @@
       ]
     },
     {
-      "id": 389,
+      "id": 390,
       "type": 3,
       "title": "Steam",
       "name": "steam",
@@ -7912,7 +7927,7 @@
       ]
     },
     {
-      "id": 390,
+      "id": 391,
       "type": 3,
       "title": "Steamos",
       "name": "steamos",
@@ -7936,7 +7951,7 @@
       ]
     },
     {
-      "id": 391,
+      "id": 392,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -7961,7 +7976,7 @@
       ]
     },
     {
-      "id": 392,
+      "id": 393,
       "type": 3,
       "title": "Storyteller",
       "name": "storyteller",
@@ -7986,7 +8001,7 @@
       ]
     },
     {
-      "id": 393,
+      "id": 394,
       "type": 3,
       "title": "Swag",
       "name": "swag",
@@ -8020,7 +8035,7 @@
       ]
     },
     {
-      "id": 394,
+      "id": 395,
       "type": 3,
       "title": "Synclounge",
       "name": "synclounge",
@@ -8038,7 +8053,7 @@
       ]
     },
     {
-      "id": 395,
+      "id": 396,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -8053,7 +8068,7 @@
       }
     },
     {
-      "id": 396,
+      "id": 397,
       "type": 3,
       "title": "Syslog-ng",
       "name": "syslog-ng",
@@ -8074,7 +8089,7 @@
       ]
     },
     {
-      "id": 397,
+      "id": 398,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -8100,7 +8115,7 @@
       ]
     },
     {
-      "id": 398,
+      "id": 399,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -8115,7 +8130,7 @@
       }
     },
     {
-      "id": 399,
+      "id": 400,
       "type": 3,
       "title": "Tautulli",
       "name": "tautulli",
@@ -8135,7 +8150,7 @@
       ]
     },
     {
-      "id": 400,
+      "id": 401,
       "type": 3,
       "title": "Telegram",
       "name": "telegram",
@@ -8155,7 +8170,7 @@
       ]
     },
     {
-      "id": 401,
+      "id": 402,
       "type": 3,
       "title": "Tester",
       "name": "tester",
@@ -8173,7 +8188,7 @@
       ]
     },
     {
-      "id": 402,
+      "id": 403,
       "type": 3,
       "title": "Thelounge",
       "name": "thelounge",
@@ -8193,7 +8208,7 @@
       ]
     },
     {
-      "id": 403,
+      "id": 404,
       "type": 3,
       "title": "Thunderbird",
       "name": "thunderbird",
@@ -8213,7 +8228,7 @@
       ]
     },
     {
-      "id": 404,
+      "id": 405,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -8228,7 +8243,7 @@
       }
     },
     {
-      "id": 405,
+      "id": 406,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -8262,7 +8277,7 @@
       ]
     },
     {
-      "id": 406,
+      "id": 407,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -8277,7 +8292,7 @@
       }
     },
     {
-      "id": 407,
+      "id": 408,
       "type": 3,
       "title": "Traefik",
       "name": "traefik",
@@ -8300,7 +8315,7 @@
       ]
     },
     {
-      "id": 408,
+      "id": 409,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -8315,7 +8330,7 @@
       }
     },
     {
-      "id": 409,
+      "id": 410,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -8336,7 +8351,7 @@
       ]
     },
     {
-      "id": 410,
+      "id": 411,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -8360,7 +8375,7 @@
       ]
     },
     {
-      "id": 411,
+      "id": 412,
       "type": 3,
       "title": "Ubooquity",
       "name": "ubooquity",
@@ -8381,7 +8396,7 @@
       ]
     },
     {
-      "id": 412,
+      "id": 413,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -8399,7 +8414,7 @@
       ]
     },
     {
-      "id": 413,
+      "id": 414,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -8419,7 +8434,7 @@
       ]
     },
     {
-      "id": 414,
+      "id": 415,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -8434,7 +8449,7 @@
       }
     },
     {
-      "id": 415,
+      "id": 416,
       "type": 3,
       "title": "Ungoogled-chromium",
       "name": "ungoogled-chromium",
@@ -8455,7 +8470,7 @@
       ]
     },
     {
-      "id": 416,
+      "id": 417,
       "type": 3,
       "title": "Unifi-controller",
       "name": "unifi-controller",
@@ -8477,7 +8492,7 @@
       ]
     },
     {
-      "id": 417,
+      "id": 418,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -8506,7 +8521,7 @@
       ]
     },
     {
-      "id": 418,
+      "id": 419,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -8535,7 +8550,7 @@
       ]
     },
     {
-      "id": 419,
+      "id": 420,
       "type": 3,
       "title": "Unrar",
       "name": "unrar",
@@ -8555,7 +8570,7 @@
       ]
     },
     {
-      "id": 420,
+      "id": 421,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -8570,7 +8585,7 @@
       }
     },
     {
-      "id": 421,
+      "id": 422,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -8585,7 +8600,7 @@
       }
     },
     {
-      "id": 422,
+      "id": 423,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -8600,7 +8615,7 @@
       }
     },
     {
-      "id": 423,
+      "id": 424,
       "type": 3,
       "title": "Vikunja (Legacy)",
       "name": "vikunja",
@@ -8624,7 +8639,7 @@
       ]
     },
     {
-      "id": 424,
+      "id": 425,
       "type": 3,
       "title": "Vikunja v2",
       "name": "vikunja-v2",
@@ -8647,7 +8662,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 426,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -8666,7 +8681,7 @@
       ]
     },
     {
-      "id": 426,
+      "id": 427,
       "type": 3,
       "title": "Vivaldi",
       "name": "vivaldi",
@@ -8687,7 +8702,7 @@
       ]
     },
     {
-      "id": 427,
+      "id": 428,
       "type": 3,
       "title": "Vlc",
       "name": "vlc",
@@ -8708,7 +8723,7 @@
       ]
     },
     {
-      "id": 428,
+      "id": 429,
       "type": 3,
       "title": "Vscode",
       "name": "vscode",
@@ -8728,7 +8743,7 @@
       ]
     },
     {
-      "id": 429,
+      "id": 430,
       "type": 3,
       "title": "Vscodium",
       "name": "vscodium",
@@ -8748,7 +8763,7 @@
       ]
     },
     {
-      "id": 430,
+      "id": 431,
       "type": 3,
       "title": "Vscodium-web",
       "name": "vscodium-web",
@@ -8773,7 +8788,7 @@
       ]
     },
     {
-      "id": 431,
+      "id": 432,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -8803,7 +8818,7 @@
       ]
     },
     {
-      "id": 432,
+      "id": 433,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -8821,7 +8836,7 @@
       ]
     },
     {
-      "id": 433,
+      "id": 434,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -8846,7 +8861,7 @@
       ]
     },
     {
-      "id": 434,
+      "id": 435,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -8861,7 +8876,7 @@
       }
     },
     {
-      "id": 435,
+      "id": 436,
       "type": 3,
       "title": "Webcord",
       "name": "webcord",
@@ -8881,7 +8896,7 @@
       ]
     },
     {
-      "id": 436,
+      "id": 437,
       "type": 3,
       "title": "WebDAV",
       "name": "webdav",
@@ -8901,7 +8916,7 @@
       ]
     },
     {
-      "id": 437,
+      "id": 438,
       "type": 3,
       "title": "Webgrabplus",
       "name": "webgrabplus",
@@ -8921,7 +8936,7 @@
       ]
     },
     {
-      "id": 438,
+      "id": 439,
       "type": 3,
       "title": "Webstation",
       "name": "webstation",
@@ -8941,7 +8956,7 @@
       ]
     },
     {
-      "id": 439,
+      "id": 440,
       "type": 3,
       "title": "Web Sync (RSync)",
       "name": "websync",
@@ -8956,7 +8971,7 @@
       }
     },
     {
-      "id": 440,
+      "id": 441,
       "type": 3,
       "title": "Webtop",
       "name": "webtop",
@@ -8976,7 +8991,7 @@
       ]
     },
     {
-      "id": 441,
+      "id": 442,
       "type": 3,
       "title": "Weixin",
       "name": "weixin",
@@ -8996,7 +9011,7 @@
       ]
     },
     {
-      "id": 442,
+      "id": 443,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -9011,7 +9026,7 @@
       }
     },
     {
-      "id": 443,
+      "id": 444,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -9026,7 +9041,7 @@
       }
     },
     {
-      "id": 444,
+      "id": 445,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -9041,7 +9056,7 @@
       }
     },
     {
-      "id": 445,
+      "id": 446,
       "type": 3,
       "title": "Wikijs",
       "name": "wikijs",
@@ -9067,7 +9082,7 @@
       ]
     },
     {
-      "id": 446,
+      "id": 447,
       "type": 3,
       "title": "Winegui",
       "name": "winegui",
@@ -9087,7 +9102,7 @@
       ]
     },
     {
-      "id": 447,
+      "id": 448,
       "type": 3,
       "title": "Wireguard",
       "name": "wireguard",
@@ -9115,7 +9130,7 @@
       ]
     },
     {
-      "id": 448,
+      "id": 449,
       "type": 3,
       "title": "Wireshark",
       "name": "wireshark",
@@ -9135,7 +9150,7 @@
       ]
     },
     {
-      "id": 449,
+      "id": 450,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -9156,7 +9171,7 @@
       ]
     },
     {
-      "id": 450,
+      "id": 451,
       "type": 3,
       "title": "WordPress (Legacy)",
       "name": "wordpress",
@@ -9177,7 +9192,7 @@
       ]
     },
     {
-      "id": 451,
+      "id": 452,
       "type": 3,
       "title": "WordPress v7",
       "name": "wordpress-v7",
@@ -9198,7 +9213,7 @@
       ]
     },
     {
-      "id": 452,
+      "id": 453,
       "type": 3,
       "title": "Wps-office",
       "name": "wps-office",
@@ -9218,7 +9233,7 @@
       ]
     },
     {
-      "id": 453,
+      "id": 454,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -9238,7 +9253,7 @@
       ]
     },
     {
-      "id": 454,
+      "id": 455,
       "type": 3,
       "title": "Xbackbone",
       "name": "xbackbone",
@@ -9258,7 +9273,7 @@
       ]
     },
     {
-      "id": 455,
+      "id": 456,
       "type": 3,
       "title": "Xemu",
       "name": "xemu",
@@ -9278,7 +9293,7 @@
       ]
     },
     {
-      "id": 456,
+      "id": 457,
       "type": 3,
       "title": "Xvfb",
       "name": "xvfb",
@@ -9298,7 +9313,7 @@
       ]
     },
     {
-      "id": 457,
+      "id": 458,
       "type": 3,
       "title": "Yaak",
       "name": "yaak",
@@ -9318,7 +9333,7 @@
       ]
     },
     {
-      "id": 458,
+      "id": 459,
       "type": 3,
       "title": "Your_spotify",
       "name": "your-spotify",
@@ -9344,7 +9359,7 @@
       ]
     },
     {
-      "id": 459,
+      "id": 460,
       "type": 3,
       "title": "Yq",
       "name": "yq",
@@ -9364,7 +9379,7 @@
       ]
     },
     {
-      "id": 460,
+      "id": 461,
       "type": 3,
       "title": "Zen",
       "name": "zen",
@@ -9384,7 +9399,7 @@
       ]
     },
     {
-      "id": 461,
+      "id": 462,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -9399,7 +9414,7 @@
       }
     },
     {
-      "id": 462,
+      "id": 463,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -9414,7 +9429,7 @@
       }
     },
     {
-      "id": 463,
+      "id": 464,
       "type": 3,
       "title": "Znc",
       "name": "znc",
@@ -9434,7 +9449,7 @@
       ]
     },
     {
-      "id": 464,
+      "id": 465,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
