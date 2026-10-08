@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 409,
+      "id": 410,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -16,6 +16,7 @@
         {"name": "TZ", "label": "TZ", "description": "Timezone", "default": ""},
         {"name": "LOG_LEVEL", "label": "LOG_LEVEL", "description": "Log level (critical, error, warning, info, debug, trace)", "default": ""},
         {"name": "JWT_SECRET_KEY", "label": "JWT_SECRET_KEY", "description": "JWT secret key for authentication", "default": ""},
+        {"name": "AGENT_SECRET", "label": "AGENT_SECRET", "description": "Shared secret for backend-to-agent request signatures. Required for the built-in agent.", "default": ""},
         {"name": "ACCESS_TOKEN_LIFETIME_MIN", "label": "ACCESS_TOKEN_LIFETIME_MIN", "description": "Access token lifetime in minutes", "default": ""},
         {"name": "REFRESH_TOKEN_LIFETIME_MIN", "label": "REFRESH_TOKEN_LIFETIME_MIN", "description": "Refresh token lifetime in minutes", "default": ""},
         {"name": "HTTPS", "label": "HTTPS", "description": "Enable HTTPS (true/false)", "default": ""}

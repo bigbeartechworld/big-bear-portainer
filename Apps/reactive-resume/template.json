@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
       "id": 347,
       "type": 3,
-      "title": "Reactive Resume",
+      "title": "Reactive Resume (Legacy)",
       "name": "reactive-resume",
       "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
       "note": "A free and open-source resume builder",

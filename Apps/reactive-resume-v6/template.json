@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 348,
+      "type": 3,
+      "title": "Reactive Resume v6",
+      "name": "reactive-resume-v6",
+      "description": "Reactive Resume v6 resume builder. This is a new app, separate from Reactive Resume v5. v6 stores uploads on a local volume, renders PDFs in the app, and bundles PostgreSQL 18. It does not include MinIO, Redis, or Browserless. Do not attach it to a v5 database volume. A v5 database migration is one-way, and PostgreSQL 18 cannot open the v5 data directory.",
+      "note": "Reactive Resume v6",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/reactive-resume-v6/logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/reactive-resume-v6/docker-compose.yml"
+      }
+    }]}
