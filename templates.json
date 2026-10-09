@@ -3266,12 +3266,7 @@
       "repository": {
         "url": "https://github.com/bigbeartechworld/big-bear-portainer",
         "stackfile": "Apps/homarr-v2/docker-compose.yml"
-      },
-      "env": [
-        {"name": "SECRET_ENCRYPTION_KEY", "label": "SECRET_ENCRYPTION_KEY", "description": "64 character hex string. Generate with: openssl rand -hex 32. Keep the v1 key if you copy its appdata.", "default": ""},
-        {"name": "DB_DIALECT", "label": "DB_DIALECT", "description": "Database dialect. Leave sqlite unless v1 used an external PostgreSQL database, in which case set postgresql.", "default": "sqlite"},
-        {"name": "DB_URL", "label": "DB_URL", "description": "Database URL. Leave the SQLite default, or set the same PostgreSQL URL used by Homarr v1. Stop v1 and back up that database before starting v2 against it. Copying /appdata does not copy an external database.", "default": "/appdata/db/db.sqlite"}
-      ]
+      }
     },
     {
       "id": 162,
