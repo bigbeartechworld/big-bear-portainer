@@ -97,6 +97,30 @@
     {
       "id": 7,
       "type": 3,
+      "title": "AFFiNE",
+      "name": "affine",
+      "description": "AFFiNE 0.27.4 is a self-hosted workspace for docs, whiteboards, and knowledge bases, with Postgres and Redis.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/affine.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/affine/docker-compose.yml"
+      },
+      "env": [
+        {"name": "REDIS_SERVER_HOST", "label": "REDIS_SERVER_HOST", "description": "Redis hostname on the Compose network.", "default": "redis"},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Postgres URL for the AFFiNE server and migration job. Matches the postgres service, which uses trust authentication.", "default": "postgresql://affine@postgres:5432/affine"},
+        {"name": "AFFINE_INDEXER_ENABLED", "label": "AFFINE_INDEXER_ENABLED", "description": "Disable the search indexer, matching the v0.27.4 release Compose file.", "default": "false"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "affine"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "affine"},
+        {"name": "POSTGRES_INITDB_ARGS", "label": "POSTGRES_INITDB_ARGS", "description": "Arguments passed to initdb.", "default": "--data-checksums"},
+        {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Auth method from the official Compose file. Connections on the Compose network do not use a password.", "default": "trust"}
+      ]
+    },
+    {
+      "id": 8,
+      "type": 3,
       "title": "Airsonic-advanced",
       "name": "airsonic-advanced",
       "description": "Airsonic-advanced is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
@@ -117,7 +141,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "type": 3,
       "title": "Air Video HD",
       "name": "airvideohd",
@@ -132,7 +156,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 10,
       "type": 3,
       "title": "Altus",
       "name": "altus",
@@ -152,7 +176,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 11,
       "type": 3,
       "title": "Anse",
       "name": "anse",
@@ -170,7 +194,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 12,
       "type": 3,
       "title": "Apprise-api",
       "name": "apprise-api",
@@ -191,7 +215,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 13,
       "type": 3,
       "title": "Appsmith",
       "name": "appsmith",
@@ -206,7 +230,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 14,
       "type": 3,
       "title": "Archivebox",
       "name": "archivebox",
@@ -228,7 +252,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 15,
       "type": 3,
       "title": "Ardour",
       "name": "ardour",
@@ -248,7 +272,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 16,
       "type": 3,
       "title": "Arma 3 Server",
       "name": "arma3-server",
@@ -275,7 +299,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 17,
       "type": 3,
       "title": "Audacity",
       "name": "audacity",
@@ -295,7 +319,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 18,
       "type": 3,
       "title": "Audiobookshelf",
       "name": "audiobookshelf",
@@ -310,7 +334,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 19,
       "type": 3,
       "title": "Authentik",
       "name": "authentik",
@@ -325,7 +349,26 @@
       }
     },
     {
-      "id": 19,
+      "id": 20,
+      "type": 3,
+      "title": "autoxpose",
+      "name": "autoxpose",
+      "description": "autoxpose 0.5.2 watches Docker labels and creates DNS records plus reverse-proxy hosts.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/mostafa-wahied/autoxpose@main/packages/frontend/public/autoxpose-logo.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/autoxpose/docker-compose.yml"
+      },
+      "env": [
+        {"name": "SERVER_IP", "label": "SERVER_IP", "description": "Public IP or hostname written into DNS A records.", "default": ""},
+        {"name": "LAN_IP", "label": "LAN_IP", "description": "LAN address the reverse proxy uses as the upstream target.", "default": ""}
+      ]
+    },
+    {
+      "id": 21,
       "type": 3,
       "title": "Ayon",
       "name": "ayon",
@@ -340,7 +383,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 22,
       "type": 3,
       "title": "Azahar",
       "name": "azahar",
@@ -360,7 +403,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 23,
       "type": 3,
       "title": "Babybuddy",
       "name": "babybuddy",
@@ -381,7 +424,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 24,
       "type": 3,
       "title": "Bambustudio",
       "name": "bambustudio",
@@ -402,7 +445,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 25,
       "type": 3,
       "title": "Baserow",
       "name": "baserow",
@@ -420,7 +463,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 26,
       "type": 3,
       "title": "Beaver Habit Tracker",
       "name": "beaverhabits",
@@ -441,7 +484,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 27,
       "type": 3,
       "title": "Beets",
       "name": "beets",
@@ -461,7 +504,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 28,
       "type": 3,
       "title": "Beszel",
       "name": "beszel",
@@ -476,7 +519,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 29,
       "type": 3,
       "title": "Bitcoin-knots",
       "name": "bitcoin-knots",
@@ -496,7 +539,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 30,
       "type": 3,
       "title": "Blade-of-agony",
       "name": "blade-of-agony",
@@ -516,7 +559,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 31,
       "type": 3,
       "title": "Blender",
       "name": "blender",
@@ -536,7 +579,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 32,
       "type": 3,
       "title": "Boinc",
       "name": "boinc",
@@ -557,7 +600,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 33,
       "type": 3,
       "title": "BookOrbit",
       "name": "bookorbit",
@@ -584,7 +627,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 34,
       "type": 3,
       "title": "Booksonic-air",
       "name": "booksonic-air",
@@ -605,7 +648,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 35,
       "type": 3,
       "title": "bookstack",
       "name": "bookstack",
@@ -620,7 +663,7 @@
       }
     },
     {
-      "id": 34,
+      "id": 36,
       "type": 3,
       "title": "Brave",
       "name": "brave",
@@ -639,7 +682,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 37,
       "type": 3,
       "title": "btop",
       "name": "btop",
@@ -659,7 +702,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 38,
       "type": 3,
       "title": "Budge",
       "name": "budge",
@@ -679,7 +722,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 39,
       "type": 3,
       "title": "Budibase",
       "name": "budibase",
@@ -694,7 +737,7 @@
       }
     },
     {
-      "id": 38,
+      "id": 40,
       "type": 3,
       "title": "Build-agent",
       "name": "build-agent",
@@ -714,7 +757,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": 41,
       "type": 3,
       "title": "Buzz",
       "name": "buzz",
@@ -737,7 +780,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": 42,
       "type": 3,
       "title": "Caddy",
       "name": "caddy",
@@ -752,7 +795,7 @@
       }
     },
     {
-      "id": 41,
+      "id": 43,
       "type": 3,
       "title": "cAdvisor",
       "name": "cadvisor",
@@ -767,7 +810,7 @@
       }
     },
     {
-      "id": 42,
+      "id": 44,
       "type": 3,
       "title": "Cal.com",
       "name": "calcom",
@@ -806,7 +849,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": 45,
       "type": 3,
       "title": "Calibre",
       "name": "calibre",
@@ -829,7 +872,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": 46,
       "type": 3,
       "title": "Calibre-web",
       "name": "calibre-web",
@@ -851,7 +894,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": 47,
       "type": 3,
       "title": "Calligra",
       "name": "calligra",
@@ -871,7 +914,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": 48,
       "type": 3,
       "title": "Cantinarr",
       "name": "cantinarr",
@@ -890,7 +933,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": 49,
       "type": 3,
       "title": "CasaOS Toolbox",
       "name": "casaos-toolbox",
@@ -918,7 +961,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": 50,
       "type": 3,
       "title": "Celestory & Voltask",
       "name": "celestory",
@@ -944,7 +987,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": 51,
       "type": 3,
       "title": "Change Detection",
       "name": "changedetection",
@@ -959,7 +1002,7 @@
       }
     },
     {
-      "id": 50,
+      "id": 52,
       "type": 3,
       "title": "Changedetection.io",
       "name": "changedetection-io",
@@ -981,7 +1024,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": 53,
       "type": 3,
       "title": "Chatpad",
       "name": "chatpad",
@@ -996,7 +1039,7 @@
       }
     },
     {
-      "id": 52,
+      "id": 54,
       "type": 3,
       "title": "chrome",
       "name": "chrome",
@@ -1015,7 +1058,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": 55,
       "type": 3,
       "title": "chromium",
       "name": "chromium",
@@ -1036,7 +1079,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": 56,
       "type": 3,
       "title": "Ci",
       "name": "ci",
@@ -1056,7 +1099,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": 57,
       "type": 3,
       "title": "Ci-debug",
       "name": "ci-debug",
@@ -1076,7 +1119,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": 58,
       "type": 3,
       "title": "Citron",
       "name": "citron",
@@ -1096,7 +1139,28 @@
       ]
     },
     {
-      "id": 57,
+      "id": 59,
+      "type": 3,
+      "title": "Claude Code Container",
+      "name": "claude-code",
+      "description": "Claude Code Container 1.0.28 runs Anthropic Claude Code in a browser terminal and an MCP API.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/claude.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/claude-code/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ANTHROPIC_API_KEY", "label": "ANTHROPIC_API_KEY", "description": "Anthropic API key. Leave empty to sign in with OAuth in the web terminal.", "default": ""},
+        {"name": "AUTH_PASSWORD", "label": "AUTH_PASSWORD", "description": "Password for the web terminal and bearer token for the MCP API. The container exits while this is empty or still the catalog value. An empty value would otherwise open the API. Replace it in the install form before the first start. CasaOS and ZimaOS edit this literal; they do not substitute Compose variables.", "default": "9c93e0aa-ebe4-4737-b222-d6445c64da29"},
+        {"name": "MCP_ENABLED", "label": "MCP_ENABLED", "description": "Enable the MCP endpoint. Web login still runs when this is false.", "default": "true"},
+        {"name": "CLAUDE_SESSION_TTL", "label": "CLAUDE_SESSION_TTL", "description": "Seconds of inactivity before the web terminal session is closed.", "default": "1800"}
+      ]
+    },
+    {
+      "id": 60,
       "type": 3,
       "title": "Cloudflared Web",
       "name": "cloudflared-web",
@@ -1120,7 +1184,59 @@
       ]
     },
     {
-      "id": 58,
+      "id": 61,
+      "type": 3,
+      "title": "Cloudreve",
+      "name": "cloudreve",
+      "description": "Cloudreve 4.19.1 is a self-hosted file manager with multi-cloud storage, backed by Postgres and Redis.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/cloudreve.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/cloudreve/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CR_CONF_Database.Type", "label": "CR_CONF_Database.Type", "description": "Database driver.", "default": "postgres"},
+        {"name": "CR_CONF_Database.Host", "label": "CR_CONF_Database.Host", "description": "Postgres service hostname.", "default": "postgresql"},
+        {"name": "CR_CONF_Database.User", "label": "CR_CONF_Database.User", "description": "Postgres user. Matches POSTGRES_USER.", "default": "cloudreve"},
+        {"name": "CR_CONF_Database.Name", "label": "CR_CONF_Database.Name", "description": "Postgres database name. Matches POSTGRES_DB.", "default": "cloudreve"},
+        {"name": "CR_CONF_Database.Port", "label": "CR_CONF_Database.Port", "description": "Postgres port inside the Compose network.", "default": "5432"},
+        {"name": "CR_CONF_Redis.Server", "label": "CR_CONF_Redis.Server", "description": "Redis address on the Compose network.", "default": "redis:6379"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "cloudreve"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "cloudreve"},
+        {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Auth method from the official Compose file. Connections on the Compose network do not use a password.", "default": "trust"}
+      ]
+    },
+    {
+      "id": 62,
+      "type": 3,
+      "title": "Cloudreve Fork",
+      "name": "cloudreve-pro",
+      "description": "Cloudreve Fork v4.23.0 is the Dvorinka open-source Cloudreve server. It uses the same Postgres and Redis layout as upstream and is not the official paid Pro image.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/cloudreve.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/cloudreve-pro/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CR_CONF_Database.Type", "label": "CR_CONF_Database.Type", "description": "Database driver.", "default": "postgres"},
+        {"name": "CR_CONF_Database.Host", "label": "CR_CONF_Database.Host", "description": "Postgres service hostname.", "default": "postgresql"},
+        {"name": "CR_CONF_Database.User", "label": "CR_CONF_Database.User", "description": "Postgres user. Matches POSTGRES_USER.", "default": "cloudreve"},
+        {"name": "CR_CONF_Database.Name", "label": "CR_CONF_Database.Name", "description": "Postgres database name. Matches POSTGRES_DB.", "default": "cloudreve"},
+        {"name": "CR_CONF_Database.Port", "label": "CR_CONF_Database.Port", "description": "Postgres port inside the Compose network.", "default": "5432"},
+        {"name": "CR_CONF_Redis.Server", "label": "CR_CONF_Redis.Server", "description": "Redis address on the Compose network.", "default": "redis:6379"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "cloudreve"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "cloudreve"},
+        {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Auth method from the project Compose file. Connections on the Compose network do not use a password.", "default": "trust"}
+      ]
+    },
+    {
+      "id": 63,
       "type": 3,
       "title": "Code Server",
       "name": "code-server",
@@ -1140,7 +1256,30 @@
       ]
     },
     {
-      "id": 59,
+      "id": 64,
+      "type": 3,
+      "title": "Coder",
+      "name": "coder",
+      "description": "Coder v2.36.7 is a self-hosted development-platform control plane with Postgres and a Docker socket for workspace templates.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/coder.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/coder/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CODER_PG_CONNECTION_URL", "label": "CODER_PG_CONNECTION_URL", "description": "Postgres connection URL. User, password, host, and database match the database service.", "default": "postgresql://coder:918063d1-fb62-438f-8cbf-49e01f7364ff@database/coder?sslmode=disable"},
+        {"name": "CODER_HTTP_ADDRESS", "label": "CODER_HTTP_ADDRESS", "description": "Address the Coder control plane listens on inside the container.", "default": "0.0.0.0:7080"},
+        {"name": "CODER_ACCESS_URL", "label": "CODER_ACCESS_URL", "description": "URL that users and workspaces use to reach Coder. Localhost works for Docker templates on this host only.", "default": "http://localhost:7080"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "coder"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Postgres password. The same value is embedded in CODER_PG_CONNECTION_URL.", "default": "918063d1-fb62-438f-8cbf-49e01f7364ff"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "coder"}
+      ]
+    },
+    {
+      "id": 65,
       "type": 3,
       "title": "CodeX Docs",
       "name": "codex-docs",
@@ -1155,7 +1294,7 @@
       }
     },
     {
-      "id": 60,
+      "id": 66,
       "type": 3,
       "title": "Compose Toolbox",
       "name": "composetoolbox",
@@ -1173,7 +1312,29 @@
       ]
     },
     {
-      "id": 61,
+      "id": 67,
+      "type": 3,
+      "title": "Continuwuity",
+      "name": "continuwuity",
+      "description": "Continuwuity v26.7.2 is a community-driven Matrix homeserver and the continuation of conduwuit.",
+      "note": "Community Matrix homeserver",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/continuwuity.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/continuwuity/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CONTINUWUITY_SERVER_NAME", "label": "CONTINUWUITY_SERVER_NAME", "description": "Matrix server name. Cannot be changed after the first start without wiping the database.", "default": "matrix.localhost"},
+        {"name": "CONTINUWUITY_DATABASE_PATH", "label": "CONTINUWUITY_DATABASE_PATH", "description": "Database directory. Must match the data volume mount.", "default": "/var/lib/continuwuity"},
+        {"name": "CONTINUWUITY_ADDRESS", "label": "CONTINUWUITY_ADDRESS", "description": "Bind address. 0.0.0.0 listens on all interfaces inside the container.", "default": "0.0.0.0"},
+        {"name": "CONTINUWUITY_PORT", "label": "CONTINUWUITY_PORT", "description": "Port Continuwuity listens on inside the container.", "default": "8008"},
+        {"name": "CONTINUWUITY_ALLOW_FEDERATION", "label": "CONTINUWUITY_ALLOW_FEDERATION", "description": "Federation is off until a reverse proxy serves this homeserver over HTTPS.", "default": "false"}
+      ]
+    },
+    {
+      "id": 68,
       "type": 3,
       "title": "ConvertX",
       "name": "convertx",
@@ -1192,7 +1353,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": 69,
       "type": 3,
       "title": "Coolify",
       "name": "coolify",
@@ -1264,7 +1425,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": 70,
       "type": 3,
       "title": "Cops",
       "name": "cops",
@@ -1284,7 +1445,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": 71,
       "type": 3,
       "title": "Crafty Controller",
       "name": "crafty",
@@ -1302,7 +1463,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": 72,
       "type": 3,
       "title": "Cura",
       "name": "cura",
@@ -1322,7 +1483,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": 73,
       "type": 3,
       "title": "CyberChef",
       "name": "cyberchef",
@@ -1337,7 +1498,7 @@
       }
     },
     {
-      "id": 67,
+      "id": 74,
       "type": 3,
       "title": "D2-builder",
       "name": "d2-builder",
@@ -1357,7 +1518,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 75,
       "type": 3,
       "title": "Daapd",
       "name": "daapd",
@@ -1377,7 +1538,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": 76,
       "type": 3,
       "title": "Darktable",
       "name": "darktable",
@@ -1397,7 +1558,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": 77,
       "type": 3,
       "title": "Dashdot",
       "name": "dashdot",
@@ -1412,7 +1573,7 @@
       }
     },
     {
-      "id": 71,
+      "id": 78,
       "type": 3,
       "title": "Dashy (Legacy)",
       "name": "dashy",
@@ -1430,7 +1591,7 @@
       ]
     },
     {
-      "id": 72,
+      "id": 79,
       "type": 3,
       "title": "Dashy v4",
       "name": "dashy-v4",
@@ -1448,7 +1609,7 @@
       ]
     },
     {
-      "id": 73,
+      "id": 80,
       "type": 3,
       "title": "Davis",
       "name": "davis",
@@ -1481,7 +1642,7 @@
       ]
     },
     {
-      "id": 74,
+      "id": 81,
       "type": 3,
       "title": "DBGate",
       "name": "dbgate",
@@ -1496,7 +1657,7 @@
       }
     },
     {
-      "id": 75,
+      "id": 82,
       "type": 3,
       "title": "Ddclient",
       "name": "ddclient",
@@ -1516,7 +1677,7 @@
       ]
     },
     {
-      "id": 76,
+      "id": 83,
       "type": 3,
       "title": "Digikam",
       "name": "digikam",
@@ -1536,7 +1697,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 84,
       "type": 3,
       "title": "Dillinger",
       "name": "dillinger",
@@ -1556,7 +1717,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": 85,
       "type": 3,
       "title": "DiscoPanel",
       "name": "discopanel",
@@ -1576,7 +1737,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": 86,
       "type": 3,
       "title": "Diskover",
       "name": "diskover",
@@ -1598,7 +1759,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": 87,
       "type": 3,
       "title": "DIUN",
       "name": "diun",
@@ -1620,7 +1781,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": 88,
       "type": 3,
       "title": "Docker Cron Restart Notifier",
       "name": "docker-cron-restart-notifier",
@@ -1641,7 +1802,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": 89,
       "type": 3,
       "title": "Dockge",
       "name": "dockge",
@@ -1656,7 +1817,7 @@
       }
     },
     {
-      "id": 83,
+      "id": 90,
       "type": 3,
       "title": "Dockhand",
       "name": "dockhand",
@@ -1671,7 +1832,7 @@
       }
     },
     {
-      "id": 84,
+      "id": 91,
       "type": 3,
       "title": "Dockpeek",
       "name": "dockpeek",
@@ -1692,7 +1853,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": 92,
       "type": 3,
       "title": "Docmost",
       "name": "docmost",
@@ -1713,7 +1874,58 @@
       ]
     },
     {
-      "id": 86,
+      "id": 93,
+      "type": 3,
+      "title": "Documenso",
+      "name": "documenso",
+      "description": "Documenso v2.19.0 is an open-source document signing platform backed by PostgreSQL.",
+      "note": "Open source document signing",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/documenso.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/documenso/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PORT", "label": "PORT", "description": "Port Documenso listens on inside the container.", "default": "3000"},
+        {"name": "NEXTAUTH_SECRET", "label": "NEXTAUTH_SECRET", "description": "Session secret.", "default": "HlLbSGA2KdCiFkgFK2QCbocNRMQYCuyHcdw0HybLaks"},
+        {"name": "NEXT_PRIVATE_ENCRYPTION_KEY", "label": "NEXT_PRIVATE_ENCRYPTION_KEY", "description": "Primary encryption key. At least 32 characters.", "default": "z7k14oDge1HeVUG2LlT3aQeypUTr8NH-JID_K6tYUO0"},
+        {"name": "NEXT_PRIVATE_ENCRYPTION_SECONDARY_KEY", "label": "NEXT_PRIVATE_ENCRYPTION_SECONDARY_KEY", "description": "Secondary encryption key. At least 32 characters.", "default": "utotV_gd2gwCIO5BGo-E72vSqI24hOittOVkWfbqBAg"},
+        {"name": "NEXT_PUBLIC_WEBAPP_URL", "label": "NEXT_PUBLIC_WEBAPP_URL", "description": "Public URL where browsers reach Documenso.", "default": "http://localhost:20030"},
+        {"name": "NEXT_PRIVATE_INTERNAL_WEBAPP_URL", "label": "NEXT_PRIVATE_INTERNAL_WEBAPP_URL", "description": "URL the app uses to call itself inside the container.", "default": "http://localhost:3000"},
+        {"name": "NEXT_PRIVATE_DATABASE_URL", "label": "NEXT_PRIVATE_DATABASE_URL", "description": "PostgreSQL connection string. Must match the database service.", "default": "postgresql://documenso:68a9a162-7781-4a5e-be4f-3c4256932a98@documenso-db:5432/documenso"},
+        {"name": "NEXT_PRIVATE_DIRECT_DATABASE_URL", "label": "NEXT_PRIVATE_DIRECT_DATABASE_URL", "description": "Direct PostgreSQL connection string used for migrations.", "default": "postgresql://documenso:68a9a162-7781-4a5e-be4f-3c4256932a98@documenso-db:5432/documenso"},
+        {"name": "NEXT_PUBLIC_UPLOAD_TRANSPORT", "label": "NEXT_PUBLIC_UPLOAD_TRANSPORT", "description": "Store uploaded files in PostgreSQL.", "default": "database"},
+        {"name": "NEXT_PRIVATE_SMTP_TRANSPORT", "label": "NEXT_PRIVATE_SMTP_TRANSPORT", "description": "Email transport. smtp-auth is username and password SMTP.", "default": "smtp-auth"},
+        {"name": "NEXT_PRIVATE_SMTP_HOST", "label": "NEXT_PRIVATE_SMTP_HOST", "description": "SMTP server hostname. Replace with a real server before sending mail.", "default": "smtp.example.com"},
+        {"name": "NEXT_PRIVATE_SMTP_PORT", "label": "NEXT_PRIVATE_SMTP_PORT", "description": "SMTP server port.", "default": "587"},
+        {"name": "NEXT_PRIVATE_SMTP_USERNAME", "label": "NEXT_PRIVATE_SMTP_USERNAME", "description": "SMTP username. Replace with the real account.", "default": "documenso-4RI74RoG"},
+        {"name": "NEXT_PRIVATE_SMTP_PASSWORD", "label": "NEXT_PRIVATE_SMTP_PASSWORD", "description": "SMTP password. Replace with the real account password.", "default": "61e22c1d-6f27-4542-a49d-47f36c1b0da6"},
+        {"name": "NEXT_PRIVATE_SMTP_FROM_NAME", "label": "NEXT_PRIVATE_SMTP_FROM_NAME", "description": "Display name on outgoing email.", "default": "Documenso"},
+        {"name": "NEXT_PRIVATE_SMTP_FROM_ADDRESS", "label": "NEXT_PRIVATE_SMTP_FROM_ADDRESS", "description": "From address on outgoing email.", "default": "noreply@localhost"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user for the documenso-db service.", "default": "documenso"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password. Must match the database URLs.", "default": "68a9a162-7781-4a5e-be4f-3c4256932a98"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "documenso"}
+      ]
+    },
+    {
+      "id": 94,
+      "type": 3,
+      "title": "DocuSeal",
+      "name": "docuseal",
+      "description": "DocuSeal 3.3.1 is an open-source platform to create, fill, and sign PDF documents.",
+      "note": "Open source PDF signing",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/docuseal.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/docuseal/docker-compose.yml"
+      }
+    },
+    {
+      "id": 95,
       "type": 3,
       "title": "Dogwalk",
       "name": "dogwalk",
@@ -1733,7 +1945,7 @@
       ]
     },
     {
-      "id": 87,
+      "id": 96,
       "type": 3,
       "title": "Dokuwiki",
       "name": "dokuwiki",
@@ -1753,7 +1965,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 97,
       "type": 3,
       "title": "Dolphin",
       "name": "dolphin",
@@ -1773,7 +1985,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": 98,
       "type": 3,
       "title": "Domain Locker",
       "name": "domainlocker",
@@ -1796,7 +2008,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": 99,
       "type": 3,
       "title": "Domoticz",
       "name": "domoticz",
@@ -1818,7 +2030,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 100,
       "type": 3,
       "title": "Dosbox-staging",
       "name": "dosbox-staging",
@@ -1838,7 +2050,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": 101,
       "type": 3,
       "title": "Doublecommander",
       "name": "doublecommander",
@@ -1858,7 +2070,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 102,
       "type": 3,
       "title": "Dozzle",
       "name": "dozzle",
@@ -1873,7 +2085,7 @@
       }
     },
     {
-      "id": 94,
+      "id": 103,
       "type": 3,
       "title": "Draw.io",
       "name": "drawio",
@@ -1888,7 +2100,7 @@
       }
     },
     {
-      "id": 95,
+      "id": 104,
       "type": 3,
       "title": "Duckdns",
       "name": "duckdns",
@@ -1912,7 +2124,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 105,
       "type": 3,
       "title": "Duckstation",
       "name": "duckstation",
@@ -1932,7 +2144,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 106,
       "type": 3,
       "title": "Duplicati",
       "name": "duplicati",
@@ -1955,7 +2167,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 107,
       "type": 3,
       "title": "Eden",
       "name": "eden",
@@ -1975,7 +2187,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 108,
       "type": 3,
       "title": "EJBCA Community",
       "name": "ejbca-ce",
@@ -1993,7 +2205,7 @@
       ]
     },
     {
-      "id": 100,
+      "id": 109,
       "type": 3,
       "title": "Emby",
       "name": "emby",
@@ -2013,7 +2225,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": 110,
       "type": 3,
       "title": "Embystat",
       "name": "embystat",
@@ -2033,7 +2245,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": 111,
       "type": 3,
       "title": "Emulatorjs",
       "name": "emulatorjs",
@@ -2054,7 +2266,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": 112,
       "type": 3,
       "title": "Endlessh",
       "name": "endlessh",
@@ -2079,7 +2291,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": 113,
       "type": 3,
       "title": "Ente Photos",
       "name": "ente",
@@ -2100,7 +2312,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 114,
       "type": 3,
       "title": "Erugo",
       "name": "erugo",
@@ -2115,7 +2327,7 @@
       }
     },
     {
-      "id": 106,
+      "id": 115,
       "type": 3,
       "title": "ESPHome",
       "name": "esphome",
@@ -2134,7 +2346,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 116,
       "type": 3,
       "title": "Eufy Security WS",
       "name": "eufy-security-ws",
@@ -2156,7 +2368,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": 117,
       "type": 3,
       "title": "Excalidraw",
       "name": "excalidraw",
@@ -2171,7 +2383,7 @@
       }
     },
     {
-      "id": 109,
+      "id": 118,
       "type": 3,
       "title": "Fail2ban",
       "name": "fail2ban",
@@ -2192,7 +2404,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 119,
       "type": 3,
       "title": "FarmOS (Legacy)",
       "name": "farmos",
@@ -2207,7 +2419,7 @@
       }
     },
     {
-      "id": 111,
+      "id": 120,
       "type": 3,
       "title": "FarmOS v4",
       "name": "farmos-v4",
@@ -2222,7 +2434,7 @@
       }
     },
     {
-      "id": 112,
+      "id": 121,
       "type": 3,
       "title": "Faster-whisper",
       "name": "faster-whisper",
@@ -2237,7 +2449,7 @@
       }
     },
     {
-      "id": 113,
+      "id": 122,
       "type": 3,
       "title": "Fastfetch",
       "name": "fastfetch",
@@ -2252,7 +2464,7 @@
       }
     },
     {
-      "id": 114,
+      "id": 123,
       "type": 3,
       "title": "Feed2toot",
       "name": "feed2toot",
@@ -2273,7 +2485,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 124,
       "type": 3,
       "title": "Ferdium",
       "name": "ferdium",
@@ -2293,7 +2505,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 125,
       "type": 3,
       "title": "Ffmpeg",
       "name": "ffmpeg",
@@ -2313,7 +2525,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 126,
       "type": 3,
       "title": "Filebrowser",
       "name": "filebrowser",
@@ -2332,7 +2544,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 127,
       "type": 3,
       "title": "FileBrowser Quantum",
       "name": "filebrowser-quantum",
@@ -2350,7 +2562,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 128,
       "type": 3,
       "title": "Filezilla",
       "name": "filezilla",
@@ -2370,7 +2582,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 129,
       "type": 3,
       "title": "Financial Freedom",
       "name": "financial-freedom",
@@ -2417,7 +2629,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 130,
       "type": 3,
       "title": "Firefox",
       "name": "firefox",
@@ -2438,7 +2650,7 @@
       ]
     },
     {
-      "id": 122,
+      "id": 131,
       "type": 3,
       "title": "Fireshare",
       "name": "fireshare",
@@ -2464,7 +2676,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": 132,
       "type": 3,
       "title": "Flame",
       "name": "flame",
@@ -2482,7 +2694,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 133,
       "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
@@ -2501,7 +2713,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 134,
       "type": 3,
       "title": "Fleet",
       "name": "fleet",
@@ -2526,7 +2738,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": 135,
       "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
@@ -2556,7 +2768,7 @@
       ]
     },
     {
-      "id": 127,
+      "id": 136,
       "type": 3,
       "title": "Flycast",
       "name": "flycast",
@@ -2576,7 +2788,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": 137,
       "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
@@ -2591,7 +2803,7 @@
       }
     },
     {
-      "id": 129,
+      "id": 138,
       "type": 3,
       "title": "Foldingathome",
       "name": "foldingathome",
@@ -2614,7 +2826,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 139,
       "type": 3,
       "title": "Freecad",
       "name": "freecad",
@@ -2634,7 +2846,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 140,
       "type": 3,
       "title": "Freshrss",
       "name": "freshrss",
@@ -2654,7 +2866,30 @@
       ]
     },
     {
-      "id": 132,
+      "id": 141,
+      "type": 3,
+      "title": "GameVault",
+      "name": "gamevault",
+      "description": "GameVault 17.0.1 is a self-hosted library for DRM-free games, with a web UI and PostgreSQL.",
+      "note": "Self-hosted DRM-free game library",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/gamevault.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/gamevault/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "PostgreSQL hostname. Must be the database service name.", "default": "gamevault-db"},
+        {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "PostgreSQL user. Must match POSTGRES_USER.", "default": "gamevault"},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "PostgreSQL password. Must match POSTGRES_PASSWORD and must not be empty.", "default": "02386af9-382f-49ad-841b-060735fd14d7"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user for the gamevault-db service.", "default": "gamevault"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password for the gamevault-db service.", "default": "02386af9-382f-49ad-841b-060735fd14d7"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "gamevault"}
+      ]
+    },
+    {
+      "id": 142,
       "type": 3,
       "title": "Genmon",
       "name": "genmon",
@@ -2669,7 +2904,7 @@
       }
     },
     {
-      "id": 133,
+      "id": 143,
       "type": 3,
       "title": "Ghost",
       "name": "ghost",
@@ -2692,7 +2927,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": 144,
       "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
@@ -2721,7 +2956,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": 145,
       "type": 3,
       "title": "Gimp",
       "name": "gimp",
@@ -2741,7 +2976,7 @@
       ]
     },
     {
-      "id": 136,
+      "id": 146,
       "type": 3,
       "title": "Gitea",
       "name": "gitea",
@@ -2763,7 +2998,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": 147,
       "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
@@ -2785,7 +3020,7 @@
       ]
     },
     {
-      "id": 138,
+      "id": 148,
       "type": 3,
       "title": "Github-desktop",
       "name": "github-desktop",
@@ -2805,7 +3040,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": 149,
       "type": 3,
       "title": "Gitqlient",
       "name": "gitqlient",
@@ -2825,7 +3060,7 @@
       ]
     },
     {
-      "id": 140,
+      "id": 150,
       "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
@@ -2846,7 +3081,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 151,
       "type": 3,
       "title": "Glance",
       "name": "glance",
@@ -2861,7 +3096,7 @@
       }
     },
     {
-      "id": 142,
+      "id": 152,
       "type": 3,
       "title": "Glances",
       "name": "glances",
@@ -2880,7 +3115,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": 153,
       "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
@@ -2895,7 +3130,7 @@
       }
     },
     {
-      "id": 144,
+      "id": 154,
       "type": 3,
       "title": "GoAway",
       "name": "goaway",
@@ -2910,7 +3145,7 @@
       }
     },
     {
-      "id": 145,
+      "id": 155,
       "type": 3,
       "title": "Gotify",
       "name": "gotify",
@@ -2929,7 +3164,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": 156,
       "type": 3,
       "title": "Grav",
       "name": "grav",
@@ -2949,7 +3184,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": 157,
       "type": 3,
       "title": "Grocy",
       "name": "grocy",
@@ -2969,7 +3204,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 158,
       "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
@@ -2991,7 +3226,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 159,
       "type": 3,
       "title": "Gzdoom",
       "name": "gzdoom",
@@ -3011,7 +3246,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 160,
       "type": 3,
       "title": "Habridge",
       "name": "habridge",
@@ -3032,7 +3267,7 @@
       ]
     },
     {
-      "id": 151,
+      "id": 161,
       "type": 3,
       "title": "Handbrake",
       "name": "handbrake",
@@ -3052,7 +3287,7 @@
       ]
     },
     {
-      "id": 152,
+      "id": 162,
       "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
@@ -3091,7 +3326,7 @@
       ]
     },
     {
-      "id": 153,
+      "id": 163,
       "type": 3,
       "title": "Hedgedoc",
       "name": "hedgedoc",
@@ -3122,7 +3357,7 @@
       ]
     },
     {
-      "id": 154,
+      "id": 164,
       "type": 3,
       "title": "Heimdall",
       "name": "heimdall",
@@ -3143,7 +3378,7 @@
       ]
     },
     {
-      "id": 155,
+      "id": 165,
       "type": 3,
       "title": "Helium",
       "name": "helium",
@@ -3164,7 +3399,7 @@
       ]
     },
     {
-      "id": 156,
+      "id": 166,
       "type": 3,
       "title": "Hermes Agent",
       "name": "hermes",
@@ -3184,7 +3419,7 @@
       ]
     },
     {
-      "id": 157,
+      "id": 167,
       "type": 3,
       "title": "Hestia CP",
       "name": "hestiacp",
@@ -3202,7 +3437,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": 168,
       "type": 3,
       "title": "Hishtory-server",
       "name": "hishtory-server",
@@ -3224,7 +3459,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 169,
       "type": 3,
       "title": "Homarr",
       "name": "homarr",
@@ -3239,7 +3474,7 @@
       }
     },
     {
-      "id": 160,
+      "id": 170,
       "type": 3,
       "title": "Homarr v1 (Legacy)",
       "name": "homarr-v1",
@@ -3254,7 +3489,7 @@
       }
     },
     {
-      "id": 161,
+      "id": 171,
       "type": 3,
       "title": "Homarr v2",
       "name": "homarr-v2",
@@ -3269,7 +3504,7 @@
       }
     },
     {
-      "id": 162,
+      "id": 172,
       "type": 3,
       "title": "Home Assistant",
       "name": "home-assistant",
@@ -3284,7 +3519,7 @@
       }
     },
     {
-      "id": 163,
+      "id": 173,
       "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
@@ -3299,7 +3534,61 @@
       }
     },
     {
-      "id": 164,
+      "id": 174,
+      "type": 3,
+      "title": "Homedex",
+      "name": "homedex",
+      "description": "Homedex 0.2.5 is a read-only homelab inventory of services, ports, routes, and certificate expiry.",
+      "note": "Read-only homelab inventory",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/homedex.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/homedex/docker-compose.yml"
+      },
+      "env": [
+        {"name": "HOMEDEX_DATA_DIR", "label": "HOMEDEX_DATA_DIR", "description": "Directory for the SQLite inventory.", "default": "/data"},
+        {"name": "HOMEDEX_LISTEN", "label": "HOMEDEX_LISTEN", "description": "Address and port Homedex listens on inside the container.", "default": ":7377"},
+        {"name": "HOMEDEX_ADMIN_PASSWORD", "label": "HOMEDEX_ADMIN_PASSWORD", "description": "Admin password stored as an Argon2id hash on first start. Homedex 0.2.5 exits while this is shorter than 12 characters, so replace CHANGE_ME before the first start. Ignored after an admin exists.", "default": "CHANGE_ME"},
+        {"name": "CONTAINERS", "label": "CONTAINERS", "description": "Allow the socket proxy to read Docker containers.", "default": "1"},
+        {"name": "IMAGES", "label": "IMAGES", "description": "Allow the socket proxy to read Docker images.", "default": "1"},
+        {"name": "INFO", "label": "INFO", "description": "Allow the socket proxy to read Docker info.", "default": "1"},
+        {"name": "NETWORKS", "label": "NETWORKS", "description": "Allow the socket proxy to read Docker networks.", "default": "1"},
+        {"name": "VERSION", "label": "VERSION", "description": "Allow the socket proxy to read the Docker version.", "default": "1"},
+        {"name": "POST", "label": "POST", "description": "Disable mutating Docker API calls on the socket proxy.", "default": "0"},
+        {"name": "ALLOW_START", "label": "ALLOW_START", "description": "Deny container start through the socket proxy.", "default": "0"},
+        {"name": "ALLOW_STOP", "label": "ALLOW_STOP", "description": "Deny container stop through the socket proxy.", "default": "0"},
+        {"name": "ALLOW_RESTARTS", "label": "ALLOW_RESTARTS", "description": "Deny container restart through the socket proxy.", "default": "0"}
+      ]
+    },
+    {
+      "id": 175,
+      "type": 3,
+      "title": "Homelable",
+      "name": "homelable",
+      "description": "Homelable 3.5.1 is a self-hosted homelab diagram with live status monitoring.",
+      "note": "Homelab network diagram",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/homelable.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/homelable/docker-compose.yml"
+      },
+      "env": [
+        {"name": "BACKEND_UPSTREAM", "label": "BACKEND_UPSTREAM", "description": "Nginx upstream for the API. The backend service name must stay backend.", "default": "backend:8000"},
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Backend secret key.", "default": "j1Y2R1xaVZDUSdCvOXz7dvJhkfljx1PZJyH3pjffwMA"},
+        {"name": "SQLITE_PATH", "label": "SQLITE_PATH", "description": "SQLite database path inside the data volume.", "default": "/app/data/homelab.db"},
+        {"name": "CORS_ORIGINS", "label": "CORS_ORIGINS", "description": "Browser origins allowed to call the API.", "default": "[\"http://localhost:20033\"]"},
+        {"name": "AUTH_MODE", "label": "AUTH_MODE", "description": "Local username and password authentication.", "default": "local"},
+        {"name": "AUTH_USERNAME", "label": "AUTH_USERNAME", "description": "Local login username.", "default": "admin"},
+        {"name": "AUTH_PASSWORD_HASH", "label": "AUTH_PASSWORD_HASH", "description": "bcrypt hash of the local login password. Dollar signs are escaped in the compose file.", "default": "$2y$12$.578Mwn8ZZsSrG.o1.zDR.N3sIHeeLWcXOQsfeT1v5l9Vz2zqMJTi"},
+        {"name": "SCANNER_RANGES", "label": "SCANNER_RANGES", "description": "JSON array of CIDR ranges to scan. Empty until you set your LAN.", "default": "[]"}
+      ]
+    },
+    {
+      "id": 176,
       "type": 3,
       "title": "Homer",
       "name": "homer",
@@ -3317,7 +3606,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 177,
       "type": 3,
       "title": "HRConvert2",
       "name": "hrconvert2",
@@ -3332,7 +3621,7 @@
       }
     },
     {
-      "id": 166,
+      "id": 178,
       "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
@@ -3354,7 +3643,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 179,
       "type": 3,
       "title": "Immich",
       "name": "immich",
@@ -3378,7 +3667,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 180,
       "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
@@ -3409,7 +3698,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 181,
       "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
@@ -3431,7 +3720,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 182,
       "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
@@ -3454,7 +3743,52 @@
       ]
     },
     {
-      "id": 171,
+      "id": 183,
+      "type": 3,
+      "title": "Indelible",
+      "name": "indelible",
+      "description": "Indelible is a self-hosted read-it-later and knowledge library. It stores articles, newsletters, PDFs, and EPUBs in PostgreSQL and an S3-compatible object store, and the API serves the web app on the same port.",
+      "note": "Self-hosted read-it-later library",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/useindelible/indelible@v0.1.1/web/static/favicon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/indelible/docker-compose.yml"
+      },
+      "env": [
+        {"name": "IND_ENV", "label": "IND_ENV", "description": "Local trial mode. Production requires an https IND_BASE_URL and refuses plain HTTP.", "default": "development"},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "PostgreSQL connection string for the postgres service. The database must provide pgvector.", "default": "postgres://indelible:1c200d72-b081-4f40-a3c3-cb98d604ad76@postgres:5432/indelible"},
+        {"name": "S3_ENDPOINT", "label": "S3_ENDPOINT", "description": "S3-compatible endpoint for the bundled Silo service.", "default": "http://silo:9000"},
+        {"name": "S3_REGION", "label": "S3_REGION", "description": "Region sent to Silo.", "default": "us-east-1"},
+        {"name": "S3_BUCKET", "label": "S3_BUCKET", "description": "Bucket created by indelible-silo-init.", "default": "indelible"},
+        {"name": "S3_ACCESS_KEY", "label": "S3_ACCESS_KEY", "description": "Silo access key. Matches MINIO_ROOT_USER.", "default": "indelible"},
+        {"name": "S3_SECRET_KEY", "label": "S3_SECRET_KEY", "description": "Silo secret. Matches MINIO_ROOT_PASSWORD.", "default": "2f32d346-ff03-48cb-bfed-2ead51511aa8"},
+        {"name": "S3_FORCE_PATH_STYLE", "label": "S3_FORCE_PATH_STYLE", "description": "Path-style URLs, required for Silo.", "default": "true"},
+        {"name": "AUTH_CREDENTIAL_KEY", "label": "AUTH_CREDENTIAL_KEY", "description": "Base64 of 32 random bytes. Must be identical on the API and worker.", "default": "PFy8QhmU0ZU6H1RFu/ZiIYaEZxVBFPMs4JqHWJ840ZI="},
+        {"name": "EGRESS_ALLOW_PRIVATE_TARGETS", "label": "EGRESS_ALLOW_PRIVATE_TARGETS", "description": "Keep the SSRF guard closed. Set true only to reach an AI server on the host.", "default": "false"},
+        {"name": "IND_HOST", "label": "IND_HOST", "description": "API bind address.", "default": "0.0.0.0"},
+        {"name": "IND_PORT", "label": "IND_PORT", "description": "Port the published API image listens on.", "default": "8080"},
+        {"name": "IND_BASE_URL", "label": "IND_BASE_URL", "description": "Public URL of this instance for the local trial.", "default": "http://localhost:38473"},
+        {"name": "FRONTEND_URL", "label": "FRONTEND_URL", "description": "Web origin. Must match IND_BASE_URL.", "default": "http://localhost:38473"},
+        {"name": "CORS_ORIGINS", "label": "CORS_ORIGINS", "description": "Origins allowed to refresh a session.", "default": "http://localhost:38473"},
+        {"name": "EXTENSION_REDIRECT_URIS", "label": "EXTENSION_REDIRECT_URIS", "description": "Browser extension identity callbacks from the v0.1.1 local compose.", "default": "https://jidilhjojlgndbpeooeeceohmkedooef.chromiumapp.org/indelible,https://38bd18db5de5caccb6ab6c1271fec03ec1662d5c.extensions.allizom.org/indelible"},
+        {"name": "JWT_SECRET", "label": "JWT_SECRET", "description": "Signs session tokens.", "default": "GuLcGAJ92GTP4Xg-iUJCs44iB6bf7vebfRVEofYB0OM"},
+        {"name": "CSRF_SECRET", "label": "CSRF_SECRET", "description": "CSRF secret.", "default": "F3uBgXCtF4d79aPkxskk5aBEjTP4nhiMXe-FN2A15Co"},
+        {"name": "ASSET_COOKIE_SECRET", "label": "ASSET_COOKIE_SECRET", "description": "64 hex characters. Signs short-lived asset cookies.", "default": "32e43181ad36e8465cb37f846b0d4117ef56402764aa5f9757055b3fac419e98"},
+        {"name": "OIDC_ENABLED", "label": "OIDC_ENABLED", "description": "Leave false unless OIDC issuer, client id, and client secret are set.", "default": "false"},
+        {"name": "RENDERER_HOST", "label": "RENDERER_HOST", "description": "Renderer bind address.", "default": "0.0.0.0"},
+        {"name": "RENDERER_PORT", "label": "RENDERER_PORT", "description": "Renderer listen port on the compose network.", "default": "3100"},
+        {"name": "RENDERER_URL", "label": "RENDERER_URL", "description": "Worker address for the renderer service.", "default": "http://renderer:3100"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user.", "default": "indelible"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password. Must match DATABASE_URL.", "default": "1c200d72-b081-4f40-a3c3-cb98d604ad76"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "indelible"},
+        {"name": "MINIO_ROOT_USER", "label": "MINIO_ROOT_USER", "description": "Silo root user.", "default": "indelible"},
+        {"name": "MINIO_ROOT_PASSWORD", "label": "MINIO_ROOT_PASSWORD", "description": "Silo root password. Must match S3_SECRET_KEY. indelible-silo-init reads this environment value, so change it here rather than in the command.", "default": "2f32d346-ff03-48cb-bfed-2ead51511aa8"}
+      ]
+    },
+    {
+      "id": 184,
       "type": 3,
       "title": "Inkscape",
       "name": "inkscape",
@@ -3474,7 +3808,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 185,
       "type": 3,
       "title": "Intellij-idea",
       "name": "intellij-idea",
@@ -3494,7 +3828,7 @@
       ]
     },
     {
-      "id": 173,
+      "id": 186,
       "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
@@ -3509,7 +3843,7 @@
       }
     },
     {
-      "id": 174,
+      "id": 187,
       "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
@@ -3524,7 +3858,7 @@
       }
     },
     {
-      "id": 175,
+      "id": 188,
       "type": 3,
       "title": "Jellyfin",
       "name": "jellyfin",
@@ -3545,7 +3879,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 189,
       "type": 3,
       "title": "Jellyseerr (Legacy)",
       "name": "jellyseerr",
@@ -3564,7 +3898,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 190,
       "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
@@ -3579,7 +3913,7 @@
       }
     },
     {
-      "id": 178,
+      "id": 191,
       "type": 3,
       "title": "Jenkins-builder",
       "name": "jenkins-builder",
@@ -3599,7 +3933,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 192,
       "type": 3,
       "title": "jfa-go",
       "name": "jfa-go",
@@ -3614,7 +3948,7 @@
       }
     },
     {
-      "id": 180,
+      "id": 193,
       "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
@@ -3633,7 +3967,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 194,
       "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
@@ -3651,7 +3985,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 195,
       "type": 3,
       "title": "Joomla",
       "name": "joomla",
@@ -3671,7 +4005,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 196,
       "type": 3,
       "title": "joplin",
       "name": "joplin",
@@ -3697,7 +4031,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 197,
       "type": 3,
       "title": "Kali-linux",
       "name": "kali-linux",
@@ -3717,7 +4051,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 198,
       "type": 3,
       "title": "Kasm",
       "name": "kasm",
@@ -3732,7 +4066,7 @@
       }
     },
     {
-      "id": 186,
+      "id": 199,
       "type": 3,
       "title": "Kavita",
       "name": "kavita",
@@ -3747,7 +4081,7 @@
       }
     },
     {
-      "id": 187,
+      "id": 200,
       "type": 3,
       "title": "Kdenlive",
       "name": "kdenlive",
@@ -3767,7 +4101,7 @@
       ]
     },
     {
-      "id": 188,
+      "id": 201,
       "type": 3,
       "title": "Keepassxc",
       "name": "keepassxc",
@@ -3787,7 +4121,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 202,
       "type": 3,
       "title": "Kicad",
       "name": "kicad",
@@ -3807,7 +4141,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 203,
       "type": 3,
       "title": "Kimai",
       "name": "kimai",
@@ -3831,7 +4165,7 @@
       ]
     },
     {
-      "id": 191,
+      "id": 204,
       "type": 3,
       "title": "KitchenOwl",
       "name": "kitchenowl",
@@ -3849,7 +4183,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 205,
       "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
@@ -3864,7 +4198,7 @@
       }
     },
     {
-      "id": 193,
+      "id": 206,
       "type": 3,
       "title": "Kometa",
       "name": "kometa",
@@ -3889,7 +4223,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": 207,
       "type": 3,
       "title": "Komf",
       "name": "komf",
@@ -3913,7 +4247,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 208,
       "type": 3,
       "title": "Komga",
       "name": "komga",
@@ -3931,7 +4265,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 209,
       "type": 3,
       "title": "Kopia",
       "name": "kopia",
@@ -3946,7 +4280,7 @@
       }
     },
     {
-      "id": 197,
+      "id": 210,
       "type": 3,
       "title": "Krita",
       "name": "krita",
@@ -3966,7 +4300,7 @@
       ]
     },
     {
-      "id": 198,
+      "id": 211,
       "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
@@ -3981,7 +4315,7 @@
       }
     },
     {
-      "id": 199,
+      "id": 212,
       "type": 3,
       "title": "Ldap-auth",
       "name": "ldap-auth",
@@ -4004,7 +4338,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 213,
       "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
@@ -4019,7 +4353,7 @@
       }
     },
     {
-      "id": 201,
+      "id": 214,
       "type": 3,
       "title": "Libreoffice",
       "name": "libreoffice",
@@ -4039,7 +4373,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 215,
       "type": 3,
       "title": "Librespeed",
       "name": "librespeed",
@@ -4068,7 +4402,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 216,
       "type": 3,
       "title": "LibreTranslate",
       "name": "libretranslate",
@@ -4083,7 +4417,7 @@
       }
     },
     {
-      "id": 204,
+      "id": 217,
       "type": 3,
       "title": "Librewolf",
       "name": "librewolf",
@@ -4104,7 +4438,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 218,
       "type": 3,
       "title": "Limnoria",
       "name": "limnoria",
@@ -4124,7 +4458,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 219,
       "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
@@ -4139,7 +4473,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 220,
       "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -4154,7 +4488,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 221,
       "type": 3,
       "title": "Lm-studio",
       "name": "lm-studio",
@@ -4174,7 +4508,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 222,
       "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -4195,7 +4529,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 223,
       "type": 3,
       "title": "Lollypop",
       "name": "lollypop",
@@ -4215,7 +4549,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 224,
       "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
@@ -4245,7 +4579,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 225,
       "type": 3,
       "title": "Lsio-api",
       "name": "lsio-api",
@@ -4265,7 +4599,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 226,
       "type": 3,
       "title": "Luanti",
       "name": "luanti",
@@ -4286,7 +4620,7 @@
       ]
     },
     {
-      "id": 214,
+      "id": 227,
       "type": 3,
       "title": "Lychee",
       "name": "lychee",
@@ -4315,7 +4649,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 228,
       "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
@@ -4333,7 +4667,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": 229,
       "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
@@ -4351,7 +4685,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 230,
       "type": 3,
       "title": "Mame",
       "name": "mame",
@@ -4371,7 +4705,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 231,
       "type": 3,
       "title": "Manyfold",
       "name": "manyfold",
@@ -4394,7 +4728,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 232,
       "type": 3,
       "title": "Mariadb",
       "name": "mariadb",
@@ -4420,7 +4754,7 @@
       ]
     },
     {
-      "id": 220,
+      "id": 233,
       "type": 3,
       "title": "Mastodon",
       "name": "mastodon",
@@ -4478,7 +4812,7 @@
       ]
     },
     {
-      "id": 221,
+      "id": 234,
       "type": 3,
       "title": "Matterbridge",
       "name": "matterbridge",
@@ -4493,7 +4827,7 @@
       }
     },
     {
-      "id": 222,
+      "id": 235,
       "type": 3,
       "title": "Maybe Finance",
       "name": "maybe-finance",
@@ -4518,7 +4852,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 236,
       "type": 3,
       "title": "Mealie",
       "name": "mealie",
@@ -4533,7 +4867,7 @@
       }
     },
     {
-      "id": 224,
+      "id": 237,
       "type": 3,
       "title": "Mediaelch",
       "name": "mediaelch",
@@ -4553,7 +4887,7 @@
       ]
     },
     {
-      "id": 225,
+      "id": 238,
       "type": 3,
       "title": "Melonds",
       "name": "melonds",
@@ -4573,7 +4907,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": 239,
       "type": 3,
       "title": "Microbin",
       "name": "microbin",
@@ -4630,7 +4964,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": 240,
       "type": 3,
       "title": "MIND",
       "name": "mind",
@@ -4648,7 +4982,7 @@
       ]
     },
     {
-      "id": 228,
+      "id": 241,
       "type": 3,
       "title": "Minecraft Server",
       "name": "minecraft",
@@ -4666,7 +5000,7 @@
       ]
     },
     {
-      "id": 229,
+      "id": 242,
       "type": 3,
       "title": "Minetest",
       "name": "minetest",
@@ -4687,7 +5021,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": 243,
       "type": 3,
       "title": "Minio",
       "name": "minio",
@@ -4706,7 +5040,7 @@
       ]
     },
     {
-      "id": 231,
+      "id": 244,
       "type": 3,
       "title": "Minisatip",
       "name": "minisatip",
@@ -4727,7 +5061,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": 245,
       "type": 3,
       "title": "Modmanager",
       "name": "modmanager",
@@ -4747,7 +5081,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 246,
       "type": 3,
       "title": "Modrinth",
       "name": "modrinth",
@@ -4767,7 +5101,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 247,
       "type": 3,
       "title": "Monica",
       "name": "monica",
@@ -4782,7 +5116,7 @@
       }
     },
     {
-      "id": 235,
+      "id": 248,
       "type": 3,
       "title": "Morphos",
       "name": "morphos",
@@ -4797,7 +5131,7 @@
       }
     },
     {
-      "id": 236,
+      "id": 249,
       "type": 3,
       "title": "Eclipse Mosquitto",
       "name": "mosquitto",
@@ -4812,7 +5146,7 @@
       }
     },
     {
-      "id": 237,
+      "id": 250,
       "type": 3,
       "title": "Msedge",
       "name": "msedge",
@@ -4833,7 +5167,7 @@
       ]
     },
     {
-      "id": 238,
+      "id": 251,
       "type": 3,
       "title": "Mstream",
       "name": "mstream",
@@ -4853,7 +5187,7 @@
       ]
     },
     {
-      "id": 239,
+      "id": 252,
       "type": 3,
       "title": "Mullvad-browser",
       "name": "mullvad-browser",
@@ -4874,7 +5208,7 @@
       ]
     },
     {
-      "id": 240,
+      "id": 253,
       "type": 3,
       "title": "Mumble Server",
       "name": "mumble-server",
@@ -4889,7 +5223,7 @@
       }
     },
     {
-      "id": 241,
+      "id": 254,
       "type": 3,
       "title": "Music Assistant",
       "name": "music-assistant",
@@ -4904,7 +5238,7 @@
       }
     },
     {
-      "id": 242,
+      "id": 255,
       "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
@@ -4919,7 +5253,7 @@
       }
     },
     {
-      "id": 243,
+      "id": 256,
       "type": 3,
       "title": "Mysql-workbench",
       "name": "mysql-workbench",
@@ -4939,7 +5273,7 @@
       ]
     },
     {
-      "id": 244,
+      "id": 257,
       "type": 3,
       "title": "n8n",
       "name": "n8n",
@@ -4957,7 +5291,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": 258,
       "type": 3,
       "title": "Nano",
       "name": "nano",
@@ -4984,7 +5318,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": 259,
       "type": 3,
       "title": "Nano-wallet",
       "name": "nano-wallet",
@@ -4999,7 +5333,7 @@
       }
     },
     {
-      "id": 247,
+      "id": 260,
       "type": 3,
       "title": "Navidrome",
       "name": "navidrome",
@@ -5014,7 +5348,7 @@
       }
     },
     {
-      "id": 248,
+      "id": 261,
       "type": 3,
       "title": "Ncdu",
       "name": "ncdu",
@@ -5029,7 +5363,7 @@
       }
     },
     {
-      "id": 249,
+      "id": 262,
       "type": 3,
       "title": "Neko Firefox",
       "name": "neko-firefox",
@@ -5051,7 +5385,7 @@
       ]
     },
     {
-      "id": 250,
+      "id": 263,
       "type": 3,
       "title": "NetAlertX (Legacy)",
       "name": "netalertx",
@@ -5066,7 +5400,7 @@
       }
     },
     {
-      "id": 251,
+      "id": 264,
       "type": 3,
       "title": "NetAlertX v26",
       "name": "netalertx-v26",
@@ -5081,7 +5415,7 @@
       }
     },
     {
-      "id": 252,
+      "id": 265,
       "type": 3,
       "title": "netboot.xyz",
       "name": "netboot-xyz",
@@ -5101,7 +5435,7 @@
       ]
     },
     {
-      "id": 253,
+      "id": 266,
       "type": 3,
       "title": "Netbox",
       "name": "netbox",
@@ -5143,7 +5477,7 @@
       ]
     },
     {
-      "id": 254,
+      "id": 267,
       "type": 3,
       "title": "NetPulse",
       "name": "netpulse",
@@ -5166,7 +5500,7 @@
       ]
     },
     {
-      "id": 255,
+      "id": 268,
       "type": 3,
       "title": "Nextcloud",
       "name": "nextcloud",
@@ -5193,7 +5527,7 @@
       ]
     },
     {
-      "id": 256,
+      "id": 269,
       "type": 3,
       "title": "Nextcloud LS",
       "name": "nextcloud-ls",
@@ -5213,7 +5547,7 @@
       ]
     },
     {
-      "id": 257,
+      "id": 270,
       "type": 3,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",
@@ -5240,7 +5574,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": 271,
       "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
@@ -5258,7 +5592,7 @@
       ]
     },
     {
-      "id": 259,
+      "id": 272,
       "type": 3,
       "title": "Nginx",
       "name": "nginx",
@@ -5280,7 +5614,7 @@
       ]
     },
     {
-      "id": 260,
+      "id": 273,
       "type": 3,
       "title": "Ngircd",
       "name": "ngircd",
@@ -5300,7 +5634,7 @@
       ]
     },
     {
-      "id": 261,
+      "id": 274,
       "type": 3,
       "title": "Nightlio",
       "name": "nightlio",
@@ -5323,7 +5657,7 @@
       ]
     },
     {
-      "id": 262,
+      "id": 275,
       "type": 3,
       "title": "nightscout",
       "name": "nightscout",
@@ -5346,7 +5680,7 @@
       ]
     },
     {
-      "id": 263,
+      "id": 276,
       "type": 3,
       "title": "NocoDB",
       "name": "nocodb",
@@ -5361,7 +5695,7 @@
       }
     },
     {
-      "id": 264,
+      "id": 277,
       "type": 3,
       "title": "Node-RED",
       "name": "node-red",
@@ -5376,7 +5710,7 @@
       }
     },
     {
-      "id": 265,
+      "id": 278,
       "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
@@ -5395,7 +5729,7 @@
       ]
     },
     {
-      "id": 266,
+      "id": 279,
       "type": 3,
       "title": "Nova DSO Tracker",
       "name": "nova-dso-tracker",
@@ -5410,7 +5744,7 @@
       }
     },
     {
-      "id": 267,
+      "id": 280,
       "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
@@ -5428,7 +5762,7 @@
       ]
     },
     {
-      "id": 268,
+      "id": 281,
       "type": 3,
       "title": "Ntfy.sh",
       "name": "ntfysh",
@@ -5446,7 +5780,7 @@
       ]
     },
     {
-      "id": 269,
+      "id": 282,
       "type": 3,
       "title": "Obsidian",
       "name": "obsidian",
@@ -5461,7 +5795,7 @@
       }
     },
     {
-      "id": 270,
+      "id": 283,
       "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
@@ -5476,7 +5810,7 @@
       }
     },
     {
-      "id": 271,
+      "id": 284,
       "type": 3,
       "title": "OctoPrint",
       "name": "octoprint",
@@ -5491,7 +5825,7 @@
       }
     },
     {
-      "id": 272,
+      "id": 285,
       "type": 3,
       "title": "Odoo (Legacy)",
       "name": "odoo",
@@ -5511,7 +5845,7 @@
       ]
     },
     {
-      "id": 273,
+      "id": 286,
       "type": 3,
       "title": "Odoo v20",
       "name": "odoo-v20",
@@ -5531,7 +5865,7 @@
       ]
     },
     {
-      "id": 274,
+      "id": 287,
       "type": 3,
       "title": "Odysseus",
       "name": "odysseus",
@@ -5550,7 +5884,7 @@
       ]
     },
     {
-      "id": 275,
+      "id": 288,
       "type": 3,
       "title": "Ollama - AMD",
       "name": "ollama-amd",
@@ -5565,7 +5899,7 @@
       }
     },
     {
-      "id": 276,
+      "id": 289,
       "type": 3,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
@@ -5580,7 +5914,7 @@
       }
     },
     {
-      "id": 277,
+      "id": 290,
       "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
@@ -5595,7 +5929,29 @@
       }
     },
     {
-      "id": 278,
+      "id": 291,
+      "type": 3,
+      "title": "OmniRoute",
+      "name": "omniroute",
+      "description": "OmniRoute is a self-hosted LLM router. The dashboard and an OpenAI-compatible endpoint on one port send requests to the provider accounts you connect, with Redis for rate limiting.",
+      "note": "Self-hosted LLM router",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/omniroute.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/omniroute/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DATA_DIR", "label": "DATA_DIR", "description": "SQLite data directory. Must match the data volume.", "default": "/app/data"},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Redis on the compose network. Not published to the host.", "default": "redis://redis:6379"},
+        {"name": "REQUIRE_API_KEY", "label": "REQUIRE_API_KEY", "description": "Require a dashboard login and an API key. Required because the ports are published on all interfaces.", "default": "true"},
+        {"name": "INITIAL_PASSWORD", "label": "INITIAL_PASSWORD", "description": "Dashboard password created on first boot.", "default": "0efefa3c-54ae-4848-b7bc-295f91483fe7"},
+        {"name": "OMNIROUTE_MEMORY_MB", "label": "OMNIROUTE_MEMORY_MB", "description": "V8 heap ceiling from the self-host env example.", "default": "2048"}
+      ]
+    },
+    {
+      "id": 292,
       "type": 3,
       "title": "OneDev",
       "name": "onedev",
@@ -5610,7 +5966,7 @@
       }
     },
     {
-      "id": 279,
+      "id": 293,
       "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
@@ -5625,7 +5981,7 @@
       }
     },
     {
-      "id": 280,
+      "id": 294,
       "type": 3,
       "title": "Open WebUI",
       "name": "open-webui",
@@ -5640,7 +5996,7 @@
       }
     },
     {
-      "id": 281,
+      "id": 295,
       "type": 3,
       "title": "OpenClaw",
       "name": "openclaw",
@@ -5661,7 +6017,36 @@
       ]
     },
     {
-      "id": 282,
+      "id": 296,
+      "type": 3,
+      "title": "openGym",
+      "name": "opengym",
+      "description": "openGym is a self-hosted gym and body-weight tracker. It plans workouts, logs sets, and signs you in with passkeys. The web container proxies the API and serves exercise media.",
+      "note": "Self-hosted workout tracker",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/DuarteSantos8/openGym@main/frontend/public/icon-512.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/opengym/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NGINX_PORT", "label": "NGINX_PORT", "description": "Port nginx listens on inside the web container.", "default": "80"},
+        {"name": "BACKEND", "label": "BACKEND", "description": "API service name that /api is proxied to.", "default": "api"},
+        {"name": "PORT", "label": "PORT", "description": "Port the API listens on. The web container proxies to the same value.", "default": "3000"},
+        {"name": "RESOLVER", "label": "RESOLVER", "description": "Docker embedded DNS used by nginx.", "default": "127.0.0.11"},
+        {"name": "CF_CONNECTING_IP", "label": "CF_CONNECTING_IP", "description": "Empty drops CF-Connecting-IP so a direct client cannot forge the logged address.", "default": ""},
+        {"name": "BASE_PATH", "label": "BASE_PATH", "description": "Empty serves the app at the site root.", "default": ""},
+        {"name": "MEDIA_UPLOAD_MAX", "label": "MEDIA_UPLOAD_MAX", "description": "Largest upload nginx passes to the API.", "default": "48m"},
+        {"name": "DATA_DIR", "label": "DATA_DIR", "description": "Accounts, passkeys, session secret, and uploads.", "default": "/data"},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Trust forwarded headers from the web container, which overwrites them.", "default": "1"},
+        {"name": "RP_ID", "label": "RP_ID", "description": "Hostname passkeys are bound to.", "default": "localhost"},
+        {"name": "ORIGIN", "label": "ORIGIN", "description": "Full URL the app is served from. Must match the published host port.", "default": "http://localhost:20808"},
+        {"name": "RP_NAME", "label": "RP_NAME", "description": "Name shown in the passkey prompt.", "default": "openGym"}
+      ]
+    },
+    {
+      "id": 297,
       "type": 3,
       "title": "Openshot",
       "name": "openshot",
@@ -5681,7 +6066,7 @@
       ]
     },
     {
-      "id": 283,
+      "id": 298,
       "type": 3,
       "title": "Openssh-server",
       "name": "openssh-server",
@@ -5711,7 +6096,7 @@
       ]
     },
     {
-      "id": 284,
+      "id": 299,
       "type": 3,
       "title": "OpenVPN",
       "name": "openvpn-as",
@@ -5726,7 +6111,7 @@
       }
     },
     {
-      "id": 285,
+      "id": 300,
       "type": 3,
       "title": "Openvscode-server",
       "name": "openvscode-server",
@@ -5750,7 +6135,7 @@
       ]
     },
     {
-      "id": 286,
+      "id": 301,
       "type": 3,
       "title": "Opera",
       "name": "opera",
@@ -5771,7 +6156,7 @@
       ]
     },
     {
-      "id": 287,
+      "id": 302,
       "type": 3,
       "title": "Orcaslicer",
       "name": "orcaslicer",
@@ -5791,7 +6176,7 @@
       ]
     },
     {
-      "id": 288,
+      "id": 303,
       "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
@@ -5806,7 +6191,39 @@
       }
     },
     {
-      "id": 289,
+      "id": 304,
+      "type": 3,
+      "title": "Outline",
+      "name": "outline",
+      "description": "Outline is a self-hosted team wiki and knowledge base. This stack runs the Outline server with PostgreSQL 18 and Redis, and stores uploads on a local volume.",
+      "note": "Self-hosted team wiki",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/outline.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/outline/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Production mode from the Outline env sample.", "default": "production"},
+        {"name": "URL", "label": "URL", "description": "Public URL of this instance. Change it if you serve Outline on another address.", "default": "http://localhost:23000"},
+        {"name": "PORT", "label": "PORT", "description": "Port Outline listens on inside the container.", "default": "3000"},
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Hex-encoded 32-byte key used to encrypt data.", "default": "6f3cbf7b3415ec195adc0cc98a3fc7f5953de9e8b77bff78e34584867ecb60f4"},
+        {"name": "UTILS_SECRET", "label": "UTILS_SECRET", "description": "Second random secret from the env sample.", "default": "X8p5_gwAyZJW_MION_hihkRrU77tZHpu_4oJvLgWY4E"},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "PostgreSQL connection string. User, password, and database match the postgres service.", "default": "postgres://outline:82d982a5-0329-46f7-a098-4e4cce10f3c2@postgres:5432/outline"},
+        {"name": "PGSSLMODE", "label": "PGSSLMODE", "description": "Disable Postgres SSL for the database on the compose network.", "default": "disable"},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Redis on the compose network.", "default": "redis://redis:6379"},
+        {"name": "FILE_STORAGE", "label": "FILE_STORAGE", "description": "Store uploads on the local volume instead of S3.", "default": "local"},
+        {"name": "FILE_STORAGE_LOCAL_ROOT_DIR", "label": "FILE_STORAGE_LOCAL_ROOT_DIR", "description": "Local upload directory. Must match the storage volume.", "default": "/var/lib/outline/data"},
+        {"name": "FILE_STORAGE_UPLOAD_MAX_SIZE", "label": "FILE_STORAGE_UPLOAD_MAX_SIZE", "description": "Maximum upload size in bytes from the env sample.", "default": "262144000"},
+        {"name": "FORCE_HTTPS", "label": "FORCE_HTTPS", "description": "Do not redirect to HTTPS. This listing is served over HTTP.", "default": "false"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user.", "default": "outline"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password. Must match DATABASE_URL.", "default": "82d982a5-0329-46f7-a098-4e4cce10f3c2"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "outline"}
+      ]
+    },
+    {
+      "id": 305,
       "type": 3,
       "title": "ownCloud",
       "name": "owncloud",
@@ -5835,7 +6252,7 @@
       ]
     },
     {
-      "id": 290,
+      "id": 306,
       "type": 3,
       "title": "Pairdrop",
       "name": "pairdrop",
@@ -5859,7 +6276,7 @@
       ]
     },
     {
-      "id": 291,
+      "id": 307,
       "type": 3,
       "title": "Paperclip",
       "name": "paperclip",
@@ -5883,7 +6300,7 @@
       ]
     },
     {
-      "id": 292,
+      "id": 308,
       "type": 3,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
@@ -5911,7 +6328,7 @@
       ]
     },
     {
-      "id": 293,
+      "id": 309,
       "type": 3,
       "title": "Password Pusher (Legacy)",
       "name": "passwordpusher",
@@ -5931,7 +6348,7 @@
       ]
     },
     {
-      "id": 294,
+      "id": 310,
       "type": 3,
       "title": "Password Pusher v2",
       "name": "passwordpusher-v2",
@@ -5951,7 +6368,7 @@
       ]
     },
     {
-      "id": 295,
+      "id": 311,
       "type": 3,
       "title": "Pcsx2",
       "name": "pcsx2",
@@ -5971,7 +6388,7 @@
       ]
     },
     {
-      "id": 296,
+      "id": 312,
       "type": 3,
       "title": "PD3F",
       "name": "pd3f",
@@ -5986,7 +6403,7 @@
       }
     },
     {
-      "id": 297,
+      "id": 313,
       "type": 3,
       "title": "Pelorus",
       "name": "pelorus",
@@ -6006,7 +6423,7 @@
       ]
     },
     {
-      "id": 298,
+      "id": 314,
       "type": 3,
       "title": "Penpot",
       "name": "penpot",
@@ -6021,7 +6438,7 @@
       }
     },
     {
-      "id": 299,
+      "id": 315,
       "type": 3,
       "title": "Peppermint",
       "name": "peppermint",
@@ -6036,7 +6453,7 @@
       }
     },
     {
-      "id": 300,
+      "id": 316,
       "type": 3,
       "title": "Photoprism",
       "name": "photoprism",
@@ -6078,7 +6495,7 @@
       ]
     },
     {
-      "id": 301,
+      "id": 317,
       "type": 3,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
@@ -6099,7 +6516,7 @@
       ]
     },
     {
-      "id": 302,
+      "id": 318,
       "type": 3,
       "title": "Pi.alert",
       "name": "pi-alert",
@@ -6121,7 +6538,7 @@
       ]
     },
     {
-      "id": 303,
+      "id": 319,
       "type": 3,
       "title": "Pidgin",
       "name": "pidgin",
@@ -6141,7 +6558,7 @@
       ]
     },
     {
-      "id": 304,
+      "id": 320,
       "type": 3,
       "title": "Pi-hole",
       "name": "pihole",
@@ -6156,7 +6573,7 @@
       }
     },
     {
-      "id": 305,
+      "id": 321,
       "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
@@ -6171,7 +6588,7 @@
       }
     },
     {
-      "id": 306,
+      "id": 322,
       "type": 3,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
@@ -6192,7 +6609,7 @@
       ]
     },
     {
-      "id": 307,
+      "id": 323,
       "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
@@ -6207,7 +6624,7 @@
       }
     },
     {
-      "id": 308,
+      "id": 324,
       "type": 3,
       "title": "Piper",
       "name": "piper",
@@ -6234,7 +6651,7 @@
       ]
     },
     {
-      "id": 309,
+      "id": 325,
       "type": 3,
       "title": "Piwigo",
       "name": "piwigo",
@@ -6249,7 +6666,7 @@
       }
     },
     {
-      "id": 310,
+      "id": 326,
       "type": 3,
       "title": "Planka (Legacy)",
       "name": "planka",
@@ -6264,7 +6681,7 @@
       }
     },
     {
-      "id": 311,
+      "id": 327,
       "type": 3,
       "title": "Planka v2",
       "name": "planka-v2",
@@ -6309,7 +6726,7 @@
       ]
     },
     {
-      "id": 312,
+      "id": 328,
       "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
@@ -6324,7 +6741,7 @@
       }
     },
     {
-      "id": 313,
+      "id": 329,
       "type": 3,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
@@ -6342,7 +6759,7 @@
       ]
     },
     {
-      "id": 314,
+      "id": 330,
       "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
@@ -6357,7 +6774,7 @@
       }
     },
     {
-      "id": 315,
+      "id": 331,
       "type": 3,
       "title": "Plex",
       "name": "plex",
@@ -6372,7 +6789,7 @@
       }
     },
     {
-      "id": 316,
+      "id": 332,
       "type": 3,
       "title": "Plex-meta-manager",
       "name": "plex-meta-manager",
@@ -6397,7 +6814,7 @@
       ]
     },
     {
-      "id": 317,
+      "id": 333,
       "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
@@ -6421,7 +6838,7 @@
       ]
     },
     {
-      "id": 318,
+      "id": 334,
       "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
@@ -6443,7 +6860,7 @@
       ]
     },
     {
-      "id": 319,
+      "id": 335,
       "type": 3,
       "title": "PodFetch",
       "name": "podfetch",
@@ -6466,7 +6883,7 @@
       ]
     },
     {
-      "id": 320,
+      "id": 336,
       "type": 3,
       "title": "Portainer",
       "name": "portainer",
@@ -6481,7 +6898,7 @@
       }
     },
     {
-      "id": 321,
+      "id": 337,
       "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",
@@ -6496,7 +6913,7 @@
       }
     },
     {
-      "id": 322,
+      "id": 338,
       "type": 3,
       "title": "Portainer Tools",
       "name": "portainer-tools",
@@ -6519,7 +6936,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 339,
       "type": 3,
       "title": "Portracker",
       "name": "portracker",
@@ -6543,7 +6960,7 @@
       ]
     },
     {
-      "id": 324,
+      "id": 340,
       "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
@@ -6561,7 +6978,7 @@
       ]
     },
     {
-      "id": 325,
+      "id": 341,
       "type": 3,
       "title": "Ppsspp",
       "name": "ppsspp",
@@ -6581,7 +6998,7 @@
       ]
     },
     {
-      "id": 326,
+      "id": 342,
       "type": 3,
       "title": "Privatebin",
       "name": "privatebin",
@@ -6600,7 +7017,7 @@
       ]
     },
     {
-      "id": 327,
+      "id": 343,
       "type": 3,
       "title": "Project Management",
       "name": "project-management",
@@ -6615,7 +7032,7 @@
       }
     },
     {
-      "id": 328,
+      "id": 344,
       "type": 3,
       "title": "Projectsend",
       "name": "projectsend",
@@ -6635,7 +7052,7 @@
       ]
     },
     {
-      "id": 329,
+      "id": 345,
       "type": 3,
       "title": "PsiTransfer",
       "name": "psitransfer",
@@ -6659,7 +7076,7 @@
       ]
     },
     {
-      "id": 330,
+      "id": 346,
       "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
@@ -6696,7 +7113,7 @@
       ]
     },
     {
-      "id": 331,
+      "id": 347,
       "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -6717,7 +7134,7 @@
       ]
     },
     {
-      "id": 332,
+      "id": 348,
       "type": 3,
       "title": "Pwndrop",
       "name": "pwndrop",
@@ -6738,7 +7155,7 @@
       ]
     },
     {
-      "id": 333,
+      "id": 349,
       "type": 3,
       "title": "Pycharm",
       "name": "pycharm",
@@ -6758,7 +7175,7 @@
       ]
     },
     {
-      "id": 334,
+      "id": 350,
       "type": 3,
       "title": "Pydio-cells",
       "name": "pydio-cells",
@@ -6780,7 +7197,7 @@
       ]
     },
     {
-      "id": 335,
+      "id": 351,
       "type": 3,
       "title": "Pylon",
       "name": "pylon",
@@ -6803,7 +7220,7 @@
       ]
     },
     {
-      "id": 336,
+      "id": 352,
       "type": 3,
       "title": "Python",
       "name": "python",
@@ -6823,7 +7240,7 @@
       ]
     },
     {
-      "id": 337,
+      "id": 353,
       "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -6838,7 +7255,7 @@
       }
     },
     {
-      "id": 338,
+      "id": 354,
       "type": 3,
       "title": "Qdirstat",
       "name": "qdirstat",
@@ -6858,7 +7275,7 @@
       ]
     },
     {
-      "id": 339,
+      "id": 355,
       "type": 3,
       "title": "Qemu-static",
       "name": "qemu-static",
@@ -6878,7 +7295,7 @@
       ]
     },
     {
-      "id": 340,
+      "id": 356,
       "type": 3,
       "title": "Quassel-core",
       "name": "quassel-core",
@@ -6899,7 +7316,7 @@
       ]
     },
     {
-      "id": 341,
+      "id": 357,
       "type": 3,
       "title": "Quassel-web",
       "name": "quassel-web",
@@ -6923,7 +7340,7 @@
       ]
     },
     {
-      "id": 342,
+      "id": 358,
       "type": 3,
       "title": "RackPeek",
       "name": "rackpeek",
@@ -6938,7 +7355,7 @@
       }
     },
     {
-      "id": 343,
+      "id": 359,
       "type": 3,
       "title": "Rallly",
       "name": "rallly",
@@ -6967,7 +7384,7 @@
       ]
     },
     {
-      "id": 344,
+      "id": 360,
       "type": 3,
       "title": "Raneto",
       "name": "raneto",
@@ -6987,7 +7404,7 @@
       ]
     },
     {
-      "id": 345,
+      "id": 361,
       "type": 3,
       "title": "Rawtherapee",
       "name": "rawtherapee",
@@ -7007,7 +7424,7 @@
       ]
     },
     {
-      "id": 346,
+      "id": 362,
       "type": 3,
       "title": "Rdesktop",
       "name": "rdesktop",
@@ -7027,7 +7444,7 @@
       ]
     },
     {
-      "id": 347,
+      "id": 363,
       "type": 3,
       "title": "Reactive Resume (Legacy)",
       "name": "reactive-resume",
@@ -7042,7 +7459,7 @@
       }
     },
     {
-      "id": 348,
+      "id": 364,
       "type": 3,
       "title": "Reactive Resume v6",
       "name": "reactive-resume-v6",
@@ -7057,7 +7474,7 @@
       }
     },
     {
-      "id": 349,
+      "id": 365,
       "type": 3,
       "title": "Readeck",
       "name": "readeck",
@@ -7078,7 +7495,7 @@
       ]
     },
     {
-      "id": 350,
+      "id": 366,
       "type": 3,
       "title": "Readme-sync",
       "name": "readme-sync",
@@ -7098,7 +7515,7 @@
       ]
     },
     {
-      "id": 351,
+      "id": 367,
       "type": 3,
       "title": "Redis",
       "name": "redis",
@@ -7113,7 +7530,7 @@
       }
     },
     {
-      "id": 352,
+      "id": 368,
       "type": 3,
       "title": "Remmina",
       "name": "remmina",
@@ -7133,7 +7550,7 @@
       ]
     },
     {
-      "id": 353,
+      "id": 369,
       "type": 3,
       "title": "Retroarch",
       "name": "retroarch",
@@ -7153,7 +7570,7 @@
       ]
     },
     {
-      "id": 354,
+      "id": 370,
       "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -7171,7 +7588,7 @@
       ]
     },
     {
-      "id": 355,
+      "id": 371,
       "type": 3,
       "title": "Rocket.Chat (Legacy)",
       "name": "rocket-chat",
@@ -7189,7 +7606,7 @@
       ]
     },
     {
-      "id": 356,
+      "id": 372,
       "type": 3,
       "title": "Rocket.Chat v8",
       "name": "rocket-chat-v8",
@@ -7208,7 +7625,7 @@
       ]
     },
     {
-      "id": 357,
+      "id": 373,
       "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -7242,7 +7659,7 @@
       ]
     },
     {
-      "id": 358,
+      "id": 374,
       "type": 3,
       "title": "Rpcs3",
       "name": "rpcs3",
@@ -7262,7 +7679,7 @@
       ]
     },
     {
-      "id": 359,
+      "id": 375,
       "type": 3,
       "title": "Rsnapshot",
       "name": "rsnapshot",
@@ -7282,7 +7699,7 @@
       ]
     },
     {
-      "id": 360,
+      "id": 376,
       "type": 3,
       "title": "RSShub",
       "name": "rsshub",
@@ -7303,7 +7720,7 @@
       ]
     },
     {
-      "id": 361,
+      "id": 377,
       "type": 3,
       "title": "Rustdesk",
       "name": "rustdesk",
@@ -7323,7 +7740,7 @@
       ]
     },
     {
-      "id": 362,
+      "id": 378,
       "type": 3,
       "title": "Rustdesk Server",
       "name": "rustdesk-server",
@@ -7338,7 +7755,7 @@
       }
     },
     {
-      "id": 363,
+      "id": 379,
       "type": 3,
       "title": "RustFS",
       "name": "rustfs",
@@ -7359,7 +7776,7 @@
       ]
     },
     {
-      "id": 364,
+      "id": 380,
       "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -7374,7 +7791,7 @@
       }
     },
     {
-      "id": 365,
+      "id": 381,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -7393,7 +7810,7 @@
       ]
     },
     {
-      "id": 366,
+      "id": 382,
       "type": 3,
       "title": "Scummvm",
       "name": "scummvm",
@@ -7413,7 +7830,7 @@
       ]
     },
     {
-      "id": 367,
+      "id": 383,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -7437,7 +7854,7 @@
       ]
     },
     {
-      "id": 368,
+      "id": 384,
       "type": 3,
       "title": "Sealskin",
       "name": "sealskin",
@@ -7458,7 +7875,7 @@
       ]
     },
     {
-      "id": 369,
+      "id": 385,
       "type": 3,
       "title": "Seerr",
       "name": "seerr",
@@ -7477,7 +7894,7 @@
       ]
     },
     {
-      "id": 370,
+      "id": 386,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -7492,7 +7909,7 @@
       }
     },
     {
-      "id": 371,
+      "id": 387,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -7514,7 +7931,7 @@
       ]
     },
     {
-      "id": 372,
+      "id": 388,
       "type": 3,
       "title": "Series-troxide",
       "name": "series-troxide",
@@ -7534,7 +7951,7 @@
       ]
     },
     {
-      "id": 373,
+      "id": 389,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -7549,7 +7966,7 @@
       }
     },
     {
-      "id": 374,
+      "id": 390,
       "type": 3,
       "title": "Shadps4",
       "name": "shadps4",
@@ -7569,7 +7986,7 @@
       ]
     },
     {
-      "id": 375,
+      "id": 391,
       "type": 3,
       "title": "Shotcut",
       "name": "shotcut",
@@ -7589,7 +8006,7 @@
       ]
     },
     {
-      "id": 376,
+      "id": 392,
       "type": 3,
       "title": "Signal",
       "name": "signal",
@@ -7609,7 +8026,27 @@
       ]
     },
     {
-      "id": 377,
+      "id": 393,
+      "type": 3,
+      "title": "SkySend",
+      "name": "skysend",
+      "description": "SkySend is a self-hosted file and note sharing service. Files and notes are encrypted in the browser before they are stored, and the server keeps only encrypted blobs.",
+      "note": "Encrypted file and note sharing",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/skysend.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/skysend/docker-compose.yml"
+      },
+      "env": [
+        {"name": "BASE_URL", "label": "BASE_URL", "description": "Public URL used in share links. Matches the published host port.", "default": "http://localhost:23001"},
+        {"name": "DATA_DIR", "label": "DATA_DIR", "description": "Database and persistent data. Matches the data volume.", "default": "/data"},
+        {"name": "UPLOADS_DIR", "label": "UPLOADS_DIR", "description": "Encrypted file storage. Matches the uploads volume.", "default": "/uploads"}
+      ]
+    },
+    {
+      "id": 394,
       "type": 3,
       "title": "Smokeping",
       "name": "smokeping",
@@ -7632,7 +8069,7 @@
       ]
     },
     {
-      "id": 378,
+      "id": 395,
       "type": 3,
       "title": "Snapdrop",
       "name": "snapdrop",
@@ -7652,7 +8089,7 @@
       ]
     },
     {
-      "id": 379,
+      "id": 396,
       "type": 3,
       "title": "SnapOtter",
       "name": "snapotter",
@@ -7677,7 +8114,7 @@
       ]
     },
     {
-      "id": 380,
+      "id": 397,
       "type": 3,
       "title": "Snipe-it",
       "name": "snipe-it",
@@ -7715,7 +8152,7 @@
       ]
     },
     {
-      "id": 381,
+      "id": 398,
       "type": 3,
       "title": "Snipe-IT v8",
       "name": "snipe-it-v8",
@@ -7736,7 +8173,7 @@
       ]
     },
     {
-      "id": 382,
+      "id": 399,
       "type": 3,
       "title": "Socket-proxy",
       "name": "socket-proxy",
@@ -7756,7 +8193,7 @@
       ]
     },
     {
-      "id": 383,
+      "id": 400,
       "type": 3,
       "title": "SolidPing",
       "name": "solidping",
@@ -7771,7 +8208,7 @@
       }
     },
     {
-      "id": 384,
+      "id": 401,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -7789,7 +8226,7 @@
       ]
     },
     {
-      "id": 385,
+      "id": 402,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -7815,7 +8252,7 @@
       ]
     },
     {
-      "id": 386,
+      "id": 403,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -7836,7 +8273,7 @@
       ]
     },
     {
-      "id": 387,
+      "id": 404,
       "type": 3,
       "title": "Sqlitebrowser",
       "name": "sqlitebrowser",
@@ -7856,7 +8293,7 @@
       ]
     },
     {
-      "id": 388,
+      "id": 405,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -7871,7 +8308,7 @@
       }
     },
     {
-      "id": 389,
+      "id": 406,
       "type": 3,
       "title": "Statping",
       "name": "statping",
@@ -7902,7 +8339,7 @@
       ]
     },
     {
-      "id": 390,
+      "id": 407,
       "type": 3,
       "title": "Steam",
       "name": "steam",
@@ -7922,7 +8359,7 @@
       ]
     },
     {
-      "id": 391,
+      "id": 408,
       "type": 3,
       "title": "Steamos",
       "name": "steamos",
@@ -7946,7 +8383,7 @@
       ]
     },
     {
-      "id": 392,
+      "id": 409,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -7971,7 +8408,56 @@
       ]
     },
     {
-      "id": 393,
+      "id": 410,
+      "type": 3,
+      "title": "Stoat",
+      "name": "stoat",
+      "description": "Stoat is a self-hosted chat server, formerly Revolt. This stack runs the API, web app, file server, proxy, and voice ingress behind Caddy.",
+      "note": "Self-hosted chat, formerly Revolt",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/stoat.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/stoat/docker-compose.yml"
+      },
+      "env": [
+        {"name": "HOSTNAME", "label": "HOSTNAME", "description": "Caddy site address. Default is https://stoat.localhost. Change this literal, the VITE variables, and every REVOLT__HOSTS__* value to the public origin before the first start. Caddy reads this value when the container starts.", "default": "https://stoat.localhost"},
+        {"name": "VITE_HOST", "label": "VITE_HOST", "description": "Web client host.", "default": "stoat.localhost"},
+        {"name": "VITE_API_URL", "label": "VITE_API_URL", "description": "Web client API URL.", "default": "https://stoat.localhost/api"},
+        {"name": "VITE_DEV_GIFBOX_URL", "label": "VITE_DEV_GIFBOX_URL", "description": "Web client gifbox URL.", "default": "https://stoat.localhost/gifbox"},
+        {"name": "RABBITMQ_DEFAULT_USER", "label": "RABBITMQ_DEFAULT_USER", "description": "RabbitMQ user. Must match REVOLT__RABBIT__USERNAME.", "default": "rabbituser"},
+        {"name": "RABBITMQ_DEFAULT_PASS", "label": "RABBITMQ_DEFAULT_PASS", "description": "RabbitMQ password. Must match REVOLT__RABBIT__PASSWORD.", "default": "3957bd5d-2520-4e23-a28a-e80e2a071d39"},
+        {"name": "MINIO_ROOT_USER", "label": "MINIO_ROOT_USER", "description": "Silo root user. Must match the S3 access key.", "default": "stoatfiles"},
+        {"name": "MINIO_ROOT_PASSWORD", "label": "MINIO_ROOT_PASSWORD", "description": "Silo root password. Must match REVOLT__FILES__S3__SECRET_ACCESS_KEY. The catalog value is public. Replace both copies, including the createbuckets service, before the first start. CasaOS and ZimaOS edit these literals; they do not substitute Compose variables.", "default": "e347aa2e-1555-4b99-81a3-a09ccb6058ec"},
+        {"name": "MINIO_DOMAIN", "label": "MINIO_DOMAIN", "description": "Silo domain used for bucket aliases.", "default": "minio"},
+        {"name": "REVOLT__DATABASE__MONGODB", "label": "REVOLT__DATABASE__MONGODB", "description": "MongoDB URL for the database service.", "default": "mongodb://database"},
+        {"name": "REVOLT__DATABASE__REDIS", "label": "REVOLT__DATABASE__REDIS", "description": "Valkey URL for the redis service.", "default": "redis://redis/"},
+        {"name": "REVOLT__RABBIT__HOST", "label": "REVOLT__RABBIT__HOST", "description": "RabbitMQ hostname.", "default": "rabbit"},
+        {"name": "REVOLT__RABBIT__PORT", "label": "REVOLT__RABBIT__PORT", "description": "RabbitMQ port.", "default": "5672"},
+        {"name": "REVOLT__RABBIT__USERNAME", "label": "REVOLT__RABBIT__USERNAME", "description": "RabbitMQ username.", "default": "rabbituser"},
+        {"name": "REVOLT__RABBIT__PASSWORD", "label": "REVOLT__RABBIT__PASSWORD", "description": "RabbitMQ password. Must match RABBITMQ_DEFAULT_PASS. The catalog value is public. Replace both before the first start. CasaOS and ZimaOS edit these literals; they do not substitute Compose variables.", "default": "3957bd5d-2520-4e23-a28a-e80e2a071d39"},
+        {"name": "REVOLT__FILES__ENCRYPTION_KEY", "label": "REVOLT__FILES__ENCRYPTION_KEY", "description": "File encryption key. Losing it loses access to stored files. The catalog value is public. Replace it before creating data, then keep the replacement. CasaOS and ZimaOS edit this literal; they do not substitute Compose variables.", "default": "FY1cZSuVSyKLXmwdbFOp4YnhRiMCWhGvwO-ba9c8XEU"},
+        {"name": "REVOLT__FILES__S3__ENDPOINT", "label": "REVOLT__FILES__S3__ENDPOINT", "description": "S3 endpoint for the silo service.", "default": "http://minio:9000"},
+        {"name": "REVOLT__FILES__S3__REGION", "label": "REVOLT__FILES__S3__REGION", "description": "S3 region name.", "default": "minio"},
+        {"name": "REVOLT__FILES__S3__ACCESS_KEY_ID", "label": "REVOLT__FILES__S3__ACCESS_KEY_ID", "description": "S3 access key.", "default": "stoatfiles"},
+        {"name": "REVOLT__FILES__S3__SECRET_ACCESS_KEY", "label": "REVOLT__FILES__S3__SECRET_ACCESS_KEY", "description": "S3 secret key.", "default": "e347aa2e-1555-4b99-81a3-a09ccb6058ec"},
+        {"name": "REVOLT__FILES__S3__DEFAULT_BUCKET", "label": "REVOLT__FILES__S3__DEFAULT_BUCKET", "description": "Upload bucket created at startup.", "default": "revolt-uploads"},
+        {"name": "REVOLT__PUSHD__VAPID__PRIVATE_KEY", "label": "REVOLT__PUSHD__VAPID__PRIVATE_KEY", "description": "Web push VAPID private key. The catalog value is public. Replace it before the first start. CasaOS and ZimaOS edit this literal; they do not substitute Compose variables.", "default": "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUNEZ201aEprR2xzbEc0ZlNOekREMTQwQ2drUjkxUFYrcGVBK2I0TmNtNFlvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFU3A4YmFIUGE1aFVsTHNFaCtjbkUySFZzY1lDVG9aeVhkS1ovckVWajVtcEJWM2o3M3ZHNwpRcXllcHNFNVJYejYvRm9QNmJ2eGlTR0M4dGxWdFphNktBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo"},
+        {"name": "REVOLT__PUSHD__VAPID__PUBLIC_KEY", "label": "REVOLT__PUSHD__VAPID__PUBLIC_KEY", "description": "Web push VAPID public key.", "default": "BEqfG2hz2uYVJS7BIfnJxNh1bHGAk6Gcl3Smf6xFY-ZqQVd4-97xu0KsnqbBOUV8-vxaD-m78YkhgvLZVbWWuig"},
+        {"name": "REVOLT__API__LIVEKIT__NODES__WORLDWIDE__KEY", "label": "REVOLT__API__LIVEKIT__NODES__WORLDWIDE__KEY", "description": "LiveKit API key. The catalog value is public. Replace it before exposing voice. livekit-config writes this value into livekit.yml on start, so set the same plaintext on that service. CasaOS and ZimaOS edit these literals; they do not substitute Compose variables.", "default": "8011099a9cb9"},
+        {"name": "REVOLT__API__LIVEKIT__NODES__WORLDWIDE__SECRET", "label": "REVOLT__API__LIVEKIT__NODES__WORLDWIDE__SECRET", "description": "LiveKit API secret. The catalog value is public. Replace it before exposing voice. livekit-config writes this value into livekit.yml on start, so set the same plaintext on that service. CasaOS and ZimaOS edit these literals; they do not substitute Compose variables.", "default": "58ca27af8342a4b8a14815bd31a810f0985d4f8db2eb6336"},
+        {"name": "REVOLT__HOSTS__APP", "label": "REVOLT__HOSTS__APP", "description": "Public web origin.", "default": "https://stoat.localhost"},
+        {"name": "REVOLT__HOSTS__API", "label": "REVOLT__HOSTS__API", "description": "Public API origin.", "default": "https://stoat.localhost/api"},
+        {"name": "REVOLT__HOSTS__EVENTS", "label": "REVOLT__HOSTS__EVENTS", "description": "Public events websocket origin.", "default": "wss://stoat.localhost/ws"},
+        {"name": "REVOLT__HOSTS__AUTUMN", "label": "REVOLT__HOSTS__AUTUMN", "description": "Public file server origin.", "default": "https://stoat.localhost/autumn"},
+        {"name": "REVOLT__HOSTS__JANUARY", "label": "REVOLT__HOSTS__JANUARY", "description": "Public image proxy origin.", "default": "https://stoat.localhost/january"},
+        {"name": "REVOLT__HOSTS__GIFBOX", "label": "REVOLT__HOSTS__GIFBOX", "description": "Public gifbox origin.", "default": "https://stoat.localhost/gifbox"},
+        {"name": "REVOLT__HOSTS__LIVEKIT__WORLDWIDE", "label": "REVOLT__HOSTS__LIVEKIT__WORLDWIDE", "description": "Public LiveKit websocket origin.", "default": "wss://stoat.localhost/livekit"}
+      ]
+    },
+    {
+      "id": 411,
       "type": 3,
       "title": "Storyteller",
       "name": "storyteller",
@@ -7996,7 +8482,7 @@
       ]
     },
     {
-      "id": 394,
+      "id": 412,
       "type": 3,
       "title": "Swag",
       "name": "swag",
@@ -8030,7 +8516,7 @@
       ]
     },
     {
-      "id": 395,
+      "id": 413,
       "type": 3,
       "title": "Synclounge",
       "name": "synclounge",
@@ -8048,7 +8534,7 @@
       ]
     },
     {
-      "id": 396,
+      "id": 414,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -8063,7 +8549,7 @@
       }
     },
     {
-      "id": 397,
+      "id": 415,
       "type": 3,
       "title": "Syslog-ng",
       "name": "syslog-ng",
@@ -8084,7 +8570,7 @@
       ]
     },
     {
-      "id": 398,
+      "id": 416,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -8110,7 +8596,7 @@
       ]
     },
     {
-      "id": 399,
+      "id": 417,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -8125,7 +8611,7 @@
       }
     },
     {
-      "id": 400,
+      "id": 418,
       "type": 3,
       "title": "Tautulli",
       "name": "tautulli",
@@ -8145,7 +8631,7 @@
       ]
     },
     {
-      "id": 401,
+      "id": 419,
       "type": 3,
       "title": "Telegram",
       "name": "telegram",
@@ -8165,7 +8651,7 @@
       ]
     },
     {
-      "id": 402,
+      "id": 420,
       "type": 3,
       "title": "Tester",
       "name": "tester",
@@ -8183,7 +8669,7 @@
       ]
     },
     {
-      "id": 403,
+      "id": 421,
       "type": 3,
       "title": "Thelounge",
       "name": "thelounge",
@@ -8203,7 +8689,7 @@
       ]
     },
     {
-      "id": 404,
+      "id": 422,
       "type": 3,
       "title": "Thunderbird",
       "name": "thunderbird",
@@ -8223,7 +8709,7 @@
       ]
     },
     {
-      "id": 405,
+      "id": 423,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -8238,7 +8724,7 @@
       }
     },
     {
-      "id": 406,
+      "id": 424,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -8272,7 +8758,7 @@
       ]
     },
     {
-      "id": 407,
+      "id": 425,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -8287,7 +8773,36 @@
       }
     },
     {
-      "id": 408,
+      "id": 426,
+      "type": 3,
+      "title": "Trackie",
+      "name": "trackie",
+      "description": "Trackie is a New Zealand Actual Budget server image. Sign-in is OpenID Connect, and optional per-user Akahu bank tokens are encrypted at rest.",
+      "note": "New Zealand Actual Budget",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://trackie.nz/apple-touch-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/trackie/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Node environment.", "default": "production"},
+        {"name": "ACTUAL_LOGIN_METHOD", "label": "ACTUAL_LOGIN_METHOD", "description": "Login method. Trackie self-host uses OpenID Connect.", "default": "openid"},
+        {"name": "ACTUAL_OPENID_ENFORCE", "label": "ACTUAL_OPENID_ENFORCE", "description": "Require the identity provider and disable password login.", "default": "true"},
+        {"name": "ACTUAL_USER_CREATION_MODE", "label": "ACTUAL_USER_CREATION_MODE", "description": "Auto-provision a user on the first successful identity-provider login.", "default": "login"},
+        {"name": "ACTUAL_OPENID_DISCOVERY_URL", "label": "ACTUAL_OPENID_DISCOVERY_URL", "description": "OIDC discovery URL. The provider must return a verified email claim.", "default": ""},
+        {"name": "ACTUAL_OPENID_CLIENT_ID", "label": "ACTUAL_OPENID_CLIENT_ID", "description": "OIDC client id. Register callback SERVER_HOSTNAME/openid/callback.", "default": ""},
+        {"name": "ACTUAL_OPENID_CLIENT_SECRET", "label": "ACTUAL_OPENID_CLIENT_SECRET", "description": "OIDC client secret.", "default": ""},
+        {"name": "ACTUAL_OPENID_SERVER_HOSTNAME", "label": "ACTUAL_OPENID_SERVER_HOSTNAME", "description": "Public URL of this server. Official compose uses port 5006. This listing publishes 20005 because 5006 is already used.", "default": "http://localhost:20005"},
+        {"name": "ACTUAL_TOKEN_EXPIRATION", "label": "ACTUAL_TOKEN_EXPIRATION", "description": "Session lifetime in seconds (90 days).", "default": "7776000"},
+        {"name": "ACTUAL_IDENTITY_SECRET", "label": "ACTUAL_IDENTITY_SECRET", "description": "HMAC key that derives stored user identity from verified email. Do not rotate it.", "default": "v3smK3KDuHTlcUVTDXPLGCilbm3y3-0OGF6PYX-iIQ0"},
+        {"name": "ACTUAL_AKAHU_TOKEN_SECRET", "label": "ACTUAL_AKAHU_TOKEN_SECRET", "description": "Key that encrypts optional per-user Akahu tokens. Rotating it only forces users to paste tokens again.", "default": "jQBA8ydLKvkPN8tc1duO2vQRY-yhpXI0fq6Xxc1sNhQ"},
+        {"name": "TZ", "label": "TZ", "description": "Server timezone used to bucket transaction dates.", "default": "Pacific/Auckland"}
+      ]
+    },
+    {
+      "id": 427,
       "type": 3,
       "title": "Traefik",
       "name": "traefik",
@@ -8310,7 +8825,7 @@
       ]
     },
     {
-      "id": 409,
+      "id": 428,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -8325,7 +8840,7 @@
       }
     },
     {
-      "id": 410,
+      "id": 429,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -8346,7 +8861,7 @@
       ]
     },
     {
-      "id": 411,
+      "id": 430,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -8370,7 +8885,7 @@
       ]
     },
     {
-      "id": 412,
+      "id": 431,
       "type": 3,
       "title": "Ubooquity",
       "name": "ubooquity",
@@ -8391,7 +8906,7 @@
       ]
     },
     {
-      "id": 413,
+      "id": 432,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -8409,7 +8924,7 @@
       ]
     },
     {
-      "id": 414,
+      "id": 433,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -8429,7 +8944,7 @@
       ]
     },
     {
-      "id": 415,
+      "id": 434,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -8444,7 +8959,7 @@
       }
     },
     {
-      "id": 416,
+      "id": 435,
       "type": 3,
       "title": "Ungoogled-chromium",
       "name": "ungoogled-chromium",
@@ -8465,7 +8980,7 @@
       ]
     },
     {
-      "id": 417,
+      "id": 436,
       "type": 3,
       "title": "Unifi-controller",
       "name": "unifi-controller",
@@ -8487,7 +9002,7 @@
       ]
     },
     {
-      "id": 418,
+      "id": 437,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -8516,7 +9031,7 @@
       ]
     },
     {
-      "id": 419,
+      "id": 438,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -8545,7 +9060,7 @@
       ]
     },
     {
-      "id": 420,
+      "id": 439,
       "type": 3,
       "title": "Unrar",
       "name": "unrar",
@@ -8565,7 +9080,7 @@
       ]
     },
     {
-      "id": 421,
+      "id": 440,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -8580,7 +9095,7 @@
       }
     },
     {
-      "id": 422,
+      "id": 441,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -8595,7 +9110,7 @@
       }
     },
     {
-      "id": 423,
+      "id": 442,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -8610,7 +9125,7 @@
       }
     },
     {
-      "id": 424,
+      "id": 443,
       "type": 3,
       "title": "Vikunja (Legacy)",
       "name": "vikunja",
@@ -8634,7 +9149,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 444,
       "type": 3,
       "title": "Vikunja v2",
       "name": "vikunja-v2",
@@ -8657,7 +9172,7 @@
       ]
     },
     {
-      "id": 426,
+      "id": 445,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -8676,7 +9191,7 @@
       ]
     },
     {
-      "id": 427,
+      "id": 446,
       "type": 3,
       "title": "Vivaldi",
       "name": "vivaldi",
@@ -8697,7 +9212,7 @@
       ]
     },
     {
-      "id": 428,
+      "id": 447,
       "type": 3,
       "title": "Vlc",
       "name": "vlc",
@@ -8718,7 +9233,7 @@
       ]
     },
     {
-      "id": 429,
+      "id": 448,
       "type": 3,
       "title": "Vscode",
       "name": "vscode",
@@ -8738,7 +9253,7 @@
       ]
     },
     {
-      "id": 430,
+      "id": 449,
       "type": 3,
       "title": "Vscodium",
       "name": "vscodium",
@@ -8758,7 +9273,7 @@
       ]
     },
     {
-      "id": 431,
+      "id": 450,
       "type": 3,
       "title": "Vscodium-web",
       "name": "vscodium-web",
@@ -8783,7 +9298,7 @@
       ]
     },
     {
-      "id": 432,
+      "id": 451,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -8813,7 +9328,7 @@
       ]
     },
     {
-      "id": 433,
+      "id": 452,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -8831,7 +9346,7 @@
       ]
     },
     {
-      "id": 434,
+      "id": 453,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -8856,7 +9371,7 @@
       ]
     },
     {
-      "id": 435,
+      "id": 454,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -8871,7 +9386,26 @@
       }
     },
     {
-      "id": 436,
+      "id": 455,
+      "type": 3,
+      "title": "Web-Check",
+      "name": "web-check",
+      "description": "Web-Check is an on-demand OSINT tool for analysing any website: server, security headers, technologies, DNS, and related public signals.",
+      "note": "OSINT for any website",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/web-check.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/web-check/docker-compose.yml"
+      },
+      "env": [
+        {"name": "API_BLOCKED_HOSTS", "label": "API_BLOCKED_HOSTS", "description": "Hosts and CIDR ranges the API must not scan. Includes private, loopback, and link-local addresses.", "default": "localhost,local,metadata.google.internal,169.254.169.254,::1,0.0.0.0/8,10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16"},
+        {"name": "API_ENABLE_RATE_LIMIT", "label": "API_ENABLE_RATE_LIMIT", "description": "Rate-limit the API.", "default": "true"}
+      ]
+    },
+    {
+      "id": 456,
       "type": 3,
       "title": "Webcord",
       "name": "webcord",
@@ -8891,7 +9425,7 @@
       ]
     },
     {
-      "id": 437,
+      "id": 457,
       "type": 3,
       "title": "WebDAV",
       "name": "webdav",
@@ -8911,7 +9445,7 @@
       ]
     },
     {
-      "id": 438,
+      "id": 458,
       "type": 3,
       "title": "Webgrabplus",
       "name": "webgrabplus",
@@ -8931,7 +9465,7 @@
       ]
     },
     {
-      "id": 439,
+      "id": 459,
       "type": 3,
       "title": "Webstation",
       "name": "webstation",
@@ -8951,7 +9485,7 @@
       ]
     },
     {
-      "id": 440,
+      "id": 460,
       "type": 3,
       "title": "Web Sync (RSync)",
       "name": "websync",
@@ -8966,7 +9500,7 @@
       }
     },
     {
-      "id": 441,
+      "id": 461,
       "type": 3,
       "title": "Webtop",
       "name": "webtop",
@@ -8986,7 +9520,7 @@
       ]
     },
     {
-      "id": 442,
+      "id": 462,
       "type": 3,
       "title": "Weixin",
       "name": "weixin",
@@ -9006,7 +9540,7 @@
       ]
     },
     {
-      "id": 443,
+      "id": 463,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -9021,7 +9555,7 @@
       }
     },
     {
-      "id": 444,
+      "id": 464,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -9036,7 +9570,7 @@
       }
     },
     {
-      "id": 445,
+      "id": 465,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -9051,7 +9585,7 @@
       }
     },
     {
-      "id": 446,
+      "id": 466,
       "type": 3,
       "title": "Wikijs",
       "name": "wikijs",
@@ -9077,7 +9611,7 @@
       ]
     },
     {
-      "id": 447,
+      "id": 467,
       "type": 3,
       "title": "Winegui",
       "name": "winegui",
@@ -9097,7 +9631,7 @@
       ]
     },
     {
-      "id": 448,
+      "id": 468,
       "type": 3,
       "title": "Wireguard",
       "name": "wireguard",
@@ -9125,7 +9659,7 @@
       ]
     },
     {
-      "id": 449,
+      "id": 469,
       "type": 3,
       "title": "Wireshark",
       "name": "wireshark",
@@ -9145,7 +9679,7 @@
       ]
     },
     {
-      "id": 450,
+      "id": 470,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -9166,7 +9700,7 @@
       ]
     },
     {
-      "id": 451,
+      "id": 471,
       "type": 3,
       "title": "WordPress (Legacy)",
       "name": "wordpress",
@@ -9187,7 +9721,7 @@
       ]
     },
     {
-      "id": 452,
+      "id": 472,
       "type": 3,
       "title": "WordPress v7",
       "name": "wordpress-v7",
@@ -9208,7 +9742,7 @@
       ]
     },
     {
-      "id": 453,
+      "id": 473,
       "type": 3,
       "title": "Wps-office",
       "name": "wps-office",
@@ -9228,7 +9762,7 @@
       ]
     },
     {
-      "id": 454,
+      "id": 474,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -9248,7 +9782,7 @@
       ]
     },
     {
-      "id": 455,
+      "id": 475,
       "type": 3,
       "title": "Xbackbone",
       "name": "xbackbone",
@@ -9268,7 +9802,7 @@
       ]
     },
     {
-      "id": 456,
+      "id": 476,
       "type": 3,
       "title": "Xemu",
       "name": "xemu",
@@ -9288,7 +9822,7 @@
       ]
     },
     {
-      "id": 457,
+      "id": 477,
       "type": 3,
       "title": "Xvfb",
       "name": "xvfb",
@@ -9308,7 +9842,7 @@
       ]
     },
     {
-      "id": 458,
+      "id": 478,
       "type": 3,
       "title": "Yaak",
       "name": "yaak",
@@ -9328,7 +9862,7 @@
       ]
     },
     {
-      "id": 459,
+      "id": 479,
       "type": 3,
       "title": "Your_spotify",
       "name": "your-spotify",
@@ -9354,7 +9888,7 @@
       ]
     },
     {
-      "id": 460,
+      "id": 480,
       "type": 3,
       "title": "Yq",
       "name": "yq",
@@ -9374,7 +9908,35 @@
       ]
     },
     {
-      "id": 461,
+      "id": 481,
+      "type": 3,
+      "title": "Yuvomi",
+      "name": "yuvomi",
+      "description": "Yuvomi is a self-hosted family planner for tasks, calendar, meals, shopping, budget, and documents. It stores data in one SQLite database on your server.",
+      "note": "Self-hosted family planner",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/yuvomi.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/yuvomi/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Node environment.", "default": "production"},
+        {"name": "PORT", "label": "PORT", "description": "Port the app listens on inside the container.", "default": "3000"},
+        {"name": "DB_PATH", "label": "DB_PATH", "description": "SQLite database path inside the data volume.", "default": "/data/yuvomi.db"},
+        {"name": "BACKUP_DIR", "label": "BACKUP_DIR", "description": "Directory for scheduled backups.", "default": "/backups"},
+        {"name": "MODULES_DIR", "label": "MODULES_DIR", "description": "Drop-in modules directory.", "default": "/app/modules"},
+        {"name": "SESSION_SECRET", "label": "SESSION_SECRET", "description": "Session signing secret. Yuvomi 2.73.0 refuses to start while this starts with REPLACE_WITH_. Replace it in the install form before the first start. Changing it later signs everyone out.", "default": "REPLACE_WITH_A_LONG_RANDOM_STRING"},
+        {"name": "DB_ENCRYPTION_KEY", "label": "DB_ENCRYPTION_KEY", "description": "AES-256 key for the database at rest. A lost or changed key cannot open an existing database.", "default": "12C_F5m7nZC69qeJlJL0BqgCNd8lH3m1zqAeERMcG3g"},
+        {"name": "SESSION_SECURE", "label": "SESSION_SECURE", "description": "Set true only behind HTTPS. Direct HTTP login needs false.", "default": "false"},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Proxy trust for direct HTTP. Use 1 behind a single reverse proxy.", "default": "loopback"},
+        {"name": "DOCUMENT_STORAGE_LOCAL_ENABLED", "label": "DOCUMENT_STORAGE_LOCAL_ENABLED", "description": "Store uploaded documents on the documents volume when true.", "default": "false"},
+        {"name": "DOCUMENT_STORAGE_LOCAL_PATH", "label": "DOCUMENT_STORAGE_LOCAL_PATH", "description": "In-container path for local document storage.", "default": "/documents"}
+      ]
+    },
+    {
+      "id": 482,
       "type": 3,
       "title": "Zen",
       "name": "zen",
@@ -9394,7 +9956,7 @@
       ]
     },
     {
-      "id": 462,
+      "id": 483,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -9409,7 +9971,29 @@
       }
     },
     {
-      "id": 463,
+      "id": 484,
+      "type": 3,
+      "title": "ZimaBrain CE",
+      "name": "zimabrain",
+      "description": "ZimaBrain CE is a local verifier-first diagnostic assistant for ZimaOS. It checks host evidence and keeps monitor history in a local SQLite database.",
+      "note": "Local ZimaOS diagnostic assistant",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/Jacko88888/zimabrain-ce/main/app/assets/zimabrain-ce-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/zimabrain/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ZIMABRAIN_PASSWORD", "label": "ZIMABRAIN_PASSWORD", "description": "Login password for the ZimaBrain web UI. The container exits while this is empty or still the catalog value. Replace it in the install form before the first start.", "default": "79526452-173c-49bc-873f-956f5a9838cb"},
+        {"name": "ZIMABRAIN_SECRET_KEY", "label": "ZIMABRAIN_SECRET_KEY", "description": "Internal session key. Not the login password.", "default": "qC57Chx7nDu_juH55MXIma7EsHMKLSwBN9CgWFESkqU"},
+        {"name": "ZIMABRAIN_MONITOR_ENABLED", "label": "ZIMABRAIN_MONITOR_ENABLED", "description": "Collect local CPU, memory, disk, and container samples.", "default": "true"},
+        {"name": "ZIMABRAIN_MONITOR_INTERVAL_SECONDS", "label": "ZIMABRAIN_MONITOR_INTERVAL_SECONDS", "description": "Seconds between monitor samples.", "default": "60"},
+        {"name": "ZIMABRAIN_MONITOR_RETENTION_DAYS", "label": "ZIMABRAIN_MONITOR_RETENTION_DAYS", "description": "Days of monitor history to keep.", "default": "7"}
+      ]
+    },
+    {
+      "id": 485,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -9424,7 +10008,7 @@
       }
     },
     {
-      "id": 464,
+      "id": 486,
       "type": 3,
       "title": "Znc",
       "name": "znc",
@@ -9444,7 +10028,7 @@
       ]
     },
     {
-      "id": 465,
+      "id": 487,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",

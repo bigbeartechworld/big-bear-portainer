@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 7,
+      "type": 3,
+      "title": "AFFiNE",
+      "name": "affine",
+      "description": "AFFiNE 0.27.4 is a self-hosted workspace for docs, whiteboards, and knowledge bases, with Postgres and Redis.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/affine.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/affine/docker-compose.yml"
+      },
+      "env": [
+        {"name": "REDIS_SERVER_HOST", "label": "REDIS_SERVER_HOST", "description": "Redis hostname on the Compose network.", "default": "redis"},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "Postgres URL for the AFFiNE server and migration job. Matches the postgres service, which uses trust authentication.", "default": "postgresql://affine@postgres:5432/affine"},
+        {"name": "AFFINE_INDEXER_ENABLED", "label": "AFFINE_INDEXER_ENABLED", "description": "Disable the search indexer, matching the v0.27.4 release Compose file.", "default": "false"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "affine"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "affine"},
+        {"name": "POSTGRES_INITDB_ARGS", "label": "POSTGRES_INITDB_ARGS", "description": "Arguments passed to initdb.", "default": "--data-checksums"},
+        {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Auth method from the official Compose file. Connections on the Compose network do not use a password.", "default": "trust"}
+      ]
+    }]}

@@ -1,5 +1,5 @@
 {"version": "3", "templates": [    {
-      "id": 109,
+      "id": 118,
       "type": 3,
       "title": "Fail2ban",
       "name": "fail2ban",

@@ -1,0 +1,29 @@
+{"version": "3", "templates": [    {
+      "id": 174,
+      "type": 3,
+      "title": "Homedex",
+      "name": "homedex",
+      "description": "Homedex 0.2.5 is a read-only homelab inventory of services, ports, routes, and certificate expiry.",
+      "note": "Read-only homelab inventory",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/homedex.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/homedex/docker-compose.yml"
+      },
+      "env": [
+        {"name": "HOMEDEX_DATA_DIR", "label": "HOMEDEX_DATA_DIR", "description": "Directory for the SQLite inventory.", "default": "/data"},
+        {"name": "HOMEDEX_LISTEN", "label": "HOMEDEX_LISTEN", "description": "Address and port Homedex listens on inside the container.", "default": ":7377"},
+        {"name": "HOMEDEX_ADMIN_PASSWORD", "label": "HOMEDEX_ADMIN_PASSWORD", "description": "Admin password stored as an Argon2id hash on first start. Homedex 0.2.5 exits while this is shorter than 12 characters, so replace CHANGE_ME before the first start. Ignored after an admin exists.", "default": "CHANGE_ME"},
+        {"name": "CONTAINERS", "label": "CONTAINERS", "description": "Allow the socket proxy to read Docker containers.", "default": "1"},
+        {"name": "IMAGES", "label": "IMAGES", "description": "Allow the socket proxy to read Docker images.", "default": "1"},
+        {"name": "INFO", "label": "INFO", "description": "Allow the socket proxy to read Docker info.", "default": "1"},
+        {"name": "NETWORKS", "label": "NETWORKS", "description": "Allow the socket proxy to read Docker networks.", "default": "1"},
+        {"name": "VERSION", "label": "VERSION", "description": "Allow the socket proxy to read the Docker version.", "default": "1"},
+        {"name": "POST", "label": "POST", "description": "Disable mutating Docker API calls on the socket proxy.", "default": "0"},
+        {"name": "ALLOW_START", "label": "ALLOW_START", "description": "Deny container start through the socket proxy.", "default": "0"},
+        {"name": "ALLOW_STOP", "label": "ALLOW_STOP", "description": "Deny container stop through the socket proxy.", "default": "0"},
+        {"name": "ALLOW_RESTARTS", "label": "ALLOW_RESTARTS", "description": "Deny container restart through the socket proxy.", "default": "0"}
+      ]
+    }]}

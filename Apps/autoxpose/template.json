@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 20,
+      "type": 3,
+      "title": "autoxpose",
+      "name": "autoxpose",
+      "description": "autoxpose 0.5.2 watches Docker labels and creates DNS records plus reverse-proxy hosts.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/mostafa-wahied/autoxpose@main/packages/frontend/public/autoxpose-logo.svg",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/autoxpose/docker-compose.yml"
+      },
+      "env": [
+        {"name": "SERVER_IP", "label": "SERVER_IP", "description": "Public IP or hostname written into DNS A records.", "default": ""},
+        {"name": "LAN_IP", "label": "LAN_IP", "description": "LAN address the reverse proxy uses as the upstream target.", "default": ""}
+      ]
+    }]}

@@ -1,0 +1,20 @@
+{"version": "3", "templates": [    {
+      "id": 393,
+      "type": 3,
+      "title": "SkySend",
+      "name": "skysend",
+      "description": "SkySend is a self-hosted file and note sharing service. Files and notes are encrypted in the browser before they are stored, and the server keeps only encrypted blobs.",
+      "note": "Encrypted file and note sharing",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/skysend.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/skysend/docker-compose.yml"
+      },
+      "env": [
+        {"name": "BASE_URL", "label": "BASE_URL", "description": "Public URL used in share links. Matches the published host port.", "default": "http://localhost:23001"},
+        {"name": "DATA_DIR", "label": "DATA_DIR", "description": "Database and persistent data. Matches the data volume.", "default": "/data"},
+        {"name": "UPLOADS_DIR", "label": "UPLOADS_DIR", "description": "Encrypted file storage. Matches the uploads volume.", "default": "/uploads"}
+      ]
+    }]}

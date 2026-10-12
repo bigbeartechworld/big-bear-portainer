@@ -1,0 +1,19 @@
+{"version": "3", "templates": [    {
+      "id": 455,
+      "type": 3,
+      "title": "Web-Check",
+      "name": "web-check",
+      "description": "Web-Check is an on-demand OSINT tool for analysing any website: server, security headers, technologies, DNS, and related public signals.",
+      "note": "OSINT for any website",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/web-check.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/web-check/docker-compose.yml"
+      },
+      "env": [
+        {"name": "API_BLOCKED_HOSTS", "label": "API_BLOCKED_HOSTS", "description": "Hosts and CIDR ranges the API must not scan. Includes private, loopback, and link-local addresses.", "default": "localhost,local,metadata.google.internal,169.254.169.254,::1,0.0.0.0/8,10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.168.0.0/16"},
+        {"name": "API_ENABLE_RATE_LIMIT", "label": "API_ENABLE_RATE_LIMIT", "description": "Rate-limit the API.", "default": "true"}
+      ]
+    }]}
