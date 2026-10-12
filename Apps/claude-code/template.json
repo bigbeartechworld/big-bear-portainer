@@ -1,0 +1,21 @@
+{"version": "3", "templates": [    {
+      "id": 59,
+      "type": 3,
+      "title": "Claude Code Container",
+      "name": "claude-code",
+      "description": "Claude Code Container 1.0.28 runs Anthropic Claude Code in a browser terminal and an MCP API.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/claude.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/claude-code/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ANTHROPIC_API_KEY", "label": "ANTHROPIC_API_KEY", "description": "Anthropic API key. Leave empty to sign in with OAuth in the web terminal.", "default": ""},
+        {"name": "AUTH_PASSWORD", "label": "AUTH_PASSWORD", "description": "Password for the web terminal and bearer token for the MCP API. The container exits while this is empty or still the catalog value. An empty value would otherwise open the API. Replace it in the install form before the first start. CasaOS and ZimaOS edit this literal; they do not substitute Compose variables.", "default": "9c93e0aa-ebe4-4737-b222-d6445c64da29"},
+        {"name": "MCP_ENABLED", "label": "MCP_ENABLED", "description": "Enable the MCP endpoint. Web login still runs when this is false.", "default": "true"},
+        {"name": "CLAUDE_SESSION_TTL", "label": "CLAUDE_SESSION_TTL", "description": "Seconds of inactivity before the web terminal session is closed.", "default": "1800"}
+      ]
+    }]}

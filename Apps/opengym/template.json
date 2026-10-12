@@ -1,0 +1,29 @@
+{"version": "3", "templates": [    {
+      "id": 296,
+      "type": 3,
+      "title": "openGym",
+      "name": "opengym",
+      "description": "openGym is a self-hosted gym and body-weight tracker. It plans workouts, logs sets, and signs you in with passkeys. The web container proxies the API and serves exercise media.",
+      "note": "Self-hosted workout tracker",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/DuarteSantos8/openGym@main/frontend/public/icon-512.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/opengym/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NGINX_PORT", "label": "NGINX_PORT", "description": "Port nginx listens on inside the web container.", "default": "80"},
+        {"name": "BACKEND", "label": "BACKEND", "description": "API service name that /api is proxied to.", "default": "api"},
+        {"name": "PORT", "label": "PORT", "description": "Port the API listens on. The web container proxies to the same value.", "default": "3000"},
+        {"name": "RESOLVER", "label": "RESOLVER", "description": "Docker embedded DNS used by nginx.", "default": "127.0.0.11"},
+        {"name": "CF_CONNECTING_IP", "label": "CF_CONNECTING_IP", "description": "Empty drops CF-Connecting-IP so a direct client cannot forge the logged address.", "default": ""},
+        {"name": "BASE_PATH", "label": "BASE_PATH", "description": "Empty serves the app at the site root.", "default": ""},
+        {"name": "MEDIA_UPLOAD_MAX", "label": "MEDIA_UPLOAD_MAX", "description": "Largest upload nginx passes to the API.", "default": "48m"},
+        {"name": "DATA_DIR", "label": "DATA_DIR", "description": "Accounts, passkeys, session secret, and uploads.", "default": "/data"},
+        {"name": "TRUST_PROXY", "label": "TRUST_PROXY", "description": "Trust forwarded headers from the web container, which overwrites them.", "default": "1"},
+        {"name": "RP_ID", "label": "RP_ID", "description": "Hostname passkeys are bound to.", "default": "localhost"},
+        {"name": "ORIGIN", "label": "ORIGIN", "description": "Full URL the app is served from. Must match the published host port.", "default": "http://localhost:20808"},
+        {"name": "RP_NAME", "label": "RP_NAME", "description": "Name shown in the passkey prompt.", "default": "openGym"}
+      ]
+    }]}

@@ -1,0 +1,36 @@
+{"version": "3", "templates": [    {
+      "id": 93,
+      "type": 3,
+      "title": "Documenso",
+      "name": "documenso",
+      "description": "Documenso v2.19.0 is an open-source document signing platform backed by PostgreSQL.",
+      "note": "Open source document signing",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/documenso.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/documenso/docker-compose.yml"
+      },
+      "env": [
+        {"name": "PORT", "label": "PORT", "description": "Port Documenso listens on inside the container.", "default": "3000"},
+        {"name": "NEXTAUTH_SECRET", "label": "NEXTAUTH_SECRET", "description": "Session secret.", "default": "HlLbSGA2KdCiFkgFK2QCbocNRMQYCuyHcdw0HybLaks"},
+        {"name": "NEXT_PRIVATE_ENCRYPTION_KEY", "label": "NEXT_PRIVATE_ENCRYPTION_KEY", "description": "Primary encryption key. At least 32 characters.", "default": "z7k14oDge1HeVUG2LlT3aQeypUTr8NH-JID_K6tYUO0"},
+        {"name": "NEXT_PRIVATE_ENCRYPTION_SECONDARY_KEY", "label": "NEXT_PRIVATE_ENCRYPTION_SECONDARY_KEY", "description": "Secondary encryption key. At least 32 characters.", "default": "utotV_gd2gwCIO5BGo-E72vSqI24hOittOVkWfbqBAg"},
+        {"name": "NEXT_PUBLIC_WEBAPP_URL", "label": "NEXT_PUBLIC_WEBAPP_URL", "description": "Public URL where browsers reach Documenso.", "default": "http://localhost:20030"},
+        {"name": "NEXT_PRIVATE_INTERNAL_WEBAPP_URL", "label": "NEXT_PRIVATE_INTERNAL_WEBAPP_URL", "description": "URL the app uses to call itself inside the container.", "default": "http://localhost:3000"},
+        {"name": "NEXT_PRIVATE_DATABASE_URL", "label": "NEXT_PRIVATE_DATABASE_URL", "description": "PostgreSQL connection string. Must match the database service.", "default": "postgresql://documenso:68a9a162-7781-4a5e-be4f-3c4256932a98@documenso-db:5432/documenso"},
+        {"name": "NEXT_PRIVATE_DIRECT_DATABASE_URL", "label": "NEXT_PRIVATE_DIRECT_DATABASE_URL", "description": "Direct PostgreSQL connection string used for migrations.", "default": "postgresql://documenso:68a9a162-7781-4a5e-be4f-3c4256932a98@documenso-db:5432/documenso"},
+        {"name": "NEXT_PUBLIC_UPLOAD_TRANSPORT", "label": "NEXT_PUBLIC_UPLOAD_TRANSPORT", "description": "Store uploaded files in PostgreSQL.", "default": "database"},
+        {"name": "NEXT_PRIVATE_SMTP_TRANSPORT", "label": "NEXT_PRIVATE_SMTP_TRANSPORT", "description": "Email transport. smtp-auth is username and password SMTP.", "default": "smtp-auth"},
+        {"name": "NEXT_PRIVATE_SMTP_HOST", "label": "NEXT_PRIVATE_SMTP_HOST", "description": "SMTP server hostname. Replace with a real server before sending mail.", "default": "smtp.example.com"},
+        {"name": "NEXT_PRIVATE_SMTP_PORT", "label": "NEXT_PRIVATE_SMTP_PORT", "description": "SMTP server port.", "default": "587"},
+        {"name": "NEXT_PRIVATE_SMTP_USERNAME", "label": "NEXT_PRIVATE_SMTP_USERNAME", "description": "SMTP username. Replace with the real account.", "default": "documenso-4RI74RoG"},
+        {"name": "NEXT_PRIVATE_SMTP_PASSWORD", "label": "NEXT_PRIVATE_SMTP_PASSWORD", "description": "SMTP password. Replace with the real account password.", "default": "61e22c1d-6f27-4542-a49d-47f36c1b0da6"},
+        {"name": "NEXT_PRIVATE_SMTP_FROM_NAME", "label": "NEXT_PRIVATE_SMTP_FROM_NAME", "description": "Display name on outgoing email.", "default": "Documenso"},
+        {"name": "NEXT_PRIVATE_SMTP_FROM_ADDRESS", "label": "NEXT_PRIVATE_SMTP_FROM_ADDRESS", "description": "From address on outgoing email.", "default": "noreply@localhost"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user for the documenso-db service.", "default": "documenso"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password. Must match the database URLs.", "default": "68a9a162-7781-4a5e-be4f-3c4256932a98"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "documenso"}
+      ]
+    }]}

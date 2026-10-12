@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 67,
+      "type": 3,
+      "title": "Continuwuity",
+      "name": "continuwuity",
+      "description": "Continuwuity v26.7.2 is a community-driven Matrix homeserver and the continuation of conduwuit.",
+      "note": "Community Matrix homeserver",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/continuwuity.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/continuwuity/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CONTINUWUITY_SERVER_NAME", "label": "CONTINUWUITY_SERVER_NAME", "description": "Matrix server name. Cannot be changed after the first start without wiping the database.", "default": "matrix.localhost"},
+        {"name": "CONTINUWUITY_DATABASE_PATH", "label": "CONTINUWUITY_DATABASE_PATH", "description": "Database directory. Must match the data volume mount.", "default": "/var/lib/continuwuity"},
+        {"name": "CONTINUWUITY_ADDRESS", "label": "CONTINUWUITY_ADDRESS", "description": "Bind address. 0.0.0.0 listens on all interfaces inside the container.", "default": "0.0.0.0"},
+        {"name": "CONTINUWUITY_PORT", "label": "CONTINUWUITY_PORT", "description": "Port Continuwuity listens on inside the container.", "default": "8008"},
+        {"name": "CONTINUWUITY_ALLOW_FEDERATION", "label": "CONTINUWUITY_ALLOW_FEDERATION", "description": "Federation is off until a reverse proxy serves this homeserver over HTTPS.", "default": "false"}
+      ]
+    }]}

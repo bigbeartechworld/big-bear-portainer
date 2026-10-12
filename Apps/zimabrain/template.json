@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 484,
+      "type": 3,
+      "title": "ZimaBrain CE",
+      "name": "zimabrain",
+      "description": "ZimaBrain CE is a local verifier-first diagnostic assistant for ZimaOS. It checks host evidence and keeps monitor history in a local SQLite database.",
+      "note": "Local ZimaOS diagnostic assistant",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/Jacko88888/zimabrain-ce/main/app/assets/zimabrain-ce-logo.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/zimabrain/docker-compose.yml"
+      },
+      "env": [
+        {"name": "ZIMABRAIN_PASSWORD", "label": "ZIMABRAIN_PASSWORD", "description": "Login password for the ZimaBrain web UI. The container exits while this is empty or still the catalog value. Replace it in the install form before the first start.", "default": "79526452-173c-49bc-873f-956f5a9838cb"},
+        {"name": "ZIMABRAIN_SECRET_KEY", "label": "ZIMABRAIN_SECRET_KEY", "description": "Internal session key. Not the login password.", "default": "qC57Chx7nDu_juH55MXIma7EsHMKLSwBN9CgWFESkqU"},
+        {"name": "ZIMABRAIN_MONITOR_ENABLED", "label": "ZIMABRAIN_MONITOR_ENABLED", "description": "Collect local CPU, memory, disk, and container samples.", "default": "true"},
+        {"name": "ZIMABRAIN_MONITOR_INTERVAL_SECONDS", "label": "ZIMABRAIN_MONITOR_INTERVAL_SECONDS", "description": "Seconds between monitor samples.", "default": "60"},
+        {"name": "ZIMABRAIN_MONITOR_RETENTION_DAYS", "label": "ZIMABRAIN_MONITOR_RETENTION_DAYS", "description": "Days of monitor history to keep.", "default": "7"}
+      ]
+    }]}

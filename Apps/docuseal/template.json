@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 94,
+      "type": 3,
+      "title": "DocuSeal",
+      "name": "docuseal",
+      "description": "DocuSeal 3.3.1 is an open-source platform to create, fill, and sign PDF documents.",
+      "note": "Open source PDF signing",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/docuseal.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/docuseal/docker-compose.yml"
+      }
+    }]}

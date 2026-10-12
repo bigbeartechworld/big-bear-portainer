@@ -1,0 +1,22 @@
+{"version": "3", "templates": [    {
+      "id": 291,
+      "type": 3,
+      "title": "OmniRoute",
+      "name": "omniroute",
+      "description": "OmniRoute is a self-hosted LLM router. The dashboard and an OpenAI-compatible endpoint on one port send requests to the provider accounts you connect, with Redis for rate limiting.",
+      "note": "Self-hosted LLM router",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/omniroute.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/omniroute/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DATA_DIR", "label": "DATA_DIR", "description": "SQLite data directory. Must match the data volume.", "default": "/app/data"},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Redis on the compose network. Not published to the host.", "default": "redis://redis:6379"},
+        {"name": "REQUIRE_API_KEY", "label": "REQUIRE_API_KEY", "description": "Require a dashboard login and an API key. Required because the ports are published on all interfaces.", "default": "true"},
+        {"name": "INITIAL_PASSWORD", "label": "INITIAL_PASSWORD", "description": "Dashboard password created on first boot.", "default": "0efefa3c-54ae-4848-b7bc-295f91483fe7"},
+        {"name": "OMNIROUTE_MEMORY_MB", "label": "OMNIROUTE_MEMORY_MB", "description": "V8 heap ceiling from the self-host env example.", "default": "2048"}
+      ]
+    }]}

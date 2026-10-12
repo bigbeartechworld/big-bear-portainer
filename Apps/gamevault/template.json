@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 141,
+      "type": 3,
+      "title": "GameVault",
+      "name": "gamevault",
+      "description": "GameVault 17.0.1 is a self-hosted library for DRM-free games, with a web UI and PostgreSQL.",
+      "note": "Self-hosted DRM-free game library",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/gamevault.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/gamevault/docker-compose.yml"
+      },
+      "env": [
+        {"name": "DB_HOST", "label": "DB_HOST", "description": "PostgreSQL hostname. Must be the database service name.", "default": "gamevault-db"},
+        {"name": "DB_USERNAME", "label": "DB_USERNAME", "description": "PostgreSQL user. Must match POSTGRES_USER.", "default": "gamevault"},
+        {"name": "DB_PASSWORD", "label": "DB_PASSWORD", "description": "PostgreSQL password. Must match POSTGRES_PASSWORD and must not be empty.", "default": "02386af9-382f-49ad-841b-060735fd14d7"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user for the gamevault-db service.", "default": "gamevault"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password for the gamevault-db service.", "default": "02386af9-382f-49ad-841b-060735fd14d7"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "gamevault"}
+      ]
+    }]}

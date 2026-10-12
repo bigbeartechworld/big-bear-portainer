@@ -1,0 +1,23 @@
+{"version": "3", "templates": [    {
+      "id": 64,
+      "type": 3,
+      "title": "Coder",
+      "name": "coder",
+      "description": "Coder v2.36.7 is a self-hosted development-platform control plane with Postgres and a Docker socket for workspace templates.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/coder.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/coder/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CODER_PG_CONNECTION_URL", "label": "CODER_PG_CONNECTION_URL", "description": "Postgres connection URL. User, password, host, and database match the database service.", "default": "postgresql://coder:918063d1-fb62-438f-8cbf-49e01f7364ff@database/coder?sslmode=disable"},
+        {"name": "CODER_HTTP_ADDRESS", "label": "CODER_HTTP_ADDRESS", "description": "Address the Coder control plane listens on inside the container.", "default": "0.0.0.0:7080"},
+        {"name": "CODER_ACCESS_URL", "label": "CODER_ACCESS_URL", "description": "URL that users and workspaces use to reach Coder. Localhost works for Docker templates on this host only.", "default": "http://localhost:7080"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "coder"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "Postgres password. The same value is embedded in CODER_PG_CONNECTION_URL.", "default": "918063d1-fb62-438f-8cbf-49e01f7364ff"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "coder"}
+      ]
+    }]}

@@ -1,0 +1,29 @@
+{"version": "3", "templates": [    {
+      "id": 426,
+      "type": 3,
+      "title": "Trackie",
+      "name": "trackie",
+      "description": "Trackie is a New Zealand Actual Budget server image. Sign-in is OpenID Connect, and optional per-user Akahu bank tokens are encrypted at rest.",
+      "note": "New Zealand Actual Budget",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://trackie.nz/apple-touch-icon.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/trackie/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Node environment.", "default": "production"},
+        {"name": "ACTUAL_LOGIN_METHOD", "label": "ACTUAL_LOGIN_METHOD", "description": "Login method. Trackie self-host uses OpenID Connect.", "default": "openid"},
+        {"name": "ACTUAL_OPENID_ENFORCE", "label": "ACTUAL_OPENID_ENFORCE", "description": "Require the identity provider and disable password login.", "default": "true"},
+        {"name": "ACTUAL_USER_CREATION_MODE", "label": "ACTUAL_USER_CREATION_MODE", "description": "Auto-provision a user on the first successful identity-provider login.", "default": "login"},
+        {"name": "ACTUAL_OPENID_DISCOVERY_URL", "label": "ACTUAL_OPENID_DISCOVERY_URL", "description": "OIDC discovery URL. The provider must return a verified email claim.", "default": ""},
+        {"name": "ACTUAL_OPENID_CLIENT_ID", "label": "ACTUAL_OPENID_CLIENT_ID", "description": "OIDC client id. Register callback SERVER_HOSTNAME/openid/callback.", "default": ""},
+        {"name": "ACTUAL_OPENID_CLIENT_SECRET", "label": "ACTUAL_OPENID_CLIENT_SECRET", "description": "OIDC client secret.", "default": ""},
+        {"name": "ACTUAL_OPENID_SERVER_HOSTNAME", "label": "ACTUAL_OPENID_SERVER_HOSTNAME", "description": "Public URL of this server. Official compose uses port 5006. This listing publishes 20005 because 5006 is already used.", "default": "http://localhost:20005"},
+        {"name": "ACTUAL_TOKEN_EXPIRATION", "label": "ACTUAL_TOKEN_EXPIRATION", "description": "Session lifetime in seconds (90 days).", "default": "7776000"},
+        {"name": "ACTUAL_IDENTITY_SECRET", "label": "ACTUAL_IDENTITY_SECRET", "description": "HMAC key that derives stored user identity from verified email. Do not rotate it.", "default": "v3smK3KDuHTlcUVTDXPLGCilbm3y3-0OGF6PYX-iIQ0"},
+        {"name": "ACTUAL_AKAHU_TOKEN_SECRET", "label": "ACTUAL_AKAHU_TOKEN_SECRET", "description": "Key that encrypts optional per-user Akahu tokens. Rotating it only forces users to paste tokens again.", "default": "jQBA8ydLKvkPN8tc1duO2vQRY-yhpXI0fq6Xxc1sNhQ"},
+        {"name": "TZ", "label": "TZ", "description": "Server timezone used to bucket transaction dates.", "default": "Pacific/Auckland"}
+      ]
+    }]}

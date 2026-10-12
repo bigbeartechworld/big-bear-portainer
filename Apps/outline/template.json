@@ -1,0 +1,32 @@
+{"version": "3", "templates": [    {
+      "id": 304,
+      "type": 3,
+      "title": "Outline",
+      "name": "outline",
+      "description": "Outline is a self-hosted team wiki and knowledge base. This stack runs the Outline server with PostgreSQL 18 and Redis, and stores uploads on a local volume.",
+      "note": "Self-hosted team wiki",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/outline.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/outline/docker-compose.yml"
+      },
+      "env": [
+        {"name": "NODE_ENV", "label": "NODE_ENV", "description": "Production mode from the Outline env sample.", "default": "production"},
+        {"name": "URL", "label": "URL", "description": "Public URL of this instance. Change it if you serve Outline on another address.", "default": "http://localhost:23000"},
+        {"name": "PORT", "label": "PORT", "description": "Port Outline listens on inside the container.", "default": "3000"},
+        {"name": "SECRET_KEY", "label": "SECRET_KEY", "description": "Hex-encoded 32-byte key used to encrypt data.", "default": "6f3cbf7b3415ec195adc0cc98a3fc7f5953de9e8b77bff78e34584867ecb60f4"},
+        {"name": "UTILS_SECRET", "label": "UTILS_SECRET", "description": "Second random secret from the env sample.", "default": "X8p5_gwAyZJW_MION_hihkRrU77tZHpu_4oJvLgWY4E"},
+        {"name": "DATABASE_URL", "label": "DATABASE_URL", "description": "PostgreSQL connection string. User, password, and database match the postgres service.", "default": "postgres://outline:82d982a5-0329-46f7-a098-4e4cce10f3c2@postgres:5432/outline"},
+        {"name": "PGSSLMODE", "label": "PGSSLMODE", "description": "Disable Postgres SSL for the database on the compose network.", "default": "disable"},
+        {"name": "REDIS_URL", "label": "REDIS_URL", "description": "Redis on the compose network.", "default": "redis://redis:6379"},
+        {"name": "FILE_STORAGE", "label": "FILE_STORAGE", "description": "Store uploads on the local volume instead of S3.", "default": "local"},
+        {"name": "FILE_STORAGE_LOCAL_ROOT_DIR", "label": "FILE_STORAGE_LOCAL_ROOT_DIR", "description": "Local upload directory. Must match the storage volume.", "default": "/var/lib/outline/data"},
+        {"name": "FILE_STORAGE_UPLOAD_MAX_SIZE", "label": "FILE_STORAGE_UPLOAD_MAX_SIZE", "description": "Maximum upload size in bytes from the env sample.", "default": "262144000"},
+        {"name": "FORCE_HTTPS", "label": "FORCE_HTTPS", "description": "Do not redirect to HTTPS. This listing is served over HTTP.", "default": "false"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "PostgreSQL user.", "default": "outline"},
+        {"name": "POSTGRES_PASSWORD", "label": "POSTGRES_PASSWORD", "description": "PostgreSQL password. Must match DATABASE_URL.", "default": "82d982a5-0329-46f7-a098-4e4cce10f3c2"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "PostgreSQL database name.", "default": "outline"}
+      ]
+    }]}

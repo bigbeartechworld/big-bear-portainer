@@ -1,0 +1,26 @@
+{"version": "3", "templates": [    {
+      "id": 61,
+      "type": 3,
+      "title": "Cloudreve",
+      "name": "cloudreve",
+      "description": "Cloudreve 4.19.1 is a self-hosted file manager with multi-cloud storage, backed by Postgres and Redis.",
+      "note": "",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/cloudreve.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/cloudreve/docker-compose.yml"
+      },
+      "env": [
+        {"name": "CR_CONF_Database.Type", "label": "CR_CONF_Database.Type", "description": "Database driver.", "default": "postgres"},
+        {"name": "CR_CONF_Database.Host", "label": "CR_CONF_Database.Host", "description": "Postgres service hostname.", "default": "postgresql"},
+        {"name": "CR_CONF_Database.User", "label": "CR_CONF_Database.User", "description": "Postgres user. Matches POSTGRES_USER.", "default": "cloudreve"},
+        {"name": "CR_CONF_Database.Name", "label": "CR_CONF_Database.Name", "description": "Postgres database name. Matches POSTGRES_DB.", "default": "cloudreve"},
+        {"name": "CR_CONF_Database.Port", "label": "CR_CONF_Database.Port", "description": "Postgres port inside the Compose network.", "default": "5432"},
+        {"name": "CR_CONF_Redis.Server", "label": "CR_CONF_Redis.Server", "description": "Redis address on the Compose network.", "default": "redis:6379"},
+        {"name": "POSTGRES_USER", "label": "POSTGRES_USER", "description": "Postgres role created on first start.", "default": "cloudreve"},
+        {"name": "POSTGRES_DB", "label": "POSTGRES_DB", "description": "Postgres database created on first start.", "default": "cloudreve"},
+        {"name": "POSTGRES_HOST_AUTH_METHOD", "label": "POSTGRES_HOST_AUTH_METHOD", "description": "Auth method from the official Compose file. Connections on the Compose network do not use a password.", "default": "trust"}
+      ]
+    }]}
