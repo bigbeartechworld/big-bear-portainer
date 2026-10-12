@@ -2546,7 +2546,7 @@
     {
       "id": 127,
       "type": 3,
-      "title": "FileBrowser Quantum",
+      "title": "FileBrowser Quantum (Legacy)",
       "name": "filebrowser-quantum",
       "description": "A self-hosted web file manager forked from FileBrowser with advanced features including OIDC authentication, indexed search, office document previews, and multi-source support.",
       "note": "Advanced self-hosted web file manager",
@@ -2563,6 +2563,24 @@
     },
     {
       "id": 128,
+      "type": 3,
+      "title": "FileBrowser Quantum v2",
+      "name": "filebrowser-quantum-v2",
+      "description": "FileBrowser Quantum 2.0 file manager. This is a new app, separate from FileBrowser Quantum 1.5.8. v2 stores users and shares in SQLite and refuses to start while a v1 database.db file is still in the data directory. Do not attach the 1.5.8 data volume. A fresh install prints a one-time admin password in the container logs.",
+      "note": "FileBrowser Quantum v2",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/filebrowser-quantum.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/filebrowser-quantum-v2/docker-compose.yml"
+      },
+      "env": [
+        {"name": "TZ", "label": "TZ", "description": "Timezone for the application", "default": "UTC"}
+      ]
+    },
+    {
+      "id": 129,
       "type": 3,
       "title": "Filezilla",
       "name": "filezilla",
@@ -2582,7 +2600,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": 130,
       "type": 3,
       "title": "Financial Freedom",
       "name": "financial-freedom",
@@ -2629,7 +2647,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 131,
       "type": 3,
       "title": "Firefox",
       "name": "firefox",
@@ -2650,7 +2668,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 132,
       "type": 3,
       "title": "Fireshare",
       "name": "fireshare",
@@ -2676,7 +2694,7 @@
       ]
     },
     {
-      "id": 132,
+      "id": 133,
       "type": 3,
       "title": "Flame",
       "name": "flame",
@@ -2694,7 +2712,7 @@
       ]
     },
     {
-      "id": 133,
+      "id": 134,
       "type": 3,
       "title": "FlContainers Guacamole",
       "name": "flcontainers-guacamole",
@@ -2713,7 +2731,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": 135,
       "type": 3,
       "title": "Fleet",
       "name": "fleet",
@@ -2738,7 +2756,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": 136,
       "type": 3,
       "title": "Flowise AI",
       "name": "flowise",
@@ -2768,7 +2786,7 @@
       ]
     },
     {
-      "id": 136,
+      "id": 137,
       "type": 3,
       "title": "Flycast",
       "name": "flycast",
@@ -2788,7 +2806,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": 138,
       "type": 3,
       "title": "Focalboard",
       "name": "focalboard",
@@ -2803,7 +2821,7 @@
       }
     },
     {
-      "id": 138,
+      "id": 139,
       "type": 3,
       "title": "Foldingathome",
       "name": "foldingathome",
@@ -2826,7 +2844,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": 140,
       "type": 3,
       "title": "Freecad",
       "name": "freecad",
@@ -2846,7 +2864,7 @@
       ]
     },
     {
-      "id": 140,
+      "id": 141,
       "type": 3,
       "title": "Freshrss",
       "name": "freshrss",
@@ -2866,7 +2884,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 142,
       "type": 3,
       "title": "GameVault",
       "name": "gamevault",
@@ -2889,7 +2907,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": 143,
       "type": 3,
       "title": "Genmon",
       "name": "genmon",
@@ -2904,7 +2922,7 @@
       }
     },
     {
-      "id": 143,
+      "id": 144,
       "type": 3,
       "title": "Ghost",
       "name": "ghost",
@@ -2927,7 +2945,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": 145,
       "type": 3,
       "title": "Ghostfolio",
       "name": "ghostfolio",
@@ -2956,7 +2974,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": 146,
       "type": 3,
       "title": "Gimp",
       "name": "gimp",
@@ -2976,7 +2994,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": 147,
       "type": 3,
       "title": "Gitea",
       "name": "gitea",
@@ -2998,7 +3016,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": 148,
       "type": 3,
       "title": "Gitea Mirror",
       "name": "gitea-mirror",
@@ -3020,7 +3038,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 149,
       "type": 3,
       "title": "Github-desktop",
       "name": "github-desktop",
@@ -3040,7 +3058,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 150,
       "type": 3,
       "title": "Gitqlient",
       "name": "gitqlient",
@@ -3060,7 +3078,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 151,
       "type": 3,
       "title": "Gladys Assistant",
       "name": "gladys",
@@ -3081,7 +3099,7 @@
       ]
     },
     {
-      "id": 151,
+      "id": 152,
       "type": 3,
       "title": "Glance",
       "name": "glance",
@@ -3096,7 +3114,7 @@
       }
     },
     {
-      "id": 152,
+      "id": 153,
       "type": 3,
       "title": "Glances",
       "name": "glances",
@@ -3115,7 +3133,7 @@
       ]
     },
     {
-      "id": 153,
+      "id": 154,
       "type": 3,
       "title": "Gluetun",
       "name": "gluetun",
@@ -3130,7 +3148,7 @@
       }
     },
     {
-      "id": 154,
+      "id": 155,
       "type": 3,
       "title": "GoAway",
       "name": "goaway",
@@ -3145,7 +3163,7 @@
       }
     },
     {
-      "id": 155,
+      "id": 156,
       "type": 3,
       "title": "Gotify",
       "name": "gotify",
@@ -3164,7 +3182,7 @@
       ]
     },
     {
-      "id": 156,
+      "id": 157,
       "type": 3,
       "title": "Grav",
       "name": "grav",
@@ -3184,7 +3202,7 @@
       ]
     },
     {
-      "id": 157,
+      "id": 158,
       "type": 3,
       "title": "Grocy",
       "name": "grocy",
@@ -3204,7 +3222,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": 159,
       "type": 3,
       "title": "Guacamole",
       "name": "guacamole",
@@ -3226,7 +3244,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 160,
       "type": 3,
       "title": "Gzdoom",
       "name": "gzdoom",
@@ -3246,7 +3264,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 161,
       "type": 3,
       "title": "Habridge",
       "name": "habridge",
@@ -3267,7 +3285,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 162,
       "type": 3,
       "title": "Handbrake",
       "name": "handbrake",
@@ -3287,7 +3305,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": 163,
       "type": 3,
       "title": "Healthchecks",
       "name": "healthchecks",
@@ -3326,7 +3344,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 164,
       "type": 3,
       "title": "Hedgedoc",
       "name": "hedgedoc",
@@ -3357,7 +3375,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 165,
       "type": 3,
       "title": "Heimdall",
       "name": "heimdall",
@@ -3378,7 +3396,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 166,
       "type": 3,
       "title": "Helium",
       "name": "helium",
@@ -3399,7 +3417,7 @@
       ]
     },
     {
-      "id": 166,
+      "id": 167,
       "type": 3,
       "title": "Hermes Agent",
       "name": "hermes",
@@ -3419,7 +3437,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 168,
       "type": 3,
       "title": "Hestia CP",
       "name": "hestiacp",
@@ -3437,7 +3455,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 169,
       "type": 3,
       "title": "Hishtory-server",
       "name": "hishtory-server",
@@ -3459,7 +3477,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 170,
       "type": 3,
       "title": "Homarr",
       "name": "homarr",
@@ -3474,7 +3492,7 @@
       }
     },
     {
-      "id": 170,
+      "id": 171,
       "type": 3,
       "title": "Homarr v1 (Legacy)",
       "name": "homarr-v1",
@@ -3489,7 +3507,7 @@
       }
     },
     {
-      "id": 171,
+      "id": 172,
       "type": 3,
       "title": "Homarr v2",
       "name": "homarr-v2",
@@ -3504,7 +3522,7 @@
       }
     },
     {
-      "id": 172,
+      "id": 173,
       "type": 3,
       "title": "Home Assistant",
       "name": "home-assistant",
@@ -3519,7 +3537,7 @@
       }
     },
     {
-      "id": 173,
+      "id": 174,
       "type": 3,
       "title": "HomeBridge",
       "name": "homebridge",
@@ -3534,7 +3552,7 @@
       }
     },
     {
-      "id": 174,
+      "id": 175,
       "type": 3,
       "title": "Homedex",
       "name": "homedex",
@@ -3563,7 +3581,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 176,
       "type": 3,
       "title": "Homelable",
       "name": "homelable",
@@ -3588,7 +3606,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 177,
       "type": 3,
       "title": "Homer",
       "name": "homer",
@@ -3606,7 +3624,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 178,
       "type": 3,
       "title": "HRConvert2",
       "name": "hrconvert2",
@@ -3621,7 +3639,7 @@
       }
     },
     {
-      "id": 178,
+      "id": 179,
       "type": 3,
       "title": "I Hate Money",
       "name": "ihatemoney",
@@ -3643,7 +3661,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 180,
       "type": 3,
       "title": "Immich",
       "name": "immich",
@@ -3667,7 +3685,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 181,
       "type": 3,
       "title": "Immich AIO Alpine",
       "name": "immich-aio-alpine",
@@ -3698,7 +3716,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 182,
       "type": 3,
       "title": "Immich Kiosk",
       "name": "immich-kiosk",
@@ -3720,7 +3738,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 183,
       "type": 3,
       "title": "Immich without machine learning",
       "name": "immich-without-machine-learning",
@@ -3743,7 +3761,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 184,
       "type": 3,
       "title": "Indelible",
       "name": "indelible",
@@ -3788,7 +3806,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 185,
       "type": 3,
       "title": "Inkscape",
       "name": "inkscape",
@@ -3808,7 +3826,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 186,
       "type": 3,
       "title": "Intellij-idea",
       "name": "intellij-idea",
@@ -3828,7 +3846,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": 187,
       "type": 3,
       "title": "Invoice Ninja",
       "name": "invoice-ninja",
@@ -3843,7 +3861,7 @@
       }
     },
     {
-      "id": 187,
+      "id": 188,
       "type": 3,
       "title": "IT Tools",
       "name": "it-tools",
@@ -3858,7 +3876,7 @@
       }
     },
     {
-      "id": 188,
+      "id": 189,
       "type": 3,
       "title": "Jellyfin",
       "name": "jellyfin",
@@ -3879,7 +3897,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 190,
       "type": 3,
       "title": "Jellyseerr (Legacy)",
       "name": "jellyseerr",
@@ -3898,7 +3916,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 191,
       "type": 3,
       "title": "Jellystat",
       "name": "jellystat",
@@ -3913,7 +3931,7 @@
       }
     },
     {
-      "id": 191,
+      "id": 192,
       "type": 3,
       "title": "Jenkins-builder",
       "name": "jenkins-builder",
@@ -3933,7 +3951,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 193,
       "type": 3,
       "title": "jfa-go",
       "name": "jfa-go",
@@ -3948,7 +3966,7 @@
       }
     },
     {
-      "id": 193,
+      "id": 194,
       "type": 3,
       "title": "Jlesage Firefox",
       "name": "jlesage-firefox",
@@ -3967,7 +3985,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": 195,
       "type": 3,
       "title": "Jlesage Handbrake",
       "name": "jlesage-handbrake",
@@ -3985,7 +4003,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 196,
       "type": 3,
       "title": "Joomla",
       "name": "joomla",
@@ -4005,7 +4023,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 197,
       "type": 3,
       "title": "joplin",
       "name": "joplin",
@@ -4031,7 +4049,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": 198,
       "type": 3,
       "title": "Kali-linux",
       "name": "kali-linux",
@@ -4051,7 +4069,7 @@
       ]
     },
     {
-      "id": 198,
+      "id": 199,
       "type": 3,
       "title": "Kasm",
       "name": "kasm",
@@ -4066,7 +4084,7 @@
       }
     },
     {
-      "id": 199,
+      "id": 200,
       "type": 3,
       "title": "Kavita",
       "name": "kavita",
@@ -4081,7 +4099,7 @@
       }
     },
     {
-      "id": 200,
+      "id": 201,
       "type": 3,
       "title": "Kdenlive",
       "name": "kdenlive",
@@ -4101,7 +4119,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 202,
       "type": 3,
       "title": "Keepassxc",
       "name": "keepassxc",
@@ -4121,7 +4139,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 203,
       "type": 3,
       "title": "Kicad",
       "name": "kicad",
@@ -4141,7 +4159,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 204,
       "type": 3,
       "title": "Kimai",
       "name": "kimai",
@@ -4165,7 +4183,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 205,
       "type": 3,
       "title": "KitchenOwl",
       "name": "kitchenowl",
@@ -4183,7 +4201,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 206,
       "type": 3,
       "title": "Kiwix Server",
       "name": "kiwix-serve",
@@ -4198,7 +4216,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 207,
       "type": 3,
       "title": "Kometa",
       "name": "kometa",
@@ -4223,7 +4241,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": 208,
       "type": 3,
       "title": "Komf",
       "name": "komf",
@@ -4247,7 +4265,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 209,
       "type": 3,
       "title": "Komga",
       "name": "komga",
@@ -4265,7 +4283,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 210,
       "type": 3,
       "title": "Kopia",
       "name": "kopia",
@@ -4280,7 +4298,7 @@
       }
     },
     {
-      "id": 210,
+      "id": 211,
       "type": 3,
       "title": "Krita",
       "name": "krita",
@@ -4300,7 +4318,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 212,
       "type": 3,
       "title": "LAN Cache",
       "name": "lancache",
@@ -4315,7 +4333,7 @@
       }
     },
     {
-      "id": 212,
+      "id": 213,
       "type": 3,
       "title": "Ldap-auth",
       "name": "ldap-auth",
@@ -4338,7 +4356,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 214,
       "type": 3,
       "title": "Libredesk",
       "name": "libredesk",
@@ -4353,7 +4371,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 215,
       "type": 3,
       "title": "Libreoffice",
       "name": "libreoffice",
@@ -4373,7 +4391,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 216,
       "type": 3,
       "title": "Librespeed",
       "name": "librespeed",
@@ -4402,7 +4420,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": 217,
       "type": 3,
       "title": "LibreTranslate",
       "name": "libretranslate",
@@ -4417,7 +4435,7 @@
       }
     },
     {
-      "id": 217,
+      "id": 218,
       "type": 3,
       "title": "Librewolf",
       "name": "librewolf",
@@ -4438,7 +4456,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 219,
       "type": 3,
       "title": "Limnoria",
       "name": "limnoria",
@@ -4458,7 +4476,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 220,
       "type": 3,
       "title": "LinkStack",
       "name": "linkstack",
@@ -4473,7 +4491,7 @@
       }
     },
     {
-      "id": 220,
+      "id": 221,
       "type": 3,
       "title": "Linkwarden",
       "name": "linkwarden",
@@ -4488,7 +4506,7 @@
       }
     },
     {
-      "id": 221,
+      "id": 222,
       "type": 3,
       "title": "Lm-studio",
       "name": "lm-studio",
@@ -4508,7 +4526,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 223,
       "type": 3,
       "title": "LobeChat",
       "name": "lobe-chat",
@@ -4529,7 +4547,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 224,
       "type": 3,
       "title": "Lollypop",
       "name": "lollypop",
@@ -4549,7 +4567,7 @@
       ]
     },
     {
-      "id": 224,
+      "id": 225,
       "type": 3,
       "title": "LS Adguard Home Sync",
       "name": "ls-adguardhome-sync",
@@ -4579,7 +4597,7 @@
       ]
     },
     {
-      "id": 225,
+      "id": 226,
       "type": 3,
       "title": "Lsio-api",
       "name": "lsio-api",
@@ -4599,7 +4617,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": 227,
       "type": 3,
       "title": "Luanti",
       "name": "luanti",
@@ -4620,7 +4638,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": 228,
       "type": 3,
       "title": "Lychee",
       "name": "lychee",
@@ -4649,7 +4667,7 @@
       ]
     },
     {
-      "id": 228,
+      "id": 229,
       "type": 3,
       "title": "LyriOn Music Server",
       "name": "lyrionmusicserver",
@@ -4667,7 +4685,7 @@
       ]
     },
     {
-      "id": 229,
+      "id": 230,
       "type": 3,
       "title": "Mailpit",
       "name": "mailpit",
@@ -4685,7 +4703,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": 231,
       "type": 3,
       "title": "Mame",
       "name": "mame",
@@ -4705,7 +4723,7 @@
       ]
     },
     {
-      "id": 231,
+      "id": 232,
       "type": 3,
       "title": "Manyfold",
       "name": "manyfold",
@@ -4728,7 +4746,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": 233,
       "type": 3,
       "title": "Mariadb",
       "name": "mariadb",
@@ -4754,7 +4772,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 234,
       "type": 3,
       "title": "Mastodon",
       "name": "mastodon",
@@ -4812,7 +4830,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 235,
       "type": 3,
       "title": "Matterbridge",
       "name": "matterbridge",
@@ -4827,7 +4845,7 @@
       }
     },
     {
-      "id": 235,
+      "id": 236,
       "type": 3,
       "title": "Maybe Finance",
       "name": "maybe-finance",
@@ -4852,7 +4870,7 @@
       ]
     },
     {
-      "id": 236,
+      "id": 237,
       "type": 3,
       "title": "Mealie",
       "name": "mealie",
@@ -4867,7 +4885,7 @@
       }
     },
     {
-      "id": 237,
+      "id": 238,
       "type": 3,
       "title": "Mediaelch",
       "name": "mediaelch",
@@ -4887,7 +4905,7 @@
       ]
     },
     {
-      "id": 238,
+      "id": 239,
       "type": 3,
       "title": "Melonds",
       "name": "melonds",
@@ -4907,7 +4925,7 @@
       ]
     },
     {
-      "id": 239,
+      "id": 240,
       "type": 3,
       "title": "Microbin",
       "name": "microbin",
@@ -4964,7 +4982,7 @@
       ]
     },
     {
-      "id": 240,
+      "id": 241,
       "type": 3,
       "title": "MIND",
       "name": "mind",
@@ -4982,7 +5000,7 @@
       ]
     },
     {
-      "id": 241,
+      "id": 242,
       "type": 3,
       "title": "Minecraft Server",
       "name": "minecraft",
@@ -5000,7 +5018,7 @@
       ]
     },
     {
-      "id": 242,
+      "id": 243,
       "type": 3,
       "title": "Minetest",
       "name": "minetest",
@@ -5021,7 +5039,7 @@
       ]
     },
     {
-      "id": 243,
+      "id": 244,
       "type": 3,
       "title": "Minio",
       "name": "minio",
@@ -5040,7 +5058,7 @@
       ]
     },
     {
-      "id": 244,
+      "id": 245,
       "type": 3,
       "title": "Minisatip",
       "name": "minisatip",
@@ -5061,7 +5079,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": 246,
       "type": 3,
       "title": "Modmanager",
       "name": "modmanager",
@@ -5081,7 +5099,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": 247,
       "type": 3,
       "title": "Modrinth",
       "name": "modrinth",
@@ -5101,7 +5119,7 @@
       ]
     },
     {
-      "id": 247,
+      "id": 248,
       "type": 3,
       "title": "Monica",
       "name": "monica",
@@ -5116,7 +5134,7 @@
       }
     },
     {
-      "id": 248,
+      "id": 249,
       "type": 3,
       "title": "Morphos",
       "name": "morphos",
@@ -5131,7 +5149,7 @@
       }
     },
     {
-      "id": 249,
+      "id": 250,
       "type": 3,
       "title": "Eclipse Mosquitto",
       "name": "mosquitto",
@@ -5146,7 +5164,7 @@
       }
     },
     {
-      "id": 250,
+      "id": 251,
       "type": 3,
       "title": "Msedge",
       "name": "msedge",
@@ -5167,7 +5185,7 @@
       ]
     },
     {
-      "id": 251,
+      "id": 252,
       "type": 3,
       "title": "Mstream",
       "name": "mstream",
@@ -5187,7 +5205,7 @@
       ]
     },
     {
-      "id": 252,
+      "id": 253,
       "type": 3,
       "title": "Mullvad-browser",
       "name": "mullvad-browser",
@@ -5208,7 +5226,7 @@
       ]
     },
     {
-      "id": 253,
+      "id": 254,
       "type": 3,
       "title": "Mumble Server",
       "name": "mumble-server",
@@ -5223,7 +5241,7 @@
       }
     },
     {
-      "id": 254,
+      "id": 255,
       "type": 3,
       "title": "Music Assistant",
       "name": "music-assistant",
@@ -5238,7 +5256,7 @@
       }
     },
     {
-      "id": 255,
+      "id": 256,
       "type": 3,
       "title": "MySpeed",
       "name": "myspeed",
@@ -5253,7 +5271,7 @@
       }
     },
     {
-      "id": 256,
+      "id": 257,
       "type": 3,
       "title": "Mysql-workbench",
       "name": "mysql-workbench",
@@ -5273,7 +5291,7 @@
       ]
     },
     {
-      "id": 257,
+      "id": 258,
       "type": 3,
       "title": "n8n",
       "name": "n8n",
@@ -5291,7 +5309,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": 259,
       "type": 3,
       "title": "Nano",
       "name": "nano",
@@ -5318,7 +5336,7 @@
       ]
     },
     {
-      "id": 259,
+      "id": 260,
       "type": 3,
       "title": "Nano-wallet",
       "name": "nano-wallet",
@@ -5333,7 +5351,7 @@
       }
     },
     {
-      "id": 260,
+      "id": 261,
       "type": 3,
       "title": "Navidrome",
       "name": "navidrome",
@@ -5348,7 +5366,7 @@
       }
     },
     {
-      "id": 261,
+      "id": 262,
       "type": 3,
       "title": "Ncdu",
       "name": "ncdu",
@@ -5363,7 +5381,7 @@
       }
     },
     {
-      "id": 262,
+      "id": 263,
       "type": 3,
       "title": "Neko Firefox",
       "name": "neko-firefox",
@@ -5385,7 +5403,7 @@
       ]
     },
     {
-      "id": 263,
+      "id": 264,
       "type": 3,
       "title": "NetAlertX (Legacy)",
       "name": "netalertx",
@@ -5400,7 +5418,7 @@
       }
     },
     {
-      "id": 264,
+      "id": 265,
       "type": 3,
       "title": "NetAlertX v26",
       "name": "netalertx-v26",
@@ -5415,7 +5433,7 @@
       }
     },
     {
-      "id": 265,
+      "id": 266,
       "type": 3,
       "title": "netboot.xyz",
       "name": "netboot-xyz",
@@ -5435,7 +5453,7 @@
       ]
     },
     {
-      "id": 266,
+      "id": 267,
       "type": 3,
       "title": "Netbox",
       "name": "netbox",
@@ -5477,7 +5495,7 @@
       ]
     },
     {
-      "id": 267,
+      "id": 268,
       "type": 3,
       "title": "NetPulse",
       "name": "netpulse",
@@ -5500,7 +5518,7 @@
       ]
     },
     {
-      "id": 268,
+      "id": 269,
       "type": 3,
       "title": "Nextcloud",
       "name": "nextcloud",
@@ -5527,7 +5545,7 @@
       ]
     },
     {
-      "id": 269,
+      "id": 270,
       "type": 3,
       "title": "Nextcloud LS",
       "name": "nextcloud-ls",
@@ -5547,7 +5565,7 @@
       ]
     },
     {
-      "id": 270,
+      "id": 271,
       "type": 3,
       "title": "Nextcloud with SMB (Legacy)",
       "name": "nextcloud-with-smbclient",
@@ -5574,7 +5592,7 @@
       ]
     },
     {
-      "id": 271,
+      "id": 272,
       "type": 3,
       "title": "Nexterm",
       "name": "nexterm",
@@ -5592,7 +5610,7 @@
       ]
     },
     {
-      "id": 272,
+      "id": 273,
       "type": 3,
       "title": "Nginx",
       "name": "nginx",
@@ -5614,7 +5632,7 @@
       ]
     },
     {
-      "id": 273,
+      "id": 274,
       "type": 3,
       "title": "Ngircd",
       "name": "ngircd",
@@ -5634,7 +5652,7 @@
       ]
     },
     {
-      "id": 274,
+      "id": 275,
       "type": 3,
       "title": "Nightlio",
       "name": "nightlio",
@@ -5657,7 +5675,7 @@
       ]
     },
     {
-      "id": 275,
+      "id": 276,
       "type": 3,
       "title": "nightscout",
       "name": "nightscout",
@@ -5680,7 +5698,7 @@
       ]
     },
     {
-      "id": 276,
+      "id": 277,
       "type": 3,
       "title": "NocoDB",
       "name": "nocodb",
@@ -5695,7 +5713,7 @@
       }
     },
     {
-      "id": 277,
+      "id": 278,
       "type": 3,
       "title": "Node-RED",
       "name": "node-red",
@@ -5710,7 +5728,7 @@
       }
     },
     {
-      "id": 278,
+      "id": 279,
       "type": 3,
       "title": "Note Mark AIO",
       "name": "note-mark-aio",
@@ -5729,7 +5747,7 @@
       ]
     },
     {
-      "id": 279,
+      "id": 280,
       "type": 3,
       "title": "Nova DSO Tracker",
       "name": "nova-dso-tracker",
@@ -5744,7 +5762,7 @@
       }
     },
     {
-      "id": 280,
+      "id": 281,
       "type": 3,
       "title": "NPMPlus",
       "name": "npmplus",
@@ -5762,7 +5780,7 @@
       ]
     },
     {
-      "id": 281,
+      "id": 282,
       "type": 3,
       "title": "Ntfy.sh",
       "name": "ntfysh",
@@ -5780,7 +5798,7 @@
       ]
     },
     {
-      "id": 282,
+      "id": 283,
       "type": 3,
       "title": "Obsidian",
       "name": "obsidian",
@@ -5795,7 +5813,7 @@
       }
     },
     {
-      "id": 283,
+      "id": 284,
       "type": 3,
       "title": "Obsidian Livesync",
       "name": "obsidian-livesync",
@@ -5810,7 +5828,7 @@
       }
     },
     {
-      "id": 284,
+      "id": 285,
       "type": 3,
       "title": "OctoPrint",
       "name": "octoprint",
@@ -5825,7 +5843,7 @@
       }
     },
     {
-      "id": 285,
+      "id": 286,
       "type": 3,
       "title": "Odoo (Legacy)",
       "name": "odoo",
@@ -5845,7 +5863,7 @@
       ]
     },
     {
-      "id": 286,
+      "id": 287,
       "type": 3,
       "title": "Odoo v20",
       "name": "odoo-v20",
@@ -5865,7 +5883,7 @@
       ]
     },
     {
-      "id": 287,
+      "id": 288,
       "type": 3,
       "title": "Odysseus",
       "name": "odysseus",
@@ -5884,7 +5902,7 @@
       ]
     },
     {
-      "id": 288,
+      "id": 289,
       "type": 3,
       "title": "Ollama - AMD",
       "name": "ollama-amd",
@@ -5899,7 +5917,7 @@
       }
     },
     {
-      "id": 289,
+      "id": 290,
       "type": 3,
       "title": "Ollama - CPU",
       "name": "ollama-cpu",
@@ -5914,7 +5932,7 @@
       }
     },
     {
-      "id": 290,
+      "id": 291,
       "type": 3,
       "title": "Ollama - NVIDIA",
       "name": "ollama-nvidia",
@@ -5929,7 +5947,7 @@
       }
     },
     {
-      "id": 291,
+      "id": 292,
       "type": 3,
       "title": "OmniRoute",
       "name": "omniroute",
@@ -5951,7 +5969,7 @@
       ]
     },
     {
-      "id": 292,
+      "id": 293,
       "type": 3,
       "title": "OneDev",
       "name": "onedev",
@@ -5966,7 +5984,7 @@
       }
     },
     {
-      "id": 293,
+      "id": 294,
       "type": 3,
       "title": "OnlyOffice",
       "name": "onlyoffice",
@@ -5981,7 +5999,7 @@
       }
     },
     {
-      "id": 294,
+      "id": 295,
       "type": 3,
       "title": "Open WebUI",
       "name": "open-webui",
@@ -5996,7 +6014,7 @@
       }
     },
     {
-      "id": 295,
+      "id": 296,
       "type": 3,
       "title": "OpenClaw",
       "name": "openclaw",
@@ -6017,7 +6035,7 @@
       ]
     },
     {
-      "id": 296,
+      "id": 297,
       "type": 3,
       "title": "openGym",
       "name": "opengym",
@@ -6046,7 +6064,7 @@
       ]
     },
     {
-      "id": 297,
+      "id": 298,
       "type": 3,
       "title": "Openshot",
       "name": "openshot",
@@ -6066,7 +6084,7 @@
       ]
     },
     {
-      "id": 298,
+      "id": 299,
       "type": 3,
       "title": "Openssh-server",
       "name": "openssh-server",
@@ -6096,7 +6114,7 @@
       ]
     },
     {
-      "id": 299,
+      "id": 300,
       "type": 3,
       "title": "OpenVPN",
       "name": "openvpn-as",
@@ -6111,7 +6129,7 @@
       }
     },
     {
-      "id": 300,
+      "id": 301,
       "type": 3,
       "title": "Openvscode-server",
       "name": "openvscode-server",
@@ -6135,7 +6153,7 @@
       ]
     },
     {
-      "id": 301,
+      "id": 302,
       "type": 3,
       "title": "Opera",
       "name": "opera",
@@ -6156,7 +6174,7 @@
       ]
     },
     {
-      "id": 302,
+      "id": 303,
       "type": 3,
       "title": "Orcaslicer",
       "name": "orcaslicer",
@@ -6176,7 +6194,7 @@
       ]
     },
     {
-      "id": 303,
+      "id": 304,
       "type": 3,
       "title": "OTEL LGTM",
       "name": "otel-lgtm",
@@ -6191,7 +6209,7 @@
       }
     },
     {
-      "id": 304,
+      "id": 305,
       "type": 3,
       "title": "Outline",
       "name": "outline",
@@ -6223,7 +6241,7 @@
       ]
     },
     {
-      "id": 305,
+      "id": 306,
       "type": 3,
       "title": "ownCloud",
       "name": "owncloud",
@@ -6252,7 +6270,7 @@
       ]
     },
     {
-      "id": 306,
+      "id": 307,
       "type": 3,
       "title": "Pairdrop",
       "name": "pairdrop",
@@ -6276,7 +6294,7 @@
       ]
     },
     {
-      "id": 307,
+      "id": 308,
       "type": 3,
       "title": "Paperclip",
       "name": "paperclip",
@@ -6300,7 +6318,7 @@
       ]
     },
     {
-      "id": 308,
+      "id": 309,
       "type": 3,
       "title": "Paperless-ngx",
       "name": "paperless-ngx",
@@ -6328,7 +6346,7 @@
       ]
     },
     {
-      "id": 309,
+      "id": 310,
       "type": 3,
       "title": "Password Pusher (Legacy)",
       "name": "passwordpusher",
@@ -6348,7 +6366,7 @@
       ]
     },
     {
-      "id": 310,
+      "id": 311,
       "type": 3,
       "title": "Password Pusher v2",
       "name": "passwordpusher-v2",
@@ -6368,7 +6386,7 @@
       ]
     },
     {
-      "id": 311,
+      "id": 312,
       "type": 3,
       "title": "Pcsx2",
       "name": "pcsx2",
@@ -6388,7 +6406,7 @@
       ]
     },
     {
-      "id": 312,
+      "id": 313,
       "type": 3,
       "title": "PD3F",
       "name": "pd3f",
@@ -6403,7 +6421,7 @@
       }
     },
     {
-      "id": 313,
+      "id": 314,
       "type": 3,
       "title": "Pelorus",
       "name": "pelorus",
@@ -6423,7 +6441,7 @@
       ]
     },
     {
-      "id": 314,
+      "id": 315,
       "type": 3,
       "title": "Penpot",
       "name": "penpot",
@@ -6438,7 +6456,7 @@
       }
     },
     {
-      "id": 315,
+      "id": 316,
       "type": 3,
       "title": "Peppermint",
       "name": "peppermint",
@@ -6453,7 +6471,7 @@
       }
     },
     {
-      "id": 316,
+      "id": 317,
       "type": 3,
       "title": "Photoprism",
       "name": "photoprism",
@@ -6495,7 +6513,7 @@
       ]
     },
     {
-      "id": 317,
+      "id": 318,
       "type": 3,
       "title": "phpMyAdmin",
       "name": "phpmyadmin",
@@ -6516,7 +6534,7 @@
       ]
     },
     {
-      "id": 318,
+      "id": 319,
       "type": 3,
       "title": "Pi.alert",
       "name": "pi-alert",
@@ -6538,7 +6556,7 @@
       ]
     },
     {
-      "id": 319,
+      "id": 320,
       "type": 3,
       "title": "Pidgin",
       "name": "pidgin",
@@ -6558,7 +6576,7 @@
       ]
     },
     {
-      "id": 320,
+      "id": 321,
       "type": 3,
       "title": "Pi-hole",
       "name": "pihole",
@@ -6573,7 +6591,7 @@
       }
     },
     {
-      "id": 321,
+      "id": 322,
       "type": 3,
       "title": "Pi-hole and Unbound",
       "name": "pihole-unbound",
@@ -6588,7 +6606,7 @@
       }
     },
     {
-      "id": 322,
+      "id": 323,
       "type": 3,
       "title": "Pi-hole® Updatelists",
       "name": "pihole-updatelists",
@@ -6609,7 +6627,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 324,
       "type": 3,
       "title": "Pingvin Share",
       "name": "pingvin-share",
@@ -6624,7 +6642,7 @@
       }
     },
     {
-      "id": 324,
+      "id": 325,
       "type": 3,
       "title": "Piper",
       "name": "piper",
@@ -6651,7 +6669,7 @@
       ]
     },
     {
-      "id": 325,
+      "id": 326,
       "type": 3,
       "title": "Piwigo",
       "name": "piwigo",
@@ -6666,7 +6684,7 @@
       }
     },
     {
-      "id": 326,
+      "id": 327,
       "type": 3,
       "title": "Planka (Legacy)",
       "name": "planka",
@@ -6681,7 +6699,7 @@
       }
     },
     {
-      "id": 327,
+      "id": 328,
       "type": 3,
       "title": "Planka v2",
       "name": "planka-v2",
@@ -6726,7 +6744,7 @@
       ]
     },
     {
-      "id": 328,
+      "id": 329,
       "type": 3,
       "title": "Plant-it",
       "name": "plant-it",
@@ -6741,7 +6759,7 @@
       }
     },
     {
-      "id": 329,
+      "id": 330,
       "type": 3,
       "title": "Playit Docker Web",
       "name": "playit-docker-web",
@@ -6759,7 +6777,7 @@
       ]
     },
     {
-      "id": 330,
+      "id": 331,
       "type": 3,
       "title": "playit.gg",
       "name": "playitgg",
@@ -6774,7 +6792,7 @@
       }
     },
     {
-      "id": 331,
+      "id": 332,
       "type": 3,
       "title": "Plex",
       "name": "plex",
@@ -6789,7 +6807,7 @@
       }
     },
     {
-      "id": 332,
+      "id": 333,
       "type": 3,
       "title": "Plex-meta-manager",
       "name": "plex-meta-manager",
@@ -6814,7 +6832,7 @@
       ]
     },
     {
-      "id": 333,
+      "id": 334,
       "type": 3,
       "title": "Plex with NVIDIA GPU",
       "name": "plex-nvidia",
@@ -6838,7 +6856,7 @@
       ]
     },
     {
-      "id": 334,
+      "id": 335,
       "type": 3,
       "title": "Pocket ID",
       "name": "pocketid",
@@ -6860,7 +6878,7 @@
       ]
     },
     {
-      "id": 335,
+      "id": 336,
       "type": 3,
       "title": "PodFetch",
       "name": "podfetch",
@@ -6883,7 +6901,7 @@
       ]
     },
     {
-      "id": 336,
+      "id": 337,
       "type": 3,
       "title": "Portainer",
       "name": "portainer",
@@ -6898,7 +6916,7 @@
       }
     },
     {
-      "id": 337,
+      "id": 338,
       "type": 3,
       "title": "Portainer Agent",
       "name": "portainer-agent",
@@ -6913,7 +6931,7 @@
       }
     },
     {
-      "id": 338,
+      "id": 339,
       "type": 3,
       "title": "Portainer Tools",
       "name": "portainer-tools",
@@ -6936,7 +6954,7 @@
       ]
     },
     {
-      "id": 339,
+      "id": 340,
       "type": 3,
       "title": "Portracker",
       "name": "portracker",
@@ -6960,7 +6978,7 @@
       ]
     },
     {
-      "id": 340,
+      "id": 341,
       "type": 3,
       "title": "Poste.io",
       "name": "poste-io",
@@ -6978,7 +6996,7 @@
       ]
     },
     {
-      "id": 341,
+      "id": 342,
       "type": 3,
       "title": "Ppsspp",
       "name": "ppsspp",
@@ -6998,7 +7016,7 @@
       ]
     },
     {
-      "id": 342,
+      "id": 343,
       "type": 3,
       "title": "Privatebin",
       "name": "privatebin",
@@ -7017,7 +7035,7 @@
       ]
     },
     {
-      "id": 343,
+      "id": 344,
       "type": 3,
       "title": "Project Management",
       "name": "project-management",
@@ -7032,7 +7050,7 @@
       }
     },
     {
-      "id": 344,
+      "id": 345,
       "type": 3,
       "title": "Projectsend",
       "name": "projectsend",
@@ -7052,7 +7070,7 @@
       ]
     },
     {
-      "id": 345,
+      "id": 346,
       "type": 3,
       "title": "PsiTransfer",
       "name": "psitransfer",
@@ -7076,7 +7094,7 @@
       ]
     },
     {
-      "id": 346,
+      "id": 347,
       "type": 3,
       "title": "Pterodactyl Panel",
       "name": "pterodactyl-panel",
@@ -7113,7 +7131,7 @@
       ]
     },
     {
-      "id": 347,
+      "id": 348,
       "type": 3,
       "title": "Pterodactyl Wings",
       "name": "pterodactyl-wings",
@@ -7134,7 +7152,7 @@
       ]
     },
     {
-      "id": 348,
+      "id": 349,
       "type": 3,
       "title": "Pwndrop",
       "name": "pwndrop",
@@ -7155,7 +7173,7 @@
       ]
     },
     {
-      "id": 349,
+      "id": 350,
       "type": 3,
       "title": "Pycharm",
       "name": "pycharm",
@@ -7175,7 +7193,7 @@
       ]
     },
     {
-      "id": 350,
+      "id": 351,
       "type": 3,
       "title": "Pydio-cells",
       "name": "pydio-cells",
@@ -7197,7 +7215,7 @@
       ]
     },
     {
-      "id": 351,
+      "id": 352,
       "type": 3,
       "title": "Pylon",
       "name": "pylon",
@@ -7220,7 +7238,7 @@
       ]
     },
     {
-      "id": 352,
+      "id": 353,
       "type": 3,
       "title": "Python",
       "name": "python",
@@ -7240,7 +7258,7 @@
       ]
     },
     {
-      "id": 353,
+      "id": 354,
       "type": 3,
       "title": "Python Matter Server",
       "name": "python-matter-server",
@@ -7255,7 +7273,7 @@
       }
     },
     {
-      "id": 354,
+      "id": 355,
       "type": 3,
       "title": "Qdirstat",
       "name": "qdirstat",
@@ -7275,7 +7293,7 @@
       ]
     },
     {
-      "id": 355,
+      "id": 356,
       "type": 3,
       "title": "Qemu-static",
       "name": "qemu-static",
@@ -7295,7 +7313,7 @@
       ]
     },
     {
-      "id": 356,
+      "id": 357,
       "type": 3,
       "title": "Quassel-core",
       "name": "quassel-core",
@@ -7316,7 +7334,7 @@
       ]
     },
     {
-      "id": 357,
+      "id": 358,
       "type": 3,
       "title": "Quassel-web",
       "name": "quassel-web",
@@ -7340,7 +7358,7 @@
       ]
     },
     {
-      "id": 358,
+      "id": 359,
       "type": 3,
       "title": "RackPeek",
       "name": "rackpeek",
@@ -7355,7 +7373,7 @@
       }
     },
     {
-      "id": 359,
+      "id": 360,
       "type": 3,
       "title": "Rallly",
       "name": "rallly",
@@ -7384,7 +7402,7 @@
       ]
     },
     {
-      "id": 360,
+      "id": 361,
       "type": 3,
       "title": "Raneto",
       "name": "raneto",
@@ -7404,7 +7422,7 @@
       ]
     },
     {
-      "id": 361,
+      "id": 362,
       "type": 3,
       "title": "Rawtherapee",
       "name": "rawtherapee",
@@ -7424,7 +7442,7 @@
       ]
     },
     {
-      "id": 362,
+      "id": 363,
       "type": 3,
       "title": "Rdesktop",
       "name": "rdesktop",
@@ -7444,7 +7462,7 @@
       ]
     },
     {
-      "id": 363,
+      "id": 364,
       "type": 3,
       "title": "Reactive Resume (Legacy)",
       "name": "reactive-resume",
@@ -7459,7 +7477,7 @@
       }
     },
     {
-      "id": 364,
+      "id": 365,
       "type": 3,
       "title": "Reactive Resume v6",
       "name": "reactive-resume-v6",
@@ -7474,7 +7492,7 @@
       }
     },
     {
-      "id": 365,
+      "id": 366,
       "type": 3,
       "title": "Readeck",
       "name": "readeck",
@@ -7495,7 +7513,7 @@
       ]
     },
     {
-      "id": 366,
+      "id": 367,
       "type": 3,
       "title": "Readme-sync",
       "name": "readme-sync",
@@ -7515,7 +7533,7 @@
       ]
     },
     {
-      "id": 367,
+      "id": 368,
       "type": 3,
       "title": "Redis",
       "name": "redis",
@@ -7530,7 +7548,7 @@
       }
     },
     {
-      "id": 368,
+      "id": 369,
       "type": 3,
       "title": "Remmina",
       "name": "remmina",
@@ -7550,7 +7568,7 @@
       ]
     },
     {
-      "id": 369,
+      "id": 370,
       "type": 3,
       "title": "Retroarch",
       "name": "retroarch",
@@ -7570,7 +7588,7 @@
       ]
     },
     {
-      "id": 370,
+      "id": 371,
       "type": 3,
       "title": "RetroArch",
       "name": "retroarch-web",
@@ -7588,7 +7606,7 @@
       ]
     },
     {
-      "id": 371,
+      "id": 372,
       "type": 3,
       "title": "Rocket.Chat (Legacy)",
       "name": "rocket-chat",
@@ -7606,7 +7624,7 @@
       ]
     },
     {
-      "id": 372,
+      "id": 373,
       "type": 3,
       "title": "Rocket.Chat v8",
       "name": "rocket-chat-v8",
@@ -7625,7 +7643,7 @@
       ]
     },
     {
-      "id": 373,
+      "id": 374,
       "type": 3,
       "title": "RomM",
       "name": "romm",
@@ -7659,7 +7677,7 @@
       ]
     },
     {
-      "id": 374,
+      "id": 375,
       "type": 3,
       "title": "Rpcs3",
       "name": "rpcs3",
@@ -7679,7 +7697,7 @@
       ]
     },
     {
-      "id": 375,
+      "id": 376,
       "type": 3,
       "title": "Rsnapshot",
       "name": "rsnapshot",
@@ -7699,7 +7717,7 @@
       ]
     },
     {
-      "id": 376,
+      "id": 377,
       "type": 3,
       "title": "RSShub",
       "name": "rsshub",
@@ -7720,7 +7738,7 @@
       ]
     },
     {
-      "id": 377,
+      "id": 378,
       "type": 3,
       "title": "Rustdesk",
       "name": "rustdesk",
@@ -7740,7 +7758,7 @@
       ]
     },
     {
-      "id": 378,
+      "id": 379,
       "type": 3,
       "title": "Rustdesk Server",
       "name": "rustdesk-server",
@@ -7755,7 +7773,7 @@
       }
     },
     {
-      "id": 379,
+      "id": 380,
       "type": 3,
       "title": "RustFS",
       "name": "rustfs",
@@ -7776,7 +7794,7 @@
       ]
     },
     {
-      "id": 380,
+      "id": 381,
       "type": 3,
       "title": "Scrutiny",
       "name": "scrutiny",
@@ -7791,7 +7809,7 @@
       }
     },
     {
-      "id": 381,
+      "id": 382,
       "type": 3,
       "title": "Scrypted",
       "name": "scrypted",
@@ -7810,7 +7828,7 @@
       ]
     },
     {
-      "id": 382,
+      "id": 383,
       "type": 3,
       "title": "Scummvm",
       "name": "scummvm",
@@ -7830,7 +7848,7 @@
       ]
     },
     {
-      "id": 383,
+      "id": 384,
       "type": 3,
       "title": "seafile",
       "name": "seafile",
@@ -7854,7 +7872,7 @@
       ]
     },
     {
-      "id": 384,
+      "id": 385,
       "type": 3,
       "title": "Sealskin",
       "name": "sealskin",
@@ -7875,7 +7893,7 @@
       ]
     },
     {
-      "id": 385,
+      "id": 386,
       "type": 3,
       "title": "Seerr",
       "name": "seerr",
@@ -7894,7 +7912,7 @@
       ]
     },
     {
-      "id": 386,
+      "id": 387,
       "type": 3,
       "title": "Ansible Semaphore",
       "name": "semaphore",
@@ -7909,7 +7927,7 @@
       }
     },
     {
-      "id": 387,
+      "id": 388,
       "type": 3,
       "title": "Send Visee",
       "name": "send-visee",
@@ -7931,7 +7949,7 @@
       ]
     },
     {
-      "id": 388,
+      "id": 389,
       "type": 3,
       "title": "Series-troxide",
       "name": "series-troxide",
@@ -7951,7 +7969,7 @@
       ]
     },
     {
-      "id": 389,
+      "id": 390,
       "type": 3,
       "title": "SFTPGO",
       "name": "sftpgo",
@@ -7966,7 +7984,7 @@
       }
     },
     {
-      "id": 390,
+      "id": 391,
       "type": 3,
       "title": "Shadps4",
       "name": "shadps4",
@@ -7986,7 +8004,7 @@
       ]
     },
     {
-      "id": 391,
+      "id": 392,
       "type": 3,
       "title": "Shotcut",
       "name": "shotcut",
@@ -8006,7 +8024,7 @@
       ]
     },
     {
-      "id": 392,
+      "id": 393,
       "type": 3,
       "title": "Signal",
       "name": "signal",
@@ -8026,7 +8044,7 @@
       ]
     },
     {
-      "id": 393,
+      "id": 394,
       "type": 3,
       "title": "SkySend",
       "name": "skysend",
@@ -8046,7 +8064,7 @@
       ]
     },
     {
-      "id": 394,
+      "id": 395,
       "type": 3,
       "title": "Smokeping",
       "name": "smokeping",
@@ -8069,7 +8087,7 @@
       ]
     },
     {
-      "id": 395,
+      "id": 396,
       "type": 3,
       "title": "Snapdrop",
       "name": "snapdrop",
@@ -8089,7 +8107,7 @@
       ]
     },
     {
-      "id": 396,
+      "id": 397,
       "type": 3,
       "title": "SnapOtter",
       "name": "snapotter",
@@ -8114,7 +8132,7 @@
       ]
     },
     {
-      "id": 397,
+      "id": 398,
       "type": 3,
       "title": "Snipe-it",
       "name": "snipe-it",
@@ -8152,7 +8170,7 @@
       ]
     },
     {
-      "id": 398,
+      "id": 399,
       "type": 3,
       "title": "Snipe-IT v8",
       "name": "snipe-it-v8",
@@ -8173,7 +8191,7 @@
       ]
     },
     {
-      "id": 399,
+      "id": 400,
       "type": 3,
       "title": "Socket-proxy",
       "name": "socket-proxy",
@@ -8193,7 +8211,7 @@
       ]
     },
     {
-      "id": 400,
+      "id": 401,
       "type": 3,
       "title": "SolidPing",
       "name": "solidping",
@@ -8208,7 +8226,7 @@
       }
     },
     {
-      "id": 401,
+      "id": 402,
       "type": 3,
       "title": "Spacedrive",
       "name": "spacedrive",
@@ -8226,7 +8244,7 @@
       ]
     },
     {
-      "id": 402,
+      "id": 403,
       "type": 3,
       "title": "Speedtest Tracker",
       "name": "speedtest-tracker",
@@ -8252,7 +8270,7 @@
       ]
     },
     {
-      "id": 403,
+      "id": 404,
       "type": 3,
       "title": "Spoolman",
       "name": "spoolman",
@@ -8273,7 +8291,7 @@
       ]
     },
     {
-      "id": 404,
+      "id": 405,
       "type": 3,
       "title": "Sqlitebrowser",
       "name": "sqlitebrowser",
@@ -8293,7 +8311,7 @@
       ]
     },
     {
-      "id": 405,
+      "id": 406,
       "type": 3,
       "title": "Stalwart Mail",
       "name": "stalwart-mail",
@@ -8308,7 +8326,7 @@
       }
     },
     {
-      "id": 406,
+      "id": 407,
       "type": 3,
       "title": "Statping",
       "name": "statping",
@@ -8339,7 +8357,7 @@
       ]
     },
     {
-      "id": 407,
+      "id": 408,
       "type": 3,
       "title": "Steam",
       "name": "steam",
@@ -8359,7 +8377,7 @@
       ]
     },
     {
-      "id": 408,
+      "id": 409,
       "type": 3,
       "title": "Steamos",
       "name": "steamos",
@@ -8383,7 +8401,7 @@
       ]
     },
     {
-      "id": 409,
+      "id": 410,
       "type": 3,
       "title": "Stirling-PDF",
       "name": "stirling-pdf",
@@ -8408,7 +8426,7 @@
       ]
     },
     {
-      "id": 410,
+      "id": 411,
       "type": 3,
       "title": "Stoat",
       "name": "stoat",
@@ -8457,7 +8475,7 @@
       ]
     },
     {
-      "id": 411,
+      "id": 412,
       "type": 3,
       "title": "Storyteller",
       "name": "storyteller",
@@ -8482,7 +8500,7 @@
       ]
     },
     {
-      "id": 412,
+      "id": 413,
       "type": 3,
       "title": "Swag",
       "name": "swag",
@@ -8516,7 +8534,7 @@
       ]
     },
     {
-      "id": 413,
+      "id": 414,
       "type": 3,
       "title": "Synclounge",
       "name": "synclounge",
@@ -8534,7 +8552,7 @@
       ]
     },
     {
-      "id": 414,
+      "id": 415,
       "type": 3,
       "title": "Syncthing",
       "name": "syncthing",
@@ -8549,7 +8567,7 @@
       }
     },
     {
-      "id": 415,
+      "id": 416,
       "type": 3,
       "title": "Syslog-ng",
       "name": "syslog-ng",
@@ -8570,7 +8588,7 @@
       ]
     },
     {
-      "id": 416,
+      "id": 417,
       "type": 3,
       "title": "Tailscale",
       "name": "tailscale",
@@ -8596,7 +8614,7 @@
       ]
     },
     {
-      "id": 417,
+      "id": 418,
       "type": 3,
       "title": "Tandoor",
       "name": "tandoor",
@@ -8611,7 +8629,7 @@
       }
     },
     {
-      "id": 418,
+      "id": 419,
       "type": 3,
       "title": "Tautulli",
       "name": "tautulli",
@@ -8631,7 +8649,7 @@
       ]
     },
     {
-      "id": 419,
+      "id": 420,
       "type": 3,
       "title": "Telegram",
       "name": "telegram",
@@ -8651,7 +8669,7 @@
       ]
     },
     {
-      "id": 420,
+      "id": 421,
       "type": 3,
       "title": "Tester",
       "name": "tester",
@@ -8669,7 +8687,7 @@
       ]
     },
     {
-      "id": 421,
+      "id": 422,
       "type": 3,
       "title": "Thelounge",
       "name": "thelounge",
@@ -8689,7 +8707,7 @@
       ]
     },
     {
-      "id": 422,
+      "id": 423,
       "type": 3,
       "title": "Thunderbird",
       "name": "thunderbird",
@@ -8709,7 +8727,7 @@
       ]
     },
     {
-      "id": 423,
+      "id": 424,
       "type": 3,
       "title": "Tianji",
       "name": "tianji",
@@ -8724,7 +8742,7 @@
       }
     },
     {
-      "id": 424,
+      "id": 425,
       "type": 3,
       "title": "TP-Link Omada Controller",
       "name": "tp-link-omada-controller",
@@ -8758,7 +8776,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 426,
       "type": 3,
       "title": "Traccar",
       "name": "traccar",
@@ -8773,7 +8791,7 @@
       }
     },
     {
-      "id": 426,
+      "id": 427,
       "type": 3,
       "title": "Trackie",
       "name": "trackie",
@@ -8802,7 +8820,7 @@
       ]
     },
     {
-      "id": 427,
+      "id": 428,
       "type": 3,
       "title": "Traefik",
       "name": "traefik",
@@ -8825,7 +8843,7 @@
       ]
     },
     {
-      "id": 428,
+      "id": 429,
       "type": 3,
       "title": "Trilium",
       "name": "trilium",
@@ -8840,7 +8858,7 @@
       }
     },
     {
-      "id": 429,
+      "id": 430,
       "type": 3,
       "title": "Tududi",
       "name": "tududi",
@@ -8861,7 +8879,7 @@
       ]
     },
     {
-      "id": 430,
+      "id": 431,
       "type": 3,
       "title": "Tugtainer",
       "name": "tugtainer",
@@ -8885,7 +8903,7 @@
       ]
     },
     {
-      "id": 431,
+      "id": 432,
       "type": 3,
       "title": "Ubooquity",
       "name": "ubooquity",
@@ -8906,7 +8924,7 @@
       ]
     },
     {
-      "id": 432,
+      "id": 433,
       "type": 3,
       "title": "UISP",
       "name": "uisp",
@@ -8924,7 +8942,7 @@
       ]
     },
     {
-      "id": 433,
+      "id": 434,
       "type": 3,
       "title": "Umami",
       "name": "umami",
@@ -8944,7 +8962,7 @@
       ]
     },
     {
-      "id": 434,
+      "id": 435,
       "type": 3,
       "title": "Umbrel OS",
       "name": "umbrel-os",
@@ -8959,7 +8977,7 @@
       }
     },
     {
-      "id": 435,
+      "id": 436,
       "type": 3,
       "title": "Ungoogled-chromium",
       "name": "ungoogled-chromium",
@@ -8980,7 +8998,7 @@
       ]
     },
     {
-      "id": 436,
+      "id": 437,
       "type": 3,
       "title": "Unifi-controller",
       "name": "unifi-controller",
@@ -9002,7 +9020,7 @@
       ]
     },
     {
-      "id": 437,
+      "id": 438,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application",
@@ -9031,7 +9049,7 @@
       ]
     },
     {
-      "id": 438,
+      "id": 439,
       "type": 3,
       "title": "Unifi Network Application",
       "name": "unifi-network-application-mongo-4",
@@ -9060,7 +9078,7 @@
       ]
     },
     {
-      "id": 439,
+      "id": 440,
       "type": 3,
       "title": "Unrar",
       "name": "unrar",
@@ -9080,7 +9098,7 @@
       ]
     },
     {
-      "id": 440,
+      "id": 441,
       "type": 3,
       "title": "Upsnap",
       "name": "upsnap",
@@ -9095,7 +9113,7 @@
       }
     },
     {
-      "id": 441,
+      "id": 442,
       "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime-kuma",
@@ -9110,7 +9128,7 @@
       }
     },
     {
-      "id": 442,
+      "id": 443,
       "type": 3,
       "title": "VERT",
       "name": "vert",
@@ -9125,7 +9143,7 @@
       }
     },
     {
-      "id": 443,
+      "id": 444,
       "type": 3,
       "title": "Vikunja (Legacy)",
       "name": "vikunja",
@@ -9149,7 +9167,7 @@
       ]
     },
     {
-      "id": 444,
+      "id": 445,
       "type": 3,
       "title": "Vikunja v2",
       "name": "vikunja-v2",
@@ -9172,7 +9190,7 @@
       ]
     },
     {
-      "id": 445,
+      "id": 446,
       "type": 3,
       "title": "Viseron",
       "name": "viseron",
@@ -9191,7 +9209,7 @@
       ]
     },
     {
-      "id": 446,
+      "id": 447,
       "type": 3,
       "title": "Vivaldi",
       "name": "vivaldi",
@@ -9212,7 +9230,7 @@
       ]
     },
     {
-      "id": 447,
+      "id": 448,
       "type": 3,
       "title": "Vlc",
       "name": "vlc",
@@ -9233,7 +9251,7 @@
       ]
     },
     {
-      "id": 448,
+      "id": 449,
       "type": 3,
       "title": "Vscode",
       "name": "vscode",
@@ -9253,7 +9271,7 @@
       ]
     },
     {
-      "id": 449,
+      "id": 450,
       "type": 3,
       "title": "Vscodium",
       "name": "vscodium",
@@ -9273,7 +9291,7 @@
       ]
     },
     {
-      "id": 450,
+      "id": 451,
       "type": 3,
       "title": "Vscodium-web",
       "name": "vscodium-web",
@@ -9298,7 +9316,7 @@
       ]
     },
     {
-      "id": 451,
+      "id": 452,
       "type": 3,
       "title": "Wallabag",
       "name": "wallabag",
@@ -9328,7 +9346,7 @@
       ]
     },
     {
-      "id": 452,
+      "id": 453,
       "type": 3,
       "title": "Wallos",
       "name": "wallos",
@@ -9346,7 +9364,7 @@
       ]
     },
     {
-      "id": 453,
+      "id": 454,
       "type": 3,
       "title": "Warracker",
       "name": "warracker",
@@ -9371,7 +9389,7 @@
       ]
     },
     {
-      "id": 454,
+      "id": 455,
       "type": 3,
       "title": "WatchYourLAN",
       "name": "watchyourlan",
@@ -9386,7 +9404,7 @@
       }
     },
     {
-      "id": 455,
+      "id": 456,
       "type": 3,
       "title": "Web-Check",
       "name": "web-check",
@@ -9405,7 +9423,7 @@
       ]
     },
     {
-      "id": 456,
+      "id": 457,
       "type": 3,
       "title": "Webcord",
       "name": "webcord",
@@ -9425,7 +9443,7 @@
       ]
     },
     {
-      "id": 457,
+      "id": 458,
       "type": 3,
       "title": "WebDAV",
       "name": "webdav",
@@ -9445,7 +9463,7 @@
       ]
     },
     {
-      "id": 458,
+      "id": 459,
       "type": 3,
       "title": "Webgrabplus",
       "name": "webgrabplus",
@@ -9465,7 +9483,7 @@
       ]
     },
     {
-      "id": 459,
+      "id": 460,
       "type": 3,
       "title": "Webstation",
       "name": "webstation",
@@ -9485,7 +9503,7 @@
       ]
     },
     {
-      "id": 460,
+      "id": 461,
       "type": 3,
       "title": "Web Sync (RSync)",
       "name": "websync",
@@ -9500,7 +9518,7 @@
       }
     },
     {
-      "id": 461,
+      "id": 462,
       "type": 3,
       "title": "Webtop",
       "name": "webtop",
@@ -9520,7 +9538,7 @@
       ]
     },
     {
-      "id": 462,
+      "id": 463,
       "type": 3,
       "title": "Weixin",
       "name": "weixin",
@@ -9540,7 +9558,7 @@
       ]
     },
     {
-      "id": 463,
+      "id": 464,
       "type": 3,
       "title": "Wireguard Easy 14 (Legacy)",
       "name": "wg-easy",
@@ -9555,7 +9573,7 @@
       }
     },
     {
-      "id": 464,
+      "id": 465,
       "type": 3,
       "title": "WireGuard Easy v15",
       "name": "wg-easy-v15",
@@ -9570,7 +9588,7 @@
       }
     },
     {
-      "id": 465,
+      "id": 466,
       "type": 3,
       "title": "What's Up Docker",
       "name": "whats-up-docker",
@@ -9585,7 +9603,7 @@
       }
     },
     {
-      "id": 466,
+      "id": 467,
       "type": 3,
       "title": "Wikijs",
       "name": "wikijs",
@@ -9611,7 +9629,7 @@
       ]
     },
     {
-      "id": 467,
+      "id": 468,
       "type": 3,
       "title": "Winegui",
       "name": "winegui",
@@ -9631,7 +9649,7 @@
       ]
     },
     {
-      "id": 468,
+      "id": 469,
       "type": 3,
       "title": "Wireguard",
       "name": "wireguard",
@@ -9659,7 +9677,7 @@
       ]
     },
     {
-      "id": 469,
+      "id": 470,
       "type": 3,
       "title": "Wireshark",
       "name": "wireshark",
@@ -9679,7 +9697,7 @@
       ]
     },
     {
-      "id": 470,
+      "id": 471,
       "type": 3,
       "title": "Wishlist",
       "name": "wishlist",
@@ -9700,7 +9718,7 @@
       ]
     },
     {
-      "id": 471,
+      "id": 472,
       "type": 3,
       "title": "WordPress (Legacy)",
       "name": "wordpress",
@@ -9721,7 +9739,7 @@
       ]
     },
     {
-      "id": 472,
+      "id": 473,
       "type": 3,
       "title": "WordPress v7",
       "name": "wordpress-v7",
@@ -9742,7 +9760,7 @@
       ]
     },
     {
-      "id": 473,
+      "id": 474,
       "type": 3,
       "title": "Wps-office",
       "name": "wps-office",
@@ -9762,7 +9780,7 @@
       ]
     },
     {
-      "id": 474,
+      "id": 475,
       "type": 3,
       "title": "Write Freely",
       "name": "write-freely",
@@ -9782,7 +9800,7 @@
       ]
     },
     {
-      "id": 475,
+      "id": 476,
       "type": 3,
       "title": "Xbackbone",
       "name": "xbackbone",
@@ -9802,7 +9820,7 @@
       ]
     },
     {
-      "id": 476,
+      "id": 477,
       "type": 3,
       "title": "Xemu",
       "name": "xemu",
@@ -9822,7 +9840,7 @@
       ]
     },
     {
-      "id": 477,
+      "id": 478,
       "type": 3,
       "title": "Xvfb",
       "name": "xvfb",
@@ -9842,7 +9860,7 @@
       ]
     },
     {
-      "id": 478,
+      "id": 479,
       "type": 3,
       "title": "Yaak",
       "name": "yaak",
@@ -9862,7 +9880,7 @@
       ]
     },
     {
-      "id": 479,
+      "id": 480,
       "type": 3,
       "title": "Your_spotify",
       "name": "your-spotify",
@@ -9888,7 +9906,7 @@
       ]
     },
     {
-      "id": 480,
+      "id": 481,
       "type": 3,
       "title": "Yq",
       "name": "yq",
@@ -9908,7 +9926,7 @@
       ]
     },
     {
-      "id": 481,
+      "id": 482,
       "type": 3,
       "title": "Yuvomi",
       "name": "yuvomi",
@@ -9936,7 +9954,7 @@
       ]
     },
     {
-      "id": 482,
+      "id": 483,
       "type": 3,
       "title": "Zen",
       "name": "zen",
@@ -9956,7 +9974,7 @@
       ]
     },
     {
-      "id": 483,
+      "id": 484,
       "type": 3,
       "title": "Zigbee to MQTT bridge",
       "name": "zigbee2mqtt",
@@ -9971,7 +9989,7 @@
       }
     },
     {
-      "id": 484,
+      "id": 485,
       "type": 3,
       "title": "ZimaBrain CE",
       "name": "zimabrain",
@@ -9993,7 +10011,7 @@
       ]
     },
     {
-      "id": 485,
+      "id": 486,
       "type": 3,
       "title": "zipline",
       "name": "zipline",
@@ -10008,7 +10026,7 @@
       }
     },
     {
-      "id": 486,
+      "id": 487,
       "type": 3,
       "title": "Znc",
       "name": "znc",
@@ -10028,7 +10046,7 @@
       ]
     },
     {
-      "id": 487,
+      "id": 488,
       "type": 3,
       "title": "Zotero",
       "name": "zotero",
