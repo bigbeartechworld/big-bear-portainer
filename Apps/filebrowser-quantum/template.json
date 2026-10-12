@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
       "id": 127,
       "type": 3,
-      "title": "FileBrowser Quantum",
+      "title": "FileBrowser Quantum (Legacy)",
       "name": "filebrowser-quantum",
       "description": "A self-hosted web file manager forked from FileBrowser with advanced features including OIDC authentication, indexed search, office document previews, and multi-source support.",
       "note": "Advanced self-hosted web file manager",
