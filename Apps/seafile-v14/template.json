@@ -1,0 +1,24 @@
+{"version": "3", "templates": [    {
+      "id": 385,
+      "type": 3,
+      "title": "Seafile v14",
+      "name": "seafile-v14",
+      "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
+      "note": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/seafile.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/seafile-v14/docker-compose.yml"
+      },
+      "env": [
+        {"name": "INIT_SEAFILE_ADMIN_EMAIL", "label": "INIT_SEAFILE_ADMIN_EMAIL", "description": "Initial admin email (first start only)", "default": "admin@example.com"},
+        {"name": "INIT_SEAFILE_ADMIN_PASSWORD", "label": "INIT_SEAFILE_ADMIN_PASSWORD", "description": "Initial admin password (first start only)", "default": "e1c68646-4097-4781-bb87-7e92e7f851cb"},
+        {"name": "JWT_PRIVATE_KEY", "label": "JWT_PRIVATE_KEY", "description": "Random key, 32+ characters", "default": "667dc128-2d73-4d3b-a02a-2f1ac1ce78df"},
+        {"name": "SEAFILE_MYSQL_DB_PASSWORD", "label": "SEAFILE_MYSQL_DB_PASSWORD", "description": "Seafile database user password", "default": "7201efed-a8a4-4b77-9e04-08a33d01c2ad"},
+        {"name": "INIT_SEAFILE_MYSQL_ROOT_PASSWORD", "label": "INIT_SEAFILE_MYSQL_ROOT_PASSWORD", "description": "Database root password", "default": "175fa483-c07b-4172-b065-5076bb526f45"},
+        {"name": "REDIS_PASSWORD", "label": "REDIS_PASSWORD", "description": "Redis password", "default": "82587955-1f5f-40bd-9e5f-aba55571a8ae"},
+        {"name": "TIME_ZONE", "label": "TIME_ZONE", "description": "Timezone", "default": "Etc/UTC"}
+      ]
+    }]}
