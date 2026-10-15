@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
       "id": 384,
       "type": 3,
-      "title": "seafile",
+      "title": "Seafile (Legacy)",
       "name": "seafile",
       "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance. Seafile's built-in collaborative document SeaDoc, make it easy for collaborative writing and publishing documents.",
       "note": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
