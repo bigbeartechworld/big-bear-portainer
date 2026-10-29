@@ -1,0 +1,15 @@
+{"version": "3", "templates": [    {
+      "id": 411,
+      "type": 3,
+      "title": "Stalwart Mail v1",
+      "name": "stalwart-mail-v1",
+      "description": "Stalwart Mail Server is an open-source mail server solution with JMAP, IMAP4, POP3, and SMTP support and a wide range of modern features. It is written in Rust and designed to be secure, fast, robust and scalable.",
+      "note": "Secure & Modern All-in-One Mail Server (IMAP, JMAP, POP3, SMTP) 🛡️",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/stalwart.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/stalwart-mail-v1/docker-compose.yml"
+      }
+    }]}

@@ -1,7 +1,7 @@
 {"version": "3", "templates": [    {
       "id": 259,
       "type": 3,
-      "title": "n8n",
+      "title": "n8n (Legacy)",
       "name": "n8n",
       "description": "Free and open fair-code licensed node based Workflow Automation Tool.",
       "note": "Workflow automation tool",
