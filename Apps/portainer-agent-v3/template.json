@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 341,
+      "type": 3,
+      "title": "Portainer Agent v3",
+      "name": "portainer-agent-v3",
+      "description": "Portainer uses the Portainer Agent container to communicate with the Portainer Server instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the Portainer Server installation guide first.",
+      "note": "Portainer Agent",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/portainer-agent-v3/docker-compose.yml"
+      },
+      "env": [
+        {"name": "AGENT_SECRET", "label": "AGENT_SECRET", "description": "Required Agent secret. Configure the identical strong secret on Portainer Server v3 before deployment.", "default": ""}
+      ]
+    }]}

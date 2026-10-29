@@ -1,0 +1,18 @@
+{"version": "3", "templates": [    {
+      "id": 260,
+      "type": 3,
+      "title": "n8n v3",
+      "name": "n8n-v3",
+      "description": "Free and open fair-code licensed node based Workflow Automation Tool.",
+      "note": "Workflow automation tool",
+      "categories": ["BigBearCasaOS", "selfhosted"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/n8n.png",
+      "repository": {
+        "url": "https://github.com/bigbeartechworld/big-bear-portainer",
+        "stackfile": "Apps/n8n-v3/docker-compose.yml"
+      },
+      "env": [
+        {"name": "N8N_PUBLIC_URL", "label": "N8N_PUBLIC_URL", "description": "Required public HTTPS editor URL, for example https://n8n.example.com. Configure an HTTPS reverse proxy on this host to forward to 127.0.0.1:5679.", "default": ""}
+      ]
+    }]}
